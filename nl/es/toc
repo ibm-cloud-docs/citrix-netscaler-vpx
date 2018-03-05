@@ -1,0 +1,33 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="citrix-netscaler-vpx" audience="network" href="/docs/infrastructure/citrix-netscaler-vpx/getting-started.html"}
+Citrix NetScaler VPX
+
+    {: .navgroup id="learn"}
+    getting-started.md	
+    about-citrix-netscaler-vpx.md
+    terminology.md
+    default-deployment.md
+    netscaler-basic-configuration.md
+    [Explore Load Balancers](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html)
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    accessing-and-managing-your-netscaler.md
+    upgrade-netscaler.md
+    netscaler-vpx-10-high-availability-setup.md
+    setting-citrix-forwarding-proxy.md
+    url-redirection-netscaler-vpx.md
+    {: .navgroup-end}
+    
+    {: .navgroup id="reference"}
+    global-load-balancing-options.md
+    global-load-balancing-netscaler-vpx.md
+    [Sitio web de Citrix](https://www.citrix.com/products/netscaler-adc/)
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    load-balancing-faqs.md
+    getting-help.md
+    {: .navgroup-end}
