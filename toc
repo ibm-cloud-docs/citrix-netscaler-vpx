@@ -10,7 +10,7 @@ Citrix NetScaler VPX
     terminology.md
     default-deployment.md
     netscaler-basic-configuration.md
-    [Explore Load Balancers](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html)
+    [Explore Load Balancers](../loadbalancer-service/explore-load-balancers.html)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
