@@ -1,8 +1,8 @@
 ---
 copyright:
-  years: 1994, 2017
+  years: 1994, 2018
   
-lastupdated: "2017-11-02"
+lastupdated: "2018-07-03"
 ---
 
 {:shortdesc: .shortdesc}
@@ -19,14 +19,19 @@ Deploying a Citrix NetScaler VPX in your {{site.data.keyword.BluSoftlayer_notm}}
 * The only product that can load balance traffic on both the public and private network
 * Management using GUI (Graphical User Interface) or CLI (Command Line Interface)
 * Many different types of traffic distribution, including:
+  * Least Connections
   * Round Robin
-  * Least Connection
-  * Least Response
-  * URL Hash
-  * Domain Hash
-  * Destination IP Hash
-  * Source IP Hash
-  * Least Bandwidth
+  * Least response time
+  * Least bandwidth
+  * Least packets
+  * URL hashing
+  * Domain name hashing
+  * Source IP address hashing
+  * Destination IP address hashing
+  * Source IP - Destination IP hashing
+  * Token
+  * LRTM
+
 * SSL acceleration / SSL fffload
 * GSLB (Global Server Load Balancing)
   * Uses the DNS infrastructure to connect the client to the best data center
@@ -45,16 +50,15 @@ The Citrix NetScaler VPX can be deployed on demand, in as little as 15 minutes, 
 
 ## Application Security
 
-To secure application traffic, customers can take advantage of security features such as Application Content Filtering, Access Gateway, and a Web Application Firewall.
+To secure application traffic, customers can take advantage of security features such as Application Content Filtering, Priority Queuing, and a Web Application Firewall.
 
 ## Traffic Filtering
 
-The Citrix Netscaler VPX filters requests from end-users to the servers and responses from the servers to end-users. A Learning feature allows the profiling of sessions in real time and the determination of whether to allow traffic.
-
+The Citrix Netscaler VPX filters requests from end-users to the servers and responses from the servers to end-users. A Learning feature with the Application Firewall allows the profiling of sessions in real time and the determination of whether to allow traffic.
 
 ## PCI-DSS Reporting
 
-Payment Card Industry (PCI) Data Security Standard consists of twelve criteria that must be met by businesses that process online credit card payments. The PCI-DSS reports consist of a list of those criteria that are relevant to your Application Firewall configuration. The report also lists whether your current configuration meets each criterion, and suggests how to configure the application firewall to meet those standards.
+Payment Card Industry (PCI) Data Security Standard (DSS) consists of twelve criteria that must be met by businesses that process online credit card payments. The PCI-DSS reports consist of a list of those criteria that are relevant to your Application Firewall configuration. The report also lists whether your current configuration meets each criterion, and suggests how to configure the application firewall to meet those standards.
 
 ## Global Load Balancing (GSLB)
 
@@ -62,4 +66,4 @@ The NetScaler Platinum Edition extends the load balancer beyond the local bounda
 
 ## Extend your Datacenter
 
-The NetScaler Platinum Edition allows you to use the NetScaler CloudBridge feature which provides a simple way to extend your datacenter to {{site.data.keyword.BluSoftlayer_notm}} with wizard-driven menus. 
+The NetScaler Platinum Edition allows you to use the NetScaler CloudBridge Connector feature which provides a simple way to extend your datacenter to {{site.data.keyword.BluSoftlayer_notm}} with wizard-driven menus. 
