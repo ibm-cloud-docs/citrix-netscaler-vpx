@@ -47,7 +47,7 @@ NetScaler에서 `http://`로부터 `https://`로의 경로 재지정을 수행�
 	```
 6. NetScaler의 응답자 기능을 사용으로 설정하십시오(이 기능은 기본적으로 사용 안함으로 설정되어 있으므로 이 단계가 중요합니다).
 	```
-  enable ns feature responder
+    enable ns feature responder
   ```
 7. 청취 중인 vserver를 응답자 정책에 바인드하십시오.
 	```

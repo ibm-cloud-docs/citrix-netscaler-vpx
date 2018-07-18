@@ -38,21 +38,23 @@ Crea quindi i tuoi servizi. Creerai un servizio per ogni server da te appena imm
 2. Fai clic su **Add**.
 3. Crea un servizio per ciascun server da te creato in precedenza, utilizzando le stesse informazioni.
 
-Crea quindi un server virtuale. Il server virtuale è una sorta di connessione virtuale tra il VIP utilizzato per i server con il carico bilanciato e i servizi da te creati in precedenza.
+Crea quindi un Virtual Server. Il Virtual Server è una sorta di connessione virtuale tra il VIP utilizzato per i server con il carico bilanciato e i servizi da te creati in precedenza.
 
 1. Fai clic su **Traffic Management > Load Balancing > Virtual Servers**.
 2. Fai clic su **Add**.
-3. Denomina il server virtuale.
+3. Denomina il Virtual Server.
 4. Indica il protocollo che bilancerai (HTTP).
 5. Lascia il tipo di indirizzo IP (IP Address Type) sul valore predefinito (IP Address). Il campo dell'indirizzo IP è dove immetterai il VIP che utilizzerai come punto di ingresso per tutti i tuoi utenti.
 6. Indica la porta. Il valore predefinito è la porta 80.
 7. Fai clic su **OK**.
 
-Associa quindi i servizi che hai creato al tuo server virtuale.
+Associa quindi i servizi che hai creato al tuo Virtual Server.
 
 1. Sulla schermata Virtual Servers, fai clic sul link **No Load Balancing Virtual Server Service Binding**.
-2. Associa ciascuno dei servizi creati precedentemente al server virtuale.
+2. Associa ciascuno dei servizi creati precedentemente al Virtual Server.
 3. Fai clic su **Done**.
 4. Fai clic sul pulsante **Refresh**. Lo stato (State) e lo stato effettivo (Effective State) verranno visualizzati come verdi.
 
 Hai creato un pool di bilanciamento del carico e la politica per il tuo sito web.
+
+**NOTA:** per ulteriori informazioni sulla configurazione del dispositivo Citrix NetScaler VPX, visita la [pagina di documentazione di Citrix![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://docs.citrix.com/en-us/netscaler.html). Per ulteriore assistenza, contatta l'assistenza e il settore vendite di {{site.data.keyword.BluSoftlayer_notm}}.

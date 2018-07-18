@@ -50,20 +50,18 @@ Um método alternativo para executar um redirecionamento de `http://` para `http
   enable ns feature responder
   ```
 7. Ligue o vserver de atendimento à política do respondente.
-	```
+```
 	bind lb vserver http_to_htps_vserver -policyName http_to_https_pol -priority 1 -gotoPriorityExpression END
 	```
-8. É possível confirmar que isso está funcionando conforme desejado usando os utilitários da linha de comandos, como 'wget' ou 'curl', conforme a seguir:
-
+8. É possível confirmar que isso está funcionando conforme desejado usando os utilitários de linha de comandos, como 'wget' ou 'curl', conforme a seguir:
 ```
 wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
 
 curl -v http://w.x.y.z
 ```
 
-Substitua o endereço IP `w.x.y.z` para o nome do host da URL (por exemplo, http://mail.example.com ou http://web.example.com) e confirme que a saída "Local" reflete o mesmo nome de host inicialmente especificado, mas começando com "https" de acordo com os exemplos abaixo:
-
-    wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
+Substitua o endereço IP `w.x.y.z` pelo nome do host da URL (por exemplo, http://mail.example.com ou http://web.example.com) e confirme se a saída “Location” reflete o mesmo nome do host especificado inicialmente, mas iniciando com “https”, conforme os exemplos abaixo:
+wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
     --2012-06-18 08:42:20--  http://w.x.y.z/
     Connecting to w.x.y.z:80... connected.
     HTTP request sent, awaiting response...

@@ -62,4 +62,4 @@ También es importante proporcionar redundancia para otros componentes de hardwa
 
 ## ¿La oferta de NetScaler de {{site.data.keyword.BluSoftlayer_notm}} incluye la funcionalidad de VPN con SSL?
 
-Sí, esta característica se conoce como NetScaler Gateway™ y está incluida en todas las ediciones. Para obtener más información sobre esta característica, visite el [sitio de Citrix ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.citrix.com/products/netscaler-adc/){: new_window}
+Sí, esta característica se conoce como NetScaler Gateway™ y está incluida en todas las ediciones.  Para obtener más información sobre esta característica, visite el [sitio de Citrix ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.citrix.com/products/netscaler-adc/){: new_window}

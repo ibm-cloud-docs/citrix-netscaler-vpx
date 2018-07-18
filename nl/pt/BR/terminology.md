@@ -21,15 +21,15 @@ Um SNIP é o endereço IP de origem de um pacote usado pelo NetScaler sempre que
 
 ### IP virtual (VIP)
 
-Um VIP é um endereço IP para o qual um cliente envia solicitações. O NetScaler finaliza a conexão do cliente no VIP e, em seguida, inicia uma conexão com um servidor configurado no serviço de balanceamento de carga. Isso pode ser um endereço IP público para tráfego público (Internet) ou um endereço IP privado para tráfego privado (intranet).
+Um VIP é um endereço IP para o qual um cliente envia solicitações. O NetScaler finaliza a conexão do cliente no VIP e, em seguida, inicia uma conexão com um servidor configurado no serviço de balanceamento de carga.  Isso pode ser um endereço IP público para tráfego público (Internet) ou um endereço IP privado para tráfego privado (intranet).
 
-### Servidor virtual
+### Virtual Server
 
-Um Servidor virtual, em termos de balanceamento de carga, refere-se à combinação do endereço IP, da porta e do protocolo ao qual um cliente IP se conecta e onde as solicitações de tráfego são enviadas para um aplicativo específico que está tendo a carga balanceada pelo NetScaler.
+Um Virtual Server, em termos de balanceamento de carga, refere-se à combinação do endereço IP, da porta e do protocolo ao qual um cliente IP se conecta e onde as solicitações de tráfego são enviadas para um aplicativo específico que está tendo a carga balanceada pelo NetScaler.
 
 ### Serviço
 
-A combinação de endereço IP, porta e protocolo usada para rotear solicitações para um servidor específico. Um Serviço, uma vez configurado, deve posteriormente ser associado a um Servidor virtual.
+A combinação de endereço IP, porta e protocolo usada para rotear solicitações para um servidor específico. Um Serviço, uma vez configurado, deve posteriormente ser associado a um Virtual Server.
 
 ### Objeto do servidor
 

@@ -12,7 +12,7 @@ lastupdated: "2017-11-02"
 
 在 NetScaler 中執行 `http://` 到 `https://` 重新導向的最常見方法是運用備份/重新導向特性，而此特性一開始是要重新導向至「伺服器關閉」或「維護」頁面。  
 
-若要這麼做，您必須建立虛擬伺服器，此虛擬伺服器會接聽埠 80、未連結實際服務，而且備份重新導向至特定 `https://` URL。實際虛擬伺服器一律會「關閉」（未連結即時服務），因此備份重新導向一律為作用中。缺點是您必須指定明確重新導向 URL（例如，https://web.example.com），因此，嘗試存取 http://mail.example.com 的使用者會被重新導向至 https://web.example.com。
+若要這麼做，您必須建立虛擬伺服器，此虛擬伺服器會接聽埠 80、未連結實際服務，而且備份重新導向至特定 `https://` URL。實際虛擬伺服器一律會「關閉」（未連結即時服務），因此備份重新導向一律為作用中。缺點是您必須指定明確重新導向 URL（例如，`https://web.example.com`），因此，嘗試存取 `http://mail.example.com` 的使用者會被重新導向至 `https://web.example.com`。
 
 執行 `http://` 到 `https://` 重新導向的替代方法會使用 NetScaler 的「回應者」特性，同時保留主機名稱/URL，而此特性會精心製作 HTTP 重新導向訊息（包括原始資訊）。這透過幾個簡單的步驟完成；在下面的範例中，請務必將 "w.x.y.z" 取代為 HTTPS VIP 的 IP 位址：
 
@@ -61,7 +61,7 @@ wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
 curl -v http://w.x.y.z
 ```
 
-將 IP 位址 `w.x.y.z` 替換為 URL 主機名稱（例如，http://mail.example.com 或 http://web.example.com），並確認 "Location" 輸出反映一開始指定的相同主機名稱，但開頭為 "https"，如下列範例所示：
+將 IP 位址 `w.x.y.z` 替換為 URL 主機名稱（例如，`http://mail.example.com` 或 `http://web.example.com`），並確認 "Location" 輸出反映一開始指定的相同主機名稱，但開頭為 "https"，如下列範例所示：
 
     wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
     --2012-06-18 08:42:20--  http://w.x.y.z/

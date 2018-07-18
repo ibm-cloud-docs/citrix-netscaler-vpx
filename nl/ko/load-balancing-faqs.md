@@ -15,7 +15,7 @@ lastupdated: "2017-11-02"
 
 ## Citrix NetScaler VPX는 무엇입니까?
 
-Citrix NetScaler는 성능을 가속화하고 애플리케이션 가용성 및 보호를 보장하며 운영 비용을 크게 줄여서 애플리케이션을 5배 향상시키는 ADC(Application Delivery Controller)입니다. 애플리케이션 요구사항을 충족하는 최적의 Citrix NetScaler 에디션을 선택하여 성능 요구사항에 맞게 적절한 전용 시스템에 배치하십시오. Citrix NetScaler에 대해 자세히 알아보려면 Citrix 웹 사이트에서 [NetScaler 페이지 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.citrix.com/products/netscaler-application-delivery-controller/overview.html){: new_window}를 참조하십시오. 
+Citrix NetScaler는 성능을 가속화하고 애플리케이션 가용성 및 보호를 보장하며 운영 비용을 크게 줄여서 애플리케이션을 5배 향상시키는 ADC(Application Delivery Controller)입니다. 애플리케이션 요구사항을 충족하는 최적의 Citrix NetScaler 에디션을 선택하여 성능 요구사항에 맞게 적절한 전용 시스템에 배치하십시오. Citrix NetScaler에 대해 자세히 알아보려면 Citrix 웹 사이트에서 [NetScaler 페이지 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.citrix.com/products/netscaler-application-delivery-controller/overview.html){: new_window}를 참조하십시오.
 
 ## 로드 밸런싱이 필요한 이유는 무엇입니까?
 
@@ -28,7 +28,7 @@ Citrix NetScaler는 성능을 가속화하고 애플리케이션 가용성 및 �
 
 ## {{site.data.keyword.BluSoftlayer_notm}}에서 사용 가능한 로드 밸런싱 옵션의 수는 몇 개입니까?
 
-IBM의 로드 밸런서 오퍼링에 대한 자세한 비교는 [로드 밸런서 탐색](https://dev-console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html#explore-load-balancers)을 참조하십시오.
+IBM의 로드 밸런서 오퍼링에 대한 자세한 비교는 [Load Balancers 탐색](https://dev-console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html#explore-load-balancers)을 참조하십시오.
 
 ## NetScaler가 IPv6를 지원합니까?
 
@@ -62,4 +62,4 @@ Platinum.
 
 ## {{site.data.keyword.BluSoftlayer_notm}} NetScaler 오퍼링에 SSL VPN 기능이 포함되어 있습니까?
 
-예, 이 기능은 NetScaler Gateway™로 알려져 있으며 모든 에디션에 포함되어 있습니다. 이 기능에 대한 자세한 정보를 보려면 [Citrix 웹 사이트 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.citrix.com/products/netscaler-adc/){: new_window}를 방문하십시오.
+예, 이 기능은 NetScaler Gateway™로 알려져 있으며 모든 에디션에 포함되어 있습니다.  이 기능에 대한 자세한 정보를 보려면 [Citrix 웹 사이트 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.citrix.com/products/netscaler-adc/){: new_window}를 방문하십시오.

@@ -11,13 +11,13 @@ lastupdated: "2017-12-06"
 
 O Global server load balancing (GSLB) é um método para dividir o tráfego entre múltiplos servidores que usa DNS e localizações geográficas como o meio de determinar onde o tráfego do servidor deve ser enviado. Em geral, um balanceador de carga global envia uma solicitação do cliente para um servidor que está mais próximo do cliente, reduzindo a latência e melhorando o desempenho.
 
-Talvez uma implementação completa de uma solução de balanceamento de carga global não seja necessária. O GSLB requer múltiplas instâncias de um dispositivo adequado que possa executar essa função e dependendo de suas necessidades, outras soluções podem ser mais atraentes para você. Se você precisar de websites e aplicativos inteiros, o GSLB é uma boa opção. Se precisar apenas de partes de seu conteúdo, como imagens, vídeos ou outros arquivos grandes, uma [Rede de entrega de conteúdo](https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-content-delivery-networks-cdn-){: new_window} poderá ser mais adequada (e mais fácil de implementar).
+Talvez uma implementação completa de uma solução de balanceamento de carga global não seja necessária. O GSLB requer múltiplas instâncias de um dispositivo adequado que possa executar essa função e dependendo de suas necessidades, outras soluções podem ser mais atraentes para você. Se você precisar de websites e aplicativos inteiros, o GSLB é uma boa opção. Se precisar apenas de partes de seu conteúdo, como imagens, vídeos ou outros arquivos grandes, uma [Content Delivery Network](https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-content-delivery-networks-cdn-){: new_window} poderá ser mais adequada (e mais fácil de implementar).
 
 ## Citrix NetScaler VPX
 
 O Citrix NetScaler VPX é o único dispositivo configurável pelo cliente que executa o verdadeiro balanceamento de carga global. O NetScaler é um dispositivo multifuncional que pode executar consultas de balanceamento de carga global baseadas no DNS. É possível apontar para o NetScaler como um servidor DNS e o dispositivo verificará os servidores nos quais está configurado para balancear a carga, executará um cálculo de distância e retornará um registro com o IP do servidor mais próximo da solicitação do cliente.
 
-Na configuração do balanceamento de carga global, há múltiplos dispositivos NetScaler em diferentes data centers, cada um fornecendo serviços de balanceamento de carga local para os servidores implícitos. Os dispositivos são configurados para conversar entre si para que troquem informações de estado em cada servidor designado à rotação do balanceador de carga global. Qualquer solicitação de DNS que venha para esses NetScalers configurados pode retornar um registro adequado para um servidor que esteja on-line e seja responsivo. Qualquer servidor não responsivo é removido da rotação e outro é selecionado.
+Para balanceamento de carga global, você teria uma configuração do dispositivo NetScaler em cada data center. Cada configuração do dispositivo NetScaler pode ser um único Netscaler ou um par de Netscalers em um par de HA, dependendo de seus requisitos, fornecendo serviços de balanceamento de carga local para os servidores por trás deles. Os dispositivos são configurados para conversar entre si para que troquem informações de estado em cada servidor designado à rotação do balanceador de carga global. Qualquer solicitação de DNS que venha para esses NetScalers configurados pode retornar um registro adequado para um servidor que esteja on-line e seja responsivo. Qualquer servidor não responsivo é removido da rotação e outro é selecionado.
 
 Deve-se já ter o balanceamento de carga configurado, mesmo se apenas um servidor estiver sendo balanceado. Você precisará de endereços IP adicionais para alguns serviços, isto é, o IP do site do GSLB. Esse IP é usado pelo NetScaler para se comunicar com os outros NetScalers no protocolo de balanceamento de carga global. 
 
@@ -54,7 +54,7 @@ O procedimento de balanceamento global a seguir usa:
 
 11. No campo de endereço do site, coloque o endereço IP do site do outro NetScaler e dê o nome do site do outro NetScaler a ele e clique em **Incluir**. O site será preenchido com uma opção para clicar no '+' verde novamente. Clique no sinal de mais do site remoto para incluir outro site. Insira o IP do serviço vserver (aquele para os servidores de carga balanceada, não o IP do site do GSLB) e a porta, clique em **Criar** e **Fechar**, **Avançar**, **Concluir** e, em seguida, **Sair**.
 
-Se tudo estiver funcionando até este ponto e ambos os servidores estiverem configurados, tudo deverá ter um status de verde em Servidores virtuais, serviços e sites do GSLB. Você observará que agora haverá duas entradas nos serviços do GSLB em ambas as máquinas se elas estiverem sincronizadas corretamente. Neste ponto, os servidores estão agora se comunicando entre si.
+Se tudo estiver funcionando até este ponto e ambos os servidores estiverem configurados, tudo deverá ter um status de verde em Virtual Server, serviços e sites do GSLB. Você observará que agora haverá duas entradas nos serviços do GSLB em ambas as máquinas se elas estiverem sincronizadas corretamente. Neste ponto, os servidores estão agora se comunicando entre si.
 
 Agora você precisa configurar o DNS.
 
@@ -83,7 +83,7 @@ As Redes de entrega de conteúdo (CDNs) permitem fazer upload ou fornecer um ser
 
 Para obter mais detalhes sobre a CDN, consulte a [documentação](https://console.bluemix.net/docs/infrastructure/CDN/getting-started.html#getting-started).
 
-### Armazenamento de objeto
+### Object Storage
 
 O Object Storage do {{site.data.keyword.BluSoftlayer_notm}} pode ser configurado para usar múltiplas localizações geográficas em vários data centers para fornecer conteúdo. Um aplicativo geograficamente ciente pode executar consultas de localização na solicitação do cliente e retornar uma URL para o Object Storage que está próximo do cliente. O Object Storage também será fornecido com uma CDN de front-end, se necessário, para fornecer serviços adicionais de armazenamento em cache, conforme observado acima.
 

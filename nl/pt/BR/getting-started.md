@@ -10,7 +10,21 @@ lastupdated: "2017-11-02"
 
 # Introdução ao dispositivo de software Citrix NetScaler VPX
 
-Para iniciar a utilização do dispositivo de software Citrix NetScaler VPX, navegue para a página de pedido no Portal do cliente:
+A implementação de um Citrix NetScaler VPX em sua solução do {{site.data.keyword.BluSoftlayer_notm}} acelera a entrega de aplicativos da web, impulsiona o desempenho e assegura que seus aplicativos e serviços em nuvem permaneçam otimizados, disponíveis e seguros. Se você tiver cargas de trabalho desafiadoras, como jogos, big data e analítica ou nuvens privadas, o Citrix NetScaler VPX poderá ajudá-lo a entregar sua solução quando, onde e como seus usuários precisarem mais.
+
+## Antes
+de Começar
+Para começar a usar o Citrix NetScaler VPX, será necessário saber as informações a seguir:
+
+* Suas informações de login do Portal do cliente do IBM Cloud
+* O local de implementação para o balanceador de carga
+* Qual tipo de Netscaler se ajusta melhor às suas necessidades (para obter mais informações, consulte [Explorar Load Balancers](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html))
+* O número de endereços IP públicos necessários
+* A VLAN na qual você deseja designar o balanceador de carga
+
+## Solicitando um Citrix NetScaler VPX
+
+Para solicitar um dispositivo de software Citrix NetScaler VPX, navegue para a página de pedido no Portal do cliente:
 
 1. Em seu navegador, abra [Portal do Cliente ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://control.softlayer.com/){: new_window} e efetue login em sua conta.
 2. Na navegação do Portal do cliente, selecione **Dispositivos > Lista de dispositivos** e clique no link **Pedir dispositivos**. 
@@ -22,8 +36,10 @@ Para iniciar a utilização do dispositivo de software Citrix NetScaler VPX, nav
 7. Clique em **Continue**.
 8. Insira as informações requeridas por ARIN (ou a organização equivalente em sua região de implementação) para os endereços IP solicitados.
 9. Insira suas informações de contato. 
-10. Selecione sua VLAN.
+10. Selecione sua VLAN. 
 	Para minimizar a latência e assegurar a utilização otimizada de seus recursos de rede, designe o Citrix NetScaler VPX à mesma VLAN dos servidores nos quais o tráfego será distribuído. 
 11. Revise o pedido, aceite os termos e clique em **Fazer pedido**. O dispositivo de software Citrix NetScaler VPX é implementado com suas configurações selecionadas. 
 
-**Nota**: para saber mais sobre a configuração do dispositivo Citrix NetScaler VPX, visite a [página de documentação do Citrix ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://docs.citrix.com/en-us/netscaler.html). Para obter assistência adicional, entre em contato com o suporte e vendas do {{site.data.keyword.BluSoftlayer_notm}}.
+## O que vem a seguir
+
+É possível saber mais sobre os [recursos](about-citrix-netscaler-vpx.html) do Citrix Netscaler VPX, revisar a [terminologia](terminology.html) específica do Netscaler ou começar a [configurar](netscaler-basic-configuration.html) o seu Netscaler.

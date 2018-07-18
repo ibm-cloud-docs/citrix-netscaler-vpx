@@ -61,9 +61,7 @@ wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
 curl -v http://w.x.y.z
 ```
 
-将 IP 地址 `w.x.y.z` 替换为 URL 主机名（例如，http://mail.example.com 或 http://web.example.com），并确认“位置”输出是否反映出最初指定的相同主机名，但在以下示例中各示例的“位置”均以“https”开头：
-
-    wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
+将 IP 地址“w.x.y.z”替换为 URL 主机名（例如，http://mail.example.com 或 http://web.example.com），并确认“位置”输出是否反映出最初指定的相同主机名，但在以下示例中各示例的“位置”均以“https”开头：wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
     --2012-06-18 08:42:20--  http://w.x.y.z/
     Connecting to w.x.y.z:80... connected.
     HTTP request sent, awaiting response...
@@ -71,9 +69,7 @@ curl -v http://w.x.y.z
       Location: https://w.x.y.z/
       Connection: close
       Cache-Control: no-cache
-      Pragma: no-cache
-
-    wget  -S --max-redirect 0 -O /dev/null http://web.example.com
+      Pragma: no-cachewget  -S --max-redirect 0 -O /dev/null http://web.example.com
     --2012-06-18 08:42:20--  http://web.example.com/
     Connecting to w.x.y.z:80... connected.
     HTTP request sent, awaiting response...
@@ -81,9 +77,7 @@ curl -v http://w.x.y.z
       Location: https://web.example.com/
       Connection: close
       Cache-Control: no-cache
-      Pragma: no-cache
-
-    wget  -S --max-redirect 0 -O /dev/null http://mail.example.com
+      Pragma: no-cachewget  -S --max-redirect 0 -O /dev/null http://mail.example.com
     --2012-06-18 08:42:20--  http://mail.example.com/
     Connecting to w.x.y.z:80... connected.
     HTTP request sent, awaiting response...

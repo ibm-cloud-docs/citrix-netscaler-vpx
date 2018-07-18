@@ -12,8 +12,6 @@ lastupdated: "2017-11-02"
 
 Citrix NetScaler VPX 是專用虛擬軟體應用裝置，可同時在公用及專用 IBM Cloud 網路上提供負載平衡。 
 
-在 {{site.data.keyword.BluSoftlayer_notm}} 解決方案中部署 Citrix NetScaler VPX 可加速 Web 應用程式遞送、提高效能，並確保雲端應用程式及服務保持最佳化、可用與安全。如果您有具挑戰性的工作負載（例如遊戲、海量資料與分析或專用雲端），Citrix NetScaler VPX 可協助您依使用者最需要的時間、地點及方式提供解決方案。
-
 ## 特性
 
 * 唯一可同時在公用及專用網路上對資料流量進行負載平衡的產品

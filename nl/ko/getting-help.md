@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-12-06"
+  years: 2017,2018
+lastupdated: "2018-02-28"
+
 
 ---
 
@@ -20,8 +21,8 @@ Citrix NetScaler VPX 사용 중에 문제점이 발생하거나 질문이 있는
 
 포럼을 사용하여 질문을 할 때는 IBM Cloud 개발 팀에서 확인할 수 있도록 질문에 태그를 지정하십시오.
 
-* Citrix NetScaler VPX에 대한 기술적인 질문이 있는 경우 [Stack Overflow](https://stackoverflow.com/search?q=citrix-vpx+ibm-bluemix)에 질문을 게시하고 해당 질문에 "citrix-vpx" 및 "ibm-bluemix" 태그를 지정하십시오.
-* 서비스 및 시작하기 지시사항에 대한 질문의 경우에는 [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/citrix-vpx.html?smartspace=bluemix) 포럼을 사용하십시오. "citrix-vpx" 및 "bluemix" 태그를 포함하십시오.
+* Citrix NetScaler VPX에 대한 기술적인 질문이 있는 경우 [Stack Overflow](https://stackoverflow.com/search?q=citrix-vpx+ibm-cloud)에 질문을 게시하고 해당 질문에 "citrix-vpx" 및 "ibm-cloud" 태그를 지정하십시오.
+* 서비스 및 시작하기 지시사항에 대한 질문의 경우에는 [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/citrix-vpx.html?smartspace=ibm-cloud) 포럼을 사용하십시오. "citrix-vpx" 및 "ibm-cloud" 태그를 포함시키십시오.
 
 포럼 사용에 대한 세부사항은 [도움 받기](https://console.bluemix.net/docs/support/index.html#getting-help)를 참조하십시오.
 

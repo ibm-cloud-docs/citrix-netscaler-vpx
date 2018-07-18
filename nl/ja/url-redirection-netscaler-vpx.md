@@ -12,20 +12,18 @@ lastupdated: "2017-11-02"
 
 NetScaler で `http://` から `https://` へのリダイレクトを実行する最も一般的な方法は、元々「サーバー・ダウン」ページまたは「保守」ページにリダイレクトするためのものであったバックアップ/リダイレクト機能を利用することです。  
 
-これを行うには、実際のサービスがバインドされていないポート 80 で listen する仮想サーバーを作成し、特定の `https://` URL へのバックアップ・リダイレクトを作成する必要があります。実際の仮想サーバーは常に「ダウン」(稼働中のサービスがバインドされていない状態) であるため、バックアップ・リダイレクトは常にアクティブです。欠点は、明示的なリダイレクト URL (例えば、https://web.example.com) を指定する必要があるということと、結果として、http://mail.example.com にアクセスしようとしているユーザーが https://web.example.com にリダイレクトされることです。
+これを行うには、実際のサービスがバインドされていないポート 80 で listen する仮想サーバーを作成し、特定の `https://` URL へのバックアップ・リダイレクトを作成する必要があります。 実際の仮想サーバーは常に「ダウン」(稼働中のサービスがバインドされていない状態) であるため、バックアップ・リダイレクトは常にアクティブです。 欠点は、明示的なリダイレクト URL (例えば、https://web.example.com) を指定する必要があるということと、結果として、http://mail.example.com にアクセスしようとしているユーザーが https://web.example.com にリダイレクトされることです。
 
-ホスト名/URL を保持しながら `http://` から `https://` へのリダイレクトを実行する別の方法では、NetScaler の「レスポンダー」機能を使用して、元の情報を含む HTTP リダイレクト・メッセージを作成します。これは、いくつかの簡単なステップで行います。以下の例では、「w.x.y.z」を HTTPS VIP の IP アドレスに必ず置き換えてください。
+ホスト名/URL を保持しながら `http://` から `https://` へのリダイレクトを実行する別の方法では、NetScaler の「レスポンダー」機能を使用して、元の情報を含む HTTP リダイレクト・メッセージを作成します。 これは、いくつかの簡単なステップで行います。以下の例では、「w.x.y.z」を HTTPS VIP の IP アドレスに必ず置き換えてください。
 
-1. 常に成功するモニター・タイプを準備します (NetScaler が稼働している限り、localhost の ping は常にオンラインになる)。
-	```
+1. 常に成功する (NetScaler が稼働している限り、localhost の ping は常にオンラインになる) モニター・タイプを準備します。```
 	Add lb monitor localhost_ping PING -LRTM ENABLED -destIP 127.0.0.1
 	```
 	
-2. 決して使用されない IP を使用して偽のサービスを定義します (決してオンラインにならない、`1.1.1.1` のサーバーの IP アドレス)。
-	```
+2. 決して使用されない IP (決してオンラインにならない、`1.1.1.1` のサーバーの IP アドレス) を使用して偽のサービスを定義します。```
 	Add service Always_UP_service 1.1.1.1 HTTP 80 -gslb NONE -maxClient 0 -maxReq 0 -cip ENABLED dummy -usip NO -sp OFF -cltTimeout 180 -svrTimeout 360 -CKA NO -TCPB NO -CMP YES
 	```
-3. 偽のサービスを、以前に作成したモニターにバインドして、常に稼働中と報告されるようにします。
+3. 偽のサービスを、以前に作成したモニターにバインドして、常に、稼働中と報告されるようにします。
 	```
 	bind lb monitor localhost_ping Always_UP_service
 	```
@@ -45,7 +43,7 @@ NetScaler で `http://` から `https://` へのリダイレクトを実行す�
 	```
 	add responder policy http_to_https_pol HTTP.REQ.IS_VALID http_to_https_actn NOOP
 	```
-6. NetScaler のレスポンダー機能を有効にします (この機能はデフォルトでは無効になっているため、このステップは不可欠です)。
+6. NetScaler のレスポンダー・フィーチャーを有効にします (このフィーチャーはデフォルトでは無効になっているため、このステップは不可欠です)。
 	```
   enable ns feature responder
   ```
@@ -61,7 +59,7 @@ wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
 curl -v http://w.x.y.z
 ```
 
-IP アドレス `w.x.y.z` を URL ホスト名 (例えば、http://mail.example.com や http://web.example.com) に置き換え、「Location」出力が、最初に指定されたものと同じホスト名を反映しているが、以下の例のように「https」で開始されていることを確認します。
+IP アドレス「w.x.y.z」を URL ホスト名 (例えば、http://mail.example.com や http://web.example.com) に置き換え、「Location」出力が、最初に指定されたものと同じホスト名を反映しているが、以下の例のように「https」で開始されていることを確認します。
 
     wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
     --2012-06-18 08:42:20--  http://w.x.y.z/

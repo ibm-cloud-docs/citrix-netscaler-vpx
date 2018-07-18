@@ -10,7 +10,20 @@ lastupdated: "2017-11-02"
 
 # Citrix NetScaler VPX ソフトウェア・アプライアンスの使用開始
 
-Citrix NetScaler VPX ソフトウェア・アプライアンスの使用を開始するには、カスタマー・ポータルのオーダー・ページに移動します。
+{{site.data.keyword.BluSoftlayer_notm}}  ソリューションに Citrix NetScaler VPX をデプロイすると、Web アプリケーションの配信が加速され、パフォーマンスが向上するとともに、クラウド・アプリケーションとサービスが最適化されて、使用可能でセキュアな状態に維持されます。 ゲーム、ビッグデータ、分析、プライベート・クラウドといった困難なワークロードがある場合でも、Citrix NetScaler VPX は、ユーザーが最も必要とするタイミング、場所、方法でソリューションを実現できるよう寄与します。
+
+## 始める前に
+Citrix NetScaler VPX を開始するには、以下の情報を確認する必要があります。
+
+* お客様の IBM Cloud カスタマー・ポータルのログイン情報
+* ロード・バランサーのデプロイメントの場所
+* お客様のニーズに最適な Netscaler タイプ (詳しくは、[ロード・バランサーの探索](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html)を参照してください)
+* 必要なパブリック IP アドレスの数
+* ロード・バランサーの割り当て先となる VLAN
+
+## Citrix NetScaler VPX の注文
+
+Citrix NetScaler VPX ソフトウェア・アプライアンスを注文するには、カスタマー・ポータルの注文ページに移動します。
 
 1. ブラウザーから[「カスタマー・ポータル」![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://control.softlayer.com/){: new_window}を開き、ご使用のアカウントにログインします。
 2. カスタマー・ポータルのナビゲーションで**「デバイス (Devices)」>「デバイス・リスト (Devices List)」**を選択し、**「デバイスの発注 (Order Device)」**リンクをクリックします。 
@@ -22,7 +35,10 @@ Citrix NetScaler VPX ソフトウェア・アプライアンスの使用を開�
 7. **「続行 (Continue)」**をクリックします。
 8. 要求した IP アドレスの ARIN (または、デプロイメント領域内の同等の組織) に必要な情報を入力します。
 9. 連絡先情報を入力します。 
-10. ご使用の VLAN を選択します。待ち時間を最小化し、ネットワーク・リソースの使用効率を最適化するには、トラフィックが分散されるサーバーと同じ VLAN に Citrix NetScaler VPX を割り当てます。 
+10. ご使用の VLAN を選択します。 
+	待ち時間を最小化し、ネットワーク・リソースの使用効率を最適化するには、トラフィックが分散されるサーバーと同じ VLAN に Citrix NetScaler VPX を割り当てます。 
 11. オーダーを確認し、ご利用条件に同意した上で、**「オーダーの実行 (Place Order)」**をクリックします。 Citrix NetScaler VPX ソフトウェア・アプライアンスが、選択した設定でデプロイされます。 
 
-**メモ**: Citrix NetScaler VPX デバイスの構成について詳しくは、[「Citrix 資料ページ」![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://docs.citrix.com/en-us/netscaler.html)を参照してください。さらに支援が必要な場合は、{{site.data.keyword.BluSoftlayer_notm}} のサポートおよび営業担当員にお問い合わせください。
+## 次に行うこと
+
+Citrix Netscaler VPX [フィーチャー](about-citrix-netscaler-vpx.html)の詳細や特定の Netscaler [用語](terminology.html)を確認したり、お客様の Netscaler の[構成](netscaler-basic-configuration.html)を開始したりできます。

@@ -18,9 +18,9 @@ Normalmente, se combina un proxy con un cortafuegos para garantizar la seguridad
 
 ## Paso 1: VIP de solicitud para utilizar en la red privada 
 
-Cuando se pide un equilibrador de carga de Citrix NetScaler VPX desde el portal del cliente de {{site.data.keyword.BluSoftlayer_notm}}, se presupone que se está solicitando un proxy inverso. Se le solicitará al solicitante el número de direcciones IP "públicas" a utilizar como IP virtual (VIP).
+Cuando se pide un equilibrador de carga de Citrix NetScaler VPX desde el Portal de clientes de {{site.data.keyword.BluSoftlayer_notm}}, se presupone que se está solicitando un proxy inverso. Se le solicitará al solicitante el número de direcciones IP "públicas" a utilizar como IP virtual (VIP).
 
-En el caso de un proxy de reenvío, las VIP deben configurarse en la red privada. Sebe abrirse una incidencia de soporte para solicitar las VIP para la red privada. El número de VIP solicitado determinará el tamaño de la subred solicitada en la incidencia. La información de subred se devolverá en la incidencia.
+En el caso de un proxy de reenvío, las VIP deben configurarse en la red privada. Debe abrirse una incidencia de soporte para solicitar las VIP para la red privada. El número de VIP solicitado determinará el tamaño de la subred solicitada en la incidencia. La información de subred se devolverá en la incidencia.
 
 En nuestro ejemplo hemos solicitado una subred `/29`, que ha dado lugar a lo siguiente:
 

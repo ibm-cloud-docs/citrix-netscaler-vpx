@@ -53,7 +53,7 @@ Un método alternativo para realizar una redirección de `http://` a `https://`,
 	```
 	bind lb vserver http_to_htps_vserver -policyName http_to_https_pol -priority 1 -gotoPriorityExpression END
 	```
-8. Puede confirmar que funciona utilizando utilidades de línea de mandatos como 'wget' o 'curl' de la siguiente manera:
+8. Puede confirmar que funciona utilizando utilidades de línea de mandatos como ‘wget’ o ‘curl’ de la siguiente manera:
 
 ```
 wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
@@ -61,7 +61,7 @@ wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
 curl -v http://w.x.y.z
 ```
 
-Sustituya la dirección IP `w.x.y.z` para el nombre de host del URL (por ejemplo, http://mail.example.com o http://web.example.com) y confirme que la salida "Location" refleja el mismo nombre que ha especificado inicialmente, pero que empieza por "https" en los siguientes ejemplos:
+Sustituya la dirección IP `w.x.y.z` para el nombre de host del URL (por ejemplo, http://mail.example.com o http://web.example.com) y confirme que la salida “Location” refleja el mismo nombre que ha especificado inicialmente, pero que empieza por “https” en los siguientes ejemplos:
 
     wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
     --2012-06-18 08:42:20--  http://w.x.y.z/

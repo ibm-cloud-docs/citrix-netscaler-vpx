@@ -1,8 +1,8 @@
 ---
 copyright:
-  years: 1994, 2017
+  years: 1994, 2018
 
-lastupdated: "2017-11-02"
+lastupdated: "2018-06-28"
 ---
 
 {:shortdesc: .shortdesc}
@@ -23,11 +23,11 @@ Antes de iniciar a configuração de HA, assegure-se de executar as ações de p
 
 Depois de ordenar os dois servidores Netscaler VPX na VLAN necessária e de ordenar as sub-redes VIP e SNIP para atender aos pré-requisitos de sua configuração do par HA, será possível continuar com o seguinte:
 
-1. Abra duas janelas do navegador e efetue login na interface avançada em ambos os NetScalers. No NetScaler secundário, acesse **Sistema > Usuários** e configure a senha raiz como a mesma do NetScaler primário. Em seguida, atualize a senha no arquivo no portal do {{site.data.keyword.BluSoftlayer_notm}} na página de detalhes do dispositivo para corresponder à senha configurada para o secundário.
+1. Abra duas janelas do navegador e efetue login na interface avançada em ambos os NetScalers. No NetScaler secundário, acesse **Sistema > Administração do usuário > Usuários** e configure a senha raiz como a mesma senha do NetScaler primário. Em seguida, atualize a senha no arquivo no portal do {{site.data.keyword.BluSoftlayer_notm}} na página de detalhes do dispositivo para corresponder à senha configurada para o secundário.
 
-2. No VPX que você deseja que seja o secundário, clique em **Sistema > Alta disponibilidade** e, em seguida, clique com o botão direito na primeira linha e clique em **Abrir**. Selecione **Permanecer secundário** na caixa suspensa de configuração de status HA e clique em **OK**.
+2. No VPX que você deseja que seja secundário, clique em **Sistema > Alta disponibilidade** e, em seguida, clique com o botão direito na primeira linha e clique em **Editar**. Selecione **Permanecer secundário** na caixa suspensa de configuração Status de alta disponibilidade e clique em **OK**.
 
-3. Selecione **Incluir**. Insira o endereço IP do sistema do outro VPX (isso está localizado na guia Alta disponibilidade no primário) e insira os detalhes do login raiz na parte inferior. Deixe a caixa **INC** desmarcada. Clique em **OK**. 
+3. Selecione **Incluir**. Insira o endereço IP do sistema do outro VPX (isso está localizado na guia Alta disponibilidade no primário) e insira os detalhes do login raiz na parte inferior. Deixe a caixa **Ativar INC** desmarcada. Clique em **OK**. 
 	
 	Se você recebe um erro alegando que os IPs não estão na mesma sub-rede, é possível que ambos os servidores VPX não estejam na mesma VLAN. Caso contrário, você deverá agora ser capaz de abrir o servidor principal e selecionar o botão **Atualizar** para ver ambos os servidores operando em Alta disponibilidade. 
 
@@ -41,7 +41,7 @@ Depois de ordenar os dois servidores Netscaler VPX na VLAN necessária e de orde
 
 4. No VPX primário você deve ver que o VPX remoto está agora sendo sincronizado. Acesse o servidor secundário e verifique a configuração **Rede > IPs**. Você deverá ver o VIP do servidor principal e outros IPs listados como passivos.
 
-6. Retorne para **Sistema > Alta disponibilidade** no servidor secundário e clique em **Abrir**. Selecione **ATIVADO** na caixa suspensa e pressione **OK**.
+6. Retorne para **Sistema > Alta disponibilidade** no servidor secundário e clique em **Editar**. Selecione **ATIVADO** na caixa suspensa e pressione **OK**.
 
 7. Force um teste de failover. Atualize a tela e observe os endereços IP se tornarem ativos no secundário. Efetue failover novamente e observe se tornarem passivos. Execute ping dos IPs para certificar-se de que funcionem.
 

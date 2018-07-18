@@ -17,7 +17,7 @@ Potrebbe non servirti un'implementazione completa di una soluzione di bilanciame
 
 Citrix NetScaler VPX è il solo dispositivo che può essere configurato dal cliente che esegue un reale bilanciamento del carico di lavoro globale. NetScaler è un'applicazione multifunzione che può eseguire ricerche di bilanciamento del carico di lavoro basate su DNS. Puoi puntare al NetScaler come un server DNS; il dispositivo controllerà i server di cui, secondo la sua configurazione, deve bilanciare il carico, eseguirà un calcolo delle distanze e restituirà un record con l'IP del server più vicino alla richiesta client.
 
-Nella configurazione del bilanciamento del carico globale, hai più applicazioni NetScaler in diversi data center e ciascuna di esse fornisce dei servizi di bilanciamento del carico locali per i server dietro di loro. I dispositivi sono configurati per comunicare tra loro in modo da scambiare informazioni sullo stato su ciascun server assegnato alla rotazione del programma di bilanciamento del carico globale. Qualsiasi richiesta DNS che arriva su questi NetScaler configurati può restituire un corretto record per un server che è online e reattivo. Un server non reattivo viene rimosso dalla rotazione e ne viene selezionato una altro.
+Per il bilanciamento del carico globale, dovresti avere una configurazione dell'applicazione NetScaler in ogni data center. Ogni configurazione dell'applicazione NetScaler può essere un solo o una coppia di Netscaler in una coppia HA, a seconda dei tuoi requisiti, che fornisce dei servizi di bilanciamento del carico locali per i server dietro di loro. I dispositivi sono configurati per comunicare tra loro in modo da scambiare informazioni sullo stato su ciascun server assegnato alla rotazione del programma di bilanciamento del carico globale. Qualsiasi richiesta DNS che arriva su questi NetScaler configurati può restituire un corretto record per un server che è online e reattivo. Un server non reattivo viene rimosso dalla rotazione e ne viene selezionato una altro.
 
 Devi già disporre del bilanciamento del carico configurato, anche se il bilanciamento riguarda solo un singolo server. Ti occorreranno degli ulteriori indirizzi IP per alcuni servizi, specificamente l'IP del sito GSLB. Questo IP viene utilizzato da NetScaler per comunicare con gli altri NetScaler nel protocollo di bilanciamento del carico globale. 
 
@@ -36,9 +36,9 @@ La seguente procedura di bilanciamento del carico utilizza:
 
 	Dovresti vedere il sito elencato con uno stato verde. Non aggiungere ancora un sito remoto.
 
-3. Vai a **Traffic Management > GSLB** e seleziona **GSLB Wizard**. Fai clic su **Next**. Immetti il nome host di cui bilancerai il carico (in questo esempio, `gslb.tsstesting.com`) Lascia il tipo di record (Record Type) come A e il tipo di servizio (Service Type) ANY. Il nome del server virtuale verrà compilato automaticamente. Fai clic su **Next**. 
+3. Vai a **Traffic Management > GSLB** e seleziona **GSLB Wizard**. Fai clic su **Next**. Immetti il nome host di cui bilancerai il carico (in questo esempio, `gslb.tsstesting.com`) Lascia il tipo di record (Record Type) come A e il tipo di servizio (Service Type) ANY. Il nome del server virtuale verrà compilato automaticamente. Fai clic su **Next**.
 
-4. Scegli la tua forma di metodo di bilanciamento e persistenza proprio come faresti con il normale bilanciamento del carico. Fai clic su **Next**. 
+4. Scegli la tua forma di metodo di bilanciamento e persistenza proprio come faresti con il normale bilanciamento del carico. Fai clic su **Next**.
 
 5. Il sito è già compilato, quindi non hai bisogno di aggiungere altro. Fai invece clic sul segno '+' verde accanto al nome del primo sito. Seleziona il server virtuale su tale dispositivo dall'elenco e fai clic su **Create**. Dovresti vedere che il sito è configurato con l'IP del sito e l'IP del server virtuale della tua configurazione con il carico bilanciato, e che è verde. Fai clic su **Next**, **Finish** e **Exit**.
 
@@ -87,4 +87,4 @@ Per ulteriori dettagli sulla CDN, consulta la [documentazione](https://console.b
 
 Object Storage di {{site.data.keyword.BluSoftlayer_notm}} può essere configurato per utilizzare più ubicazioni geografiche in diversi data center per fornire il contenuto. Un'applicazione in grado di riconoscere le aree geografiche può eseguire delle ricerche di ubicazioni sulla richiesta client e restituire un URL all'Object Storage vicino al client. Object Storage è fornito anche di un front-end CDN, se necessario, per fornire ulteriori servizi di memorizzazione in cache, come sopra indicato.
 
-Per ulteriori informazioni e un'introduzione a Object Storage, consulta la [documentazione](https://console.bluemix.net/docs/services/cloud-object-storage/about-cos.html#about-ibm-cos). 
+Per ulteriori informazioni e un'introduzione all'Object Storage, consulta la [documentazione](https://console.bluemix.net/docs/services/cloud-object-storage/about-cos.html#about-ibm-cos). 

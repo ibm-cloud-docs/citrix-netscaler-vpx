@@ -62,4 +62,4 @@ Auch für andere Hardware- und Softwarekomponenten ist die Bereitstellung von Re
 
 ## Umfasst das NetScaler-Angebot für {{site.data.keyword.BluSoftlayer_notm}} die SSL-VPN-Funktionalität?
 
-Ja, diese Funktion wird unter dem Namen NetScaler Gateway™ angeboten und gehört zum Lieferumfang aller Editionen. Weitere Informationen zu dieser Funktion erhalten Sie auf der [Citrix-Website ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.citrix.com/products/netscaler-adc/){: new_window}.
+Ja, diese Funktion wird unter dem Namen NetScaler Gateway™ angeboten und gehört zum Lieferumfang aller Editionen.  Weitere Informationen zu dieser Funktion erhalten Sie auf der [Citrix-Website ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.citrix.com/products/netscaler-adc/){: new_window}.

@@ -21,7 +21,7 @@ Eine SNIP (Subnet IP; Teilnetz-IP) ist die Quellen-IP-Adresse eines Pakets. Sie 
 
 ### Virtuelle IP (VIP)
 
-Eine VIP ist eine IP-Adresse, an die ein Client Anforderungen sendet. NetScaler hat die Clientverbindung an der VIP beendet und stellt dann eine Verbindung zu einem Server her, der im Lastausgleichsservice konfiguriert wurde. Hierbei kann es sich entweder um eine öffentliche IP-Adresse für den öffentlichen Datenverkehr (Internet) oder um eine private IP-Adresse für den privaten Datenverkehr (Intranet) handeln.
+Eine VIP ist eine IP-Adresse, an die ein Client Anforderungen sendet. NetScaler hat die Clientverbindung an der VIP beendet und stellt dann eine Verbindung zu einem Server her, der im Lastausgleichsservice konfiguriert wurde.  Hierbei kann es sich entweder um eine öffentliche IP-Adresse für den öffentlichen Datenverkehr (Internet) oder um eine private IP-Adresse für den privaten Datenverkehr (Intranet) handeln.
 
 ### Virtueller Server
 

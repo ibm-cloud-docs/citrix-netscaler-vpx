@@ -17,7 +17,7 @@ Puede que no necesite una implementación completa de una solución de equilibri
 
 Citrix NetScaler VPX es el único dispositivo configurable por el cliente que realiza un equilibrio de carga global verdadero. NetScaler es un dispositivo multifunción que puede realizar búsquedas de equilibrio de carga global basadas en DNS. Puede apuntar a NetScaler como servidor DNS y el dispositivo buscará el equilibrio de carga en los servidores en que está configurado, realizará un cálculo de distancia y devolverá un registro con la IP del servidor más cercano a la solicitud del cliente.
 
-En la configuración del equilibrio de carga global, tiene varios dispositivos NetScaler en centros de datos diferentes, cada uno proporcionando servicios de equilibrio de carga local para los servidores tras ellos. Los dispositivos están configurados para comunicarse entre ellos para que puedan intercambiar información de estado en cada servidor asignado a la rotación de equilibrador de carga global. Cualquier solicitud de DNS que llega a estos NetScalers configurados puede devolver un registro apropiado para un servidor que esté en línea y respondiendo. Cualquier servidor que no responda se elimina de la rotación y se selecciona otro.
+Para el equilibrio de carga global, tendría una configuración de dispositivo de NetScaler en cada centro de datos. Cada configuración de dispositivo de NetScaler puede ser un Netscaler único o un par de Netscalers en un par de HA, dependiendo de sus requisitos, proporcionando servicios de equilibrio de carga local para los servidores tras ellos. Los dispositivos están configurados para comunicarse entre ellos para que puedan intercambiar información de estado en cada servidor asignado a la rotación de equilibrador de carga global. Cualquier solicitud de DNS que llega a estos NetScalers configurados puede devolver un registro apropiado para un servidor que esté en línea y respondiendo. Cualquier servidor que no responda se elimina de la rotación y se selecciona otro.
 
 Debe tener configurado el equilibrio de carga incluso aunque solo se equilibre un servidor. Necesitará direcciones IP adicionales para algunos servicios, a saber, la IP del sitio del GSLB. Esta IP la utiliza NetScaler para comunicarse con los otros NetScalers en el protocolo de equilibrio de carga global. 
 
@@ -36,9 +36,9 @@ El siguiente procedimiento de equilibrio global utiliza:
 
 	Verá el sitio listado con un estado en verde. No añada todavía un sitio remoto.
 
-3. Vaya a **Gestión de tráfico > GSLB** y seleccione el **Asistente de GSLB**. Pulse **Siguiente**. Introduzca el nombre de host para el que equilibrará la carga (en este ejemplo: `gslb.tsstesting.com`), deje el tipo de registro A y el tipo de servicio Cualquiera. El nombre del servidor virtual se completará solo. Pulse **Siguiente**. 
+3. Vaya a **Gestión de tráfico > GSLB** y seleccione el **Asistente de GSLB**. Pulse **Siguiente**. Introduzca el nombre de host para el que equilibrará la carga (en este ejemplo: `gslb.tsstesting.com`), deje el tipo de registro A y el tipo de servicio Cualquiera. El nombre del servidor virtual se completará solo. Pulse **Siguiente**.
 
-4. Elija su formulario de equilibrio y método de persistencia del mismo modo que haría con un equilibrio de carga normal. Pulse **Siguiente**. 
+4. Elija su formulario de equilibrio y método de persistencia del mismo modo que haría con un equilibrio de carga normal. Pulse **Siguiente**.
 
 5. El sitio ya está completo así que no debe añadir nada. En su lugar, pulse el '+' verde junto al nombre del primer sitio. Seleccione el servidor virtual en ese dispositivo desde la lista y pulse **Crear**. Debería ver que el sitio está configurado con la IP de sitio y la IP del servidor virtual de su configuración de equilibrio de carga y que es verde. Pulse **Siguiente**, **Finalizar** y **Salir**.
 

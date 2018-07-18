@@ -56,3 +56,5 @@ Binden Sie nun die von Ihnen erstellten Services an den virtuellen Server.
 4. Klicken Sie auf die Schaltfläche **Aktualisieren**. Der Status und der geltende Status werden nun grün angezeigt.
 
 Sie haben nun einen Lastausgleichspool und eine Richtlinie für Ihre Website erstellt.
+
+**Hinweis:** Weitere Informationen zur Konfiguration eines Citrix NetScaler VPX-Geräts erhalten Sie auf der [Citrix-Dokumentationsseite ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://docs.citrix.com/en-us/netscaler.html). Weiterführende Unterstützung erhalten Sie bei der zuständigen Support- und Vertriebsfunktion für {{site.data.keyword.BluSoftlayer_notm}}.

@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-12-06"
+  years: 2017,2018
+lastupdated: "2018-02-28"
+
 
 ---
 
@@ -16,18 +17,12 @@ lastupdated: "2017-12-06"
 
 # Aide et support
 
-Si vous avez des questions ou rencontrez des problèmes lors de l'utilisation
-de Citrix NetScaler VPX, vous pouvez rechercher des informations ou poser vos questions sur l'un des forums indiqués ci-dessous.
-Vous pouvez aussi ouvrir un ticket de demande de service.
+Si vous avez des questions ou rencontrez des problèmes lors de l'utilisation de Citrix NetScaler VPX, vous pouvez rechercher des informations ou poser vos questions sur l'un des forums indiqués ci-dessous. Vous pouvez aussi ouvrir un ticket de demande de service.
 
 Lorsque vous posez une question sur un forum, étiquetez votre question de sorte que les équipes de développement d'IBM Cloud puissent la voir.
 
-* Si vous avez des questions techniques à propos
-de Citrix NetScaler VPX, postez-les (en anglais) sur [Stack Overflow](https://stackoverflow.com/search?q=citrix-vpx+ibm-bluemix)
-et étiquetez-les avec "citrix-vpx" et "ibm-bluemix".
-* Pour des questions relatives au service et aux instructions de mise en route, utilisez le forum [IBM developerWorks - dW Answers](https://developer.ibm.com/answers/topics/citrix-vpx.html?smartspace=bluemix). Incluez
-les étiquettes "citrix-vpx" et "bluemix".
-
+* Si vous avez des questions techniques à propos de Citrix NetScaler VPX, postez-les (en anglais) sur [Stack Overflow](https://stackoverflow.com/search?q=citrix-vpx+ibm-cloud) et étiquetez-les avec "citrix-vpx" et "ibm-cloud".
+* Pour des questions relatives au service et aux instructions de mise en route, utilisez le forum [IBM developerWorks - dW Answers](https://developer.ibm.com/answers/topics/citrix-vpx.html?smartspace=ibm-cloud). Incluez les étiquettes "citrix-vpx" et "ibm-cloud".
 
 Consultez [Obtenir de l'aide](https://console.bluemix.net/docs/support/index.html#getting-help) pour obtenir plus de détails sur l'utilisation des forums.
 

@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-12-06"
+  years: 2017,2018
+lastupdated: "2018-02-28"
+
 
 ---
 
@@ -20,8 +21,8 @@ lastupdated: "2017-12-06"
 
 使用论坛提问时，请对问题进行标记，以便 IBM Cloud 开发团队可以看到该问题。
 
-* 如果您有关于 Citrix NetScaler VPX 的技术问题，请在 [Stack Overflow](https://stackoverflow.com/search?q=citrix-vpx+ibm-bluemix) 上发布问题，并使用“citriv-vpx”和“ibm-bluemix”标记您的问题。
-* 有关服务和入门指示信息的问题，请使用 [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/citrix-vpx.html?smartspace=bluemix) 论坛。请包含“citrix-vpx”和“bluemix”标记。
+* 如果您有关于 Citrix NetScaler VPX 的技术问题，请在 [Stack Overflow](https://stackoverflow.com/search?q=citrix-vpx+ibm-cloud) 上发布问题，并使用“citriv-vpx”和“ibm-cloud”标记您的问题。
+* 有关服务和入门指示信息的问题，请使用 [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/citrix-vpx.html?smartspace=ibm-cloud) 论坛。请包含“citrix-vpx”和“ibm-cloud”标记。
 
 有关使用论坛的更多详细信息，请参阅[获取帮助](https://console.bluemix.net/docs/support/index.html#getting-help)。
 

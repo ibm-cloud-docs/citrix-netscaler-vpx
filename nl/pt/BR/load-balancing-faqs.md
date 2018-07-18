@@ -29,7 +29,7 @@ O tráfego de balanceamento de carga tornou-se um aspecto importante de muitas i
 
 ## Quantas opções de balanceamento de carga estão disponíveis no {{site.data.keyword.BluSoftlayer_notm}}?
 
-Para obter uma comparação detalhada das ofertas de Balanceador de carga da IBM, consulte [Explorar balanceadores de carga](https://dev-console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html#explore-load-balancers).
+Para obter uma comparação detalhada das ofertas de Balanceador de carga da IBM, consulte [Explorar Load Balancers](https://dev-console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html#explore-load-balancers).
 
 ## O NetScaler suporta IPv6?
 
@@ -63,4 +63,4 @@ Também é importante fornecer redundância para outros componentes de hardware 
 
 ## A oferta {{site.data.keyword.BluSoftlayer_notm}} NetScaler inclui a funcionalidade SSL VPN?
 
-Sim, esse recurso é conhecido como NetScaler Gateway™ e é incluído em todas as edições. Para obter mais informações sobre esse recurso, visite o [website do Citrix ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.citrix.com/products/netscaler-adc/){: new_window}
+Sim, esse recurso é conhecido como NetScaler Gateway™ e é incluído em todas as edições.  Para obter mais informações sobre esse recurso, visite o [website do Citrix ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.citrix.com/products/netscaler-adc/){: new_window}

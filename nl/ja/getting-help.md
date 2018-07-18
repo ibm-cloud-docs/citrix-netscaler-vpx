@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-12-06"
+  years: 2017,2018
+lastupdated: "2018-02-28"
+
 
 ---
 
@@ -16,12 +17,12 @@ lastupdated: "2017-12-06"
 
 # ヘルプとサポートの利用
 
-Citrix NetScaler VPX を使用しているときに問題や質問がある場合は、情報を検索したり、以下にリストしたいずれかのフォーラムで質問したりして、ヘルプを利用できます。また、サポート・チケットをオープンすることも可能です。
+Citrix NetScaler VPX を使用しているときに問題や質問がある場合は、情報を検索したり、以下にリストしたいずれかのフォーラムで質問したりして、ヘルプを利用できます。 また、サポート・チケットをオープンすることも可能です。
 
 フォーラムを使用して質問する場合は、IBM Cloud 開発チームの目に留まるように質問にタグを付けてください。
 
-* Citrix NetScaler VPX に関する技術的な質問がある場合は、[「スタック・オーバーフロー」](https://stackoverflow.com/search?q=citrix-vpx+ibm-bluemix)に質問を投稿し、質問に「citrix-vpx」および「ibm-bluemix」というタグを付けます。
-* サービスと使用開始の手順に関する質問の場合は、[「IBM developerWorks dW Answers」](https://developer.ibm.com/answers/topics/citrix-vpx.html?smartspace=bluemix)フォーラムを使用してください。「citrix-vpx」タグと「bluemix」タグを含めます。
+* Citrix NetScaler VPX に関する技術的な質問がある場合は、[「スタック・オーバーフロー」](https://stackoverflow.com/search?q=citrix-vpx+ibm-cloud)に質問を投稿し、質問に「citrix-vpx」および「ibm-cloud」というタグを付けます。
+* サービスと使用開始の手順に関する質問の場合は、[「IBM developerWorks dW Answers」](https://developer.ibm.com/answers/topics/citrix-vpx.html?smartspace=ibm-cloud)フォーラムを使用してください。 「citrix-vpx」タグと「ibm-cloud」タグを含めます。
 
 フォーラムの使用について詳しくは、[「ヘルプの利用」](https://console.bluemix.net/docs/support/index.html#getting-help)を参照してください。
 

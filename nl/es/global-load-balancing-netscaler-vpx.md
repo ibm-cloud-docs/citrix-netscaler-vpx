@@ -30,7 +30,7 @@ GSLB puede aplicarse para varios propósitos. Algunos de ellos son:
 
 Los principales componentes o entidades en el proceso/despliegue de GSLB son:
 
-* **Servidores virtuales:**: Una VIP es una dirección IP a la que los clientes envían solicitudes, NetScaler finaliza la conexión del cliente en la VIP y luego inicia una conexión con un servidor configurado en el servicio de equilibrio de carga.  
+* **Servidores virtuales:**: Una VIP es una dirección IP a la que los clientes envían solicitudes, NetScaler finaliza la conexión del cliente en la VIP y luego inicia una conexión con un servidor configurado en el servicio de equilibrio de carga. 
 * **DNS (Sistema de nombres de dominio) y servidores de nombres:** La resolución de nombres en GSLB funciona de forma muy parecida que el DNS normal. La diferencia es la lógica/criterios utilizados para determinar las direcciones resueltas, GSLB utiliza un método de equilibrio de carga preconfigurado para manejar esta resolución. NetScaler puede configurarse para interactuar con el DNS de diferentes maneras:
 	* DNS autorizado (ADNS). Los NetScalers que utilizan el modo ADNS están autorizados para un dominio particular y todos sus registros.
 	* Subdelegación de DNS. Se produce cuando un servidor DNS (autorizado del dominio) delega la responsabilidad de un subdominio a un sistema NetScaler.
@@ -50,7 +50,7 @@ Los principales componentes o entidades en el proceso/despliegue de GSLB son:
 * **Supervisión:** El motor de NetScaler evalúa periódicamente el estado de los servicios remotos de GSLB mediante el MEP o una supervisión explícita limitada a los servicios en cuestión. Los supervisores se utilizan como en un servicio de equilibrio de carga normal. En el caso del GSLB, no es necesario añadir supervisores a los servicios locales ya que está normalmente controlado por el MEP. 
 * **Persistencia:** Una característica opcional que establece una preferencia de sitio para un dominio concreto. En este caso de uso concreto, el centro de datos no equilibra la carga del tráfico pero sí lo maneja. Esto puede ser útil en determinadas aplicaciones, como el comercio electrónico, donde los datos transaccionales son exclusivos para cada sitio/servidor.
 * **Sitio de GSLB:** Los sitios se pueden definir como centros de datos o ubicaciones donde un sistema de NetScaler está configurado/presente. Cada sitio de GSLB lo gestiona un sistema de NetScaler que se considera "local" en ese sitio, mientras que todos los demás sistemas/sitios remotos son vistos y tratados como sitios "remotos".
-* **Servicio de GSLB:** Es un objeto que representa (y está limitado a) un servidor virtual/VIP normal. Puede ser local (mismo sitio) o remoto. 
+* **Servicio de GSLB:** Es un objeto que representa (y está limitado a) un servidor virtual/VIP normal. Puede ser local (mismo sitio) o remoto.
 * **Servidor virtual de GSLB:** Un servidor virtual de GSLB se asigna a uno o varios servicios de GSLB que normalmente son parte de diferentes sitios (GSLB). El tráfico recibido obtiene la carga equilibrada entre los sitios enlazados. La selección sitio se realiza basándose en el método y el caso de uso.
 * **Dominio de GSLB:** Representa el dominio o zona de la que es responsable el servidor virtual de GSLB. 
 * **Servicio de ADNS:** Un servicio representado por una combinación de dirección IP y puerto, donde se envían las solicitudes de DNS a un dominio en el que está autorizado un NetScaler. NetScaler toma los servidores virtuales de GSLB enlazados a ese dominio para obtener una respuesta.

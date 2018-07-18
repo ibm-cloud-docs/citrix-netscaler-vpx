@@ -10,16 +10,16 @@ lastupdated: "2017-11-02"
 
 # Acceso y gestión de Citrix NetScaler VPX
 
-Los dispositivos Citrix NetScaler son herramientas potentes con una matriz de características que ayudan a mejorar y refinar la solución de {{site.data.keyword.BluSoftlayer_notm}} de muchas maneras. Puede encontrar la información del dispositivo en el portal del cliente y conectarse al dispositivo y configurar sus características.  
+Los dispositivos Citrix NetScaler son herramientas potentes con una matriz de características que ayudan a mejorar y refinar la solución de {{site.data.keyword.BluSoftlayer_notm}} de muchas maneras. Puede encontrar la información del dispositivo en el Portal de clientes y conectarse al dispositivo y configurar sus características.  
 
-## Encontrar los detalles de NetScaler en el portal de cliente
+## Encontrar los detalles de NetScaler en el Portal de clientes
 
 Los dispositivos de Citrix NetScaler están listados en la lista de dispositivos, como cualquier otro servidor que tenga en la plataforma de {{site.data.keyword.BluSoftlayer_notm}}.
 
 Para encontrar la lista de dispositivos:
 
-1. En el navegador, abra el [Portal del cliente ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com/){: new_window} e inicie sesión en su cuenta. 
-2. En la navegación del portal del cliente, seleccione **Dispositivos > Lista de dispositivos**.
+1. En el navegador, abra el [Portal de clientes ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com/){: new_window} e inicie sesión en su cuenta.
+2. En la navegación del Portal de clientes, seleccione **Dispositivos > Lista de dispositivos**.
 
 Verá los dispositivos, ordenados por nombre de dispositivo. Los dispositivos de Citrix NetScaler VPX tienen el tipo de dispositivo "NetScaler". 
 
@@ -41,7 +41,7 @@ Al pulsar el nombre de NetScaler, le lleva a la página **Detalles del dispositi
 
 {{site.data.keyword.BluSoftlayer_notm}} concede acceso raíz completo a su dispositivo NetScaler. Para iniciar sesión en la IU de gestión de NetScaler, debe estar conectado a la red privada de {{site.data.keyword.BluSoftlayer_notm}} (VPN de gestión de {{site.data.keyword.BluSoftlayer_notm}} o realizar funciones de gestión desde una sesión remota en un servidor dentro del entorno de {{site.data.keyword.BluSoftlayer_notm}}). 
 
-Para conectarse desde el portal de cliente a la IU de gestión de NetScaler, pulse la lista desplegable de **Acciones** en la esquina superior derecha de la pantalla de **Detalles del dispositivo** y elija **Gestionar dispositivo** para iniciar un nuevo separador o una ventana emergente en el navegador. Esto le direcciona a la NSIP de NetScaler (la dirección IP privada que vio anteriormente). La página que se muestra le solicita el nombre de usuario root y la contraseña para el dispositivo. Una vez que especifique la información, le llevará a la GUI de gestión de NetScaler. 
+Para conectarse desde el Portal de clientes a la IU de gestión de NetScaler, pulse la lista desplegable de **Acciones** en la esquina superior derecha de la pantalla de **Detalles del dispositivo** y elija **Gestionar dispositivo** para iniciar un nuevo separador o una ventana emergente en el navegador. Esto le direcciona a la NSIP de NetScaler (la dirección IP privada que vio anteriormente). La página que se muestra le solicita el nombre de usuario root y la contraseña para el dispositivo. Una vez que especifique la información, le llevará a la GUI de gestión de NetScaler. 
 
 Como alternativa, puede copiar y pegar la dirección IP privada del dispositivo NetScaler en un navegador web.
 

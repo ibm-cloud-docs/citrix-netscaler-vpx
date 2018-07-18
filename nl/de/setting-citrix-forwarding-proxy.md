@@ -8,7 +8,7 @@ lastupdated: "2017-11-02"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Citrix Netscaler VPX als Weiterleitungsproxy konfigurieren
+# Citrix NetScaler VPX als Weiterleitungsproxy konfigurieren
 
 Ein Weiterleitungsproxy fungiert als zentraler Steuerungspunkt zwischen Clients in einem internen Netz und dem Internet. Ein Proxy ermöglicht dem Netz- oder Sicherheitsadministrator die Erstellung von Richtlinien, die den Zugriff auf Internet-Sites einschränken.
 

@@ -21,7 +21,7 @@ Una SNIP es la dirección IP de origen de un paquete utilizado por NetScaler cad
 
 ### IP virtual (VIP)
 
-Una VIP es una dirección IP a la que un cliente envía solicitudes. NetScaler ha finalizado la conexión del cliente en la VIP y luego inicia una conexión con un servidor configurado en el servicio de equilibrio de carga. Puede ser tanto una dirección IP pública para tráfico público (Internet) o una dirección IP privada para tráfico privado (intranet).
+Una VIP es una dirección IP a la que un cliente envía solicitudes. NetScaler ha finalizado la conexión del cliente en la VIP y luego inicia una conexión con un servidor configurado en el servicio de equilibrio de carga.  Puede ser tanto una dirección IP pública para tráfico público (Internet) o una dirección IP privada para tráfico privado (intranet).
 
 ### Servidor virtual
 

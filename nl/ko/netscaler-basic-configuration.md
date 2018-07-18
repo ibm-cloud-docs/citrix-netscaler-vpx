@@ -8,7 +8,7 @@ lastupdated: "2017-12-06"
 {:new_window: target="_blank"}
 
 # 기본 로드 밸런싱 구성
-일반 사용자가 중요한 정보가 필요하지 않은 계정에 등록할 수 있는 기본 소셜 커뮤니티 웹 사이트가 있는 회사를 가정하십시오. 이후 사용자가 로그인하여 애완동물의 사진을 게시할 수 있습니다. 세 개의 웹/애플리케이션 서버와 이를 백업하기 위한 하나의 데이터베이스 서버가 있습니다. 도메인 및 DNS는 {{site.data.keyword.BluSoftlayer_notm}}로 호스팅되며 NetScaler 및 웹/앱 서버는 환경이 소규모이므로 모두 동일한 VLAN에 있습니다.이렇게 하면 NetScaler가 기본 로드 밸런싱 정책을 설정하기 위해 추가 구성이 필요하지 않으므로 작업이 간소해집니다. 다음 프로시저는 이 인스턴스의 트래픽 플로우에 대한 매우 간략한 설명입니다.
+일반 사용자가 중요한 정보가 필요하지 않은 계정에 등록할 수 있는 기본 소셜 커뮤니티 웹 사이트가 있는 회사를 가정하십시오. 이후 사용자가 로그인하여 애완동물의 사진을 게시할 수 있습니다. 세 개의 웹/애플리케이션 서버와 이를 백업하기 위한 하나의 데이터베이스 서버가 있습니다. 도메인 및 DNS는 {{site.data.keyword.BluSoftlayer_notm}}로 호스팅되며 NetScaler 및 웹/앱 서버는 환경이 소규모이므로 모두 동일한 VLAN에 있습니다. 이렇게 하면 NetScaler가 기본 로드 밸런싱 정책을 설정하기 위해 추가 구성이 필요하지 않으므로 작업이 간소해집니다. 다음 프로시저는 이 인스턴스의 트래픽 플로우에 대한 매우 간략한 설명입니다.
 
 1. 사용자가 브라우저에 URL을 입력합니다.
 2. URL의 DNS 레코드가 NetScaler의 공인 IP 중 하나를 가리킵니다.
@@ -46,7 +46,7 @@ NetScaler GUI에서 Configuration 화면의 왼쪽에 있는 **Traffic Managemen
 4. 밸런싱할 Protocol(HTTP)을 지정하십시오.
 5. IP Address Type을 기본값(IP Address)으로 두십시오. IP Address 필드는 모든 사용자의 시작점으로 사용할 VIP를 입력하는 위치입니다.
 6. Port를 지정하십시오. 기본 포트는 80입니다.
-7. **OK**를 클릭하십시오. 
+7. **OK**를 클릭하십시오.
 
 이제 작성한 서비스를 가상 서버에 바인드하십시오.
 
@@ -56,3 +56,5 @@ NetScaler GUI에서 Configuration 화면의 왼쪽에 있는 **Traffic Managemen
 4. **Refresh** 단추를 클릭하십시오. State 및 Effective State가 초록색으로 표시됩니다.
 
 웹 사이트에 대한 로드 밸런싱 풀 및 정책을 작성했습니다.
+
+**참고:** Citrix NetScaler VPX 디바이스의 구성에 대해 자세히 알아보려면 [Citrix 문서 페이지 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://docs.citrix.com/en-us/netscaler.html)를 방문하십시오. 추가 지원을 받으려면 {{site.data.keyword.BluSoftlayer_notm}} 지원 및 영업 팀에 문의하십시오.

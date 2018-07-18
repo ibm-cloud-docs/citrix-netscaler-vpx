@@ -38,21 +38,23 @@ Em seguida, crie seus Serviços. Você estará criando um Serviço para cada Ser
 2. Clique em **Incluir**.
 3. Crie um serviço para cada servidor criado anteriormente, utilizando as mesmas informações.
 
-Em seguida, crie um Servidor virtual. O Servidor virtual é uma espécie de conexão virtual entre o VIP usado para servidores de carga balanceada e serviços criados anteriormente.
+Em seguida, crie um Virtual Server. O Virtual Server é uma espécie de conexão virtual entre o VIP usado para servidores de carga balanceada e serviços criados anteriormente.
 
-1. Clique em **Gerenciamento de tráfego > Balanceamento de carga > Servidores virtuais**.
+1. Clique em **Gerenciamento de tráfego > Balanceamento de carga > Virtual Servers**.
 2. Clique em **Incluir**.
-3. Dê um nome ao Servidor virtual.
+3. Dê um nome ao Virtual Server.
 4. Designe o protocolo que estará sendo balanceado (HTTP).
 5. Deixe o Tipo de endereço IP como o padrão (Endereço IP). O campo de endereço IP é onde você inserirá o VIP que estará sendo usado como o ponto de entrada para todos os seus usuários.
 6. Designe a porta. O padrão é a porta 80.
 7. Clique em **OK**.
 
-Agora, ligue os serviços criados para seu Servidor virtual.
+Agora, ligue os serviços criados para seu Virtual Server.
 
-1. Na tela Servidores virtuais, clique no link **Nenhuma ligação de serviço do servidor virtual de balanceamento de carga**.
-2. Ligue cada um dos Serviços criados anteriormente ao Servidor virtual.
+1. Na tela Virtual Servers, clique no link **Nenhuma ligação de serviço do Virtual Server de balanceamento de carga**.
+2. Ligue cada um dos Serviços criados anteriormente ao Virtual Server.
 3. Clique em **Pronto**.
 4. Clique no botão **Atualizar**. O Estado e o Estado efetivo serão mostrados como verde.
 
 Você criou um conjunto e uma política de balanceamento de carga para seu website.
+
+**OBSERVAÇÃO:** para saber mais sobre a configuração do dispositivo Citrix NetScaler VPX, visite a [página de documentação do Citrix ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://docs.citrix.com/en-us/netscaler.html). Para obter assistência adicional, entre em contato com o suporte e vendas do {{site.data.keyword.BluSoftlayer_notm}}.

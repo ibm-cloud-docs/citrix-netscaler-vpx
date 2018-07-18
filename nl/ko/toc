@@ -10,13 +10,13 @@ Citrix NetScaler VPX
     terminology.md
     default-deployment.md
     netscaler-basic-configuration.md
-    [로드 밸런서 탐색](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html)
+    [Load Balancers 탐색](../loadbalancer-service/explore-load-balancers.html)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     accessing-and-managing-your-netscaler.md
     upgrade-netscaler.md
-    netscaler-vpx-10-high-availability-setup.md
+    netscaler-vpx-high-availability-setup.md
     setting-citrix-forwarding-proxy.md
     url-redirection-netscaler-vpx.md
     {: .navgroup-end}

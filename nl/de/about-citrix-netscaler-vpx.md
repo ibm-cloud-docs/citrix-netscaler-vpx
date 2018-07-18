@@ -12,8 +12,6 @@ lastupdated: "2017-11-02"
 
 Citrix NetScaler VPX ist eine dedizierte virtuelle Software-Appliance, die Funktionen zum Lastausgleich sowohl im öffentlichen als auch im privaten IBM Cloud-Netz zur Verfügung stellt. 
 
-Die Bereitstellung von Citrix NetScaler VPX in Ihrer Lösung für {{site.data.keyword.BluSoftlayer_notm}} beschleunigt die Webanwendungsbereitstellung, ermöglicht entscheidende Leistungsverbesserungen und gewährleistet, dass Ihre Cloudanwendungen und -services stets optimiert, verfügbar und sicher sind. Bei hohen Workloadanforderungen, wie sie beispielsweise im Gaming- und Big-Data-Bereich sowie bei Analyseanwendungen oder in privaten Clouds auftreten, kann Citrix NetScaler VPX Sie dabei unterstützen, Ihre Lösung stets zeitgerecht, am richtigen Standort und in optimaler Konfiguration für Ihre Benutzer bereitzustellen.
-
 ## Funktionsmerkmale
 
 * Einziges Produkt mit Lastausgleich für den Datenverkehr im öffentlichen und privaten Netz

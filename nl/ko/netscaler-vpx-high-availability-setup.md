@@ -1,8 +1,8 @@
 ---
 copyright:
-  years: 1994, 2017
+  years: 1994, 2018
 
-lastupdated: "2017-11-02"
+lastupdated: "2018-06-28"
 ---
 
 {:shortdesc: .shortdesc}
@@ -23,11 +23,11 @@ HA 구성을 시작하기 전에 다음 전제 조건 조치를 수행해야 합
 
 필요한 VLAN에서 두 개의 Netscaler VPX 서버를 주문하고 HA 쌍 구성의 전제 조건을 충족하기 위해 VIP 및 SNIP 서브넷을 주문한 후 다음을 진행할 수 있습니다.
 
-1. 두 개의 브라우저 창을 열고 두 NetScaler 모두의 고급 인터페이스에 로그인하십시오. 보조 NetScaler에서 **System > Users**로 이동하여 루트 비밀번호를 기본 NetScaler와 동일하게 설정하십시오. 그런 다음 디바이스 세부사항 페이지에서 {{site.data.keyword.BluSoftlayer_notm}} 포털의 파일에 대한 비밀번호를 보조에 대해 설정된 비밀번호와 일치하도록 업데이트하십시오.
+1. 두 개의 브라우저 창을 열고 두 NetScaler 모두의 고급 인터페이스에 로그인하십시오. 보조 NetScaler에서 **System > User Administration > User**로 이동하여 루트 비밀번호를 기본 NetScaler와 동일하게 설정하십시오. 그런 다음 디바이스 세부사항 페이지에서 {{site.data.keyword.BluSoftlayer_notm}} 포털의 파일에 대한 비밀번호를 보조에 대해 설정된 비밀번호와 일치하도록 업데이트하십시오.
 
-2. 보조로 사용할 VPX에서 **System > High Availability**를 클릭한 후 첫 번째 행을 마우스 오른쪽 단추로 클릭하고 **Open**을 클릭하십시오. HA 상태 구성 드롭 다운 상자에서 **Stay Secondary**를 선택하고 **OK**를 클릭하십시오.
+2. 보조로 사용할 VPX에서 **System > High Availability**를 클릭한 후 첫 번째 행을 마우스 오른쪽 단추로 클릭하고 **Edit**를 클릭하십시오. High Availability Status config 드롭 다운 상자에서 **Stay Secondary**를 선택하고 **OK**를 클릭하십시오.
 
-3. **Add**를 선택하십시오. 다른 VPX의 시스템 IP 주소(기본의 High Availability 탭에 있음)를 입력하고 맨 아래에 루트 로그인 세부사항을 입력하십시오. **INC** 상자를 선택되지 않은 상태로 두십시오. **OK**를 클릭하십시오.  
+3. **Add**를 선택하십시오. 다른 VPX의 시스템 IP 주소(기본의 High Availability 탭에 있음)를 입력하고 맨 아래에 루트 로그인 세부사항을 입력하십시오. **Turn on INC** 상자를 선택되지 않은 상태로 두십시오. **OK**를 클릭하십시오. 
 	
 	IP가 동일한 서브넷에 없다는 오류가 수신되는 경우 두 VPX 서버가 동일한 VLAN에 없을 수 있습니다. 그렇지 않으면, 이제 기본 서버를 열고 **Refresh** 단추를 선택하여 두 서버가 모두 고가용성으로 작동 중임을 확인할 수 있어야 합니다. 
 
@@ -41,8 +41,8 @@ HA 구성을 시작하기 전에 다음 전제 조건 조치를 수행해야 합
 
 4. 기본 VPX에서 이제 원격 VPX가 동기화 중임을 확인할 수 있어야 합니다. 보조 서버로 이동하여 **Network > IPs** 구성을 확인하십시오. 기본 서버의 VIP와 기타 IP가 비활성(passive) 상태로 나열되어야 합니다.
 
-6. 보조 서버에서 **System > High Availability**로 돌아가서 **Open**을 클릭하십시오. 드롭 다운 상자에서 **ENABLED**를 선택하고 **OK**를 누르십시오.
+6. 보조 서버에서 **System > High Availability**로 돌아가서 **Edit**를 클릭하십시오. 드롭 다운 상자에서 **ENABLED**를 선택하고 **OK**를 누르십시오.
 
 7. 강제로 장애 복구를 테스트하십시오. 화면을 새로 고치고 보조 서버에서 IP 주소가 활성(active) 상태가 되는지 지켜보십시오. 다시 장애 복구를 수행하고 비활성(passive) 상태로 전환되는지 지켜보십시오. IP에 대해 ping을 실행하여 작동하는지 확인하십시오.
 
-8. 이제 기본 서버에 primary라는 레이블이 지정되어야 하고 보조 서버가 동기화 상태를 성공으로 보고해야 합니다. 
+8. 이제 기본 서버에 primary라는 레이블이 지정되어야 하고 보조 서버가 동기화 상태를 성공으로 보고해야 합니다.

@@ -63,4 +63,4 @@ I server NetScaler VPX non sono ridondanti, a meno che non siano configurati in 
 
 ## L'offerta {{site.data.keyword.BluSoftlayer_notm}} NetScaler include la funzionalità SSL VPN?
 
-Sì, questa funzione è nota come NetScaler Gateway™ ed è inclusa in tutte le edizioni. Per ulteriori informazioni su questa funzione, visita il [sito web di Citrix ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.citrix.com/products/netscaler-adc/){: new_window}
+Sì, questa funzione è nota come NetScaler Gateway™ ed è inclusa in tutte le edizioni.  Per ulteriori informazioni su questa funzione, visita il [sito web di Citrix ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.citrix.com/products/netscaler-adc/){: new_window}

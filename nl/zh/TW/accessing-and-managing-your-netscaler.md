@@ -18,7 +18,7 @@ Citrix NetScaler 裝置會列在「裝置清單」中，就像您在 {{site.data
 
 若要尋找「裝置清單」，請執行下列動作：
 
-1. 從瀏覽器中，開啟[客戶入口網站 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://control.softlayer.com/){: new_window}，並登入您的帳戶。
+1. 從瀏覽器中，開啟[客戶入口網站 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://control.softlayer.com/){: new_window} 並登入您的帳戶。
 2. 在「客戶入口網站」導覽中，選取**裝置 > 裝置清單**。
 
 您將會看到依裝置名稱排序的裝置。Citrix NetScaler VPX 裝置的「裝置類型」為 "NetScaler"。 

@@ -17,7 +17,7 @@ lastupdated: "2017-12-06"
 
 Citrix NetScaler VPX는 진정한 글로벌 로드 밸런싱을 수행하는 유일한 고객 구성 가능 디바이스입니다. NetScaler는 DNS 기반 글로벌 로드 밸런싱 검색을 수행할 수 있는 다기능 어플라이언스입니다. DNS 서버로 NetScaler를 지정할 수 있습니다. 그러면 디바이스가 로드 밸런싱하도록 구성된 서버를 검토하고 거리 계산을 수행하며 클라이언트 요청에 가장 근접한 서버의 IP가 포함된 레코드를 리턴합니다.
 
-글로벌 로드 밸런싱 구성에서는 여러 데이터 센터에 다중 NetScaler 어플라이언스가 있으며 각각은 뒤에 있는 서버에 대한 로컬 로드 밸런싱 서비스를 제공합니다. 디바이스가 서로 통신하도록 구성되었으므로 글로벌 로드 밸런서 순환에 지정된 각 서버에 대한 상태 정보를 교환합니다. 이러한 구성된 NetScaler로 들어오는 모든 DNS 요청은 온라인 상태이며 응답성이 뛰어난 서버에 대한 적절한 레코드를 리턴할 수 있습니다. 응답하지 않는 서버는 순환에서 제거되고 다른 서버가 선택됩니다.
+글로벌 로드 밸런싱을 위해 각 데이터 센터에 NetScaler 어플라이언스 구성이 있습니다. 각 NetScaler 어플라이언스 구성은 요구사항에 따라 단일 Netscaler 또는 HA 쌍으로 된 Netscalers 쌍일 수 있으며, 어플라이언스 뒤에 있는 서버에 대해 로컬 로드 밸런싱 서비스를 제공합니다. 디바이스가 서로 통신하도록 구성되었으므로 글로벌 로드 밸런서 순환에 지정된 각 서버에 대한 상태 정보를 교환합니다. 이러한 구성된 NetScaler로 들어오는 모든 DNS 요청은 온라인 상태이며 응답성이 뛰어난 서버에 대한 적절한 레코드를 리턴할 수 있습니다. 응답하지 않는 서버는 순환에서 제거되고 다른 서버가 선택됩니다.
 
 밸런싱 중인 유일한 서버인 경우에도 로드 밸런싱이 이미 설정되어 있어야 합니다. 일부 서비스의 경우 추가 IP 주소, 즉 GSLB 사이트 IP가 필요합니다. 이 IP는 NetScaler가 글로벌 로드 밸런싱 프로토콜에서 다른 NetScaler와 통신하는 데 사용됩니다. 
 
@@ -83,8 +83,8 @@ CDN(Content Delivery Network)을 사용하면 원래 서버를 지리적으로 �
 
 CDN에 대한 세부사항은 [문서](https://console.bluemix.net/docs/infrastructure/CDN/getting-started.html#getting-started)를 참조하십시오.
 
-### 오브젝트 스토리지
+### Object Storage
 
-다양한 데이터 센터의 여러 지리적 위치를 사용하여 컨텐츠를 제공하도록 {{site.data.keyword.BluSoftlayer_notm}}의 오브젝트 스토리지를 구성할 수 있습니다. 지리적으로 인식 가능한 애플리케이션이 클라이언트 요청에 대한 위치 검색을 수행하고 클라이언트에 근접한 오브젝트 스토리지에 URL을 리턴할 수 있습니다. 위에서 언급한 대로 필요한 경우 추가 캐싱 서비스를 제공하기 위해 오브젝트 스토리지는 CDN 프론트 엔드와 함께 제공됩니다.
+다양한 데이터 센터의 여러 지리적 위치를 사용하여 컨텐츠를 제공하도록 {{site.data.keyword.BluSoftlayer_notm}}의 Object Storage를 구성할 수 있습니다. 지리적으로 인식 가능한 애플리케이션이 클라이언트 요청에 대한 위치 검색을 수행하고 클라이언트에 근접한 Object Storage에 URL을 리턴할 수 있습니다. 위에서 언급한 대로 필요한 경우 추가 캐싱 서비스를 제공하기 위해 Object Storage는 CDN 프론트 엔드와 함께 제공됩니다.
 
-자세한 정보와 오브젝트 스토리지에 대한 소개는 [문서](https://console.bluemix.net/docs/services/cloud-object-storage/about-cos.html#about-ibm-cos)를 참조하십시오. 
+자세한 정보와 Object Storage에 대한 소개는 [문서](https://console.bluemix.net/docs/services/cloud-object-storage/about-cos.html#about-ibm-cos)를 참조하십시오. 

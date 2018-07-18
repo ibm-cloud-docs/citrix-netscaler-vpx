@@ -8,7 +8,7 @@ lastupdated: "2017-11-02"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# URLs in Citrix Netscaler VPX weiterleiten
+# URLs in Citrix NetScaler VPX weiterleiten
 
 Die am häufigsten verwendete Methode zur Durchführung einer Weiterleitung von `http://` an `https://` in NetScaler besteht in der Nutzung der Sicherungs- und Weiterleitungsfunktion, die ursprünglich für die Weiterleitung an eine Seite für einen Serverausfall oder eine Wartungsseite vorgesehen war.  
 

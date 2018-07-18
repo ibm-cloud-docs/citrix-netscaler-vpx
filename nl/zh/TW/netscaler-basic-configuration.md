@@ -56,3 +56,5 @@ lastupdated: "2017-12-06"
 4. 按一下**重新整理**按鈕。「狀態」及「有效狀態」將顯示為綠色。
 
 您已建立網站適用的負載平衡儲存區及原則。
+
+**附註**：若要進一步瞭解 Citrix NetScaler VPX 裝置的配置，請造訪 [Citrix 文件頁面 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://docs.citrix.com/en-us/netscaler.html)。如需進一步協助，請聯絡 {{site.data.keyword.BluSoftlayer_notm}} 支援中心及業務代表。

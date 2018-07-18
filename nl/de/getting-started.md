@@ -10,7 +10,20 @@ lastupdated: "2017-11-02"
 
 # Einführung zur Citrix NetScaler VPX-Software-Appliance
 
-Um mit dem Einsatz der Citrix NetScaler VPX-Software-Appliance zu beginnen, müssen Sie zu der Bestellungsseite des Kundenportals navigieren:
+Die Bereitstellung von Citrix NetScaler VPX in Ihrer Lösung für {{site.data.keyword.BluSoftlayer_notm}} beschleunigt die Webanwendungsbereitstellung, ermöglicht entscheidende Leistungsverbesserungen und gewährleistet, dass Ihre Cloudanwendungen und -services stets optimiert, verfügbar und sicher sind. Bei hohen Workloadanforderungen, wie sie beispielsweise im Gaming- und Big-Data-Bereich sowie bei Analyseanwendungen oder in privaten Clouds auftreten, kann Citrix NetScaler VPX Sie dabei unterstützen, Ihre Lösung stets zeitgerecht, am richtigen Standort und in optimaler Konfiguration für Ihre Benutzer bereitzustellen.
+
+## Vorbereitungen
+Für den Einstieg in Citrix NetScaler VPX benötigen Sie die folgenden Informationen:
+
+* Anmeldeinformationen für das IBM Cloud-Kundenportal
+* Bereitstellungsposition für die Lastausgleichsfunktion
+* Für die jeweiligen Anforderungen am besten geeigneter NetScaler-Typ (weitere Informationen finden Sie in [Lastausgleichsfunktionen erkunden](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html))
+* Anzahl der benötigten öffentlichen IP-Adressen
+* VLAN für die Zuweisung der Lastausgleichsfunktion
+
+## Citrix NetScaler VPX bestellen
+
+Zum Bestellen einer Citrix NetScaler VPX-Software-Appliance navigieren Sie auf die Bestellseite des Kundenportals:
 
 1. Öffnen Sie im Browser das [Kundenportal ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://control.softlayer.com/){: new_window} und melden Sie sich bei Ihrem Konto an.
 2. Wählen Sie in der Navigation des Kundenportals die Optionen für **Geräte > Geräteliste** aus und klicken Sie dann auf den Link für die **Gerätebestellung**. 
@@ -22,7 +35,10 @@ Um mit dem Einsatz der Citrix NetScaler VPX-Software-Appliance zu beginnen, müs
 7. Klicken Sie auf **Weiter**.
 8. Geben Sie die für ARIN (American Registry for Internet Numbers) erforderlichen Informationen (oder die Informationen der entsprechenden Organisation in ihrer Bereitstellungsregion) für die angeforderten IP-Adressen an.
 9. Geben Sie die Kontaktinformationen ein. 
-10. Wählen Sie das gewünschte VLAN (Virtual Local Area Network) aus. Zur Minimierung der Latenzzeiten und zur Sicherstellung einer optimierten Auslastung der Netzressourcen müssen Sie Citrix NetScaler VPX demselben VLAN zuweisen, dem auch die Server zugewiesen sind, auf denen der Datenverkehr verteilt wird. 
+10. Wählen Sie das gewünschte VLAN (Virtual Local Area Network) aus. 
+	Zur Minimierung der Latenzzeiten und zur Sicherstellung einer optimierten Auslastung der Netzressourcen müssen Sie Citrix NetScaler VPX demselben VLAN zuweisen, dem auch die Server zugewiesen sind, auf denen der Datenverkehr verteilt wird. 
 11. Überprüfen Sie die Bestellung, akzeptieren Sie die Vertragsbedingungen und klicken Sie dann auf **Bestellung aufgeben**. Die Citrix NetScaler VPX-Software-Appliance wird nun mit den von Ihnen ausgewählten Einstellungen bereitgestellt. 
 
-**Hinweis:** Weitere Informationen zur Konfiguration eines Citrix NetScaler VPX-Geräts erhalten Sie auf der [Citrix-Dokumentationsseite ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://docs.citrix.com/en-us/netscaler.html). Weiterführende Unterstützung erhalten Sie bei der zuständigen Support- und Vertriebsfunktion für {{site.data.keyword.BluSoftlayer_notm}}.
+## Weitere Schritte
+
+Sie können weitere Informationen zu den [Features](about-citrix-netscaler-vpx.html) von Citrix NetScaler VPX aufrufen, sich mit der speziellen NetScaler-[Terminologie](terminology.html) vertraut machen oder mit der [Konfiguration](netscaler-basic-configuration.html) einer NetScaler-Instanz beginnen.

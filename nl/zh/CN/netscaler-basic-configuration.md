@@ -56,3 +56,5 @@ lastupdated: "2017-12-06"
 4. 单击**刷新**按钮。“状态”和“有效状态”将显示为绿色。
 
 您已为 Web 站点创建负载均衡池和策略。
+
+**注：**要了解有关 Citrix NetScaler VPX 设备配置的更多信息，请访问 [Citrix 文档页面 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://docs.citrix.com/en-us/netscaler.html)。要获取进一步的帮助，请联系 {{site.data.keyword.BluSoftlayer_notm}} 支持和销售。
