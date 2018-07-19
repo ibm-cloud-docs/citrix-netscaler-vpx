@@ -8,7 +8,7 @@ lastupdated: "2017-11-02"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Access and Manage your Citrix NetScaler VPX
+# Manage your Citrix NetScaler VPX
 
 Citrix NetScaler devices are powerful tools with an array of features that help to enhance and refine your {{site.data.keyword.BluSoftlayer_notm}} solution in a multitude of ways. You can find the device's information in the Customer Portal, as well as connect to the device and configure its features.  
 
@@ -35,9 +35,9 @@ Other details listed in the Device List include:
 
 ## The Device Details screen 
 
-Clicking on the NetScaler's name takes you to the **Device Details** page for the NetScaler, which shows the VLAN on which your NetScaler was deployed, as well as your Public IP addresses for the NetScaler. These IP addresses cannot be used for management, because they are the NetScaler's default Public VIP addresses. You will use these later to associate to a Service for load balancing purposes.
+Clicking on the NetScaler's name takes you to the **Device Details** page for the NetScaler, which shows the VLAN on which your NetScaler was deployed, as well as your Public IP addresses for the NetScaler. These IP addresses cannot be used for management, because they are the NetScaler's default Public VIP addresses. You will use these later to associate to a load balancing service.
 
-## Managing the NetScaler
+## Connecting to the NetScaler
 
 {{site.data.keyword.BluSoftlayer_notm}} grants full root access to your NetScaler device. To log into the NetScaler's Management UI, you must be connected to the {{site.data.keyword.BluSoftlayer_notm}} private network (either {{site.data.keyword.BluSoftlayer_notm}} Management VPN, or performing management functions from a remote session on a server within the {{site.data.keyword.BluSoftlayer_notm}} environment). 
 
