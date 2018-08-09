@@ -107,8 +107,6 @@ The following display commands can be used to validate the state of the forwardi
 
 **stat cr vserver:** Displays cache redirection vserver statistics.
 
-Go to the [Citrix command reference guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.citrix.com/servlet/KbServlet/download/20679-102-665857/NS-CommandReference-Guide.pdf) for more documentation.
-
 The configuration of a basic forwarding proxy on Citrix is fairly straightforward. It provides a way to give clients on an internal network a secure path to resources on the Internet. It also enables the Network Administrator to maintain a level of control over the network.
 
 If implementing at a customer site, it is recommended to add a firewall to the configuration to further protect the resources.

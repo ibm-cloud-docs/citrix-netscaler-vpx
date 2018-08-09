@@ -2,7 +2,7 @@
 copyright:
   years: 1994, 2017
 
-lastupdated: "2017-11-02"
+lastupdated: "2018-08-08"
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,7 +12,7 @@ lastupdated: "2017-11-02"
 
 The most common way to perform a `http://` to `https://` redirect in NetScaler is to take advantage of the backup/redirect feature, which was originally intended to redirect to a "server down" or "maintenance" page.  
 
-To do this, you must create a virtual server listening on port 80, with no actual services bound to it, and a back-up redirect to a specific `https://` URL. The actual virtual server is always “down” (no live services bound), and therefore the back-up redirect is always active. The drawback is that you must specify an explicit redirect URL (for example, https://web.example.com), and as a result, users attempting to access http://mail.example.com would get redirected to https://web.example.com.
+To do this, you must create a virtual server listening on port 80, with no actual services bound to it, and a back-up redirect to a specific `https://` URL. The actual virtual server is always “down” (no live services bound), and therefore the back-up redirect is always active. The drawback is that you must specify an explicit redirect URL (for example, `https://web.example.com`), and as a result, users attempting to access `http://mail.example.com` would get redirected to `https://web.example.com`.
 
 An alternative method for performing a redirect for `http://` to `https://`, while retaining the hostname/URL, uses the "responder" feature of NetScaler, which crafts a HTTP redirect message including the original information. This is done in a few easy steps – in the below example be sure to replace "w.x.y.z" with the IP address of the HTTPS VIP:
 
@@ -47,21 +47,21 @@ An alternative method for performing a redirect for `http://` to `https://`, whi
 	```
 6. Enable the responder feature of the NetScaler (this step is crucial, as the feature is disabled by default).
 	```
-  enable ns feature responder
-  ```
+        enable ns feature responder
+	```
 7. Bind the listening vserver to the responder policy.
 	```
 	bind lb vserver http_to_htps_vserver -policyName http_to_https_pol -priority 1 -gotoPriorityExpression END
 	```
 8. You can confirm this is functioning as intended by using command-line utilities such as ‘wget’ or ‘curl’ as follows:
+        
+	```
+        wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
 
-```
-wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
+        curl -v http://w.x.y.z
+        ```
 
-curl -v http://w.x.y.z
-```
-
-Substitute the IP address `w.x.y.z` for the URL hostname (for example, http://mail.example.com or http://web.example.com) and confirm that the “Location” output reflects the same hostname which was initially specified, but starting with “https” per the below examples:
+Substitute the IP address `w.x.y.z` for the URL hostname (for example, `http://mail.example.com` or `http://web.example.com`) and confirm that the “Location” output reflects the same hostname which was initially specified, but starting with “https” per the following examples:
 
     wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
     --2012-06-18 08:42:20--  http://w.x.y.z/
