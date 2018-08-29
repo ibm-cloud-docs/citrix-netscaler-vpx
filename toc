@@ -7,6 +7,7 @@ Citrix NetScaler VPX
     {: .navgroup id="learn"}
     getting-started.md	
     about-citrix-netscaler-vpx.md
+    what-is-new-in-12v1.md
     terminology.md
     default-deployment.md
     netscaler-basic-configuration.md
