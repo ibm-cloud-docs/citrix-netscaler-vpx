@@ -29,7 +29,7 @@ For more details about 12.1 SSL updates, see [Citrix 12.1 Release Note ![Externa
 
 * Service Groups Support for GSLB: You can configure IP address-based service groups, domain name-based service groups, or domain name-based autoscale service groups for GSLB. You can manage a group of services as easily as a single service, and bind a service group to a virtual server, and add services to the group.
 
-For more information about GSLB service groups, see [Multiple IP virtual servers ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/netscaler/12/global-server-load-balancing/configure/configuring-a-gslb-service-group.html){: new_window}.
+For more information about GSLB service groups, see [Configuring a GSLB service group ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/netscaler/12/global-server-load-balancing/configure/configuring-a-gslb-service-group.html){: new_window}.
 
 
 
