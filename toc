@@ -7,7 +7,7 @@ Citrix NetScaler VPX
     {: .navgroup id="learn"}
     getting-started.md	
     about-citrix-netscaler-vpx.md
-    what-is-new-in-12v1.md
+    whats-new-vpx.md
     terminology.md
     default-deployment.md
     netscaler-basic-configuration.md
@@ -20,6 +20,39 @@ Citrix NetScaler VPX
     netscaler-vpx-high-availability-setup.md
     setting-citrix-forwarding-proxy.md
     url-redirection-netscaler-vpx.md
+
+    {: .topicgroup}
+    Step-by-step: Configuring forward-proxy traffic redirection using the Citrix NetScaler VPX appliance
+        fp-guide.md
+        order-vpx.md
+        fp-cache.md
+        fp-dns.md
+        fp-cache-http.md
+        fp-cache-ssl.md
+        fp-nat.md
+        fp-proxy-settings.md
+
+    {: .topicgroup}
+    Step-by-step: Deploying and configuring the IBM Hardware Security Module (HSM) with Citrix Netscaler VPX
+        hsm-guide.md
+        hsm-order-hsm.md
+        hsm-order-vpx.md
+        hsm-initialize-hsm.md
+        hsm-create-partition.md
+        hsm-install-hsm.md
+        hsm-establish-ntl.md
+        hsm-csr.md
+        hsm-order-certificate.md
+        hsm-retrieve-certificate.md
+
+    {: .topicgroup}
+    Step-by-step: Configuring and Tuning SSL Offload with Citrix Netscaler VPX
+        hsm-ssl-guide.md
+        hsm-ssl-install.md
+        hsm-ssl-dns.md
+        hsm-ssl-server.md
+        hsm-ssl-cipher.md
+
     {: .navgroup-end}
     
     {: .navgroup id="reference"}
