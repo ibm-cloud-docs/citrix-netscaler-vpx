@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-09-18"
+lastupdated: "2018-11-12"
 
 
 ---
@@ -32,9 +32,9 @@ If you are running multiple domains, an SSL certificate can be purchased for eac
 
 For more information about SSL certificates refer to the following IBM Cloud articles:
 
-* [Introduction to SSL technology](https://console.bluemix.net/docs/infrastructure/ssl-certificates/intro-ssl.html#introduction-to-ssl-technology)
-* [About SSL certificates](https://console.bluemix.net/docs/infrastructure/ssl-certificates/ssl-certificates.html#about-ssl-certificates)
-* [Planning for SSL](https://console.bluemix.net/docs/infrastructure/ssl-certificates/planning-ahead-ssl.html#planning-for-ssl)
+* [Introduction to SSL technology](../../infrastructure/ssl-certificates/intro-ssl.html#introduction-to-ssl-technology)
+* [About SSL certificates](../../infrastructure/ssl-certificates/ssl-certificates.html#about-ssl-certificates)
+* [Planning for SSL](../../infrastructure/ssl-certificates/planning-ahead-ssl.html#planning-for-ssl)
 
 To order an SSL certificate for use with your Citrix Netscaler VPX, perform the following procedure:
 
@@ -62,7 +62,7 @@ To order an SSL certificate for use with your Citrix Netscaler VPX, perform the 
 	
 2.	Copy the content of the file starting with `---BEGIN NEW CERTIFICATE REQUEST---` all the way to `---END NEW CERTIFICATE REQUEST---`. 
 
-3.	Follow [these instructions](https://console.bluemix.net/docs/infrastructure/ssl-certificates/index.html#ordering-ssl-certificates) to place the order, pasting your CSR file text in the appropriate field. In the following example, `RapidSSL 1 Year` was chosen.
+3.	Follow [these instructions](../../infrastructure/ssl-certificates/index.html#ordering-ssl-certificates) to place the order, pasting your CSR file text in the appropriate field. In the following example, `RapidSSL 1 Year` was chosen.
 
 	<img src="images/5-Order-Certificate_1.png" alt="drawing" style="width: 550px;"/>
 

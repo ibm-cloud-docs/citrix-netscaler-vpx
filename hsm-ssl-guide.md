@@ -2,8 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-09-18"
-
+lastupdated: "2018-11-12"
 
 ---
 
@@ -50,4 +49,4 @@ The following additional resources can help you get the most out of your Citrix 
 
 * [NetScaler 12.1 Product Documentation](https://docs.citrix.com/en-us/netscaler/12-1/)
 * [Gemalto Support Portal](https://supportportal.gemalto.com/csm?id=csm_index)
-* [IBM Cloud Support](https://console.bluemix.net/docs/get-support/howtogetsupport.html#getting-customer-support)
+* [IBM Cloud Support](../../../get-support/howtogetsupport.html#getting-customer-support)

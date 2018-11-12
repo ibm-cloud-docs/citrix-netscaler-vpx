@@ -2,7 +2,7 @@
 copyright:
   years: 1994, 2017
   
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
@@ -10,7 +10,20 @@ lastupdated: "2017-11-02"
 
 # Getting started with Citrix NetScaler VPX Software Appliance
 
-To get started with the Citrix NetScaler VPX software appliance, navigate to the order page in the Customer Portal:
+Deploying a Citrix NetScaler VPX in your {{site.data.keyword.BluSoftlayer_notm}} solution accelerates web application delivery, boosts performance, and ensures your cloud applications and services stay optimized, available, and secure. If you have challenging workloads, such as gaming, big data and analytics, or private clouds, the Citrix NetScaler VPX can help you deliver your solution when, where, and how your users need it most.
+
+## Before you begin
+To get started with Citrix NetScaler VPX, you will need to know the following information:
+
+* Your IBM Cloud Customer Portal login information
+* The deployment location for your load balancer
+* Which Netscaler type best fits your needs (for more information refer to [Explore Load Balancers](../../infrastructure/loadbalancer-service/explore-load-balancers.html))
+* The number of public IP addresses needed
+* The VLAN where you want to assign the load balancer
+
+## Ordering a Citrix NetScaler VPX
+
+To order a Citrix NetScaler VPX software appliance, navigate to the order page in the Customer Portal:
 
 1. From your browser, open  [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} and log into your account.
 2. In the Customer Portal navigation, select **Devices > Devices List** and click on the **Order Devices** link. 
@@ -26,4 +39,6 @@ To get started with the Citrix NetScaler VPX software appliance, navigate to the
 	To minimize latency and ensure optimized utilization of your network resources, assign the Citrix NetScaler VPX to the same VLAN as the servers where the traffic will be distributed. 
 11. Review the order, accept the terms, and click **Place Order**. The Citrix NetScaler VPX software appliance deploys with your selected settings. 
 
-**Note**: To learn more about configuration of the Citrix NetScaler VPX device, please visit the [Citrix documentation page ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/netscaler.html). For further assistance, contact the {{site.data.keyword.BluSoftlayer_notm}} support and sales.
+## What's Next
+
+You can learn more about Citrix Netscaler VPX [features](about-citrix-netscaler-vpx.html), review specific Netscaler [terminology](terminology.html), or start [configuring](netscaler-basic-configuration.html) your Netscaler.

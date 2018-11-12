@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-06"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
@@ -56,3 +56,5 @@ Now, bind the services you created to your Virtual Server.
 4. Click the **Refresh** button. The State and Effective State will show as green.
 
 You have created a load balancing pool and policy for your website.
+
+**NOTE:** To learn more about configuration of the Citrix NetScaler VPX device, please visit the [Citrix documentation page ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/netscaler.html). For further assistance, contact the {{site.data.keyword.BluSoftlayer_notm}} support and sales.

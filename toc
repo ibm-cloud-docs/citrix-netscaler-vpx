@@ -59,6 +59,7 @@ Citrix NetScaler VPX
     global-load-balancing-options.md
     global-load-balancing-netscaler-vpx.md
     [Citrix Website](https://www.citrix.com/products/netscaler-adc/)
+    other-resources.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
