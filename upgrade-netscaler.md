@@ -37,6 +37,3 @@ lastupdated: "2018-11-12"
      1. Navigate to **Configuration** > **System** > **Settings**.
      2. In the details pane, click **Configure Advanced features** link and uncheck the **Callhome** option.
      3. Click **OK**.
-
-
-

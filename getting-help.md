@@ -24,6 +24,6 @@ When using the forums to ask a question, tag your question so that it is seen by
 * If you have technical questions about the Citrix NetScaler VPX, post your question on [Stack Overflow](https://stackoverflow.com/search?q=citrix-vpx+ibm-cloud) and tag your question with "citrix-vpx" and "ibm-cloud".
 * For questions about the service and getting started instructions, use the [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/citrix-vpx.html?smartspace=ibm-cloud) forum. Include the "citrix-vpx" and "ibm-cloud" tags.
 
-See [Getting help](../../../support/index.html#getting-help) for more details about using the forums.
+See [Getting help](/docs/support/index.html#getting-help) for more details about using the forums.
 
-For information about opening an IBM support ticket, or about support levels and ticket severities, see [Contacting support](../../../support/index.html#contacting-support).
+For information about opening an IBM support ticket, or about support levels and ticket severities, see [Contacting support](/docs/support/index.html#contacting-support).

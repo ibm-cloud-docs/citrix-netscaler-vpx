@@ -25,6 +25,6 @@ The static public IP to be used with the Citrix VPX can be retrieved from the Cu
 
 For more information on IBM Cloud Internet Services and the DNS service, refer to the following links:
 
-* [Getting Started with IBM Cloud Internet Services (CIS)](../../infrastructure/cis/getting-started.html#getting-started-with-ibm-cloud-internet-services-cis-)
-* [Set up your Domain Name System (DNS) for IBM CIS](../../infrastructure/cis/dns.html#set-up-your-domain-name-system-dns-for-ibm-cis)
+* [Getting Started with IBM Cloud Internet Services (CIS)](/docs/infrastructure/cis/getting-started.html#getting-started-with-ibm-cloud-internet-services-cis-)
+* [Set up your Domain Name System (DNS) for IBM CIS](/docs/infrastructure/cis/dns.html#set-up-your-domain-name-system-dns-for-ibm-cis)
 

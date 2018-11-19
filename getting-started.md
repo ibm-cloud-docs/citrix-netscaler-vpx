@@ -17,7 +17,7 @@ To get started with Citrix NetScaler VPX, you will need to know the following in
 
 * Your IBM Cloud Customer Portal login information
 * The deployment location for your load balancer
-* Which Netscaler type best fits your needs (for more information refer to [Explore Load Balancers](../../infrastructure/loadbalancer-service/explore-load-balancers.html))
+* Which Netscaler type best fits your needs (for more information refer to [Explore Load Balancers](/docs/infrastructure/loadbalancer-service/explore-load-balancers.html))
 * The number of public IP addresses needed
 * The VLAN where you want to assign the load balancer
 
