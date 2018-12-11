@@ -14,7 +14,7 @@ lastupdated: "2018-11-12"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Install the IBM Hardware Security Monitor (HSM) Client Software
+# Install the IBM Hardware Security Module (HSM) Client Software
 
 In this step, Citrix VPX will be installed with the software and utilities required to interact with the HSM. 
 
@@ -110,4 +110,4 @@ They will be needed for this section and the remainder of the guide.
 	/var/safenet/safenet/lunaclient/lib/libCryptoki2_64.so
 	```
 
-IBM Hardware Security Monitor has been installed successfully.
+IBM Hardware Security Module has been installed successfully.

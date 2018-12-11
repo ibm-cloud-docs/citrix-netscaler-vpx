@@ -15,7 +15,7 @@ lastupdated: "2018-11-12"
 
 # Retrieve and Transfer the Certificate
 
-Retrieve the SSL certificate you ordered earlier so that you're ready for its installation and configuration in the next Step by Step, [Configuring and Tuning SSL Offload with Citrix Netscaler VPX](hsm-ssl-guide.html). 
+Retrieve the SSL certificate you ordered earlier so that you're ready for its installation and configuration in the next Step by Step, [Configuring and Tuning SSL Offload with Citrix Netscaler VPX](hsm-ssl-guide.html).
 
 1. Shortly after validating ownership of the domain, you should receive an email confirming the completion of the certificate fulfillment and the certificate itself.
 

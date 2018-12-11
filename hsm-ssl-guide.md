@@ -45,7 +45,7 @@ Task  | Description
 [Create and apply a new Cipher Suite](hsm-ssl-cipher.html) | Create a Cipher Suite that prioritizes and preferences AEAD, ECDHE, and ECDSA.
 
 ## Additional resources
-The following additional resources can help you get the most out of your Citrix Netscaler VPX when using the IBM Hardware Security Monitor.
+The following additional resources can help you get the most out of your Citrix Netscaler VPX when using the IBM Hardware Security Module.
 
 * [NetScaler 12.1 Product Documentation](https://docs.citrix.com/en-us/netscaler/12-1/)
 * [Gemalto Support Portal](https://supportportal.gemalto.com/csm?id=csm_index)

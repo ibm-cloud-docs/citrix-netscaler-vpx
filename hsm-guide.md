@@ -44,7 +44,7 @@ Task  | Description
 [Initialize the HSM](hsm-initialize-hsm.html) | Most configurations require initialization of the HSM device. Without this, only certain `show` commands can be executed. 
 [Create a partition](hsm-create-partition.html) | A partition is a logical and independent space that is associated or attached to the client requesting or creating cryptographic objects in the HSM engine.
 [Install the HSM client software](hsm-install-hsm.html) | In this sub-section, VPX will be installed with the software and utilities required to interact with the HSM. |
-[Establish the Network Trust Link (NTL)](hsm-establish-ntl.html) | A Network Trust Link (NTL) is a secure channel for the Hardware Security Monitor (HSM) and the client to communicate. |
+[Establish the Network Trust Link (NTL)](hsm-establish-ntl.html) | A Network Trust Link (NTL) is a secure channel for the Hardware Security Module (HSM) and the client to communicate. |
 [Create keys and generate the Certificate Signing Request (CSR)](hsm-csr.html) | In this sub-section we will create a key pair that will be used to generate a Certificate Signing Request (CSR) and order / request a certificate with it. | 
 [Order the certificate](hsm-order-certificate.html) | Order an SSL certificate for your Citrix Netscaler VPX.
 [Retrieve and transfer the certificate](hsm-retrieve-certificate.html) | Retrieve the SSL certificate ordered earlier and leave everything ready for its installation and configuration in the next Step by Step. 

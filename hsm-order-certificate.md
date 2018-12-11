@@ -20,7 +20,7 @@ Secure Sockets Layer (SSL) is a technology that encrypts traffic between the cli
 
 SSL certificates contain the server’s public key, dates for which the certificate is valid, a host name for which the certificate is valid, and a signature from the certificate authority that issued it.
 
-IBM Cloud offers certificates that can be acquired and purchased without having to go through a third-party vendor/site. 
+IBM Cloud offers certificates that can be acquired and purchased without having to go through a third-party vendor/site.
 
 IBM Cloud offers yearly and bi-yearly SSL certificates for customers that offer various benefits, including:
 
@@ -32,16 +32,15 @@ If you are running multiple domains, an SSL certificate can be purchased for eac
 
 For more information about SSL certificates refer to the following IBM Cloud articles:
 
-* [Introduction to SSL technology](/docs/infrastructure/ssl-certificates/intro-ssl.html#introduction-to-ssl-technology)
 * [About SSL certificates](/docs/infrastructure/ssl-certificates/ssl-certificates.html#about-ssl-certificates)
+* [Introduction to SSL technology](/docs/infrastructure/ssl-certificates/intro-ssl.html#introduction-to-ssl-technology)
 * [Planning for SSL](/docs/infrastructure/ssl-certificates/planning-ahead-ssl.html#planning-for-ssl)
-
 To order an SSL certificate for use with your Citrix Netscaler VPX, perform the following procedure:
 
 1.	In VPX shell CLI, display the CSR text by opening the CSR file previously created in the step [Create keys and generate the Certificate Signing Request (CSR)](hsm-csr.html):
 
 	```
-	root@IBMADC690867-s6dr# cat certreqnss6dr.csr 
+	root@IBMADC690867-s6dr# cat certreqnss6dr.csr
 	-----BEGIN NEW CERTIFICATE REQUEST-----
 	MIIC5jCCAc4CAQAwgaAxCzAJBgNVBAYTMRcwFQYDVQQIEw5Ob3J0aCBDYXJv
 	bGluYTEPMA0GA1UEBxMGRHVyaGFtMQwwCgYDVQQKEwNJQk0xDDAKBgNVBAsTA0hT
@@ -59,19 +58,19 @@ To order an SSL certificate for use with your Citrix Netscaler VPX, perform the 
 	kHD85XOkSI4y04Y3t6pMVbIAz0vipOmHYlM=
 	-----END NEW CERTIFICATE REQUEST-----
 	```
-	
-2.	Copy the content of the file starting with `---BEGIN NEW CERTIFICATE REQUEST---` all the way to `---END NEW CERTIFICATE REQUEST---`. 
+
+2.	Copy the content of the file starting with `---BEGIN NEW CERTIFICATE REQUEST---` all the way to `---END NEW CERTIFICATE REQUEST---`.
 
 3.	Follow [these instructions](/docs/infrastructure/ssl-certificates/index.html#ordering-ssl-certificates) to place the order, pasting your CSR file text in the appropriate field. In the following example, `RapidSSL 1 Year` was chosen.
 
 	<img src="images/5-Order-Certificate_1.png" alt="drawing" style="width: 550px;"/>
 
-	As shown, the system processes and interprets the CSR text, then displays this in the following page. 
+	As shown, the system processes and interprets the CSR text, then displays this in the following page.
 
 	Make sure to select a valid email account and domain/sub-domain, as this is the designated method to validate the ownership of the domain.
 
 	Confirm your order details and click **Place Order**.
 
-4. You will receive an order confirmation with the details of the certificate request to the account you indicated. 
+4. You will receive an order confirmation with the details of the certificate request to the account you indicated.
 
 	Click the enclosed link in the email to approve the domain validation request. At this point the SSL request should be ready to begin fulfilment.

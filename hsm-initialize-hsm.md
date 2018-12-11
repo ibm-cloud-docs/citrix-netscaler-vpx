@@ -13,13 +13,13 @@ lastupdated: "2018-11-12"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Initialize IBM Hardware Security Monitor (HSM)
+# Initialize IBM Hardware Security Module (HSM)
 
 Most configurations require initialization of the HSM device. Without this, only certain `show` commands can be executed. 
 
 To initialize your device, follow the steps below:
 
-1.	Conect using SSH into the IBM Hardware Security Monitor device with the credentials listed in the Control Portal under **Devices > Device List > Expand HSM name**.
+1.	Conect using SSH into the IBM Hardware Security Module device with the credentials listed in the Control Portal under **Devices > Device List > Expand HSM name**.
  
 	Alternatively, you can use public key authentication. For more information review the [Appliance Administration Guide (page 38) ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/appliance_administration_guide.pdf){: new_window}.
 	

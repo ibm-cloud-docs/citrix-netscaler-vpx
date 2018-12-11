@@ -35,14 +35,14 @@ In this topic you will install the SSL Certificate you created in the previous [
 	> add ssl hsmKey NSkey_s6dr -hsmType SAFENET -	SerialNum 534071053 -password P@rtition6
 	ERROR:  Internal error while adding HSM key.
 	```
-	
+
 	The previous command uses the following syntax:
-	
+
 	```
 	add ssl hsmkey <KeyName> -hsmType SAFENET -serialNum 	<serial #> -password <password>
 	```
-	
-	Where `keyName` is the name of the key created on the IBM Hardware Security Monitor (HSM) with the CMU utility. The `serialNum` parameter is the serial number of the partition in question. The `password` parameter, as before, is the password of the partition on which the keys are present.
+
+	Where `keyName` is the name of the key created on the IBM Hardware Security Module (HSM) with the CMU utility. The `serialNum` parameter is the serial number of the partition in question. The `password` parameter, as before, is the password of the partition on which the keys are present.
 
 	**NOTE:** The `Internal error` message is expected due to the increased time it takes to complete this step. The key should be properly added. However, any other error messages you receive should be addressed.
 
@@ -53,21 +53,21 @@ In this topic you will install the SSL Certificate you created in the previous [
 	1) HSM Key Name: NSkey_s6dr
  	Done
 	```
-	
+
 4.	As with the HSM key, the SSL certificate must be added using the appropriate Citrix VPX command for it to be recognized:
 
 	```
 	> add ssl certkey hsmclient7ns -cert /nsconfig/ssl/	hsmclient7.cer -hsmkey NSkey_s6dr
 	Done
 	```
-	
+
 	For the above command the following syntax is used:
-	
+
 	```
-	add ssl certkey <CertkeyName> -cert <cert path/name> 
+	add ssl certkey <CertkeyName> -cert <cert path/name>
 	-hsmkey <KeyName>
 	```
-	
+
 	Where `certkey` is the name of the certificate object to be added in the VPX device. The `cert` parameter contains the name and path to the file, if it is located in a directory other than the current one). Lastly, `hsmkey` contains the name of the key added in the previous step.
 
 5.	Confirm the certificate was installed:
@@ -99,13 +99,13 @@ In this topic you will install the SSL Certificate you created in the previous [
 	Done
 	>
 	```
-	
+
 6.	(OPTIONAL) To avoid security warnings when accessing content through a web browser, you may wish to install "Intermediate CA" certificates. These allow your Citrix Netscaler VPX to share information with connecting clients.
 
 	To obtain these intermediate certificates for RapidSSL, visit any of the links below:
-	
-	* [RapidSSL Intermediate and Root CA Certificates](https://knowledge.digicert.com/generalinformation/INFO1548.html#links)
+
 	* [Reissue GeoTrust Certificate For Partner Orders or QuickSSL](https://knowledge.digicert.com/solution/SO5989.html)
+  * [RapidSSL Intermediate and Root CA Certificates](https://knowledge.digicert.com/generalinformation/INFO1548.html#links)
 
 	To install and link the certificates, follow the instructions in this [Citrix article](https://support.citrix.com/article/CTX114146).
 

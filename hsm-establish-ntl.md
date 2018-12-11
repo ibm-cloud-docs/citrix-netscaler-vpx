@@ -15,7 +15,7 @@ lastupdated: "2018-11-12"
 
 # Establish a Network Trust Link (NTL)
 
-A Network Trust Link (NTL) is a secure channel for the Hardware Security Monitor (HSM) and the client to communicate. NTLs use certificates in both directions to authenticate and encrypt data transmitted between HSM server partitions and clients. 
+A Network Trust Link (NTL) is a secure channel for the Hardware Security Module (HSM) and the client to communicate. NTLs use certificates in both directions to authenticate and encrypt data transmitted between HSM server partitions and clients. 
 
 Be advised that the trust link requires TCP port 1792 to be accessible in both the NTLS and NTLA (bi-directional) protocols to guarantee all processes and utilities work correctly.
 
