@@ -24,7 +24,7 @@ IBM Cloud offers certificates that can be acquired and purchased without having 
 
 IBM Cloud offers yearly and bi-yearly SSL certificates for customers that offer various benefits, including:
 
-* Gull authentication for business identity and domain ownership verification
+* Full authentication for business identity and domain ownership verification
 * 40- to 256-bit encryption on all online transactions
 * Daily website malware scanning to ensure that both your site and your customers are protected
 
