@@ -2,13 +2,13 @@
 copyright:
   years: 1994, 2018
   
-lastupdated: "2018-11-21"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# What's New in Citrix NetScaler VPX
+# Recent Updates
 
 ## Version 12.1
 
