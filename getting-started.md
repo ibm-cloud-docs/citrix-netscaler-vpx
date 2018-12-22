@@ -15,7 +15,7 @@ Deploying a Citrix NetScaler VPX in your {{site.data.keyword.BluSoftlayer_notm}}
 ## Before you begin
 To get started with Citrix NetScaler VPX, you will need to know the following information:
 
-* Your IBM Cloud Customer Portal login information
+* Your IBM© Cloud Customer Portal login information
 * The deployment location for your load balancer
 * Which Netscaler type best fits your needs (for more information refer to [Explore Load Balancers](/docs/infrastructure/loadbalancer-service/explore-load-balancers.html))
 * The number of public IP addresses needed

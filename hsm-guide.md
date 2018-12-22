@@ -24,7 +24,7 @@ This deployment was built and tested with the following component specifications
 | ------------- | ------------- | ------------- | ------------- |
 | NS12.1: Build 48.13.nc | 6.2.2-5 | 6.10.9 | 6.2.2 |
 
-**NOTE:** If you have an older version of VPX or, if when ordering the device through the IBM Cloud platform only see versions 11.1 and earlier as selection options, the device can be upgraded so that the set-up described in this guide can be completed. 
+**NOTE:** If you have an older version of VPX or, if when ordering the device through the IBM© Cloud platform only see versions 11.1 and earlier as selection options, the device can be upgraded so that the set-up described in this guide can be completed. 
 
 ## Logical topology
 The below diagram shows the network traffic flow for the SSL offload use case. This provides a visual and logical perspective of the trust link and the configuration between VPX and the HSM appliance. 

@@ -32,7 +32,7 @@ Load balancing traffic has become a key aspect of many customer implementations 
 ## How many load balancing options are available in {{site.data.keyword.BluSoftlayer_notm}}?
 {:faq}
 
-For a detailed comparison of IBM's Load Balancer offerings, refer to [Explore Load Balancers](https://dev-console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html#explore-load-balancers).
+For a detailed comparison of the IBM© Load Balancer offerings, refer to [Explore Load Balancers](https://dev-console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html#explore-load-balancers).
 
 ## Does NetScaler support IPv6?
 {:faq}

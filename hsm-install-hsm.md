@@ -110,4 +110,4 @@ They will be needed for this section and the remainder of the guide.
 	/var/safenet/safenet/lunaclient/lib/libCryptoki2_64.so
 	```
 
-IBM Hardware Security Module has been installed successfully.
+IBM© Hardware Security Module has been installed successfully.

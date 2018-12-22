@@ -26,7 +26,7 @@ In this Step-by-Step guide you will learn how to configure the service:
 Task  | Description
 ------------- | -------------
 [Order the Citrix NetScaler VPX](order-vpx.html) | Begin by ordering a Citrix NetScaler VPX appliance.
-[Request a Private Subnet](request-subnet.html) | Request a private subnet from IBM Support for your account.
+[Request a Private Subnet](request-subnet.html) | Request a private subnet from IBM© Support for your account.
 [Enable Cache Redirection and Load Balancing capabilities](fp-cache.html) | Identify the your application's resources, such as origin pools and health check mechanisms.
 [Configure the DNS Virtual Server](fp-dns.html) | Add your DNS resolvers, define your DNS service group, then define your DNS virtual server.
 [Configure Cache Redirection for HTTP(S) traffic](fp-cache-http.html) | Configure the cache redirection for your forward proxy virtual server with HTTP or HTTPS traffic.

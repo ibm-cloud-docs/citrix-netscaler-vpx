@@ -15,7 +15,7 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Check and Configure the DNS Record
-In this Step by Step example, the DNS service from IBM Cloud Internet Services is used to manage the DNS zone and its records. In this case, you must ensure a record is created for the FQDN being used. The record should point to the public address to be configured in the Citrix Netscaler VPX virtual server.
+In this Step by Step example, the DNS service from IBM© Cloud Internet Services is used to manage the DNS zone and its records. In this case, you must ensure a record is created for the FQDN being used. The record should point to the public address to be configured in the Citrix Netscaler VPX virtual server.
 
 <img src="images/12-add-record.png" alt="drawing" style="width: 700px;"/>
 

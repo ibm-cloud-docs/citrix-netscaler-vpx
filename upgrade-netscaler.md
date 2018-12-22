@@ -19,7 +19,7 @@ lastupdated: "2018-11-12"
 
 	[NetScaler Available Versions ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://downloads.softlayer.local/citrix/netscaler/){: new_window}
 	
-	**NOTE:** You must be connected to the IBM Cloud Infrastructure VPN in order to access this link.
+	**NOTE:** You must be connected to the IBM© Cloud Infrastructure VPN in order to access this link.
 
 5. On the Upload Software screen, browse to the location of the upgrade file and click **Upgrade**. The firmware will upload.
 6. On the resulting System Upgrade window, you will be prompted to reboot. Click **Close**.

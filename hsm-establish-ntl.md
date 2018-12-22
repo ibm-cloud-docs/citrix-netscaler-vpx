@@ -114,7 +114,7 @@ To estabish your NTL, perform the following procedure:
 	client register -client <client_name> -ip <client_IP_address>
 	```
 
-	The client name does not have to match the identifier assigned and used by IBM Cloud, however, this is recommended to keep names consistent. 
+	The client name does not have to match the identifier assigned and used by IBM© Cloud, however, this is recommended to keep names consistent. 
 
 6. Confirm the client was added:
 

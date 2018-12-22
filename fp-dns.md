@@ -20,7 +20,7 @@ lastupdated: "2018-11-12"
 To configure a DNS virtual server:
 
 1. Go to Traffic Management > Load Balancing > Servers. 
-2. Click Add to add the two IBM Softlayer DNS resolvers - 10.0.80.11 and 10.0.80.12. 
+2. Click Add to add the two IBM© Softlayer DNS resolvers - 10.0.80.11 and 10.0.80.12. 
 
 	<img src="images/fp5.png" alt="drawing" style="width: 200px;"/> <img src="images/fp5b.png" alt="drawing" style="width: 200px;"/>
 

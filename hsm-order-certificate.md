@@ -20,7 +20,7 @@ Secure Sockets Layer (SSL) is a technology that encrypts traffic between the cli
 
 SSL certificates contain the server’s public key, dates for which the certificate is valid, a host name for which the certificate is valid, and a signature from the certificate authority that issued it.
 
-IBM Cloud offers certificates that can be acquired and purchased without having to go through a third-party vendor/site.
+IBM© Cloud offers certificates that can be acquired and purchased without having to go through a third-party vendor/site.
 
 IBM Cloud offers yearly and bi-yearly SSL certificates for customers that offer various benefits, including:
 

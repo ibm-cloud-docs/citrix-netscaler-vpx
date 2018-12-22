@@ -9,7 +9,7 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 
 # Other Resources
-These resources are created by IBM and some of our partners and customers.
+These resources are created by IBM© and some of our partners and customers.
 
 ## Blogs
 

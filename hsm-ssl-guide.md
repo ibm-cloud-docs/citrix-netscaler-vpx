@@ -16,7 +16,7 @@ lastupdated: "2018-11-12"
 # Configuring and Tuning SSL Offload with Citrix Netscaler VPX
 This Step by Step guides you through configuring and tuning SSL Offload in Citrix Netscaler VPX, this is done by using the certificate and cryptographic material generated via the HSM link.
 
-**NOTE:** This Step by Step assumes you have completed the steps in [Deploying and Configuring the IBM Hardware Security Module (HSM) with Citrix Netscaler VPX](hsm-guide.html) to order and create your VPX/HSM pairing. 
+**NOTE:** This Step by Step assumes you have completed the steps in [Deploying and Configuring the IBM© Hardware Security Module (HSM) with Citrix Netscaler VPX](hsm-guide.html) to order and create your VPX/HSM pairing. 
 
 ## About the deployment
 This deployment was built and tested with the following component specifications:
