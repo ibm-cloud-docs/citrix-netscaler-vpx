@@ -20,9 +20,9 @@ To guarantee proper authentication you must ensure your Citrix Netscaler VPX use
 
 To learn more about SSL cipher suites and other best practices visit the following links:
 
-* [Scoring an A+ at SSLlabs.com with Citrix NetScaler](https://www.citrix.com/blogs/2018/05/16/scoring-an-a-at-ssllabs-com-with-citrix-netscaler-q2-2018-update/) – Q2 2018 update (refer to steps three and five in the command guide)
-* [SSL and TLS Deployment Best Practices](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices#23-use-secure-cipher-suites)
-* [How Do I Setup ECC on NetScaler?](https://support.citrix.com/article/CTX205289)
+* [Scoring an A+ at SSLlabs.com with Citrix NetScaler ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.citrix.com/blogs/2018/05/16/scoring-an-a-at-ssllabs-com-with-citrix-netscaler-q2-2018-update/){:new_window} – Q2 2018 update (refer to steps three and five in the command guide)
+* [SSL and TLS Deployment Best Practices ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices#23-use-secure-cipher-suites){:new_window}
+* [How Do I Setup ECC on NetScaler? ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.citrix.com/article/CTX205289){:new_window}
 
 **NOTE:** This topic focuses on specific and required configurations for SSL ciphers. The information in the previous links may provide additional settings that can be applied to optimize SSL operation. 
 
@@ -137,7 +137,7 @@ To create a new Cipher Suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, pe
 	
 5.	(OPTIONAL) HTTP Redirection can be enabled to redirect users to a secure web site when they create an HTTP request (as opposed to HTTPS).
  
-	See [How to Configure HTTP to HTTPS Redirection on NetScaler](https://support.citrix.com/article/CTX201201) for configuration instructions.
+	See [How to Configure HTTP to HTTPS Redirection on NetScaler ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.citrix.com/article/CTX201201){:new_window} for configuration instructions.
 
 6.	Test the HTTPS connection by opening a web browser and entering the FQDN. The site should load the content rendered by the HTTP service behind the Citrix VPX.
 

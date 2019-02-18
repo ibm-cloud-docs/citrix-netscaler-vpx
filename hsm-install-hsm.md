@@ -28,7 +28,7 @@ They will be needed for this section and the remainder of the guide.
 
 **NOTE:** Please be aware that all VPX commands and outputs in this document will list either `netscalername#` (indicating a shell execution, or `>` (for the VPX CLI itself).
 
-1.	(OPTIONAL) Obtain the `safenet_dirs.tar` file and transfer it to the VPX in the `/var` directory. The `safenet_dirs.tar` file can be obtained from [here](http://downloads.service.softlayer.com/citrix/netscaler/Safenet-HSM/).
+1.	(OPTIONAL) Obtain the `safenet_dirs.tar` file and transfer it to the VPX in the `/var` directory. The `safenet_dirs.tar` file can be obtained from [here ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://downloads.service.softlayer.com/citrix/netscaler/Safenet-HSM/){:new_window}.
 
 	**NOTE:** You must be logged into your SoftLayer account to access the above link.
 

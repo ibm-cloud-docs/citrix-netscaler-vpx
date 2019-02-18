@@ -8,7 +8,7 @@ lastupdated: "2018-08-08"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Redirect URLs in a Citrix Netscaler VPX
+# Redirecting URLs in a Citrix Netscaler VPX
 
 The most common way to perform a `http://` to `https://` redirect in NetScaler is to take advantage of the backup/redirect feature, which was originally intended to redirect to a "server down" or "maintenance" page.  
 
@@ -56,13 +56,14 @@ An alternative method for performing a redirect for `http://` to `https://`, whi
 8. You can confirm this is functioning as intended by using command-line utilities such as ‘wget’ or ‘curl’ as follows:
         
 	```
-        wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
+    wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
 
-        curl -v http://w.x.y.z
-        ```
+    curl -v http://w.x.y.z
+    ```
 
 Substitute the IP address `w.x.y.z` for the URL hostname (for example, `http://mail.example.com` or `http://web.example.com`) and confirm that the “Location” output reflects the same hostname which was initially specified, but starting with “https” per the following examples:
 
+```
     wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
     --2012-06-18 08:42:20--  http://w.x.y.z/
     Connecting to w.x.y.z:80... connected.
@@ -92,3 +93,4 @@ Substitute the IP address `w.x.y.z` for the URL hostname (for example, `http://m
       Connection: close
       Cache-Control: no-cache
       Pragma: no-cache
+```

@@ -15,7 +15,7 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Install Your SSL Certificate
-In this topic you will install the SSL Certificate you created in the previous [Step by Step](hsm-order-certificate.html). To do so, perform the following procedure:
+In this topic you will install the SSL Certificate you created in the previous [Step by Step](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx). To do so, perform the following procedure:
 
 1.	Confirm that the certificate is present in the `/nsconfig/ssl` directory on your Citrix Netscaler VPX.
 
@@ -104,10 +104,10 @@ In this topic you will install the SSL Certificate you created in the previous [
 
 	To obtain these intermediate certificates for RapidSSL, visit any of the links below:
 
-	* [Reissue GeoTrust Certificate For Partner Orders or QuickSSL](https://knowledge.digicert.com/solution/SO5989.html)
-  * [RapidSSL Intermediate and Root CA Certificates](https://knowledge.digicert.com/generalinformation/INFO1548.html#links)
+	* [Reissue GeoTrust Certificate For Partner Orders or QuickSSL ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://knowledge.digicert.com/solution/SO5989.html){:new_window}
+  * [RapidSSL Intermediate and Root CA Certificates ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://knowledge.digicert.com/generalinformation/INFO1548.html#links){:new_window}
 
-	To install and link the certificates, follow the instructions in this [Citrix article](https://support.citrix.com/article/CTX114146).
+	To install and link the certificates, follow the instructions in this [Citrix article ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.citrix.com/article/CTX114146){:new_window}.
 
 	```
 	> show ssl certlink

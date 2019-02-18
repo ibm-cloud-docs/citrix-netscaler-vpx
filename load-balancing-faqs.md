@@ -9,15 +9,14 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:faq: data-hd-content-type='faq'}
 
-# FAQs
+# FAQs for Citrix NetScaler VPX
 
 The following are frequently asked questions when working with the Citrix NetScaler VPX.
 
 ## What is Citrix NetScaler VPX?
 {:faq}
 
-Citrix NetScaler is an application delivery controller that makes applications five times better by accelerating performance, ensuring application availability and protection and substantially lowering operational costs. Choose the best Citrix NetScaler edition that meets your application requirements, and deploy it on the appropriate dedicated system for your performance needs. To learn more about Citrix NetScaler, refer to the [NetScaler page ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.citrix.com/products/netscaler-application-delivery-controller/overview.html){: new_window}
- on the Citrix website.
+Citrix NetScaler is an application delivery controller that makes applications five times better by accelerating performance, ensuring application availability and protection and substantially lowering operational costs. Choose the best Citrix NetScaler edition that meets your application requirements, and deploy it on the appropriate dedicated system for your performance needs. To learn more about Citrix NetScaler, refer to the [NetScaler page ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.citrix.com/products/netscaler-application-delivery-controller/overview.html){:new_window} on the Citrix website.
 
 ## Why is load balancing needed?
 {:faq}
@@ -32,7 +31,7 @@ Load balancing traffic has become a key aspect of many customer implementations 
 ## How many load balancing options are available in {{site.data.keyword.BluSoftlayer_notm}}?
 {:faq}
 
-For a detailed comparison of the IBM© Load Balancer offerings, refer to [Explore Load Balancers](https://dev-console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html#explore-load-balancers).
+For a detailed comparison of the IBM© Load Balancer offerings, refer to [Explore Load Balancers](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore).
 
 ## Does NetScaler support IPv6?
 {:faq}

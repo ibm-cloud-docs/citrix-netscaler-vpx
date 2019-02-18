@@ -32,12 +32,13 @@ If you are running multiple domains, an SSL certificate can be purchased for eac
 
 For more information about SSL certificates refer to the following IBM Cloud articles:
 
-* [About SSL certificates](/docs/infrastructure/ssl-certificates/ssl-certificates.html#about-ssl-certificates)
-* [Introduction to SSL technology](/docs/infrastructure/ssl-certificates/intro-ssl.html#introduction-to-ssl-technology)
-* [Planning for SSL](/docs/infrastructure/ssl-certificates/planning-ahead-ssl.html#planning-for-ssl)
+* [About SSL certificates](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-about-ssl-certificates)
+* [Introduction to SSL technology](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-introduction-to-ssl-technology)
+* [Planning for SSL](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-planning-for-ssl)
+
 To order an SSL certificate for use with your Citrix Netscaler VPX, perform the following procedure:
 
-1.	In VPX shell CLI, display the CSR text by opening the CSR file previously created in the step [Create keys and generate the Certificate Signing Request (CSR)](hsm-csr.html):
+1.	In VPX shell CLI, display the CSR text by opening the CSR file previously created in the step [Create keys and generate the Certificate Signing Request (CSR)](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-):
 
 	```
 	root@IBMADC690867-s6dr# cat certreqnss6dr.csr
@@ -61,7 +62,7 @@ To order an SSL certificate for use with your Citrix Netscaler VPX, perform the 
 
 2.	Copy the content of the file starting with `---BEGIN NEW CERTIFICATE REQUEST---` all the way to `---END NEW CERTIFICATE REQUEST---`.
 
-3.	Follow [these instructions](/docs/infrastructure/ssl-certificates/index.html#ordering-ssl-certificates) to place the order, pasting your CSR file text in the appropriate field. In the following example, `RapidSSL 1 Year` was chosen.
+3.	Follow [these instructions](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-getting-started-tutorial#ordering-ssl-certificates) to place the order, pasting your CSR file text in the appropriate field. In the following example, `RapidSSL 1 Year` was chosen.
 
 	<img src="images/5-Order-Certificate_1.png" alt="drawing" style="width: 550px;"/>
 
@@ -73,4 +74,4 @@ To order an SSL certificate for use with your Citrix Netscaler VPX, perform the 
 
 4. You will receive an order confirmation with the details of the certificate request to the account you indicated.
 
-	Click the enclosed link in the email to approve the domain validation request. At this point the SSL request should be ready to begin fulfilment.
+	Click the enclosed link in the email to approve the domain validation request. At this point the SSL request should be ready to begin fulfillment.

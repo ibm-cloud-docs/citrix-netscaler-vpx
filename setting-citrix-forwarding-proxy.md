@@ -8,7 +8,7 @@ lastupdated: "2017-11-02"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Set up Citrix Netscaler VPX as a Forwarding Proxy
+# Setting up Citrix Netscaler VPX as a Forwarding Proxy
 
 A forwarding proxy acts as a single point of control between clients on an internal network and the Internet. A proxy allows the Network or Security Administrator the ability to create policies restricting access to Internet sites.
 

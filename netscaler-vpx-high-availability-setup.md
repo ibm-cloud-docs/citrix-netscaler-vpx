@@ -8,7 +8,7 @@ lastupdated: "2018-11-12"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Set up Citrix Netscaler VPX for High Availability (HA)
+# Setting up Citrix Netscaler VPX for High Availability (HA)
 
 Load balancers are used to balance traffic over multiple application servers to improve performance and stability in a scalable application. Yet, a single loadbalancer is a single point of failure. Avoid this by configuring a High Availability (HA) Netscaler VPX pair. Configuring an HA pair requires two Netscaler VPX servers. The secondary server steps in to continue load balancing should the primary fail. 
 
@@ -19,7 +19,7 @@ For an HA configuration, both NetScalers must be in the same VLAN and on the sam
 Before beginning the HA configuration, ensure that you take the following prerequisite actions:
 
 1. If the pair will be configured active-active, any VIP subnets added to the instances must be of type "Routed to VLAN".
-* If the pair will be configured active-passive, any VIP subnets added to the instances must either be "Routed to VLAN" or "Secondary routed to IP", and routed to the public IP address of the primary node.
+2. If the pair will be configured active-passive, any VIP subnets added to the instances must either be "Routed to VLAN" or "Secondary routed to IP", and routed to the public IP address of the primary node.
 
 After ordering the two Netscaler VPX servers in the needed VLAN, and ordering the VIP and SNIP subnets to meet the prerequisites for your HA pair configuration, you can proceed with the following:
 

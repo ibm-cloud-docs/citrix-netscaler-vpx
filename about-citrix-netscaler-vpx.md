@@ -32,7 +32,7 @@ Deploying a Citrix NetScaler VPX in your {{site.data.keyword.BluSoftlayer_notm}}
   * Token
   * LRTM
 
-* SSL acceleration / SSL fffload
+* SSL acceleration / SSL offload
 * GSLB (Global Server Load Balancing)
   * Uses the DNS infrastructure to connect the client to the best data center
   * Monitors the load and availability of the data centers to select the best connection choices

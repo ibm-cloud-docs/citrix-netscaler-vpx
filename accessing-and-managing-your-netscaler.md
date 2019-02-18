@@ -8,7 +8,7 @@ lastupdated: "2018-11-12"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Manage your Citrix NetScaler VPX
+# Managing your Citrix NetScaler VPX
 
 Citrix NetScaler devices are powerful tools with an array of features that help to enhance and refine your {{site.data.keyword.BluSoftlayer_notm}} solution in a multitude of ways. You can find the device's information in the Customer Portal, as well as connect to the device and configure its features.  
 
