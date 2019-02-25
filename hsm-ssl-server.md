@@ -15,6 +15,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Add and Configure the SSL Virtual Server
+{: #add-and-configure-the-ssl-virtual-server}
+
 To add and configure your SSL Virtual Server, perform the following procedure:
 
 1. Navigate to **System > Settings > Configure Basic Features**. Select **SSL Offloading** then click **OK**.

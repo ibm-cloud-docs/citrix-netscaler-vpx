@@ -17,6 +17,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Configure Source NAT for Outbound Traffic
+{: #configure-source-nat-for-outbound-traffic}
+
 Network address translation (NAT) is a method of remapping one IP address space into another by modifying network address information in the IP header of packets while they are in transit across a traffic routing device.
 
 You may utilize your Citrix NetScaler VPX appliance to perform NAT on outbound traffic from your client machines. To do so:

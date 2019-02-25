@@ -8,6 +8,7 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 
 # Global Load Balancing
+{: #global-load-balancing}
 
 Global server load balancing (GSLB) is a method to split traffic across multiple servers using DNS and geographical locations as the means to determine where server traffic should be sent. Generally, a global load balancer sends a client request to a server that is closer to the client, decreasing latency and improving performance.
 

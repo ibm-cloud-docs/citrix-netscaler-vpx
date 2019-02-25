@@ -15,6 +15,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Order the IBM Hardware Security Module (HSM)
+{: #order-the-ibm-hardware-security-module-hsm-}
+
 First, you'll need to order the HSM. To do so:
 
 1. From your browser, open the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} and log into your account.

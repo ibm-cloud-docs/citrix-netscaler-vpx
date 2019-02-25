@@ -8,6 +8,7 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 
 # Citrix NetScaler VPX Terminology
+{: #citrix-netscaler-vpx-terminology}
 
 The Citrix NetScaler platform uses both product-specific terminology and basic load balancer terminology and concepts. 
 

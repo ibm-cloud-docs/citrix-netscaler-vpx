@@ -17,6 +17,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Update the Proxy Settings on the Client Machine’s Internet Browser (Optional)
+{: #update-the-proxy-settings-on-the-client-machine-s-internet-browser-optional-}
+
 To update your proxy settings using your client machine's internet browser, perform the following steps:
 
 1. Go to **Internet Options** in your browser settings and configure it to use a proxy server for outgoing requests. 

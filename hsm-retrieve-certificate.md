@@ -14,6 +14,7 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Retrieve and Transfer the Certificate
+{: #retrieve-and-transfer-the-certificate}
 
 Retrieve the SSL certificate you ordered earlier so that you're ready for its installation and configuration in the next Step by Step, [Configuring and Tuning SSL Offload with Citrix Netscaler VPX](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configuring-and-tuning-ssl-offload-with-citrix-netscaler-vpx). 
 

@@ -17,6 +17,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Configure Cache Redirection for HTTP(S) traffic
+{: #configure-cache-redirection-for-ssl-traffic-optional-}
+
 To configure cache redirection for HTTP or HTTPS traffic, follow these steps:
 
 1. Go to **Traffic Management > Cache Redirection > Virtual Servers** and click **Add**.

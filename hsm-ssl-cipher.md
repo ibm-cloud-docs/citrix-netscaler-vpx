@@ -14,6 +14,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Create and Apply a New Cipher Suite
+{: #create-and-apply-a-new-cipher-suite}
+
 A cipher suite is a combination of authentication, encryption, Message Authentication Code (MAC) and key exchange algorithms used to negotiate the security settings for SSL and TLS protocols.
 
 To guarantee proper authentication you must ensure your Citrix Netscaler VPX uses the best combination of ciphers.

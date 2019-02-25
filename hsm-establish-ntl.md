@@ -14,6 +14,7 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Establish a Network Trust Link (NTL)
+{: #establish-a-network-trust-link-ntl-}
 
 A Network Trust Link (NTL) is a secure channel for the Hardware Security Module (HSM) and the client to communicate. NTLs use certificates in both directions to authenticate and encrypt data transmitted between HSM server partitions and clients. 
 

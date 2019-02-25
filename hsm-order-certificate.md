@@ -15,6 +15,7 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Order an SSL Certificate
+{: #order-an-ssl-certificate}
 
 Secure Sockets Layer (SSL) is a technology that encrypts traffic between the client application and the server application, and is accomplished by using a public key/private key system that uses an SSL certificate.
 

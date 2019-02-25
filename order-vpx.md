@@ -17,6 +17,7 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Order the Citrix NetScaler VPX appliance
+{: #order-the-citrix-netscaler-vpx-appliance}
 
 From your browser, open the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} and log into your account. Then:
 

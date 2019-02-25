@@ -15,6 +15,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Order a Citrix Netscaler VPX
+{: #order-a-citrix-netscaler-vpx}
+
 If you haven't already, order your Citrix Netscaler VPX.
 
 For instructions on ordering, visit [Getting started with Citrix NetScaler VPX Software Appliance](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance), make sure to select 12.1 in step 5. If 12.1 does not show, proceed with latest version available and upgrade your VPX using instructions in 

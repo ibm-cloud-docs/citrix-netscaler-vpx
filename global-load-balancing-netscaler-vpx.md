@@ -8,6 +8,7 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 
 # Global Load Balancing with Citrix NetScaler VPX
+{: #global-load-balancing-with-citrix-netscaler-vpx}
 
 Global server load balancing (GSLB) is a mechanism to distribute traffic across multiple servers/instances, typically residing in different geographical locations. The idea is to have a global balancing engine/server that receives traffic requests from clients and redirects them to a certain geography, the latter determined using the criteria/algorithms selected and configured by the administrator. To achieve this, two recognized methods can be used inside the {{site.data.keyword.BluSoftlayer_notm}} network:
 

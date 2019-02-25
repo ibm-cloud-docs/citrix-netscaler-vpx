@@ -14,6 +14,7 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Create keys and generate the Certificate Signing Request (CSR)
+{: #create-keys-and-generate-the-certificate-signing-request-csr-}
 
 In this sub-section we will create a key pair that will be used to generate a Certificate Signing Request (CSR) and order / request a certificate with it.
 

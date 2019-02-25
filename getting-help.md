@@ -16,6 +16,7 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Getting Help and Support for Citrix NetScaler VPX
+{: #getting-help-and-support-for-citrix-netscaler-vpx}
 
 If you have problems or questions when using Citrix NetScaler VPX, you can get help by searching for information or by asking questions through one of the forums listed below. You can also open a support ticket.
 

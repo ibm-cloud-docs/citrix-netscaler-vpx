@@ -14,6 +14,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Create a Partition
+{: #create-a-partition}
+
 A partition is a logical and independent space that is associated or attached to the client requesting or creating cryptographic objects in the HSM engine. Each partition has its own data and policies isolated from other partitions. To learn more about partitions, refer to the [Administration Guide (page 211) ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/administration_guide.pdf){: new_window}. 
 
 To create a partition, perform the following procedure:

@@ -17,6 +17,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Configure Cache Redirection for SSL traffic (Optional)
+{: #configure-cache-redirection-for-ssl-traffic-optional-}
+
 Instead of defining cache redirection for the virtual server with an HTTP or HTTPS protocol (as discussed in the previous step), you may want to define it to handle SSL traffic. 
 
 To do so, follow these steps:

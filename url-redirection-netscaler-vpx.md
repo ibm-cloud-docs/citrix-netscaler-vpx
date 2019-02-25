@@ -9,6 +9,7 @@ lastupdated: "2018-08-08"
 {:new_window: target="_blank"}
 
 # Redirecting URLs in a Citrix Netscaler VPX
+{: #redirecting-urls-in-a-citrix-netscaler-vpx}
 
 The most common way to perform a `http://` to `https://` redirect in NetScaler is to take advantage of the backup/redirect feature, which was originally intended to redirect to a "server down" or "maintenance" page.  
 

@@ -14,6 +14,7 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Initialize IBM Hardware Security Module (HSM)
+{: #initialize-ibm-hardware-security-module-hsm-}
 
 Most configurations require initialization of the HSM device. Without this, only certain `show` commands can be executed. 
 

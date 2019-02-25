@@ -15,6 +15,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Install Your SSL Certificate
+{: #install-your-ssl-certificate}
+
 In this topic you will install the SSL Certificate you created in the previous [Step by Step](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx). To do so, perform the following procedure:
 
 1.	Confirm that the certificate is present in the `/nsconfig/ssl` directory on your Citrix Netscaler VPX.

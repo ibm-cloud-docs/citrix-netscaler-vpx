@@ -10,6 +10,7 @@ lastupdated: "2018-11-12"
 {:faq: data-hd-content-type='faq'}
 
 # FAQs for Citrix NetScaler VPX
+{: #faqs-for-citrix-netscaler-vpx}
 
 The following are frequently asked questions when working with the Citrix NetScaler VPX.
 

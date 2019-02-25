@@ -9,6 +9,7 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 
 # Getting started with Citrix NetScaler VPX Software Appliance
+{: #getting-started-with-citrix-netscaler-vpx-software-appliance}
 
 Deploying a Citrix NetScaler VPX in your {{site.data.keyword.BluSoftlayer_notm}} solution accelerates web application delivery, boosts performance, and ensures your cloud applications and services stay optimized, available, and secure. If you have challenging workloads, such as gaming, big data and analytics, or private clouds, the Citrix NetScaler VPX can help you deliver your solution when, where, and how your users need it most.
 

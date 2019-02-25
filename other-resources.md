@@ -9,6 +9,8 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 
 # Other Resources for IBM Citrix Netscaler VPX
+{: #other-resources-for-ibm-citrix-netscaler-vpx}
+
 These resources are created by IBM© and some of our partners and customers.
 
 ## Blogs

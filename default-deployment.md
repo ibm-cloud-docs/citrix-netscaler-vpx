@@ -8,6 +8,7 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 
 # Citrix NetScaler VPX Default Deployment
+{: #citrix-netscaler-vpx-default-deployment}
 
 When you view your NetScaler in **Devices > Device List** on the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/), you may notice that it looks different than other servers. Namely, the device has a Private IP address but no Public IP address.
 

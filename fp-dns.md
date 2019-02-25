@@ -17,6 +17,8 @@ lastupdated: "2018-11-12"
 {:table: .aria-labeledby="caption"}
 
 # Configure the DNS Virtual Server
+{: #configure-the-dns-virtual-server}
+
 To configure a DNS virtual server:
 
 1. Go to Traffic Management > Load Balancing > Servers. 

@@ -9,6 +9,7 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 
 # Upgrading your Citrix NetScaler VPX
+{: #upgrading-your-citrix-netscaler-vpx}
 
 **NOTE:** You must be connected to the VPN before attempting this procedure.
 
