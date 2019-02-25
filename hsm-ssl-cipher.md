@@ -26,7 +26,7 @@ To learn more about SSL cipher suites and other best practices visit the followi
 * [SSL and TLS Deployment Best Practices ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices#23-use-secure-cipher-suites){:new_window}
 * [How Do I Setup ECC on NetScaler? ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.citrix.com/article/CTX205289){:new_window}
 
-**NOTE:** This topic focuses on specific and required configurations for SSL ciphers. The information in the previous links may provide additional settings that can be applied to optimize SSL operation. 
+**NOTE:** This topic focuses on specific and required configurations for SSL ciphers. The information in the previous links may provide additional settings that can be applied to optimize SSL operation.
 
 To create a new Cipher Suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, perform the following procedure:
 
@@ -53,7 +53,7 @@ To create a new Cipher Suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, pe
 	bind ssl cipher SSLLABS -cipherName TLS1-AES-128-CBC-SHA
 	bind ssl cipher SSLLABS -cipherName TLS1-AES-256-CBC-SHA
 	```
-	
+
 	The syntax for the previous commands is the following:
 
 	```
@@ -103,48 +103,48 @@ To create a new Cipher Suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, pe
 	        Description: SSLv3 Kx=RSA      Au=RSA  Enc=AES(256)  Mac=SHA1   HexCode=0x0035
  	Done
  	```
-	
+
 3.	Unbind the default Cipher Suite from your virtual server and bind the custom group created in the previous step:
-	
+
 	```
 	unbind ssl vserver https_vip2 -cipherName DEFAULT
-	
+
 	bind ssl vserver https_vip2 -cipherName SSLLABS
-	
+
 	bind ssl vserver https_vip2 -eccCurveName ALL
 	```
-	
+
 	The syntax for the previous commands is:
-	
+
 	```
 	unbind ssl cipher <cipherGroupName> -cipherName <string>
 	bind ssl vserver <vServerName> -cipherName <string>
 	bind ssl vserver <vServerName> -eccCurveName <eccCurveName>
 	```
-	
+
 4.	Confirm the changes in your virtual server:
-	
+
 	```
 	> show ssl vserver https_vip2
-	
+
 	[OUTPUT OMITTED]
 		ECC Curve: P_256, P_384, P_224, P_521
-	
+
 	1)      CertKey Name: hsmclient7ns      Server Certificate
-	
+
 	1)      Cipher Name: SSLLABS
 		Description: User Created Cipher Group
  	Done
 	```
-	
+
 5.	(OPTIONAL) HTTP Redirection can be enabled to redirect users to a secure web site when they create an HTTP request (as opposed to HTTPS).
- 
+
 	See [How to Configure HTTP to HTTPS Redirection on NetScaler ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.citrix.com/article/CTX201201){:new_window} for configuration instructions.
 
 6.	Test the HTTPS connection by opening a web browser and entering the FQDN. The site should load the content rendered by the HTTP service behind the Citrix VPX.
 
-	You can also view the certificate details by clicking the padlock icon next to the URL in your browser to display the certificate info. 
-	
+	You can also view the certificate details by clicking the padlock icon next to the URL in your browser to display the certificate info.
+
 	<img src="images/21-check-certificate.png" alt="drawing" style="width: 350px;"/>
-	
+
 	If redirection was configured in step five, the secure site will also load when using an HTTP request.
