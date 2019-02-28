@@ -39,6 +39,7 @@ Citrix NetScaler VPX
         hsm-order-hsm.md
         hsm-order-vpx.md
         hsm-initialize-hsm.md
+        hsm-fips.md
         hsm-create-partition.md
         hsm-install-hsm.md
         hsm-establish-ntl.md
