@@ -2,6 +2,10 @@
 copyright:
   years: 1994, 2017
 lastupdated: "2018-11-12"
+
+keywords: gslb, vpx, cdn, object storage
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
@@ -20,7 +24,7 @@ The Citrix NetScaler VPX is the only customer configurable device that does true
 
 For global load balancing, you would have a NetScaler appliance configuration in each data center. Each NetScaler appliance configuration may be a single Netscaler or a pair of Netscalers in an HA pair, depending on your requirements, providing local load balancing services for the servers behind them. The devices are configured to talk to one another so they exchange state information on each server assigned to global load balancer rotation. Any DNS request that comes to these configured NetScalers can return a proper record for a server that is online and responsive. Any server not responsive is removed from the rotation and another selected.
 
-You must already have load balancing set up, even if it is only one server being balanced. You will need additional IP addresses for some services, namely the GSLB site IP. This IP is used by the NetScaler to communicate with the other NetScalers in the global load balancing protocol. 
+You must already have load balancing set up, even if it is only one server being balanced. You will need additional IP addresses for some services, namely the GSLB site IP. This IP is used by the NetScaler to communicate with the other NetScalers in the global load balancing protocol.
 
 The following global balancing procedure uses:
 
@@ -33,7 +37,7 @@ The following global balancing procedure uses:
 
 1. Go to **Traffic Management > GSLB** and right click to enable the feature. Then, select **Sites** and **Add**.
 
-2. On the first device, enter the Name as VPX1, the Type as local, and the IP as `50.23.66.52`, then select **Close**. 
+2. On the first device, enter the Name as VPX1, the Type as local, and the IP as `50.23.66.52`, then select **Close**.
 
 	You should see the site listed with a status of green. Do not add a remote site yet.
 
@@ -45,13 +49,13 @@ The following global balancing procedure uses:
 
 6. Perform the same actions on the next NetScaler, using the values for that server.
 
-7. On both servers, go to **Traffic Management > DNS > Records > A records**, and examine the list. You should see `root.servers.net` entries, and your hostname as well, with a type of GSLB DOMAIN. 
+7. On both servers, go to **Traffic Management > DNS > Records > A records**, and examine the list. You should see `root.servers.net` entries, and your hostname as well, with a type of GSLB DOMAIN.
 
 8. Go to **Traffic Management > DNS > Name Servers** and click **Add**. Enter an IP address on the NetScaler (such as, the public IP of the device). Click **Local** and leave the protocol as UDP. Click **Create** then **Close**. You should see the effective state as enabled and up.
 
 9. Go to **System > Network > IPs** and open the GSLB IP address. Make sure that **Management** is selected for both machines.
 
-10. Next, on both servers, go back to **Traffic Management > GSLB** and go through the wizard again. This time, click **Next**, and select **Modify Configuration for Existing Domains**. Select the hostname from the list and then click **Next** twice. 
+10. Next, on both servers, go back to **Traffic Management > GSLB** and go through the wizard again. This time, click **Next**, and select **Modify Configuration for Existing Domains**. Select the hostname from the list and then click **Next** twice.
 
 11. In the site address field, put in the site IP address of the other NetScaler and give it the other NetScaler's site name and click **Add**. The site will be populated with an option to click the green '+' again. Click the remote site plus sign to add another site. Enter the vserver service IP (the one for the load balanced servers, not the GSLB site IP) and the port, click **Create** and **Close**, **Next**, **Finish** then **Exit**.
 
@@ -88,4 +92,4 @@ For more details on CDN, refer to [this documentation](/docs/infrastructure/CDN?
 
 {{site.data.keyword.BluSoftlayer_notm}}'s Object Storage can be configured to use multiple geographic locations in various data centers to provide content. A geographically aware application can perform location lookups on the client request and return a URL to Object Storage that is close to the client. Object Storage also comes with a CDN front end, if needed, to provide additional caching services as noted above.
 
-For more information and an introduction to Object Storage, refer to [this documentation](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-about-ibm-cloud-object-storage). 
+For more information and an introduction to Object Storage, refer to [this documentation](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-about-ibm-cloud-object-storage).

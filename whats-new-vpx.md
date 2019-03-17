@@ -1,8 +1,12 @@
 ---
 copyright:
   years: 1994, 2018
-  
+
 lastupdated: "2018-11-12"
+
+keywords: updates, additions, version
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
@@ -20,8 +24,8 @@ For more information about this feature, see the Citrix article [Multiple IP vir
 
 ### SSL
 The following updates have been applied for SSL connections:
- 
-* Removal of weak ciphers from the DEFAULT_BACKEND cipher group. 
+
+* Removal of weak ciphers from the DEFAULT_BACKEND cipher group.
 * Support for ECDHE ciphers on the front end of Thales nShield® external HSM
 * Support for ECDHE ciphers on the front end of SafeNet network external HSM
 * Removal of SSLv2: The NetScaler VPX appliance does not support SSLv2 from release 12.1.

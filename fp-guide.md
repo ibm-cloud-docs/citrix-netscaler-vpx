@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: proxy, traffic, appliance
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 

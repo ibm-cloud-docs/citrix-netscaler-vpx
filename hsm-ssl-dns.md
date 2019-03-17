@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, ssl, dns, security, check, configure
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 

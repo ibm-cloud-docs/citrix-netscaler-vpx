@@ -2,6 +2,10 @@
 copyright:
   years: 1994, 2017
 lastupdated: "2018-11-12"
+
+keywords: terminology, nsip, snip, vip, service, object, monitor
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
@@ -10,7 +14,7 @@ lastupdated: "2018-11-12"
 # Citrix NetScaler VPX Terminology
 {: #citrix-netscaler-vpx-terminology}
 
-The Citrix NetScaler platform uses both product-specific terminology and basic load balancer terminology and concepts. 
+The Citrix NetScaler platform uses both product-specific terminology and basic load balancer terminology and concepts.
 
 ### NetScaler IP (NSIP)
 

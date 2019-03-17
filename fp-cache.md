@@ -6,6 +6,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: cache, enable, redirect, capabilities
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -27,6 +31,6 @@ To enable cache redirection and load balancing for the Citrix NetScaler VPX appl
 
 	Enable any additional features as necessary.
 
-2. Next go to **System > Settings > Configure Basic Features**, and enable **Load Balancing** (if it is not already) and click **OK**. 
+2. Next go to **System > Settings > Configure Basic Features**, and enable **Load Balancing** (if it is not already) and click **OK**.
 
 	Enable any additional features as necessary.

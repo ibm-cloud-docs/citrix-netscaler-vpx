@@ -3,6 +3,10 @@ copyright:
   years: 1994, 2017
 
 lastupdated: "2018-08-08"
+
+keywords: redirect, url, monitor, responder
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
@@ -21,7 +25,7 @@ An alternative method for performing a redirect for `http://` to `https://`, whi
 	```
 	Add lb monitor localhost_ping PING -LRTM ENABLED -destIP 127.0.0.1
 	```
-	
+
 2. Define a fake service with an IP that will never be used (IP address for a server at `1.1.1.1` which will never be online).
 	```
 	Add service Always_UP_service 1.1.1.1 HTTP 80 -gslb NONE -maxClient 0 -maxReq 0 -cip ENABLED dummy -usip NO -sp OFF -cltTimeout 180 -svrTimeout 360 -CKA NO -TCPB NO -CMP YES
@@ -30,7 +34,7 @@ An alternative method for performing a redirect for `http://` to `https://`, whi
 	```
 	bind lb monitor localhost_ping Always_UP_service
 	```
-	
+
 4. Make the NetScaler always listen to port 80 on a vserver, binding it to the service that will always remain up.
 	```
 	add lb vserver http_to_htps_vserver HTTP w.x.y.z 80 -timeout 0 -cltTimeout 180
@@ -38,7 +42,7 @@ An alternative method for performing a redirect for `http://` to `https://`, whi
 	```
 	bind lb vserver http_to_htps_vserver Always_UP_service
 	```
-	
+
 5. Write the responder action and policy to replace `http://` with `https://`.
 	```
 	add responder action http_to_https_actn redirect "\"https://\" + http.req.hostname.HTTP_URL_SAFE + http.REQ.URL.PATH_AND_QUERY.HTTP_URL_SAFE"
@@ -55,7 +59,7 @@ An alternative method for performing a redirect for `http://` to `https://`, whi
 	bind lb vserver http_to_htps_vserver -policyName http_to_https_pol -priority 1 -gotoPriorityExpression END
 	```
 8. You can confirm this is functioning as intended by using command-line utilities such as ‘wget’ or ‘curl’ as follows:
-        
+
 	```
     wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
 

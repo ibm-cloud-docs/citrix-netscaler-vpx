@@ -3,6 +3,10 @@ copyright:
   years: 1994, 2018
 
 lastupdated: "2018-11-12"
+
+keywords: ha, high availability, setup, configure, configuration
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
@@ -11,7 +15,7 @@ lastupdated: "2018-11-12"
 # Setting up Citrix Netscaler VPX for High Availability (HA)
 {: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
-Load balancers are used to balance traffic over multiple application servers to improve performance and stability in a scalable application. Yet, a single loadbalancer is a single point of failure. Avoid this by configuring a High Availability (HA) Netscaler VPX pair. Configuring an HA pair requires two Netscaler VPX servers. The secondary server steps in to continue load balancing should the primary fail. 
+Load balancers are used to balance traffic over multiple application servers to improve performance and stability in a scalable application. Yet, a single loadbalancer is a single point of failure. Avoid this by configuring a High Availability (HA) Netscaler VPX pair. Configuring an HA pair requires two Netscaler VPX servers. The secondary server steps in to continue load balancing should the primary fail.
 
 The SNIP (SubNet IP) is the IP seen by the load balanced servers as the source IP of the requests (connections) made to the VIP (Virtual IP) of the Netscaler VPX. Normally, in an HA pair setup, the SNIP does not change, but it is possible for it to do so during a failover event. When the two Netscalers are in the same subnet, it is possible for the SNIP of the secondary Netscaler VPX to change to the SNIP originally used by the primary Netscaler VPX. This will not cause any confusion for the servers handling the request.
 
@@ -28,16 +32,16 @@ After ordering the two Netscaler VPX servers in the needed VLAN, and ordering th
 
 2. On the VPX you want to be secondary, click on **System > High Availability**, then right click the first line and click **Edit**. Select **Stay Secondary** on the High Availability Status config drop-down box and click **OK**.
 
-3. Select **Add**. Enter the system IP address of the other VPX (this is located in the High Availability tab on the primary), and enter the root login details at the bottom. Leave the **Turn on INC** box unchecked. Click **OK**. 
-	
-	If you receive an error claiming that the IPs are not in the same subnet, it is possible both VPX servers are not in the same VLAN. Otherwise, you should now be able to open the primary server and select the **Refresh** button to see both servers operating in High Availability. 
+3. Select **Add**. Enter the system IP address of the other VPX (this is located in the High Availability tab on the primary), and enter the root login details at the bottom. Leave the **Turn on INC** box unchecked. Click **OK**.
+
+	If you receive an error claiming that the IPs are not in the same subnet, it is possible both VPX servers are not in the same VLAN. Otherwise, you should now be able to open the primary server and select the **Refresh** button to see both servers operating in High Availability.
 
 	The new NetScaler management IP for the secondary will be one IP address lower than previously. If you cannot get any access to the secondary VPX, remove the high availability from the command line using:
 
 	`sh ha node`
 
 	Then remove what would be the ha node:
-	
+
 	`rm ha node 1`
 
 4. On the primary VPX you should see that the remote VPX is now syncing. Go to the secondary server and check the **Network > IPs** configuration. You should see the primary server's VIP and other IPs listed as passive.

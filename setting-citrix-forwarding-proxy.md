@@ -3,6 +3,10 @@ copyright:
   years: 1994, 2017
 
 lastupdated: "2017-11-02"
+
+keywords: setup, proxy, forward, vip, subnet
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
@@ -17,7 +21,7 @@ When a client on the internal network initiates a request, the IP address of the
 
 Typically, a proxy is combined with a firewall to ensure the security of clients in an internal network.
 
-## Step 1: Request VIPs to use in the Private Network 
+## Step 1: Request VIPs to use in the Private Network
 
 When a Citrix NetScaler VPX load balancer is ordered from the {{site.data.keyword.BluSoftlayer_notm}} customer portal, it is assumed a reverse proxy is being requested. The requestor will be asked for the number of “public” IPs to be used as virtual IPs (VIPs).
 
@@ -64,7 +68,7 @@ Line 5 tells the forwarding proxy virtual server to use the virtual DNS for name
 
 ## Configuring the Client
 
-Before continuing to customize the client to use the forwarding proxy, make sure that you cannot reach a public site (for example, http://www.ibm.com) by using the Firefox browser on the client. Since there should be no public interface on the client, this request should fail. 
+Before continuing to customize the client to use the forwarding proxy, make sure that you cannot reach a public site (for example, http://www.ibm.com) by using the Firefox browser on the client. Since there should be no public interface on the client, this request should fail.
 
 The following example configures a Linux client.
 

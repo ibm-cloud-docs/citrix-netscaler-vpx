@@ -1,8 +1,12 @@
 ---
 copyright:
   years: 1994, 2017
-  
+
 lastupdated: "2018-11-12"
+
+keywords: order, vpx, overview
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
@@ -27,18 +31,18 @@ To get started with Citrix NetScaler VPX, you will need to know the following in
 To order a Citrix NetScaler VPX software appliance, navigate to the order page in the Customer Portal:
 
 1. From your browser, open  [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} and log into your account.
-2. In the Customer Portal navigation, select **Devices > Devices List** and click on the **Order Devices** link. 
+2. In the Customer Portal navigation, select **Devices > Devices List** and click on the **Order Devices** link.
 3. In the **Order SoftLayer Products and Services** page, scroll down to the Network section and click the **Order** link under Citrix NetScaler VPX.
 4. Select a Location from the dropdown menu where you would like to deploy your Citrix NetScaler VPX software appliance.  
-5. Select the best NetScaler type for your software edition, software version and throughput needs. 
+5. Select the best NetScaler type for your software edition, software version and throughput needs.
 6. Select the number of public IP addresses you need.  
 	These are static public IP addresses, deployed as virtual IP addresses (VIPs) on your NetScaler VPX.
 7. Click **Continue**.
 8. Enter the information required by ARIN (or the equivalent organization in your region of deployment) for the IP addresses you've requested.
-9. Enter your contact information. 
-10. Select your VLAN. 
-	To minimize latency and ensure optimized utilization of your network resources, assign the Citrix NetScaler VPX to the same VLAN as the servers where the traffic will be distributed. 
-11. Review the order, accept the terms, and click **Place Order**. The Citrix NetScaler VPX software appliance deploys with your selected settings. 
+9. Enter your contact information.
+10. Select your VLAN.
+	To minimize latency and ensure optimized utilization of your network resources, assign the Citrix NetScaler VPX to the same VLAN as the servers where the traffic will be distributed.
+11. Review the order, accept the terms, and click **Place Order**. The Citrix NetScaler VPX software appliance deploys with your selected settings.
 
 ## What's Next
 

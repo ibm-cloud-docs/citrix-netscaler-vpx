@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: security, hsm, ntl, certificate
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -20,7 +24,7 @@ A Network Trust Link (NTL) is a secure channel for the Hardware Security Module 
 
 Be advised that the trust link requires TCP port 1792 to be accessible in both the NTLS and NTLA (bi-directional) protocols to guarantee all processes and utilities work correctly.
 
-To estabish your NTL, perform the following procedure:
+To establish your NTL, perform the following procedure:
 
 1.	Navigate to the directory `/var/safenet/safenet/lunaclient/bin` and create the certificate using the VTL utility.
 

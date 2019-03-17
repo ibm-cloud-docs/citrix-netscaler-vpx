@@ -2,6 +2,10 @@
 copyright:
   years: 1994, 2017
 lastupdated: "2018-11-12"
+
+keywords: basics, configure, configuration, gui, pool
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
@@ -18,7 +22,7 @@ Consider a company that has a basic social community website where end-users can
 4. The NetScaler then passes that traffic to one of the servers in the server pool, based on the balancing method defined (round robin, persistence IP, and so on).
 5. The server then accepts the traffic and the user connects and logs in.
 
-In order to accomplish this, the NetScaler would need to be configured to handle this traffic. Since the VIP, the DNS server's IP, and the SNIP are already configured, this simplifies the configuration. 
+In order to accomplish this, the NetScaler would need to be configured to handle this traffic. Since the VIP, the DNS server's IP, and the SNIP are already configured, this simplifies the configuration.
 
 In the NetScaler GUI, on the Configuration screen, expand **Traffic Management** on the left-hand side. Expand the subsection titled **Load Balancing**. Then tell the NetScaler what target servers will be included in the load balancing policy, by following this procedure:
 

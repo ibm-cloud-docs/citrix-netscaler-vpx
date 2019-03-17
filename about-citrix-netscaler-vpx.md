@@ -1,8 +1,14 @@
 ---
+
 copyright:
   years: 1994, 2018
-  
+
 lastupdated: "2018-11-12"
+
+keywords: about, vpx, features, overview
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -11,7 +17,7 @@ lastupdated: "2018-11-12"
 # About Citrix NetScaler VPX
 {: #about-citrix-netscaler-vpx}
 
-The Citrix NetScaler VPX is a dedicated virtual software appliance that provides load balancing on both the public and private IBM© Cloud network. 
+The Citrix NetScaler VPX is a dedicated virtual software appliance that provides load balancing on both the public and private IBM© Cloud network.
 
 Deploying a Citrix NetScaler VPX in your {{site.data.keyword.BluSoftlayer_notm}} solution accelerates web application delivery, boosts performance, and ensures your cloud applications and services stay optimized, available, and secure. If you have challenging workloads, such as gaming, big data and analytics, or private clouds, the Citrix NetScaler VPX can help you deliver your solution when, where, and how your users need it most.
 
@@ -63,8 +69,8 @@ Payment Card Industry (PCI) Data Security Standard (DSS) consists of twelve crit
 
 ## Global Load Balancing (GSLB)
 
-The NetScaler Platinum Edition extends the load balancer beyond the local boundaries of the datacenter with Global Load Balancing functionality. 
+The NetScaler Platinum Edition extends the load balancer beyond the local boundaries of the datacenter with Global Load Balancing functionality.
 
 ## Extend your Datacenter
 
-The NetScaler Platinum Edition allows you to use the NetScaler CloudBridge Connector feature which provides a simple way to extend your datacenter to {{site.data.keyword.BluSoftlayer_notm}} with wizard-driven menus. 
+The NetScaler Platinum Edition allows you to use the NetScaler CloudBridge Connector feature which provides a simple way to extend your datacenter to {{site.data.keyword.BluSoftlayer_notm}} with wizard-driven menus.
