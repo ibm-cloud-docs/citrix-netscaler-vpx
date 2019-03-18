@@ -1,17 +1,18 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-06"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 廣域負載平衡
+{: #global-load-balancing}
 
 廣域伺服器負載平衡 (GSLB) 是一種將資料流量分割到使用 DNS 及地理位置的多部伺服器的方法，以作為判斷應傳送伺服器資料流量之位置的手段。一般而言，廣域負載平衡器會將用戶端要求傳送至較接近用戶端的伺服器，以減少延遲並改善效能。
 
-您可能不需要完整實作廣域負載平衡解決方案。GSLB 需要多個可執行此功能的合適裝置實例，而且取決於您的需求，其他解決方案可能會更吸引您。如果您需要整個網站及應用程式，則 GSLB 是良好的選擇。如果您只需要內容的某些部分（例如影像、視訊或其他大型檔案），則[內容遞送網路](https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-content-delivery-networks-cdn-){: new_window}可能更為適合（更容易部署）。
+您可能不需要完整實作廣域負載平衡解決方案。GSLB 需要多個可執行此功能的合適裝置實例，而且取決於您的需求，其他解決方案可能會更吸引您。如果您需要整個網站及應用程式，則 GSLB 是良好的選擇。如果您只需要內容的某些部分（例如影像、視訊或其他大型檔案），則[內容遞送網路](/docs/infrastructure/CDN?topic=CDN-about-content-delivery-networks-cdn-)可能更為適合（更容易部署）。
 
 ## Citrix NetScaler VPX
 
@@ -81,10 +82,10 @@ Citrix NetScaler VPX 是唯一能夠執行真正廣域負載平衡的客戶可�
 
 內容遞送網路 (CDN) 容許您將原點伺服器上傳或提供給地理位置不同的快取伺服器，然後將內容提供給發出要求的用戶端。CDN 適用於靜態、大量內容（例如未隨著時間變更的影像及視訊）。
 
-如需 CDN 的詳細資料，請參閱[文件](https://console.bluemix.net/docs/infrastructure/CDN/getting-started.html#getting-started)。
+如需 CDN 的詳細資料，請參閱[本文件](/docs/infrastructure/CDN?topic=CDN-getting-started)。
 
 ### Object Storage
 
 {{site.data.keyword.BluSoftlayer_notm}} 的 Object Storage 可以配置成使用各種資料中心內的多個地理位置來提供內容。地理位置感知應用程式可以對用戶端要求執行位置查閱，並將 URL 傳回給靠近用戶端的 Object Storage。必要的話，Object Storage 也會隨附 CDN 前端系統，以提供如上述的其他快取服務。
 
-如需 Object Storage 的相關資訊及簡介，請參閱[文件](https://console.bluemix.net/docs/services/cloud-object-storage/about-cos.html#about-ibm-cos)。 
+如需 Object Storage 的相關資訊及簡介，請參閱[本文件](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-about-ibm-cloud-object-storage)。 

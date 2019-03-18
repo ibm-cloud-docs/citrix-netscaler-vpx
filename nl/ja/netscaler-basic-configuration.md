@@ -1,13 +1,15 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-06"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # ロード・バランシングの基本構成
+{: #basic-load-balancing-configuration}
+
 基本的なソーシャル・コミュニティー Web サイトを持つ会社について考えてみます。この Web サイトでは、エンド・ユーザーは機密情報が不要なアカウントに登録することができ、その後ログインしてペットの写真を投稿できます。 3 つの Web/アプリケーション・サーバーと、それらをバックアップする 1 つのデータベース・サーバーがあります。 ドメインと DNS は {{site.data.keyword.BluSoftlayer_notm}} でホストされています。小規模な環境であるため、NetScaler サーバーと Web/アプリケーション・サーバーはすべて同じ VLAN 内にあります。 基本的なロード・バランシング・ポリシーをセットアップするために NetScaler で必要な構成はこれ以上ないので、作業はシンプルになります。 以下の手順は、この例でのトラフィック・フローをかなり簡略化して説明したものです。
 
 1. ユーザーがブラウザーに URL を入力します。
@@ -57,4 +59,4 @@ NetScaler GUI の「構成 (Configuration)」画面で、左側の**「トラフ
 
 これで、Web サイトのロード・バランシング・プールとポリシーを作成しました。
 
-**注:** Citrix NetScaler VPX デバイスの構成について詳しくは、[Citrix 資料ページ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://docs.citrix.com/en-us/netscaler.html)を参照してください。さらに支援が必要な場合は、{{site.data.keyword.BluSoftlayer_notm}} のサポートおよび営業担当員にお問い合わせください。
+**注:** Citrix NetScaler VPX デバイスの構成について詳しくは、[Citrix 資料ページ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://docs.citrix.com/en-us/netscaler.html)を参照してください。 さらに支援が必要な場合は、{{site.data.keyword.BluSoftlayer_notm}} のサポートおよび営業担当員にお問い合わせください。

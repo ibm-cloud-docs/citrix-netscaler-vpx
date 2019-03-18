@@ -1,13 +1,14 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# 術語
+# Citrix NetScaler VPX 辭彙
+{: #citrix-netscaler-vpx-terminology}
 
 Citrix NetScaler 平台同時使用產品特有術語以及基本負載平衡器術語和概念。 
 

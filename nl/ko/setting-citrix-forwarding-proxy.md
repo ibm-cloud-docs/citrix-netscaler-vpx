@@ -8,7 +8,8 @@ lastupdated: "2017-11-02"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Citrix Netscaler VPX를 전달 프록시로 설정
+# 전달 프록시로 Citrix Netscaler VPX 설정
+{: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
 
 전달 프록시는 내부 네트워크의 클라이언트와 인터넷 간의 단일 제어 지점 역할을 합니다. 프록시를 사용하면 네트워크 또는 보안 관리자가 인터넷 사이트에 대한 액세스를 제한하는 정책을 작성할 수 있습니다.
 
@@ -106,8 +107,6 @@ IP 주소 `10.114.27.3`은 1단계에서 작성된 전달 캐시의 IP 주소입
 **show cr vserver:** 지정된 캐시 경로 재지정 가상 서버 또는 구성된 모든 캐시 경로 재지정 가상 서버를 표시합니다.
 
 **stat cr vserver:** 캐시 경로 재지정 vserver 통계를 표시합니다.
-
-추가 문서를 보려면 [Citrix 명령 참조 안내서 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://support.citrix.com/servlet/KbServlet/download/20679-102-665857/NS-CommandReference-Guide.pdf)로 이동하십시오.
 
 Citrix의 기본 전달 프록시 구성은 매우 간단합니다. 내부 네트워크의 클라이언트에게 인터넷의 리소스에 대한 보안 경로를 부여하는 방법을 제공합니다. 또한 네트워크 관리자가 네트워크에 대한 제어 레벨을 유지할 수 있도록 합니다.
 

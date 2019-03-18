@@ -1,17 +1,18 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-06"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 全局负载均衡
+{: #global-load-balancing}
 
 全局服务器负载均衡 (GSLB) 方法使用 DNS 和地理位置来确定应该将服务器流量发送到哪里，从而将流量分布到多个服务器。通常，全局负载均衡器将客户机请求发送到更靠近客户机的服务器，从而减少等待时间并提高性能。
 
-您可能并不需要全面实现全局负载均衡解决方案。GSLB 需要的是可执行此功能的适用设备的多个实例，根据您的需求，其他解决方案可能更具吸引力。如果需要整个 Web 站点和应用程序，那么 GSLB 是不错的选择。如果您只需要内容的一部分（例如，图像、视频或其他大型文件），那么[内容交付网络](https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-content-delivery-networks-cdn-){: new_window}可能更适用（并且更易于部署）。
+您可能并不需要全面实现全局负载均衡解决方案。GSLB 需要的是可执行此功能的适用设备的多个实例，根据您的需求，其他解决方案可能更具吸引力。如果需要整个 Web 站点和应用程序，那么 GSLB 是不错的选择。如果您只需要内容的一部分（例如，图像、视频或其他大型文件），那么[内容交付网络](/docs/infrastructure/CDN?topic=CDN-about-content-delivery-networks-cdn-)可能更适用（并且更易于部署）。
 
 ## Citrix NetScaler VPX
 
@@ -81,10 +82,10 @@ Citrix NetScaler VPX 是唯一执行真正全局负载均衡的客户可配置�
 
 内容交付网络（CDN）支持向地理上分散的高速缓存服务器上传或提供源服务器，然后由高速缓存服务器将内容提供给请求客户机。CDN 最适用于静态批量内容，例如不会随时间更改的图像和视频。
 
-有关 CDN 的更多详细信息，请参阅[文档](https://console.bluemix.net/docs/infrastructure/CDN/getting-started.html#getting-started)。
+有关 CDN 的更多详细信息，请参阅[此文档](/docs/infrastructure/CDN?topic=CDN-getting-started)。
 
 ### Object Storage
 
 {{site.data.keyword.BluSoftlayer_notm}} 的 Object Storage 可配置为在各种数据中心使用多个地理位置来提供内容。可感知地理位置的应用程序可以对客户机请求执行位置查找，然后返回靠近客户机的 Object Storage 的 URL。Object Storage 还可根据需要随附 CDN 前端，以提供如上所述的额外高速缓存服务。
 
-有关 Object Storage 的更多信息和简介，请参阅[文档](https://console.bluemix.net/docs/services/cloud-object-storage/about-cos.html#about-ibm-cos)。 
+有关 Object Storage 的更多信息和简介，请参阅[此文档](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-about-ibm-cloud-object-storage)。 

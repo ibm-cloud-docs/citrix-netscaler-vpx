@@ -2,13 +2,14 @@
 copyright:
   years: 1994, 2018
 
-lastupdated: "2018-06-28"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 設定 Citrix Netscaler VPX 以取得高可用性 (HA)
+{: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
 負載平衡器是用來平衡多部應用程式伺服器的資料流量，以改善可擴充應用程式中的效能及穩定性。然而，單一負載平衡器就是單一失敗點。請配置「高可用性 (HA)」Netscaler VPX 配對來避免此問題。配置 HA 配對需要有兩部 Netscaler VPX 伺服器。繼續進行負載平衡的次要伺服器步驟，則主要伺服器應該會失敗。 
 
@@ -19,7 +20,7 @@ SNIP（子網路 IP）是負載平衡伺服器看到的 IP，作為對 Netscaler
 開始 HA 配置之前，請確定您採取下列必要動作：
 
 1. 如果將配對配置成主動/主動，則任何新增至實例的 VIP 子網路都必須為「遞送至 VLAN」類型。
-* 如果將配對配置成主動/被動，則任何新增至實例的 VIP 子網路都必須為「遞送至 VLAN」或「次要遞送至 IP」，並且遞送至主要節點的公用 IP 位址。
+2. 如果將配對配置成主動/被動，則任何新增至實例的 VIP 子網路都必須為「遞送至 VLAN」或「次要遞送至 IP」，並且遞送至主要節點的公用 IP 位址。
 
 在訂購所需 VLAN 中的兩部 Netscaler VPX 伺服器、並訂購 VIP 及 SNIP 子網路以符合 HA 配對配置的必要條件之後，即可繼續進行下列作業：
 

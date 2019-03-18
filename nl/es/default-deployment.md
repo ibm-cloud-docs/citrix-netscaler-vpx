@@ -1,13 +1,14 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-6"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Despliegue predeterminado
+# Despliegue predeterminado de Citrix NetScaler VPX
+{: #citrix-netscaler-vpx-default-deployment}
 
 Cuando echa un vistazo a su NetScaler en **Dispositivos > Lista de dispositivos** en el [Portal de clientes ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com/) es posible que vea que es diferente a los otros servidores. Concretamente, el dispositivo tiene una dirección IP privada pero no una dirección IP pública.
 

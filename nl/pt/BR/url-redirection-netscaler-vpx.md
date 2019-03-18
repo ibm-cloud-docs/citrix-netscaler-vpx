@@ -2,17 +2,19 @@
 copyright:
   years: 1994, 2017
 
-lastupdated: "2017-11-02"
+lastupdated: "2018-08-08"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Redirecionar URLs em um Citrix Netscaler VPX
+# Redirecionando URLs em um Citrix NetScaler VPX
+{: #redirecting-urls-in-a-citrix-netscaler-vpx}
 
 A maneira mais comum de executar um redirecionamento de `http://` para `https://` no NetScaler é aproveitar o recurso de backup/redirecionamento, destinado originalmente a redirecionar para uma página "servidor inativo" ou "manutenção".  
 
-Para fazer isso, deve-se criar um servidor virtual que atenda na porta 80, sem serviços reais ligados a ele e um redirecionamento de backup para uma URL `https://` específica. O servidor virtual real está sempre "inativo" (sem serviços ligados em tempo real) e, portanto, o redirecionamento de backup está sempre ativo. A desvantagem é que deve-se especificar uma URL de redirecionamento explícita (por exemplo, https://web.example.com) e como resultado, os usuários que estão tentando acessar http://mail.example.com seriam redirecionados para https://web.example.com.
+Para fazer isso, deve-se criar um servidor virtual que atenda na porta 80, sem serviços reais ligados a ele e um redirecionamento de backup para uma URL `https://` específica. O servidor virtual real está sempre "inativo" (sem serviços ligados em tempo real) e, portanto, o redirecionamento de backup está sempre ativo. A desvantagem é que se deve especificar uma URL de redirecionamento explícito (por exemplo, `https://web.example.com`) e, como resultado, os usuários que tentam acessar `http://mail.example.com` serão redirecionados para
+`https://web.example.com`.
 
 Um método alternativo para executar um redirecionamento de `http://` para `https://`, enquanto retém o nome do host/URL, usa o recurso "respondente" do NetScaler, que cria uma mensagem de redirecionamento de HTTP incluindo as informações originais. Isso é feito em algumas etapas simples - no exemplo abaixo certifique-se de substituir "w.x.y.z" pelo endereço IP do VIP HTTPS:
 
@@ -47,21 +49,24 @@ Um método alternativo para executar um redirecionamento de `http://` para `http
 	```
 6. Ative o recurso de respondente do NetScaler (esta etapa é crucial, pois o recurso fica desativado por padrão).
 	```
-  enable ns feature responder
-  ```
+        enable ns feature responder
+	```
 7. Ligue o vserver de atendimento à política do respondente.
-```
+	```
 	bind lb vserver http_to_htps_vserver -policyName http_to_https_pol -priority 1 -gotoPriorityExpression END
 	```
-8. É possível confirmar que isso está funcionando conforme desejado usando os utilitários de linha de comandos, como 'wget' ou 'curl', conforme a seguir:
-```
-wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
+8. É possível confirmar que isso está funcionando conforme desejado usando os utilitários da linha de comandos, como 'wget' ou 'curl', conforme a seguir:
+        
+	```
+    wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
 
-curl -v http://w.x.y.z
-```
+    curl -v http://w.x.y.z
+    ```
 
-Substitua o endereço IP `w.x.y.z` pelo nome do host da URL (por exemplo, http://mail.example.com ou http://web.example.com) e confirme se a saída “Location” reflete o mesmo nome do host especificado inicialmente, mas iniciando com “https”, conforme os exemplos abaixo:
-wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
+Substitua o endereço IP `w.x.y.z` pelo nome do host da URL (por exemplo, `http://mail.example.com` ou `http://web.example.com`) e confirme se a saída “Local” reflete o mesmo nome do host que foi especificado inicialmente, mas iniciando com “https”, conforme os exemplos a seguir:
+
+```
+    wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
     --2012-06-18 08:42:20--  http://w.x.y.z/
     Connecting to w.x.y.z:80... connected.
     HTTP request sent, awaiting response...
@@ -90,3 +95,4 @@ wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
       Connection: close
       Cache-Control: no-cache
       Pragma: no-cache
+```

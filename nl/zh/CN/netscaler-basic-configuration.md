@@ -1,13 +1,15 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-06"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 基本负载均衡配置
+{: #basic-load-balancing-configuration}
+
 假设有一家公司具有基本社交社区 Web 站点，最终用户可以在该 Web 站点中注册不需要敏感信息的帐户，注册后用户可以登录并发布宠物的照片。有三个 Web/应用程序服务器和一个用于对其备份的数据库服务器。域和 DNS 通过 {{site.data.keyword.BluSoftlayer_notm}} 托管，因为它们拥有的环境不大，所以 NetScaler 和 Web/应用程序服务器全都位于同一 VLAN 中。这简化了操作，因为无需对 NetScaler 做进一步配置，就可以设置基本负载均衡策略。以下过程是此实例中流量流的极简说明：
 
 1. 用户在其浏览器中输入 URL。

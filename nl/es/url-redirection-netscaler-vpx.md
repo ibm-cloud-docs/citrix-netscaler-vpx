@@ -2,21 +2,22 @@
 copyright:
   years: 1994, 2017
 
-lastupdated: "2017-11-02"
+lastupdated: "2018-08-08"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Redirigir URL en un Citrix Netscaler VPX
+{: #redirecting-urls-in-a-citrix-netscaler-vpx}
 
 La forma más común para realizar una redirección de `http://` a `https://` en NetScaler es aprovechar la característica de copia/redirección, que originalmente estaba destinada a redirigir a una página "servidor inactivo" o "mantenimiento".  
 
-Para ello, debe crear una escucha de servidor virtual en el puerto 80, sin servicios reales vinculados, y una redirección de copia de seguridad a un determinado URL `https://`. El servidor virtual real está siempre "inactivo" (sin servicios enlazados) y, por lo tanto, la redirección de copia seguridad siempre está activa. El inconveniente es que debe especificar un URL de redirección explícito (por ejemplo, https://web.example.com), y como consecuencia, los usuarios que intenten acceder a http://mail.example.com serán redireccionados a https://web.example.com.
+Para ello, debe crear una escucha de servidor virtual en el puerto 80, sin servicios reales vinculados, y una redirección de copia de seguridad a un determinado URL `https://`. El servidor virtual real está siempre "inactivo" (sin servicios enlazados) y, por lo tanto, la redirección de copia seguridad siempre está activa. La desventaja es que debe especificar un URL de redirección explícito (por ejemplo, `https://web.example.com`) y, como resultado, los usuarios que intenten acceder a `http://mail.example.com` serán redireccionados a `https://web.example.com`.
 
 Un método alternativo para realizar una redirección de `http://` a `https://`, conservando el nombre de host/URL, utiliza la característica "respondedor" de NetScaler, que personaliza un mensaje de redirección de HTTP incluyendo la información original. Esto se realiza en unos sencillos pasos: en el ejemplo siguiente asegúrese de sustituir "w.x.y.z" con la dirección IP de la VIP de HTTPS:
 
-1. Prepare un tipo de supervisor que siempre sea satisfactorio (el ping del sistema principal local siempre será en línea mientras NetScaler esté activo).
+1. Prepare un tipo de supervisor que siempre sea satisfactorio (el ping del host local siempre será en línea mientras NetScaler esté activo).
 	```
 	Add lb monitor localhost_ping PING -LRTM ENABLED -destIP 127.0.0.1
 	```
@@ -47,22 +48,23 @@ Un método alternativo para realizar una redirección de `http://` a `https://`,
 	```
 6. Habilite la característica de respondedor de NetScaler (este paso es crucial, ya que la característica está inhabilitada de forma predeterminada).
 	```
-  enable ns feature responder
-  ```
-7. Enlace el servidor virtual que escucha con la política del respondedor.
+        enable ns feature responder
+	```
+7. Enlazar el servidor virtual que escucho con la política del respondedor.
 	```
 	bind lb vserver http_to_htps_vserver -policyName http_to_https_pol -priority 1 -gotoPriorityExpression END
 	```
 8. Puede confirmar que funciona utilizando utilidades de línea de mandatos como ‘wget’ o ‘curl’ de la siguiente manera:
+        
+	```
+    wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
+
+    curl -v http://w.x.y.z
+    ```
+
+Sustituya la dirección IP `w.x.y.z` para el nombre de host del URL (por ejemplo, `http://mail.example.com` o `http://web.example.com`) y confirme que la salida de "ubicación" refleja el mismo nombre de host especificado inicialmente, pero que empieza con "https" en los siguientes ejemplos:
 
 ```
-wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
-
-curl -v http://w.x.y.z
-```
-
-Sustituya la dirección IP `w.x.y.z` para el nombre de host del URL (por ejemplo, http://mail.example.com o http://web.example.com) y confirme que la salida “Location” refleja el mismo nombre que ha especificado inicialmente, pero que empieza por “https” en los siguientes ejemplos:
-
     wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
     --2012-06-18 08:42:20--  http://w.x.y.z/
     Connecting to w.x.y.z:80... connected.
@@ -92,3 +94,4 @@ Sustituya la dirección IP `w.x.y.z` para el nombre de host del URL (por ejemplo
       Connection: close
       Cache-Control: no-cache
       Pragma: no-cache
+```

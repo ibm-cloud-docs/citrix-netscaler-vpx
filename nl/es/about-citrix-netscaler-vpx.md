@@ -1,31 +1,39 @@
 ---
 copyright:
-  years: 1994, 2017
+  years: 1994, 2018
   
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Acerca de Citrix NetScaler VPX
+{: #about-citrix-netscaler-vpx}
 
-El Citrix NetScaler VPX es un dispositivo de software virtual dedicado que proporciona equilibrio de carga tanto en la red de IBM Cloud pública como en la privada. 
+El Citrix NetScaler VPX es un dispositivo de software virtual dedicado que proporciona equilibrio de carga tanto en la red de IBM© Cloud pública como en la privada. 
+
+El despliegue de Citrix NetScaler VPX en la solución de {{site.data.keyword.BluSoftlayer_notm}} acelera la entrega de aplicaciones web, mejora el rendimiento y garantiza que sus aplicaciones y servicios en la nube están optimizados, disponibles y seguros. Si tiene cargas de trabajo difíciles, como por ejemplo juegos, Big Data y análisis, o nubes privadas, Citrix NetScaler VPX puede ayudarle a ofrecer su solución cuando, donde y cómo los usuarios más lo necesiten.
 
 ## Características
 
 * El único producto que puede equilibrar la carga del tráfico en redes públicas y privadas
 * Gestión utilizando la GUI (interfaz gráfica de usuario) o la CLI (interfaz de línea de mandatos)
 * Muchos tipos de distribución del tráfico, incluyendo:
+  * Conexiones mínimas
   * Round Robin
-  * Conexión mínima
-  * Respuesta mínima
-  * Hash de URL
-  * Hash de dominio
-  * Hash de IP de destino
-  * Hash de IP de origen
+  * Tiempo de respuesta mínimo
   * Ancho de banda mínimo
-* Aceleración/Descarga de SSL
+  * Paquetes mínimos
+  * Hash de URL
+  * Hash de nombre de dominio
+  * Hash de dirección IP de origen
+  * Hash de dirección IP de destino
+  * IP de origen - Hash de IP de destino
+  * Señal
+  * LRTM
+
+* Aceleración SSL / descarga SSL
 * GSLB (equilibrio de carga de servidor global)
   * Utiliza la infraestructura de DNS para conectar el cliente al mejor centro de datos
   * Supervisa la carga y la disponibilidad de centros de datos para seleccionar las mejores opciones de conexión
@@ -43,16 +51,15 @@ El Citrix NetScaler VPX puede desplegarse a petición, en tan solo 15 minutos, e
 
 ## Seguridad de aplicación
 
-Para proteger el tráfico de la aplicación, los clientes pueden aprovechar las características de seguridad como el filtro de contenido de aplicación, la pasarela de acceso y un cortafuegos de aplicación web.
+Para proteger el tráfico de la aplicación, los clientes pueden aprovechar las características de seguridad como el filtro de contenido de aplicación y un cortafuegos de aplicación web.
 
 ## Filtrado del tráfico
 
-El Citrix Netscaler VPX filtra las solicitudes de los usuarios a los servidores y las respuestas de los servidores a los usuarios. Una característica de aprendizaje permite la creación de perfiles de sesiones en tiempo real y la determinación de si se debe permitir el tráfico.
-
+El Citrix Netscaler VPX filtra las solicitudes de los usuarios a los servidores y las respuestas de los servidores a los usuarios. Una característica de aprendizaje con el cortafuegos de aplicaciones permite el establecimiento de perfiles de sesiones en tiempo real y la determinación de si se permite el tráfico.
 
 ## Informes PCI-DSS
 
-Los estándares de seguridad de datos de la Industria de Tarjetas de Pago (PCI) consiste en doce criterios que deben cumplir las empresas que procesan pagos con tarjeta de crédito en línea. Los informes PCI-DSS constan de una lista de los criterios que son relevantes para la configuración del cortafuegos de su aplicación. El informe también muestra si la configuración actual cumple con cada criterio y sugiere cómo configurar el cortafuegos de aplicaciones para satisfacer esos estándares.
+Los estándares de seguridad de datos de Payment Card Industry (PCI) consisten en doce criterios que deben cumplir las empresas que procesan pagos con tarjeta de crédito en línea. Los informes PCI-DSS constan de una lista de los criterios que son relevantes para la configuración del cortafuegos de su aplicación. El informe también muestra si la configuración actual cumple con cada criterio y sugiere cómo configurar el cortafuegos de aplicaciones para satisfacer esos estándares.
 
 ## Equilibrio de carga global (GSLB)
 
@@ -60,4 +67,4 @@ La edición platino del NetScaler amplía el equilibrador de carga más allá de
 
 ## Ampliar el centro de datos
 
-La edición platino del NetScaler permite utilizar la función CloudBridge del NetScaler que proporciona una forma sencilla de ampliar su centro de datos en {{site.data.keyword.BluSoftlayer_notm}} con menús controlados por asistentes. 
+NetScaler Platinum Edition le permite utilizar la característica NetScaler CloudBridge Connector, que proporciona una forma sencilla de ampliar el centro de datos a {{site.data.keyword.BluSoftlayer_notm}} con menús controlados por el asistente. 

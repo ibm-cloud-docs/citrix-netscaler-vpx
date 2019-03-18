@@ -1,13 +1,14 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-6"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# 기본 배치
+# Citrix NetScaler VPX 기본 배치
+{: #citrix-netscaler-vpx-default-deployment}
 
 [고객 포털 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://control.softlayer.com/)의 **디바이스 > 디바이스 목록**에서 NetScaler를 보면 NetScaler가 다른 서버와 다르게 표시되는 것을 알 수 있습니다. 즉, 디바이스에 사설 IP 주소가 있지만 공인 IP 주소는 없습니다.
 

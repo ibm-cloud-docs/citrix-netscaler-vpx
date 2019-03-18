@@ -1,31 +1,39 @@
 ---
 copyright:
-  years: 1994, 2017
+  years: 1994, 2018
   
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Citrix NetScaler VPX 정보
+{: #about-citrix-netscaler-vpx}
 
-Citrix NetScaler VPX는 공용 및 사설 IBM Cloud 네트워크 모두에서 로드 밸런싱을 제공하는 전용 가상 소프트웨어 어플라이언스입니다. 
+Citrix NetScaler VPX는 공용 및 사설 IBM© Cloud 네트워크 모두에서 로드 밸런싱을 제공하는 전용 가상 소프트웨어 어플라이언스입니다. 
+
+{{site.data.keyword.BluSoftlayer_notm}} 솔루션에 Citrix NetScaler VPX를 배치하면 웹 애플리케이션 제공이 가속화되고 성능이 향상되며 클라우드 애플리케이션 및 서비스가 최적화되고 사용 가능하며 안전한 상태로 유지됩니다. 게임, 빅데이터 및 분석과 같은 까다로운 워크로드나 프라이빗 클라우드가 있는 경우 Citrix NetScaler VPX는 가장 필요한 때에 가장 필요한 위치에 가장 필요한 방법으로 솔루션을 제공하는 데 도움이 될 수 있습니다.
 
 ## 기능
 
 * 공용 및 사설 네트워크 모두에서 트래픽을 로드 밸런싱할 수 있는 유일한 제품
 * 그래픽 사용자 인터페이스(GUI) 또는 명령행 인터페이스(CLI)를 사용한 관리
 * 다음을 포함하는 여러 가지 유형의 트래픽 분배
-  * 라운드 로빈
   * 최소 연결
-  * 최소 응답
-  * URL 해시
-  * 도메인 해시
-  * 대상 IP 해시
-  * 소스 IP 해시
+  * 라운드 로빈
+  * 최소 응답 시간
   * 최소 대역폭
-* SSL 가속화/SSL 오프로드
+  * 최소 패킷
+  * URL 해싱
+  * 도메인 이름 해싱
+  * 소스 IP 주소 해싱
+  * 대상 IP 주소 해싱
+  * 소스 IP - 대상 IP 해싱
+  * 토큰
+  * LRTM
+
+* SSL 가속화 / SSL 오프로드
 * 글로벌 서버 로드 밸런싱(GSLB)
   * DNS 인프라를 사용하여 클라이언트를 최적의 데이터 센터에 연결합니다.
   * 최적의 연결을 선택하기 위해 데이터 센터의 로드와 가용성을 모니터합니다.
@@ -43,12 +51,11 @@ Citrix NetScaler VPX는 공용 및 사설 IBM Cloud 네트워크 모두에서 �
 
 ## 애플리케이션 보안
 
-애플리케이션 트래픽을 보호하기 위해 고객이 애플리케이션 컨텐츠 필터링, 액세스 게이트웨이 및 웹 애플리케이션 방화벽과 같은 보안 기능을 활용할 수 있습니다.
+애플리케이션 트래픽을 보호하기 위해 고객이 애플리케이션 컨텐츠 필터링, 우선순위 큐잉 및 웹 애플리케이션 방화벽과 같은 보안 기능을 활용할 수 있습니다.
 
 ## 트래픽 필터링
 
-Citrix Netscaler VPX는 일반 사용자로부터 서버로의 요청과 서버로부터 일반 사용자로의 응답을 필터링합니다. 학습 기능을 사용하여 세션을 실시간으로 프로파일링하고 트래픽을 허용할지 여부를 결정할 수 있습니다.
-
+Citrix Netscaler VPX는 일반 사용자로부터 서버로의 요청과 서버로부터 일반 사용자로의 응답을 필터링합니다. 애플리케이션 방화벽이 포함된 학습 기능을 사용하여 세션을 실시간으로 프로파일링하고 트래픽을 허용할지 여부를 결정할 수 있습니다.
 
 ## PCI-DSS 보고
 
@@ -60,4 +67,4 @@ NetScaler Platinum Edition은 글로벌 로드 밸런싱 기능으로 데이터 
 
 ## 데이터 센터 확장
 
-NetScaler Platinum Edition을 사용하면 마법사 구동 메뉴를 통해 데이터 센터를 {{site.data.keyword.BluSoftlayer_notm}}로 확장하는 간단한 방법을 제공하는 NetScaler CloudBridge 기능을 사용할 수 있습니다. 
+NetScaler Platinum Edition을 사용하면 마법사 구동 메뉴를 통해 데이터 센터를 {{site.data.keyword.BluSoftlayer_notm}}로 확장하는 간단한 방법을 제공하는 NetScaler CloudBridge Connector 기능을 사용할 수 있습니다. 

@@ -1,13 +1,15 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-06"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Configuração básica do balanceamento de carga
+{: #basic-load-balancing-configuration}
+
 Considere uma empresa que tem um website básico de comunidade social no qual os usuários finais podem se registrar para uma conta que não requer informações confidenciais, após o qual o usuário pode efetuar login e postar fotos de seus animais. Há três servidores da web/aplicativos e um servidor de banco de dados para fazer backup deles. O domínio e o DNS estão hospedados com o {{site.data.keyword.BluSoftlayer_notm}} e como eles têm um ambiente pequeno, os servidores NetScaler e da web/app estão todos na mesma VLAN. Isso simplifica as coisas, pois nenhuma configuração adicional é necessária para que o NetScaler configure uma política básica de balanceamento de carga. O procedimento a seguir é uma explicação bem simplificada do fluxo de tráfego nesta instância:
 
 1. Um usuário insere a URL em seu navegador.

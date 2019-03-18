@@ -2,13 +2,14 @@
 copyright:
   years: 1994, 2017
 
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Citrix NetScaler VPX へのアクセスと管理
+# Citrix NetScaler VPX の管理
+{: #managing-your-citrix-netscaler-vpx}
 
 Citrix NetScaler デバイスは、さまざまな方法で {{site.data.keyword.BluSoftlayer_notm}} ソリューションを拡張および改良するのに役立つ豊富な機能を備えた強力なツールです。 カスタマー・ポータルでデバイスの情報を見ることができるほか、デバイスに接続してそのフィーチャーを構成することもできます。  
 
@@ -35,9 +36,9 @@ NetScaler の行の左側で、矢印をクリックして行を展開し、NetS
 
 ## 「デバイスの詳細 (Device Details)」画面 
 
-NetScaler の名前をクリックすると、NetScaler の **「デバイスの詳細 (Device Details)」**ページに移動します。このページには、NetScaler がデプロイされた VLAN と、NetScaler のパブリック IP アドレスが表示されます。 これらの IP アドレスは NetScaler のデフォルトのパブリック VIP アドレスであるため、管理には使用できません。 後でこのアドレスを使用して、ロード・バランシング用のサービスに関連付けます。
+NetScaler の名前をクリックすると、NetScaler の **「デバイスの詳細 (Device Details)」**ページに移動します。このページには、NetScaler がデプロイされた VLAN と、NetScaler のパブリック IP アドレスが表示されます。 これらの IP アドレスは NetScaler のデフォルトのパブリック VIP アドレスであるため、管理には使用できません。 後でこのアドレスを使用して、ロード・バランシングのサービスに関連付けます。
 
-## NetScaler の管理
+## NetScaler への接続
 
 {{site.data.keyword.BluSoftlayer_notm}} は、フル・ルート・アクセス権限を NetScaler デバイスに付与します。 NetScaler の管理 UI にログインするには、{{site.data.keyword.BluSoftlayer_notm}} プライベート・ネットワークに接続する必要があります ({{site.data.keyword.BluSoftlayer_notm}} 管理 VPN であるか、または {{site.data.keyword.BluSoftlayer_notm}} 環境内のサーバー上のリモート・セッションから管理機能を実行)。 
 

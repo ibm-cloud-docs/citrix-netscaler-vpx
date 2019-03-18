@@ -2,22 +2,23 @@
 copyright:
   years: 1994, 2017
   
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Einführung zur Citrix NetScaler VPX-Software-Appliance
+{: #getting-started-with-citrix-netscaler-vpx-software-appliance}
 
 Die Bereitstellung von Citrix NetScaler VPX in Ihrer Lösung für {{site.data.keyword.BluSoftlayer_notm}} beschleunigt die Webanwendungsbereitstellung, ermöglicht entscheidende Leistungsverbesserungen und gewährleistet, dass Ihre Cloudanwendungen und -services stets optimiert, verfügbar und sicher sind. Bei hohen Workloadanforderungen, wie sie beispielsweise im Gaming- und Big-Data-Bereich sowie bei Analyseanwendungen oder in privaten Clouds auftreten, kann Citrix NetScaler VPX Sie dabei unterstützen, Ihre Lösung stets zeitgerecht, am richtigen Standort und in optimaler Konfiguration für Ihre Benutzer bereitzustellen.
 
 ## Vorbereitungen
 Für den Einstieg in Citrix NetScaler VPX benötigen Sie die folgenden Informationen:
 
-* Anmeldeinformationen für das IBM Cloud-Kundenportal
+* Anmeldeinformationen für das IBM© Cloud-Kundenportal
 * Bereitstellungsposition für die Lastausgleichsfunktion
-* Für die jeweiligen Anforderungen am besten geeigneter NetScaler-Typ (weitere Informationen finden Sie in [Lastausgleichsfunktionen erkunden](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html))
+* Für die jeweiligen Anforderungen am besten geeigneter NetScaler-Typ (weitere Informationen finden Sie in [Lastausgleichsfunktionen erkunden](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore)
 * Anzahl der benötigten öffentlichen IP-Adressen
 * VLAN für die Zuweisung der Lastausgleichsfunktion
 
@@ -41,4 +42,4 @@ Zum Bestellen einer Citrix NetScaler VPX-Software-Appliance navigieren Sie auf d
 
 ## Weitere Schritte
 
-Sie können weitere Informationen zu den [Features](about-citrix-netscaler-vpx.html) von Citrix NetScaler VPX aufrufen, sich mit der speziellen NetScaler-[Terminologie](terminology.html) vertraut machen oder mit der [Konfiguration](netscaler-basic-configuration.html) einer NetScaler-Instanz beginnen.
+Sie können weitere Informationen zu den [Features](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-about-citrix-netscaler-vpx) von Citrix NetScaler VPX aufrufen, sich mit der speziellen NetScaler-[Terminologie](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-citrix-netscaler-vpx-terminology) vertraut machen oder mit der [Konfiguration](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-basic-load-balancing-configuration) einer NetScaler-Instanz beginnen.

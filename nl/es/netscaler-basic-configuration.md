@@ -1,14 +1,16 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-06"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Configuración básica del equilibrio de carga
-Considere una empresa que tiene un sitio web de comunidad social básico donde los usuarios pueden registrarse en una cuenta que no requiere información confidencial, después el usuario puede iniciar sesión y publicar fotos de sus mascotas. Hay tres servidores de aplicaciones/web y servidor de base de datos para realizar copia de seguridad. El dominio y DNS están alojados con {{site.data.keyword.BluSoftlayer_notm}}, y puesto que tienen un entorno pequeño, los servidores de web/aplicación y NetScaler están todos en la misma VLAN. Esto simplifica las cosas, ya que no se necesita ninguna configuración adicional para NetScaler para establecer una política de equilibrio de carga básica. El procedimiento siguiente es una explicación simplista del flujo de tráfico en esta instancia:
+{: #basic-load-balancing-configuration}
+
+Considere una empresa que tiene un sitio web de comunidad social básico donde los usuarios pueden registrarse en una cuenta que no requiere información confidencial, después el usuario puede iniciar sesión y publicar fotos de sus mascotas. Hay tres servidores de aplicaciones/web y servidor de base de datos para realizar copia de seguridad. El dominio y DNS están alojados con {{site.data.keyword.BluSoftlayer_notm}}, y puesto que tienen un entorno pequeño, los servidores de web/app y NetScaler están todos en la misma VLAN. Esto simplifica las cosas, ya que no se necesita ninguna configuración adicional para NetScaler para establecer una política de equilibrio de carga básica. El procedimiento siguiente es una explicación simplista del flujo de tráfico en esta instancia:
 
 1. Un usuario introduce el URL en su navegador.
 2. El registro de DNS del URL apunta a una de las VIP públicas en NetScaler.

@@ -8,7 +8,8 @@ lastupdated: "2017-11-02"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Configurar o Citrix Netscaler VPX como um proxy de encaminhamento
+# Configurando o Citrix NetScaler VPX como um proxy de encaminhamento
+{: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
 
 Um proxy de encaminhamento age como um único ponto de controle entre clientes em uma rede interna e a Internet. Um proxy permite que o Administrador de rede ou de segurança tenha a capacidade de criar políticas que restrinjam o acesso a sites da Internet.
 
@@ -106,8 +107,6 @@ Os comandos de exibição a seguir podem ser usados para validar o estado do pro
 **show cr vserver:** exibe um servidor virtual de redirecionamento de cache especificado ou todos os servidores virtuais de redirecionamento de cache configurados.
 
 **stat cr vserver:** exibe as estatísticas de redirecionamento de cache do vserver.
-
-Acesse o [Guia de referência de comando do Citrix ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://support.citrix.com/servlet/KbServlet/download/20679-102-665857/NS-CommandReference-Guide.pdf) para obter mais documentação.
 
 A configuração de um proxy de encaminhamento básico no Citrix é bastante simples. Ela fornece uma maneira de dar aos clientes em uma rede interna um caminho seguro para os recursos na Internet. Ela também permite que o Administrador da rede mantenha um nível de controle na rede.
 

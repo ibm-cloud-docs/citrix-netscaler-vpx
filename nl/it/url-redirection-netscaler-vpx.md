@@ -2,17 +2,18 @@
 copyright:
   years: 1994, 2017
 
-lastupdated: "2017-11-02"
+lastupdated: "2018-08-08"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Reindirizzamento degli URL in un Citrix Netscaler VPX
+{: #redirecting-urls-in-a-citrix-netscaler-vpx}
 
 Il modo più comune per eseguire un reindirizzamento da `http://` a `https://` in NetScaler consiste nell'avvalersi della funzione di backup/reindirizzamento, che era stata originariamente concepita per eseguire un reindirizzamento a una pagina di "server inattivo" o "manutenzione".  
 
-Per eseguire tale operazione, devi creare un server virtuale in ascolto sulla porta 80, sena alcun servizio effettivo associato a esso, e un reindirizzamento di backup a uno specifico URL `https://`. Il server virtuale effettivo è sempre "inattivo" (non è associato alcun servizio attivo) e, pertanto, il reindirizzamento di backup è sempre attivo. Lo svantaggio è che devi specificare un URL di reindirizzamento esplicito (ad es. https://web.example.com) e, di conseguenza, gli utenti che tentano di accedere a http://mail.example.com verrebbero reindirizzati a https://web.example.com.
+Per eseguire tale operazione, devi creare un server virtuale in ascolto sulla porta 80, sena alcun servizio effettivo associato a esso, e un reindirizzamento di backup a uno specifico URL `https://`. Il server virtuale effettivo è sempre "inattivo" (non è associato alcun servizio attivo) e, pertanto, il reindirizzamento di backup è sempre attivo. Lo svantaggio è che devi specificare un URL di reindirizzamento esplicito (ad esempio, `https://web.example.com`) e, di conseguenza, gli utenti che tentano di accedere a `http://mail.example.com` verrebbero reindirizzati a `https://web.example.com`.
 
 Un metodo alternativo per eseguire un reindirizzamento per `http://` a `https://`, conservando al contempo nome host/URL fa uso della funzione "responder" di NetScaler, che crea un messaggio di reindirizzamento HTTP che include le informazioni originali. Tale operazione viene eseguita in pochi e semplici passi; nell'esempio di seguito, accertati di sostituire a "w.x.y.z" l'indirizzo IP del VIP HTTPS:
 
@@ -47,22 +48,23 @@ Un metodo alternativo per eseguire un reindirizzamento per `http://` a `https://
 	```
 6. Abilita la funzione responder del NetScaler (questo passo è cruciale, poiché la funzione è disabilitata per impostazione predefinita).
 	```
-  enable ns feature responder
-  ```
+        enable ns feature responder
+	```
 7. Associa il server virtuale in ascolto alla politica del responder.
 	```
 	bind lb vserver http_to_htps_vserver -policyName http_to_https_pol -priority 1 -gotoPriorityExpression END
 	```
 8. Puoi confermare che sta funzionando come previsto utilizzando i programmi di utilità di riga di comando come ‘wget’ o ‘curl’ nel seguente modo:
+        
+	```
+    wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
+
+    curl -v http://w.x.y.z
+    ```
+
+Sostituisci all'indirizzo IP `w.x.y.z` il nome host dell'URL (ad esempio, `http://mail.example.com` o `http://web.example.com`) e conferma che l'output “Location” rifletta lo stesso nome host che era stato specificato inizialmente, ma che inizia con “https”, come dagli esempi riportati di seguito:
 
 ```
-wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
-
-curl -v http://w.x.y.z
-```
-
-Sostituisci all'indirizzo IP `w.x.y.z` il nome host dell'URL (ad esempio http://mail.example.com o http://web.example.com) e conferma che l'output “Location” rifletta lo stesso nome host che era stato specificato inizialmente, ma che inizia con “https”, come dagli esempi riportati di seguito:
-
     wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
     --2012-06-18 08:42:20--  http://w.x.y.z/
     Connecting to w.x.y.z:80... connected.
@@ -92,3 +94,4 @@ Sostituisci all'indirizzo IP `w.x.y.z` il nome host dell'URL (ad esempio http://
       Connection: close
       Cache-Control: no-cache
       Pragma: no-cache
+```

@@ -2,13 +2,14 @@
 copyright:
   years: 1994, 2018
 
-lastupdated: "2018-06-28"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Upgrade del tuo Citrix NetScaler VPX
+{: #upgrading-your-citrix-netscaler-vpx}
 
 **NOTA:** devi essere connesso alla VPN prima di tentare questa procedura.
 
@@ -19,14 +20,21 @@ lastupdated: "2018-06-28"
 
 	[VersiNetScaler Available Versions ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://downloads.softlayer.local/citrix/netscaler/){: new_window}
 	
-	**NOTA:** devi essere connesso alla VPN dell'infrastruttura IBM Cloud per poter accedere a questo link.
+	**NOTA:** devi essere connesso alla VPN dell'infrastruttura IBM© Cloud per poter accedere a questo link.
 
 5. Nella schermata Upload Software, individua l'ubicazione del file di upgrade e fai clic su **Upgrade**. Sarà caricato il firmware.
 6. Nella finestra System Upgrade risultante, ti sarà richiesto di riavviare. Fai clic su **Close**.
 7. Torna a **System** e fai clic su **Reboot**.
 8. Dopo l'upgrade, chiudi tutte le istanze del browser e pulisci la cache del tuo computer prima di accedere all'applicazione.
 
-**NOTA:** l'interfaccia utente potrebbe essere diversa a seconda della versione corrente del tuo NetScaler VPX.
+**NOTA:** 
 
-
-
+* L'interfaccia utente potrebbe essere diversa a seconda della versione corrente del tuo NetScaler VPX.
+* Se stai eseguendo l'upgrade da NetScaler versione 11 a 12, la funzione CallHome è abilitata per impostazione predefinita anche se l'hai specificatamente disabilitata prima e durante l'installazione. Per disabilitare questa funzione, puoi utilizzare la riga di comando o la IU di gestione Citrix: 
+    
+   * Riga di comando: `disable feature CallHome`
+   * IU di gestione Citrix: 
+     
+     1. Vai a **Configuration** > **System** > **Settings**.
+     2. Nel pannello dei dettagli, fai clic sul link **Configure Advanced features** e deseleziona l'opzione **Callhome**.
+     3. Fai clic su **OK**.

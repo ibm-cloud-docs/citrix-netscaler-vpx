@@ -1,17 +1,18 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-06"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Bilanciamento del carico globale
+{: #global-load-balancing}
 
 Il bilanciamento del carico del server globale (GSLB, Global Server Load Balancing) è un metodo per suddividere il traffico su più server utilizzando DNS e le ubicazioni geografiche come strumenti per determinare dove deve essere inviato il traffico del server. In genere, un programma di bilanciamento del carico globale invia una richiesta client a un server che si trova più vicino al client, diminuendo la latenza e migliorando le prestazioni.
 
-Potrebbe non servirti un'implementazione completa di una soluzione di bilanciamento del carico globale. GSLB richiede molteplici istanze di un dispositivo adatto in grado di eseguire questa funzione e, a seconda delle tue esigenze, potresti trovare più interessanti altre soluzioni. Se ti servono interi siti web e intere applicazioni, GSLB è una buona scelta. Se si servono solo parti del tuo contenuto, come ad esempio immagini, video o altri file di grandi dimensioni, una CDN ([Content Delivery Network](https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-content-delivery-networks-cdn-){: new_window}) potrebbe essere più adatta (e più facile da distribuire).
+Potrebbe non servirti un'implementazione completa di una soluzione di bilanciamento del carico globale. GSLB richiede molteplici istanze di un dispositivo adatto in grado di eseguire questa funzione e, a seconda delle tue esigenze, potresti trovare più interessanti altre soluzioni. Se ti servono interi siti web e intere applicazioni, GSLB è una buona scelta. Se si servono solo parti del tuo contenuto, come ad esempio immagini, video o altri file di grandi dimensioni, una CDN ([Content Delivery Network](/docs/infrastructure/CDN?topic=CDN-about-content-delivery-networks-cdn-)) potrebbe essere più adatta (e più facile da distribuire).
 
 ## Citrix NetScaler VPX
 
@@ -81,10 +82,10 @@ Ci sono altri prodotti che possono offrire una funzionalità analoga per distrib
 
 Le CDN (Content Delivery Network) ti consentono di caricare o fornire un server di origine a server di cache distribuiti geograficamente che forniscono quindi il contenuto al client richiedente. Le CDN funzionano meglio con contenuti statici e in blocco, come ad esempio immagini e video che non cambiano nel corso del tempo.
 
-Per ulteriori dettagli sulla CDN, consulta la [documentazione](https://console.bluemix.net/docs/infrastructure/CDN/getting-started.html#getting-started).
+Per ulteriori dettagli sulla CDN, consulta [questa documentazione](/docs/infrastructure/CDN?topic=CDN-getting-started).
 
 ### Object Storage
 
 Object Storage di {{site.data.keyword.BluSoftlayer_notm}} può essere configurato per utilizzare più ubicazioni geografiche in diversi data center per fornire il contenuto. Un'applicazione in grado di riconoscere le aree geografiche può eseguire delle ricerche di ubicazioni sulla richiesta client e restituire un URL all'Object Storage vicino al client. Object Storage è fornito anche di un front-end CDN, se necessario, per fornire ulteriori servizi di memorizzazione in cache, come sopra indicato.
 
-Per ulteriori informazioni e un'introduzione all'Object Storage, consulta la [documentazione](https://console.bluemix.net/docs/services/cloud-object-storage/about-cos.html#about-ibm-cos). 
+Per ulteriori informazioni e un'introduzione all'Object Storage, consulta [questa documentazione](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-about-ibm-cloud-object-storage). 

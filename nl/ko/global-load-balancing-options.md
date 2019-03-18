@@ -1,17 +1,18 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-06"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 글로벌 로드 밸런싱
+{: #global-load-balancing}
 
 글로벌 서버 로드 밸런싱(GSLB)은 DNS 및 지리적 위치를 서버 트래픽이 전송되어야 하는 위치를 판별하는 방법으로 사용하여 여러 서버에 걸쳐 트래픽을 분할하는 메소드입니다. 일반적으로 글로벌 로드 밸런서는 클라이언트에 더 근접한 서버에 클라이언트 요청을 전송하여 대기 시간을 줄이고 성능을 향상시킵니다.
 
-글로벌 로드 밸런싱 솔루션의 전체 구현이 필요하지 않을 수도 있습니다. GSLB에는 이 기능을 수행할 수 있는 적합한 디바이스의 다중 인스턴스가 필요하며 요구사항에 따라 다른 솔루션이 더 매력적일 수 있습니다. 전체 웹 사이트 및 애플리케이션이 필요한 경우 GSLB가 좋은 선택입니다. 이미지, 동영상 또는 기타 큰 파일과 같은 컨텐츠의 부분만 필요한 경우 [CDN(Content Delivery Network)](https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-content-delivery-networks-cdn-){: new_window}이 더 적합하고 배치가 더 용이할 수 있습니다.
+글로벌 로드 밸런싱 솔루션의 전체 구현이 필요하지 않을 수도 있습니다. GSLB에는 이 기능을 수행할 수 있는 적합한 디바이스의 다중 인스턴스가 필요하며 요구사항에 따라 다른 솔루션이 더 매력적일 수 있습니다. 전체 웹 사이트 및 애플리케이션이 필요한 경우 GSLB가 좋은 선택입니다. 이미지, 동영상 또는 기타 큰 파일과 같은 컨텐츠의 부분만 필요한 경우 [CDN(Content Delivery Network)](/docs/infrastructure/CDN?topic=CDN-about-content-delivery-networks-cdn-)이 더 적합하고 배치가 더 용이할 수 있습니다.
 
 ## Citrix NetScaler VPX
 
@@ -81,10 +82,10 @@ NetScaler 글로벌 로드 밸런싱에 대한 자세한 정보는 다음을 참
 
 CDN(Content Delivery Network)을 사용하면 원래 서버를 지리적으로 분산된 캐시 서버에 업로드하거나 제공한 후 요청 클라이언트에 컨텐츠를 제공할 수 있습니다. CDN은 시간이 경과함에 따라 변경되지 않는 이미지 및 동영상과 같은 정적 대량 컨텐츠에서 가장 잘 작동합니다.
 
-CDN에 대한 세부사항은 [문서](https://console.bluemix.net/docs/infrastructure/CDN/getting-started.html#getting-started)를 참조하십시오.
+CDN에 대한 세부사항은 [이 문서](/docs/infrastructure/CDN?topic=CDN-getting-started)를 참조하십시오.
 
 ### Object Storage
 
 다양한 데이터 센터의 여러 지리적 위치를 사용하여 컨텐츠를 제공하도록 {{site.data.keyword.BluSoftlayer_notm}}의 Object Storage를 구성할 수 있습니다. 지리적으로 인식 가능한 애플리케이션이 클라이언트 요청에 대한 위치 검색을 수행하고 클라이언트에 근접한 Object Storage에 URL을 리턴할 수 있습니다. 위에서 언급한 대로 필요한 경우 추가 캐싱 서비스를 제공하기 위해 Object Storage는 CDN 프론트 엔드와 함께 제공됩니다.
 
-자세한 정보와 Object Storage에 대한 소개는 [문서](https://console.bluemix.net/docs/services/cloud-object-storage/about-cos.html#about-ibm-cos)를 참조하십시오. 
+자세한 정보와 Object Storage에 대한 소개는 [이 문서](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-about-ibm-cloud-object-storage)를 참조하십시오. 

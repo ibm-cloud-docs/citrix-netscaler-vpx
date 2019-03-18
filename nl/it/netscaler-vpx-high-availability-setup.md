@@ -2,13 +2,14 @@
 copyright:
   years: 1994, 2018
 
-lastupdated: "2018-06-28"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Configurazione di Citrix Netscaler VPX per l'alta disponibilità (HA, High Availability)
+{: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
 I programmi di bilanciamento del carico vengono utilizzati per bilanciare il traffico su più server delle applicazioni per migliorare le prestazioni e la stabilità in un'applicazione scalabile. Eppure, un singolo programma di bilanciamento del carico è un singolo punto di malfunzionamento. Evitare tale condizione configurando una coppia Netscaler VPX ad alta disponibilità (HA, High Availability). La configurazione di una coppia HA richiede due server Netscaler VPX. Il server secondario subentra per continuare il bilanciamento del carico nel caso si verificasse un malfunzionamento di quello principale. 
 
@@ -19,7 +20,7 @@ Per una configurazione HA, entrambi i NetScaler devono trovarsi nella stessa VLA
 Prima di iniziare la configurazione HA, assicurati di eseguire le seguenti azioni prerequisite:
 
 1. Se la coppia sarà configurata attivo-attivo. qualsiasi sottorete VIP aggiunta alle istanze deve essere di tipo "Routed to VLAN" (Instradata a VLAN).
-* Se la coppia sarà configurata attivo-passivo, qualsiasi sottorete VIP aggiunge alle istanze deve essere "Routed to VLAN" (Instradata a VLAN) o "Secondary routed to IP" (Secondario instradato a IP) e instradata all'indirizzo IP pubblico del nodo principale.
+2. Se la coppia sarà configurata attivo-passivo, qualsiasi sottorete VIP aggiunge alle istanze deve essere "Routed to VLAN" (Instradata a VLAN) o "Secondary routed to IP" (Secondario instradato a IP) e instradata all'indirizzo IP pubblico del nodo principale.
 
 Dopo aver ordinato i due server Netscaler VPX nella VLAN necessaria, e ordinato le sottoreti VIP e SNIP per soddisfare i prerequisiti per la tua configurazione di coppia HA, puoi procedere con le seguenti operazioni:
 

@@ -2,17 +2,18 @@
 copyright:
   years: 1994, 2017
 
-lastupdated: "2017-11-02"
+lastupdated: "2018-08-08"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# 在 Citrix NetScaler VPX 中重定向 URL
+# 在 Citrix Netscaler VPX 中重定向 URL
+{: #redirecting-urls-in-a-citrix-netscaler-vpx}
 
 在 NetScaler 中执行 `http://` 到 `https://` 的重定向的最常见方法是利用备份/重定向功能，此功能最初旨在重定向到“服务器停止运行”或“维护”页面。  
 
-要执行此操作，必须创建侦听端口 80 的虚拟服务器（未绑定任何实际服务），以及指向特定 `https://` URL 的备份重定向。实际虚拟服务器始终为“停止运行”（未绑定任何活动服务），因此备份重定向始终处于活动状态。缺点是必须指定显式重定向 URL（例如 https://web.example.com），因此尝试访问 http://mail.example.com 的用户将重定向到 https://web.example.com。
+要执行此操作，必须创建侦听端口 80 的虚拟服务器（未绑定任何实际服务），以及指向特定 `https://` URL 的备份重定向。实际虚拟服务器始终为“停止运行”（未绑定任何活动服务），因此备份重定向始终处于活动状态。缺点是必须指定显式重定向 URL（例如 `https://web.example.com`），因此尝试访问 `http://mail.example.com` 的用户将重定向到 `https://web.example.com`。
 
 在保留主机名/URL 的同时执行 `http://` 到 `https://` 的重定向的替代方法是使用 NetScaler 的“响应者”功能，此功能生成包含原始信息的 HTTP 重定向消息。这可通过几个简单的步骤来完成 - 在以下示例中，请确保将“w.x.y.z”替换为 HTTPS VIP 的 IP 地址：
 
@@ -47,21 +48,26 @@ lastupdated: "2017-11-02"
 	```
 6. 启用 NetScaler 的响应者功能（此步骤非常重要，因为缺省情况下此功能已禁用）。
 	```
-  enable ns feature responder
-  ```
+        enable ns feature responder
+	```
 7. 将正在侦听的 vserver 绑定到响应者策略。
 	```
 	bind lb vserver http_to_htps_vserver -policyName http_to_https_pol -priority 1 -gotoPriorityExpression END
 	```
 8. 可以使用命令行实用程序（如“wget”或 "curl"）来确认它是否如预期正常运行，如下所示：
+        
+	```
+wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
+
+
+
+    curl -v http://w.x.y.z
+```
+
+将 IP 地址 `w.x.y.z` 替换为 URL 主机名（例如，`http://mail.example.com` 或 `http://web.example.com`），并确认“Location”输出是否反映出最初指定的相同主机名，但在以下示例中各示例的“Location”均以“https”开头：
 
 ```
 wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
-
-curl -v http://w.x.y.z
-```
-
-将 IP 地址“w.x.y.z”替换为 URL 主机名（例如，http://mail.example.com 或 http://web.example.com），并确认“位置”输出是否反映出最初指定的相同主机名，但在以下示例中各示例的“位置”均以“https”开头：wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
     --2012-06-18 08:42:20--  http://w.x.y.z/
     Connecting to w.x.y.z:80... connected.
     HTTP request sent, awaiting response...
@@ -86,3 +92,4 @@ curl -v http://w.x.y.z
       Connection: close
       Cache-Control: no-cache
       Pragma: no-cache
+```

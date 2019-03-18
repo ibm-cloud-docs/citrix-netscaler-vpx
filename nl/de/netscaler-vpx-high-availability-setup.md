@@ -2,13 +2,14 @@
 copyright:
   years: 1994, 2018
 
-lastupdated: "2018-06-28"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Citrix NetScaler VPX für High Availability (HA) konfigurieren
+{: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
 Lastausgleichsfunktionen werden zum Lastausgleich für den Datenverkehr auf mehrere Anwendungsserver benutzt, um so die Leistung und Stabilität einer skalierbaren Anwendung zu verbessern. Allerdings stellt eine einzige Lastausgleichsfunktion auch einen Single Point of Failure dar. Dies kann vermieden werden, indem Sie ein HA-Paar (HA = High Availability; Hochverfügbarkeit) für NetScaler VPX konfigurieren. Zur Konfiguration eines HA-Paares werden zwei NetScaler VPX-Server benötigt. Der sekundäre Server übernimmt dabei die Lastausgleichsfunktion, falls der primäre Server ausfällt. 
 
@@ -19,7 +20,7 @@ Für eine HA-Konfiguration müssen sich beide NetScaler-Systeme in demselben VLA
 Vor der Erstellung der HA-Konfiguration müssen Sie sicherstellen, dass die folgenden Aktionen bereits ausgeführt wurden:
 
 1. Wenn das Paar als Aktiv/Aktiv konfiguriert wird, dann müssen alle VIP-Teilnetze, die zu den Instanzen hinzugefügt werden, den Typ "Routed to VLAN" aufweisen.
-* Wenn das Paar als Aktiv/Passiv konfiguriert wird, dann müssen alle VIP-Teilnetze, die zu den Instanzen hinzugefügt werden, entweder den Typ "Routed to VLAN" oder den Typ "Secondary routed to IP" aufweisen. Sie müssen an die öffentliche IP-Adresse des primären Knotens weitergeleitet werden.
+2. Wenn das Paar als Aktiv/Passiv konfiguriert wird, dann müssen alle VIP-Teilnetze, die zu den Instanzen hinzugefügt werden, entweder den Typ "Routed to VLAN" oder den Typ "Secondary routed to IP" aufweisen. Sie müssen an die öffentliche IP-Adresse des primären Knotens weitergeleitet werden.
 
 Nach der Bestellung der beiden NetScaler VPX-Server in dem erforderlichen VLAN und nach der Bestellung der VIP- und SNIP-Teilnetze zur Erfüllung der Anforderungen für die Konfiguration Ihres HA-Paars können Sie wie folgt fortfahren:
 

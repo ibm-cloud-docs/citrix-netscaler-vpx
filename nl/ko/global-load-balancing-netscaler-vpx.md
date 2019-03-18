@@ -1,17 +1,18 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Citrix NetScaler VPX를 통한 글로벌 로드 밸런싱
+{: #global-load-balancing-with-citrix-netscaler-vpx}
 
 글로벌 서버 로드 밸런싱(GSLB)은 일반적으로 다른 지리적 위치에 있는 여러 서버/인스턴스 간에 트래픽을 분배하기 위한 메커니즘입니다. 아이디어는 클라이언트로부터 트래픽 요청을 수신하여 특정 지역으로 경로 재지정하는 글로벌 밸런싱 엔진/서버를 보유하는 것이며, 경로 재지정할 지역은 관리자가 선택하고 구성한 기준/알고리즘을 사용하여 판별됩니다. 이를 달성하기 위해 {{site.data.keyword.BluSoftlayer_notm}} 네트워크 내부에서 두 개의 인식된 메소드를 사용할 수 있습니다.
 
-* **CDN:** 이미지 및 동영상과 같은 컨텐츠와 리치 미디어를 제공하기 위해 생성된 CDN(Content Delivery Network)입니다. CDN은 최소 대기 시간과 최고 속도를 유지하면서 분산된 노드에 지리적으로 컨텐츠를 분배합니다. 일반적으로 CDN은 전체 웹 사이트/애플리케이션이 아니라 컨텐츠의 특정 부분을 분배해야 하는 경우에 구현됩니다. {{site.data.keyword.BluSoftlayer_notm}}에서 이 서비스를 제공합니다. [여기](https://console.bluemix.net/docs/infrastructure/CDN/getting-started.html#getting-started)에서 이에 대해 자세히 알아보십시오. 
+* **CDN:** 이미지 및 동영상과 같은 컨텐츠와 리치 미디어를 제공하기 위해 생성된 CDN(Content Delivery Network)입니다. CDN은 최소 대기 시간과 최고 속도를 유지하면서 분산된 노드에 지리적으로 컨텐츠를 분배합니다. 일반적으로 CDN은 전체 웹 사이트/애플리케이션이 아니라 컨텐츠의 특정 부분을 분배해야 하는 경우에 구현됩니다. {{site.data.keyword.BluSoftlayer_notm}}에서 이 서비스를 제공합니다. [여기](/docs/infrastructure/CDN?topic=CDN-getting-started)에서 이에 대해 자세히 알아보십시오. 
 * **NetScaler VPX:** 일반 로컬 로드 밸런싱과 마찬가지로 VPX는 유사한 오브젝트 계층 구조를 사용하여 여러 지역 간에 트래픽을 로드 밸런싱합니다. NetScaler는 DNS 기반 글로벌 검색을 사용하여 선택한 위치/사이트에 해당하는 각 레코드를 선택하며, 관리자가 사전에 구성한 기준에 따라 선택이 이루어집니다. 다음 섹션에서 이 옵션/오퍼링에 대해 자세히 설명합니다.
 
 Citrix NetScaler VPX로 구현할 수도 있는 컨텐츠 배포에 다른 기술을 사용할 수 있습니다(예: HTTP 경로 재지정). 

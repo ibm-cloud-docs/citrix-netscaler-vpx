@@ -2,13 +2,14 @@
 copyright:
   years: 1994, 2017
 
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Acessar e gerenciar o Citrix NetScaler VPX
+# Gerenciando seu Citrix NetScaler VPX
+{: #managing-your-citrix-netscaler-vpx}
 
 Os dispositivos Citrix NetScaler são ferramentas poderosas com uma matriz de recursos que ajuda a aprimorar e refinar sua solução {{site.data.keyword.BluSoftlayer_notm}} em uma variedade de maneiras. É possível localizar informações do dispositivo no Portal do cliente, bem como se conectar ao dispositivo e configurar seus recursos.  
 
@@ -35,9 +36,9 @@ Outros detalhes listados na Lista de dispositivos incluem:
 
 ## A tela Detalhes do dispositivo 
 
-Clicar no nome do NetScaler leva você para a página **Detalhes do dispositivo** do NetScaler, que mostra a VLAN na qual o NetScaler foi implementado, bem como seus endereços IP públicos para o NetScaler. Esses endereços IP não podem ser usados para gerenciamento, porque são os endereços VIP públicos padrão do NetScaler. Eles serão usados mais tarde para associação a um Serviço para propósitos de balanceamento de carga.
+Clicar no nome do NetScaler leva você para a página **Detalhes do dispositivo** do NetScaler, que mostra a VLAN na qual o NetScaler foi implementado, bem como seus endereços IP públicos para o NetScaler. Esses endereços IP não podem ser usados para gerenciamento, porque são os endereços VIP públicos padrão do NetScaler. Você usará esses endereços posteriormente para associar a um serviço de balanceamento de carga.
 
-## Gerenciando o NetScaler
+## Conectando-se ao NetScaler
 
 O {{site.data.keyword.BluSoftlayer_notm}} concede acesso raiz completo a seu dispositivo NetScaler. Para efetuar login na UI de gerenciamento do NetScaler, deve-se estar conectado à rede privada do {{site.data.keyword.BluSoftlayer_notm}} (VPN de gerenciamento do {{site.data.keyword.BluSoftlayer_notm}} ou executando funções de gerenciamento por meio de uma sessão remota em um servidor no ambiente do {{site.data.keyword.BluSoftlayer_notm}}). 
 

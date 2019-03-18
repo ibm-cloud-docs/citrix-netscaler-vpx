@@ -2,13 +2,14 @@
 copyright:
   years: 1994, 2017
 
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Citrix NetScaler VPX - Zugriff und Verwaltung
+# Citrix NetScaler VPX verwalten
+{: #managing-your-citrix-netscaler-vpx}
 
 Citrix NetScaler-Geräte stellen leistungsfähige Tools mit einer Palette von Funktionen dar, die Sie bei der Erweiterung und Optimierung Ihrer Lösung für {{site.data.keyword.BluSoftlayer_notm}} auf unterschiedlichste Weise unterstützen. Die Informationen Ihres Geräts erhalten Sie im Kundenportal. Dort können Sie auch die erforderlichen Geräteverbindungen herstellen und seine Funktionen konfigurieren.  
 
@@ -35,9 +36,9 @@ Die Geräteliste enthält außerdem die folgenden Detailangaben:
 
 ## Anzeige für Gerätedetails 
 
-Wenn Sie auf den Namen des NetScaler-Systems klicken, dann wird die Seite mit den **Gerätedetails** dieses Systems aufgerufen. Auf dieser Seite finden Sie das VLAN (Virtual Local Area Network), in dem das NetScaler-System bereitgestellt wurde, und außerdem die öffentlichen IP-Adressen des NetScaler-Systems. Diese IP-Adressen dürfen nicht zu Managementzwecken verwendet werden, da sie die standardmäßigen öffentlichen VIPs (VIP = Virtual IP Address; virtuelle IP-Adresse) des NetScaler-Systems darstellen. Diese Adressen werden Sie später verwenden, um eine Zuordnung zu einem Service für den Lastausgleich herzustellen.
+Wenn Sie auf den Namen des NetScaler-Systems klicken, dann wird die Seite mit den **Gerätedetails** dieses Systems aufgerufen. Auf dieser Seite finden Sie das VLAN (Virtual Local Area Network), in dem das NetScaler-System bereitgestellt wurde, und außerdem die öffentlichen IP-Adressen des NetScaler-Systems. Diese IP-Adressen dürfen nicht zu Managementzwecken verwendet werden, da sie die standardmäßigen öffentlichen VIPs (VIP = Virtual IP Address; virtuelle IP-Adresse) des NetScaler-Systems darstellen. Diese Adressen werden Sie später verwenden, um eine Zuordnung zu einem Lastausgleichsservice herzustellen.
 
-## NetScaler-System verwalten
+## Verbindung zu NetScaler herstellen
 
 {{site.data.keyword.BluSoftlayer_notm}} ermöglicht Ihnen den vollständigen Rootzugriff auf Ihr NetScaler-Gerät. Zur Anmeldung bei der Managementbenutzerschnittstelle des NetScaler-Systems müssen Sie mit dem privaten Netz für {{site.data.keyword.BluSoftlayer_notm}} verbunden sein. (Dazu müssen Sie entweder über ein Management-VPN für {{site.data.keyword.BluSoftlayer_notm}} verfügen oder die Managementfunktionen über eine ferne Sitzung auf einem Server in der Umgebung für {{site.data.keyword.BluSoftlayer_notm}} ausführen.) 
 

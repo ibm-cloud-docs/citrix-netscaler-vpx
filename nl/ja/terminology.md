@@ -1,13 +1,14 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# 用語
+# Citrix NetScaler VPX 用語
+{: #citrix-netscaler-vpx-terminology}
 
 Citrix NetScaler プラットフォームは、製品固有の用語と基本的なロード・バランサーの用語および概念を使用しています。 
 

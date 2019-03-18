@@ -2,13 +2,14 @@
 copyright:
   years: 1994, 2018
 
-lastupdated: "2018-06-28"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 设置 Citrix NetScaler VPX 以实现高可用性 (HA)
+{: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
 负载均衡器用于对多个应用程序服务器上的流量进行均衡，从而提高可扩展应用程序的性能和稳定性。然而，单个负载均衡器是单点故障。通过配置高可用性 (HA) NetScaler VPX 对可避免此问题。配置 HA 对需要两台 NetScaler VPX 服务器。如果主服务器发生故障，辅助服务器将介入以继续执行负载均衡。 
 
@@ -19,7 +20,7 @@ SNIP（子网 IP）被负载均衡的服务器视为向 NetScaler VPX 的 VIP（
 在开始 HA 配置之前，请确保执行以下先决条件操作：
 
 1. 如果该对将配置为主动-主动，那么添加到实例的任何 VIP 子网的类型都必须为“路由到 VLAN”。
-* 如果该对将配置为主动-被动，那么添加到实例的任何 VIP 子网都必须为“路由到 VLAN”或“辅助路由到 IP" ，并路由到主节点的公共 IP 地址。
+2. 如果该对将配置为主动-被动，那么添加到实例的任何 VIP 子网都必须为“路由到 VLAN”或“辅助路由到 IP" ，并路由到主节点的公共 IP 地址。
 
 在需要的 VLAN 中订购两个 NetScaler VPX 服务器，并订购 VIP 和 SNIP 子网以满足 HA 对配置的先决条件后，可以继续执行以下操作：
 

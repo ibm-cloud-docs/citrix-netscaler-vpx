@@ -2,13 +2,14 @@
 copyright:
   years: 1994, 2017
 
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# 访问和管理 Citrix NetScaler VPX
+# 管理 Citrix NetScaler VPX
+{: #managing-your-citrix-netscaler-vpx}
 
 Citrix NetScaler 设备是功能强大的工具，具有一系列功能，可从多个方面帮助增强和优化 {{site.data.keyword.BluSoftlayer_notm}} 解决方案。您可以在客户门户网站中找到该设备的信息，还可以连接到该设备并配置其功能。  
 
@@ -35,9 +36,9 @@ Citrix NetScaler 设备列在“设备列表”中，这与您在 {{site.data.ke
 
 ## 设备详细信息屏幕 
 
-单击 NetScaler 的名称将转至 NetScaler 的**设备详细信息**页面，其中显示部署了 NetScaler 的 VLAN 以及 NetScaler 的公共 IP 地址。这些 IP 地址是 NetScaler 的缺省公共 VIP 地址，因此不能用于管理。以后您将使用这些地址来关联到服务以用于负载均衡。
+单击 NetScaler 的名称将转至 NetScaler 的**设备详细信息**页面，其中显示部署了 NetScaler 的 VLAN 以及 NetScaler 的公共 IP 地址。这些 IP 地址是 NetScaler 的缺省公共 VIP 地址，因此不能用于管理。稍后您将使用这些地址来关联到负载均衡服务。
 
-## 管理 NetScaler
+## 连接到 NetScaler
 
 {{site.data.keyword.BluSoftlayer_notm}} 向 NetScaler 设备授予完全 root 用户访问权。要登录到 NetScaler 的管理 UI，您必须连接到 {{site.data.keyword.BluSoftlayer_notm}} 专用网络（{{site.data.keyword.BluSoftlayer_notm}} 管理 VPN 或从 {{site.data.keyword.BluSoftlayer_notm}} 环境中服务器上的远程会话执行管理功能）。 
 

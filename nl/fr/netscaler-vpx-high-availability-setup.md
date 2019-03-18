@@ -2,13 +2,14 @@
 copyright:
   years: 1994, 2018
 
-lastupdated: "2018-06-28"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Configuration de Citrix Netscaler VPX pour la haute disponibilité
+{: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
 Les équilibreurs de charge servent à répartir le trafic sur plusieurs serveurs d'application afin d'améliorer la performance et la stabilité d'une application échelonnable. Cependant, lorsqu'il est seul à assumer cette fonction, l'équilibreur de charge constitue un point unique de défaillance. Ce risque peut être évité par la configuration d'une paire de serveurs Netscaler VPX haute disponibilité. La configuration d'une paire haute disponibilité requiert deux serveurs Netscaler VPX. Le serveur secondaire intervient pour poursuivre l'équilibrage de charge en cas de panne du serveur primaire. 
 
@@ -19,7 +20,7 @@ Pour une configuration haute disponibilité, les deux NetScalers doivent être d
 Avant de commencer la configuration haute disponibilité, veillez à entreprendre les actions prérequises suivantes :
 
 1. S'il est prévu que la paire ait une configuration active-active, tous les sous-réseaux de VIP ajoutés aux instances doivent être du type "Routed to VLAN".
-* S'il est prévu que la paire ait une configuration active-passive, tous les sous-réseaux de VIP ajoutés aux instances doivent être soit du type "Routed to VLAN", soit du type "Secondary routed to IP" et routés vers l'adresse IP publique du noeud primaire.
+2. S'il est prévu que la paire ait une configuration active-passive, tous les sous-réseaux de VIP ajoutés aux instances doivent être soit du type "Routed to VLAN", soit du type "Secondary routed to IP" et routés vers l'adresse IP publique du noeud primaire.
 
 Après avoir passé commande des deux serveurs NetScaler VPX dans le VLAN nécessaire et des VIP et sous-réseaux SNIP répondant aux prérequis de votre configuration en paire haute disponibilité, vous pouvez enchaîner avec les étapes suivantes :
 

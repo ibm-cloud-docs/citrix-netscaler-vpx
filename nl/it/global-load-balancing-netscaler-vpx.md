@@ -1,17 +1,18 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Bilanciamento del carico globale con Citrix NetScaler VPX
+{: #global-load-balancing-with-citrix-netscaler-vpx}
 
 Il bilanciamento del carico del server globale (GSLB, Global Server Load Balancing) è un meccanismo per distribuire il traffico su più server/istanze, che si trovano di norma in località geografiche differenti. L'idea è quella di avere un motore/server di bilanciamento globale che riceve le richieste di traffico dai client e li reindirizza a una specifica area geografica, che è determinata utilizzando i criteri/algoritmi selezionati e configurata dall'amministratore. Per ottenere questo risultato, all'interno della rete {{site.data.keyword.BluSoftlayer_notm}} possono essere utilizzati due metodi riconosciuti:
 
-* La **CDN:** Content Delivery Network (CDN) distribuisce contenuto e dati multimediali elaborati, quali immagini e video, e distribuisce geograficamente i contenuti su nodi dispersi mantenendo al tempo stesso la latenza minima e la velocità più elevata. Viene di norma implementata quando è necessario distribuire delle specifiche parti di contenuto, invece che interi siti web o intere applicazioni. {{site.data.keyword.BluSoftlayer_notm}} offre questo servizio; leggi ulteriori informazioni in merito [qui](https://console.bluemix.net/docs/infrastructure/CDN/getting-started.html#getting-started). 
+* La **CDN:** Content Delivery Network (CDN) distribuisce contenuto e dati multimediali elaborati, quali immagini e video, e distribuisce geograficamente i contenuti su nodi dispersi mantenendo al tempo stesso la latenza minima e la velocità più elevata. Viene di norma implementata quando è necessario distribuire delle specifiche parti di contenuto, invece che interi siti web o intere applicazioni. {{site.data.keyword.BluSoftlayer_notm}} offre questo servizio; leggi ulteriori informazioni in merito [qui](/docs/infrastructure/CDN?topic=CDN-getting-started). 
 * **NetScaler VPX:** come con un normale bilanciamento del carico locale, VPX utilizza una gerarchia degli oggetti simile per bilanciare il carico del traffico tra diverse aree geografiche. Utilizzando le ricerche locali basate su DNS, NetScaler sceglie il rispettivo record che corrisponde all'ubicazione/sito selezionati; la selezione è basata sui criteri preconfigurati dall'amministratore. Le sezioni successive descriveranno in modo più dettagliato questa opzione/offerta.
 
 Nota che sono disponibili delle altre tecniche per la distribuzione di contenuto, come il reindirizzamento HTTP, che è anche possibile implementare con Citrix NetScaler VPX. 

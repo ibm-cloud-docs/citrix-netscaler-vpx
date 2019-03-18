@@ -2,13 +2,14 @@
 copyright:
   years: 1994, 2017
   
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Introdução ao dispositivo de software Citrix NetScaler VPX
+{: #getting-started-with-citrix-netscaler-vpx-software-appliance}
 
 A implementação de um Citrix NetScaler VPX em sua solução do {{site.data.keyword.BluSoftlayer_notm}} acelera a entrega de aplicativos da web, impulsiona o desempenho e assegura que seus aplicativos e serviços em nuvem permaneçam otimizados, disponíveis e seguros. Se você tiver cargas de trabalho desafiadoras, como jogos, big data e analítica ou nuvens privadas, o Citrix NetScaler VPX poderá ajudá-lo a entregar sua solução quando, onde e como seus usuários precisarem mais.
 
@@ -16,9 +17,9 @@ A implementação de um Citrix NetScaler VPX em sua solução do {{site.data.key
 de Começar
 Para começar a usar o Citrix NetScaler VPX, será necessário saber as informações a seguir:
 
-* Suas informações de login do Portal do cliente do IBM Cloud
+* Suas informações de login do Portal do cliente do IBM© Cloud
 * O local de implementação para o balanceador de carga
-* Qual tipo de Netscaler se ajusta melhor às suas necessidades (para obter mais informações, consulte [Explorar Load Balancers](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html))
+* Qual tipo de NetScaler é o mais adequado às suas necessidades (para obter mais informações, consulte [Explorar Load Balancers](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore)
 * O número de endereços IP públicos necessários
 * A VLAN na qual você deseja designar o balanceador de carga
 
@@ -42,4 +43,4 @@ Para solicitar um dispositivo de software Citrix NetScaler VPX, navegue para a p
 
 ## O que vem a seguir
 
-É possível saber mais sobre os [recursos](about-citrix-netscaler-vpx.html) do Citrix Netscaler VPX, revisar a [terminologia](terminology.html) específica do Netscaler ou começar a [configurar](netscaler-basic-configuration.html) o seu Netscaler.
+É possível saber mais sobre os [recursos](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-about-citrix-netscaler-vpx) do Citrix Netscaler VPX, revisar a [terminologia](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-citrix-netscaler-vpx-terminology) específica do Netscaler ou começar a [configurar](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-basic-load-balancing-configuration) o seu Netscaler.

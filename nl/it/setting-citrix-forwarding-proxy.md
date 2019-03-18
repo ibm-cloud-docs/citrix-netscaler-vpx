@@ -9,6 +9,7 @@ lastupdated: "2017-11-02"
 {:new_window: target="_blank"}
 
 # Configurazione di Citrix Netscaler VPX come un proxy di inoltro
+{: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
 
 Un proxy di inoltro funge da singolo punto di controllo tra i client su una rete interna e internet. Un proxy consente all'amministratore di rete o a quello della sicurezza di creare delle politiche che limitano l'accesso ai siti internet.
 
@@ -106,8 +107,6 @@ Puoi usare i seguenti comandi di visualizzazione per convalidare lo stato del pr
 **show cr vserver:** Visualizza uno specifico server virtuale di reindirizzamento della cache oppure tutti i server virtuali di reindirizzamento della cache configurati.
 
 **stat cr vserver:** Visualizza le statistiche del server virtuale di reindirizzamento della cache.
-
-Per una maggiore documentazione, vai al manuale [Citrix command reference guide ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://support.citrix.com/servlet/KbServlet/download/20679-102-665857/NS-CommandReference-Guide.pdf).
 
 La configurazione di un proxy di inoltro di base su Citrix è abbastanza semplice. Fornisce un modo per dare ai client su una rete interna un percorso protetto alle risorse su Internet. Consente anche all'amministratore di rete di mantenere un livello di controllo sulla rete.
 

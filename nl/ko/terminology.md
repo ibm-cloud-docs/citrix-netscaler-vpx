@@ -1,13 +1,14 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# 용어
+# Citrix NetScaler VPX 용어집
+{: #citrix-netscaler-vpx-terminology}
 
 Citrix NetScaler 플랫폼은 제품별 용어와 기본 로드 밸런서 용어 및 개념을 모두 사용합니다. 
 

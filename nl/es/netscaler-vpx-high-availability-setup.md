@@ -2,13 +2,14 @@
 copyright:
   years: 1994, 2018
 
-lastupdated: "2018-06-28"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Configurar Citrix Netscaler VPX para alta disponibilidad (HA)
+{: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
 Los equilibradores de carga se utilizan para equilibrar el tráfico en varios servidores de aplicaciones para mejorar el rendimiento y la estabilidad en una aplicación escalable. Sin embargo, un solo equilibrador de carga es un único punto de anomalía. Evite esto configurando un par de alta disponibilidad (HA) de Netscaler VPX. La configuración de un par de alta disponibilidad requiere dos servidores Netscaler VPX. El servidor secundario entra para continuar el equilibrio de carga si falla el primario. 
 
@@ -19,7 +20,7 @@ Para una configuración de alta disponibilidad, ambos NetScalers deben estar en 
 Antes de empezar la configuración de alta disponibilidad, asegúrese de realizar las siguientes acciones de requisito previo:
 
 1. Si el par estará configurado como activo-activo, cualquier subred de VIP añadida a las instancias debe ser del tipo "Direccionado a VLAN".
-* Si el par estará configurado como activo-pasivo, cualquier subred de VIP añadida a las instancias debe ser del tipo "Direccionado a VLAN" o "Secundario direccionado a IP" y redireccionarse a la dirección IP pública del nodo primario.
+2. Si el par estará configurado como activo-pasivo, cualquier subred de VIP añadida a las instancias debe ser del tipo "Direccionado a VLAN" o "Secundario direccionado a IP" y redireccionarse a la dirección IP pública del nodo primario.
 
 Después de pedir los dos servidores de Netscaler VPX en la VLAN necesaria y pedir las subredes VIP y SNIP para cumplir los requisitos previos para la configuración del par de alta disponibilidad, puede continuar con lo siguiente:
 

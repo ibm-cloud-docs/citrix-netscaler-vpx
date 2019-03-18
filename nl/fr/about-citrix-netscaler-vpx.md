@@ -1,32 +1,40 @@
 ---
 copyright:
-  years: 1994, 2017
+  years: 1994, 2018
   
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # A propos de Citrix NetScaler VPX
+{: #about-citrix-netscaler-vpx}
 
-Le Citrix NetScaler VPX est un dispositif (appliance) logiciel virtuel dédié qui assure un équilibrage de charge sur le réseau IBM Cloud public et privé. 
+Le Citrix NetScaler VPX est un dispositif (appliance) logiciel virtuel dédié qui assure un équilibrage de charge sur le réseau IBM© Cloud public et privé. 
+
+Le déploiement d'un Citrix NetScaler VPX dans votre solution {{site.data.keyword.BluSoftlayer_notm}} accélère la mise à disposition des applications Web, améliore les performances et offre la garantie que vos applications et services cloud seront toujours optimisés, disponibles et sûrs. Si vous avez des charges de travail importantes (jeux en ligne, Big Data, analytique, etc.) ou des clouds privés, le Citrix NetScaler VPX peut vous aider à fournir votre solution aux utilisateurs où et quand ils en ont le plus besoin.
 
 ## Caractéristiques et fonctionnalités
 
 * Seul produit capable d'équilibrer la charge du trafic à la fois sur le réseau public et un réseau privé
 * Gestion par interface graphique (GUI) ou ligne de commande (CLI)
 * De nombreux types de distribution de trafic, notamment :
+  * Connexions minimum
   * Permutation circulaire (Round Robin)
-  * Moindres connexions (Least Connection)
-  * Moindres temps de réponse (Least Response)
-  * Hachage de l'URL (URL Hash)
-  * Hachage du nom de domaine (Domain Hash)
-  * Hachage de l'IP de destination (Destination IP Hash)
-  * Hachage de l'IP source (Source IP Hash)
-  * Moindre bande passante (Least Bandwidth)
-* Accélération SSL / Déchargement SSL
-* GSLB (Global Server Load Balancing)
+  * Moindre temps de réponse
+  * Moindre bande passante
+  * Moindres paquets
+  * Hachage d'URL
+  * Hachage de nom de domaine
+  * Hachage de l'adresse IP source
+  * Hachage de l'adresse IP cible
+  * Hachage des adresses IP source/cible
+  * Jeton
+  * LRTM
+
+* Accélération/déchargement SSL
+* Equilibrage de charge de serveur global (GSLB)
   * Utilise l'infrastructure DNS pour connecter le client au meilleur centre de données
   * Surveille la charge et la disponibilité des centres de données pour faire le meilleur choix de connexions
 * Commutation de contenu
@@ -43,12 +51,11 @@ Le Citrix NetScaler VPX peut être déployé à la demande, en seulement 15 minu
 
 ## Sécurité des applications
 
-Pour sécuriser le trafic de leurs applications, les clients peuvent tirer parti de fonctionnalités de sécurité telles que Application Content Filtering (filtrage de contenu), Access Gateway (passerelle d'accès) et un pare-feu applicatif web (Web Application Firewall).
+Pour sécuriser le trafic de leurs applications, les clients peuvent tirer parti de fonctionnalités de sécurité, telles que Application Content Filtering (filtrage de contenu), Priority Queuing (mise en file d'attente par priorité) et un pare-feu applicatif (Web Application Firewall).
 
 ## Filtrage du trafic
 
-Le Citrix Netscaler VPX filtre les demandes des utilisateurs finaux aux serveurs et les réponses des serveurs aux utilisateurs finaux. Une fonctionnalité d'apprentissage permet de profiler les sessions en temps réel et de déterminer s'il faut ou non autoriser le trafic.
-
+Le Citrix NetScaler VPX filtre les demandes des utilisateurs finaux aux serveurs et les réponses des serveurs aux utilisateurs finaux. Une fonctionnalité d'apprentissage intégrée au pare-feu applicatif permet de profiler les sessions en temps réel et de déterminer s'il faut ou non autoriser le trafic.
 
 ## Rapports PCI-DSS
 
@@ -56,8 +63,8 @@ PCI-DSS est une norme de sécurisation des données de cartes de paiement. Elle 
 
 ## Équilibrage de charge global (GSLB)
 
-Avec la fonctionnalité GSLB (Global Load Balancing), l'édition Platinum de NetScaler étend l'équilibreur de charge au-delà des frontières locales du centre de données. 
+Avec la fonctionnalité GSLB, l'édition Platinum de NetScaler étend l'équilibreur de charge au-delà des frontières locales du centre de données. 
 
-## Étendez votre datacenter
+## Extension de votre centre de données
 
-Dans l'édition Platinum de NetScaler, la fonctionnalité NetScaler CloudBridge vous offre un moyen simple d'étendre votre centre de données à {{site.data.keyword.BluSoftlayer_notm}} avec des menus pilotés par des assistants. 
+Dans l'édition Platinum de NetScaler, la fonctionnalité CloudBridge Connector vous offre un moyen simple d'étendre votre centre de données à {{site.data.keyword.BluSoftlayer_notm}} avec des menus pilotés par des assistants. 

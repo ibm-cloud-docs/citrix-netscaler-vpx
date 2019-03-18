@@ -1,13 +1,15 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-06"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Configuration d'équilibrage de charge de base
+{: #basic-load-balancing-configuration}
+
 Prenons l'exemple d'une société ayant un site web communautaire (sorte de réseau social rudimentaire) sur lequel les internautes peuvent s'inscrire et obtenir un compte ne demandant pas d'informations sensibles. Avec ce compte, ils peuvent se connecter et poster des photos de leurs animaux domestiques. Il y a en tout trois serveurs web/d'applications et un serveur de base de données en soutien. Le domaine et le DNS sont hébergés par {{site.data.keyword.BluSoftlayer_notm}}, et parce qu'il s'agit d'un petit environnement, le NetScaler et les serveurs web/d'applications siègent tous dans le même réseau local virtuel (VLAN). Cela simplifie les choses, car pour mettre en place une politique d'équilibrage de charge de base, il n'est pas nécessaire de configurer davantage le NetScaler. La procédure suivante est une explication simplifiée à outrance de l'écoulement du trafic dans ce cas de figure :
 
 1. Un utilisateur entre l'URL dans son navigateur.

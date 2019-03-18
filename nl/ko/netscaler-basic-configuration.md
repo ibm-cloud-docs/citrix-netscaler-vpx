@@ -1,13 +1,15 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-06"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 기본 로드 밸런싱 구성
+{: #basic-load-balancing-configuration}
+
 일반 사용자가 중요한 정보가 필요하지 않은 계정에 등록할 수 있는 기본 소셜 커뮤니티 웹 사이트가 있는 회사를 가정하십시오. 이후 사용자가 로그인하여 애완동물의 사진을 게시할 수 있습니다. 세 개의 웹/애플리케이션 서버와 이를 백업하기 위한 하나의 데이터베이스 서버가 있습니다. 도메인 및 DNS는 {{site.data.keyword.BluSoftlayer_notm}}로 호스팅되며 NetScaler 및 웹/앱 서버는 환경이 소규모이므로 모두 동일한 VLAN에 있습니다. 이렇게 하면 NetScaler가 기본 로드 밸런싱 정책을 설정하기 위해 추가 구성이 필요하지 않으므로 작업이 간소해집니다. 다음 프로시저는 이 인스턴스의 트래픽 플로우에 대한 매우 간략한 설명입니다.
 
 1. 사용자가 브라우저에 URL을 입력합니다.

@@ -9,6 +9,7 @@ lastupdated: "2017-11-02"
 {:new_window: target="_blank"}
 
 # Configurar Citrix Netscaler VPX como proxy de reenvío
+{: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
 
 Un proxy de reenvío actúa como un único punto de control entre los clientes en una red interna e Internet. Un proxy permite al administrador de red o de seguridad la posibilidad de crear políticas que restringen el acceso a sitios de Internet.
 
@@ -106,8 +107,6 @@ Los siguientes mandatos de visualización pueden utilizarse para validar el esta
 **show cr vserver:** Muestra un servidor virtual de redirección de memoria caché especificado o los muestra todos.
 
 **stat cr vserver:** Muestra las estadísticas de servidor virtual de redirección de memoria caché.
-
-Vaya a [Citrix command reference guide ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://support.citrix.com/servlet/KbServlet/download/20679-102-665857/NS-CommandReference-Guide.pdf) para obtener la documentación.
 
 La configuración de un proxy de reenvío básico en Citrix es bastante sencilla. Proporciona una forma de dar a los clientes una vía segura para recursos en Internet en una red interna. También permite al administrador de red mantener un nivel de control sobre la red.
 

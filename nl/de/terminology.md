@@ -1,13 +1,14 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Terminologie
+# Citrix NetScaler VPX-Terminologie
+{: #citrix-netscaler-vpx-terminology}
 
 Auf der Citrix NetScaler-Plattform werden sowohl die produktspezifische Terminologie als auch die grundlegenden Begriffe und Konzepte zum Lastausgleich verwendet. 
 

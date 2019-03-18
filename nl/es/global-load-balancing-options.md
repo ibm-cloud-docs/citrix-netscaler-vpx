@@ -1,17 +1,18 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-06"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Equilibrio de carga global
+{: #global-load-balancing}
 
 El equilibrio de carga de servidor global (GSLB) es un método para dividir el tráfico en varios servidores utilizando DNS y ubicaciones geográficas como medio para determinar dónde se debe enviar el tráfico. Generalmente, un equilibrador de carga global envía una solicitud de cliente a un servidor cercano al cliente, disminuyendo la latencia y mejorando el rendimiento.
 
-Puede que no necesite una implementación completa de una solución de equilibrio de carga global. GSLB requiere varias instancias de un dispositivo adecuado que pueda realizar esta función y, dependiendo de sus necesidades, es posible que otras soluciones le sean más atractivas. Si necesita sitios web y aplicaciones completas, GSLB es una buena opción. Si solo necesita partes de su contenido, como imágenes, vídeos u otros archivos grandes, es posible que la [Red de entrega de contenido](https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-content-delivery-networks-cdn-){: new_window} sea más adecuada (y más fácil de desplegar).
+Puede que no necesite una implementación completa de una solución de equilibrio de carga global. GSLB requiere varias instancias de un dispositivo adecuado que pueda realizar esta función y, dependiendo de sus necesidades, es posible que otras soluciones le sean más atractivas. Si necesita sitios web y aplicaciones completas, GSLB es una buena opción. Si solo necesita partes de su contenido, como imágenes, vídeos u otros archivos grandes, es posible que la [Red de entrega de contenido](/docs/infrastructure/CDN?topic=CDN-about-content-delivery-networks-cdn-) sea más adecuada (y más fácil de desplegar).
 
 ## Citrix NetScaler VPX
 
@@ -44,7 +45,7 @@ El siguiente procedimiento de equilibrio global utiliza:
 
 6. Realice las mismas acciones en el siguiente NetScaler utilizando los valores para ese servidor.
 
-7. En ambos servidores, vaya a **Gestión de tráfico > DNS > Registros > Registros A ** y examine la lista. Debería ver las entradas `root.servers.net` y su nombre de host con un tipo de Dominio de GSLB. 
+7. En ambos servidores, vaya a **Gestión de tráfico > DNS > Registros > Registros A** y examine la lista. Debería ver las entradas `root.servers.net` y su nombre de host con un tipo de Dominio de GSLB. 
 
 8. Vaya a **Gestión de tráfico > DNS > Servidor de nombres** y pulse **Añadir**. Introduzca una dirección IP en el NetScaler (como por ejemplo la IP pública del dispositivo). Pulse **Local** y deje el protocolo como UDP. Pulse **Crear** y, a continuación, en **Cerrar**. Debería ver el estado efectivo como habilitado y activo.
 
@@ -81,10 +82,10 @@ Hay otros productos que pueden ofrecer una funcionalidad similar para dispersar 
 
 Las redes de suministro de contenido (CDN) le permiten cargar o proporcionar un servidor de origen para servidores de memoria caché dispersos geográficamente, que proporcionan el contenido al cliente solicitante. Las CDN funcionan mejor con contenido extenso y estático como imágenes y vídeos que no cambian en el tiempo.
 
-Para obtener información más detallada sobre las CDN, consulte la [documentación](https://console.bluemix.net/docs/infrastructure/CDN/getting-started.html#getting-started).
+Para obtener información más detallada sobre las CDN, consulte la [documentación](/docs/infrastructure/CDN?topic=CDN-getting-started).
 
 ### Almacenamiento de objetos
 
 El almacenamiento de objetos de {{site.data.keyword.BluSoftlayer_notm}} se puede configurar para utilizar varias ubicaciones geográficas en varios centros de datos para proporcionar contenido. Una aplicación que tiene en cuenta la ubicación puede realizar búsquedas de ubicación en la solicitud de cliente y devolver un URL al almacenamiento de objetos que está cerca del cliente. El almacenamiento de objetos también viene con un front-end de CDN, si es necesario, para proporcionar servicios de almacenamiento en memoria caché adicionales como se ha señalado anteriormente.
 
-Para obtener más información y una introducción al almacenamiento de objetos, consulte la [documentación](https://console.bluemix.net/docs/services/cloud-object-storage/about-cos.html#about-ibm-cos). 
+Para obtener más información y una introducción al almacenamiento de objetos, consulte la [documentación](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-about-ibm-cloud-object-storage). 

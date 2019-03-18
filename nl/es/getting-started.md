@@ -2,22 +2,23 @@
 copyright:
   years: 1994, 2017
   
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Iniciación al dispositivo de software de Citrix NetScaler VPX
+{: #getting-started-with-citrix-netscaler-vpx-software-appliance}
 
 El despliegue de Citrix NetScaler VPX en la solución de {{site.data.keyword.BluSoftlayer_notm}} acelera la entrega de aplicaciones web, mejora el rendimiento y garantiza que sus aplicaciones y servicios en la nube están optimizados, disponibles y seguros. Si tiene cargas de trabajo difíciles, como por ejemplo juegos, Big Data y análisis, o nubes privadas, Citrix NetScaler VPX puede ayudarle a ofrecer su solución cuando, donde y cómo los usuarios más lo necesiten.
 
 ## Antes de empezar
 Para empezar con Citrix NetScaler VPX, necesitará conocer la siguiente información:
 
-* La información de inicio de sesión del Portal de clientes de IBM Cloud
+* La información de inicio de sesión del Portal de clientes de IBM© Cloud
 * La ubicación de despliegue para el equilibrador de carga
-* Qué tipo de Netscaler se ajusta mejor a sus necesidades (para obtener más información, consulte [Explorar los equilibradores de carga](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html))
+* Qué tipo de Netscaler se ajusta mejor a sus necesidades (para obtener más información, consulte [Explorar los equilibradores de carga](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore))
 * El número de direcciones IP públicas necesarias
 * La VLAN donde desea asignar el equilibrador de carga
 
@@ -25,7 +26,7 @@ Para empezar con Citrix NetScaler VPX, necesitará conocer la siguiente informac
 
 Para solicitar un dispositivo de software Citrix NetScaler VPX, vaya a la página de pedido en el Portal de clientes:
 
-1. En el navegador, abra [Portal de clientes ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com/){: new_window} e inicie sesión en su cuenta.
+1. En el navegador, abra el [Portal de clientes ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com/){: new_window} e inicie sesión en su cuenta.
 2. En la navegación del Portal de clientes, seleccione **Dispositivos > Lista de dispositivos** y pulse el enlace **Pedir dispositivos**. 
 3. En la página **Pedir servicios y productos de SoftLayer** desplácese hasta la sección Red y pulse el enlace **Pedido** en Citrix NetScaler VPX.
 4. Seleccione una ubicación en el menú desplegable donde desee desplegar su dispositivo de software de Citrix NetScaler VPX.  
@@ -41,4 +42,4 @@ Para solicitar un dispositivo de software Citrix NetScaler VPX, vaya a la págin
 
 ## Qué hacer a continuación
 
-Encontrará más información sobre las [características](about-citrix-netscaler-vpx.html) de Citrix Netscaler VPX, revisar [terminología](terminology.html) específica de Netscaler, o empezar a [configurar](netscaler-basic-configuration.html) Netscaler.
+Encontrará más información sobre las [características](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-about-citrix-netscaler-vpx) de Citrix Netscaler VPX, revisar [terminología](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-citrix-netscaler-vpx-terminology) específica de Netscaler, o empezar a [configurar](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-basic-load-balancing-configuration) Netscaler.

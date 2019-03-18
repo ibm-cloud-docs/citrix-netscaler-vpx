@@ -8,9 +8,10 @@ lastupdated: "2017-11-02"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# 設定 Citrix Netscaler VPX 作為轉遞 Proxy
+# 設定 Citrix Netscaler VPX 作為正向 Proxy
+{: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
 
-轉遞 Proxy 是內部網路上的用戶端與網際網路之間的單一控制點。Proxy 可讓「網路」或「安全管理者」建立原則，以限制對網際網路網站的存取。
+正向 Proxy 是內部網路上的用戶端與網際網路之間的單一控制點。Proxy 可讓「網路」或「安全管理者」建立原則，以限制對網際網路網站的存取。
 
 內部網路上的用戶端起始要求時，會使用 Proxy 的 IP 位址來起始網際網路上遠端伺服器的要求。遠端伺服器繼而會回應 Proxy，以將回應傳回給用戶端。
 
@@ -20,7 +21,7 @@ Proxy 一般會與防火牆合併使用，確保內部網路中的用戶端安�
 
 從 {{site.data.keyword.BluSoftlayer_notm}} 客戶入口網站中訂購 Citrix NetScaler VPX 負載平衡器時，假設正在要求反向 Proxy。系統會向要求者要求用作虛擬 IP (VIP) 的「公用」IP 數目。
 
-如果是轉遞 Proxy，則需要在專用網路上設定 VIP。需要開立支援問題單，才能要求專用網路的 VIP。需要的 VIP 數目將決定問題單中所要求的子網路大小。將會在問題單中傳回子網路資訊。
+如果是正向 Proxy，則需要在專用網路上設定 VIP。需要開立支援問題單，才能要求專用網路的 VIP。需要的 VIP 數目將決定問題單中所要求的子網路大小。將會在問題單中傳回子網路資訊。
 
 在我們的範例中，我們要求 `/29` 子網路，這會導致下列情況：
 
@@ -35,7 +36,7 @@ Proxy 一般會與防火牆合併使用，確保內部網路中的用戶端安�
 依預設，會停用 Citrix NetScaler VPX 負載平衡器上的負載平衡及快取重新導向特性；`enable ns feature cr lb` 指令會啟用它們。
 
 
-## 步驟 3：建立轉遞 Proxy
+## 步驟 3：建立正向 Proxy
 
 使用指令行，向 Citrix NetScaler VPX 發出下列指令。在我們的情境中，只會新增兩部 {{site.data.keyword.BluSoftlayer_notm}} DNS 伺服器的其中一部。  
 
@@ -59,11 +60,11 @@ set cr vserver vs_forward_cache -dnsVservername virtual_dns
 
 第 4 行將 VIP 連結至「真實」伺服器。`10.114.27.4` 的所有 DNS 要求都會傳送至 `10.0.80.12`。
 
-第 5 行告知轉遞 Proxy 虛擬伺服器使用虛擬 DNS 進行名稱解析。
+第 5 行告知正向 Proxy 虛擬伺服器使用虛擬 DNS 進行名稱解析。
 
 ## 配置用戶端
 
-繼續自訂用戶端以使用轉遞 Proxy 之前，請確定您無法在用戶端上使用 Firefox 瀏覽器來到達公用網站（例如，http://www.ibm.com）。因為用戶端上應該沒有公用介面，所以此要求會失敗。 
+繼續自訂用戶端以使用正向 Proxy 之前，請確定您無法在用戶端上使用 Firefox 瀏覽器來到達公用網站（例如 `http://www.ibm.com`）。因為用戶端上應該沒有公用介面，所以此要求會失敗。 
 
 下列範例會配置 Linux 用戶端。
 
@@ -73,7 +74,7 @@ set cr vserver vs_forward_cache -dnsVservername virtual_dns
 
 或者，您可以編輯 `/etc/sysconfig/network-scripts/ifcfg-ethx` 介面，並新增 `DNS1=` 陳述式。設定之後，可以發出服務網路重新啟動指令來反映變更。
 
-在任一情況下，DNS IP 位址都需要配置為虛擬 DNS 位址，而且用戶端的瀏覽器需要配置成將要求指向 Citrix NetScaler VPX 轉遞 Proxy。
+在任一情況下，DNS IP 位址都需要配置為虛擬 DNS 位址，而且用戶端的瀏覽器需要配置成將要求指向 Citrix NetScaler VPX 正向 Proxy。
 
 請在 Firefox 內使用下列步驟，以進行必要的變更：
 
@@ -95,9 +96,9 @@ IP 位址 `10.114.27.3` 是在步驟 1 中建立之轉遞快取的 IP 位址。
 
 ## 驗證設定
 
-既然已將用戶端配置成使用轉遞 Proxy，請重試存取公用網站。要求現在應該會成功。
+既然已將用戶端配置成使用正向 Proxy，請重試存取公用網站。要求現在應該會成功。
 
-下列顯示指令可以用來驗證轉遞 Proxy 的狀態。
+下列顯示指令可以用來驗證正向 Proxy 的狀態。
 
 **show cr policy**：顯示所有現有快取重新導向原則。
 
@@ -107,8 +108,6 @@ IP 位址 `10.114.27.3` 是在步驟 1 中建立之轉遞快取的 IP 位址。
 
 **stat cr vserver**：顯示快取重新導向 vserver 統計資料。
 
-如需相關文件，請移至 [Citrix 指令參考手冊 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://support.citrix.com/servlet/KbServlet/download/20679-102-665857/NS-CommandReference-Guide.pdf)。
-
-在 Citrix 上配置基本轉遞 Proxy 相當直接明確。它提供一種方法，可將網際網路上資源的安全路徑提供給內部網路上的用戶端。它也可讓「網路管理者」維護網路的控制層次。
+在 Citrix 上配置基本正向 Proxy 相當直接明確。它提供一種方法，可將網際網路上資源的安全路徑提供給內部網路上的用戶端。它也可讓「網路管理者」維護網路的控制層次。
 
 如果在客戶網站上實作，則建議在配置中新增防火牆，以進一步保護資源。

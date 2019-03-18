@@ -9,6 +9,7 @@ lastupdated: "2017-11-02"
 {:new_window: target="_blank"}
 
 # Citrix NetScaler VPX als Weiterleitungsproxy konfigurieren
+{: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
 
 Ein Weiterleitungsproxy fungiert als zentraler Steuerungspunkt zwischen Clients in einem internen Netz und dem Internet. Ein Proxy ermöglicht dem Netz- oder Sicherheitsadministrator die Erstellung von Richtlinien, die den Zugriff auf Internet-Sites einschränken.
 
@@ -106,8 +107,6 @@ Die folgenden Anzeigebefehle können verwendet werden, um den Status des Weiterl
 **show cr vserver:** Zeigt einen angegebenen virtuellen Server für die Cacheweiterleitung oder alle konfigurierten virtuellen Server für die Cacheweiterleitung an.
 
 **stat cr vserver:** Zeigt die vserver-Statistik für die Cacheweiterleitung an.
-
-Weiteres Dokumentationsmaterial finden Sie in der [Citrix-Befehlsreferenz ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://support.citrix.com/servlet/KbServlet/download/20679-102-665857/NS-CommandReference-Guide.pdf).
 
 Die Konfiguration eines grundlegenden Weiterleitungsproxys unter Citrix ist relativ einfach. Sie bietet Clients in einem internen Netz eine sichere Möglichkeit für den Zugriff auf Ressourcen im Internet. Außerdem ermöglicht sie dem Netzadministrator die Beibehaltung eines gewissen Grads an Kontrolle über das Netz.
 

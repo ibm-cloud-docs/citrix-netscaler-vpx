@@ -2,13 +2,14 @@
 copyright:
   years: 1994, 2018
 
-lastupdated: "2018-06-28"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Configurar o Citrix Netscaler VPX para Alta disponibilidade (HA)
+# Configurando o Citrix NetScaler VPX para alta disponibilidade (HA)
+{: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
 Os balanceadores de carga são usados para balancear o tráfego em múltiplos servidores de aplicativos para melhorar o desempenho e a estabilidade em um aplicativo escalável. No entanto, um único balanceador de carga é um ponto único de falha. Evite isso configurando um par de Netscaler VPX de Alta disponibilidade (HA). A configuração de um par HA requer dois servidores Netscaler VPX. O servidor secundário continuará o balanceamento de carga se o principal falhar. 
 
@@ -19,7 +20,7 @@ Para uma configuração de HA, ambos os NetScalers devem estar na mesma VLAN e n
 Antes de iniciar a configuração de HA, assegure-se de executar as ações de pré-requisito a seguir:
 
 1. Se o par for configurado como ativo/ativo, quaisquer sub-redes VIP incluídas nas instâncias deverão ser do tipo "Roteadas para a VLAN".
-* Se o par for configurado como ativo/passivo, quaisquer sub-redes VIP incluídas nas instâncias deverão ser "Roteadas para a VLAN" ou "Secundário roteado para IP" e roteado para o endereço IP público do nó primário.
+2. Se o par for configurado como ativo/passivo, quaisquer sub-redes VIP incluídas nas instâncias deverão ser "Roteadas para a VLAN" ou "Secundário roteado para IP" e roteado para o endereço IP público do nó primário.
 
 Depois de ordenar os dois servidores Netscaler VPX na VLAN necessária e de ordenar as sub-redes VIP e SNIP para atender aos pré-requisitos de sua configuração do par HA, será possível continuar com o seguinte:
 

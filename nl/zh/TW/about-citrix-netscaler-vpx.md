@@ -1,30 +1,38 @@
 ---
 copyright:
-  years: 1994, 2017
+  years: 1994, 2018
   
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 關於 Citrix NetScaler VPX
+{: #about-citrix-netscaler-vpx}
 
-Citrix NetScaler VPX 是專用虛擬軟體應用裝置，可同時在公用及專用 IBM Cloud 網路上提供負載平衡。 
+Citrix NetScaler VPX 是專用虛擬軟體應用裝置，可同時在公用及專用 IBM© Cloud 網路上提供負載平衡。 
+
+在 {{site.data.keyword.BluSoftlayer_notm}} 解決方案中部署 Citrix NetScaler VPX 可加速 Web 應用程式遞送、提高效能，並確保雲端應用程式及服務保持最佳化、可用與安全。如果您有具挑戰性的工作負載（例如遊戲、海量資料與分析或專用雲端），Citrix NetScaler VPX 可協助您依使用者最需要的時間、地點及方式提供解決方案。
 
 ## 特性
 
 * 唯一可同時在公用及專用網路上對資料流量進行負載平衡的產品
 * 使用 GUI（圖形使用者介面）或 CLI（指令行介面）進行管理
 * 許多不同類型的資料流量配送，包括：
-  * 循環式
-  * 最少連線
-  * 最少回應
-  * URL 雜湊
-  * 網域雜湊
-  * 目的地 IP 雜湊
-  * 來源 IP 雜湊
-  * 最小頻寬
+  * Least Connections
+  * Round Robin
+  * Least response time
+  * Least bandwidth
+  * Least packets
+  * URL hashing
+  * Domain name hashing
+  * Source IP address hashing
+  * Destination IP address hashing
+  * Source IP - Destination IP hashing
+  * Token
+  * LRTM
+
 * SSL 加速/SSL 卸載
 * GSLB（廣域伺服器負載平衡）
   * 使用 DNS 基礎架構，將用戶端連接至最佳資料中心
@@ -43,16 +51,15 @@ Citrix NetScaler VPX 可以依需求（最少 15 分鐘）在全球任何 {{site
 
 ## 應用程式安全
 
-若要保護應用程式資料流量的安全，客戶可以充分運用「應用程式內容過濾」、「存取閘道」及「Web 應用程式防火牆」這類安全特性。
+若要保護應用程式資料流量的安全，客戶可以充分運用「應用程式內容過濾」、「優先順序佇列作業」及「Web 應用程式防火牆」這類安全特性。
 
 ## 資料流量過濾
 
-Citrix Netscaler VPX 會過濾一般使用者對伺服器的要求，以及伺服器對一般使用者的回應。「學習」特性容許即時側寫階段作業，以及判定是否容許資料流量。
-
+Citrix Netscaler VPX 會過濾一般使用者對伺服器的要求，以及伺服器對一般使用者的回應。應用程式防火牆的「學習」特性容許即時側寫階段作業，以及判定是否容許資料流量。
 
 ## PCI-DSS 報告
 
-「支付卡產業 (PCI) 資料安全標準」包含處理線上信用卡付款的企業必須符合的十二個準則。PCI-DSS 報告包含那些與「應用程式防火牆」配置相關的準則清單。該報告也會列出現行配置是否符合每一個準則，並建議如何配置應用程式防火牆以符合這些標準。
+「支付卡產業 (PCI) 資料安全標準 (DSS)」包含處理線上信用卡付款的企業必須符合的十二個準則。PCI-DSS 報告包含那些與「應用程式防火牆」配置相關的準則清單。該報告也會列出現行配置是否符合每一個準則，並建議如何配置應用程式防火牆以符合這些標準。
 
 ## 廣域負載平衡 (GSLB)
 
@@ -60,4 +67,4 @@ NetScaler Platinum Edition 會將負載平衡器延伸到超過使用「廣域�
 
 ## 延伸資料中心
 
-NetScaler Platinum Edition 可讓您使用 NetScaler CloudBridge 特性，此特性提供簡單的方式，使用精靈驅動的功能表來將您的資料中心延伸至 {{site.data.keyword.BluSoftlayer_notm}}。 
+NetScaler Platinum Edition 可讓您使用 NetScaler CloudBridge Connector 特性，此特性提供簡單的方式，使用精靈驅動的功能表來將您的資料中心延伸至 {{site.data.keyword.BluSoftlayer_notm}}。 

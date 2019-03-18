@@ -8,7 +8,8 @@ lastupdated: "2017-11-02"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Configuration de Citrix Netscaler VPX en tant que proxy direct (forward proxy)
+# Configuration de Citrix NetScaler VPX en tant que proxy direct (forward proxy)
+{: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
 
 Le proxy direct (de l'anglais "forward proxy", autrement dit un proxy normal, non inversé) agit comme point unique de contrôle entre les clients situés dans un réseau interne et l'Internet. Il permet à l'administrateur du réseau ou de la sécurité de créer des politiques visant à restreindre l'accès aux sites Internet.
 
@@ -106,8 +107,6 @@ Vous pouvez utiliser les commandes d'affichage suivantes pour vérifier l'état 
 **show cr vserver :** affiche un serveur virtuel de redirection vers un cache spécifique ou tous les serveurs virtuels de redirection vers un cache configurés.
 
 **stat cr vserver :** affiche les statistiques des serveurs virtuels de redirection vers un cache.
-
-Pour une documentation plus complète, référez-vous au [guide de référence des commandes Citrix (en anglais) ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://support.citrix.com/servlet/KbServlet/download/20679-102-665857/NS-CommandReference-Guide.pdf).
 
 La configuration d'un proxy direct de base sur Citrix est assez simple. Elle permet aux clients situés dans un réseau interne de disposer d'un moyen d'accès sécurisé aux ressources sur l'Internet. Elle permet aussi à l'administrateur réseau de maintenir un niveau de contrôle du réseau.
 

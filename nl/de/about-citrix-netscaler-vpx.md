@@ -1,31 +1,39 @@
 ---
 copyright:
-  years: 1994, 2017
+  years: 1994, 2018
   
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Informationen zu Citrix NetScaler VPX
+{: #about-citrix-netscaler-vpx}
 
-Citrix NetScaler VPX ist eine dedizierte virtuelle Software-Appliance, die Funktionen zum Lastausgleich sowohl im öffentlichen als auch im privaten IBM Cloud-Netz zur Verfügung stellt. 
+Citrix NetScaler VPX ist eine dedizierte virtuelle Software-Appliance, die Funktionen zum Lastausgleich sowohl im öffentlichen als auch im privaten IBM© Cloud-Netz zur Verfügung stellt. 
+
+Die Bereitstellung von Citrix NetScaler VPX in Ihrer Lösung für {{site.data.keyword.BluSoftlayer_notm}} beschleunigt die Webanwendungsbereitstellung, ermöglicht entscheidende Leistungsverbesserungen und gewährleistet, dass Ihre Cloudanwendungen und -services stets optimiert, verfügbar und sicher sind. Bei hohen Workloadanforderungen, wie sie beispielsweise im Gaming- und Big-Data-Bereich sowie bei Analyseanwendungen oder in privaten Clouds auftreten, kann Citrix NetScaler VPX Sie dabei unterstützen, Ihre Lösung stets zeitgerecht, am richtigen Standort und in optimaler Konfiguration für Ihre Benutzer bereitzustellen.
 
 ## Funktionsmerkmale
 
 * Einziges Produkt mit Lastausgleich für den Datenverkehr im öffentlichen und privaten Netz
 * Management via GUI (Graphical User Interface; grafische Benutzerschnittstelle) oder CLI (Command Line Interface; Befehlszeilenschnittstelle)
 * Verschiedene Typen der Datenverkehrsverteilung einschließlich folgender Methoden:
-  * Umlaufmethode
   * Methode mit geringster Verbindungsanzahl
+  * Umlaufmethode
   * Methode mit kürzester Antwortzeit
-  * URL-Hashing-Methode
-  * Domänen-Hashing-Methode
-  * Ziel-IP-Hashing-Methode
-  * Quellen-IP-Hashing-Methode
   * Methode mit geringster Bandbreite
-* SSL-Beschleunigung/SSL-Offload
+  * Methode mit geringster Paketanzahl
+  * URL-Hashing-Methode
+  * Domänennamens-Hashing-Methode
+  * Methode mit Hashing für Quellen-IP-Adresse
+  * Methode mit Hashing für Ziel-IP-Adresse
+  * Quellen-IP- / Ziel-IP-Hashing-Methode
+  * Token
+  * LRTM
+
+* SSL-Beschleunigung/SSL-Auslagerung
 * GSLB (Global Server Load Balancing; globaler Serverlastausgleich)
   * Verwendung der DNS-Infrastruktur zur Verbindung des Clients mit dem besten Rechenzentrum
   * Überwachung der Auslastung und Verfügbarkeit der Rechenzentren zur Auswahl der besten Verbindung
@@ -43,12 +51,11 @@ Citrix NetScaler VPX kann bedarfsgesteuert innerhalb von 15 Minuten in jedem Rec
 
 ## Anwendungssicherheit
 
-Zum Schutz des Anwendungsdatenverkehrs können Kunden die Sicherheitsfunktionen nutzen. Hierzu zählen beispielsweise Funktionen zur Filterung von Anwendungsinhalten, für Zugriffsgateways und für eine Webanwendungsfirewall.
+Zum Schutz des Anwendungsdatenverkehrs können Kunden die Sicherheitsfunktionen nutzen. Hierzu zählen beispielsweise Funktionen zur Filterung von Anwendungsinhalten, für Prioritätswarteschlangensteuerung und für eine Webanwendungsfirewall.
 
 ## Datenverkehrsfilterung
 
-Citrix NetScaler VPX filtert Anforderungen, die von Endbenutzern an die verfügbaren Server gesendet werden, sowie die von diesen Servern an die Endbenutzer zurückgegebenen Antworten. Eine Schulungsfunktion erlaubt die Erstellung von Sitzungsprofilen in Echtzeit und die Festlegung des Systemverhaltens in Bezug auf das Zulassen von Datenverkehr.
-
+Citrix NetScaler VPX filtert Anforderungen, die von Endbenutzern an die verfügbaren Server gesendet werden, sowie die von diesen Servern an die Endbenutzer zurückgegebenen Antworten. Eine Schulungsfunktion mit der Anwendungsfirewall erlaubt die Erstellung von Sitzungsprofilen in Echtzeit und die Festlegung des Systemverhaltens in Bezug auf das Zulassen von Datenverkehr.
 
 ## PCI-DSS-Berichterstellung
 
@@ -60,4 +67,4 @@ Die NetScaler Platinum Edition bietet Ihnen die Möglichkeit, den Einsatzbereich
 
 ## Erweiterung des Rechenzentrums
 
-Die NetScaler Platinum Edition erlaubt Ihnen die Nutzung der NetScaler CloudBridge-Funktion, die Ihnen mithilfe agentengesteuerter Menüs eine einfache Möglichkeit zur Erweiterung Ihres Rechenzentrums auf {{site.data.keyword.BluSoftlayer_notm}} bietet. 
+Die NetScaler Platinum Edition erlaubt Ihnen die Nutzung der NetScaler CloudBridge Connector-Funktion, die Ihnen mithilfe assistentengesteuerter Menüs eine einfache Möglichkeit zur Erweiterung Ihres Rechenzentrums auf {{site.data.keyword.BluSoftlayer_notm}} bietet. 

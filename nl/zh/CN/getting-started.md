@@ -2,23 +2,24 @@
 copyright:
   years: 1994, 2017
   
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Citrix NetScaler VPX 软件设备入门
+{: #getting-started-with-citrix-netscaler-vpx-software-appliance}
 
 在 {{site.data.keyword.BluSoftlayer_notm}} 解决方案中部署 Citrix NetScaler VPX 可加速 Web 应用程序交付，提升性能，并确保云应用程序和服务保持优化、可用和安全。如果您有挑战性的工作负载（例如，游戏、大数据和分析或私有云），那么 Citrix NetScaler VPX 可以帮助您以用户最需要的时间、地点和方式交付解决方案。
 
 ## 开始之前
 要开始使用 Citrix NetScaler VPX，您需要了解以下信息：
 
-* 您的 IBM Cloud 客户门户网站登录信息
+* 您的 IBM© Cloud 客户门户网站登录信息
 * 负载均衡器的部署位置
-* 哪个 Netscaler 类型最能满足您的需求（有关更多信息，请参阅[负载均衡器一览](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html)）
-* 所需的公共 IP 地址数。
+* 哪个 Netscaler 类型最能满足您的需求（有关更多信息，请参阅[探索 Load Balancer](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore)
+* 所需的公共 IP 地址数
 * 要向其分配负载均衡器的 VLAN
 
 ## 订购 Citrix NetScaler VPX
@@ -37,9 +38,8 @@ lastupdated: "2017-11-02"
 9. 输入您的联系人信息。 
 10. 选择 VLAN。
 	要最大限度缩短等待时间并确保优化网络资源利用率，请将 Citrix NetScaler VPX 分配给将分布流量的服务器所在的 VLAN。 
-11. 复查订单，接受条款，然后单击**下单**。Citrix NetScaler VPX 软件设备将使用您选择的设置进行部署。 
+11. 复查订单，接受条款，然后单击**下订单**。Citrix NetScaler VPX 软件设备将使用您选择的设置进行部署。 
 
 ## 后续工作
 
-您可以了解有关 Citrix Netscaler VPX [功能](about-citrix-netscaler-vpx.html)的更多信息，查看特定 Netscaler [术语](terminology.html)或开始
-[配置](netscaler-basic-configuration.html)您的 Netscaler。
+您可以了解有关 Citrix Netscaler VPX [功能](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-about-citrix-netscaler-vpx)的更多信息，查看特定 Netscaler [术语](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-citrix-netscaler-vpx-terminology)或开始[配置](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-basic-load-balancing-configuration)您的 Netscaler。

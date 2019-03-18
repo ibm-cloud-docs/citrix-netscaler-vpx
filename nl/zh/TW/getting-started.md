@@ -2,22 +2,23 @@
 copyright:
   years: 1994, 2017
   
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 開始使用 Citrix NetScaler VPX 軟體應用裝置
+{: #getting-started-with-citrix-netscaler-vpx-software-appliance}
 
 在 {{site.data.keyword.BluSoftlayer_notm}} 解決方案中部署 Citrix NetScaler VPX 可加速 Web 應用程式遞送、提高效能，並確保雲端應用程式及服務保持最佳化、可用與安全。如果您有具挑戰性的工作負載（例如遊戲、海量資料與分析或專用雲端），Citrix NetScaler VPX 可協助您依使用者最需要的時間、地點及方式提供解決方案。
 
 ## 開始之前
 若要開始使用 Citrix NetScaler VPX，您將需要知道下列資訊：
 
-* 您的 IBM Cloud 客戶入口網站登入資訊
+* 您的 IBM© Cloud 客戶入口網站登入資訊
 * 負載平衡器的部署位置
-* 何種 Netscaler 類型最適合您的需要（如需相關資訊，請參閱[探索負載平衡器](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html)） 
+* 何種 Netscaler 類型最適合您的需要（如需相關資訊，請參閱[探索負載平衡器](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore)） 
 * 需要的公用 IP 位址數目
 * 您要指派負載平衡器的 VLAN
 
@@ -40,4 +41,4 @@ lastupdated: "2017-11-02"
 
 ## 下一步為何？
 
-您可以進一步瞭解 Citrix Netscaler VPX [特性](about-citrix-netscaler-vpx.html)、檢閱特定的 Netscaler [術語](terminology.html)，或開始[配置](netscaler-basic-configuration.html)您的 Netscaler。
+您可以進一步瞭解 Citrix Netscaler VPX [特性](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-about-citrix-netscaler-vpx)、檢閱特定的 Netscaler [術語](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-citrix-netscaler-vpx-terminology)，或開始[配置](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-basic-load-balancing-configuration)您的 Netscaler。

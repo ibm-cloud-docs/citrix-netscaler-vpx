@@ -9,6 +9,7 @@ lastupdated: "2017-11-02"
 {:new_window: target="_blank"}
 
 # 将 Citrix Netscaler VPX 设置为转发代理
+{: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
 
 转发代理充当内部网络和因特网上的客户机之间的单控制点。通过该代理，网络或安全性管理员有能力创建策略来限制对因特网站点的访问。
 
@@ -106,8 +107,6 @@ IP 地址 `10.114.27.3` 是在步骤 1 中创建的转发高速缓存的 IP 地�
 **show cr vserver：**显示指定的高速缓存重定向虚拟服务器或所有已配置的高速缓存重定向虚拟服务器。
 
 **stat cr vserver：**显示高速缓存重定向 vserver 统计信息。
-
-转至 [Citrix 命令参考指南 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://support.citrix.com/servlet/KbServlet/download/20679-102-665857/NS-CommandReference-Guide.pdf) 以获取更多文档。
 
 Citrix 上的基本转发代理的配置相当简单。它为内部网络上的客户机访问因特网上的资源提供了一条安全路径。此外还支持网络管理员维护对网络的控制级别。
 

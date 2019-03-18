@@ -1,13 +1,15 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-06"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Grundlegende Lastausgleichskonfiguration
+{: #basic-load-balancing-configuration}
+
 Beispiel: Ein Unternehmen betreibt eine grundlegende Social-Community-Website. Dort können sich Endbenutzer ohne Angabe sensibler Daten für ein Konto registrierten, um anschließend die Anmeldung durchzuführen und Bilder ihrer Haustiere zu posten. Es stehen drei Web-/Anwendungsserver sowie ein Datenbankserver als Sicherungseinheit zur Verfügung. Die Domäne und das DNS (Domain Name System) werden über {{site.data.keyword.BluSoftlayer_notm}} gehostet. Da es sich um eine kleine Umgebung handelt, befinden sich das NetScaler-System sowie die Web-/Anwendungsserver alle in demselben VLAN (Virtual Local Area Network). Dies vereinfacht die Situation, da keine weiteren Konfigurationsmaßnahmen für NetScaler erforderlich sind, um eine grundlegende Lastausgleichsrichtlinie einzurichten. In der folgenden Prozedur wird eine vereinfachte Darstellung des Datenverkehrsflusses in dieser Instanz erläutert:
 
 1. Ein Benutzer gibt die URL in den Browser ein.

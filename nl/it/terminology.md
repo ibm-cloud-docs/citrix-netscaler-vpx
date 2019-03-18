@@ -1,13 +1,14 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Terminologia
+# Terminologia di Citrix NetScaler VPX
+{: #citrix-netscaler-vpx-terminology}
 
 La piattaforma Citrix NetScaler utilizza sia una terminologia specifica per il prodotto sia una terminologia e concetti del programma di bilanciamento del carico di base. 
 

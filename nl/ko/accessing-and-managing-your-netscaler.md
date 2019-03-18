@@ -2,13 +2,14 @@
 copyright:
   years: 1994, 2017
 
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Citrix NetScaler VPX 액세스 및 관리
+# Citrix NetScaler VPX 관리
+{: #managing-your-citrix-netscaler-vpx}
 
 Citrix NetScaler 디바이스는 여러 가지 방법으로 {{site.data.keyword.BluSoftlayer_notm}} 솔루션을 개선하고 정제하는 데 도움이 되는 일련의 기능을 갖춘 강력한 도구입니다. 고객 포털에서 디바이스의 정보를 찾고 디바이스에 연결하여 해당 기능을 구성할 수 있습니다.  
 
@@ -35,9 +36,9 @@ NetScaler에 대한 행의 왼쪽에 있는 화살표를 클릭하여 행을 펼
 
 ## 디바이스 세부사항 화면 
 
-NetScaler의 이름을 클릭하면 NetScaler에 대한 **디바이스 세부사항** 페이지로 이동합니다. 이 페이지에는 NetScaler가 배치된 VLAN과 NetScaler의 공인 IP 주소가 표시됩니다. 이러한 IP 주소는 NetScaler의 기본 공인 VIP 주소이므로 관리용으로 사용될 수 없습니다. 나중에 이러한 IP 주소를 사용하여 로드 밸런싱을 위해 서비스와 연관시킬 수 있습니다.
+NetScaler의 이름을 클릭하면 NetScaler에 대한 **디바이스 세부사항** 페이지로 이동합니다. 이 페이지에는 NetScaler가 배치된 VLAN과 NetScaler의 공인 IP 주소가 표시됩니다. 이러한 IP 주소는 NetScaler의 기본 공인 VIP 주소이므로 관리용으로 사용될 수 없습니다. 나중에 이러한 IP 주소를 사용하여 로드 밸런싱 서비스에 연관시킬 수 있습니다.
 
-## NetScaler 관리
+## NetScaler에 연결
 
 {{site.data.keyword.BluSoftlayer_notm}}에서는 NetScaler 디바이스에 대한 전체 루트 액세스 권한을 부여합니다. NetScaler의 관리 UI에 로그인하려면 {{site.data.keyword.BluSoftlayer_notm}} 사설 네트워크({{site.data.keyword.BluSoftlayer_notm}} 관리 VPN 또는 {{site.data.keyword.BluSoftlayer_notm}} 환경 내의 서버에 대한 원격 세션에서 관리 기능 수행)에 연결되어야 합니다. 
 

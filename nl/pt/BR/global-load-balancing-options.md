@@ -1,17 +1,18 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-06"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Global Load Balancing
+{: #global-load-balancing}
 
 O Global server load balancing (GSLB) é um método para dividir o tráfego entre múltiplos servidores que usa DNS e localizações geográficas como o meio de determinar onde o tráfego do servidor deve ser enviado. Em geral, um balanceador de carga global envia uma solicitação do cliente para um servidor que está mais próximo do cliente, reduzindo a latência e melhorando o desempenho.
 
-Talvez uma implementação completa de uma solução de balanceamento de carga global não seja necessária. O GSLB requer múltiplas instâncias de um dispositivo adequado que possa executar essa função e dependendo de suas necessidades, outras soluções podem ser mais atraentes para você. Se você precisar de websites e aplicativos inteiros, o GSLB é uma boa opção. Se precisar apenas de partes de seu conteúdo, como imagens, vídeos ou outros arquivos grandes, uma [Content Delivery Network](https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-content-delivery-networks-cdn-){: new_window} poderá ser mais adequada (e mais fácil de implementar).
+Talvez uma implementação completa de uma solução de balanceamento de carga global não seja necessária. O GSLB requer múltiplas instâncias de um dispositivo adequado que possa executar essa função e dependendo de suas necessidades, outras soluções podem ser mais atraentes para você. Se você precisar de websites e aplicativos inteiros, o GSLB é uma boa opção. Se precisar apenas de partes de seu conteúdo, como imagens, vídeos ou outros arquivos grandes, uma [Content Delivery Network](/docs/infrastructure/CDN?topic=CDN-about-content-delivery-networks-cdn-) poderá ser mais adequada (e mais fácil de implementar).
 
 ## Citrix NetScaler VPX
 
@@ -81,10 +82,10 @@ Há outros produtos que podem oferecer uma funcionalidade semelhante para difund
 
 As Redes de entrega de conteúdo (CDNs) permitem fazer upload ou fornecer um servidor de origem para servidores de cache geograficamente dispersos, que fornecem então o conteúdo para o cliente solicitante. As CDNs funcionam melhor com conteúdo em massa estático, como imagens e vídeos que não mudam ao longo do tempo.
 
-Para obter mais detalhes sobre a CDN, consulte a [documentação](https://console.bluemix.net/docs/infrastructure/CDN/getting-started.html#getting-started).
+Para obter mais detalhes sobre o CDN, consulte [esta documentação](/docs/infrastructure/CDN?topic=CDN-getting-started).
 
 ### Object Storage
 
 O Object Storage do {{site.data.keyword.BluSoftlayer_notm}} pode ser configurado para usar múltiplas localizações geográficas em vários data centers para fornecer conteúdo. Um aplicativo geograficamente ciente pode executar consultas de localização na solicitação do cliente e retornar uma URL para o Object Storage que está próximo do cliente. O Object Storage também será fornecido com uma CDN de front-end, se necessário, para fornecer serviços adicionais de armazenamento em cache, conforme observado acima.
 
-Para obter mais informações e uma introdução ao Object Storage, consulte a [documentação](https://console.bluemix.net/docs/services/cloud-object-storage/about-cos.html#about-ibm-cos). 
+Para obter mais informações e uma introdução ao Object Storage, consulte [esta documentação](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-about-ibm-cloud-object-storage). 

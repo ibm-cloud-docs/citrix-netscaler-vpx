@@ -2,23 +2,26 @@
 copyright:
   years: 1994, 2017
 
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:faq: data-hd-content-type='faq'}
 
-<a name="top"></a>
-# Perguntas mais frequentes
+# Perguntas frequentes do Citrix NetScaler VPX
+{: #faqs-for-citrix-netscaler-vpx}
 
 A seguir estão as perguntas mais frequentes ao trabalhar com o Citrix NetScaler VPX.
 
 ## O que é Citrix NetScaler VPX?
+{:faq}
 
-O Citrix NetScaler é um controlador de entrega de aplicativo que torna os aplicativos cinco vezes melhor, acelerando o desempenho, assegurando a disponibilidade e proteção do aplicativo e reduzindo substancialmente os custos operacionais. Escolha a melhor edição do Citrix NetScaler que atenda aos requisitos de seu aplicativo e implemente-a no sistema dedicado apropriado para suas necessidades de desempenho. Para saber mais sobre o Citrix NetScaler, consulte a [página do NetScaler ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://www.citrix.com/products/netscaler-application-delivery-controller/overview.html){: new_window}
+O Citrix NetScaler é um controlador de entrega de aplicativo que torna os aplicativos cinco vezes melhor, acelerando o desempenho, assegurando a disponibilidade e proteção do aplicativo e reduzindo substancialmente os custos operacionais. Escolha a melhor edição do Citrix NetScaler que atenda aos requisitos de seu aplicativo e implemente-a no sistema dedicado apropriado para suas necessidades de desempenho. Para saber mais sobre o Citrix NetScaler, consulte a [página do NetScaler ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://www.citrix.com/products/netscaler-application-delivery-controller/overview.html){:new_window}
 no website do Citrix.
 
 ## Por que o balanceamento de carga é necessário?
+{:faq}
 
 O tráfego de balanceamento de carga tornou-se um aspecto importante de muitas implementações do cliente, pois distribui solicitações de aplicativo e cargas por múltiplos servidores. Ele também fornece vários benefícios para a topologia geral, incluindo:
 
@@ -28,32 +31,39 @@ O tráfego de balanceamento de carga tornou-se um aspecto importante de muitas i
 * Eficiência. As cargas de trabalho são distribuídas dinamicamente quando o balanceamento de carga é configurado. Por exemplo, recursos como CPUs podem ser usados de maneira mais eficiente.
 
 ## Quantas opções de balanceamento de carga estão disponíveis no {{site.data.keyword.BluSoftlayer_notm}}?
+{:faq}
 
-Para obter uma comparação detalhada das ofertas de Balanceador de carga da IBM, consulte [Explorar Load Balancers](https://dev-console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html#explore-load-balancers).
+Para obter uma comparação detalhada das ofertas do IBM© Load Balancer, consulte [Explorar Load Balancers](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore).
 
 ## O NetScaler suporta IPv6?
+{:faq}
 
 Sim. IPv6 e IPv4 são ambos suportados na rede pública do {{site.data.keyword.BluSoftlayer_notm}}.
 
 ## O balanceamento de carga do NetScaler trafegará na rede privada?
+{:faq}
 
 Sim, o NetScaler é o único produto de balanceamento de carga do {{site.data.keyword.BluSoftlayer_notm}} ampliado para a rede privada.
 
 ## O NetScaler pode ser configurado para relatar o endereço IP de origem do cliente em vez do IP de origem do dispositivo NetScaler?
+{:faq}
 
 Sim, o parâmetro **Use Source IP (USIP)** pode ser configurado como **YES** na Interface de gerenciamento avançada do NetScaler para permitir o relatório do IP de origem do cliente em vez daquele do NetScaler.
 
 A ativação do modo de endereço USIP no dispositivo inclui flexibilidade no dispositivo para usar o endereço IP do cliente, disponível no cabeçalho IP, ao se comunicar com o servidor. Ao ativar esse modo, o dispositivo abre as conexões do servidor com o endereço IP do cliente e também fatora o endereço IP do cliente na reutilização da conexão. Portanto, esse modo facilita a reutilização limitada por cliente com base no endereço IP do cliente.
 
 ## Quais são as várias portas usadas para trocar as informações relacionadas a HA entre os nós em uma configuração de HA?
+{:faq}
 
 Porta 3010, para sincronização e propagação de comando. Porta UDP 3003, para trocar pacotes de pulsação.
 
 ## Qual versão do NetScaler VPX inclui o global server load balancing (GSLB)?
+{:faq}
 
 Platinum.
 
 ## Posso ter o NetScaler na configuração de HA?
+{:faq}
 
 Sim, os dispositivos NetScaler VPX suportam configurações de Alta disponibilidade (HA).
 
@@ -62,5 +72,6 @@ Os servidores NetScaler VPX não são redundantes, a menos que configurados no m
 Também é importante fornecer redundância para outros componentes de hardware e software. Por exemplo, fontes de alimentação e unidades de disco local podem não ter redundância. Uma falha nesses componentes pode resultar em perda de dados.
 
 ## A oferta {{site.data.keyword.BluSoftlayer_notm}} NetScaler inclui a funcionalidade SSL VPN?
+{:faq}
 
 Sim, esse recurso é conhecido como NetScaler Gateway™ e é incluído em todas as edições.  Para obter mais informações sobre esse recurso, visite o [website do Citrix ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.citrix.com/products/netscaler-adc/){: new_window}

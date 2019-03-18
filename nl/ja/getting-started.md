@@ -2,22 +2,23 @@
 copyright:
   years: 1994, 2017
   
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Citrix NetScaler VPX ソフトウェア・アプライアンスの使用開始
+{: #getting-started-with-citrix-netscaler-vpx-software-appliance}
 
 {{site.data.keyword.BluSoftlayer_notm}}  ソリューションに Citrix NetScaler VPX をデプロイすると、Web アプリケーションの配信が加速され、パフォーマンスが向上するとともに、クラウド・アプリケーションとサービスが最適化されて、使用可能でセキュアな状態に維持されます。 ゲーム、ビッグデータ、分析、プライベート・クラウドといった困難なワークロードがある場合でも、Citrix NetScaler VPX は、ユーザーが最も必要とするタイミング、場所、方法でソリューションを実現できるよう寄与します。
 
 ## 始める前に
 Citrix NetScaler VPX を開始するには、以下の情報を確認する必要があります。
 
-* お客様の IBM Cloud カスタマー・ポータルのログイン情報
+* お客様の IBM© Cloud カスタマー・ポータルのログイン情報
 * ロード・バランサーのデプロイメントの場所
-* お客様のニーズに最適な Netscaler タイプ (詳しくは、[ロード・バランサーの探索](https://console.bluemix.net/docs/infrastructure/loadbalancer-service/explore-load-balancers.html)を参照してください)
+* お客様のニーズに最適な Netscaler タイプ (詳しくは、[ロード・バランサーの探索](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore)を参照してください)
 * 必要なパブリック IP アドレスの数
 * ロード・バランサーの割り当て先となる VLAN
 
@@ -37,8 +38,8 @@ Citrix NetScaler VPX ソフトウェア・アプライアンスを注文する�
 9. 連絡先情報を入力します。 
 10. ご使用の VLAN を選択します。 
 	待ち時間を最小化し、ネットワーク・リソースの使用効率を最適化するには、トラフィックが分散されるサーバーと同じ VLAN に Citrix NetScaler VPX を割り当てます。 
-11. オーダーを確認し、ご利用条件に同意した上で、**「オーダーの実行 (Place Order)」**をクリックします。 Citrix NetScaler VPX ソフトウェア・アプライアンスが、選択した設定でデプロイされます。 
+11. オーダーを確認し、ご利用条件に同意した上で、**「注文の実行 (Place Order)」**をクリックします。 Citrix NetScaler VPX ソフトウェア・アプライアンスが、選択した設定でデプロイされます。 
 
 ## 次に行うこと
 
-Citrix Netscaler VPX [フィーチャー](about-citrix-netscaler-vpx.html)の詳細や特定の Netscaler [用語](terminology.html)を確認したり、お客様の Netscaler の[構成](netscaler-basic-configuration.html)を開始したりできます。
+Citrix Netscaler VPX [フィーチャー](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-about-citrix-netscaler-vpx)の詳細や特定の Netscaler [用語](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-citrix-netscaler-vpx-terminology)を確認したり、お客様の Netscaler の[構成](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-basic-load-balancing-configuration)を開始したりできます。

@@ -2,13 +2,14 @@
 copyright:
   years: 1994, 2017
 
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Accedere e gestire il tuo Citrix NetScaler VPX
+# Gestione del tuo Citrix NetScaler VPX
+{: #managing-your-citrix-netscaler-vpx}
 
 I dispositivi Citrix NetScaler sono potenti strumenti con una gamma di funzioni che aiutano a migliorare e perfezionare la soluzione {{site.data.keyword.BluSoftlayer_notm}} in tantissimi modi. Puoi trovare le informazioni del dispositivo nel portale del cliente, nonché connetterti al dispositivo e configurarne le funzioni.  
 
@@ -35,9 +36,9 @@ Altri dettagli elencati nell'elenco dispositivi (Device List) includono:
 
 ## Schermata Device Details (Dettagli dispositivo) 
 
-Quando fai clic sul nome di NetScaler si apre la pagina **Device Details** per il NetScaler, che mostra la VLAN sulla quale il tuo NetScaler era stato distribuito, nonché i tuoi indirizzi IP pubblici per il NetScaler. Questi indirizzi IP non possono essere utilizzati per la gestione perché sono gli indirizzi VIP pubblici predefiniti di NetScaler. Li utilizzerai in seguito per eseguire l'associazione a un servizio per scopi di bilanciamento del carico.
+Quando fai clic sul nome di NetScaler si apre la pagina **Device Details** per il NetScaler, che mostra la VLAN sulla quale il tuo NetScaler era stato distribuito, nonché i tuoi indirizzi IP pubblici per il NetScaler. Questi indirizzi IP non possono essere utilizzati per la gestione perché sono gli indirizzi VIP pubblici predefiniti di NetScaler. Li utilizzerai in seguito per eseguire l'associazione a un servizio di bilanciamento del carico.
 
-## Gestione di NetScaler
+## Connessione a NetScaler
 
 {{site.data.keyword.BluSoftlayer_notm}} concede un pieno accesso root al tuo dispositivo NetScaler. Per accedere all'IU di gestione di NetScaler, devi essere connesso alla rete privata {{site.data.keyword.BluSoftlayer_notm}} (utilizzando la VPN di gestione {{site.data.keyword.BluSoftlayer_notm}} oppure eseguendo le funzioni di gestione da una sessione remota su un server all'interno dell'ambiente {{site.data.keyword.BluSoftlayer_notm}}). 
 

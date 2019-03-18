@@ -2,13 +2,14 @@
 copyright:
   years: 1994, 2017
 
-lastupdated: "2017-11-02"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Acceso y gestión de Citrix NetScaler VPX
+# Gestionar Citrix NetScaler VPX
+{: #managing-your-citrix-netscaler-vpx}
 
 Los dispositivos Citrix NetScaler son herramientas potentes con una matriz de características que ayudan a mejorar y refinar la solución de {{site.data.keyword.BluSoftlayer_notm}} de muchas maneras. Puede encontrar la información del dispositivo en el Portal de clientes y conectarse al dispositivo y configurar sus características.  
 
@@ -35,9 +36,9 @@ Otros detalles en la Lista de dispositivos incluyen:
 
 ## Pantalla Detalles del dispositivo 
 
-Al pulsar el nombre de NetScaler, le lleva a la página **Detalles del dispositivo** de NetScaler, que muestra la VLAN en la que se despliega el NetScaler, así como sus direcciones IP públicas. Estas direcciones IP no pueden utilizarse para la gestión, porque son las direcciones VIP públicas predeterminadas de NetScaler. Las utilizará más tarde para asociar a un servicio para fines de equilibrio de carga.
+Al pulsar el nombre de NetScaler, le lleva a la página **Detalles del dispositivo** de NetScaler, que muestra la VLAN en la que se despliega el NetScaler, así como sus direcciones IP públicas. Estas direcciones IP no pueden utilizarse para la gestión, porque son las direcciones VIP públicas predeterminadas de NetScaler. Las utilizará más adelante para asociarse a un servicio de equilibrio de carga.
 
-## Gestión del NetScaler
+## Conexión a NetScaler
 
 {{site.data.keyword.BluSoftlayer_notm}} concede acceso raíz completo a su dispositivo NetScaler. Para iniciar sesión en la IU de gestión de NetScaler, debe estar conectado a la red privada de {{site.data.keyword.BluSoftlayer_notm}} (VPN de gestión de {{site.data.keyword.BluSoftlayer_notm}} o realizar funciones de gestión desde una sesión remota en un servidor dentro del entorno de {{site.data.keyword.BluSoftlayer_notm}}). 
 

@@ -2,13 +2,14 @@
 copyright:
   years: 1994, 2018
 
-lastupdated: "2018-06-28"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # 고가용성(HA)을 위해 Citrix Netscaler VPX 설정
+{: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
 로드 밸런서는 확장 가능한 애플리케이션의 성능과 안정성을 향상시키기 위해 여러 애플리케이션 서버에서 트래픽을 밸런싱하는 데 사용됩니다. 그러나 단일 로드 밸런서는 단일 실패 지점입니다. 고가용성(HA) Netscaler VPX 쌍을 구성하여 이를 방지하십시오. HA 쌍을 구성하려면 두 개의 Netscaler VPX 서버가 필요합니다. 기본 서버가 실패하는 경우 로드 밸런싱을 계속하기 위해 보조 서버가 사용됩니다. 
 
@@ -19,7 +20,7 @@ HA 구성의 경우 두 NetScaler가 모두 동일한 서브넷의 동일한 VLA
 HA 구성을 시작하기 전에 다음 전제 조건 조치를 수행해야 합니다.
 
 1. 쌍이 활성-활성으로 구성될 경우 인스턴스에 추가되는 모든 VIP 서브넷이 "Routed to VLAN" 유형이어야 합니다.
-* 쌍이 활성-비활성으로 구성될 경우 인스턴스에 추가되는 모든 VIP 서브넷이 "Routed to VLAN" 또는 "Secondary routed to IP" 유형이고 기본 노드의 공인 IP 주소로 라우팅되어야 합니다.
+2. 쌍이 활성-비활성으로 구성될 경우 인스턴스에 추가되는 모든 VIP 서브넷이 "Routed to VLAN" 또는 "Secondary routed to IP" 유형이고 기본 노드의 공인 IP 주소로 라우팅되어야 합니다.
 
 필요한 VLAN에서 두 개의 Netscaler VPX 서버를 주문하고 HA 쌍 구성의 전제 조건을 충족하기 위해 VIP 및 SNIP 서브넷을 주문한 후 다음을 진행할 수 있습니다.
 

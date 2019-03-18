@@ -1,17 +1,18 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-06"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Equilibrage de charge global
+{: #global-load-balancing}
 
 L'équilibrage global de la charge des serveurs (GSLB) est une méthode de division et de répartition du trafic sur plusieurs serveurs qui utilise la résolution DNS et le lieu géographique comme moyens de déterminer où le trafic serveur doit être envoyé. Généralement, pour limiter autant que possible les temps de latence et préserver les performances, un équilibreur de charge global envoie la demande d'un client au serveur le plus proche de celui-ci.
 
-Vous n'avez peut-être pas besoin de l'implémentation complète d'une solution d'équilibrage de charge global. Celle-ci requiert en effet plusieurs instances d'un équipement adapté et, selon vos besoins, d'autres solutions pourraient être plus attrayantes pour vous. Une solution GSLB reste un bon choix si vous avez besoin d'équilibrer la charge de sites web entiers et d'applications entières. Si vos besoins concernent seulement des parties de votre contenu telles que vidéos, images et autres gros fichiers, un [réseau de distribution de contenus (CDN)](https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-content-delivery-networks-cdn-){: new_window}
+Vous n'avez peut-être pas besoin de l'implémentation complète d'une solution d'équilibrage de charge global. Celle-ci requiert en effet plusieurs instances d'un équipement adapté et, selon vos besoins, d'autres solutions pourraient être plus attrayantes pour vous. Une solution GSLB reste un bon choix si vous avez besoin d'équilibrer la charge de sites web entiers et d'applications entières. Si vos besoins concernent seulement des parties de votre contenu telles que vidéos, images et autres gros fichiers, un [réseau de distribution de contenus (CDN)](/docs/infrastructure/CDN?topic=CDN-about-content-delivery-networks-cdn-)
 sera certainement plus approprié (et plus facile à déployer).
 
 ## Citrix NetScaler VPX
@@ -83,10 +84,10 @@ Il existe d'autres produits qui peuvent offrir une fonctionnalité similaire pou
 
 Les réseaux de distribution de contenus (CDN, Content Delivery Network) vous permettent de télécharger ou de fournir un contenu d'origine à des serveurs cache géographiquement dispersés (CDN), qui le fournissent ensuite au client demandeur. Les CDN donnent le meilleur d'eux-mêmes avec les contenus statiques et en bloc, tels que les images et les vidéos qui ne changent pas au fil du temps.
 
-Pour plus de détails sur les CDN, consultez cette [documentation](https://console.bluemix.net/docs/infrastructure/CDN/getting-started.html#getting-started).
+Pour plus d'informations sur les CDN, consultez [cette documentation](/docs/infrastructure/CDN?topic=CDN-getting-started).
 
 ### Object Storage
 
 Le produit Object Storage d'{{site.data.keyword.BluSoftlayer_notm}} peut être configuré pour fournir les contenus à partir de différents centres de données disséminés en plusieurs endroits. Une application tenant compte de la géographie peut effectuer des recherches de localisation à la demande du client et renvoyer une URL pointant sur le stockage d'objets (Object Storage) le plus proche du client. Object Storage s'accompagne également d'un frontal CDN, si nécessaire, pour fournir des services de cache additionnels, comme indiqué plus haut.
 
-Pour plus d'informations et une introduction à Object Storage, référez-vous à cette [documentation](https://console.bluemix.net/docs/services/cloud-object-storage/about-cos.html#about-ibm-cos). 
+Pour plus d'informations et une introduction à Object Storage, consultez [cette documentation](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-about-ibm-cloud-object-storage). 

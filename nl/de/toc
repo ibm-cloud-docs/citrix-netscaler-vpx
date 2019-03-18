@@ -1,16 +1,17 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="citrix-netscaler-vpx" audience="network" href="/docs/infrastructure/citrix-netscaler-vpx/getting-started.html"}
+{: .toc subcollection="citrix-netscaler-vpx" audience="network" href="/docs/infrastructure/citrix-netscaler-vpx?topic=infrastructure/citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance" path="infrastructure/citrix-netscaler-vpx"}
 Citrix NetScaler VPX
 
     {: .navgroup id="learn"}
     getting-started.md	
     about-citrix-netscaler-vpx.md
+    whats-new-vpx.md
     terminology.md
     default-deployment.md
     netscaler-basic-configuration.md
-    [Lastausgleichsfunktionen kennen lernen](../loadbalancer-service/explore-load-balancers.html)
+    /loadbalancer-service/loadbalancer-service-explore
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -19,12 +20,46 @@ Citrix NetScaler VPX
     netscaler-vpx-high-availability-setup.md
     setting-citrix-forwarding-proxy.md
     url-redirection-netscaler-vpx.md
+
+    {: .topicgroup}
+    Schrittweise Anleitung zur Vorgehensweise bei der Konfiguration der Datenverkehrsweiterleitung des Forward Proxy mithilfe der Citrix NetScaler VPX-Appliance
+        fp-guide.md
+        order-vpx.md
+        request-subnet.md
+        fp-cache.md
+        fp-dns.md
+        fp-cache-http.md
+        fp-cache-ssl.md
+        fp-nat.md
+        fp-proxy-settings.md
+
+    {: .topicgroup}
+    Schrittweise Anleitung zur Bereitstellung und Konfiguration des IBM Hardware Security Module (HSM) mit Citrix NetScaler VPX
+        hsm-guide.md
+        hsm-order-hsm.md
+        hsm-order-vpx.md
+        hsm-initialize-hsm.md
+        hsm-create-partition.md
+        hsm-install-hsm.md
+        hsm-establish-ntl.md
+        hsm-csr.md
+        hsm-order-certificate.md
+        hsm-retrieve-certificate.md
+
+    {: .topicgroup}
+    Schrittweise Anleitung zur Konfiguration und Optimierung der SSL-Auslagerung mit Citrix NetScaler VPX
+        hsm-ssl-guide.md
+        hsm-ssl-install.md
+        hsm-ssl-dns.md
+        hsm-ssl-server.md
+        hsm-ssl-cipher.md
     {: .navgroup-end}
     
     {: .navgroup id="reference"}
     global-load-balancing-options.md
     global-load-balancing-netscaler-vpx.md
     [Citrix-Website](https://www.citrix.com/products/netscaler-adc/)
+    other-resources.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}

@@ -1,17 +1,18 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2017-12-06"
+lastupdated: "2018-11-12"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Globaler Serverlastausgleich
+{: #global-load-balancing}
 
 Der globale Serverlastausgleich (GSLB = Global Server Load Balancing) stellt eine Methode dar, mit der der Datenverkehr auf mehrere Server aufgeteilt werden kann. Dazu werden ein DNS (Domain Name System) und die geografischen Standorte verwendet, um festzulegen, an welches Ziel der Serverdatenverkehr gesendet werden soll. Im Allgemeinen sendet eine Funktion für den globalen Lastausgleich eine Clientanforderung an den Server, der dem Client am nächsten liegt. Dadurch kann eine Reduzierung der Latenzzeiten und eine Verbesserung der Leistung erreicht werden.
 
-Sie benötigen nicht unbedingt eine vollständige Implementierung einer globalen Lastausgleichslösung. Für GSLB sind mehrere Instanzen eines geeigneten Geräts erforderlich, das die Ausführung dieser Funktion unterstützt. Abhängig von Ihren individuellen Anforderungen können jedoch andere Lösungen geeigneter sein. Wenn Sie vollständige Websites und Anwendungen benötigen, dann stellt GSLB eine gute Wahl dar. Wenn Sie lediglich bestimmte Teile Ihrer Inhalte benötigen (z. B. Bilder, Videos oder andere große Dateien), dann ist ein [Content Delivery Network (CDN)](https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-content-delivery-networks-cdn-){: new_window} möglicherweise die bessere (und einfacher bereitzustellende) Alternative.
+Sie benötigen nicht unbedingt eine vollständige Implementierung einer globalen Lastausgleichslösung. Für GSLB sind mehrere Instanzen eines geeigneten Geräts erforderlich, das die Ausführung dieser Funktion unterstützt. Abhängig von Ihren individuellen Anforderungen können jedoch andere Lösungen geeigneter sein. Wenn Sie vollständige Websites und Anwendungen benötigen, dann stellt GSLB eine gute Wahl dar. Wenn Sie lediglich bestimmte Teile Ihrer Inhalte benötigen (z. B. Bilder, Videos oder andere große Dateien), dann ist ein [Content Delivery Network (CDN)](/docs/infrastructure/CDN?topic=CDN-about-content-delivery-networks-cdn-) möglicherweise die bessere (und einfacher bereitzustellende) Alternative.
 
 ## Citrix NetScaler VPX
 
@@ -81,10 +82,10 @@ Es stehen auch andere Produkte mit ähnlicher Funktionalität zur Verfügung, mi
 
 Netze zur Bereitstellung von Inhalten (CDNs = Content Delivery Networks) ermöglichen Ihnen das Hochladen oder Bereitstellen eines Ursprungsservers auf geografisch verteilte(n) Cache-Server(n). Diese können anschließend zur Bereitstellung der Inhalte für die anfordernden Clients genutzt werden. CDNs eignen sich am besten für statische Masseninhalte wie beispielsweise Bilder und Videos, die sich im Zeitverlauf nicht ändern.
 
-Weitere Einzelheiten zu CDNs finden Sie in der entsprechenden [Dokumentation](https://console.bluemix.net/docs/infrastructure/CDN/getting-started.html#getting-started).
+Weitere Einzelheiten zu CDNs finden Sie in [dieser Dokumentation](/docs/infrastructure/CDN?topic=CDN-getting-started).
 
 ### Objektspeicher
 
 Der Objektspeicher von {{site.data.keyword.BluSoftlayer_notm}} kann zur Verwendung verschiedener geografischer Standorte in unterschiedlichen Rechenzentren konfiguriert werden, um Inhalte bereitzustellen. Eine Anwendung, bei der geografische Gegebenheiten berücksichtigt werden, kann zur Durchführung standortbasierter Suchoperationen für Clientanforderungen und zur Rückgabe einer URL an den Objektspeicher in Clientnähe verwendet werden. Der Objektspeicher umfasst außerdem eine CDN-Front-End-Komponente, die bei Bedarf zur Bereitstellung zusätzlicher Caching-Services (siehe oben) genutzt werden kann.
 
-Weitere Informationen sowie eine Einführung zum Objektspeicher finden Sie in der entsprechenden [Dokumentation](https://console.bluemix.net/docs/services/cloud-object-storage/about-cos.html#about-ibm-cos). 
+Weitere Informationen sowie eine Einführung zum Objektspeicher finden Sie in [dieser Dokumentation](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-about-ibm-cloud-object-storage). 
