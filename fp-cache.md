@@ -19,6 +19,9 @@ subcollection: citrix-netscaler-vpx
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Enable Cache Redirection and Load Balancing capabilities
 {: #enable-cache-redirection-and-load-balancing-capabilities}

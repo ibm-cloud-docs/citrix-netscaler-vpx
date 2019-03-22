@@ -16,6 +16,9 @@ subcollection: citrix-netscaler-vpx
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Establish a Network Trust Link (NTL)
 {: #establish-a-network-trust-link-ntl-}
@@ -218,4 +221,4 @@ To establish your NTL, perform the following procedure:
 	root@IBMADC690867-s6dr# touch /var/safenet/safenet_is_enrolled
 	```
 
-Your NTL is now established.
+Your Network Trust Link is now established.

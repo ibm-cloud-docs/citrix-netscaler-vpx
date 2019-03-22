@@ -13,6 +13,9 @@ subcollection: citrix-netscaler-vpx
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # About Citrix NetScaler VPX
 {: #about-citrix-netscaler-vpx}

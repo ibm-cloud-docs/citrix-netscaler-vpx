@@ -17,6 +17,9 @@ subcollection: citrix-netscaler-vpx
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Configuring forward-proxy traffic redirection using the Citrix NetScaler VPX appliance
 {: #configuring-forward-proxy-traffic-redirection-using-the-citrix-netscaler-vpx-appliance}

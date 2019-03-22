@@ -16,6 +16,9 @@ subcollection: citrix-netscaler-vpx
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:pre: .pre}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:table: .aria-labeledby="caption"}
 
 # Install Your SSL Certificate
@@ -50,7 +53,8 @@ In this topic you will install the SSL Certificate you created in the previous [
 
 	Where `keyName` is the name of the key created on the IBM© Hardware Security Module (HSM) with the CMU utility. The `serialNum` parameter is the serial number of the partition in question. The `password` parameter, as before, is the password of the partition on which the keys are present.
 
-	**NOTE:** The `Internal error` message is expected due to the increased time it takes to complete this step. The key should be properly added. However, any other error messages you receive should be addressed.
+	The `Internal error` message is expected due to the increased time it takes to complete this step. The key should be properly added. However, any other error messages you receive should be addressed.
+  {: note}
 
 3.	Confirm the key was added:
 

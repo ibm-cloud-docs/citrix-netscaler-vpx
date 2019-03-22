@@ -16,6 +16,9 @@ subcollection: citrix-netscaler-vpx
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Create and Apply a New Cipher Suite
 {: #create-and-apply-a-new-cipher-suite}
@@ -30,7 +33,8 @@ To learn more about SSL cipher suites and other best practices visit the followi
 * [SSL and TLS Deployment Best Practices ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices#23-use-secure-cipher-suites){:new_window}
 * [How Do I Setup ECC on NetScaler? ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.citrix.com/article/CTX205289){:new_window}
 
-**NOTE:** This topic focuses on specific and required configurations for SSL ciphers. The information in the previous links may provide additional settings that can be applied to optimize SSL operation.
+This topic focuses on specific and required configurations for SSL ciphers. The information in the previous links may provide additional settings that can be applied to optimize SSL operation.
+{: note}
 
 To create a new Cipher Suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, perform the following procedure:
 

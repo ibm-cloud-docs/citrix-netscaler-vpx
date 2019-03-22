@@ -11,6 +11,9 @@ subcollection: citrix-netscaler-vpx
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Setting up Citrix Netscaler VPX as a Forwarding Proxy
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
@@ -110,7 +113,7 @@ The following display commands can be used to validate the state of the forwardi
 
 **show cr vserver:** Displays a specified cache redirection virtual server, or all configured cache redirection virtual servers.
 
-**stat cr vserver:** Displays cache redirection vserver statistics.
+**stat cr vserver:** Displays cache redirection Vserver statistics.
 
 The configuration of a basic forwarding proxy on Citrix is fairly straightforward. It provides a way to give clients on an internal network a secure path to resources on the Internet. It also enables the Network Administrator to maintain a level of control over the network.
 

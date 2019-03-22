@@ -10,6 +10,9 @@ subcollection: citrix-netscaler-vpx
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Basic Load Balancing Configuration
 {: #basic-load-balancing-configuration}
@@ -28,7 +31,7 @@ In the NetScaler GUI, on the Configuration screen, expand **Traffic Management**
 
 1. Under Load Balancing, click on **Servers**.
 2. Click **Add**.
-3. Enter the Server Name of the server (for example, Web1).
+3. Enter the name of the server (for example, Web1).
 4. Enter the IP address of the server.
 5. Leave the **Traffic Domain** field blank, as you are only concerned with using the default traffic domain in this scenario.
 6. Enter any comments you would like about this server.
@@ -63,4 +66,5 @@ Now, bind the services you created to your Virtual Server.
 
 You have created a load balancing pool and policy for your website.
 
-**NOTE:** To learn more about configuration of the Citrix NetScaler VPX device, please visit the [Citrix documentation page ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/netscaler.html). For further assistance, contact the {{site.data.keyword.BluSoftlayer_notm}} support and sales.
+To learn more about configuration of the Citrix NetScaler VPX device, please visit the [Citrix documentation page ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/netscaler.html). For further assistance, contact the {{site.data.keyword.BluSoftlayer_notm}} support and sales.
+{: note}

@@ -10,6 +10,9 @@ subcollection: citrix-netscaler-vpx
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Citrix NetScaler VPX Default Deployment
 {: #citrix-netscaler-vpx-default-deployment}

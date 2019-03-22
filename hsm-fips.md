@@ -18,6 +18,8 @@ subcollection: citrix-netscaler-vpx
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:note: .note}
+{:tip: .tip}
+{:important: .important}
 
 # Enable FIPS 140-2 (Optional)
 {: #enable-fips-140-2-optional-}

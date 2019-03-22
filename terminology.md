@@ -10,6 +10,9 @@ subcollection: citrix-netscaler-vpx
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Citrix NetScaler VPX Terminology
 {: #citrix-netscaler-vpx-terminology}

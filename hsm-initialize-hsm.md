@@ -16,6 +16,9 @@ subcollection: citrix-netscaler-vpx
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Initialize IBM Hardware Security Module (HSM)
 {: #initialize-ibm-hardware-security-module-hsm-}

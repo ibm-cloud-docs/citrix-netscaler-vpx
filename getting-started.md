@@ -11,6 +11,9 @@ subcollection: citrix-netscaler-vpx
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Getting started with Citrix NetScaler VPX Software Appliance
 {: #getting-started-with-citrix-netscaler-vpx-software-appliance}

@@ -18,6 +18,9 @@ subcollection: citrix-netscaler-vpx
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Getting Help and Support for Citrix NetScaler VPX
 {: #getting-help-and-support-for-citrix-netscaler-vpx}

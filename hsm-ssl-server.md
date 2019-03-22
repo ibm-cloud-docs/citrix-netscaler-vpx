@@ -17,6 +17,9 @@ subcollection: citrix-netscaler-vpx
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Add and Configure the SSL Virtual Server
 {: #add-and-configure-the-ssl-virtual-server}
@@ -30,7 +33,7 @@ To add and configure your SSL Virtual Server, perform the following procedure:
 	<img src="images/15-confirm-service.png" alt="drawing" style="width: 700px;"/>
 
 4. Repeat step two for any additional servers.
-5. Navigate to **Traffic Management > Load Balancing > Virtual Servers >** and click **Add**. Specify the name and selet **SSL** as the Protocol, then enter the public IP Address. Hit **OK** to finish.
+5. Navigate to **Traffic Management > Load Balancing > Virtual Servers >** and click **Add**. Specify the name and select **SSL** as the Protocol, then enter the public IP Address. Hit **OK** to finish.
 6. Now select **No Load Balancing Virtual Server Service Binding** and click **Select**. Select the service(s) you created in the previous steps and click Select, then click **Bind/Continue**.
 
 	<img src="images/18-bind-service.png" alt="drawing" style="width: 700px;"/>

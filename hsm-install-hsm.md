@@ -17,13 +17,17 @@ subcollection: citrix-netscaler-vpx
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Install the IBM Hardware Security Module (HSM) Client Software
 {: #install-the-ibm-hardware-security-module-hsm-client-software}
 
 In this step, Citrix VPX will be installed with the software and utilities required to interact with the HSM.
 
-**NOTE:** Steps one and two in this procedure are optional and only needed if the safenet directory and the files or sub-folders in it are missing in the `/var` path. These resources are necessary for VPX to be installed with the client software and allow it to run the utilities associated with the HSM software.
+Steps one and two in this procedure are optional and only needed if the safenet directory and the files or sub-folders in it are missing in the `/var` path. These resources are necessary for VPX to be installed with the client software and allow it to run the utilities associated with the HSM software.
+{: note}
 
 Find the credentials to access the NetScaler CLI listed in the Control Portal under **Devices > Device List > Expand VPX name**.
 
@@ -31,11 +35,13 @@ Find the credentials to access the NetScaler CLI listed in the Control Portal un
 
 They will be needed for this section and the remainder of the guide.
 
-**NOTE:** Please be aware that all VPX commands and outputs in this document will list either `netscalername#` (indicating a shell execution, or `>` (for the VPX CLI itself).
+Please be aware that all VPX commands and outputs in this document will list either `netscalername#` (indicating a shell execution, or `>` (for the VPX CLI itself).
+{: note}
 
 1.	(OPTIONAL) Obtain the `safenet_dirs.tar` file and transfer it to the VPX in the `/var` directory. The `safenet_dirs.tar` file can be obtained from [here ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://downloads.service.softlayer.com/citrix/netscaler/Safenet-HSM/){:new_window}.
 
-	**NOTE:** You must be logged into your SoftLayer account to access the above link.
+	You must be logged into your SoftLayer account to access the above link.
+  {: note}
 
 	<img src="images/4-transfer-safenet_dirs.png" alt="drawing" style="width: 600px;"/>
 

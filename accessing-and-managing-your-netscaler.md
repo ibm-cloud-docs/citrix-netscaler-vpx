@@ -11,6 +11,9 @@ subcollection: citrix-netscaler-vpx
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Managing your Citrix NetScaler VPX
 {: #managing-your-citrix-netscaler-vpx}
@@ -36,7 +39,8 @@ Other details listed in the Device List include:
 * Private IP address (which is used to connect to the NetScaler for management functions)
 * Start Date (when the machine was ordered and provisioned)
 
-**NOTE:** While the Private IP address of the NetScaler is listed in the portal, the Public IP address of the NetScaler is not. This is because management of the NetScaler is done using the Private IP address, and the Public IP addresses for NetScaler devices are used as the device's VIP(s) or Virtual IP(s), which are used for load balancing services.
+While the Private IP address of the NetScaler is listed in the portal, the Public IP address of the NetScaler is not. This is because management of the NetScaler is done using the Private IP address, and the Public IP addresses for NetScaler devices are used as the device's VIP(s) or Virtual IP(s), which are used for load balancing services.
+{: note}
 
 ## The Device Details screen
 

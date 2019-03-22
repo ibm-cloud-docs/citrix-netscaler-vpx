@@ -10,6 +10,9 @@ subcollection: citrix-netscaler-vpx
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Global Load Balancing
 {: #global-load-balancing}
@@ -45,11 +48,11 @@ The following global balancing procedure uses:
 
 4. Choose your form of balancing and persistence method just like you would with regular load balancing. Click **Next**.
 
-5. The site is already populated, so you don't have to add anything. Instead, click on the green '+' next to the first site's name. Select the vserver on that device from the list and click **Create**. You should see that the site is configured with the site IP and the vserver IP of your load balanced setup, and that it is green. Click **Next**, **Finish**, and **Exit**.
+5. The site is already populated, so you don't have to add anything. Instead, click on the green '+' next to the first site's name. Select the Vserver on that device from the list and click **Create**. You should see that the site is configured with the site IP and the Vserver IP of your load balanced setup, and that it is green. Click **Next**, **Finish**, and **Exit**.
 
 6. Perform the same actions on the next NetScaler, using the values for that server.
 
-7. On both servers, go to **Traffic Management > DNS > Records > A records**, and examine the list. You should see `root.servers.net` entries, and your hostname as well, with a type of GSLB DOMAIN.
+7. On both servers, go to **Traffic Management > DNS > Records > A records**, and examine the list. You should see `root.servers.net` entries, as well as your hostname, with a type of `GSLB DOMAIN`.
 
 8. Go to **Traffic Management > DNS > Name Servers** and click **Add**. Enter an IP address on the NetScaler (such as, the public IP of the device). Click **Local** and leave the protocol as UDP. Click **Create** then **Close**. You should see the effective state as enabled and up.
 
@@ -57,7 +60,7 @@ The following global balancing procedure uses:
 
 10. Next, on both servers, go back to **Traffic Management > GSLB** and go through the wizard again. This time, click **Next**, and select **Modify Configuration for Existing Domains**. Select the hostname from the list and then click **Next** twice.
 
-11. In the site address field, put in the site IP address of the other NetScaler and give it the other NetScaler's site name and click **Add**. The site will be populated with an option to click the green '+' again. Click the remote site plus sign to add another site. Enter the vserver service IP (the one for the load balanced servers, not the GSLB site IP) and the port, click **Create** and **Close**, **Next**, **Finish** then **Exit**.
+11. In the site address field, put in the site IP address of the other NetScaler and give it the other NetScaler's site name and click **Add**. The site will be populated with an option to click the green '+' again. Click the remote site plus sign to add another site. Enter the Vserver service IP (the one for the load balanced servers, not the GSLB site IP) and the port, click **Create** and **Close**, **Next**, **Finish** then **Exit**.
 
 If everything has been working up to this point, and both servers are configured, everything should have a status of green in the GSLB Virtual Servers, Services and Sites. You will notice that there are now two entries in GSLB services on both machines if they are properly synchronized. At this point, the servers are now communicating with each other.
 

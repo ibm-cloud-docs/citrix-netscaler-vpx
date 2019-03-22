@@ -16,6 +16,9 @@ subcollection: citrix-netscaler-vpx
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Create a Partition
 {: #create-a-partition}
@@ -84,7 +87,8 @@ To create a partition, perform the following procedure:
 
 4.	Create a new partition:
 
-	**NOTE:** The password defined in this step will later be used to associate and create objects in the Citrix VPX HSM client process. Keep track of this password for later reference. Also, be sure to use the cloning domain defined during the initialization process.
+	 The password defined in this step will later be used to associate and create objects in the Citrix VPX HSM client process. Keep track of this password for later reference. Also, be sure to use the cloning domain defined during the initialization process.
+   {: note}
 
 	```
 	[jpmongehsm2] lunash:>partition create -partition partition6

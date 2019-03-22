@@ -19,6 +19,9 @@ subcollection: citrix-netscaler-vpx
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Configure Cache Redirection for HTTP(S) traffic
 {: #configure-cache-redirection-for-ssl-traffic-optional-}

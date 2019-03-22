@@ -11,6 +11,9 @@ subcollection: citrix-netscaler-vpx
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Redirecting URLs in a Citrix Netscaler VPX
 {: #redirecting-urls-in-a-citrix-netscaler-vpx}

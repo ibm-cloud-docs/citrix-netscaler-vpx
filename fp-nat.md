@@ -19,6 +19,9 @@ subcollection: citrix-netscaler-vpx
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Configure Source NAT for Outbound Traffic
 {: #configure-source-nat-for-outbound-traffic}

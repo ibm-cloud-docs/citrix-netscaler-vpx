@@ -16,6 +16,9 @@ subcollection: citrix-netscaler-vpx
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Create keys and generate the Certificate Signing Request (CSR)
 {: #create-keys-and-generate-the-certificate-signing-request-csr-}
