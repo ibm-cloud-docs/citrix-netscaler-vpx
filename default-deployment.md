@@ -24,6 +24,7 @@ The default deployment of a NetScaler at {{site.data.keyword.BluSoftlayer_notm}}
 {{site.data.keyword.BluSoftlayer_notm}} handles a lot of the decisions for you during provisioning. For example, which IP addresses to use for which purposes. It asks which VLANs you would like to use for deployment. Also, it automates much of the back-end configuration using scripts and an API, such as assigning interfaces to separate public and private VLANs, and assigning the proper IP addresses to each interface, including the NSIP, VIPs, and SNIPs.
 
 ## What do I need to configure?
+{: #what-do-i-need-to-configure-}
 
 By default, the NSIP is the Private IP address assigned during provisioning, which is the IP address that you use to connect to the NetScaler for management purposes. The SNIPs (SubNet IP Addresses), by default, are assigned from the same Primary IP SubNets that are located on the VLANs that you chose during the ordering process.
 

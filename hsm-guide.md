@@ -27,15 +27,18 @@ subcollection: citrix-netscaler-vpx
 This Step by Step guides you through integrating the HSM with Citrix Netscaler VPX. The two services will then be able to communicate and generate the cryptographic material required to create a certificate.
 
 ## About the deployment
+{: #about-the-deployment}
 This deployment was built and tested with the following component specifications:
 
 | NetScaler VPX Version & Build	| HSM Software Version | HSM Firmware version | HSM Client Version |
 | ------------- | ------------- | ------------- | ------------- |
 | NS12.1: Build 48.13.nc | 6.2.2-5 | 6.10.9 | 6.2.2 |
 
-**NOTE:** If you have an older version of VPX or, if when ordering the device through the IBM© Cloud platform only see versions 11.1 and earlier as selection options, the device can be upgraded so that the set-up described in this guide can be completed.
+If you have an older version of VPX or, if when ordering the device through the IBM© Cloud platform only see versions 11.1 and earlier as selection options, the device can be upgraded so that the set-up described in this guide can be completed.
+{: note}
 
 ## Logical topology
+{: #logical-topology}
 The below diagram shows the network traffic flow for the SSL offload use case. This provides a visual and logical perspective of the trust link and the configuration between VPX and the HSM appliance.
 
 <img src="images/network-flows-logical-topology.jpg" alt="drawing" style="width: 700px;"/>
@@ -43,6 +46,8 @@ The below diagram shows the network traffic flow for the SSL offload use case. T
 If you are not familiar with SSL offload, review this [Citrix article](https://docs.citrix.com/en-us/netscaler/12-1/ssl.html).
 
 ## What you'll accomplish
+
+{: #what-you-ll-accomplish}
 
 In this Step-by-Step guide you will learn how to deploy and configure an HSM with a Citrix Netscaler VPX:
 

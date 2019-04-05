@@ -25,6 +25,7 @@ When a client on the internal network initiates a request, the IP address of the
 Typically, a proxy is combined with a firewall to ensure the security of clients in an internal network.
 
 ## Step 1: Request VIPs to use in the Private Network
+{: #step-1-request-vips-to-use-in-the-private-network}
 
 When a Citrix NetScaler VPX load balancer is ordered from the {{site.data.keyword.BluSoftlayer_notm}} customer portal, it is assumed a reverse proxy is being requested. The requestor will be asked for the number of “public” IPs to be used as virtual IPs (VIPs).
 
@@ -39,11 +40,13 @@ In our example we requested a `/29` subnet, which resulted in the following:
 * VIPs `10.114.27.0-3` were added to the Citrix NetScaler VPX by the support team
 
 ## Step 2: Enable Load Balancing and Cache Redirect Features on the Citrix NetScaler VPX
+{: #step-2-enable-load-balancing-and-cache-redirect-features-on-the-citrix-netscaler-vpx}
 
 By default, the load balancing and cache redirect features on the Citrix NetScaler VPX load balancer are disabled; the `enable ns feature cr lb` command enables them.
 
 
 ## Step 3: Create the Forward Proxy
+{: #step-3-create-the-forward-proxy}
 
 Use the command line to issue the following commands on to the Citrix NetScaler VPX. In our scenario, only one of the two {{site.data.keyword.BluSoftlayer_notm}} DNS servers are added.  
 
@@ -70,6 +73,7 @@ Line 4 binds the VIP to the “real” server. All DNS requests to `10.114.27.4`
 Line 5 tells the forwarding proxy virtual server to use the virtual DNS for name resolution.
 
 ## Configuring the Client
+{: #configuring-the-client}
 
 Before continuing to customize the client to use the forwarding proxy, make sure that you cannot reach a public site (for example, http://www.ibm.com) by using the Firefox browser on the client. Since there should be no public interface on the client, this request should fail.
 
@@ -102,6 +106,7 @@ The IP address `10.114.27.3` is the IP address of the forwarding cache created i
 At this point, the setup is complete and you can access the Internet from the resource isolated on the private network.
 
 ## Validating the Setup
+{: #validating-the-setup}
 
 Now that the client is configured to use the forwarding proxy, try an access a public site again. The request should now be successful.
 

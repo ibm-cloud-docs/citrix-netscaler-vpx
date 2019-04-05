@@ -26,6 +26,7 @@ Other techniques are available for content distribution, such as HTTP redirectio
 {: note}
 
 ## About GSLB on VPX
+{: #about-gslb-on-vpx}
 
 NetScaler VPX can be enabled with GSLB simply by activating its feature on the CLI/GUI.
 

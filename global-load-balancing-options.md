@@ -22,6 +22,7 @@ Global server load balancing (GSLB) is a method to split traffic across multiple
 You may not require a full implementation of a global load balancing solution. GSLB requires multiple instances of a suitable device that can perform this function, and depending on your needs, other solutions might be more attractive to you. If you need entire websites and applications, then GSLB is a good choice. If you only need portions of your content, such as images, videos, or other large files, then a [Content Delivery Network](/docs/infrastructure/CDN?topic=CDN-about-content-delivery-networks-cdn-) might be more suitable (and easier to deploy).
 
 ## Citrix NetScaler VPX
+{: #citrix-netscaler-vpx}
 
 The Citrix NetScaler VPX is the only customer configurable device that does true global load balancing. NetScaler is a multi-function appliance that can perform DNS based global load balancing lookups. You can point to the NetScaler as a DNS server, and the device will look over the servers it is configured to load balance for, perform a distance calculation, and return a record with the IP of the server closest to the client request.
 
@@ -32,10 +33,12 @@ You must already have load balancing set up, even if it is only one server being
 The following global balancing procedure uses:
 
 ### VPX1
+{: #vpx1}
 
 `50.97.235.236` is named `VPX1Vserver`, and is the local load balancing VIP for that device. `50.23.66.52` will be called `VPX1site`, and is the local IP for that device's GSLB.
 
 ### VPX2
+{: #vpx2}
 `208.43.241.249` is used for `VPX2Vserver`, and the GSLB IP is `208.43.224.4`, called `VPX2site`.
 
 1. Go to **Traffic Management > GSLB** and right click to enable the feature. Then, select **Sites** and **Add**.
@@ -86,12 +89,14 @@ For more information on NetScaler global load balancing, refer to:
 There are other products that can offer a similar functionality for spreading out traffic on a geographical basis:
 
 ### CDN
+{: #cdn}
 
 Content delivery networks (CDN) allow you to upload or provide an origin server to geographically dispersed cache servers, which then provide the content to the requesting client. CDNs work best with static, bulk content, such as images and videos that does not change over time.
 
 For more details on CDN, refer to [this documentation](/docs/infrastructure/CDN?topic=CDN-getting-started).
 
 ### Object Storage
+{: #object-storage}
 
 {{site.data.keyword.BluSoftlayer_notm}}'s Object Storage can be configured to use multiple geographic locations in various data centers to provide content. A geographically aware application can perform location lookups on the client request and return a URL to Object Storage that is close to the client. Object Storage also comes with a CDN front end, if needed, to provide additional caching services as noted above.
 

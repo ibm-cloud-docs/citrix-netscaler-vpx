@@ -21,6 +21,7 @@ subcollection: citrix-netscaler-vpx
 Deploying a Citrix NetScaler VPX in your {{site.data.keyword.BluSoftlayer_notm}} solution accelerates web application delivery, boosts performance, and ensures your cloud applications and services stay optimized, available, and secure. If you have challenging workloads, such as gaming, big data and analytics, or private clouds, the Citrix NetScaler VPX can help you deliver your solution when, where, and how your users need it most.
 
 ## Before you begin
+{: #before-you-begin}
 To get started with Citrix NetScaler VPX, you will need to know the following information:
 
 * Your IBM© Cloud Customer Portal login information
@@ -30,6 +31,7 @@ To get started with Citrix NetScaler VPX, you will need to know the following in
 * The VLAN where you want to assign the load balancer
 
 ## Ordering a Citrix NetScaler VPX
+{: #ordering-a-citrix-netscaler-vpx}
 
 To order a Citrix NetScaler VPX software appliance, navigate to the order page in the Customer Portal:
 
@@ -48,5 +50,6 @@ To order a Citrix NetScaler VPX software appliance, navigate to the order page i
 11. Review the order, accept the terms, and click **Place Order**. The Citrix NetScaler VPX software appliance deploys with your selected settings.
 
 ## What's Next
+{: #what-s-next}
 
 You can learn more about Citrix Netscaler VPX [features](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-about-citrix-netscaler-vpx), review specific Netscaler [terminology](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-citrix-netscaler-vpx-terminology), or start [configuring](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-basic-load-balancing-configuration) your Netscaler.

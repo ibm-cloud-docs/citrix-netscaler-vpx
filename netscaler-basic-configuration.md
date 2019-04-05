@@ -39,7 +39,8 @@ In the NetScaler GUI, on the Configuration screen, expand **Traffic Management**
 
 Repeat this procedure for all servers in the pool.  
 
-**TIP:** To keep servers easily identifiable, use a similar naming convention for servers within the same pool (for example, Web1, Web2, Web3, and so on).
+To keep servers easily identifiable, use a similar naming convention for servers within the same pool (for example, Web1, Web2, Web3, and so on).
+{: tip}
 
 Next, create your Services. You will be creating a Service for each Server that you just entered. The Service is what configures the connection between the NetScaler and the servers in the pool. Each service has a name and specifies an IP address, a port, and the type of data that is served.
 

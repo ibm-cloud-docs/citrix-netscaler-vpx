@@ -25,6 +25,7 @@ The Citrix NetScaler VPX is a dedicated virtual software appliance that provides
 Deploying a Citrix NetScaler VPX in your {{site.data.keyword.BluSoftlayer_notm}} solution accelerates web application delivery, boosts performance, and ensures your cloud applications and services stay optimized, available, and secure. If you have challenging workloads, such as gaming, big data and analytics, or private clouds, the Citrix NetScaler VPX can help you deliver your solution when, where, and how your users need it most.
 
 ## Features
+{: #features}
 
 * The only product that can load balance traffic on both the public and private network
 * Management using GUI (Graphical User Interface) or CLI (Command Line Interface)
@@ -59,21 +60,26 @@ The Citrix NetScaler VPX can be deployed on demand, in as little as 15 minutes, 
 {{site.data.keyword.BluSoftlayer_notm}} offers the NetScaler VPX virtual appliance with full, unrestricted root access.   
 
 ## Application Security
+{: #application-security}
 
 To secure application traffic, customers can take advantage of security features such as Application Content Filtering, Priority Queuing, and a Web Application Firewall.
 
 ## Traffic Filtering
+{: #traffic-filtering}
 
 The Citrix Netscaler VPX filters requests from end-users to the servers and responses from the servers to end-users. A Learning feature with the Application Firewall allows the profiling of sessions in real time and the determination of whether to allow traffic.
 
 ## PCI-DSS Reporting
+{: #pci-dss-reporting}
 
 Payment Card Industry (PCI) Data Security Standard (DSS) consists of twelve criteria that must be met by businesses that process online credit card payments. The PCI-DSS reports consist of a list of those criteria that are relevant to your Application Firewall configuration. The report also lists whether your current configuration meets each criterion, and suggests how to configure the application firewall to meet those standards.
 
 ## Global Load Balancing (GSLB)
+{: #global-load-balancing-gslb-}
 
 The NetScaler Platinum Edition extends the load balancer beyond the local boundaries of the datacenter with Global Load Balancing functionality.
 
 ## Extend your Datacenter
+{: #extend-your-datacenter}
 
 The NetScaler Platinum Edition allows you to use the NetScaler CloudBridge Connector feature which provides a simple way to extend your datacenter to {{site.data.keyword.BluSoftlayer_notm}} with wizard-driven menus.

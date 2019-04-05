@@ -31,7 +31,8 @@ To initialize your device, follow the steps below:
 
 	Alternatively, you can use public key authentication. For more information review the [Appliance Administration Guide (page 38) ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/appliance_administration_guide.pdf){:new_window}.
 
-	**NOTE:** SSH access is generally enabled and allowed by default. If you have issues connecting with SSH, check your infrastructure routing and security.
+	SSH access is generally enabled and allowed by default. If you have issues connecting with SSH, check your infrastructure routing and security.
+  {: note}
 
 2. Execute the `hsm init` command:
 

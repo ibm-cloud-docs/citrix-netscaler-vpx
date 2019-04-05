@@ -29,6 +29,7 @@ This guide provides you with a step-by-step configuration for a forward proxy se
 <img src="images/fp1.png" alt="drawing" style="width: 600px;"/>
 
 ## What you'll accomplish
+{: #what-you-ll-accomplish}
 
 In this Step-by-Step guide you will learn how to configure the service:
 

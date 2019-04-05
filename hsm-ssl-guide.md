@@ -29,6 +29,7 @@ This Step by Step assumes you have completed the steps in [Deploying and Configu
 {: note}
 
 ## About the deployment
+{: #about-the-deployment}
 This deployment was built and tested with the following component specifications:
 
 | NetScaler VPX Version & Build	| HSM Software Version | HSM Firmware version | HSM Client Version |
@@ -37,6 +38,8 @@ This deployment was built and tested with the following component specifications
 
 
 ## Logical topology
+{: #logical-topology}
+
 The below diagram shows the network traffic flow for the SSL offload use case. This provides a visual and logical perspective of the trust link and the configuration between the Citrix VPX and the HSM appliance.
 
 <img src="images/network-flows-logical-topology.jpg" alt="drawing" style="width: 700px;"/>
@@ -44,6 +47,7 @@ The below diagram shows the network traffic flow for the SSL offload use case. T
 If you are not familiar with SSL offload, review this [Citrix article ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/netscaler/12-1/ssl.html){:new_window}.
 
 ## What you'll accomplish
+{: #what-you-ll-accomplish}
 
 In this Step-by-Step guide you will learn how to configure SSL for a Citrix Netscaler VPX:
 
@@ -55,6 +59,7 @@ Task  | Description
 [Create and apply a new Cipher Suite](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-and-apply-a-new-cipher-suite) | Create a Cipher Suite that prioritizes and preferences AEAD, ECDHE, and ECDSA.
 
 ## Additional resources
+{: #additional-resources}
 The following additional resources can help you get the most out of your Citrix Netscaler VPX when using the IBM Hardware Security Module.
 
 * [NetScaler 12.1 Product Documentation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/netscaler/12-1/){:new_window}
