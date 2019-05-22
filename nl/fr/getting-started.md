@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 1994, 2017
-  
+
 lastupdated: "2018-11-12"
 ---
 
@@ -9,7 +9,7 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 
 # Initiation au dispositif logiciel Citrix NetScaler VPX
-{: #getting-started-with-citrix-netscaler-vpx-software-appliance}
+{: #getting-started}
 
 Le déploiement d'un Citrix NetScaler VPX dans votre solution {{site.data.keyword.BluSoftlayer_notm}} accélère la mise à disposition des applications Web, améliore les performances et offre la garantie que vos applications et services cloud seront toujours optimisés, disponibles et sûrs. Si vous avez des charges de travail importantes (jeux en ligne, Big Data, analytique, etc.) ou des clouds privés, le Citrix NetScaler VPX peut vous aider à fournir votre solution aux utilisateurs où et quand ils en ont le plus besoin.
 
@@ -27,18 +27,18 @@ Pour commencer à utiliser Citrix NetScaler VPX, vous devez connaître les infor
 Pour commander un dispositif logiciel Citrix NetScaler VPX, accédez à la page de commande sur le portail client :
 
 1. Dans votre navigateur, ouvrez le [portail client ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://control.softlayer.com/){: new_window} et connectez-vous à votre compte.
-2. Dans la navigation du portail client, sélectionnez **Unités > Liste d'unités** et cliquez sur le lien **Commander unités**. 
+2. Dans la navigation du portail client, sélectionnez **Unités > Liste d'unités** et cliquez sur le lien **Commander unités**.
 3. Faites défiler la page **Commander les produits et services de SoftLayer**, jusqu'à la section Réseau et cliquez sur le lien **Commander** en dessous de Citrix NetScaler VPX.
 4. Dans le menu déroulant, sélectionnez l'emplacement où vous voulez que soit déployé votre dispositif logiciel Citrix NetScaler VPX.  
-5. Sélectionnez le type de NetScaler convenant le mieux à vos édition de logiciel, version de logiciel et besoins de traitement. 
+5. Sélectionnez le type de NetScaler convenant le mieux à vos édition de logiciel, version de logiciel et besoins de traitement.
 6. Sélectionnez le nombre d'adresses IP publiques dont vous avez besoin.  
 	Il s'agit des adresses IP publiques qui seront déployées en tant que VIP (IP virtuelles) sur votre NetScaler VPX.
 7. Cliquez sur **Continuer**.
 8. Entrez les informations requises par l'ARIN (ou le RIR équivalent dans votre région de déploiement) pour les adresses IP que vous avez demandées.
-9. Entrez vos informations de contact. 
-10. Sélectionnez votre réseau local virtuel (VLAN). 
-	Pour minimiser les temps de latence et optimiser l'utilisation de vos ressources réseau, affectez le Citrix NetScaler VPX au même VLAN que celui qui contient les serveurs auxquels le trafic sera distribué. 
-11. Passez en revue la commande, acceptez les dispositions et cliquez sur **Valider la commande**. Le dispositif logiciel Citrix NetScaler VPX est déployé avec les caractéristiques que vous avez choisies. 
+9. Entrez vos informations de contact.
+10. Sélectionnez votre réseau local virtuel (VLAN).
+	Pour minimiser les temps de latence et optimiser l'utilisation de vos ressources réseau, affectez le Citrix NetScaler VPX au même VLAN que celui qui contient les serveurs auxquels le trafic sera distribué.
+11. Passez en revue la commande, acceptez les dispositions et cliquez sur **Valider la commande**. Le dispositif logiciel Citrix NetScaler VPX est déployé avec les caractéristiques que vous avez choisies.
 
 ## Etapes suivantes
 
