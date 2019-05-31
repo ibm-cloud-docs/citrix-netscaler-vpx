@@ -48,6 +48,16 @@ Citrix NetScaler VPX
         hsm-retrieve-certificate.md
 
     {: .topicgroup}
+    Step-by-step: Configuring IPSec Site-to-site VPN in Citrix NetScaler VPX with IBM Virtual Router Appliance
+        ipsec-guide.md
+        ipsec-enable-features.md
+        ipsec-profile.md
+        ipsec-tunnel.md
+        ipsec-pbr.md
+        ipsec-vraconfig.md
+        ipsec-verification.md
+        
+    {: .topicgroup}
     Step-by-step: Configuring and Tuning SSL Offload with Citrix Netscaler VPX
         hsm-ssl-guide.md
         hsm-ssl-install.md
