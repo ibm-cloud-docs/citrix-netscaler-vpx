@@ -100,4 +100,4 @@ For more details on CDN, refer to [this documentation](/docs/infrastructure/CDN?
 
 {{site.data.keyword.BluSoftlayer_notm}}'s Object Storage can be configured to use multiple geographic locations in various data centers to provide content. A geographically aware application can perform location lookups on the client request and return a URL to Object Storage that is close to the client. Object Storage also comes with a CDN front end, if needed, to provide additional caching services as noted above.
 
-For more information and an introduction to Object Storage, refer to [this documentation](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-about-ibm-cloud-object-storage).
+For more information and an introduction to Object Storage, refer to [this documentation](/docs/services/cloud-object-storage?topic=cloud-object-storage-about).

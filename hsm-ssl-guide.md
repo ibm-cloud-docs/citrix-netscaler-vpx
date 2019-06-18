@@ -64,4 +64,4 @@ The following additional resources can help you get the most out of your Citrix 
 
 * [NetScaler 12.1 Product Documentation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/netscaler/12-1/){:new_window}
 * [Gemalto Support Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://supportportal.gemalto.com/csm?id=csm_index){:new_window}
-* [IBM Cloud Support](https://{DomainName}/docs/get-support?topic=get-support-using-avatar){:new_window}
+* [IBM Cloud Support](/docs/get-support?topic=get-support-using-avatar){:new_window}
