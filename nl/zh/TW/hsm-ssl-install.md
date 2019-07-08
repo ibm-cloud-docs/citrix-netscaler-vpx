@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, ssl, install, ssl, certificate, security
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:pre: .pre}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:table: .aria-labeledby="caption"}
 
 # 安裝 SSL 憑證
@@ -46,7 +53,8 @@ lastupdated: "2018-11-12"
 
 	其中 `keyName` 是在 IBM© Hardware Security Module (HSM) 上使用 CMU 公用程式建立的金鑰名稱。`serialNum` 參數是相關分割區的序號。`password` 參數，如同之前一樣是金鑰所在分割區的密碼。
 
-	**附註：**預期會有 `Internal error` 訊息，因為完成此步驟所花的時間增加。應該已適當地新增金鑰。不過，您收到的任何其他錯誤訊息都應該解決。
+	由於完成此步驟需要更長時間，因此預期會顯示 `Internal error` 訊息。應該已適當地新增金鑰。不過，您收到的任何其他錯誤訊息都應該解決。
+  {: note}
 
 3.	確認已新增金鑰：
 

@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: security, hsm, ntl, certificate
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Etablir un lien de confiance de réseau (NTL)
 {: #establish-a-network-trust-link-ntl-}
@@ -214,4 +221,4 @@ Pour établir la connexion NTL, procédez comme suit :
 	root@IBMADC690867-s6dr# touch /var/safenet/safenet_is_enrolled
 	```
 
-Votre connexion NTL est maintenant établie.
+Votre connexion Network Trust Link est maintenant établie.

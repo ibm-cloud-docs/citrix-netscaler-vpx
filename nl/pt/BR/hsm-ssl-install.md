@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, ssl, install, ssl, certificate, security
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:pre: .pre}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:table: .aria-labeledby="caption"}
 
 # Instalar seu Certificado SSL
@@ -47,7 +54,8 @@ fazer isso, execute o procedimento a seguir:
 
 	Em que `keyName` é o nome da chave criada no IBM© Hardware Security Module (HSM) com o utilitário CMU. O parâmetro `serialNum` é o número de série da partição em questão. O parâmetro `password`, como antes, é a senha da partição na qual as chaves estão presentes.
 
-	**NOTA:** a mensagem `Internal error` é esperada devido ao aumento de tempo necessário para concluir esta etapa. A chave deve ser incluída corretamente. No entanto, quaisquer outras mensagens de erro que você receber devem ser endereçadas.
+	A mensagem `Internal error` é esperada devido ao maior tempo necessário para concluir essa etapa. A chave deve ser incluída corretamente. No entanto, quaisquer outras mensagens de erro que você receber devem ser endereçadas.
+  {: note}
 
 3.	Confirme se a chave foi incluída:
 

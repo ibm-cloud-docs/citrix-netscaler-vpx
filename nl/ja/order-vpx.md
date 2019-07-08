@@ -6,6 +6,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: order, vpx, setup
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -15,6 +19,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Citrix NetScaler VPX アプライアンスの注文
 {: #order-the-citrix-netscaler-vpx-appliance}
@@ -26,7 +33,7 @@ lastupdated: "2018-11-12"
 3. **「Citrix NetScaler VPX」**オファリングを選択し、**「作成」**をクリックします。
 4. データ・センターと優先する VPX アプライアンス (ソフトウェアのバージョン、パフォーマンス・レベル、およびフィーチャーのエディション) を選択します。
 
-	VPX の Standard Edition では、キャッシュ・リダイレクト機能が使用可能ではないので、Platinum フィーチャー・エディションを選択してください。 ポータルは、必要なパブリック IP アドレスの数も要求します。 (注文に無償で含まれる) パブリック IP 1 つを選択し、**「続行」**をクリックします。
+	VPX の Standard Edition では、キャッシュ・リダイレクト機能が使用可能ではないので、Platinum フィーチャー・エディションを選択してください。ポータルは、必要なパブリック IP アドレスの数も要求します。 (注文に無償で含まれる) パブリック IP 1 つを選択し、**「続行」**をクリックします。
 
 5. 次の画面で、要求された IP アドレスの情報を入力します。
 6. 購入注文を確認し、サービス契約書に同意した上で、**「注文の実行 (Place Order)」**をクリックします。

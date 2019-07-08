@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, ssl, security, add, configure
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -13,6 +17,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 添加和配置 SSL 虚拟服务器
 {: #add-and-configure-the-ssl-virtual-server}
@@ -26,7 +33,7 @@ lastupdated: "2018-11-12"
 	<img src="images/15-confirm-service.png" alt="图样" style="width: 700px;"/>
 
 4. 对其他任何服务器重复步骤 2。
-5. 浏览至**流量管理 > 负载均衡 > 虚拟服务器 >**，然后单击**添加**。指定名称，并指定 **SSL** 作为协议，然后输入公共 IP 地址。点击**确定**以完成。
+5. 浏览至**流量管理 > 负载均衡 > 虚拟服务器 >**，然后单击**添加**。指定名称，并选择 **SSL** 作为协议，然后输入公共 IP 地址。点击**确定**以完成。
 6. 现在，选择**无负载均衡虚拟服务器服务绑定**，然后单击**选择**。选择在先前步骤中创建的服务，单击“选择”，然后单击**绑定/继续**。
 
 	<img src="images/18-bind-service.png" alt="图样" style="width: 700px;"/>

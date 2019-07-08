@@ -3,10 +3,17 @@ copyright:
   years: 1994, 2017
 
 lastupdated: "2018-08-08"
+
+keywords: redirect, url, monitor, responder
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 在 Citrix Netscaler VPX 中重定向 URL
 {: #redirecting-urls-in-a-citrix-netscaler-vpx}
@@ -21,7 +28,7 @@ lastupdated: "2018-08-08"
 	```
 	Add lb monitor localhost_ping PING -LRTM ENABLED -destIP 127.0.0.1
 	```
-	
+
 2. 使用永远不会使用的 IP 来定义一个伪服务（将永远不会联机的 IP 地址 `1.1.1.1` 用于服务器）。
 	```
 	Add service Always_UP_service 1.1.1.1 HTTP 80 -gslb NONE -maxClient 0 -maxReq 0 -cip ENABLED dummy -usip NO -sp OFF -cltTimeout 180 -svrTimeout 360 -CKA NO -TCPB NO -CMP YES
@@ -30,7 +37,7 @@ lastupdated: "2018-08-08"
 	```
 	bind lb monitor localhost_ping Always_UP_service
 	```
-	
+
 4. 使 NetScaler 始终侦听 vserver 上的端口 80，并将其绑定到将始终保持运行的服务。
 	```
 	add lb vserver http_to_htps_vserver HTTP w.x.y.z 80 -timeout 0 -cltTimeout 180
@@ -38,7 +45,7 @@ lastupdated: "2018-08-08"
 	```
 	bind lb vserver http_to_htps_vserver Always_UP_service
 	```
-	
+
 5. 编写响应者操作和策略，以将 `http://` 替换为 `https://`。
 	```
 	add responder action http_to_https_actn redirect "\"https://\" + http.req.hostname.HTTP_URL_SAFE + http.REQ.URL.PATH_AND_QUERY.HTTP_URL_SAFE"
@@ -55,19 +62,17 @@ lastupdated: "2018-08-08"
 	bind lb vserver http_to_htps_vserver -policyName http_to_https_pol -priority 1 -gotoPriorityExpression END
 	```
 8. 可以使用命令行实用程序（如“wget”或 "curl"）来确认它是否如预期正常运行，如下所示：
-        
+
 	```
-wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
-
-
+    wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
 
     curl -v http://w.x.y.z
-```
+    ```
 
 将 IP 地址 `w.x.y.z` 替换为 URL 主机名（例如，`http://mail.example.com` 或 `http://web.example.com`），并确认“Location”输出是否反映出最初指定的相同主机名，但在以下示例中各示例的“Location”均以“https”开头：
 
 ```
-wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
+    wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
     --2012-06-18 08:42:20--  http://w.x.y.z/
     Connecting to w.x.y.z:80... connected.
     HTTP request sent, awaiting response...
@@ -75,7 +80,9 @@ wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
       Location: https://w.x.y.z/
       Connection: close
       Cache-Control: no-cache
-      Pragma: no-cachewget  -S --max-redirect 0 -O /dev/null http://web.example.com
+      Pragma: no-cache
+
+    wget  -S --max-redirect 0 -O /dev/null http://web.example.com
     --2012-06-18 08:42:20--  http://web.example.com/
     Connecting to w.x.y.z:80... connected.
     HTTP request sent, awaiting response...
@@ -83,7 +90,9 @@ wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
       Location: https://web.example.com/
       Connection: close
       Cache-Control: no-cache
-      Pragma: no-cachewget  -S --max-redirect 0 -O /dev/null http://mail.example.com
+      Pragma: no-cache
+
+    wget  -S --max-redirect 0 -O /dev/null http://mail.example.com
     --2012-06-18 08:42:20--  http://mail.example.com/
     Connecting to w.x.y.z:80... connected.
     HTTP request sent, awaiting response...

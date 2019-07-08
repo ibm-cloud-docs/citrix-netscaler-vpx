@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, ssl, security, create, apply, cipher, suite
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 创建并应用新的密码套件
 {: #create-and-apply-a-new-cipher-suite}
@@ -26,7 +33,8 @@ lastupdated: "2018-11-12"
 * [SSL and TLS Deployment Best Practices ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices#23-use-secure-cipher-suites){:new_window}
 * [How Do I Setup ECC on NetScaler? ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://support.citrix.com/article/CTX205289){:new_window}
 
-**注：**本主题重点说明 SSL 密码的特定和必需配置。先前链接中的信息可能会提供其他设置，可以应用这些设置来优化 SSL 操作。
+本主题重点说明 SSL 密码的特定和必需配置。先前链接中的信息可能会提供其他设置，可以应用这些设置来优化 SSL 操作。
+{: note}
 
 要创建新的密码套件以对 AEAD、ECDHE 和 ECDSA 密码划分优先级，请执行以下过程：
 

@@ -6,6 +6,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: cache, enable, redirect, capabilities
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -15,6 +19,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 啟用快取重新導向及負載平衡功能
 {: #enable-cache-redirection-and-load-balancing-capabilities}
@@ -27,6 +34,6 @@ lastupdated: "2018-11-12"
 
 	視需要啟用任何其他特性。
 
-2. 接下來，移至**系統 > 設定 > 配置基本特性**，然後啟用**負載平衡**（如果尚未啟用），再按一下**確定**。 
+2. 接下來，移至**系統 > 設定 > 配置基本特性**，然後啟用**負載平衡**（如果尚未啟用），再按一下**確定**。
 
 	視需要啟用任何其他特性。

@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, ssl, security, create, apply, cipher, suite
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 新規の暗号スイートの作成と適用
 {: #create-and-apply-a-new-cipher-suite}
@@ -26,7 +33,8 @@ SSL 暗号スイートおよびその他のベスト・プラクティスの詳�
 * [SSL および TLS のデプロイメントに関するベスト・プラクティス (SSL and TLS Deployment Best Practices)![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices#23-use-secure-cipher-suites){:new_window}
 * [NetScaler 上で ECC をセットアップする方法 (How Do I Setup ECC on NetScaler?)![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://support.citrix.com/article/CTX205289){:new_window}
 
-**注:** このトピックでは、SSL 暗号用の特定の構成および必要な構成について重点的に説明します。 上記のリンクでは、SSL 操作を最適化するために適用できる追加設定に関する情報を提供します。
+このトピックでは、SSL 暗号の具体的な構成および必要な構成について焦点を当てます。上記のリンクでは、SSL 操作を最適化するために適用できる追加設定に関する情報が記載されています。
+{: note}
 
 AEAD、ECDHE、および ECDSA 暗号を優先順位付けする新しい暗号スイートを作成するには、以下の手順を実行します。
 
@@ -104,7 +112,8 @@ AEAD、ECDHE、および ECDSA 暗号を優先順位付けする新しい暗号�
  	Done
  	```
 
-3.	仮想サーバーからデフォルトの暗号スイートをアンバインドし、上記のステップで作成したカスタム・グループをバインドします。	
+3.	仮想サーバーからデフォルトの暗号スイートをアンバインドし、上記のステップで作成したカスタム・グループをバインドします。
+
 	```
 	unbind ssl vserver https_vip2 -cipherName DEFAULT
 
@@ -114,7 +123,7 @@ AEAD、ECDHE、および ECDSA 暗号を優先順位付けする新しい暗号�
 	```
 
 	上記のコマンドの構文は次のとおりです。
-	
+
 	```
 	unbind ssl cipher <cipherGroupName> -cipherName <string>
 	bind ssl vserver <vServerName> -cipherName <string>
@@ -122,6 +131,7 @@ AEAD、ECDHE、および ECDSA 暗号を優先順位付けする新しい暗号�
 	```
 
 4.	仮想サーバーへの変更を確認します。
+
 	```
 	> show ssl vserver https_vip2
 
@@ -135,7 +145,10 @@ AEAD、ECDHE、および ECDSA 暗号を優先順位付けする新しい暗号�
  	Done
 	```
 
-5.	(オプション) ユーザーが (HTTPS 要求ではなく) HTTP 要求を作成した場合に、ユーザーをセキュアな Web サイトにリダイレクトするために、HTTP リダイレクトを使用可能にすることができます。構成の説明については、[NetScaler で HTTP から HTTPS へのリダイレクトを構成する方法 (How to Configure HTTP to HTTPS Redirection on NetScaler) ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://support.citrix.com/article/CTX201201){:new_window} を参照してください。
+5.	(オプション) ユーザーが (HTTPS 要求ではなく) HTTP 要求を作成した場合に、ユーザーをセキュアな Web サイトにリダイレクトするために、HTTP リダイレクトを使用可能にすることができます。
+
+	構成の説明については、[NetScaler で HTTP から HTTPS へのリダイレクトを構成する方法 (How to Configure HTTP to HTTPS Redirection on NetScaler) ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://support.citrix.com/article/CTX201201){:new_window} を参照してください。
+
 6.	Web ブラウザーを開いて FQDN を入力し、HTTPS 接続をテストします。 サイトは、Citrix VPX の背後にある HTTP サービスによってレンダリングされたコンテンツをロードするはずです。
 
 	ブラウザー内の URL の横にあるパッドロック・アイコンをクリックして証明書情報を表示し、証明書の情報を確認することもできます。

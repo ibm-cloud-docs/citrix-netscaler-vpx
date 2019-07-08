@@ -6,6 +6,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: order, vpx, setup
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -15,6 +19,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 订购 Citrix NetScaler VPX 设备
 {: #order-the-citrix-netscaler-vpx-appliance}

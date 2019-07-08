@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, ssl, install, ssl, certificate, security
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:pre: .pre}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:table: .aria-labeledby="caption"}
 
 # SSL 인증서 설치
@@ -46,7 +53,8 @@ lastupdated: "2018-11-12"
 
 	여기서, `keyName`은 CMU 유틸리티를 사용하여 IBM© Hardware Security Module(HSM)에 작성된 키의 이름입니다. `serialNum` 매개변수는 문제가 되는 파티션의 일련 번호입니다. `password` 비밀번호는 이전과 같이 키가 존재하는 파티션의 비밀번호입니다.
 
-	**참고:** `Internal error` 메시지는 이 단계를 완료하는 데 걸리는 시간이 증가함에 따라 표시됩니다. 키는 올바르게 추가되어야 합니다. 그러나 수신된 기타 오류 메시지는 처리되어야 합니다.
+	이 단계의 완료에 걸리는 시간의 증가 때문에 `Internal error` 메시지가 예상됩니다. 키는 올바르게 추가되어야 합니다. 그러나 수신된 기타 오류 메시지는 처리되어야 합니다.
+  {: note}
 
 3.	키가 추가되었는지 확인하십시오.
 

@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, security, keys, csr
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Crear claves y generar la Solicitud de firma de certificado (CSR)
 {: #create-keys-and-generate-the-certificate-signing-request-csr-}
@@ -90,7 +97,7 @@ En esta subsección crearemos un par de claves que se utilizará para generar un
 	Command Result : 0 (Success)
 	```
 
-4.	Utilizando las claves creadas en el paso anterior, genere el CSR utilizando el programa de utilizada de CMU.
+4.	Utilizando las claves creadas en el paso anterior, genere la CSR utilizando el programa de utilizada de CMU.
 
 	Asegúrese de utilizar los valores correctos/adecuados para Nombre común (CN) y Dirección de correo electrónico (E); el primero debe coincidir con el FQDN que se utilizará en el DNS, un registro asociado con el servidor virtual/IP (VPX). El parámetro E se utilizará para enviar los detalles de aprovisionamiento de certificados después de que se solicite.
 

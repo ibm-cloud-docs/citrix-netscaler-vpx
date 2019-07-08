@@ -3,10 +3,17 @@ copyright:
   years: 1994, 2017
 
 lastupdated: "2018-11-12"
+
+keywords: order, vpx, overview
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Introduzione all'applicazione software Citrix NetScaler VPX
 {: #getting-started}
@@ -14,6 +21,7 @@ lastupdated: "2018-11-12"
 La distribuzione di un Citrix NetScaler VPX nella tua soluzione {{site.data.keyword.BluSoftlayer_notm}} accelera la distribuzione di applicazioni web, migliora le prestazioni e garantisce che le tue applicazioni e i tuoi servizi cloud rimangano ottimizzati, disponibili e protetti. Se hai dei carichi di lavoro impegnativi, come ad esempio giochi, big data e analisi, o dei cloud privati, Citrix NetScaler VPX può aiutarti a offrire la tua soluzione quando, dove e come serve di più ai tuoi utenti.
 
 ## Prima di cominciare
+{: #before-you-begin}
 Per iniziare ad utilizzare Citrix NetScaler VPX, dovrai conoscere le seguenti informazioni:
 
 * Le tue informazioni di accesso al Portale del cliente di IBM© Cloud
@@ -23,6 +31,7 @@ Per iniziare ad utilizzare Citrix NetScaler VPX, dovrai conoscere le seguenti in
 * La VLAN dove vuoi assegnare il programma di bilanciamento del carico.
 
 ## Ordine di un Citrix NetScaler VPX
+{: #ordering-a-citrix-netscaler-vpx}
 
 Per ordinare un'applicazione software Citrix NetScaler VPX, vai alla pagina degli ordini nel portale del cliente:
 
@@ -41,5 +50,6 @@ Per ordinare un'applicazione software Citrix NetScaler VPX, vai alla pagina degl
 11. Riesamina l'ordine, accetta i termini e fai clic su **Place Order**. L'applicazione software Citrix NetScaler VPX viene distribuita con le impostazioni da te selezionate.
 
 ## Operazioni successive
+{: #what-s-next}
 
 Puoi scoprire di più sulle [funzioni](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-about-citrix-netscaler-vpx) di Citrix Netscaler VPX, rivedi la [terminologia](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-citrix-netscaler-vpx-terminology) di Netscaler specifica o inizia la [configurazione](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-basic-load-balancing-configuration) del tuo Netscaler.

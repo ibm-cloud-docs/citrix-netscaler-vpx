@@ -3,10 +3,17 @@ copyright:
   years: 1994, 2017
 
 lastupdated: "2018-08-08"
+
+keywords: redirect, url, monitor, responder
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Reindirizzamento degli URL in un Citrix Netscaler VPX
 {: #redirecting-urls-in-a-citrix-netscaler-vpx}
@@ -21,7 +28,7 @@ Un metodo alternativo per eseguire un reindirizzamento per `http://` a `https://
 	```
 	Add lb monitor localhost_ping PING -LRTM ENABLED -destIP 127.0.0.1
 	```
-	
+
 2. Definisci un servizio fittizio con un IP che non verrà mai utilizzato (un indirizzo IP per un server a `1.1.1.1` che non sarà mai online).
 	```
 	Add service Always_UP_service 1.1.1.1 HTTP 80 -gslb NONE -maxClient 0 -maxReq 0 -cip ENABLED dummy -usip NO -sp OFF -cltTimeout 180 -svrTimeout 360 -CKA NO -TCPB NO -CMP YES
@@ -30,7 +37,7 @@ Un metodo alternativo per eseguire un reindirizzamento per `http://` a `https://
 	```
 	bind lb monitor localhost_ping Always_UP_service
 	```
-	
+
 4. Fai in modo che NetScaler sia sempre in ascolto sulla porta 80 su un server virtuale, associandolo al servizio che rimarrà sempre attivo.
 	```
 	add lb vserver http_to_htps_vserver HTTP w.x.y.z 80 -timeout 0 -cltTimeout 180
@@ -38,7 +45,7 @@ Un metodo alternativo per eseguire un reindirizzamento per `http://` a `https://
 	```
 	bind lb vserver http_to_htps_vserver Always_UP_service
 	```
-	
+
 5. Scrivi l'azione e la politica del responder per sostituire `http://` con `https://`.
 	```
 	add responder action http_to_https_actn redirect "\"https://\" + http.req.hostname.HTTP_URL_SAFE + http.REQ.URL.PATH_AND_QUERY.HTTP_URL_SAFE"
@@ -55,7 +62,7 @@ Un metodo alternativo per eseguire un reindirizzamento per `http://` a `https://
 	bind lb vserver http_to_htps_vserver -policyName http_to_https_pol -priority 1 -gotoPriorityExpression END
 	```
 8. Puoi confermare che sta funzionando come previsto utilizzando i programmi di utilità di riga di comando come ‘wget’ o ‘curl’ nel seguente modo:
-        
+
 	```
     wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
 

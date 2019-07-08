@@ -3,10 +3,17 @@ copyright:
   years: 1994, 2017
 
 lastupdated: "2017-11-02"
+
+keywords: setup, proxy, forward, vip, subnet
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 設定 Citrix Netscaler VPX 作為正向 Proxy
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
@@ -17,7 +24,8 @@ lastupdated: "2017-11-02"
 
 Proxy 一般會與防火牆合併使用，確保內部網路中的用戶端安全。
 
-## 步驟 1：要求在專用網路中使用的 VIP 
+## 步驟 1：要求在專用網路中使用的 VIP
+{: #step-1-request-vips-to-use-in-the-private-network}
 
 從 {{site.data.keyword.BluSoftlayer_notm}} 客戶入口網站中訂購 Citrix NetScaler VPX 負載平衡器時，假設正在要求反向 Proxy。系統會向要求者要求用作虛擬 IP (VIP) 的「公用」IP 數目。
 
@@ -32,11 +40,13 @@ Proxy 一般會與防火牆合併使用，確保內部網路中的用戶端安�
 * 支援團隊已將 VIP `10.114.27.0-3` 新增至 Citrix NetScaler VPX
 
 ## 步驟 2：在 Citrix NetScaler VPX 上啟用負載平衡及快取重新導向特性
+{: #step-2-enable-load-balancing-and-cache-redirect-features-on-the-citrix-netscaler-vpx}
 
 依預設，會停用 Citrix NetScaler VPX 負載平衡器上的負載平衡及快取重新導向特性；`enable ns feature cr lb` 指令會啟用它們。
 
 
 ## 步驟 3：建立正向 Proxy
+{: #step-3-create-the-forward-proxy}
 
 使用指令行，向 Citrix NetScaler VPX 發出下列指令。在我們的情境中，只會新增兩部 {{site.data.keyword.BluSoftlayer_notm}} DNS 伺服器的其中一部。  
 
@@ -63,8 +73,9 @@ set cr vserver vs_forward_cache -dnsVservername virtual_dns
 第 5 行告知正向 Proxy 虛擬伺服器使用虛擬 DNS 進行名稱解析。
 
 ## 配置用戶端
+{: #configuring-the-client}
 
-繼續自訂用戶端以使用正向 Proxy 之前，請確定您無法在用戶端上使用 Firefox 瀏覽器來到達公用網站（例如 `http://www.ibm.com`）。因為用戶端上應該沒有公用介面，所以此要求會失敗。 
+繼續自訂用戶端以使用正向 Proxy 之前，請確定您無法在用戶端上使用 Firefox 瀏覽器來到達公用網站（例如，http://www.ibm.com）。因為用戶端上應該沒有公用介面，所以此要求會失敗。
 
 下列範例會配置 Linux 用戶端。
 
@@ -95,6 +106,7 @@ IP 位址 `10.114.27.3` 是在步驟 1 中建立之轉遞快取的 IP 位址。
 此時，設定已完成，您可以從專用網路上隔離的資源來存取網際網路。
 
 ## 驗證設定
+{: #validating-the-setup}
 
 既然已將用戶端配置成使用正向 Proxy，請重試存取公用網站。要求現在應該會成功。
 
@@ -106,7 +118,7 @@ IP 位址 `10.114.27.3` 是在步驟 1 中建立之轉遞快取的 IP 位址。
 
 **show cr vserver**：顯示指定的快取重新導向虛擬伺服器，或所有已配置的快取重新導向虛擬伺服器。
 
-**stat cr vserver**：顯示快取重新導向 vserver 統計資料。
+**stat cr vserver：**顯示快取重新導向 Vserver 統計資料。
 
 在 Citrix 上配置基本正向 Proxy 相當直接明確。它提供一種方法，可將網際網路上資源的安全路徑提供給內部網路上的用戶端。它也可讓「網路管理者」維護網路的控制層次。
 

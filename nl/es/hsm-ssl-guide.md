@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, security, configure, tune, tuning, ssl, offload
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,15 +16,20 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Configuración y ajuste de la descarga SSL con Citrix Netscaler VPX
 {: #configuring-and-tuning-ssl-offload-with-citrix-netscaler-vpx}
 
 Esta guía paso a paso le dirige a través de la configuración y ajuste de la descarga SSL en Citrix Netscaler VPX; esto se lleva a cabo utilizando el certificado y el material criptográfico generado a través del enlace de HSM.
 
-**NOTA:** Esta guía paso a paso presupone que ha completado los pasos de [Despliegue y configuración de IBM© Hardware Security Module (HSM) con Citrix Netscaler VPX](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) para pedir y crear el emparejamiento VPX/HSM.
+Esta guía paso a paso presupone que ha completado los pasos de [Despliegue y configuración de IBM© Hardware Security Module (HSM) con Citrix Netscaler VPX](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) para pedir y crear el emparejamiento VPX/HSM.
+{: note}
 
 ## Acerca del despliegue
+{: #about-the-deployment}
 El despliegue se ha creado y probado con las especificaciones de componente siguientes:
 
 | Versión y compilación de NetScaler VPX	| Versión de software HSM | Versión de firmware de HSM | Versión de cliente HSM |
@@ -29,6 +38,8 @@ El despliegue se ha creado y probado con las especificaciones de componente sigu
 
 
 ## Topología lógica
+{: #logical-topology}
+
 En el diagrama siguiente se muestra el flujo de tráfico de red para el caso de uso de descarga SSL. Esto proporciona una perspectiva visual y lógica del enlace de confianza y de la configuración entre Citrix VPX y el dispositivo HSM.
 
 <img src="images/network-flows-logical-topology.jpg" alt="dibujo" style="width: 700px;"/>
@@ -36,6 +47,7 @@ En el diagrama siguiente se muestra el flujo de tráfico de red para el caso de 
 Si no está familiarizado con la descarga SSL, revise este artículo de [Citrix ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://docs.citrix.com/en-us/netscaler/12-1/ssl.html){:new_window}.
 
 ## Qué conseguirá
+{: #what-you-ll-accomplish}
 
 En esta guía paso a paso aprenderá a configurar el SSL para Citrix Netscaler VPX:
 
@@ -47,8 +59,9 @@ Tarea  | Descripción
 [Crear y aplicar una nueva suite de cifrado](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-and-apply-a-new-cipher-suite) | Cree una suite de cifrado que dé prioridad y preferencia a AEAD, ECDHE y ECDSA.
 
 ## Recursos adicionales
+{: #additional-resources}
 Los siguientes recursos adicionales puede ayudarle a sacar el máximo rendimiento de Citrix Netscaler VPX al utilizar IBM Hardware Security Module.
 
 * [NetScaler 12.1 Documentación del producto ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://docs.citrix.com/en-us/netscaler/12-1/){:new_window}
 * [Portal de soporte de Gemalto ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://supportportal.gemalto.com/csm?id=csm_index){:new_window}
-* [Soporte de IBM Cloud](https://{DomainName}/docs/get-support?topic=get-support-using-avatar){:new_window}
+* [Soporte de IBM Cloud](/docs/get-support?topic=get-support-using-avatar){:new_window}

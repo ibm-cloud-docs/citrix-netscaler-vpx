@@ -6,6 +6,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: order, vpx, setup
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -15,6 +19,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Solicitar o dispositivo Citrix NetScaler VPX
 {: #order-the-citrix-netscaler-vpx-appliance}
@@ -26,7 +33,7 @@ Em seu navegador, abra o [Portal do cliente ![Ícone de link externo](../../icon
 3. Selecione a oferta **Citrix NetScaler VPX** e clique em **Criar**.
 4. Selecione o data center e o dispositivo VPX preferencial - a versão do software, o nível de desempenho e a edição do recurso.
 
-	O recurso de redirecionamento de cache não está disponível com a edição Standard do VPX, portanto, selecione a edição do recurso Platinum. O portal também solicitará o número desejado de endereços IP públicos. Selecione um IP público (incluído gratuitamente em seu pedido), em seguida, clique em **Continuar**.
+	O recurso de redirecionamento de cache não está disponível na edição Standard do VPX, portanto, selecione a edição do recurso Platinum. O portal também solicitará o número desejado de endereços IP públicos. Selecione um IP público (incluído gratuitamente em seu pedido), em seguida, clique em **Continuar**.
 
 5. Na próxima tela, forneça as informações solicitadas sobre seus endereços IP.
 6. Revise a ordem de compra, aceite o contrato de serviço e clique em **Fazer pedido**.

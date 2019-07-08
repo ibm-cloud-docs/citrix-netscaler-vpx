@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: security, hsm, ntl, certificate
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # NTL(Network Trust Link) 설정
 {: #establish-a-network-trust-link-ntl-}
@@ -115,7 +122,7 @@ NTL을 설정하려면 다음 프로시저를 수행하십시오.
 	client register -client <client_name> -ip <client_IP_address>
 	```
 
-	클라이언트 이름은 IBM© Cloud에 지정되고 사용된 ID와 일치할 필요가 없습니다. 그러나 이름이 계속해서 일치하는 것이 좋습니다. 
+	클라이언트 이름은 IBM© Cloud에 지정되고 사용된 ID와 일치할 필요가 없습니다. 그러나 이름이 계속해서 일치하는 것이 좋습니다.
 
 6. 클라이언트가 추가되었는지 확인하십시오.
 
@@ -214,4 +221,4 @@ NTL을 설정하려면 다음 프로시저를 수행하십시오.
 	root@IBMADC690867-s6dr# touch /var/safenet/safenet_is_enrolled
 	```
 
-이제 NTL이 설정됩니다.
+이제 NTL(Network Trust Link)이 설정되었습니다.

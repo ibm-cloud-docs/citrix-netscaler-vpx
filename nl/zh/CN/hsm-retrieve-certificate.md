@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, security, retrieve, transfer, certificate
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 检索和转移证书
 {: #retrieve-and-transfer-the-certificate}
@@ -24,6 +31,6 @@ lastupdated: "2018-11-12"
 
 2. 将该证书文件复制到 Citrix NetScaler VPX 中的 `/nsconfig/ssl` 目录。
 
-<img src="images/11-transfer-certificate.png" alt="图样" style="width: 600px;"/>
+  <img src="images/11-transfer-certificate.png" alt="图样" style="width: 600px;"/>
 
 现在，Citrix Netscaler VPX 现在已准备就绪，可将证书合并到使用 SSL 的负载均衡部署中。

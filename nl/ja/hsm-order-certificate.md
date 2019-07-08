@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, security, certificate, order
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -13,6 +17,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # SSL 証明書の注文
 {: #order-an-ssl-certificate}

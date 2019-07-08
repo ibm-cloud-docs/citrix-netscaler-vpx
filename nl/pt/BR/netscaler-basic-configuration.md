@@ -2,10 +2,17 @@
 copyright:
   years: 1994, 2017
 lastupdated: "2018-11-12"
+
+keywords: basics, configure, configuration, gui, pool
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Configuração básica do balanceamento de carga
 {: #basic-load-balancing-configuration}
@@ -18,13 +25,13 @@ Considere uma empresa que tem um website básico de comunidade social no qual os
 4. O NetScaler então transmite o tráfego para um dos servidores no conjunto de servidores, com base no método de balanceamento definido (round-robin, persistência de IP e assim por diante).
 5. O servidor então aceita o tráfego, o usuário se conecta e efetua login.
 
-Para realizar isso, o NetScaler precisaria ser configurado para manipular esse tráfego. Como o VIP, o IP do servidor DNS e o SNIP já estão configurados, isso simplifica a configuração. 
+Para realizar isso, o NetScaler precisaria ser configurado para manipular esse tráfego. Como o VIP, o IP do servidor DNS e o SNIP já estão configurados, isso simplifica a configuração.
 
 Na GUI do NetScaler, na tela Configuração, expanda **Gerenciamento de tráfego** no lado esquerdo. Expanda a subseção intitulada **Balanceamento de carga**. Em seguida, informe ao NetScaler quais servidores de destino serão incluídos na política de balanceamento de carga, seguindo este procedimento:
 
 1. Em Balanceamento de carga, clique em **Servidores**.
 2. Clique em **Incluir**.
-3. Insira o Nome do servidor (por exemplo, Web1).
+3. Insira o nome do servidor (por exemplo, Web1).
 4. Insira o endereço IP do servidor.
 5. Deixe o campo **Domínio de tráfego** em branco, pois você só está preocupado em usar o domínio de tráfego padrão neste cenário.
 6. Insira os comentários desejados sobre esse servidor.
@@ -32,7 +39,8 @@ Na GUI do NetScaler, na tela Configuração, expanda **Gerenciamento de tráfego
 
 Repita este procedimento para todos os servidores no conjunto.  
 
-**DICA:** para manter os servidores facilmente identificáveis, use uma convenção de nomenclatura semelhante para servidores dentro do mesmo conjunto (por exemplo, Web1, Web2, Web3 e assim por diante).
+Para que os servidores sejam facilmente identificáveis, use uma convenção de nomenclatura semelhante para servidores dentro do mesmo conjunto (por exemplo, Web1, Web2, Web3 e assim por diante).
+{: tip}
 
 Em seguida, crie seus Serviços. Você estará criando um Serviço para cada Servidor recém-inserido. O Serviço é o que configura a conexão entre o NetScaler e os servidores no conjunto. Cada serviço tem um nome e especifica um endereço IP, uma porta e o tipo de dados servido.
 
@@ -59,4 +67,5 @@ Agora, ligue os serviços criados para seu Virtual Server.
 
 Você criou um conjunto e uma política de balanceamento de carga para seu website.
 
-**OBSERVAÇÃO:** para saber mais sobre a configuração do dispositivo Citrix NetScaler VPX, visite a [página de documentação do Citrix ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://docs.citrix.com/en-us/netscaler.html). Para obter assistência adicional, entre em contato com o suporte e vendas do {{site.data.keyword.BluSoftlayer_notm}}.
+Para saber mais sobre a configuração do dispositivo Citrix NetScaler VPX, visite a [página da documentação do Citrix ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://docs.citrix.com/en-us/netscaler.html). Para obter assistência adicional, entre em contato com o suporte e vendas do {{site.data.keyword.BluSoftlayer_notm}}.
+{: note}

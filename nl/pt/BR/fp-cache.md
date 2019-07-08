@@ -6,6 +6,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: cache, enable, redirect, capabilities
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -15,6 +19,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Ativar recursos de Redirecionamento de cache e de Balanceamento de carga
 {: #enable-cache-redirection-and-load-balancing-capabilities}
@@ -27,6 +34,6 @@ Para ativar o redirecionamento de cache e o balanceamento de carga para o dispos
 
 	Ative todos os recursos adicionais, conforme necessário.
 
-2. Em seguida, acesse **Sistema > Configurações > Configurar recursos básicos** e ative o **Balanceamento de carga** (se ele ainda não estiver) e clique em **OK**. 
+2. Em seguida, acesse **Sistema > Configurações > Configurar recursos básicos** e ative o **Balanceamento de carga** (se ele ainda não estiver) e clique em **OK**.
 
 	Ative todos os recursos adicionais, conforme necessário.

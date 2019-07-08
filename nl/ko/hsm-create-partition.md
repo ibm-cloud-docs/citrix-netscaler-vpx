@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: partition, create, security, hsm
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 파티션 작성
 {: #create-a-partition}
@@ -80,7 +87,8 @@ lastupdated: "2018-11-12"
 
 4.	새 파티션 작성:
 
-	**참고:** 이 단계에서 정의된 비밀번호는 나중에 Citrix VPX HSM 클라이언트 프로세스에서 오브젝트를 작성하고 이 오브젝트와 연관시키는 데 사용됩니다. 나중에 참조하기 위해 이 비밀번호를 추적하십시오. 또한 초기화 프로세스 중에 정의된 복제 도메인을 사용해야 합니다.
+	 이 단계에서 정의된 비밀번호는 나중에 Citrix VPX HSM 클라이언트 프로세스에서 오브젝트를 연관시키고 작성하는 데 사용됩니다. 나중에 참조하기 위해 이 비밀번호를 추적하십시오. 또한 초기화 프로세스 중에 정의된 복제 도메인을 사용해야 합니다.
+   {: note}
 
 	```
 	[jpmongehsm2] lunash:>partition create -partition partition6

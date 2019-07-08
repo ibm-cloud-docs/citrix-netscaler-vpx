@@ -3,10 +3,17 @@ copyright:
   years: 1994, 2017
 
 lastupdated: "2017-11-02"
+
+keywords: setup, proxy, forward, vip, subnet
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Configurar Citrix Netscaler VPX como proxy de reenvío
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
@@ -17,7 +24,8 @@ Cuando un cliente en la red interna inicia una solicitud, la dirección IP del p
 
 Normalmente, se combina un proxy con un cortafuegos para garantizar la seguridad de los clientes en una red interna.
 
-## Paso 1: VIP de solicitud para utilizar en la red privada 
+## Paso 1: VIP de solicitud para utilizar en la red privada
+{: #step-1-request-vips-to-use-in-the-private-network}
 
 Cuando se pide un equilibrador de carga de Citrix NetScaler VPX desde el Portal de clientes de {{site.data.keyword.BluSoftlayer_notm}}, se presupone que se está solicitando un proxy inverso. Se le solicitará al solicitante el número de direcciones IP "públicas" a utilizar como IP virtual (VIP).
 
@@ -32,11 +40,13 @@ En nuestro ejemplo hemos solicitado una subred `/29`, que ha dado lugar a lo sig
 * El equipo de soporte ha añadido las VIP `10.114.27.0-3` a Citrix NetScaler VPX
 
 ## Paso 2: Habilitar las características de equilibrio de carga y de redirección de memoria caché en Citrix NetScaler VPX
+{: #step-2-enable-load-balancing-and-cache-redirect-features-on-the-citrix-netscaler-vpx}
 
 De forma predeterminada, las características de equilibrio de carga y redirección de la memoria caché en el equilibrador de carga de Citrix NetScaler VPX están inhabilitadas. El mandato `enable ns feature cr lb` las habilita.
 
 
 ## Paso 3: Crear el proxy de reenvío
+{: #step-3-create-the-forward-proxy}
 
 Utilice la línea de mandatos para emitir los mandatos siguientes en el Citrix NetScaler VPX. En nuestro caso de ejemplo solo está habilitado uno de los dos servidores DNS de {{site.data.keyword.BluSoftlayer_notm}}.  
 
@@ -63,8 +73,9 @@ La línea 4 enlaza la VIP con el servidor "real". Todas las solicitudes de DNS a
 La línea 5 indica al servidor virtual de proxy de reenvío que utilice el DNS virtual para la resolución de nombres.
 
 ## Configuración del cliente
+{: #configuring-the-client}
 
-Antes de continuar personalizando el cliente para utilizar el proxy de reenvío, asegúrese de que no puede alcanzar un sitio público (por ejemplo, http://www.ibm.com) utilizando el navegador Firefox en el cliente. Dado que no habrá interfaz pública en el cliente, esta solicitud debe fallar. 
+Antes de continuar personalizando el cliente para utilizar el proxy de reenvío, asegúrese de que no puede alcanzar un sitio público (por ejemplo, http://www.ibm.com) utilizando el navegador Firefox en el cliente. Dado que no habrá interfaz pública en el cliente, esta solicitud debe fallar.
 
 El ejemplo siguiente configura un cliente Linux.
 
@@ -95,6 +106,7 @@ La dirección IP `10.114.27.3` es la dirección IP de la memoria caché de reenv
 En este punto, la configuración ha finalizado y puede acceder a Internet desde el recurso aislado en la red privada.
 
 ## Validación de la configuración
+{: #validating-the-setup}
 
 Ahora que el cliente está configurado para utilizar el proxy de reenvío, pruebe a acceder a un sitio público. La solicitud ahora debe ser satisfactoria.
 

@@ -3,10 +3,17 @@ copyright:
   years: 1994, 2017
 
 lastupdated: "2017-11-02"
+
+keywords: setup, proxy, forward, vip, subnet
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Configurando o Citrix NetScaler VPX como um proxy de encaminhamento
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
@@ -17,7 +24,8 @@ Quando um cliente na rede interna iniciar uma solicitação, o endereço IP do p
 
 Em geral, um proxy é combinado com um firewall para garantir a segurança de clientes em uma rede interna.
 
-## Etapa 1: Solicitar VIPs a serem usados na Rede privada 
+## Etapa 1: Solicitar VIPs a serem usados na Rede privada
+{: #step-1-request-vips-to-use-in-the-private-network}
 
 Quando um balanceador de carga Citrix NetScaler VPX é pedido no portal do cliente do {{site.data.keyword.BluSoftlayer_notm}}, supõe-se que um proxy reverso esteja sendo solicitado. O solicitante será solicitado a informar o número de IPs "públicos" a serem usados como IPs virtuais (VIPs).
 
@@ -32,11 +40,13 @@ Em nosso exemplo, solicitamos uma sub-rede `/29`, que resultou no seguinte:
 * VIPs `10.114.27.0-3` foram incluídos no Citrix NetScaler VPX pela equipe de suporte
 
 ## Etapa 2: Ativar os recursos Balanceamento de carga e Redirecionamento de cache no Citrix NetScaler VPX
+{: #step-2-enable-load-balancing-and-cache-redirect-features-on-the-citrix-netscaler-vpx}
 
 Por padrão, os recursos de balanceamento de carga e redirecionamento de cache no balanceador de carga Citrix NetScaler VPX ficam desativados; o comando `enable ns feature cr lb` ativa-os.
 
 
 ## Etapa 3: Criar o proxy de encaminhamento
+{: #step-3-create-the-forward-proxy}
 
 Use a linha de comandos para emitir os comandos a seguir no Citrix NetScaler VPX. Em nosso cenário, somente um dos dois servidores DNS do {{site.data.keyword.BluSoftlayer_notm}} foi incluído.  
 
@@ -63,8 +73,9 @@ A linha 4 liga o VIP para o servidor "real". Todas as solicitações do DNS para
 A linha 5 informa ao servidor virtual do proxy de encaminhamento para usar o DNS virtual para resolução do nome.
 
 ## Configurando o cliente
+{: #configuring-the-client}
 
-Antes de continuar a customizar o cliente para usar o proxy de encaminhamento, certifique-se de que não seja possível chegar a um site público (por exemplo, http://www.ibm.com) usando o navegador Firefox no cliente. Como não deve haver nenhuma interface pública no cliente, essa solicitação deve falhar. 
+Antes de continuar a customizar o cliente para usar o proxy de encaminhamento, certifique-se de que não seja possível chegar a um site público (por exemplo, http://www.ibm.com) usando o navegador Firefox no cliente. Como não deve haver nenhuma interface pública no cliente, essa solicitação deve falhar.
 
 O exemplo a seguir configura um cliente Linux.
 
@@ -95,6 +106,7 @@ O endereço IP `10.114.27.3` é o endereço IP do cache de encaminhamento criado
 Neste ponto, a configuração está completa e é possível acessar a Internet por meio do recurso isolado na rede privada.
 
 ## Validando a configuração
+{: #validating-the-setup}
 
 Agora que o cliente está configurado para usar o proxy de encaminhamento, tente acessar um site público novamente. A solicitação deve agora ser bem-sucedida.
 
@@ -106,7 +118,7 @@ Os comandos de exibição a seguir podem ser usados para validar o estado do pro
 
 **show cr vserver:** exibe um servidor virtual de redirecionamento de cache especificado ou todos os servidores virtuais de redirecionamento de cache configurados.
 
-**stat cr vserver:** exibe as estatísticas de redirecionamento de cache do vserver.
+**stat cr vserver:** Exibe as estatísticas do Vserver de redirecionamento de cache.
 
 A configuração de um proxy de encaminhamento básico no Citrix é bastante simples. Ela fornece uma maneira de dar aos clientes em uma rede interna um caminho seguro para os recursos na Internet. Ela também permite que o Administrador da rede mantenha um nível de controle na rede.
 

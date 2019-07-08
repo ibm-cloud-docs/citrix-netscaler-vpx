@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: security, hsm, ntl, certificate
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,11 +16,14 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # ネットワーク・トラスト・リンク (NTL) の確立
 {: #establish-a-network-trust-link-ntl-}
 
-ネットワーク・トラスト・リンク (NTL) は Hardware Security Module (HSM) および通信するクライアントのセキュア・チャネルです。NTL は両方向で証明書を使用して、HSM サーバーのパーティションとクライアントの間で送信されるデータを認証して暗号化します。
+ネットワーク・トラスト・リンク (NTL) は Hardware Security Module (HSM) および通信するクライアントのセキュア・チャネルです。 NTL は両方向で証明書を使用して、HSM サーバーのパーティションとクライアントの間で送信されるデータを認証して暗号化します。
 
 すべてのプロセスとユーティリティーが正しく機能することを保証するために、NTLS および NTLA 両方の (双方向の) プロトコルで TCP ポート 1792 がアクセス可能であることがトラスト・リンクで必要となることに注意してください。
 
@@ -214,4 +221,4 @@ NTL を確立するには、以下の手順を実行します。
 	root@IBMADC690867-s6dr# touch /var/safenet/safenet_is_enrolled
 	```
 
-これで NTL が確立されました。
+これでネットワーク・トラスト・リンクが確立されました。

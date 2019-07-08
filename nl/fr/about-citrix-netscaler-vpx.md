@@ -1,21 +1,31 @@
 ---
+
 copyright:
   years: 1994, 2018
-  
+
 lastupdated: "2018-11-12"
+
+keywords: about, vpx, features, overview
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # A propos de Citrix NetScaler VPX
 {: #about-citrix-netscaler-vpx}
 
-Le Citrix NetScaler VPX est un dispositif (appliance) logiciel virtuel dédié qui assure un équilibrage de charge sur le réseau IBM© Cloud public et privé. 
+Le Citrix NetScaler VPX est un dispositif (appliance) logiciel virtuel dédié qui assure un équilibrage de charge sur le réseau IBM© Cloud public et privé.
 
 Le déploiement d'un Citrix NetScaler VPX dans votre solution {{site.data.keyword.BluSoftlayer_notm}} accélère la mise à disposition des applications Web, améliore les performances et offre la garantie que vos applications et services cloud seront toujours optimisés, disponibles et sûrs. Si vous avez des charges de travail importantes (jeux en ligne, Big Data, analytique, etc.) ou des clouds privés, le Citrix NetScaler VPX peut vous aider à fournir votre solution aux utilisateurs où et quand ils en ont le plus besoin.
 
 ## Caractéristiques et fonctionnalités
+{: #features}
 
 * Seul produit capable d'équilibrer la charge du trafic à la fois sur le réseau public et un réseau privé
 * Gestion par interface graphique (GUI) ou ligne de commande (CLI)
@@ -50,21 +60,26 @@ Le Citrix NetScaler VPX peut être déployé à la demande, en seulement 15 minu
 {{site.data.keyword.BluSoftlayer_notm}} offre le dispositif (appliance) virtuel NetScaler VPX avec un accès root complet et illimité.   
 
 ## Sécurité des applications
+{: #application-security}
 
 Pour sécuriser le trafic de leurs applications, les clients peuvent tirer parti de fonctionnalités de sécurité, telles que Application Content Filtering (filtrage de contenu), Priority Queuing (mise en file d'attente par priorité) et un pare-feu applicatif (Web Application Firewall).
 
 ## Filtrage du trafic
+{: #traffic-filtering}
 
 Le Citrix NetScaler VPX filtre les demandes des utilisateurs finaux aux serveurs et les réponses des serveurs aux utilisateurs finaux. Une fonctionnalité d'apprentissage intégrée au pare-feu applicatif permet de profiler les sessions en temps réel et de déterminer s'il faut ou non autoriser le trafic.
 
 ## Rapports PCI-DSS
+{: #pci-dss-reporting}
 
 PCI-DSS est une norme de sécurisation des données de cartes de paiement. Elle consiste en douze critères auxquels les sociétés et organismes amenés à traiter des paiements en ligne par carte bancaire doivent répondre. Le rapport PCI-DSS se compose de la liste des critères pertinents pour votre configuration de pare-feu applicatif. Il indique aussi si, dans son état actuel, votre configuration répond à chaque critère et suggère des solutions pour configurer le pare-feu applicatif de sorte qu'il remplisse toutes les conditions.
 
 ## Équilibrage de charge global (GSLB)
+{: #global-load-balancing-gslb-}
 
-Avec la fonctionnalité GSLB, l'édition Platinum de NetScaler étend l'équilibreur de charge au-delà des frontières locales du centre de données. 
+Avec la fonctionnalité GSLB, l'édition Platinum de NetScaler étend l'équilibreur de charge au-delà des frontières locales du centre de données.
 
 ## Extension de votre centre de données
+{: #extend-your-datacenter}
 
-Dans l'édition Platinum de NetScaler, la fonctionnalité CloudBridge Connector vous offre un moyen simple d'étendre votre centre de données à {{site.data.keyword.BluSoftlayer_notm}} avec des menus pilotés par des assistants. 
+Dans l'édition Platinum de NetScaler, la fonctionnalité CloudBridge Connector vous offre un moyen simple d'étendre votre centre de données à {{site.data.keyword.BluSoftlayer_notm}} avec des menus pilotés par des assistants.

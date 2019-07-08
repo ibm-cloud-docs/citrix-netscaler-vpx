@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, security, initialize
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # IBM Hardware Security Module (HSM) の初期化
 {: #initialize-ibm-hardware-security-module-hsm-}
@@ -20,11 +27,11 @@ lastupdated: "2018-11-12"
 
 デバイスを初期化するには、以下のステップに従ってください。
 
-1.	SSH を使用して、**「デバイス」 > 「デバイス・リスト」 > 「HSM 名の展開 (Expand HSM name)」**の下のコントロール・ポータルにリストされている資格情報で IBM© Hardware Security Module デバイスに接続します。
+1.	コントロール・ポータルの**「デバイス」>「デバイス・リスト」>「HSM 名の展開 (Expand HSM name)」**下にリストされる資格情報を使用して SSH で IBM© Hardware Security Module デバイスに接続します。
 
 	もしくは、公開鍵認証を使用することもできます。 詳しくは、[アプライアンス管理ガイド (Appliance Administration Guide) (38 ページ) ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/appliance_administration_guide.pdf){:new_window}を参照してください。
 
-	**注:** SSH アクセスは通常、デフォルトで有効に設定され、許可されています。 SSH での接続に問題がある場合は、ご使用のインフラストラクチャーのルーティングとセキュリティーを確認してください。
+	SSH アクセスは、通常、デフォルトで有効であり、許可されています。SSH による接続に問題がある場合は、インフラストラクチャーのルーティングとセキュリティーを確認してください。{: note}
 
 2. `hsm init` コマンドを実行します。
 
@@ -52,7 +59,7 @@ lastupdated: "2018-11-12"
 	コマンド結果 : 0 (成功)
   	```
 
-	使用された構文は次のようになります。`hsm init -l <hsmlabel>`
+	使用する構文: `hsm init -l <hsmlabel>`
 
 `-l` パラメーターまたはラベルは、HSM に ID を割り当てる際に使用したパラメーターです。これには、業務、管理者、またはその管理者が果たす役割に関する意味のあるテキストまたは説明を指定できます。 HSM 管理者パスワードは HSM セキュリティー担当者 (SO) の指定パスワードになり、基本的には暗号オブジェクトの作成と構成、および HSM 環境の変更に必要とされるプロファイルです。
 

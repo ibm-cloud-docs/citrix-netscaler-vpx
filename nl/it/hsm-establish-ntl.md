@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: security, hsm, ntl, certificate
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Come stabilire un NTL (Network Trust Link)
 {: #establish-a-network-trust-link-ntl-}
@@ -115,7 +122,7 @@ Per stabilire il tuo NTL, esegui la seguente procedura:
 	client register -client <client_name> -ip <client_IP_address>
 	```
 
-	Il nome client non deve corrispondere all'identificativo assegnato e utilizzato da IBM© Cloud, tuttavia, si consiglia di mantenere i nomi coerenti. 
+	Il nome client non deve corrispondere all'identificativo assegnato e utilizzato da IBM© Cloud, tuttavia, si consiglia di mantenere i nomi coerenti.
 
 6. Conferma che il client è stato aggiunto:
 
@@ -214,4 +221,4 @@ Per stabilire il tuo NTL, esegui la seguente procedura:
 	root@IBMADC690867-s6dr# touch /var/safenet/safenet_is_enrolled
 	```
 
-Ora hai stabilito il tuo NTL.
+Ora hai stabilito il tuo NTL (Network Trust Link).

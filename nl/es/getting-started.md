@@ -3,10 +3,17 @@ copyright:
   years: 1994, 2017
 
 lastupdated: "2018-11-12"
+
+keywords: order, vpx, overview
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Iniciación al dispositivo de software de Citrix NetScaler VPX
 {: #getting-started}
@@ -14,6 +21,7 @@ lastupdated: "2018-11-12"
 El despliegue de Citrix NetScaler VPX en la solución de {{site.data.keyword.BluSoftlayer_notm}} acelera la entrega de aplicaciones web, mejora el rendimiento y garantiza que sus aplicaciones y servicios en la nube están optimizados, disponibles y seguros. Si tiene cargas de trabajo difíciles, como por ejemplo juegos, Big Data y análisis, o nubes privadas, Citrix NetScaler VPX puede ayudarle a ofrecer su solución cuando, donde y cómo los usuarios más lo necesiten.
 
 ## Antes de empezar
+{: #before-you-begin}
 Para empezar con Citrix NetScaler VPX, necesitará conocer la siguiente información:
 
 * La información de inicio de sesión del Portal de clientes de IBM© Cloud
@@ -23,6 +31,7 @@ Para empezar con Citrix NetScaler VPX, necesitará conocer la siguiente informac
 * La VLAN donde desea asignar el equilibrador de carga
 
 ## Solicitud de un Citrix NetScaler VPX
+{: #ordering-a-citrix-netscaler-vpx}
 
 Para solicitar un dispositivo de software Citrix NetScaler VPX, vaya a la página de pedido en el Portal de clientes:
 
@@ -38,8 +47,9 @@ Para solicitar un dispositivo de software Citrix NetScaler VPX, vaya a la págin
 9. Especifique la información de contacto.
 10. Seleccione su VLAN.
 	Para minimizar la latencia y garantizar la utilización optimizada de los recursos de red, asigne el Citrix NetScaler VPX a la misma VLAN que los servidores donde se distribuirá el tráfico.
-11. Revise el pedido, acepte los términos y pulse **Realizar pedidos**. El dispositivo de software de Citrix NetScaler VPX se despliega con los valores seleccionados.
+11. Revise el pedido, acepte los términos y pulse **Realizar pedido**. El dispositivo de software de Citrix NetScaler VPX se despliega con los valores seleccionados.
 
 ## Qué hacer a continuación
+{: #what-s-next}
 
 Encontrará más información sobre las [características](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-about-citrix-netscaler-vpx) de Citrix Netscaler VPX, revisar [terminología](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-citrix-netscaler-vpx-terminology) específica de Netscaler, o empezar a [configurar](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-basic-load-balancing-configuration) Netscaler.

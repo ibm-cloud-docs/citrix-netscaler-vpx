@@ -3,10 +3,17 @@ copyright:
   years: 1994, 2017
 
 lastupdated: "2017-11-02"
+
+keywords: setup, proxy, forward, vip, subnet
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 전달 프록시로 Citrix Netscaler VPX 설정
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
@@ -17,7 +24,8 @@ lastupdated: "2017-11-02"
 
 일반적으로 프록시는 방화벽과 결합되어 내부 네트워크에 있는 클라이언트의 보안을 보장합니다.
 
-## 1단계: 사설 네트워크에서 사용할 VIP 요청 
+## 1단계: 사설 네트워크에서 사용할 VIP 요청
+{: #step-1-request-vips-to-use-in-the-private-network}
 
 {{site.data.keyword.BluSoftlayer_notm}} 고객 포털에서 Citrix NetScaler VPX 로드 밸런서를 주문하면 역방향 프록시를 요청하는 것으로 간주됩니다. 요청자에게 가상 IP(VIP)로 사용될 "공인" IP의 수를 묻습니다.
 
@@ -32,11 +40,13 @@ lastupdated: "2017-11-02"
 * 지원 팀에서 VIP `10.114.27.0-3`을 Citrix NetScaler VPX에 추가함
 
 ## 2단계: Citrix NetScaler VPX에서 로드 밸런싱 및 캐시 경로 재지정 기능 사용
+{: #step-2-enable-load-balancing-and-cache-redirect-features-on-the-citrix-netscaler-vpx}
 
 기본적으로 Citrix NetScaler VPX 로드 밸런서의 로드 밸런싱 및 캐시 경로 재지정 기능이 사용 안함으로 설정됩니다. `enable ns feature cr lb` 명령을 통해 이러한 기능을 사용으로 설정합니다.
 
 
 ## 3단계: 전달 프록시 작성
+{: #step-3-create-the-forward-proxy}
 
 명령행을 사용하여 Citrix NetScaler VPX에서 다음 명령을 실행하십시오. 이 시나리오에서는 두 개의 {{site.data.keyword.BluSoftlayer_notm}} DNS 서버 중 하나만 추가됩니다.  
 
@@ -63,8 +73,9 @@ set cr vserver vs_forward_cache -dnsVservername virtual_dns
 5행은 이름 분석을 위해 가상 DNS를 사용하도록 전달 프록시 가상 서버에 알립니다.
 
 ## 클라이언트 구성
+{: #configuring-the-client}
 
-전달 프록시를 사용하도록 클라이언트 사용자 정의를 계속하기 전에 클라이언트에서 Firefox 브라우저를 사용하여 공용 사이트(예: http://www.ibm.com) 에 연결할 수 없는지 확인하십시오. 클라이언트에는 공용 인터페이스가 없어야 하므로 이 요청이 실패해야 합니다. 
+전달 프록시를 사용하도록 클라이언트 사용자 정의를 계속하기 전에 클라이언트에서 Firefox 브라우저를 사용하여 공용 사이트(예: http://www.ibm.com) 에 연결할 수 없는지 확인하십시오. 클라이언트에는 공용 인터페이스가 없어야 하므로 이 요청이 실패해야 합니다.
 
 다음 예에서는 Linux 클라이언트를 구성합니다.
 
@@ -95,6 +106,7 @@ IP 주소 `10.114.27.3`은 1단계에서 작성된 전달 캐시의 IP 주소입
 이 시점에서 설정이 완료되며 사설 네트워크의 격리된 리소스에서 인터넷에 액세스할 수 있습니다.
 
 ## 설정 유효성 검증
+{: #validating-the-setup}
 
 클라이언트가 전달 프록시를 사용하도록 구성되었으므로 공용 사이트에 다시 액세스해 보십시오. 이제 요청이 성공해야 합니다.
 
@@ -106,7 +118,7 @@ IP 주소 `10.114.27.3`은 1단계에서 작성된 전달 캐시의 IP 주소입
 
 **show cr vserver:** 지정된 캐시 경로 재지정 가상 서버 또는 구성된 모든 캐시 경로 재지정 가상 서버를 표시합니다.
 
-**stat cr vserver:** 캐시 경로 재지정 vserver 통계를 표시합니다.
+**stat cr vserver:** 캐시 경로 재지정 Vserver 통계를 표시합니다.
 
 Citrix의 기본 전달 프록시 구성은 매우 간단합니다. 내부 네트워크의 클라이언트에게 인터넷의 리소스에 대한 보안 경로를 부여하는 방법을 제공합니다. 또한 네트워크 관리자가 네트워크에 대한 제어 레벨을 유지할 수 있도록 합니다.
 

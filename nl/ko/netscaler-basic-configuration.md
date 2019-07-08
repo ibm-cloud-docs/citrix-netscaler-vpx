@@ -2,10 +2,17 @@
 copyright:
   years: 1994, 2017
 lastupdated: "2018-11-12"
+
+keywords: basics, configure, configuration, gui, pool
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 기본 로드 밸런싱 구성
 {: #basic-load-balancing-configuration}
@@ -18,45 +25,47 @@ lastupdated: "2018-11-12"
 4. 그런 다음 NetScaler가 정의된 밸런싱 메소드(라우드 로빈, 지속성 IP 등)를 기반으로 서버 풀에 있는 서버 중 하나에 트래픽을 전달합니다.
 5. 그런 다음 서버가 트래픽을 허용하고 사용자가 연결하여 로그인합니다.
 
-이를 수행하려면 NetScaler가 이 트래픽을 처리하도록 구성되어야 합니다. VIP, DNS 서버의 IP 및 SNIP가 이미 구성되었으므로 이로 인해 구성이 간소화됩니다. 
+이를 수행하려면 NetScaler가 이 트래픽을 처리하도록 구성되어야 합니다. VIP, DNS 서버의 IP 및 SNIP가 이미 구성되었으므로 이로 인해 구성이 간소화됩니다.
 
-NetScaler GUI에서 Configuration 화면의 왼쪽에 있는 **Traffic Management**를 펼치십시오. **Load Balancing**이라는 제목의 하위 섹션을 펼치십시오. 그런 다음, 이 프로시저에 따라 로드 밸런싱 정책에 포함될 대상 서버를 NetScaler에 알리십시오.
+NetScaler GUI에서 구성 화면의 왼쪽에 있는 **트래픽 관리**를 펼치십시오. **로드 밸런싱**이라는 제목의 하위 섹션을 펼치십시오. 그런 다음, 이 프로시저에 따라 로드 밸런싱 정책에 포함될 대상 서버를 NetScaler에 알리십시오.
 
-1. Load Balancing 아래에서 **Servers**를 클릭하십시오.
-2. **Add**를 클릭하십시오.
-3. 서버의 Server Name(예: Web1)을 입력하십시오.
-4. 서버의 IP Address를 입력하십시오.
-5. 이 시나리오에서는 기본 트래픽 도메인만 사용되기 때문에 **Traffic Domain** 필드를 공백으로 두십시오.
+1. 로드 밸런싱 아래에서 **서버**를 클릭하십시오.
+2. **추가**를 클릭하십시오.
+3. 서버의 이름(예: Web1)을 입력하십시오.
+4. 서버의 IP 주소를 입력하십시오.
+5. 이 시나리오에서는 기본 트래픽 도메인만 사용되기 때문에 **트래픽 도메인** 필드를 공백으로 두십시오.
 6. 이 서버에 대한 원하는 주석을 입력하십시오.
-7. **Create**를 클릭하십시오.
+7. **작성**을 클릭하십시오.
 
 풀에 있는 모든 서버에 대해 이 프로시저를 반복하십시오.  
 
-**팁:** 서버를 쉽게 식별할 수 있도록 하려면 동일한 풀 내의 서버에 대해 유사한 이름 지정 규칙(예: Web1, Web2, Web3 등)을 사용하십시오.
+서버를 손쉽게 식별할 수 있도록 동일한 풀 내의 서버에 대해 유사한 이름 지정 규칙(예: Web1, Web2, Web3 등)을 사용하십시오.
+{: tip}
 
 다음으로 서비스를 작성하십시오. 방금 입력한 각 서버에 대한 서비스를 작성합니다. 서비스는 NetScaler와 풀에 있는 서버 간의 연결을 구성하는 것입니다. 각 서비스에는 이름이 있으며 IP 주소, 포트 및 제공되는 데이터의 유형이 지정됩니다.
 
-1. **Traffic Management > Load Balancing > Services**를 클릭하십시오.
-2. **Add**를 클릭하십시오.
+1. **트래픽 관리 > 로드 밸런싱 > 서비스**를 클릭하십시오.
+2. **추가**를 클릭하십시오.
 3. 동일한 정보를 활용하여 이전에 작성한 각 서버에 대한 서비스를 작성하십시오.
 
 다음으로 가상 서버를 작성하십시오. 가상 서버는 이전에 작성한 로드 밸런싱된 서버 및 서비스에 사용되는 VIP 간 일종의 가상 연결입니다.
 
-1. **Traffic Management > Load Balancing > Virtual Servers**를 클릭하십시오.
-2. **Add**를 클릭하십시오.
-3. 가상 서버의 Name을 지정하십시오.
-4. 밸런싱할 Protocol(HTTP)을 지정하십시오.
-5. IP Address Type을 기본값(IP Address)으로 두십시오. IP Address 필드는 모든 사용자의 시작점으로 사용할 VIP를 입력하는 위치입니다.
-6. Port를 지정하십시오. 기본 포트는 80입니다.
-7. **OK**를 클릭하십시오.
+1. **트래픽 관리 > 로드 밸런싱 > 가상 서버**를 클릭하십시오.
+2. **추가**를 클릭하십시오.
+3. 가상 서버의 이름을 지정하십시오.
+4. 밸런싱할 프로토콜(HTTP)을 지정하십시오.
+5. IP 주소 유형을 기본값(IP 주소)으로 두십시오. IP 주소 필드는 모든 사용자의 시작점으로 사용할 VIP를 입력하는 위치입니다.
+6. 포트를 지정하십시오. 기본 포트는 80입니다.
+7. **확인**을 클릭하십시오.
 
 이제 작성한 서비스를 가상 서버에 바인드하십시오.
 
-1. Virtual Servers 화면에서 **No Load Balancing Virtual Server Service Binding** 링크를 클릭하십시오.
+1. 가상 서버 화면에서 **로드 밸런싱 가상 서버 서비스 바인딩 없음** 링크를 클릭하십시오.
 2. 이전에 작성한 각 서비스를 가상 서버에 바인드하십시오.
-3. **Done**을 클릭하십시오.
-4. **Refresh** 단추를 클릭하십시오. State 및 Effective State가 초록색으로 표시됩니다.
+3. **완료**를 클릭하십시오.
+4. **새로 고치기** 단추를 클릭하십시오. 상태 및 유효 상태가 초록색으로 표시됩니다.
 
 웹 사이트에 대한 로드 밸런싱 풀 및 정책을 작성했습니다.
 
-**참고:** Citrix NetScaler VPX 디바이스의 구성에 대해 자세히 알아보려면 [Citrix 문서 페이지 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://docs.citrix.com/en-us/netscaler.html)를 방문하십시오. 추가 지원을 받으려면 {{site.data.keyword.BluSoftlayer_notm}} 지원 및 영업 팀에 문의하십시오.
+Citrix NetScaler VPX 디바이스의 구성에 대해 자세히 알아보려면 [Citrix 문서 페이지 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://docs.citrix.com/en-us/netscaler.html)를 방문하십시오. 추가 지원을 받으려면 {{site.data.keyword.BluSoftlayer_notm}} 지원 및 영업 팀에 문의하십시오.
+{: note}

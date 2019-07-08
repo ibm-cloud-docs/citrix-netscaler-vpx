@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, security, certificate, order
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -13,6 +17,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # SSL 인증서 주문
 {: #order-an-ssl-certificate}
@@ -21,7 +28,7 @@ SSL(Secure Sockets Layer)은 애플리케이션과 서버 애플리케이션 간
 
 SSL 인증서에는 서버의 공개 키, 인증서가 유효한 날짜, 인증서가 유효한 호스트 이름 및 인증서를 발행한 인증 기관의 서명이 포함됩니다.
 
-IBM© Cloud는 서드파티 공급업체/사이트를 통하지 않고도 확보하고 구매할 수 있는 인증서를 제공합니다. 
+IBM© Cloud는 서드파티 공급업체/사이트를 통하지 않고도 확보하고 구매할 수 있는 인증서를 제공합니다.
 
 IBM Cloud는 고객을 위해 1년 및 2년에 한 번씩 SSL 인증서를 제공하며 다음을 포함한 여러 이점이 제공됩니다.
 
@@ -75,4 +82,4 @@ Citrix Netscaler VPX에 사용할 SSL 인증서를 주문하려면 다음 프로
 
 4. 사용자가 표시한 계정에 대한 인증서 요청의 세부사항이 포함된 주문 확인이 수신됩니다.
 
-	이메일에서 괄호 안의 링크를 클릭하여 도메인 유효성 검증 요청을 승인하십시오. 이제 SSL 요청의 수행 준비가 되었습니다. 
+	이메일에서 괄호 안의 링크를 클릭하여 도메인 유효성 검증 요청을 승인하십시오. 이제 SSL 요청의 수행 준비가 되었습니다.

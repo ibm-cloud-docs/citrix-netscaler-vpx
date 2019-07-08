@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, ssl, security, create, apply, cipher, suite
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 建立及套用新的密碼組合
 {: #create-and-apply-a-new-cipher-suite}
@@ -26,7 +33,8 @@ lastupdated: "2018-11-12"
 * [SSL and TLS Deployment Best Practices ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices#23-use-secure-cipher-suites){:new_window}
 * [How Do I Setup ECC on NetScaler? ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://support.citrix.com/article/CTX205289){:new_window}
 
-**附註：**本主題聚焦於 SSL 密碼的特定和必要配置。先前鏈結中的資訊可能會提供其他可套用來最佳化 SSL 作業的設定。
+本主題重點說明 SSL 密碼的特定和必要配置。先前鏈結中的資訊可能會提供其他可套用來最佳化 SSL 作業的設定。
+{: note}
 
 若要建立優先使用 AEAD、ECDHE 和 ECDSA 密碼的新「密碼組合」，請執行下列程序：
 
@@ -102,7 +110,7 @@ lastupdated: "2018-11-12"
 	18)     Cipher Name: TLS1-AES-256-CBC-SHA       Priority : 18
 	        Description: SSLv3 Kx=RSA      Au=RSA  Enc=AES(256)  Mac=SHA1   HexCode=0x0035
  	Done
-	```
+ 	```
 
 3.	從虛擬伺服器取消連結預設的「密碼組合」，並連結在前一個步驟中建立的自訂群組：
 
@@ -122,8 +130,8 @@ lastupdated: "2018-11-12"
 	bind ssl vserver <vServerName> -eccCurveName <eccCurveName>
 	```
 
-4.	確認虛擬伺服器中的變更：
-
+4. 確認虛擬伺服器中的變更：
+	
 	```
 	> show ssl vserver https_vip2
 
@@ -137,14 +145,12 @@ lastupdated: "2018-11-12"
  	Done
 	```
 
-5.	（選用）可以啟用 HTTP 重新導向，以便當使用者建立 HTTP 要求（而不是 HTTPS）時，將使用者重新導向至安全網站。
+5. （選用）建立 HTTP 要求（而不是 HTTPS）時，可以啟用 HTTP 重新導向以將使用者重新導向至安全的網站。
 
-	請參閱 [How to Configure HTTP to HTTPS Redirection on NetScaler ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://support.citrix.com/article/CTX201201){:new_window} 以取得配置指示。
+	請參閱 [How to Configure HTTP to HTTPS Redirection on NetScaler ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://support.citrix.com/article/CTX201201){:new_window}，以取得配置指示資訊。
 
-6.	開啟 Web 瀏覽器並輸入 FQDN 來測試 HTTPS 連線。網站應該載入 Citrix VPNX 背後的 HTTP 服務所呈現的內容。
-
-	您也可以在瀏覽器裡按一下 URL 旁的小鎖，檢視憑證資訊，來檢視憑證詳細資料。
+6. 通過開啟 Web 瀏覽器並輸入 FQDN 來測試 HTTPS 連線。網站應該載入 Citrix VPNX 背後的 HTTP 服務所呈現的內容。您還可以透過按一下瀏覽器中 URL 旁邊的掛鎖圖示來顯示憑證資訊，從而檢視憑證詳細資料。
 
 	<img src="images/21-check-certificate.png" alt="圖片" style="width: 350px;"/>
 
-	如果在步驟 5 已配置重新導向，使用 HTTP 要求時，安全的網站也會載入。
+	如果在步驟 5 中配置了重新導向，則會在使用 HTTP 要求時同時載入安全網站。

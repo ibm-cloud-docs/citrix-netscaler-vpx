@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, security, order
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -13,6 +17,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # IBM Hardware Security Module (HSM) の注文
 {: #order-the-ibm-hardware-security-module-hsm-}
@@ -25,6 +32,6 @@ lastupdated: "2018-11-12"
 4.	希望するデータ・センターを選択し、**「Cloud HSM 6.0」**オプションを選択して、**「注文に追加」をクリックします。**.
 5. **「拡張システム構成 (Advanced System Configuration)」**の下でバックエンドおよびフロントエンドの VLAN セクション情報を入力し、ドロップダウンから**「SSH 鍵」**を選択して、ホスト名とドメインの詳細を入力します。
 
-<img src="images/1-Order-HSM.png" alt="図面" style="width: 700px;"/>
+  <img src="images/1-Order-HSM.png" alt="図面" style="width: 700px;"/>
 
 6.	終了したら、ご利用条件に同意し、**「注文の送信」**をクリックします。

@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, security, install
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -13,13 +17,17 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # IBM Hardware Security Module(HSM) 클라이언트 소프트웨어 설치
 {: #install-the-ibm-hardware-security-module-hsm-client-software}
 
 이 단계에서 HSM과 상호 작용하는 데 필요한 소프트웨어 및 유틸리티와 함께 Citrix VPX가 설치됩니다.
 
-**참고:** 이 프로시저의 1단계 및 2단계는 선택사항이며 safenet 디렉토리와 이 디렉토리 내의 파일 또는 하위 폴더가 `/var` 경로에서 누락된 경우에만 필요합니다. 이 리소스는 클라이언트 소프트웨어로 설치될 VPX에 필요하며 클라이언트 소프트웨어를 통해 HSM 소프트에어와 연관된 유틸리티를 실행할 수 있습니다.
+이 프로시저의 1단계와 2단계는 선택사항이며, safenet 디렉토리와 그 안의 파일 또는 하위 폴더가 `/var` 경로에서 누락된 경우에만 필요합니다. 이 리소스는 클라이언트 소프트웨어로 설치될 VPX에 필요하며 클라이언트 소프트웨어를 통해 HSM 소프트에어와 연관된 유틸리티를 실행할 수 있습니다.
+{: note}
 
 인증 정보를 찾아 **디바이스 > 디바이스 목록 > VPX 이름 펼치기** 아래의 제어 포털에 나열된 NetScaler CLI에 액세스하십시오.
 
@@ -27,11 +35,13 @@ lastupdated: "2018-11-12"
 
 안내서의 이 절 및 나머지 부분에 필요합니다.
 
-**참고:** 이 문서의 모든 VPX 명령 및 출력이 `netscalername#`(쉘 실행 표시) 또는 `>`(VPX CLI 자체용)에 나열됩니다.
+참고로, 이 문서의 모든 VPX 명령과 출력은 `netscalername#`(쉘 실행을 표시함) 또는 `>`(VPX CLI 자체의 경우)를 나열합니다.
+{: note}
 
 1.	(선택사항) `safenet_dirs.tar` 파일을 얻고 이 파일을 `/var` 디렉토리의 VPX에 전송하십시오. `safenet_dirs.tar` 파일은 [여기 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://downloads.service.softlayer.com/citrix/netscaler/Safenet-HSM/){:new_window}에서 얻을 수 있습니다.
 
-	**참고:** 위의 링크에 액세스하려면 SoftLayer 계정에 로그인해야 합니다.
+	위의 링크에 액세스하려면 SoftLayer 계정에 로그인해야 합니다.
+  {: note}
 
 	<img src="images/4-transfer-safenet_dirs.png" alt="그림" style="width: 600px;"/>
 

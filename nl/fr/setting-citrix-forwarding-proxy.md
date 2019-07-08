@@ -3,10 +3,17 @@ copyright:
   years: 1994, 2017
 
 lastupdated: "2017-11-02"
+
+keywords: setup, proxy, forward, vip, subnet
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Configuration de Citrix NetScaler VPX en tant que proxy direct (forward proxy)
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
@@ -17,7 +24,8 @@ Lorsqu'un client situé dans le réseau interne émet une demande, c'est l'adres
 
 Généralement, un proxy est associé à un pare-feu pour assurer la sécurité des clients dans un réseau interne.
 
-## Etape 1 : demander l'attribution d'adresses VIP utilisables dans le réseau privé 
+## Etape 1 : demander l'attribution d'adresses VIP utilisables dans le réseau privé
+{: #step-1-request-vips-to-use-in-the-private-network}
 
 Lorsqu'un client passe commande d'un équilibreur de charge Citrix NetScaler VPX auprès du portail {{site.data.keyword.BluSoftlayer_notm}}, sa demande est censée porter sur un proxy inverse (reverse proxy). Il lui est demandé d'indiquer le nombre d'adresses IP "publiques" qu'il souhaite utiliser comme adresses IP virtuelles (VIP).
 
@@ -32,11 +40,13 @@ Dans notre exemple, nous avons demandé un sous-réseau `/29` et obtenu comme r�
 * L'ajout, par l'équipe de support, des VIP `10.114.27.0-3` au Citrix NetScaler VPX
 
 ## Etape 2 : activer les fonctionnalités d'équilibrage de charge et de redirection vers un cache sur le Citrix NetScaler VPX
+{: #step-2-enable-load-balancing-and-cache-redirect-features-on-the-citrix-netscaler-vpx}
 
 Par défaut, les fonctionnalités d'équilibrage de charge et de redirection vers un cache (CR, Cache Redirect) sont désactivées sur l'équilibreur de charge Citrix NetScaler VPX. La commande `enable ns feature cr lb` permet de les activer.
 
 
 ## Etape 3 : créer le proxy direct
+{: #step-3-create-the-forward-proxy}
 
 Utilisez la ligne de commande pour envoyer les commandes suivantes au Citrix NetScaler VPX. Dans notre scénario, un seul des deux serveurs DNS d'{{site.data.keyword.BluSoftlayer_notm}} est ajouté.  
 
@@ -63,8 +73,9 @@ La ligne 4 lie la VIP au “vrai” serveur. Toutes les demandes de résolution 
 La ligne 5 indique au serveur virtuel proxy direct d'utiliser le DNS virtuel pour la résolution des noms.
 
 ## Configuration du client
+{: #configuring-the-client}
 
-Avant d'aborder la personnalisation du client en vue d'utiliser le proxy direct, assurez-vous qu'il n'est pas possible de joindre un site public (par exemple, http://www.ibm.com) à partir d'un navigateur tel que Firefox ouvert sur ce client. Comme il ne doit pas y avoir d'interface publique sur le client, cette demande devrait échouer. 
+Avant d'aborder la personnalisation du client en vue d'utiliser le proxy direct, assurez-vous qu'il n'est pas possible de joindre un site public (par exemple, http://www.ibm.com) à partir d'un navigateur tel que Firefox ouvert sur ce client. Comme il ne doit pas y avoir d'interface publique sur le client, cette demande devrait échouer.
 
 Dans l'exemple suivant, on configure un client Linux.
 
@@ -95,6 +106,7 @@ L'adresse IP `10.114.27.3` est celle du cache cible de la redirection qui a ét�
 A ce stade, la configuration est complète et vous pouvez accéder à l'Internet public depuis la ressource isolée sur le réseau privé.
 
 ## Validation de la configuration
+{: #validating-the-setup}
 
 Le client étant maintenant configuré pour utiliser le proxy direct, essayez à nouveau d'accéder à un site public. Cette fois, la demande doit aboutir.
 
@@ -106,7 +118,7 @@ Vous pouvez utiliser les commandes d'affichage suivantes pour vérifier l'état 
 
 **show cr vserver :** affiche un serveur virtuel de redirection vers un cache spécifique ou tous les serveurs virtuels de redirection vers un cache configurés.
 
-**stat cr vserver :** affiche les statistiques des serveurs virtuels de redirection vers un cache.
+**stat cr vserver :** affiche les statistiques des serveurs virtuels (Vserver) de redirection vers un cache.
 
 La configuration d'un proxy direct de base sur Citrix est assez simple. Elle permet aux clients situés dans un réseau interne de disposer d'un moyen d'accès sécurisé aux ressources sur l'Internet. Elle permet aussi à l'administrateur réseau de maintenir un niveau de contrôle du réseau.
 

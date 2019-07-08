@@ -3,10 +3,17 @@ copyright:
   years: 1994, 2017
 
 lastupdated: "2017-11-02"
+
+keywords: setup, proxy, forward, vip, subnet
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Configurazione di Citrix Netscaler VPX come un proxy di inoltro
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
@@ -17,7 +24,8 @@ Quando un client nella rete interna avvia una richiesta, l'indirizzo IP del prox
 
 Di norma, un proxy è combinato con un firewall per garantire la sicurezza dei client in una rete interna.
 
-## Passo 1: Richiedere i VIP da utilizzare nella rete privata 
+## Passo 1: Richiedere i VIP da utilizzare nella rete privata
+{: #step-1-request-vips-to-use-in-the-private-network}
 
 Quando un programma di bilanciamento del carico Citrix NetScaler VPX viene ordinato dal portale del cliente {{site.data.keyword.BluSoftlayer_notm}}, si presume che si stia richiedendo un proxy inverso. Al richiedente verrà chiesto il numero di IP "pubblici" da utilizzare come VIP (Virtual IP).
 
@@ -32,11 +40,13 @@ Nel nostro esempio, abbiamo richiesto una sottorete `/29` e il risultato è stat
 * I VIP `10.114.27.0-3` sono stati aggiunti a Citrix NetScaler VPX dal team di supporto
 
 ## Passo 2: Abilitare le funzioni di bilanciamento del carico e di reindirizzamento della cache su Citrix NetScaler VPX
+{: #step-2-enable-load-balancing-and-cache-redirect-features-on-the-citrix-netscaler-vpx}
 
 Per impostazione predefinita, le funzioni di bilanciamento del carico e di reindirizzamento della cache sul programma di bilanciamento del carico Citrix NetScaler VPX sono disabilitate; il comando `enable ns feature cr lb` le abilita.
 
 
 ## Passo 3: Creare il proxy di inoltro
+{: #step-3-create-the-forward-proxy}
 
 Utilizzare la riga di comando per immettere i seguenti comandi su Citrix NetScaler VPX. Nel nostro scenario, viene aggiunto solo uno dei due server DNS {{site.data.keyword.BluSoftlayer_notm}}.  
 
@@ -63,8 +73,9 @@ La riga 4 associa il VIP al server "reale". Tutte le richieste DNS a `10.114.27.
 La riga 5 indica al server virtuale proxy di inoltro di utilizzare il DNS virtuale per la risoluzione dei nomi.
 
 ## Configurazione del client
+{: #configuring-the-client}
 
-Prima di continuare la personalizzazione del client per l'uso del proxy di inoltro, assicurati di non poter raggiungere un sito pubblico (ad esempio, http://www.ibm.com) utilizzando il browser Firefox sul client. Poiché non ci deve essere alcuna interfaccia pubblica sul client, questa richiesta non riuscirà. 
+Prima di continuare la personalizzazione del client per l'uso del proxy di inoltro, assicurati di non poter raggiungere un sito pubblico (ad esempio, http://www.ibm.com) utilizzando il browser Firefox sul client. Poiché non ci deve essere alcuna interfaccia pubblica sul client, questa richiesta non riuscirà.
 
 Il seguente esempio configura un client Linux.
 
@@ -95,6 +106,7 @@ L'indirizzo IP `10.114.27.3` è quello della cache di inoltro creata al Passo 1.
 A questo punto, la configurazione è completa e puoi accedere a internet dalla risorsa isolata sulla rete privata.
 
 ## Convalida della configurazione
+{: #validating-the-setup}
 
 Ora che il client è configurato per utilizzare il proxy di inoltro, prova nuovamente ad accedere a un sito pubblico. la richiesta ora dovrebbe riuscire.
 

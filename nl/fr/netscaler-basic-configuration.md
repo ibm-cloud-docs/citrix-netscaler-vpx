@@ -2,10 +2,17 @@
 copyright:
   years: 1994, 2017
 lastupdated: "2018-11-12"
+
+keywords: basics, configure, configuration, gui, pool
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Configuration d'équilibrage de charge de base
 {: #basic-load-balancing-configuration}
@@ -18,7 +25,7 @@ Prenons l'exemple d'une société ayant un site web communautaire (sorte de rés
 4. Le NetScaler passe ensuite ce trafic à l'un des serveurs du pool en tenant compte de la méthode d'équilibrage définie (permutation circulaire, persistance de l'IP source, etc.).
 5. Le serveur accepte le trafic et l'utilisateur peut alors se connecter.
 
-Pour parvenir à ce résultat, il faudrait normalement configurer le NetScaler de sorte qu'il puisse prendre en charge ce trafic. Mais comme la VIP, l'IP du serveur DNS et la SNIP sont déjà configurées, la configuration s'en trouve simplifiée. 
+Pour parvenir à ce résultat, il faudrait normalement configurer le NetScaler de sorte qu'il puisse prendre en charge ce trafic. Mais comme la VIP, l'IP du serveur DNS et la SNIP sont déjà configurées, la configuration s'en trouve simplifiée.
 
 Dans l'interface utilisateur de NetScaler, sur l'écran Configuration, développez la branche **Traffic Management** (gestion du trafic) à gauche. Développez la sous-section intitulée **Load Balancing** (équilibrage de charge). Effectuez la procédure suivante pour indiquer au NetScaler quels serveurs cible seront inclus dans la politique d'équilibrage de charge :
 
@@ -32,7 +39,8 @@ Dans l'interface utilisateur de NetScaler, sur l'écran Configuration, développ
 
 Répétez cette procédure pour chaque autre serveur du pool.  
 
-**Conseil :** Pour que tous les serveurs d'un même pool soient facilement identifiables, nommez-les en leur appliquant la même convention (par exemple, Web1, Web2, Web3 et ainsi de suite).
+Pour que tous les serveurs d'un même pool soient facilement identifiables, nommez-les en leur appliquant la même convention (par exemple, Web1, Web2, Web3 et ainsi de suite).
+{: tip}
 
 Créez ensuite vos services. Vous allez créer un service pour chaque serveur que vous venez d'entrer. Le service est ce qui configure la connexion entre le NetScaler et les serveurs du pool. Chaque service a un nom et spécifie une adresse IP et un port ainsi que le type de données servies.
 
@@ -59,4 +67,5 @@ A présent, liez les services que vous avez créés à votre serveur virtuel.
 
 Vous avez créé un pool et une politique d'équilibrage de charge pour votre site web.
 
-**REMARQUE :**: Pour en apprendre plus sur la configuration du dispositif Citrix NetScaler VPX, visitez la [page de documentation Citrix ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://docs.citrix.com/en-us/netscaler.html). Pour une aide supplémentaire, contactez le support et le service commercial {{site.data.keyword.BluSoftlayer_notm}}.
+Pour en apprendre plus sur la configuration du dispositif Citrix NetScaler VPX, visitez la [page de documentation Citrix ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://docs.citrix.com/en-us/netscaler.html). Pour une aide supplémentaire, contactez le support et le service commercial {{site.data.keyword.BluSoftlayer_notm}}.
+{: note}

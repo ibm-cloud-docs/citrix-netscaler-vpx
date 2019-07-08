@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, security, initialize
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Inicializar IBM Hardware Security Module (HSM)
 {: #initialize-ibm-hardware-security-module-hsm-}
@@ -24,7 +31,8 @@ Para inicializar el dispositivo, siga los pasos siguientes:
 
 	De forma alternativa, puede utilizar la autenticación de clave pública. Para obtener más información, revise [Guía de administración de dispositivo (página 38)![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/appliance_administration_guide.pdf){:new_window}.
 
-	**NOTA:** Por lo general, el acceso SSH está habilitado y permitido de forma predeterminada. Si tiene problemas al conectarse con el SSH, compruebe la seguridad y direccionamiento de la infraestructura.
+	Por lo general, el acceso SSH está habilitado y permitido de forma predeterminada. Si tiene problemas al conectarse con el SSH, compruebe la seguridad y direccionamiento de la infraestructura.
+  {: note}
 
 2. Ejecute el mandato `hsm init`:
 

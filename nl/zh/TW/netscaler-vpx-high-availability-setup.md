@@ -3,15 +3,22 @@ copyright:
   years: 1994, 2018
 
 lastupdated: "2018-11-12"
+
+keywords: ha, high availability, setup, configure, configuration
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 設定 Citrix Netscaler VPX 以取得高可用性 (HA)
 {: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
-負載平衡器是用來平衡多部應用程式伺服器的資料流量，以改善可擴充應用程式中的效能及穩定性。然而，單一負載平衡器就是單一失敗點。請配置「高可用性 (HA)」Netscaler VPX 配對來避免此問題。配置 HA 配對需要有兩部 Netscaler VPX 伺服器。繼續進行負載平衡的次要伺服器步驟，則主要伺服器應該會失敗。 
+負載平衡器是用來平衡多部應用程式伺服器的資料流量，以改善可擴充應用程式中的效能及穩定性。然而，單一負載平衡器是單點故障。請配置「高可用性 (HA)」Netscaler VPX 配對來避免此問題。配置 HA 配對需要有兩部 Netscaler VPX 伺服器。繼續進行負載平衡的次要伺服器步驟，則主要伺服器應該會失敗。
 
 SNIP（子網路 IP）是負載平衡伺服器看到的 IP，作為對 Netscaler VPX 的 VIP（虛擬 IP）提出之要求（連線）的來源 IP。一般而言，在 HA 配對設定中，SNIP 不會變更，但在失效接手事件期間也可能這樣做。兩部 Netscaler 位於相同的子網路時，次要 Netscaler VPX 的 SNIP 可能會變更為主要 Netscaler VPX 一開始使用的 SNIP。這不會對處理要求的伺服器造成任何混淆。
 
@@ -28,16 +35,16 @@ SNIP（子網路 IP）是負載平衡伺服器看到的 IP，作為對 Netscaler
 
 2. 在您要作為次要的 VPX 上，按一下**系統 > 高可用性**，並用滑鼠右鍵按一下第一行，然後按一下**編輯**。在高可用性狀態配置下拉方框上選取**保持次要**，然後按一下**確定**。
 
-3. 選取**新增**。輸入另一個 VPX 的系統 IP 位址（這位在主要伺服器的「高可用性」標籤中），然後在底端輸入 root 登入詳細資料。維持不勾選**開啟 INC** 方框。按一下**確定**。 
-	
-	如果您收到宣告 IP 不在相同子網路中的錯誤，則兩部 VPX 伺服器可能不在相同的 VLAN 中。否則，您現在應該可以開啟主要伺服器，並選取**重新整理**按鈕，查看以「高可用性」操作的兩部伺服器。 
+3. 選取**新增**。輸入另一個 VPX 的系統 IP 位址（這位在主要伺服器的「高可用性」標籤中），然後在底端輸入 root 登入詳細資料。維持不勾選**開啟 INC** 方框。按一下**確定**。
+
+	如果您收到宣告 IP 不在相同子網路中的錯誤，則兩部 VPX 伺服器可能不在相同的 VLAN 中。否則，您現在應該可以開啟主要伺服器，並選取**重新整理**按鈕，查看以「高可用性」操作的兩部伺服器。
 
 	次要伺服器的新 NetScaler 管理 IP 將會是低於先前值的一個 IP 位址。如果您無法對次要 VPX 進行任何存取，請從指令行中使用下列指令來移除高可用性：
 
 	`sh ha node`
 
 	然後，移除作為 ha 節點的項目：
-	
+
 	`rm ha node 1`
 
 4. 在主要 VPX 上，您應該會看到遠端 VPX 現在正在同步化。移至次要伺服器，並檢查**網路 > IP** 配置。您應該會看到主要伺服器的 VIP 以及列出為被動的其他 IP。

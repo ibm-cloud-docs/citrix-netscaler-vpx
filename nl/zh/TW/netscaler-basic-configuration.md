@@ -2,10 +2,17 @@
 copyright:
   years: 1994, 2017
 lastupdated: "2018-11-12"
+
+keywords: basics, configure, configuration, gui, pool
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 基本負載平衡配置
 {: #basic-load-balancing-configuration}
@@ -18,13 +25,13 @@ lastupdated: "2018-11-12"
 4. NetScaler 接著會根據定義的平衡方法（循環式、持續性 IP 等等），將該資料流量傳遞至伺服器儲存區的其中一部伺服器。
 5. 伺服器接著會接受資料流量，而且使用者會連接並登入。
 
-為達成此作業，需要配置 NetScaler 來處理此資料流量。因為已配置 VIP、DNS 伺服器 IP 及 SNIP，所以簡化了配置作業。 
+為達成此作業，需要配置 NetScaler 來處理此資料流量。因為已配置 VIP、DNS 伺服器 IP 及 SNIP，所以簡化了配置作業。
 
 在 NetScaler GUI 的「配置」畫面上，展開左側的**資料流量管理**。展開標題為**負載平衡**的子區段。然後，遵循以下程序，告知 NetScaler 在負載平衡原則中將包括哪些目標伺服器：
 
 1. 在「負載平衡」下，按一下**伺服器**。
 2. 按一下**新增**。
-3. 輸入伺服器的「伺服器名稱」（例如，Web1）。
+3. 輸入伺服器的名稱（例如，Web1）。
 4. 輸入伺服器的 IP 位址。
 5. 讓**資料流量網域**欄位保留空白，因為您只關注在此情境中使用預設資料流量網域。
 6. 輸入您對此伺服器的任何註解。
@@ -32,7 +39,8 @@ lastupdated: "2018-11-12"
 
 針對儲存區中的所有伺服器，重複此程序。  
 
-**提示：**若要輕鬆地識別伺服器，請對相同儲存區內的伺服器使用類似的命名慣例（例如，Web1、Web2、Web3 等等）。
+若要輕易地識別伺服器，請對相同儲存區中的伺服器使用類似的命名慣例（例如，Web1、Web2、Web3 等）。
+{: tip}
 
 接下來，建立「服務」。您將針對剛才輸入的每一部「伺服器」建立一個「服務」。「服務」會配置 NetScaler 與儲存區中伺服器之間的連線。每一個服務都有名稱，並指定 IP 位址、埠以及所提供的資料類型。
 
@@ -59,4 +67,5 @@ lastupdated: "2018-11-12"
 
 您已建立網站適用的負載平衡儲存區及原則。
 
-**附註**：若要進一步瞭解 Citrix NetScaler VPX 裝置的配置，請造訪 [Citrix 文件頁面 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://docs.citrix.com/en-us/netscaler.html)。如需進一步協助，請聯絡 {{site.data.keyword.BluSoftlayer_notm}} 支援中心及業務代表。
+若要進一步瞭解 Citrix NetScaler VPX 裝置配置的相關資訊，請造訪 [Citrix 文件頁面 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://docs.citrix.com/en-us/netscaler.html)。如需進一步協助，請聯絡 {{site.data.keyword.BluSoftlayer_notm}} 支援中心及業務代表。
+{: note}

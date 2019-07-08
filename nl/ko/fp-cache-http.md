@@ -6,6 +6,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: cache, configure, configuration, http, traffic
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -15,9 +19,12 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # HTTP(S) 트래픽을 위한 캐시 경로 재지정 구성
-{: #configure-cache-redirection-for-ssl-traffic-optional-}
+{: #configure-cache-redirection-for-http-traffic}
 
 HTTP 또는 HTTPS 트래픽을 위해 캐시 경로 재지정을 구성하려면 다음 단계를 따르십시오.
 

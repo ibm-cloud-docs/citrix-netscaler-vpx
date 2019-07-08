@@ -3,10 +3,17 @@ copyright:
   years: 1994, 2017
 
 lastupdated: "2017-11-02"
+
+keywords: setup, proxy, forward, vip, subnet
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 将 Citrix Netscaler VPX 设置为转发代理
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
@@ -17,7 +24,8 @@ lastupdated: "2017-11-02"
 
 通常，代理与防火墙组合使用，以确保内部网络中客户机的安全性。
 
-## 步骤 1：请求要在专用网络中使用的 VIP 
+## 步骤 1：请求要在专用网络中使用的 VIP
+{: #step-1-request-vips-to-use-in-the-private-network}
 
 在 {{site.data.keyword.BluSoftlayer_notm}} 客户门户网站中订购 Citrix NetScaler VPX 负载均衡器时，假定请求的是逆向代理。将要求请求者提供要用作虚拟 IP (VIP) 的“公共”IP 数。
 
@@ -32,11 +40,13 @@ lastupdated: "2017-11-02"
 * 支持团队向 Citrix NetScaler VPX 添加了 VIP `10.114.27.0-3`
 
 ## 步骤 2：在 Citrix NetScaler VPX 上启用负载均衡和高速缓存重定向功能
+{: #step-2-enable-load-balancing-and-cache-redirect-features-on-the-citrix-netscaler-vpx}
 
 缺省情况下，Citrix NetScaler VPX 负载均衡器上的负载均衡和高速缓存重定向功能已禁用；`enable ns feature cr lb` 命令可启用这两个功能。
 
 
 ## 步骤 3：创建转发代理
+{: #step-3-create-the-forward-proxy}
 
 使用命令行对 Citrix NetScaler VPX 发出以下命令。在我们的场景中，仅添加两个 {{site.data.keyword.BluSoftlayer_notm}} DNS 服务器中的一个服务器。  
 
@@ -63,8 +73,9 @@ set cr vserver vs_forward_cache -dnsVservername virtual_dns
 第 5 行用于指示转发代理虚拟服务器使用虚拟 DNS 进行名称解析。
 
 ## 配置客户机
+{: #configuring-the-client}
 
-在继续定制客户机以使用转发代理之前，请确保无法在客户机上使用 Firefox 浏览器来访问公共站点（例如 http://www.ibm.com）。因为客户机上不应该有公共接口，所以此请求应该会失败。 
+在继续定制客户机以使用转发代理之前，请确保无法在客户机上使用 Firefox 浏览器来访问公共站点（例如 http://www.ibm.com）。因为客户机上不应该有公共接口，所以此请求应该会失败。
 
 以下示例将配置 Linux 客户机。
 
@@ -95,6 +106,7 @@ IP 地址 `10.114.27.3` 是在步骤 1 中创建的转发高速缓存的 IP 地�
 到此设置已完成，您可以通过专用网络上隔离的资源来访问因特网。
 
 ## 验证设置
+{: #validating-the-setup}
 
 现在，客户机已配置为使用转发代理，请重试访问公共站点。请求现在应该会成功。
 
@@ -106,7 +118,7 @@ IP 地址 `10.114.27.3` 是在步骤 1 中创建的转发高速缓存的 IP 地�
 
 **show cr vserver：**显示指定的高速缓存重定向虚拟服务器或所有已配置的高速缓存重定向虚拟服务器。
 
-**stat cr vserver：**显示高速缓存重定向 vserver 统计信息。
+**stat cr vserver：**显示高速缓存重定向 Vserver 统计信息。
 
 Citrix 上的基本转发代理的配置相当简单。它为内部网络上的客户机访问因特网上的资源提供了一条安全路径。此外还支持网络管理员维护对网络的控制级别。
 

@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, ssl, security, create, apply, cipher, suite
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Criar e aplicar um novo conjunto de cifras
 {: #create-and-apply-a-new-cipher-suite}
@@ -26,7 +33,8 @@ Para saber mais sobre os conjuntos de cifras SSL e outras melhores práticas, vi
 * [Melhores práticas de implementação de SSL e TLS ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices#23-use-secure-cipher-suites){:new_window}
 * [Como configurar o ECC no NetScaler? ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://support.citrix.com/article/CTX205289){:new_window}
 
-**NOTA:** este tópico se concentra em configurações específicas e necessárias para as cifras SSL. As informações nos links anteriores podem fornecer configurações adicionais que podem ser aplicadas para otimizar a operação de SSL.
+Este tópico foca em configurações necessárias e específicas para cifras SSL. As informações nos links anteriores podem fornecer configurações adicionais que podem ser aplicadas para otimizar a operação de SSL.
+{: note}
 
 Para criar um novo conjunto de cifras que priorize as cifras AEAD, ECDHE e ECDSA, execute o procedimento a seguir:
 
@@ -140,6 +148,7 @@ Para criar um novo conjunto de cifras que priorize as cifras AEAD, ECDHE e ECDSA
 5. (OPCIONAL) O redirecionamento de HTTP pode ser ativado para redirecionar usuários para um website seguro quando eles criam uma solicitação de HTTP (em oposição a HTTPS).
 
 	Consulte [Como configurar o redirecionamento HTTP para HTTPS no NetScaler ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://support.citrix.com/article/CTX201201){:new_window} para obter instruções de configuração.
+
 6. Teste a conexão HTTPS abrindo um navegador da web e inserindo o FQDN. O site deve carregar o conteúdo renderizado pelo serviço HTTP por trás do Citrix VPX.
 
 	Também é possível visualizar os detalhes do certificado clicando no ícone de cadeado próximo à URL em seu navegador para exibir as informações de certificado.

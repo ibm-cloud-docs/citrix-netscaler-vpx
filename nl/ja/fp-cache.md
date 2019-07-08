@@ -6,6 +6,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: cache, enable, redirect, capabilities
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -15,6 +19,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # キャッシュのリダイレクト機能とロード・バランシング機能の有効化
 {: #enable-cache-redirection-and-load-balancing-capabilities}
@@ -27,6 +34,6 @@ Citrix NetScaler VPX アプライアンスでキャッシュのリダイレク�
 
 	必要に応じて追加機能を有効にします。
 
-2. 次に、**「システム」 > 「設定」 > 「基本機能の構成 (Configure Basic Features)」**と移動し、(有効になっていなければ)**「ロード・バランシング」 **を有効にして**「OK」**をクリックします。 
+2. 次に、**「システム」 > 「設定」 > 「基本機能の構成 (Configure Basic Features)」**と移動し、(有効になっていなければ)**「ロード・バランシング」 **を有効にして**「OK」**をクリックします。
 
 	必要に応じて追加機能を有効にします。

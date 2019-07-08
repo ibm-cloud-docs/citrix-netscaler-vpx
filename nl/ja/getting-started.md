@@ -3,17 +3,25 @@ copyright:
   years: 1994, 2017
 
 lastupdated: "2018-11-12"
+
+keywords: order, vpx, overview
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
-# Citrix NetScaler VPX ソフトウェア・アプライアンスの使用開始
+# Citrix NetScaler VPX ソフトウェア・アプライアンスの使用
 {: #getting-started}
 
 {{site.data.keyword.BluSoftlayer_notm}}  ソリューションに Citrix NetScaler VPX をデプロイすると、Web アプリケーションの配信が加速され、パフォーマンスが向上するとともに、クラウド・アプリケーションとサービスが最適化されて、使用可能でセキュアな状態に維持されます。 ゲーム、ビッグデータ、分析、プライベート・クラウドといった困難なワークロードがある場合でも、Citrix NetScaler VPX は、ユーザーが最も必要とするタイミング、場所、方法でソリューションを実現できるよう寄与します。
 
 ## 始める前に
+{: #before-you-begin}
 Citrix NetScaler VPX を開始するには、以下の情報を確認する必要があります。
 
 * お客様の IBM© Cloud カスタマー・ポータルのログイン情報
@@ -23,6 +31,7 @@ Citrix NetScaler VPX を開始するには、以下の情報を確認する必�
 * ロード・バランサーの割り当て先となる VLAN
 
 ## Citrix NetScaler VPX の注文
+{: #ordering-a-citrix-netscaler-vpx}
 
 Citrix NetScaler VPX ソフトウェア・アプライアンスを注文するには、カスタマー・ポータルの注文ページに移動します。
 
@@ -36,10 +45,10 @@ Citrix NetScaler VPX ソフトウェア・アプライアンスを注文する�
 7. **「続行 (Continue)」**をクリックします。
 8. 要求した IP アドレスの ARIN (または、デプロイメント領域内の同等の組織) に必要な情報を入力します。
 9. 連絡先情報を入力します。
-10. ご使用の VLAN を選択します。
-	待ち時間を最小化し、ネットワーク・リソースの使用効率を最適化するには、トラフィックが分散されるサーバーと同じ VLAN に Citrix NetScaler VPX を割り当てます。
+10. VLAN を選択します。待ち時間を最小化し、ネットワーク・リソースの使用効率を最適化するには、トラフィックが分散されるサーバーと同じ VLAN に Citrix NetScaler VPX を割り当てます。
 11. オーダーを確認し、ご利用条件に同意した上で、**「注文の実行 (Place Order)」**をクリックします。 Citrix NetScaler VPX ソフトウェア・アプライアンスが、選択した設定でデプロイされます。
 
 ## 次に行うこと
+{: #what-s-next}
 
 Citrix Netscaler VPX [フィーチャー](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-about-citrix-netscaler-vpx)の詳細や特定の Netscaler [用語](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-citrix-netscaler-vpx-terminology)を確認したり、お客様の Netscaler の[構成](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-basic-load-balancing-configuration)を開始したりできます。

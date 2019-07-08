@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, security, install
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -13,13 +17,17 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Instalar el software de cliente de IBM Hardware Security Module (HSM)
 {: #install-the-ibm-hardware-security-module-hsm-client-software}
 
 En este paso, se instalará Citrix VPX con el software y los programas de utilidad necesarios para interactuar con el HSM.
 
-**NOTA:** Los pasos uno y dos de este procedimiento son opcionales y solo son necesarios si el directorio de safenet y los archivos y subcarpetas del mismo no se encuentran en la vía de acceso `/var`. Estos recursos son necesarios para que VPX se instale con el software de cliente y le permita ejecutar los programas de utilidad asociados con el software de HSM.
+Los pasos uno y dos de este procedimiento son opcionales y solo son necesarios si el directorio de safenet y los archivos y subcarpetas del mismo no se encuentran en la vía de acceso `/var`. Estos recursos son necesarios para que VPX se instale con el software de cliente y le permita ejecutar los programas de utilidad asociados con el software de HSM.
+{: note}
 
 Busque las credenciales para acceder a la CLI de NetScaler listada en el Portal de control en **Dispositivos > Lista de dispositivos > Expandir el nombre de VPX**.
 
@@ -27,11 +35,13 @@ Busque las credenciales para acceder a la CLI de NetScaler listada en el Portal 
 
 Serán necesarias en esta sección y durante el resto de la guía.
 
-**NOTA:** Tenga en cuenta que todos los resultados y mandatos de VPX de este documento mostrarán `netscalername#` (indicando una ejecución de shell) o `>` (para la misma CLI de VPX).
+Tenga en cuenta que todos los resultados y mandatos de VPX de este documento mostrarán `netscalername#` (indicando una ejecución de shell) o `>` (para la misma CLI de VPX).
+{: note}
 
 1.	(OPCIONAL) Obtenga el archivo `safenet_dirs.tar` y transfiéralo a la VPX en el directorio `/var`. El archivo `safenet_dirs.tar` se puede obtener [aquí ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://downloads.service.softlayer.com/citrix/netscaler/Safenet-HSM/){:new_window}.
 
-	**NOTA:** Debe haber iniciado sesión en la cuenta de SoftLayer para acceder al enlace anterior.
+	Debe haber iniciado sesión en la cuenta de SoftLayer para acceder al enlace anterior.
+  {: note}
 
 	<img src="images/4-transfer-safenet_dirs.png" alt="dibujo" style="width: 600px;"/>
 

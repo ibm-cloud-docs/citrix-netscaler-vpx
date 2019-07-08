@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, security, retrieve, transfer, certificate
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 인증서 검색 및 전송
 {: #retrieve-and-transfer-the-certificate}
@@ -24,6 +31,6 @@ lastupdated: "2018-11-12"
 
 2. Citrix Netscaler VPX에서 인증서 파일을 `/nsconfig/ssl` 디렉토리에 복사하십시오.
 
-<img src="images/11-transfer-certificate.png" alt="그림" style="width: 600px;"/>
+  <img src="images/11-transfer-certificate.png" alt="그림" style="width: 600px;"/>
 
 Citrix Netscaler VPX는 이제 SSL을 사용하여 인증서를 로드 밸런싱 배치로 통합할 준비가 되었습니다.

@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, ssl, security, add, configure
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -13,6 +17,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # SSL 仮想サーバーの追加と構成
 {: #add-and-configure-the-ssl-virtual-server}
@@ -26,7 +33,7 @@ SSL 仮想サーバーを追加および構成するには、以下の手順を�
 	<img src="images/15-confirm-service.png" alt="図面" style="width: 700px;"/>
 
 4. 追加サーバー用にステップ 2 を繰り返します。
-5. **「トラフィック管理 (Traffic Management)」>「ロード・バランシング (Load Balancing)」>「仮想サーバー (Virtual Servers)」>**にナビゲートし、**「追加 (Add)」**をクリックします。 名前を指定し、プロトコルとして**「SSL」**を選択し、パブリック IP アドレスを入力します。 **「OK」**を押して終了します。
+5. **「トラフィック管理 (Traffic Management)」>「ロード・バランシング (Load Balancing)」>「仮想サーバー (Virtual Servers)」>**にナビゲートし、**「追加 (Add)」**をクリックします。 名前を指定し、プロトコルとして**「SSL」**を選択し、パブリック IP アドレスを入力します。**「OK」**を押して終了します。
 6. **「ロード・バランシング仮想サーバーのサービス・バインディングなし (No Load Balancing Virtual Server Service Binding)」**を選択し、**「選択」**をクリックします。 以前のステップで作成したサービスを選択し、「選択」をクリックしてから、**「バインド/続行 (Bind/Continue)」**をクリックします。
 
 	<img src="images/18-bind-service.png" alt="図面" style="width: 700px;"/>

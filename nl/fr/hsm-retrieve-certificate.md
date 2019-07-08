@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, security, retrieve, transfer, certificate
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Extraction et transfert du certificat
 {: #retrieve-and-transfer-the-certificate}
@@ -24,6 +31,6 @@ Récupérez le certificat SSL que vous avez commandé précédemment afin d'êtr
 
 2. Copiez le fichier certificat dans le répertoire `/nsconfig/ssl` de Citrix NetScaler VPX.
 
-<img src="images/11-transfer-certificate.png" alt="dessin" style="width: 600px;"/>
+  <img src="images/11-transfer-certificate.png" alt="dessin" style="width: 600px;"/>
 
 Citrix NetScaler VPX est maintenant prêt à intégrer le certificat dans un déploiement d'équilibrage de charge via SSL.

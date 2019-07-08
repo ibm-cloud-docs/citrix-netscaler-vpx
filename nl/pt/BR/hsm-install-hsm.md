@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, security, install
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -13,13 +17,17 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Instalar o software cliente do IBM Hardware Security Module (HSM)
 {: #install-the-ibm-hardware-security-module-hsm-client-software}
 
 Nesta etapa, o Citrix VPX será instalado com o software e os utilitários necessários para interagir com o HSM.
 
-**NOTA:** as etapas um e dois neste procedimento são opcionais e serão necessárias apenas se o diretório safenet e os arquivos ou subpastas presentes nele estiverem ausentes do caminho `/var`. Esses recursos são necessários para o VPX a ser instalado com o software cliente e permitem que ele execute os utilitários associados ao software do HSM.
+As etapas um e dois desse procedimento são opcionais e necessárias apenas se o diretório safenet e os arquivos ou subpastas que estão nele estiverem ausentes no caminho `/var`. Esses recursos são necessários para o VPX a ser instalado com o software cliente e permitem que ele execute os utilitários associados ao software do HSM.
+{: note}
 
 Localize as credenciais para acessar a CLI do NetScaler listada no Portal de Controle em **Dispositivos > Lista de dispositivos > Expandir nome do VPX**.
 
@@ -27,11 +35,13 @@ Localize as credenciais para acessar a CLI do NetScaler listada no Portal de Con
 
 Elas serão necessárias para esta seção e o restante do guia.
 
-**NOTA:** observe que todos os comandos e saídas do VPX neste documento listarão `netscalername#` (indicando uma execução de shell ou `>` (para a própria CLI do VPX).
+Lembre-se de que todos os comandos e saídas do VPX neste documento listarão `netscalername#` (indicando uma execução de shell) ou `>` (para a própria CLI do VPX).
+{: note}
 
 1.	(OPCIONAL) Obtenha o arquivo `safenet_dirs.tar` e transfira-o para o VPX no diretório `/var`. O arquivo `safenet_dirs.tar` pode ser obtido [aqui ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://downloads.service.softlayer.com/citrix/netscaler/Safenet-HSM/){:new_window}.
 
-	**NOTA:** deve-se estar com login efetuado na conta do SoftLayer para acessar o link acima.
+	Deve-se estar conectado à conta do SoftLayer para acessar o link acima.
+  {: note}
 
 	<img src="images/4-transfer-safenet_dirs.png" alt="drawing" style="width: 600px;"/>
 

@@ -6,6 +6,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: order, vpx, setup
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -15,6 +19,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Citrix NetScaler VPX 어플라이언스 주문
 {: #order-the-citrix-netscaler-vpx-appliance}
@@ -26,7 +33,7 @@ lastupdated: "2018-11-12"
 3. **Citrix NetScaler VPX** 오퍼링을 선택하고 **작성**을 클릭하십시오.
 4. 데이터 센터와 원하는 VPX 어플라이언스(소프트웨어 버전, 성능 레벨 및 기능 에디션)를 선택하십시오.
 
-	캐시 경로 재지정 기능은 VPX의 Standard 에디션에서 사용할 수 없으므로 Platinum 기능 에디션을 선택하십시오. 포털에서는 원하는 공인 IP 주소의 수를 요청합니다. 하나의 공인 IP(사용자의 주문에 사용 가능한 IP 포함)를 선택한 후 **계속**을 클릭하십시오.
+	VPX의 Standard 에디션에서는 캐시 경로 재지정 기능을 사용할 수 없으므로 Platinum 기능 에디션을 선택하십시오. 포털에서는 원하는 공인 IP 주소의 수를 요청합니다. 하나의 공인 IP(사용자의 주문에 사용 가능한 IP 포함)를 선택한 후 **계속**을 클릭하십시오.
 
 5. 다음 화면에서 IP 주소에 대해 요청된 정보를 제공하십시오.
 6. 주문을 검토하고 서비스 계약에 동의한 후 **주문하기**를 클릭하십시오.

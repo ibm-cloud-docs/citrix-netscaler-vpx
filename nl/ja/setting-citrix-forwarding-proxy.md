@@ -3,10 +3,17 @@ copyright:
   years: 1994, 2017
 
 lastupdated: "2017-11-02"
+
+keywords: setup, proxy, forward, vip, subnet
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Citrix Netscaler VPX をフォワード・プロキシーとしてセットアップ
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
@@ -17,7 +24,8 @@ lastupdated: "2017-11-02"
 
 通常、プロキシーはファイアウォールと結合されて、内部ネットワーク内のクライアントのセキュリティーを確保します。
 
-## ステップ 1: プライベート・ネットワークで使用する VIP の要求 
+## ステップ 1: プライベート・ネットワークで使用する VIP の要求
+{: #step-1-request-vips-to-use-in-the-private-network}
 
 Citrix NetScaler VPX ロード・バランサーが {{site.data.keyword.BluSoftlayer_notm}} カスタマー・ポータルから発注されると、リバース・プロキシーが要求されていると想定されます。 要求者は、仮想 IP (VIP) として使用される「パブリック」IP の数を求められます。
 
@@ -32,11 +40,13 @@ Citrix NetScaler VPX ロード・バランサーが {{site.data.keyword.BluSoftl
 * VIP `10.114.27.0-3` が、サポート・チームによって Citrix NetScaler VPX に追加されました。
 
 ## ステップ 2: Citrix NetScaler VPX でのロード・バランシング機能およびキャッシュ・リダイレクト機能の有効化
+{: #step-2-enable-load-balancing-and-cache-redirect-features-on-the-citrix-netscaler-vpx}
 
 デフォルトでは、Citrix NetScaler VPX ロード・バランサーのロード・バランシング機能とキャッシュ・リダイレクト機能は無効になっています。`enable ns feature cr lb` コマンドは、これらの機能を有効にします。
 
 
 ## ステップ 3: フォワード・プロキシーの作成
+{: #step-3-create-the-forward-proxy}
 
 コマンド・ラインを使用して、Citrix NetScaler VPX に対して以下のコマンドを発行します。 このシナリオでは、2 台の {{site.data.keyword.BluSoftlayer_notm}} DNS サーバーのうち 1 台のみが追加されます。  
 
@@ -63,8 +73,9 @@ set cr vserver vs_forward_cache -dnsVservername virtual_dns
 5 行目では、フォワード・プロキシー仮想サーバーに対して、名前解決に仮想 DNS を使用するよう指示しています。
 
 ## クライアントの構成
+{: #configuring-the-client}
 
-フォワード・プロキシーを使用するようにクライアントのカスタマイズを続行する前に、クライアント上の Firefox ブラウザーを使用してパブリック・サイト (例えば、http://www.ibm.com) に到達できないことを確認してください。 クライアントにはパブリック・インターフェースがないため、この要求は失敗するはずです。 
+フォワード・プロキシーを使用するようにクライアントのカスタマイズを続行する前に、クライアント上の Firefox ブラウザーを使用してパブリック・サイト (例えば、http://www.ibm.com) に到達できないことを確認してください。 クライアントにはパブリック・インターフェースがないため、この要求は失敗するはずです。
 
 以下の例では、Linux クライアントを構成します。
 
@@ -95,6 +106,7 @@ IP アドレス `10.114.27.3` は、ステップ 1 で作成した転送キャ�
 この時点でセットアップが完了し、プライベート・ネットワーク上の分離されているリソースからインターネットにアクセスできます。
 
 ## セットアップの検証
+{: #validating-the-setup}
 
 クライアントがフォワード・プロキシーを使用するように構成されたので、パブリック・サイトへのアクセスを再試行します。 今度は、要求が正常に実行されるはずです。
 
@@ -106,7 +118,7 @@ IP アドレス `10.114.27.3` は、ステップ 1 で作成した転送キャ�
 
 **show cr vserver:** 指定されたキャッシュ・リダイレクト仮想サーバー、またはすべての構成済みキャッシュ・リダイレクト仮想サーバーを表示します。
 
-**stat cr vserver:** キャッシュ・リダイレクト vserver 統計を表示します。
+**stat cr vserver:** キャッシュ・リダイレクト Vserver 統計を表示します。
 
 Citrix での基本フォワード・プロキシーの構成は、かなり単純です。 これにより、内部ネットワーク上のクライアントにインターネット上のリソースへのセキュア・パスを提供できます。 また、ネットワーク管理者は、ネットワークに対する制御のレベルを維持することができます。
 

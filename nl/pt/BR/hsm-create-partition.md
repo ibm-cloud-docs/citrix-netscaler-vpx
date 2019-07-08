@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: partition, create, security, hsm
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Criar uma Partição
 {: #create-a-partition}
@@ -80,7 +87,8 @@ Para criar uma partição, execute o procedimento a seguir:
 
 4.	Crie uma nova partição:
 
-	**NOTA:** a senha definida nessa etapa será usada posteriormente para associar e criar objetos no processo do cliente de gerenciamento de armazenamento hierárquico do Citrix VPX. Mantenha o controle dessa senha para referência posterior. Além disso, certifique-se de usar o domínio de clonagem definido durante o processo de inicialização.
+	 A senha definida nesta etapa será usada posteriormente para associar e criar objetos no processo do cliente Citrix VPX HSM. Mantenha o controle dessa senha para referência posterior. Além disso, certifique-se de usar o domínio de clonagem definido durante o processo de inicialização.
+   {: note}
 
 	```
 	[jpmongehsm2] lunash:>partition create -partition partition6

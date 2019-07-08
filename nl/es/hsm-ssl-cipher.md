@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, ssl, security, create, apply, cipher, suite
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Crear y aplicar una nueva suite de cifrado
 {: #create-and-apply-a-new-cipher-suite}
@@ -26,7 +33,8 @@ Para obtener más información sobre las suites de cifrado de SSL y otras práct
 * [Prácticas recomendadas del despliegue SSL y TLS ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices#23-use-secure-cipher-suites){:new_window}
 * [¿Cómo puedo configurar ECC en NetScaler? ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://support.citrix.com/article/CTX205289){:new_window}
 
-**NOTA:** Este tema se centra en configuraciones específicas y necesarias para los cifrados SSL. La información de los enlaces anteriores puede proporcionar valores adicionales que se pueden aplicar para optimizar la operación SSL.
+Este tema trata las configuraciones específicas y necesarias para los cifrados SSL. La información de los enlaces anteriores puede proporcionar valores adicionales que se pueden aplicar para optimizar la operación SSL.
+{: note}
 
 Para crear una nueva suite de cifrado que dé prioridad a los cifrados AEAD, ECDHE y ECDSA, realice el procedimiento siguiente:
 

@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, security, install
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -13,13 +17,17 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
-# 安装 IBM 硬件安全模块 (HSM) 客户机软件
+# 安装 IBM Hardware Security Module (HSM) 客户机软件
 {: #install-the-ibm-hardware-security-module-hsm-client-software}
 
 在此步骤中，Citrix VPX 将随与 HSM 交互所需要的软件和实用程序一起安装。
 
-**注：**此过程中的步骤 1 和 2 是可选的，仅当 `/var` 路径中缺少 safenet 目录及其中的文件或子文件夹时才需要。这些资源是随客户机软件一起安装 VPX 所必需的，并允许 VPX 运行与 HSM 软件关联的实用程序。
+此过程中的步骤 1 和 2 是可选的，仅当 `/var` 路径中缺少 safenet 目录及其中的文件或子文件夹时才需要。这些资源是随客户机软件一起安装 VPX 所必需的，并允许 VPX 运行与 HSM 软件关联的实用程序。
+{: note}
 
 查找凭证以访问在控制门户网站中**设备 > 设备列表 > 展开 VPX 名称**下列出的 NetScaler CLI。
 
@@ -27,11 +35,13 @@ lastupdated: "2018-11-12"
 
 本部分和指南的剩余部分将需要这些信息。
 
-**注：**请注意，本文档中的所有 VPX 命令和输出都将列出 `netscalername#`（指示 shell 执行）或 `>`（表示 VPX CLI 本身）。
+请注意，本文档中的所有 VPX 命令和输出都将列出 `netscalername#`（指示 shell 执行）或 `>`（表示 VPX CLI 本身）。
+{: note}
 
 1.	（可选）获取 `safenet_dirs.tar` 文件，并将其传输到 `/var` 目录中的 VPX。可以从[此处 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://downloads.service.softlayer.com/citrix/netscaler/Safenet-HSM/){:new_window} 获取 `safenet_dirs.tar` 文件。
 
-	**注：**您必须登录到 SoftLayer 帐户才能访问上面的链接。
+	您必须登录到 SoftLayer 帐户才能访问上面的链接。
+  {: note}
 
 	<img src="images/4-transfer-safenet_dirs.png" alt="图样" style="width: 600px;"/>
 
@@ -111,4 +121,4 @@ lastupdated: "2018-11-12"
 	/var/safenet/safenet/lunaclient/lib/libCryptoki2_64.so
 	```
 
-“IBM© 硬件安全模块”已成功安装。
+“IBM© Hardware Security Module”已成功安装。

@@ -3,10 +3,17 @@ copyright:
   years: 1994, 2017
 
 lastupdated: "2018-08-08"
+
+keywords: redirect, url, monitor, responder
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Citrix Netscaler VPX에서 URL 경로 재지정
 {: #redirecting-urls-in-a-citrix-netscaler-vpx}
@@ -21,7 +28,7 @@ NetScaler에서 `http://`로부터 `https://`로의 경로 재지정을 수행�
 	```
 	Add lb monitor localhost_ping PING -LRTM ENABLED -destIP 127.0.0.1
 	```
-	
+
 2. 사용되지 않을 IP(온라인 상태가 되지 않는 `1.1.1.1`에 있는 서버의 IP 주소)를 사용하여 허위 서비스를 정의하십시오.
 	```
 	Add service Always_UP_service 1.1.1.1 HTTP 80 -gslb NONE -maxClient 0 -maxReq 0 -cip ENABLED dummy -usip NO -sp OFF -cltTimeout 180 -svrTimeout 360 -CKA NO -TCPB NO -CMP YES
@@ -30,7 +37,7 @@ NetScaler에서 `http://`로부터 `https://`로의 경로 재지정을 수행�
 	```
 	bind lb monitor localhost_ping Always_UP_service
 	```
-	
+
 4. 항상 작동 상태로 유지되는 서비스에 바인드하여 NetScaler가 항상 vserver의 포트 80을 청취하도록 하십시오.
 	```
 	add lb vserver http_to_htps_vserver HTTP w.x.y.z 80 -timeout 0 -cltTimeout 180
@@ -38,7 +45,7 @@ NetScaler에서 `http://`로부터 `https://`로의 경로 재지정을 수행�
 	```
 	bind lb vserver http_to_htps_vserver Always_UP_service
 	```
-	
+
 5. `http://`를 `https://`로 대체하도록 응답자 조치 및 정책을 작성하십시오.
 	```
 	add responder action http_to_https_actn redirect "\"https://\" + http.req.hostname.HTTP_URL_SAFE + http.REQ.URL.PATH_AND_QUERY.HTTP_URL_SAFE"
@@ -55,7 +62,7 @@ NetScaler에서 `http://`로부터 `https://`로의 경로 재지정을 수행�
 	bind lb vserver http_to_htps_vserver -policyName http_to_https_pol -priority 1 -gotoPriorityExpression END
 	```
 8. 다음과 같이 'wget' 또는 'url'과 같은 명령행 유틸리티를 사용하여 의도한 대로 작동 중인지 확인할 수 있습니다.
-        
+
 	```
 wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
 

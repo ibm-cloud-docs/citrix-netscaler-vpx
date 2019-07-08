@@ -3,15 +3,22 @@ copyright:
   years: 1994, 2018
 
 lastupdated: "2018-11-12"
+
+keywords: ha, high availability, setup, configure, configuration
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Configurar Citrix Netscaler VPX para alta disponibilidad (HA)
 {: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
-Los equilibradores de carga se utilizan para equilibrar el tráfico en varios servidores de aplicaciones para mejorar el rendimiento y la estabilidad en una aplicación escalable. Sin embargo, un solo equilibrador de carga es un único punto de anomalía. Evite esto configurando un par de alta disponibilidad (HA) de Netscaler VPX. La configuración de un par de alta disponibilidad requiere dos servidores Netscaler VPX. El servidor secundario entra para continuar el equilibrio de carga si falla el primario. 
+Los equilibradores de carga se utilizan para equilibrar el tráfico en varios servidores de aplicaciones para mejorar el rendimiento y la estabilidad en una aplicación escalable. Sin embargo, un solo equilibrador de carga es un punto único de anomalía. Evite esto configurando un par de alta disponibilidad (HA) de Netscaler VPX. La configuración de un par de alta disponibilidad requiere dos servidores Netscaler VPX. El servidor secundario entra para continuar el equilibrio de carga si falla el primario.
 
 La SNIP (subred IP) es la IP vista por los servidores de equilibrio de carga como IP de origen de las solicitudes (conexiones) realizadas a la VIP (IP virtual) del Netscaler VPX. Normalmente, en una configuración de par de HA, la SNIP no cambia, pero es posible que suceda durante un suceso de migración tras error. Cuando los dos Netscalers están en la misma subred, es posible que la SNIP del secundario cambie la SNIP utilizada originalmente por el primario. Esto no causará ninguna confusión a los servidores que manejan la solicitud.
 
@@ -28,16 +35,16 @@ Después de pedir los dos servidores de Netscaler VPX en la VLAN necesaria y ped
 
 2. En el VPX que desea que sea el secundario, pulse **Sistema > Alta disponibilidad**, pulse con el botón derecho en la primera línea y pulse **Editar**. Seleccione **Permanecer secundario** en el recuadro desplegable de configuración de Estado de alta disponibilidad y pulse **Aceptar**.
 
-3. Seleccione **Añadir**. Especifique la dirección IP del sistema de otros VPX (se encuentran en el separador de alta disponibilidad en el primario) y especifique los detalles del inicio de sesión como root en la parte inferior. Deje el recuadro **Activar INC** sin marcar. Pulse **Aceptar**. 
-	
-	Si sucede un erro diciendo que las IP no están en la misma subred, es posible que ambos servidores VPX no estén en la misma VLAN. De lo contrario, ahora debería poder abrir el servidor primario y seleccionar el botón **Actualizar** para ver los servidores que operan en alta disponibilidad. 
+3. Seleccione **Añadir**. Especifique la dirección IP del sistema de otros VPX (se encuentran en el separador de alta disponibilidad en el primario) y especifique los detalles del inicio de sesión como root en la parte inferior. Deje el recuadro **Activar INC** sin marcar. Pulse **Aceptar**.
+
+	Si sucede un erro diciendo que las IP no están en la misma subred, es posible que ambos servidores VPX no estén en la misma VLAN. De lo contrario, ahora debería poder abrir el servidor primario y seleccionar el botón **Actualizar** para ver los servidores que operan en alta disponibilidad.
 
 	La IP de gestión del nuevo NetScaler para el secundario será una dirección IP inferior al anterior. Si no puede obtener acceso al VPX secundario, elimine la alta disponibilidad desde la línea de mandatos utilizando:
 
 	`sh ha node`
 
 	Elimine el nodo de HA:
-	
+
 	`rm ha node 1`
 
 4. En el VPX primario debería ver que el VPX remoto se está sincronizando. Vaya al servidor secundario y compruebe la configuración de **Red > IP**. Debería ver la VIP del servidor primario y otras IP listadas como pasivas.

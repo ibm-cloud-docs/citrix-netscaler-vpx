@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, ssl, security, add, configure
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -13,6 +17,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Incluir e configurar o SSL Virtual Server
 {: #add-and-configure-the-ssl-virtual-server}
@@ -26,7 +33,7 @@ Para incluir e configurar o SSL Virtual Server, execute o procedimento a seguir:
 	<img src="images/15-confirm-service.png" alt="drawing" style="width: 700px;"/>
 
 4. Repita a etapa dois para quaisquer servidores adicionais.
-5. Navegue para **Gerenciamento de tráfego > Balanceamento de carga > Virtual Servers >** e clique em **Incluir**. Especifique o nome e o selecione **SSL** como o Protocolo e, em seguida, insira o endereço IP público. Pressione **OK** para concluir.
+5. Navegue para **Gerenciamento de tráfego > Balanceamento de carga > Virtual Servers >** e clique em **Incluir**. Especifique o nome e selecione **SSL** como o Protocolo, em seguida, insira o Endereço IP público. Pressione **OK** para concluir.
 6. Agora, selecione **Nenhuma ligação de serviços do servidor virtual de balanceamento de carga** e clique em **Selecionar**. Selecione o serviço ou serviços criados nas etapas anteriores e clique em Selecionar, em seguida, clique em **Ligar/Continuar**.
 
 	<img src="images/18-bind-service.png" alt="drawing" style="width: 700px;"/>

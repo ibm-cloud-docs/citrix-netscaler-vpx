@@ -3,10 +3,17 @@ copyright:
   years: 1994, 2017
 
 lastupdated: "2018-08-08"
+
+keywords: redirect, url, monitor, responder
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Citrix Netscaler VPX での URL のリダイレクト
 {: #redirecting-urls-in-a-citrix-netscaler-vpx}
@@ -21,7 +28,7 @@ NetScaler で `http://` から `https://` へのリダイレクトを実行す�
 	```
 	Add lb monitor localhost_ping PING -LRTM ENABLED -destIP 127.0.0.1
 	```
-	
+
 2. 決して使用されない IP (決してオンラインにならない、`1.1.1.1` のサーバーの IP アドレス) を使用して偽のサービスを定義します。
 	```
 	Add service Always_UP_service 1.1.1.1 HTTP 80 -gslb NONE -maxClient 0 -maxReq 0 -cip ENABLED dummy -usip NO -sp OFF -cltTimeout 180 -svrTimeout 360 -CKA NO -TCPB NO -CMP YES
@@ -30,7 +37,7 @@ NetScaler で `http://` から `https://` へのリダイレクトを実行す�
 	```
 	bind lb monitor localhost_ping Always_UP_service
 	```
-	
+
 4. NetScaler が常に vserver 上のポート80 を listen するようにし、常に稼働しているサービスにバインドします。
 	```
 	add lb vserver http_to_htps_vserver HTTP w.x.y.z 80 -timeout 0 -cltTimeout 180
@@ -38,7 +45,7 @@ NetScaler で `http://` から `https://` へのリダイレクトを実行す�
 	```
 	bind lb vserver http_to_htps_vserver Always_UP_service
 	```
-	
+
 5. レスポンダーのアクションとポリシーを作成して、`http://` を `https://` に置き換えます。
 	```
 	add responder action http_to_https_actn redirect "\"https://\" + http.req.hostname.HTTP_URL_SAFE + http.REQ.URL.PATH_AND_QUERY.HTTP_URL_SAFE"
@@ -55,7 +62,7 @@ NetScaler で `http://` から `https://` へのリダイレクトを実行す�
 	bind lb vserver http_to_htps_vserver -policyName http_to_https_pol -priority 1 -gotoPriorityExpression END
 	```
 8. 「wget」や「curl」などのコマンド・ライン・ユーティリティーを以下のように使用して、これが、意図したとおりに機能していることを確認できます。
-        
+
 	```
     wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
 

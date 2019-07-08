@@ -6,6 +6,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: cache, configure, configuration, http, traffic
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -15,9 +19,12 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 配置 HTTP(S) 資料流量的快取重新導向
-{: #configure-cache-redirection-for-ssl-traffic-optional-}
+{: #configure-cache-redirection-for-http-traffic}
 
 若要配置 HTTP 或 HTTPS 資料流量的快取重新導向，請遵循下列步驟：
 

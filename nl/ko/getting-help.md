@@ -4,6 +4,10 @@ copyright:
   years: 2017,2018
 lastupdated: "2018-11-12"
 
+keywords: help, support, questions, troubleshooting
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -14,6 +18,9 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Citrix NetScaler VPX용 도움말 및 지원 얻기
 {: #getting-help-and-support-for-citrix-netscaler-vpx}

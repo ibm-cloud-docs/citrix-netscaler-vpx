@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, ssl, install, ssl, certificate, security
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:pre: .pre}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:table: .aria-labeledby="caption"}
 
 # SSL 証明書のインストール
@@ -44,9 +51,10 @@ lastupdated: "2018-11-12"
 	add ssl hsmkey <KeyName> -hsmType SAFENET -serialNum 	<serial #> -password <password>
 	```
 
-	ここで、`keyName` は、CMU ユーティリティーを使用して IBM© Hardware Security Module (HSM) 上に作成された鍵の名前です。`serialNum` パラメーターは、対象となる区画のシリアル番号です。 `password` パラメーターは、以前と同様に、鍵が存在する区画のパスワードです。
+	ここで、`keyName` は、CMU ユーティリティーを使用して IBM© Hardware Security Module (HSM) 上に作成された鍵の名前です。 `serialNum` パラメーターは、対象となる区画のシリアル番号です。 `password` パラメーターは、以前と同様に、鍵が存在する区画のパスワードです。
 
-	**注:** このステップを完了するために長い時間がかかるので、`Internal error` メッセージが予想されます。 鍵は適切に追加されるはずです。 ただし、その他のエラー・メッセージを受信した場合は対応する必要があります。
+	この手順は完了するまでに長い時間がかかるので、`Internal error` メッセージが予期されます。鍵は適切に追加されるはずです。 ただし、これ以外のエラー・メッセージを受け取った場合は、対処が必要になります。
+  {: note}
 
 3.	鍵が追加されたことを確認します。
 

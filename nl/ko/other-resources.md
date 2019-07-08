@@ -1,14 +1,21 @@
 ---
 copyright:
   years: 1994, 2018
-  
+
 lastupdated: "2018-11-12"
+
+keywords: resources, blog, brief
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
-# IBM Citrix Netscaler VPX용 기타 리소스 
+# IBM Citrix Netscaler VPX용 기타 리소스
 {: #other-resources-for-ibm-citrix-netscaler-vpx}
 
 이 리소스는 IBM© 및 일부 파트너와 고객이 작성했습니다.

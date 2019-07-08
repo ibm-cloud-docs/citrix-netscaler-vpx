@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, security, certificate, order
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -13,6 +17,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Ordinazione di un certificato SSL
 {: #order-an-ssl-certificate}
@@ -21,7 +28,7 @@ SSL (Secure Sockets Layer) è una tecnologia che crittografa il traffico tra l'a
 
 I certificati SSL contengono la chiave pubblica del server, le date per le quali il certificato è valido, un nome host per cui il certificato è valido e una firma dell'autorità di certificazione (CA, certificate authority) che lo emesso.
 
-IBM© Cloud offre certificati che possono essere acquisiti e acquistati senza dover ricorrere a fornitori/siti di terze parti. 
+IBM© Cloud offre certificati che possono essere acquisiti e acquistati senza dover ricorrere a fornitori/siti di terze parti.
 
 IBM Cloud offre certificati SSL annuali e biennali per i clienti che offrono diversi benefici, inclusi:
 
@@ -76,4 +83,4 @@ Per ordinare un certificato SSL da utilizzare con il tuo Citrix Netscaler VPX, e
 
 4. Riceverai una conferma dell'ordine con i dettagli della richiesta di certificato all'account che hai indicato.
 
-	Fai clic sul link fornito nell'email per approvare la richiesta di convalida del dominio. A questo punto, la richiesta SSL dovrebbe essere pronta per iniziare a svolgere l'attività. 
+	Fai clic sul link fornito nell'email per approvare la richiesta di convalida del dominio. A questo punto, la richiesta SSL dovrebbe essere pronta per iniziare a svolgere l'attività.

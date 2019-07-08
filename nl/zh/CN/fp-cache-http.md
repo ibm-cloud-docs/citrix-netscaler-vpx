@@ -6,6 +6,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: cache, configure, configuration, http, traffic
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -15,9 +19,12 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 为 HTTP(S) 流量配置高速缓存重定向
-{: #configure-cache-redirection-for-ssl-traffic-optional-}
+{: #configure-cache-redirection-for-http-traffic}
 
 要为 HTTP 或 HTTPS 流量配置高速缓存重定向，请执行以下步骤：
 

@@ -1,17 +1,24 @@
 ---
 copyright:
   years: 1994, 2018
-  
+
 lastupdated: "2018-11-12"
+
+keywords: resources, blog, brief
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Altre risorse per IBM Citrix Netscaler VPX
 {: #other-resources-for-ibm-citrix-netscaler-vpx}
 
-Queste risorse vengono create da IBM© e da alcuni dei nostri partner e clienti. 
+Queste risorse vengono create da IBM© e da alcuni dei nostri partner e clienti.
 
 ## Blog
 

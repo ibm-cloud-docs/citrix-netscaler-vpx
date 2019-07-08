@@ -6,6 +6,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: cache, enable, redirect, capabilities
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -15,6 +19,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Habilitar la redirección de la memoria caché y las prestaciones de equilibrio de carga
 {: #enable-cache-redirection-and-load-balancing-capabilities}
@@ -27,6 +34,6 @@ Para habilitar la redirección de la memoria caché y el equilibrio de carga del
 
 	Habilite las características adicionales según sea necesario.
 
-2. A continuación, vaya a **Sistema > Valores > Configurar características básicas** y habilite **Equilibrio de carga** (si no está habilitado) y pulse **Aceptar**. 
+2. A continuación, vaya a **Sistema > Valores > Configurar características básicas** y habilite **Equilibrio de carga** (si no está habilitado) y pulse **Aceptar**.
 
 	Habilite las características adicionales según sea necesario.

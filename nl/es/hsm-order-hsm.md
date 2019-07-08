@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, security, order
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -13,6 +17,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Solicitar IBM Hardware Security Module (HSM)
 {: #order-the-ibm-hardware-security-module-hsm-}
@@ -25,6 +32,6 @@ Primero, deberá solicitar el HSM. Para ello, realice lo siguiente:
 4.	Seleccione el centro de datos que prefiera, elija la opción **Cloud HSM 6.0** y pulse **Añadir al pedido**.
 5. En **Configuración avanzada del sistema** especifique la información de sección de la VLAN de fondo y frontal y elija **Clave SSH** del menú desplegable; a continuación, especifique los detalles de nombre de host y dominio.
 
-<img src="images/1-Order-HSM.png" alt="dibujo" style="width: 700px;"/>
+  <img src="images/1-Order-HSM.png" alt="dibujo" style="width: 700px;"/>
 
 6.	Cuando haya terminado, acepte los términos y pulse **Enviar pedido**.

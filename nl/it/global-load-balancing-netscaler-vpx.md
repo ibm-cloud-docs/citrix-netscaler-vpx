@@ -2,24 +2,33 @@
 copyright:
   years: 1994, 2017
 lastupdated: "2018-11-12"
+
+keywords: load balancing, vpx, global, mep, gslb
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Bilanciamento del carico globale con Citrix NetScaler VPX
 {: #global-load-balancing-with-citrix-netscaler-vpx}
 
 Il bilanciamento del carico del server globale (GSLB, Global Server Load Balancing) è un meccanismo per distribuire il traffico su più server/istanze, che si trovano di norma in località geografiche differenti. L'idea è quella di avere un motore/server di bilanciamento globale che riceve le richieste di traffico dai client e li reindirizza a una specifica area geografica, che è determinata utilizzando i criteri/algoritmi selezionati e configurata dall'amministratore. Per ottenere questo risultato, all'interno della rete {{site.data.keyword.BluSoftlayer_notm}} possono essere utilizzati due metodi riconosciuti:
 
-* La **CDN:** Content Delivery Network (CDN) distribuisce contenuto e dati multimediali elaborati, quali immagini e video, e distribuisce geograficamente i contenuti su nodi dispersi mantenendo al tempo stesso la latenza minima e la velocità più elevata. Viene di norma implementata quando è necessario distribuire delle specifiche parti di contenuto, invece che interi siti web o intere applicazioni. {{site.data.keyword.BluSoftlayer_notm}} offre questo servizio; leggi ulteriori informazioni in merito [qui](/docs/infrastructure/CDN?topic=CDN-getting-started). 
+* La **CDN:** Content Delivery Network (CDN) distribuisce contenuto e dati multimediali elaborati, quali immagini e video, e distribuisce geograficamente i contenuti su nodi dispersi mantenendo al tempo stesso la latenza minima e la velocità più elevata. Viene di norma implementata quando è necessario distribuire delle specifiche parti di contenuto, invece che interi siti web o intere applicazioni. {{site.data.keyword.BluSoftlayer_notm}} offre questo servizio; leggi ulteriori informazioni in merito [qui](/docs/infrastructure/CDN?topic=CDN-getting-started).
 * **NetScaler VPX:** come con un normale bilanciamento del carico locale, VPX utilizza una gerarchia degli oggetti simile per bilanciare il carico del traffico tra diverse aree geografiche. Utilizzando le ricerche locali basate su DNS, NetScaler sceglie il rispettivo record che corrisponde all'ubicazione/sito selezionati; la selezione è basata sui criteri preconfigurati dall'amministratore. Le sezioni successive descriveranno in modo più dettagliato questa opzione/offerta.
 
-Nota che sono disponibili delle altre tecniche per la distribuzione di contenuto, come il reindirizzamento HTTP, che è anche possibile implementare con Citrix NetScaler VPX. 
+Sono disponibili delle altre tecniche per la distribuzione di contenuto, come il reindirizzamento HTTP, che è anche possibile implementare con Citrix NetScaler VPX.
+{: note}
 
 ## informazioni su GSLB su VPX
+{: #about-gslb-on-vpx}
 
-NetScaler VPX può essere abilitato con GSLB semplicemente attivando la sua funzione sulla CLI/GUI. 
+NetScaler VPX può essere abilitato con GSLB semplicemente attivando la sua funzione sulla CLI/GUI.
 
 GSLB utilizza componenti/oggetti molto simili a quelli utilizzati sulle distribuzioni di bilanciamento del carico locali, dove le entità sono definite utilizzando un modello gerarchico.
 
@@ -31,7 +40,7 @@ GSLB potrebbe essere implementato per diversi scopi. Alcuni potrebbero essere:
 
 I componenti o le entità principali nel processo o nella distribuzione GSLB sono:
 
-* **Server virtuali:** un VIP è un indirizzo IP a cui i client inviano richieste; NetScaler termina la connessione client al VIP e avvia quindi una connessione a un server configurato nel servizio di bilanciamento del carico (locale). 
+* **Server virtuali:** un VIP è un indirizzo IP a cui i client inviano richieste; NetScaler termina la connessione client al VIP e avvia quindi una connessione a un server configurato nel servizio di bilanciamento del carico (locale).
 * **DNS (Domain Name System) e server di nomi:** la risoluzione dei nomi su GSLB funziona in modo molto simile a un normale DNS. La differenza è la logica/i criteri utilizzati per determinare l'indirizzo o gli indirizzi risolti; GSLB utilizza un metodo di bilanciamento del carico preconfigurato per gestire questa risoluzione. NetScaler può essere configurato per interagire con DNS in diversi modi:
 	* ADNS (Authoritative DNS). I NetScaler che utilizzano la modalità ADNS sono autorevoli per uno specifico dominio e tutti i record su di esso.
 	* Sottodelega DNS. Si verifica quando un server DNS (autorevole del dominio) delega la responsabilità di un dominio secondario a un sistema NetScaler.
@@ -48,10 +57,10 @@ I componenti o le entità principali nel processo o nella distribuzione GSLB son
   * Custom Load: seleziona un servizio che non sta gestendo alcuna transazione attiva. Se tutti i servizi nella configurazione di bilanciamento del carico stanno gestendo delle transazioni attive, l'applicazione seleziona il servizio con il carico (utilizzo della CPU, memoria e tempo di risposta) minore.
 
 * **MEP (Metric Exchange Protocol):** un protocollo proprietario utilizzato per scambiare metriche (carico e rete) e informazioni di persistenza tra i siti. MEP fornisce un controllo dell'integrità tra diversi siti/NetScaler nella rete mesh/topologia GSLB. Utilizzando i criteri impostati dall'amministratore, MEP fornisce ai siti un modo per comunicare e gestire il traffico in base ai parametri di selezione configurati precedentemente. MEP utilizza le porte TCP 3009 e 3011. Quando MEP è disabilitato, la selezione dei metodi è limitata alle opzioni elencate in precedenza e contrassegnate con un asterisco (*). Qualsiasi altro metodo scelto verrebbe reimpostato su Round Robin.
-* **Monitoraggio:** il motore NetScaler valuta periodicamente lo stato dei servizi GSLB remoti utilizzando MEP oppure dei monitor espliciti associati ai servizi in questione. I monitor sono utilizzati proprio come su un servizio di bilanciamento del carico normale. Nel caso di GSLB, l'aggiunta di monitor ai servizi locali non è richiesta poiché tale controllo viene di norma eseguito da MEP. 
+* **Monitoraggio:** il motore NetScaler valuta periodicamente lo stato dei servizi GSLB remoti utilizzando MEP oppure dei monitor espliciti associati ai servizi in questione. I monitor sono utilizzati proprio come su un servizio di bilanciamento del carico normale. Nel caso di GSLB, l'aggiunta di monitor ai servizi locali non è richiesta poiché tale controllo viene di norma eseguito da MEP.
 * **Persistenza:** una funzione facoltativa che stabilisce una preferenza di sito per uno specifico dominio. In questo particolare caso d'uso, il carico del traffico non viene bilanciato ma gestito dallo stesso data center. Ciò può essere utile in alcune applicazioni, come l'e-commerce, in cui i dati transazionali sono univoci per ciascun sito/server.
 * **Sito GSLB:** i siti possono essere definiti come data center o ubicazioni in cui il sistema NetScaler è configurato/presente. Ogni sito GSLB è gestito da un sistema NetScaler che è considerato "locale" su tale sito, mentre tutti gli altri sistemi/siti remoti sono trattati come siti "remoti".
 * **Servizio GSLB:** è un oggetto che rappresenta (ed è associato a) un VIP/server virtuale (normale). Può essere locale (stesso sito) o remoto.
 * **Server virtuale GSLB:** un server virtuale GSLB viene assegnato a uno o più servizi GSLB che sarebbero di norma parte di siti (GSLB) differenti. Il carico del traffico ricevuto su di esso viene bilanciato tra i siti ad esso associati. La selezione del sito viene eseguita in base al metodo e al caso d'uso.
-* **Dominio GSLB:** rappresenta il dominio o la zona di cui è responsabile il server virtuale GSLB. 
+* **Dominio GSLB:** rappresenta il dominio o la zona di cui è responsabile il server virtuale GSLB.
 * **Servizio ADNS:** un servizio rappresentato da una combinazione di indirizzo IP e porta; è dove vengono inviate le richieste DNS a un dominio per cui NetScaler ha un ruolo autorevole. NetScaler le porta al server virtuale GSLB associato a tale dominio per ottenere una risposta.

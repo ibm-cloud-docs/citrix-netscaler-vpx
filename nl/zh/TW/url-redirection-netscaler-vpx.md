@@ -3,10 +3,17 @@ copyright:
   years: 1994, 2017
 
 lastupdated: "2018-08-08"
+
+keywords: redirect, url, monitor, responder
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Citrix Netscaler VPX 中的重新導向 URL
 {: #redirecting-urls-in-a-citrix-netscaler-vpx}
@@ -21,7 +28,7 @@ lastupdated: "2018-08-08"
 	```
 	Add lb monitor localhost_ping PING -LRTM ENABLED -destIP 127.0.0.1
 	```
-	
+
 2. 利用永遠不會使用的 IP 來定義偽造服務（網址為 `1.1.1.1` 的伺服器 IP 位址絕對不會進行連線作業）。
 	```
 	Add service Always_UP_service 1.1.1.1 HTTP 80 -gslb NONE -maxClient 0 -maxReq 0 -cip ENABLED dummy -usip NO -sp OFF -cltTimeout 180 -svrTimeout 360 -CKA NO -TCPB NO -CMP YES
@@ -30,7 +37,7 @@ lastupdated: "2018-08-08"
 	```
 	bind lb monitor localhost_ping Always_UP_service
 	```
-	
+
 4. 在 vserver 上，讓 NetScaler 一律接聽埠 80，並將它連結至一律保持啟動的服務。
 	```
 	add lb vserver http_to_htps_vserver HTTP w.x.y.z 80 -timeout 0 -cltTimeout 180
@@ -38,7 +45,7 @@ lastupdated: "2018-08-08"
 	```
 	bind lb vserver http_to_htps_vserver Always_UP_service
 	```
-	
+
 5. 撰寫回應者動作及原則，以將 `http://` 取代為 `https://`。
 	```
 	add responder action http_to_https_actn redirect "\"https://\" + http.req.hostname.HTTP_URL_SAFE + http.REQ.URL.PATH_AND_QUERY.HTTP_URL_SAFE"
@@ -55,17 +62,17 @@ lastupdated: "2018-08-08"
 	bind lb vserver http_to_htps_vserver -policyName http_to_https_pol -priority 1 -gotoPriorityExpression END
 	```
 8. 您可以使用指令行公用程式（例如 'wget' 或 'curl'）確認這如預期運作，如下所示：
-        
+
 	```
-    wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
+        wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
 
     curl -v http://w.x.y.z
-    ```
+        ```
 
 將 IP 位址 `w.x.y.z` 替換為 URL 主機名稱（例如 `http://mail.example.com` 或 `http://web.example.com`），並確認 "Location" 輸出反映一開始指定的相同主機名稱，但開頭為 "https"，如下列範例所示：
 
 ```
-    wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
+wget  -S --max-redirect 0 -O /dev/null http://w.x.y.z
     --2012-06-18 08:42:20--  http://w.x.y.z/
     Connecting to w.x.y.z:80... connected.
     HTTP request sent, awaiting response...

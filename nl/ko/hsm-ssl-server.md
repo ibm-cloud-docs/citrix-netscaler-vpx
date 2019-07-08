@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, ssl, security, add, configure
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -13,6 +17,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # SSL 가상 서버 추가 및 구성
 {: #add-and-configure-the-ssl-virtual-server}
@@ -26,8 +33,8 @@ SSL 가상 서버를 추가하고 구성하려면 다음 프로시저를 수행�
 	<img src="images/15-confirm-service.png" alt="그림" style="width: 700px;"/>
 
 4. 추가 서버를 위해 2단계를 반복하십시오.
-5. **트래픽 관리 > 로드 밸런싱 > 가상 서버>**로 이동하여 **추가**를 클릭하십시오. 이름을 지정하고 프로토콜로 **SSL**을 선택한 후 공인 IP를 입력하십시오. 완료하려면 **확인**을 누르십시오.
-6. 이제 **No Load Balancing Virtual Server Service Binding**을 선택하고 **Select**를 클릭하십시오. 이전 단계에서 작성한 서비스를 선택하고 선택을 클릭한 후 **바인드/계속**을 클릭하십시오.
+5. **트래픽 관리 > 로드 밸런싱 > 가상 서버>**로 이동하여 **추가**를 클릭하십시오. 이름을 지정하고 **SSL**을 프로토콜로 선택한 후 공인 IP를 입력하십시오. 완료하려면 **확인**을 누르십시오.
+6. 이제 **로드 밸런싱 가상 서버 서비스 바인딩 없음**을 선택하고 **선택**을 클릭하십시오. 이전 단계에서 작성한 서비스를 선택하고 선택을 클릭한 후 **바인드/계속**을 클릭하십시오.
 
 	<img src="images/18-bind-service.png" alt="그림" style="width: 700px;"/>
 

@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: security, hsm, ntl, certificate
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,11 +16,14 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 建立网络信任链路 (NTL)
 {: #establish-a-network-trust-link-ntl-}
 
-网络信任链路 (NTL) 是硬件安全模块 (HSM) 与客户机进行通信的安全通道。NTL 使用双向证书来认证和加密在 HSM 服务器分区与客户机之间传输的数据。
+网络信任链路 (NTL) 是硬件 Hardware Security Module (HSM) 与客户机进行通信的安全通道。NTL 使用双向证书来认证和加密在 HSM 服务器分区与客户机之间传输的数据。
 
 请注意，信任链路需要在 NTLS 和 NTLA（双向）协议中都可访问 TCP 端口 1792，才可保证所有进程和实用程序都能正常工作。
 
@@ -214,4 +221,4 @@ lastupdated: "2018-11-12"
 	root@IBMADC690867-s6dr# touch /var/safenet/safenet_is_enrolled
 	```
 
-现在，NTL 已建立。
+现在，网络信任链路已建立。

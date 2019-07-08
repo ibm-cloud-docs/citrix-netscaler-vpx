@@ -1,21 +1,31 @@
 ---
+
 copyright:
   years: 1994, 2018
-  
+
 lastupdated: "2018-11-12"
+
+keywords: about, vpx, features, overview
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Sobre o Citrix NetScaler VPX
 {: #about-citrix-netscaler-vpx}
 
-O Citrix NetScaler VPX é um dispositivo de software virtual dedicado que fornece o balanceamento de carga na rede pública e na rede privada do IBM© Cloud. 
+O Citrix NetScaler VPX é um dispositivo de software virtual dedicado que fornece o balanceamento de carga na rede pública e na rede privada do IBM© Cloud.
 
 A implementação de um Citrix NetScaler VPX em sua solução do {{site.data.keyword.BluSoftlayer_notm}} acelera a entrega de aplicativos da web, impulsiona o desempenho e assegura que seus aplicativos e serviços em nuvem permaneçam otimizados, disponíveis e seguros. Se você tiver cargas de trabalho desafiadoras, como jogos, big data e analítica ou nuvens privadas, o Citrix NetScaler VPX poderá ajudá-lo a entregar sua solução quando, onde e como seus usuários precisarem mais.
 
 ## Recursos
+{: #features}
 
 * O único produto que pode balancear a carga do tráfego nas redes públicas e privadas
 * Gerenciamento usando a GUI (Interface gráfica com o usuário) ou a CLI (Interface da linha de comandos)
@@ -50,21 +60,26 @@ O Citrix NetScaler VPX pode ser implementado sob demanda, em menos de 15 minutos
 O {{site.data.keyword.BluSoftlayer_notm}} oferece o dispositivo virtual NetScaler VPX com acesso raiz total e irrestrito.   
 
 ## Segurança do aplicativo
+{: #application-security}
 
 Para proteger o tráfego de aplicativos, os clientes podem aproveitar os recursos de segurança, como Filtragem de conteúdo do aplicativo, Enfileiramento de prioridade e um Firewall de aplicativo da web.
 
 ## Filtragem de tráfego
+{: #traffic-filtering}
 
 O Citrix Netscaler VPX filtra solicitações de usuários finais para os servidores e respostas dos servidores para os usuários finais. Um recurso de Aprendizado com o Firewall do aplicativo permite a criação de perfil de sessões em tempo real e a determinação de se o tráfego deve ser permitido.
 
 ## Relatório PCI-DSS
+{: #pci-dss-reporting}
 
 O Payment Card Industry (PCI) Data Security Standard (DSS) consiste em doze critérios que devem ser atendidos por empresas que processam pagamentos de cartão de crédito on-line. Os relatórios PCI-DSS consistem em uma lista dos critérios que são relevantes para sua configuração de Firewall do aplicativo. O relatório também lista se sua configuração atual atende cada critério e sugere como configurar o firewall do aplicativo para atender a esses padrões.
 
 ## Global Load Balancing (GSLB)
+{: #global-load-balancing-gslb-}
 
-O NetScaler Platinum Edition amplia o balanceador de carga além dos limites locais do data center com a funcionalidade Global Load Balancing. 
+O NetScaler Platinum Edition amplia o balanceador de carga além dos limites locais do data center com a funcionalidade Global Load Balancing.
 
 ## Ampliar seu data center
+{: #extend-your-datacenter}
 
-O NetScaler Platinum Edition permite usar o recurso NetScaler CloudBridge Connector, que fornece uma maneira simples de estender seu datacenter para o {{site.data.keyword.BluSoftlayer_notm}} com menus orientados a assistente. 
+O NetScaler Platinum Edition permite usar o recurso NetScaler CloudBridge Connector, que fornece uma maneira simples de estender seu datacenter para o {{site.data.keyword.BluSoftlayer_notm}} com menus orientados a assistente.

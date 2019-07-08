@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: partition, create, security, hsm
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 创建分区
 {: #create-a-partition}
@@ -80,7 +87,8 @@ lastupdated: "2018-11-12"
 
 4.	创建新分区：
 
-	**注：**此步骤中定义的密码稍后将用于在 Citrix VPX HSM 客户机进程中关联和创建对象。请记录此密码以供未来引用。另外，请确保使用初始化过程中定义的克隆域。
+	 此步骤中定义的密码稍后将用于在 Citrix VPX HSM 客户机进程中关联和创建对象。请记录此密码以供未来引用。另外，请确保使用初始化过程中定义的克隆域。
+   {: note}
 
 	```
 	[jpmongehsm2] lunash:>partition create -partition partition6

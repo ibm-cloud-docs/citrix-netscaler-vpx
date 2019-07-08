@@ -6,6 +6,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: order, vpx, setup
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -15,6 +19,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 順序 Citrix NetScaler VPX 應用裝置
 {: #order-the-citrix-netscaler-vpx-appliance}
@@ -27,7 +34,7 @@ lastupdated: "2018-11-12"
 3. 選取 **Citrix NetScaler VPX** 供應項目，然後按一下**建立**。
 4. 選取資料中心及偏好的 VPX 應用裝置 - 軟體版本、效能層次及特性版本。
 
-	標準版的 VPX 無法使用快取重新導向功能，因此請選取「白金級」特性版本。入口網站也會詢問您想要的公用 IP 位址數目。請選取一個公用 IP（您的訂單有免費包含），然後按一下**繼續**。
+	快取重新導向功能無法使用於 VPX Standard Edition，因此請選取 Platinum 特性版本。入口網站也會詢問您想要的公用 IP 位址數目。請選取一個公用 IP（您的訂單有免費包含），然後按一下**繼續**。
 
 5. 在下一個畫面中，提供所要求的 IP 位址相關資訊。
 6. 檢閱採購單、接受服務合約，然後按**下訂單**。

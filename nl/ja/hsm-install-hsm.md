@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, security, install
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -13,13 +17,17 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # IBM Hardware Security Module (HSM) クライアント・ソフトウェアのインストール
 {: #install-the-ibm-hardware-security-module-hsm-client-software}
 
 この手順では、Citrix VPX を、HSM と対話するために必要なソフトウェアおよびユーティリティーと共にインストールします。
 
-**注:** この手順のステップ 1 とステップ 2 はオプションであり、safenet ディレクトリーおよびそのディレクトリーに含まれるファイルまたはサブフォルダーが `/var` パスから欠落している場合にのみ必要となります。 これらのリソースは、VPX をクライアント・ソフトウェアと共にインストールし、HSM ソフトウェアに関連するユーティリティーを VPX で実行できるようにするために必要です。
+手順 1 と手順 2 はオプションであり、safenet ディレクトリーおよびそのディレクトリーに含まれているファイルまたはサブフォルダーが `/var` パスにない場合にのみ必要になります。これらのリソースは、VPX をクライアント・ソフトウェアとともにインストールし、HSM ソフトウェアに関連するユーティリティーを VPX で実行できるようにするために必要です。
+{: note}
 
 Control Portal の **「デバイス」>「デバイス・リスト」>「VPX 名の展開 (Expand VPX name)」** の下で、NetScaler CLI にアクセスするための資格情報を見つけます。
 
@@ -27,11 +35,13 @@ Control Portal の **「デバイス」>「デバイス・リスト」>「VPX �
 
 これらは、このセクションおよびガイドの残りの部分で必要になります。
 
-**注:** この文書に記載されているすべての VPX コマンドおよび出力では、`netscalername#` (シェルの実行を示す)、または `>` (VPX CLI 自体) がリストされることに注意してください。
+この資料では、VPX のコマンドおよび出力のすべてに、`netscalername#` (シェルの実行を表します) または `>` (VPX CLI 自体を表します) が付いていることに注意してください。
+{: note}
 
 1.	(オプション) `safenet_dirs.tar` ファイルを取得し、`/var` ディレクトリー内の VPX に転送します。 `safenet_dirs.tar` ファイルは、[こちら![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://downloads.service.softlayer.com/citrix/netscaler/Safenet-HSM/){:new_window}から取得できます。
 
-	**注:** 上記のリンクにアクセスするには、SoftLayer アカウントにログインしている必要があります。
+	上記のリンクにアクセスするには、SoftLayer アカウントにログインしている必要があります。
+  {: note}
 
 	<img src="images/4-transfer-safenet_dirs.png" alt="図面" style="width: 600px;"/>
 

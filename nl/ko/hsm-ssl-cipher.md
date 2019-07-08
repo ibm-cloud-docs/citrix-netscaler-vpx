@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, ssl, security, create, apply, cipher, suite
+
+subcollection: citrix-netscaler-vpx
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # 새 암호 스위트 작성 및 적용
 {: #create-and-apply-a-new-cipher-suite}
@@ -26,7 +33,8 @@ SSL 암호 스위트 및 기타 우수 사례에 대해 알아보려면 다음 �
 * [SSL 및 TLS 배치 우수 사례 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices#23-use-secure-cipher-suites){:new_window}
 * [NetScaler에서 ECC를 설정하는 방법 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://support.citrix.com/article/CTX205289){:new_window}
 
-**참고:** 이 절에서는 SSL 암호에 필요한 구성 및 특정 구성에 대해 중점적으로 설명합니다. 이전 링크의 정보에는 SSL 오퍼레이션을 최적화하는 데 적용될 수 있는 추가 설정을 제공할 수 있습니다.
+이 주제에서는 SSL 암호의 특정 필수 구성에 대해 중점적으로 설명합니다. 이전 링크의 정보에는 SSL 오퍼레이션을 최적화하는 데 적용될 수 있는 추가 설정을 제공할 수 있습니다.
+{: note}
 
 AEAD, ECDHE 및 ECDSA 암호의 우선순위를 지정하는 새 암호 스위트를 작성하려면 다음 프로시저를 수행하십시오.
 

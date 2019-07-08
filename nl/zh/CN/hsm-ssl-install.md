@@ -4,6 +4,10 @@ copyright:
   years: 2018
 lastupdated: "2018-11-12"
 
+keywords: hsm, ssl, install, ssl, certificate, security
+
+subcollection: citrix-netscaler-vpx
+
 
 ---
 
@@ -12,6 +16,9 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:pre: .pre}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:table: .aria-labeledby="caption"}
 
 # 安装 SSL 证书
@@ -44,9 +51,10 @@ lastupdated: "2018-11-12"
 	add ssl hsmkey <KeyName> -hsmType SAFENET -serialNum 	<serial #> -password <password>
 	```
 
-	其中，`keyName` 是使用 CMU 实用程序在 IBM© 硬件安全模块 (HSM) 上创建的密钥的名称。`serialNum` 参数是相关分区的序列号。如前所述，`password` 参数是密钥所在的分区的密码。
+	其中，`keyName` 是使用 CMU 实用程序在 IBM© Hardware Security Module (HSM) 上创建的密钥的名称。`serialNum` 参数是相关分区的序列号。如前所述，`password` 参数是密钥所在的分区的密码。
 
-	**注：**由于完成此步骤需要更长时间，因此预期会显示`内部错误`消息。密钥应该会正确添加。但是，如果收到其他任何错误消息，应进行相应处理。
+	由于完成此步骤需要更长时间，因此预期会显示`内部错误`消息。密钥应该会正确添加。但是，如果收到其他任何错误消息，应进行相应处理。
+  {: note}
 
 3.	确认密钥是否已添加：
 

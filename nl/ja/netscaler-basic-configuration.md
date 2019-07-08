@@ -2,10 +2,17 @@
 copyright:
   years: 1994, 2017
 lastupdated: "2018-11-12"
+
+keywords: basics, configure, configuration, gui, pool
+
+subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # ロード・バランシングの基本構成
 {: #basic-load-balancing-configuration}
@@ -18,13 +25,13 @@ lastupdated: "2018-11-12"
 4. 次に、NetScaler は、定義済みのバランシング方式 (ラウンドロビン、パーシスタンス IP など) に基づいて、そのトラフィックをサーバー・プール内のサーバーの 1 つに渡します。
 5. そして、サーバーがトラフィックを受け取り、ユーザーが接続してログインします。
 
-これを実現するには、このトラフィックを処理するように NetScaler を構成する必要があります。 VIP、DNS サーバーの IP、および SNIP は既に構成されているため、構成が簡単になります。 
+これを実現するには、このトラフィックを処理するように NetScaler を構成する必要があります。 VIP、DNS サーバーの IP、および SNIP は既に構成されているため、構成が簡単になります。
 
 NetScaler GUI の「構成 (Configuration)」画面で、左側の**「トラフィック管理 (Traffic Management)」** を展開します。 **「ロード・バランシング (Load Balancing)」**というタイトルのサブセクションを展開します。 次に、以下の手順に従って、ロード・バランシング・ポリシーに含めるターゲット・サーバーを NetScaler に指示します。
 
 1. 「Load Balancing (ロード・バランシング)」で**「サーバー (Servers)」**をクリックします。
 2. **「追加 (Add)」**をクリックします。
-3. サーバーのサーバー名 (例えば、Web1) を入力します。
+3. サーバーの名前 (例: Web1) を入力します。
 4. サーバーの IP アドレスを入力します。
 5. このシナリオではデフォルトのトラフィック・ドメインの使用のみに関心があるため、**「トラフィック・ドメイン (Traffic Domain)」** フィールドはブランクのままにします。
 6. このサーバーに関する任意のコメントを入力します。
@@ -32,7 +39,8 @@ NetScaler GUI の「構成 (Configuration)」画面で、左側の**「トラフ
 
 プール内のすべてのサーバーについて、この手順を繰り返します。  
 
-**ヒント:** サーバーを容易に識別できるようにするには、同じプール内の各サーバーに同様の命名規則を使用します (例えば、 Web1、Web2、Web3 など)。
+簡単にサーバーを識別できるように、同じプールのサーバーには類似した命名規則を使用してください (例: Web1、Web2、Web3 など)。
+{: tip}
 
 次に、サービスを作成します。 先ほど入力したサーバーごとにサービスを作成します。 サービスとは、NetScaler とプール内のサーバーとの間の接続を構成するものです。 各サービスには名前があり、IP アドレス、ポート、および提供されるデータのタイプを指定します。
 
@@ -59,4 +67,5 @@ NetScaler GUI の「構成 (Configuration)」画面で、左側の**「トラフ
 
 これで、Web サイトのロード・バランシング・プールとポリシーを作成しました。
 
-**注:** Citrix NetScaler VPX デバイスの構成について詳しくは、[Citrix 資料ページ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://docs.citrix.com/en-us/netscaler.html)を参照してください。 さらに支援が必要な場合は、{{site.data.keyword.BluSoftlayer_notm}} のサポートおよび営業担当員にお問い合わせください。
+Citrix NetScaler VPX デバイスの構成について詳しくは、[Citrix 資料ページ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://docs.citrix.com/en-us/netscaler.html) を参照してください。さらに支援が必要な場合は、{{site.data.keyword.BluSoftlayer_notm}} のサポートおよび営業担当員にお問い合わせください。
+{: note}
