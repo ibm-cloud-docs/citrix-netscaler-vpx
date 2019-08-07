@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Configuration de Citrix NetScaler VPX en tant que proxy direct (forward proxy)
+# Configuration de {{site.data.keyword.vpx_full}} en tant que proxy direct (forward proxy)
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
 
 Le proxy direct (de l'anglais "forward proxy", autrement dit un proxy normal, non inversé) agit comme point unique de contrôle entre les clients situés dans un réseau interne et l'Internet. Il permet à l'administrateur du réseau ou de la sécurité de créer des politiques visant à restreindre l'accès aux sites Internet.
@@ -27,7 +27,7 @@ Généralement, un proxy est associé à un pare-feu pour assurer la sécurité 
 ## Etape 1 : demander l'attribution d'adresses VIP utilisables dans le réseau privé
 {: #step-1-request-vips-to-use-in-the-private-network}
 
-Lorsqu'un client passe commande d'un équilibreur de charge Citrix NetScaler VPX auprès du portail {{site.data.keyword.BluSoftlayer_notm}}, sa demande est censée porter sur un proxy inverse (reverse proxy). Il lui est demandé d'indiquer le nombre d'adresses IP "publiques" qu'il souhaite utiliser comme adresses IP virtuelles (VIP).
+Lorsqu'un client passe commande d'un équilibreur de charge {{site.data.keyword.vpx_full}} auprès du portail {{site.data.keyword.BluSoftlayer_notm}}, sa demande est censée porter sur un proxy inverse (reverse proxy). Il lui est demandé d'indiquer le nombre d'adresses IP "publiques" qu'il souhaite utiliser comme adresses IP virtuelles (VIP).
 
 Dans le cas d'un proxy direct (non inversé), les VIP doivent être configurées sur le réseau privé. Un ticket de demande de service doit être ouvert afin de demander la mise en place d'adresses VIP pour le réseau privé. C'est le nombre de VIP requises qui détermine la taille du sous-réseau demandé dans le ticket. Les informations concernant le sous-réseau sont retournées dans le ticket.
 
@@ -37,18 +37,18 @@ Dans notre exemple, nous avons demandé un sous-réseau `/29` et obtenu comme r�
 
 * L'attribution de la SNIP (Subnet IP) `10.114.52.101` et du sous-réseau routé `10.114.27.0/29`
 
-* L'ajout, par l'équipe de support, des VIP `10.114.27.0-3` au Citrix NetScaler VPX
+* L'ajout, par l'équipe de support, des VIP `10.114.27.0-3` au {{site.data.keyword.vpx_full}}
 
-## Etape 2 : activer les fonctionnalités d'équilibrage de charge et de redirection vers un cache sur le Citrix NetScaler VPX
+## Etape 2 : activer les fonctionnalités d'équilibrage de charge et de redirection vers un cache sur le {{site.data.keyword.vpx_full}}
 {: #step-2-enable-load-balancing-and-cache-redirect-features-on-the-citrix-netscaler-vpx}
 
-Par défaut, les fonctionnalités d'équilibrage de charge et de redirection vers un cache (CR, Cache Redirect) sont désactivées sur l'équilibreur de charge Citrix NetScaler VPX. La commande `enable ns feature cr lb` permet de les activer.
+Par défaut, les fonctionnalités d'équilibrage de charge et de redirection vers un cache (CR, Cache Redirect) sont désactivées sur l'équilibreur de charge {{site.data.keyword.vpx_full}}. La commande `enable ns feature cr lb` permet de les activer.
 
 
 ## Etape 3 : créer le proxy direct
 {: #step-3-create-the-forward-proxy}
 
-Utilisez la ligne de commande pour envoyer les commandes suivantes au Citrix NetScaler VPX. Dans notre scénario, un seul des deux serveurs DNS d'{{site.data.keyword.BluSoftlayer_notm}} est ajouté.  
+Utilisez la ligne de commande pour envoyer les commandes suivantes au {{site.data.keyword.vpx_full}}. Dans notre scénario, un seul des deux serveurs DNS d'{{site.data.keyword.BluSoftlayer_notm}} est ajouté.  
 
 ```
 add cr vserver vs_forward_cache HTTP 10.114.27.3 80 -cachetype forward -redirect origin
@@ -85,7 +85,7 @@ Vous pouvez éditer manuellement le fichier `/etc/resolv.conf` afin de pointer s
 
 Ou bien vous pouvez éditer l'interface `/etc/sysconfig/network-scripts/ifcfg-ethx` et ajouter l'instruction `DNS1=`. Après quoi, vous pouvez lancer une commande de redémarrage du service réseau afin que ce changement soit pris en compte.
 
-Dans les deux cas, l'adresse IP du DNS devra être configurée en tant qu'adresse de DNS virtuel, et le navigateur du client devra être configuré pour adresser les demandes au proxy direct Citrix NetScaler VPX.
+Dans les deux cas, l'adresse IP du DNS devra être configurée en tant qu'adresse de DNS virtuel, et le navigateur du client devra être configuré pour adresser les demandes au proxy direct {{site.data.keyword.vpx_full}}.
 
 Utilisez les étapes suivantes dans Firefox pour effectuer les changements nécessaires :
 

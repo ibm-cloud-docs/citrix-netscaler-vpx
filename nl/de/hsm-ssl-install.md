@@ -19,7 +19,7 @@ lastupdated: "2018-11-12"
 
 In diesem Abschnitt erfahren Sie, wie Sie das SSL-Zertifikat, das Sie in der vorherigen [schrittweisen Anleitung](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) erstellt haben, installieren. Gehen Sie hierfür wie folgt vor:
 
-1.	Vergewissern Sie sich, dass das Zertifikat im Verzeichnis `/nsconfig/ssl` in Ihrer Citrix NetScaler VPX-Instanz vorhanden ist.
+1.	Vergewissern Sie sich, dass das Zertifikat im Verzeichnis `/nsconfig/ssl` in Ihrer {{site.data.keyword.vpx_full}}-Instanz vorhanden ist.
 
 	```
 	root@IBMADC690867-s6dr# cd /nsconfig/ssl
@@ -31,7 +31,7 @@ In diesem Abschnitt erfahren Sie, wie Sie das SSL-Zertifikat, das Sie in der vor
 	ns-root.req             ns-sftrust-root.cert    ns-	sftrust.der
 	```
 
-2.	Auch wenn sich der Zertifikatsschlüssel im richtigen Verzeichnis befindet, muss er als gültiges Citrix NetScaler VPX-Objekt erkannt werden, damit er eine Verbindung zu anderen VPX-Komponenten herstellen und mit diesen interagieren kann. Gehen Sie hierfür wie folgt vor:
+2.	Auch wenn sich der Zertifikatsschlüssel im richtigen Verzeichnis befindet, muss er als gültiges {{site.data.keyword.vpx_full}}-Objekt erkannt werden, damit er eine Verbindung zu anderen VPX-Komponenten herstellen und mit diesen interagieren kann. Gehen Sie hierfür wie folgt vor:
 
 	```
 	> add ssl hsmKey NSkey_s6dr -hsmType SAFENET -	SerialNum 534071053 -password P@rtition6
@@ -101,7 +101,7 @@ In diesem Abschnitt erfahren Sie, wie Sie das SSL-Zertifikat, das Sie in der vor
 	>
 	```
 
-6.	(Optional) Um Sicherheitswarnungen beim Zugriff auf Inhalt über einen Webbrowser zu vermeiden, sollten Sie CA-Zwischenzertifikate installieren. Diese Zertifikate gestatten Citrix NetScaler VPX, Informationen mit verbundenen Clients gemeinsam zu nutzen.
+6.	(Optional) Um Sicherheitswarnungen beim Zugriff auf Inhalt über einen Webbrowser zu vermeiden, sollten Sie CA-Zwischenzertifikate installieren. Diese Zertifikate gestatten {{site.data.keyword.vpx_full}}, Informationen mit verbundenen Clients gemeinsam zu nutzen.
 
 	Um diese Zwischenzertifikate für RapidSSL zu erhalten, greifen Sie über einen der folgenden Links auf die entsprechende Website zu:
 

@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix NetScaler VPX と IBM Virtual Router Appliance による IPSec サイト間 VPN の構成
+# {{site.data.keyword.vpx_full}} と IBM Virtual Router Appliance による IPSec サイト間 VPN の構成
 {:#configuring-ipsec-site-to-site-vpn-in-citrix-netscaler-vpx}
 
 このガイドでは、Citrix VPX で IPSec VPN サイト間の接続を構成する手順をステップバイステップで説明します。IBM Virtual Router Appliance (VRA) は VPN ピアとして使用されます。
@@ -42,7 +42,7 @@ IPSec VPN を構成するには、VPX Platinum ライセンスが必要です。
 
 このガイドは両方のデバイスを所有していることを前提としています。注文方法については、以下のリンクにアクセスしてください。
 
--	[Citrix NetScaler VPX ソフトウェア・アプライアンスの使用開始](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started)
+-	[{{site.data.keyword.vpx_full}} ソフトウェア・アプライアンスの使用開始](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started)
 -	[IBM Virtual Router Appliance の概要](/docs/infrastructure/virtual-router-appliance?topic=virtual-router-appliance-getting-started)
 
 ## このガイドで達成できること

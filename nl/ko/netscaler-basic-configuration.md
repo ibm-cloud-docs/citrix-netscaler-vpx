@@ -67,5 +67,5 @@ NetScaler GUI에서 구성 화면의 왼쪽에 있는 **트래픽 관리**를 �
 
 웹 사이트에 대한 로드 밸런싱 풀 및 정책을 작성했습니다.
 
-Citrix NetScaler VPX 디바이스의 구성에 대해 자세히 알아보려면 [Citrix 문서 페이지 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://docs.citrix.com/en-us/netscaler.html)를 방문하십시오. 추가 지원을 받으려면 {{site.data.keyword.BluSoftlayer_notm}} 지원 및 영업 팀에 문의하십시오.
+{{site.data.keyword.vpx_full}} 디바이스의 구성에 대해 자세히 알아보려면 [Citrix 문서 페이지 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://docs.citrix.com/en-us/netscaler.html)를 방문하십시오. 추가 지원을 받으려면 {{site.data.keyword.BluSoftlayer_notm}} 지원 및 영업 팀에 문의하십시오.
 {: note}

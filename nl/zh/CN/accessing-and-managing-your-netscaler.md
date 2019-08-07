@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# 管理 Citrix NetScaler VPX
+# 管理 {{site.data.keyword.vpx_full}}
 {: #managing-your-citrix-netscaler-vpx}
 
 Citrix NetScaler 设备是功能强大的工具，具有一系列功能，可从多个方面帮助增强和优化 {{site.data.keyword.cloud}} 解决方案。您可以在 {{site.data.keyword.cloud_notm}} 基础架构客户门户网站中找到该设备的信息，还可以连接到该设备并配置其功能。  
@@ -30,7 +30,7 @@ Citrix NetScaler 设备列在“设备列表”中，这与您在 {{site.data.ke
 1. 在浏览器中，打开[客户门户网站 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://control.softlayer.com/){: new_window} 并登录到您的帐户。
 2. 在客户门户网站导航中，选择**设备 > 设备列表**。
 
-您将看到按设备名称排序的各设备。Citrix NetScaler VPX 设备的设备类型为“NetScaler”。
+您将看到按设备名称排序的各设备。{{site.data.keyword.vpx_full}} 设备的设备类型为“NetScaler”。
 
 单击 NetScaler 所在行左侧的箭头，以展开该行并显示用于 NetScaler 管理访问的用户名和掩盖的密码。
 

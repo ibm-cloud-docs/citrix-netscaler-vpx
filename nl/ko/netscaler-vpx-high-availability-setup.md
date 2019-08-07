@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# 고가용성(HA)을 위해 Citrix Netscaler VPX 설정
+# 고가용성(HA)을 위해 {{site.data.keyword.vpx_full}} 설정
 {: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
 로드 밸런서는 확장 가능한 애플리케이션의 성능과 안정성을 향상시키기 위해 여러 애플리케이션 서버에서 트래픽을 밸런싱하는 데 사용됩니다. 그러나 단일 로드 밸런서는 단일 장애 지점입니다. 고가용성(HA) Netscaler VPX 쌍을 구성하여 이를 방지하십시오. HA 쌍을 구성하려면 두 개의 Netscaler VPX 서버가 필요합니다. 기본 서버가 실패하는 경우 로드 밸런싱을 계속하기 위해 보조 서버가 사용됩니다.

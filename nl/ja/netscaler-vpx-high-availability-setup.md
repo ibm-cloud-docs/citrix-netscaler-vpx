@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix Netscaler VPX を高可用性 (HA) 用にセットアップ
+# {{site.data.keyword.vpx_full}} を高可用性 (HA) 用にセットアップ
 {: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
 ロード・バランサーは、複数のアプリケーション・サーバーにわたってトラフィックのバランスを取り、スケーラブルなアプリケーションのパフォーマンスと安定性を向上させるために使用されます。 ただし、単一のロード・バランサーは単一障害点になります。これを回避するには、高可用性 (HA) Netscaler VPX ペアを構成します。 HA ペアを構成するには、2 台の Netscaler VPX サーバーが必要です。 1 次サーバーで障害が発生した場合、2 次サーバーがステップインしてロード・バランシングを続行します。

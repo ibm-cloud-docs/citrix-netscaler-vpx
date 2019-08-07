@@ -31,7 +31,7 @@ subcollection: citrix-netscaler-vpx
 1. 转至浏览器设置中的 **Internet 选项**，并将其配置为将代理服务器用于传出请求。
 2. 使用在先前步骤中定义为代理的高速缓存重定向虚拟服务器的 IP 地址。
 
-如果 Citrix NetScaler VPX 设备位于客户端机器和因特网之间的直接第 3 层路径中，那么可能不需要这些代理设置。
+如果 {{site.data.keyword.vpx_full}} 设备位于客户端机器和因特网之间的直接第 3 层路径中，那么可能不需要这些代理设置。
 {: note}
 
 <img src="images/fp17.png" alt="图样" style="width: 500px;"/>

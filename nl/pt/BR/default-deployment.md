@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Implementação padrão do Citrix NetScaler VPX
+# Implementação padrão do {{site.data.keyword.vpx_full}}
 {: #citrix-netscaler-vpx-default-deployment}
 
 Ao visualizar o NetScaler em **Dispositivos > Lista de dispositivos** no [Portal do cliente ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://control.softlayer.com/), você poderá observar que ele parece diferente de outros servidores. Ou seja, o dispositivo tem um endereço IP privado, mas nenhum endereço IP público.

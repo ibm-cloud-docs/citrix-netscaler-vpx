@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Configurando o Citrix NetScaler VPX como um proxy de encaminhamento
+# Configurando o {{site.data.keyword.vpx_full}} como um proxy de encaminhamento
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
 
 Um proxy de encaminhamento age como um único ponto de controle entre clientes em uma rede interna e a Internet. Um proxy permite que o Administrador de rede ou de segurança tenha a capacidade de criar políticas que restrinjam o acesso a sites da Internet.
@@ -27,7 +27,7 @@ Em geral, um proxy é combinado com um firewall para garantir a segurança de cl
 ## Etapa 1: Solicitar VIPs a serem usados na Rede privada
 {: #step-1-request-vips-to-use-in-the-private-network}
 
-Quando um balanceador de carga Citrix NetScaler VPX é pedido no portal do cliente do {{site.data.keyword.BluSoftlayer_notm}}, supõe-se que um proxy reverso esteja sendo solicitado. O solicitante será solicitado a informar o número de IPs "públicos" a serem usados como IPs virtuais (VIPs).
+Quando um balanceador de carga {{site.data.keyword.vpx_full}} é pedido no portal do cliente do {{site.data.keyword.BluSoftlayer_notm}}, supõe-se que um proxy reverso esteja sendo solicitado. O solicitante será solicitado a informar o número de IPs "públicos" a serem usados como IPs virtuais (VIPs).
 
 No caso de um proxy de encaminhamento, os VIPs precisam ser configurados na rede privada. Um chamado de suporte precisa ser aberto para solicitar VIPs para a rede privada. O número de VIPs necessários determinará o tamanho da sub-rede solicitada no chamado. As informações de sub-rede serão retornadas no chamado.
 
@@ -37,18 +37,18 @@ Em nosso exemplo, solicitamos uma sub-rede `/29`, que resultou no seguinte:
 
 * Subnet IP (SNIP) `10.114.52.101` e a sub-rede roteada `10.114.27.0/29`
 
-* VIPs `10.114.27.0-3` foram incluídos no Citrix NetScaler VPX pela equipe de suporte
+* VIPs `10.114.27.0-3` foram incluídos no {{site.data.keyword.vpx_full}} pela equipe de suporte
 
-## Etapa 2: Ativar os recursos Balanceamento de carga e Redirecionamento de cache no Citrix NetScaler VPX
+## Etapa 2: Ativar os recursos Balanceamento de carga e Redirecionamento de cache no {{site.data.keyword.vpx_full}}
 {: #step-2-enable-load-balancing-and-cache-redirect-features-on-the-citrix-netscaler-vpx}
 
-Por padrão, os recursos de balanceamento de carga e redirecionamento de cache no balanceador de carga Citrix NetScaler VPX ficam desativados; o comando `enable ns feature cr lb` ativa-os.
+Por padrão, os recursos de balanceamento de carga e redirecionamento de cache no balanceador de carga {{site.data.keyword.vpx_full}} ficam desativados; o comando `enable ns feature cr lb` ativa-os.
 
 
 ## Etapa 3: Criar o proxy de encaminhamento
 {: #step-3-create-the-forward-proxy}
 
-Use a linha de comandos para emitir os comandos a seguir no Citrix NetScaler VPX. Em nosso cenário, somente um dos dois servidores DNS do {{site.data.keyword.BluSoftlayer_notm}} foi incluído.  
+Use a linha de comandos para emitir os comandos a seguir no {{site.data.keyword.vpx_full}}. Em nosso cenário, somente um dos dois servidores DNS do {{site.data.keyword.BluSoftlayer_notm}} foi incluído.  
 
 ```
 add cr vserver vs_forward_cache HTTP 10.114.27.3 80 -cachetype forward -redirect origin
@@ -85,7 +85,7 @@ Algumas mudanças precisam ser feitas para o cliente. A primeira mudança é apo
 
 Ou é possível editar a interface `/etc/sysconfig/network-scripts/ifcfg-ethx` e incluir a instrução `DNS1=`. Depois de configurado, o comando de reinicialização da rede de serviço pode ser emitido para assimilar as mudanças.
 
-Em ambos os casos, o endereço IP do DNS precisará ser configurado como o endereço DNS virtual e o navegador do cliente precisará ser configurado para apontar solicitações para o proxy de encaminhamento do Citrix NetScaler VPX.
+Em ambos os casos, o endereço IP do DNS precisará ser configurado como o endereço DNS virtual e o navegador do cliente precisará ser configurado para apontar solicitações para o proxy de encaminhamento do {{site.data.keyword.vpx_full}}.
 
 Use as etapas a seguir dentro do Firefox para fazer as mudanças necessárias:
 

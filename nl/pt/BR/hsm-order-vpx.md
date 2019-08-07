@@ -21,9 +21,9 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Fazer o pedido de um Citrix Netscaler VPX
+# Fazer o pedido de um {{site.data.keyword.vpx_full}}
 {: #order-a-citrix-netscaler-vpx}
 
-Se você ainda não tiver pedido, solicite o Citrix Netscaler VPX.
+Se você ainda não tiver pedido, solicite o {{site.data.keyword.vpx_full}}.
 
-Para obter instruções sobre pedidos, visite [Introdução ao dispositivo do software Citrix NetScaler VPX](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance) e certifique-se de selecionar 12.1 na etapa 5. Se 12.1 não for mostrado, continue com a versão mais recente disponível e faça upgrade do seu VPX usando as instruções em [Fazer upgrade do seu Citrix NetScaler VPX](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-upgrading-your-citrix-netscaler-vpx). Também é possível usar as etapas nesse artigo do IBM© Cloud para fazer upgrade de um dispositivo existente. Se a versão 12.1 não estiver disponível no repositório da Cloud, entre em contato com o [Suporte do IBM Cloud](/docs/get-support?topic=get-support-contacting-bluemix-support-dedicated-local) para obter ajuda adicional.
+Para obter instruções sobre pedidos, visite [Introdução ao dispositivo do software {{site.data.keyword.vpx_full}}](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance) e certifique-se de selecionar 12.1 na etapa 5. Se 12.1 não for mostrado, continue com a versão mais recente disponível e faça upgrade do seu VPX usando as instruções em [Fazer upgrade do seu {{site.data.keyword.vpx_full}}](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-upgrading-your-citrix-netscaler-vpx). Também é possível usar as etapas nesse artigo do IBM© Cloud para fazer upgrade de um dispositivo existente. Se a versão 12.1 não estiver disponível no repositório da Cloud, entre em contato com o [Suporte do IBM Cloud](/docs/get-support?topic=get-support-contacting-bluemix-support-dedicated-local) para obter ajuda adicional.

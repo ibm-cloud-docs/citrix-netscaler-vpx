@@ -21,10 +21,10 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix Netscaler VPX를 사용하여 IBM Hardware Security Module(HSM) 배치 및 구성
+# {{site.data.keyword.vpx_full}}를 사용하여 IBM Hardware Security Module(HSM) 배치 및 구성
 {: #deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx}
 
-이 단계별 지시사항은 Citrix Netscaler VPX를 사용하여 HSM을 통합하는 과정을 제공합니다. 그런 다음 두 서비스는 인증서를 작성하는 데 필요한 암호화 자료를 전달하고 생성할 수 있습니다.
+이 단계별 지시사항은 {{site.data.keyword.vpx_full}}를 사용하여 HSM을 통합하는 과정을 제공합니다. 그런 다음 두 서비스는 인증서를 작성하는 데 필요한 암호화 자료를 전달하고 생성할 수 있습니다.
 
 ## 배치 정보
 {: #about-the-deployment}
@@ -49,16 +49,16 @@ SSL 오프로드에 익숙하지 않은 경우 이 [Citrix 기사](https://docs.
 
 {: #what-you-ll-accomplish}
 
-이 단계별 지시사항에서는 Citrix Netscaler VPX를 사용하여 HSM을 배치 및 구성하는 방법에 대한 정보를 제공합니다.
+이 단계별 지시사항에서는 {{site.data.keyword.vpx_full}}를 사용하여 HSM을 배치 및 구성하는 방법에 대한 정보를 제공합니다.
 
 태스크  |설명
 ------------- | -------------
 [HSM(Hardware Security Module) 주문](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-the-ibm-hardware-security-module-hsm-) | 먼저 HSM을 주문해야 합니다.
-[Citrix Netscaler VPX 주문](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-a-citrix-netscaler-vpx) |아직 Citrix Netscaler VPX가 없으면 주문해야 합니다.
+[{{site.data.keyword.vpx_full}} 주문](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-a-citrix-netscaler-vpx) |아직 {{site.data.keyword.vpx_full}}가 없으면 주문해야 합니다.
 [HSM 초기화](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-initialize-ibm-hardware-security-module-hsm-) |대부분의 구성에는 HSM 디바이스의 초기화가 필요합니다. 그렇지 않으면 특정 `show` 명령만 실행될 수 있습니다.
 [파티션 작성](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-a-partition) |파티션은 HSM 엔진에서 암호화 오브젝트를 요청하거나 작성하는 클라이언트에 연관되거나 연결되는 논리적이고 독립적인 공간입니다.
 [HSM 클라이언트 소프트웨어 설치](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-install-the-ibm-hardware-security-module-hsm-client-software) |이 하위 절에서 HSM과 상호 작용하는 데 필요한 소프트웨어 및 유틸리티와 함께 VPX가 설치됩니다. |
 [NTL(Network Trust Link) 설정](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-establish-a-network-trust-link-ntl-) |NTL(Network Trust Link)은 통신할 HSM(Hardware Security Module) 및 클라이언트를 위한 보안 채널입니다. |
 [키 작성 및 인증서 서명 요청(CSR) 생성](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-) |이 하위 절에서 인증서 서명 요청(CSR)을 생성하고 이를 사용하여 인증서를 주문하고 요청하는 데 사용될 키 쌍을 작성합니다. |
-[인증서 주문](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-an-ssl-certificate) | Citrix Netscaler VPX를 위한 SSL 인증서를 주문합니다.
+[인증서 주문](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-an-ssl-certificate) | {{site.data.keyword.vpx_full}}를 위한 SSL 인증서를 주문합니다.
 [인증서 검색 및 전송](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-retrieve-and-transfer-the-certificate) | 이전에 주문한 SSL 인증서를 검색하고 다음 단계별 지시사항의 설치 및 구성을 위해 모든 사항을 준비합니다.

@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Ativando os recursos necessários no Citrix Netscaler VPX
+# Ativando os recursos necessários no {{site.data.keyword.vpx_full}}
 {: #enable-required-features-in-vpx}
 
 É possível ativar os recursos necessários no VPX para criar a VPN IPSec:

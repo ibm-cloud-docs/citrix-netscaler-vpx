@@ -28,7 +28,7 @@ subcollection: citrix-netscaler-vpx
 
 Network address translation (NAT) is a method of remapping one IP address space into another by modifying network address information in the IP header of packets while they are in transit across a traffic routing device.
 
-You may utilize your Citrix NetScaler VPX appliance to perform NAT on outbound traffic from your client machines. To do so:
+You may utilize your {{site.data.keyword.vpx_full}} appliance to perform NAT on outbound traffic from your client machines. To do so:
 
 1. Go to System > Network > Routes, and navigate to the **RNAT** tab. Click **Configure RNAT**.
 

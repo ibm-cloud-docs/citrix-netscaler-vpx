@@ -8,12 +8,12 @@ lastupdated: "2018-11-12"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Informationen zu Citrix NetScaler VPX
+# Informationen zu {{site.data.keyword.vpx_full}}
 {: #about-citrix-netscaler-vpx}
 
-Citrix NetScaler VPX ist eine dedizierte virtuelle Software-Appliance, die Funktionen zum Lastausgleich sowohl im öffentlichen als auch im privaten IBM© Cloud-Netz zur Verfügung stellt. 
+{{site.data.keyword.vpx_full}} ist eine dedizierte virtuelle Software-Appliance, die Funktionen zum Lastausgleich sowohl im öffentlichen als auch im privaten IBM© Cloud-Netz zur Verfügung stellt. 
 
-Die Bereitstellung von Citrix NetScaler VPX in Ihrer Lösung für {{site.data.keyword.BluSoftlayer_notm}} beschleunigt die Webanwendungsbereitstellung, ermöglicht entscheidende Leistungsverbesserungen und gewährleistet, dass Ihre Cloudanwendungen und -services stets optimiert, verfügbar und sicher sind. Bei hohen Workloadanforderungen, wie sie beispielsweise im Gaming- und Big-Data-Bereich sowie bei Analyseanwendungen oder in privaten Clouds auftreten, kann Citrix NetScaler VPX Sie dabei unterstützen, Ihre Lösung stets zeitgerecht, am richtigen Standort und in optimaler Konfiguration für Ihre Benutzer bereitzustellen.
+Die Bereitstellung von {{site.data.keyword.vpx_full}} in Ihrer Lösung für {{site.data.keyword.BluSoftlayer_notm}} beschleunigt die Webanwendungsbereitstellung, ermöglicht entscheidende Leistungsverbesserungen und gewährleistet, dass Ihre Cloudanwendungen und -services stets optimiert, verfügbar und sicher sind. Bei hohen Workloadanforderungen, wie sie beispielsweise im Gaming- und Big-Data-Bereich sowie bei Analyseanwendungen oder in privaten Clouds auftreten, kann {{site.data.keyword.vpx_full}} Sie dabei unterstützen, Ihre Lösung stets zeitgerecht, am richtigen Standort und in optimaler Konfiguration für Ihre Benutzer bereitzustellen.
 
 ## Funktionsmerkmale
 
@@ -45,7 +45,7 @@ Die Bereitstellung von Citrix NetScaler VPX in Ihrer Lösung für {{site.data.ke
 * Flexibilitäts- und verfügbarkeitsorientierte Bereitstellung analog zu anderen Servern für {{site.data.keyword.BluSoftlayer_notm}}
 * Angebote in verschiedenen Bandbreitenebenen: 10 Mbps, 200 Mbps und 1000 Mbps
 
-Citrix NetScaler VPX kann bedarfsgesteuert innerhalb von 15 Minuten in jedem Rechenzentrum für {{site.data.keyword.BluSoftlayer_notm}} weltweit bereitgestellt werden. Die verschiedenen Lizenzierungsmodelle bieten Ihnen die Geschwindigkeits- und Funktionsmerkmale, die Ihren individuellen Anforderungen entsprechen, sowie die Flexibilität, die für zeitgemäße Cloudlösungen erforderlich sind. Diese Flexibilität ermöglicht die Bereitstellung maßgeschneiderter Lösungen für jeden Anwendungsfall von kleineren über mittlere bis hin zu umfangreichen Unternehmensimplementierungen.
+{{site.data.keyword.vpx_full}} kann bedarfsgesteuert innerhalb von 15 Minuten in jedem Rechenzentrum für {{site.data.keyword.BluSoftlayer_notm}} weltweit bereitgestellt werden. Die verschiedenen Lizenzierungsmodelle bieten Ihnen die Geschwindigkeits- und Funktionsmerkmale, die Ihren individuellen Anforderungen entsprechen, sowie die Flexibilität, die für zeitgemäße Cloudlösungen erforderlich sind. Diese Flexibilität ermöglicht die Bereitstellung maßgeschneiderter Lösungen für jeden Anwendungsfall von kleineren über mittlere bis hin zu umfangreichen Unternehmensimplementierungen.
 
 {{site.data.keyword.BluSoftlayer_notm}} bietet die virtuelle NetScaler VPX-Appliance mit vollständigem und nicht beschränktem Rootzugriff.   
 
@@ -55,7 +55,7 @@ Zum Schutz des Anwendungsdatenverkehrs können Kunden die Sicherheitsfunktionen 
 
 ## Datenverkehrsfilterung
 
-Citrix NetScaler VPX filtert Anforderungen, die von Endbenutzern an die verfügbaren Server gesendet werden, sowie die von diesen Servern an die Endbenutzer zurückgegebenen Antworten. Eine Schulungsfunktion mit der Anwendungsfirewall erlaubt die Erstellung von Sitzungsprofilen in Echtzeit und die Festlegung des Systemverhaltens in Bezug auf das Zulassen von Datenverkehr.
+{{site.data.keyword.vpx_full}} filtert Anforderungen, die von Endbenutzern an die verfügbaren Server gesendet werden, sowie die von diesen Servern an die Endbenutzer zurückgegebenen Antworten. Eine Schulungsfunktion mit der Anwendungsfirewall erlaubt die Erstellung von Sitzungsprofilen in Echtzeit und die Festlegung des Systemverhaltens in Bezug auf das Zulassen von Datenverkehr.
 
 ## PCI-DSS-Berichterstellung
 

@@ -67,5 +67,5 @@ subcollection: citrix-netscaler-vpx
 
 您已为 Web 站点创建负载均衡池和策略。
 
-要了解有关 Citrix NetScaler VPX 设备配置的更多信息，请访问 [Citrix 文档页面 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://docs.citrix.com/en-us/netscaler.html)。要获取进一步的帮助，请联系 {{site.data.keyword.BluSoftlayer_notm}} 支持和销售。
+要了解有关 {{site.data.keyword.vpx_full}} 设备配置的更多信息，请访问 [Citrix 文档页面 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://docs.citrix.com/en-us/netscaler.html)。要获取进一步的帮助，请联系 {{site.data.keyword.BluSoftlayer_notm}} 支持和销售。
 {: note}

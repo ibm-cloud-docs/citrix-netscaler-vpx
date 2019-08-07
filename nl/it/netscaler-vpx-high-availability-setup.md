@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Configurazione di Citrix Netscaler VPX per l'alta disponibilità (HA, High Availability)
+# Configurazione di {{site.data.keyword.vpx_full}} per l'alta disponibilità (HA, High Availability)
 {: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
 I programmi di bilanciamento del carico vengono utilizzati per bilanciare il traffico su più server delle applicazioni per migliorare le prestazioni e la stabilità in un'applicazione scalabile. Eppure, un singolo programma di bilanciamento del carico è un singolo punto di malfunzionamento. Evitare tale condizione configurando una coppia Netscaler VPX ad alta disponibilità (HA, High Availability). La configurazione di una coppia HA richiede due server Netscaler VPX. Il server secondario subentra per continuare il bilanciamento del carico nel caso si verificasse un malfunzionamento di quello principale.

@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix Netscaler VPX の必須機能の有効化
+# {{site.data.keyword.vpx_full}} の必須機能の有効化
 {: #enable-required-features-in-vpx}
 
 VPX で IPSec VPN を作成するための必須機能を有効にすることができます。

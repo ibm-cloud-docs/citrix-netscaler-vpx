@@ -46,7 +46,7 @@ subcollection: citrix-netscaler-vpx
 
 7. 单击“关闭”，然后单击“完成”。
 
-	假定可以从 Citrix NetScaler VPX 设备访问这两个 IBM Softlayer DNS 解析器，那么服务组将显示为绿色。
+	假定可以从 {{site.data.keyword.vpx_full}} 设备访问这两个 IBM Softlayer DNS 解析器，那么服务组将显示为绿色。
 
 8. 现在，转至“流量管理”>“负载均衡”>“虚拟服务器”，然后单击“添加”以定义 DNS 虚拟服务器。
 9. 在“基本设置”下，为虚拟服务器提供名称，选择 DNS 协议和端口 53，然后从专用子网中分配 IP 地址。

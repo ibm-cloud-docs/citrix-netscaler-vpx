@@ -9,12 +9,12 @@ lastupdated: "2018-11-12"
 {:new_window: target="_blank"}
 {:faq: data-hd-content-type='faq'}
 
-# Häufig gestellte Fragen zu Citrix NetScaler VPX
+# Häufig gestellte Fragen zu {{site.data.keyword.vpx_full}}
 {: #faqs-for-citrix-netscaler-vpx}
 
-Im Folgenden werden häufig gestellte Fragen (FAQs = Frequently Asked Questions) aufgeführt, die beim Einsatz von Citrix NetScaler VPX auftreten können.
+Im Folgenden werden häufig gestellte Fragen (FAQs = Frequently Asked Questions) aufgeführt, die beim Einsatz von {{site.data.keyword.vpx_full}} auftreten können.
 
-## Was ist Citrix NetScaler VPX?
+## Was ist {{site.data.keyword.vpx_full}}?
 {:faq}
 
 Citrix NetScaler ist ein Anwendungsbereitstellungscontroller, der Anwendungen in mehrfacher Hinsicht optimiert, und zwar durch die Verbesserung der Leistung, die Sicherstellung der Anwendungsverfügbarkeit und des Anwendungsschutzes sowie durch eine erhebliche Reduzierung der Betriebskosten. Wählen Sie die Citrix NetScaler-Edition aus, die Ihren Anwendungsanforderungen optimal entspricht, und stellen Sie diese Edition auf einem geeigneten dedizierten System bereit, um Ihre Leistungsanforderungen zu erfüllen. Weitere Informationen zu Citrix NetScaler finden Sie auf der [NetScaler-Seite ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://www.citrix.com/products/netscaler-application-delivery-controller/overview.html){:new_window} auf der Citrix-Website.

@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix Netscaler VPX의 필수 기능 사용
+# {{site.data.keyword.vpx_full}}의 필수 기능 사용
 {: #enable-required-features-in-vpx}
 
 IPSec VPN 작성을 위해 VPX의 필수 기능을 사용으로 설정할 수 있습니다. 

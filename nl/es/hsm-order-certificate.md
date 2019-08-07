@@ -44,7 +44,7 @@ Para obtener más información sobre los certificados SSL, consulte los siguient
 * [Introducción a la tecnología SSL](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-introduction-to-ssl-technology)
 * [Planificación para SSL](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-planning-for-ssl)
 
-Para solicitar un certificado SSL y utilizarlo con Citrix Netscaler VPX, realice el procedimiento siguiente:
+Para solicitar un certificado SSL y utilizarlo con {{site.data.keyword.vpx_full}}, realice el procedimiento siguiente:
 
 1.	En la CLI de shell de VPX, visualice el texto CSR abriendo el archivo CSR creado anteriormente en el paso [Crear claves y generar la solicitud de firma de certificado (CSR)](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-):
 

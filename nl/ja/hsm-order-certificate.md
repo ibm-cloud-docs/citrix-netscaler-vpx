@@ -44,7 +44,7 @@ SSL 証明書の詳細情報については、IBM Cloud の以下の記事を参
 * [SSL テクノロジーの概要](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-introduction-to-ssl-technology)
 * [SSL の計画](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-planning-for-ssl)
 
-Citrix Netscaler VPX で使用する SSL 証明書を注文するには、以下の手順を実行します。
+{{site.data.keyword.vpx_full}} で使用する SSL 証明書を注文するには、以下の手順を実行します。
 
 1.	VPX シェル CLI で、[キーの作成と証明書署名要求 (CSR) の生成](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-) のステップで以前に作成した CSR ファイルを開いて、CSR テキストを表示します。
 

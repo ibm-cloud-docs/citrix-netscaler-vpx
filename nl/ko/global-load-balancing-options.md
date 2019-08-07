@@ -21,10 +21,10 @@ subcollection: citrix-netscaler-vpx
 
 글로벌 로드 밸런싱 솔루션의 전체 구현이 필요하지 않을 수도 있습니다. GSLB에는 이 기능을 수행할 수 있는 적합한 디바이스의 다중 인스턴스가 필요하며 요구사항에 따라 다른 솔루션이 더 매력적일 수 있습니다. 전체 웹 사이트 및 애플리케이션이 필요한 경우 GSLB가 좋은 선택입니다. 이미지, 동영상 또는 기타 큰 파일과 같은 컨텐츠의 부분만 필요한 경우 [CDN(Content Delivery Network)](/docs/infrastructure/CDN?topic=CDN-about-content-delivery-networks-cdn-)이 더 적합하고 배치가 더 용이할 수 있습니다.
 
-## Citrix NetScaler VPX
+## {{site.data.keyword.vpx_full}}
 {: #citrix-netscaler-vpx}
 
-Citrix NetScaler VPX는 진정한 글로벌 로드 밸런싱을 수행하는 유일한 고객 구성 가능 디바이스입니다. NetScaler는 DNS 기반 글로벌 로드 밸런싱 검색을 수행할 수 있는 다기능 어플라이언스입니다. DNS 서버로 NetScaler를 지정할 수 있습니다. 그러면 디바이스가 로드 밸런싱하도록 구성된 서버를 검토하고 거리 계산을 수행하며 클라이언트 요청에 가장 근접한 서버의 IP가 포함된 레코드를 리턴합니다.
+{{site.data.keyword.vpx_full}}는 진정한 글로벌 로드 밸런싱을 수행하는 유일한 고객 구성 가능 디바이스입니다. NetScaler는 DNS 기반 글로벌 로드 밸런싱 검색을 수행할 수 있는 다기능 어플라이언스입니다. DNS 서버로 NetScaler를 지정할 수 있습니다. 그러면 디바이스가 로드 밸런싱하도록 구성된 서버를 검토하고 거리 계산을 수행하며 클라이언트 요청에 가장 근접한 서버의 IP가 포함된 레코드를 리턴합니다.
 
 글로벌 로드 밸런싱을 위해 각 데이터 센터에 NetScaler 어플라이언스 구성이 있습니다. 각 NetScaler 어플라이언스 구성은 요구사항에 따라 단일 Netscaler 또는 HA 쌍으로 된 Netscalers 쌍일 수 있으며, 어플라이언스 뒤에 있는 서버에 대해 로컬 로드 밸런싱 서비스를 제공합니다. 디바이스가 서로 통신하도록 구성되었으므로 글로벌 로드 밸런서 순환에 지정된 각 서버에 대한 상태 정보를 교환합니다. 이러한 구성된 NetScaler로 들어오는 모든 DNS 요청은 온라인 상태이며 응답성이 뛰어난 서버에 대한 적절한 레코드를 리턴할 수 있습니다. 응답하지 않는 서버는 순환에서 제거되고 다른 서버가 선택됩니다.
 

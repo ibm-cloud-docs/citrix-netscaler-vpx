@@ -46,7 +46,7 @@ Per configurare un server virtuale DNS:
 
 7. Fai clic su Close, quindi su Done.
 
-	Presupponendo che i due resolver DNS IBM Softlayer possano essere raggiunti dalla tua applicazione Citrix NetScaler VPX, il gruppo di servizi verrà mostrato in verde.
+	Presupponendo che i due resolver DNS IBM Softlayer possano essere raggiunti dalla tua applicazione {{site.data.keyword.vpx_full}}, il gruppo di servizi verrà mostrato in verde.
 
 8. Ora, vai a Traffic Management > Load Balancing > Virtual Servers e fai clic su Add per definire il tuo server virtuale DNS.
 9. In Basic Settings, assegna un nome al tuo server virtuale, scegli il protocollo DNS e la porta 53, quindi assegna un indirizzo IP dalla tua sottorete privata.

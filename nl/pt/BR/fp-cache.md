@@ -26,9 +26,9 @@ subcollection: citrix-netscaler-vpx
 # Ativar recursos de Redirecionamento de cache e de Balanceamento de carga
 {: #enable-cache-redirection-and-load-balancing-capabilities}
 
-Para ativar o redirecionamento de cache e o balanceamento de carga para o dispositivo do Citrix NetScaler VPX, execute as etapas a seguir:
+Para ativar o redirecionamento de cache e o balanceamento de carga para o dispositivo do {{site.data.keyword.vpx_full}}, execute as etapas a seguir:
 
-1. Na página do sistema de dispositivo Citrix NetScaler VPX, acesse **Configurações > Configurar recursos avançados** e, em seguida, ative **Redirecionamento de cache** e clique em **OK**.  
+1. Na página do sistema de dispositivo {{site.data.keyword.vpx_full}}, acesse **Configurações > Configurar recursos avançados** e, em seguida, ative **Redirecionamento de cache** e clique em **OK**.  
 
 	<img src="images/fp4.png" alt="drawing" style="width: 400px;"/>
 

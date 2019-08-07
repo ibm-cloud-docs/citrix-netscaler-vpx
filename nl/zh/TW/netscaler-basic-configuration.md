@@ -67,5 +67,5 @@ subcollection: citrix-netscaler-vpx
 
 您已建立網站適用的負載平衡儲存區及原則。
 
-若要進一步瞭解 Citrix NetScaler VPX 裝置配置的相關資訊，請造訪 [Citrix 文件頁面 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://docs.citrix.com/en-us/netscaler.html)。如需進一步協助，請聯絡 {{site.data.keyword.BluSoftlayer_notm}} 支援中心及業務代表。
+若要進一步瞭解 {{site.data.keyword.vpx_full}} 裝置配置的相關資訊，請造訪 [Citrix 文件頁面 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://docs.citrix.com/en-us/netscaler.html)。如需進一步協助，請聯絡 {{site.data.keyword.BluSoftlayer_notm}} 支援中心及業務代表。
 {: note}

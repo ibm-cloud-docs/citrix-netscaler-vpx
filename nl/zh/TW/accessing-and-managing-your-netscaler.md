@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# 管理 Citrix NetScaler VPX
+# 管理 {{site.data.keyword.vpx_full}}
 {: #managing-your-citrix-netscaler-vpx}
 
 Citrix NetScaler 裝置是功能強大的工具，具有許多特性可協助您透過多種方式來加強及調整 {{site.data.keyword.cloud}} 解決方案。您可以在 {{site.data.keyword.cloud_notm}} 基礎架構客戶入口網站中找到該裝置的資訊，還可以連接至該裝置並配置其特性。  
@@ -30,7 +30,7 @@ Citrix NetScaler 裝置列在「裝置清單」中，這與您在 {{site.data.ke
 1. 從您的瀏覽器開啟[客戶入口網站 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://control.softlayer.com/){: new_window} 並登入到您的帳戶。
 2. 在客戶入口網站導覽中，選取**裝置 > 裝置清單**。
 
-您將會看到依裝置名稱排序的裝置。Citrix NetScaler VPX 裝置的「裝置類型」為 "NetScaler"。
+您將會看到依裝置名稱排序的裝置。{{site.data.keyword.vpx_full}} 裝置的「裝置類型」為 "NetScaler"。
 
 在 NetScaler 列的左側，按一下箭頭來展開該行，並顯示用於 NetScaler 管理存取的使用者名稱及遮罩過的密碼。
 

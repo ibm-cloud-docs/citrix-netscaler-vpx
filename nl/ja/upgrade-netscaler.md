@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix NetScaler VPX のアップグレード
+# {{site.data.keyword.vpx_full}} のアップグレード
 {: #upgrading-your-citrix-netscaler-vpx}
 
 この手順を実行する前に、VPN に接続する必要があります。

@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Redirecionando URLs em um Citrix NetScaler VPX
+# Redirecionando URLs em um {{site.data.keyword.vpx_full}}
 {: #redirecting-urls-in-a-citrix-netscaler-vpx}
 
 A maneira mais comum de executar um redirecionamento de `http://` para `https://` no NetScaler é aproveitar o recurso de backup/redirecionamento, destinado originalmente a redirecionar para uma página "servidor inativo" ou "manutenção".  

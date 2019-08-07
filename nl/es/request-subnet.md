@@ -26,6 +26,6 @@ subcollection: citrix-netscaler-vpx
 # Solicitar una subred privada
 {: #request-a-private-subnet}
 
-En la mayoría de los despliegues, el dispositivo Citrix NetScaler VPX se despliega en una configuración de proxy inverso. Sin embargo, para configurar VPX con la configuración de proxy de reenvío, son necesarias IP virtuales (VIP), ya que la configuración existirá en una red privada en lugar de en una pública.
+En la mayoría de los despliegues, el dispositivo {{site.data.keyword.vpx_full}} se despliega en una configuración de proxy inverso. Sin embargo, para configurar VPX con la configuración de proxy de reenvío, son necesarias IP virtuales (VIP), ya que la configuración existirá en una red privada en lugar de en una pública.
 
-Debe crear una incidencia con el equipo de soporte de IBM© Cloud y solicitar que se añada a su cuenta una red privada del dispositivo de Citrix Netscaler VPX. Tenga en cuenta que necesitará al menos dos direcciones privadas, por lo que debería solicitar como mínimo un tamaño de subred de /29.  
+Debe crear una incidencia con el equipo de soporte de IBM© Cloud y solicitar que se añada a su cuenta una red privada del dispositivo de {{site.data.keyword.vpx_full}}. Tenga en cuenta que necesitará al menos dos direcciones privadas, por lo que debería solicitar como mínimo un tamaño de subred de /29.  

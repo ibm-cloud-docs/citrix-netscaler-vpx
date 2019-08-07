@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Configurar Citrix Netscaler VPX para alta disponibilidad (HA)
+# Configurar {{site.data.keyword.vpx_full}} para alta disponibilidad (HA)
 {: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
 Los equilibradores de carga se utilizan para equilibrar el tráfico en varios servidores de aplicaciones para mejorar el rendimiento y la estabilidad en una aplicación escalable. Sin embargo, un solo equilibrador de carga es un punto único de anomalía. Evite esto configurando un par de alta disponibilidad (HA) de Netscaler VPX. La configuración de un par de alta disponibilidad requiere dos servidores Netscaler VPX. El servidor secundario entra para continuar el equilibrio de carga si falla el primario.

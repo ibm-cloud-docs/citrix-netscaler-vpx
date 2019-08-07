@@ -45,7 +45,7 @@ Per ulteriori informazioni sui certificati SSL, fai riferimento ai seguenti arti
 * [Pianificazione di SSL](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-planning-for-ssl)
 
 
-Per ordinare un certificato SSL da utilizzare con il tuo Citrix Netscaler VPX, esegui la seguente procedura:
+Per ordinare un certificato SSL da utilizzare con il tuo {{site.data.keyword.vpx_full}}, esegui la seguente procedura:
 
 1.	Nella CLI shell VPX, visualizza il testo CSR aprendo il file CSR creato in precedenza nel passo [Creazione di chiavi e generazione di CSR (Certificate Signing Request)](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-):
 

@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix NetScaler VPX 용어집
+# {{site.data.keyword.vpx_full}} 용어집
 {: #citrix-netscaler-vpx-terminology}
 
 Citrix NetScaler 플랫폼은 제품별 용어와 기본 로드 밸런서 용어 및 개념을 모두 사용합니다.

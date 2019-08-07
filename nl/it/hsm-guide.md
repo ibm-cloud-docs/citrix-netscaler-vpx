@@ -21,10 +21,10 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Distribuzione e configurazione di IBM Hardware Security Module (HSM) con Citrix Netscaler VPX
+# Distribuzione e configurazione di IBM Hardware Security Module (HSM) con {{site.data.keyword.vpx_full}}
 {: #deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx}
 
-Questa procedura passo dopo passo ti guida nel processo di integrazione di HSM con Citrix Netscaler VPX. I due servizi saranno quindi in grado di comunicare e generare il materiale crittografico necessario per creare un certificato.
+Questa procedura passo dopo passo ti guida nel processo di integrazione di HSM con {{site.data.keyword.vpx_full}}. I due servizi saranno quindi in grado di comunicare e generare il materiale crittografico necessario per creare un certificato.
 
 ## Informazioni sulla distribuzione
 {: #about-the-deployment}
@@ -49,16 +49,16 @@ Se non hai familiarità con SSL Offload, consulta questo [articolo Citrix](https
 
 {: #what-you-ll-accomplish}
 
-In questa guida passo dopo passo, apprenderai come distribuire e configurare un HSM con un Citrix Netscaler VPX:
+In questa guida passo dopo passo, apprenderai come distribuire e configurare un HSM con un {{site.data.keyword.vpx_full}}:
 
 Attività  | Descrizione
 ------------- | -------------
 [Ordinazione di un HSM (Hardware Security Module)](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-the-ibm-hardware-security-module-hsm-) | Innanzitutto, dovrai ordinare un HSM.
-[Ordinazione di un Citrix Netscaler VPX](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-a-citrix-netscaler-vpx) | Se non l'hai già fatto, dovrai ordinare un Citrix Netscaler VPX.
+[Ordinazione di un {{site.data.keyword.vpx_full}}](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-a-citrix-netscaler-vpx) | Se non l'hai già fatto, dovrai ordinare un {{site.data.keyword.vpx_full}}.
 [Inizializzazione di HSM](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-initialize-ibm-hardware-security-module-hsm-) | La maggior parte delle configurazioni richiede l'inizializzazione del dispositivo HSM. Senza eseguire tale operazione, possono essere eseguiti solo determinati comandi `show`.
 [Creazione di una partizione](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-a-partition) | Una partizione è uno spazio logico e indipendente associato o collegato al client che sta richiedendo o creando oggetti crittografici nel motore HSM.
 [Installazione del software client HSM](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-install-the-ibm-hardware-security-module-hsm-client-software) | In questa sottosezione, VPX verrà installato con il software e i programmi di utilità richiesti per interagire con HSM. |
 [Come stabilire NTL (Network Trust Link)](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-establish-a-network-trust-link-ntl-) | Un NTL (Network Trust Link) è un canale sicuro utilizzato da HSM (Hardware Security Module) e dal client per comunicare. |
 [Creazione di chiavi e generazione di CSR (Certificate Signing Request)](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-) | In questa sottosezione creerai una coppia di chiavi che verrà utilizzata per generare un CSR (Certificate Signing Request) e per ordinare/richiedere un certificato con esso. |
-[Ordinazione del certificato](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-an-ssl-certificate) | Ordina un certificato SSL per il tuo Citrix Netscaler VPX.
+[Ordinazione del certificato](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-an-ssl-certificate) | Ordina un certificato SSL per il tuo {{site.data.keyword.vpx_full}}.
 [Recupero e trasferimento del certificato](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-retrieve-and-transfer-the-certificate) | Recupera il certificato SSL ordinato in precedenza e tieni pronti tutti i dati per la sua installazione e configurazione nella procedura passo dopo passo successiva.

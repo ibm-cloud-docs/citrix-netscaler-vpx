@@ -8,7 +8,7 @@ lastupdated: "2018-11-12"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Citrix NetScaler VPX für High Availability (HA) konfigurieren
+# {{site.data.keyword.vpx_full}} für High Availability (HA) konfigurieren
 {: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
 Lastausgleichsfunktionen werden zum Lastausgleich für den Datenverkehr auf mehrere Anwendungsserver benutzt, um so die Leistung und Stabilität einer skalierbaren Anwendung zu verbessern. Allerdings stellt eine einzige Lastausgleichsfunktion auch einen Single Point of Failure dar. Dies kann vermieden werden, indem Sie ein HA-Paar (HA = High Availability; Hochverfügbarkeit) für NetScaler VPX konfigurieren. Zur Konfiguration eines HA-Paares werden zwei NetScaler VPX-Server benötigt. Der sekundäre Server übernimmt dabei die Lastausgleichsfunktion, falls der primäre Server ausfällt. 

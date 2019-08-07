@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# 啟用 Citrix NetScaler VPX 中的必要特性
+# 啟用 {{site.data.keyword.vpx_full}} 中的必要特性
 {: #enable-required-features-in-vpx}
 
 您可以啟用 VPX 中的必要特性來建立 IPSec VPN：

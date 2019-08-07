@@ -24,10 +24,10 @@ subcollection: citrix-netscaler-vpx
 # Check and Configure the DNS Record
 {: #check-and-configure-the-dns-record}
 
-In this Step by Step example, the DNS service from IBM© Cloud Internet Services is used to manage the DNS zone and its records. In this case, you must ensure a record is created for the FQDN being used. The record should point to the public address to be configured in the Citrix Netscaler VPX virtual server.
+In this Step by Step example, the DNS service from IBM© Cloud Internet Services is used to manage the DNS zone and its records. In this case, you must ensure a record is created for the FQDN being used. The record should point to the public address to be configured in the {{site.data.keyword.vpx_full}} virtual server.
 
 <img src="images/12-add-record.png" alt="drawing" style="width: 700px;"/>
 
-The static public IP to be used with the Citrix VPX can be retrieved from the Customer Portal by navigating to **Devices > Device List** and then selecting the name of your Citrix Netscaler VPX.
+The static public IP to be used with the Citrix VPX can be retrieved from the Customer Portal by navigating to **Devices > Device List** and then selecting the name of your {{site.data.keyword.vpx_full}}.
 
 <img src="images/13-check-ip.png" alt="drawing" style="width: 300px;"/>

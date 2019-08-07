@@ -44,7 +44,7 @@ SSL 인증서에 대한 자세한 정보는 다음 IBM Cloud 기사를 참조하
 * [SSL 기술 소개](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-introduction-to-ssl-technology)
 * [SSL을 위한 계획](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-planning-for-ssl)
 
-Citrix Netscaler VPX에 사용할 SSL 인증서를 주문하려면 다음 프로시저를 수행하십시오.
+{{site.data.keyword.vpx_full}}에 사용할 SSL 인증서를 주문하려면 다음 프로시저를 수행하십시오.
 
 1.	VPX 쉘 CLI의 [키 작성 및 인증서 서명 요청(CSR) 생성](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-) 단계에서 이전에 작성한 CSR 파일을 열어 CSR 텍스트를 표시하십시오.
 

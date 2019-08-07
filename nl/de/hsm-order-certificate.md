@@ -38,7 +38,7 @@ Weitere Informationen zu SSL-Zertifikaten finden Sie in den folgenden IBM Cloud-
 * [Planung für SSL](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-planning-for-ssl)
 
 
-Gehen Sie wie folgt vor, um ein SSL-Zertifikat für die Verwendung mit Citrix NetScaler VPX zu bestellen:
+Gehen Sie wie folgt vor, um ein SSL-Zertifikat für die Verwendung mit {{site.data.keyword.vpx_full}} zu bestellen:
 
 1.	Zeigen Sie in der Befehlszeilenschnittstelle der VPX-Shell den CSR-Text an, indem Sie die in Schritt [Schlüssel erstellen und Zertifikatssignieranforderung generieren](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-) erstellte CSR-Datei öffnen:
 

@@ -17,12 +17,12 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Foire aux questions concernant Citrix NetScaler VPX
+# Foire aux questions concernant {{site.data.keyword.vpx_full}}
 {: #faqs-for-citrix-netscaler-vpx}
 
-Voici la liste des questions les plus fréquentes concernant l'utilisation du Citrix NetScaler VPX.
+Voici la liste des questions les plus fréquentes concernant l'utilisation du {{site.data.keyword.vpx_full}}.
 
-## Qu'est ce qu'un Citrix NetScaler VPX ?
+## Qu'est ce qu'un {{site.data.keyword.vpx_full}} ?
 {: faq}
 
 Citrix NetScaler est un ADC (Application Delivery Controller, ou contrôleur de mise à disposition d'applications) qui rend les applications cinq fois meilleures en augmentant leurs performances, en veillant à leur disponibilité et à leur protection et en réduisant considérablement les coûts d'exploitation. Choisissez l'édition de Citrix NetScaler qui répond le mieux aux exigences de vos applications et déployez-la sur les systèmes dédiés convenant à vos besoins de performances. Pour en apprendre plus sur Citrix NetScaler, référez-vous à la [page NetScaler ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://www.citrix.com/products/netscaler-application-delivery-controller/overview.html){:new_window}

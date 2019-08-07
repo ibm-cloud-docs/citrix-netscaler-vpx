@@ -26,9 +26,9 @@ subcollection: citrix-netscaler-vpx
 # 启用高速缓存重定向和负载均衡功能
 {: #enable-cache-redirection-and-load-balancing-capabilities}
 
-要对 Citrix NetScaler VPX 设备启用高速缓存重定向和负载均衡，请执行以下步骤：
+要对 {{site.data.keyword.vpx_full}} 设备启用高速缓存重定向和负载均衡，请执行以下步骤：
 
-1. 在 Citrix NetScaler VPX 设备系统页面中，转至**设置 > 配置高级功能**，启用**高速缓存重定向**，然后单击**确定**。  
+1. 在 {{site.data.keyword.vpx_full}} 设备系统页面中，转至**设置 > 配置高级功能**，启用**高速缓存重定向**，然后单击**确定**。  
 
 	<img src="images/fp4.png" alt="图样" style="width: 400px;"/>
 

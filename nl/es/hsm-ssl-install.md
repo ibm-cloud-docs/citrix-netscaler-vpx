@@ -26,7 +26,7 @@ subcollection: citrix-netscaler-vpx
 
 En este tema instalará el certificado SSL que ha creado en la guía [paso a paso](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) anterior. Para ello, lleve a cabo el siguiente procedimiento:
 
-1.	Confirme que el certificado está presente en el directorio `/nsconfig/ssl` en Citrix Netscaler VPX.
+1.	Confirme que el certificado está presente en el directorio `/nsconfig/ssl` en {{site.data.keyword.vpx_full}}.
 
 	```
 	root@IBMADC690867-s6dr# cd /nsconfig/ssl
@@ -38,7 +38,7 @@ En este tema instalará el certificado SSL que ha creado en la guía [paso a pas
 	ns-root.req             ns-sftrust-root.cert    ns-	sftrust.der
 	```
 
-2.	Aunque la clave de certificado esté ubicada en el directorio correcto, debe reconocerse como objeto Citrix Netscaler VPX válido para poder conectarse e interactuar con otros componentes de VPX. Para ello, realice lo siguiente:
+2.	Aunque la clave de certificado esté ubicada en el directorio correcto, debe reconocerse como objeto {{site.data.keyword.vpx_full}} válido para poder conectarse e interactuar con otros componentes de VPX. Para ello, realice lo siguiente:
 
 	```
 	> add ssl hsmKey NSkey_s6dr -hsmType SAFENET -	SerialNum 534071053 -password P@rtition6
@@ -110,7 +110,7 @@ En este tema instalará el certificado SSL que ha creado en la guía [paso a pas
 	>
 	```
 
-6.	(OPCIONAL) Para evitar advertencias de seguridad al acceder al contenido mediante un navegador web, es posible que desee instalar certificados "CA intermedios". Estos permiten que Citrix Netscaler VPX comparta información con clientes de conexión.
+6.	(OPCIONAL) Para evitar advertencias de seguridad al acceder al contenido mediante un navegador web, es posible que desee instalar certificados "CA intermedios". Estos permiten que {{site.data.keyword.vpx_full}} comparta información con clientes de conexión.
 
 	Para obtener certificados intermedios para RapidSSL, visite cualquiera de los enlaces siguientes:
 

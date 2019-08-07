@@ -17,12 +17,12 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Preguntas más frecuentes de Citrix NetScaler VPX
+# Preguntas más frecuentes de {{site.data.keyword.vpx_full}}
 {: #faqs-for-citrix-netscaler-vpx}
 
-Las siguientes son las preguntas más frecuentes relacionadas con Citrix NetScaler VPX.
+Las siguientes son las preguntas más frecuentes relacionadas con {{site.data.keyword.vpx_full}}.
 
-## ¿Qué es Citrix NetScaler VPX?
+## ¿Qué es {{site.data.keyword.vpx_full}}?
 {: faq}
 
 Citrix NetScaler es un controlador de entrega de aplicaciones que hace que las aplicaciones sean hasta cinco veces mejor acelerando el rendimiento, garantizando la disponibilidad y seguridad de la aplicación y disminuyendo sustancialmente los costes operativos. Elija la edición de Citrix NetScaler que mejor cumpla los requisitos de su aplicación y despliéguela en el sistema dedicado adecuado para sus necesidades de rendimiento. Para obtener más información sobre Citrix NetScaler, consulte la [página de NetScaler ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://www.citrix.com/products/netscaler-application-delivery-controller/overview.html){:new_window} en el sitio web de Citrix.

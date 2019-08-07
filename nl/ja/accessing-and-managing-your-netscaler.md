@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix NetScaler VPX の管理
+# {{site.data.keyword.vpx_full}} の管理
 {: #managing-your-citrix-netscaler-vpx}
 
 Citrix NetScaler デバイスは、さまざまな方法で {{site.data.keyword.cloud}} ソリューションを拡張および改良するのに役立つ豊富な機能を備えた強力なツールです。 {{site.data.keyword.cloud_notm}} インフラストラクチャー・カスタマー・ポータルでデバイスの情報を見ることができるほか、デバイスに接続してそのフィーチャーを構成することもできます。  
@@ -30,7 +30,7 @@ Citrix NetScaler デバイスは、{{site.data.keyword.cloud_notm}} プラット
 1. ブラウザーから[カスタマー・ポータル ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://control.softlayer.com/){: new_window} を開き、アカウントにログインします。
 2. カスタマー・ポータルのナビゲーションで、**「デバイス (Devices)」>「デバイス・リスト (Device List)」**を選択します。
 
-ご使用のデバイスが、デバイス名でソートされて表示されます。 Citrix NetScaler VPX デバイスのデバイス・タイプは「NetScaler」です。
+ご使用のデバイスが、デバイス名でソートされて表示されます。 {{site.data.keyword.vpx_full}} デバイスのデバイス・タイプは「NetScaler」です。
 
 NetScaler の行の左側で、矢印をクリックして行を展開し、NetScaler 管理アクセス用のユーザー名とマスクされたパスワードを表示します。
 

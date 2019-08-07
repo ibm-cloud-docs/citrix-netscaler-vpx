@@ -63,7 +63,7 @@ Pour établir la connexion NTL, procédez comme suit :
 
 	Pour en savoir plus sur la bibliothèque de jetons virtuels (VTL), consultez le document [Utilities Reference Guide (en anglais) ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/utilities_reference_guide.pdf){: new_window}.
 
-3.	Transférez le fichier certificat du serveur HSM vers le client Citrix NetScaler VPX via SCP, puis ajoutez le serveur :
+3.	Transférez le fichier certificat du serveur HSM vers le client {{site.data.keyword.vpx_full}} via SCP, puis ajoutez le serveur :
 
 	```
 	root@IBMADC690867-s6dr# scp hsm_admin@10.121.229.201:server.pem .
@@ -155,7 +155,7 @@ Pour établir la connexion NTL, procédez comme suit :
 	client assignPartition -client <clientname> -partition <partition name>
 	```
 
-8.	Vérifiez la connectivité dans votre Citrix NetScaler VPX :
+8.	Vérifiez la connectivité dans votre {{site.data.keyword.vpx_full}} :
 
 	```
 	root@IBMADC690867-s6dr# vtl verify

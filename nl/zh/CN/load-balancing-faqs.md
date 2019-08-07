@@ -17,12 +17,12 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix NetScaler VPX 的常见问题
+# {{site.data.keyword.vpx_full}} 的常见问题
 {: #faqs-for-citrix-netscaler-vpx}
 
-下面是使用 Citrix NetScaler VPX 时会遇到的常见问题。
+下面是使用 {{site.data.keyword.vpx_full}} 时会遇到的常见问题。
 
-## 什么是 Citrix NetScaler VPX？
+## 什么是 {{site.data.keyword.vpx_full}}？
 {: faq}
 
 Citrix NetScaler 是一种应用程序交付控制器，通过加速性能，确保应用程序可用性和保护并大幅降低运营成本，从而使应用程序的提升程度达到原来的 5 倍。选择满足应用程序需求的最佳 Citrix NetScaler 版本，并将其部署在适合您的性能需求的专用系统上。要了解有关 Citrix NetScaler 的更多信息，请参阅 Citrix Web 站点上的 [NetScaler 页面 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://www.citrix.com/products/netscaler-application-delivery-controller/overview.html){:new_window}。

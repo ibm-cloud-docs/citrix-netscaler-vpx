@@ -18,7 +18,7 @@ lastupdated: "2018-11-12"
 
 Eine Cipher-Suite ist eine Kombination aus Authentifizierung, Verschlüsselung, Nachrichtenauthentifizierungscode und Schlüsselaustauschalgorithmen, mit der die Sicherheitseinstellungen für SSL-und TLS-Protokolle vereinbart werden.
 
-Um eine ordnungsgemäße Authentifizierung zu gewährleisten, müssen Sie sicherstellen, dass Ihre Citrix NetScaler VPX-Instanz die beste Kombination der Verschlüsselungsverfahren verwendet.
+Um eine ordnungsgemäße Authentifizierung zu gewährleisten, müssen Sie sicherstellen, dass Ihre {{site.data.keyword.vpx_full}}-Instanz die beste Kombination der Verschlüsselungsverfahren verwendet.
 
 Weitere Informationen zu SSL-Cipher-Suites und andere Best Practices finden Sie auf den folgenden Websites:
 
@@ -61,7 +61,7 @@ Gehen Sie wie folgt vor, um eine neue Cipher-Suite zu erstellen, die AEAD-, ECDH
 	bind ssl cipher <Name_der_Chiffrierwertgruppe> -cipherName <Zeichenfolge>
 	```
 
-2.	Überprüfen Sie, ob der Chiffrierwert Ihrer Citrix NetScaler VPX-Instanz hinzugefügt wurde:
+2.	Überprüfen Sie, ob der Chiffrierwert Ihrer {{site.data.keyword.vpx_full}}-Instanz hinzugefügt wurde:
 
 	```
 	> show ssl cipher SSLLABS

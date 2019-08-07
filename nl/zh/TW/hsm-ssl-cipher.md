@@ -25,7 +25,7 @@ subcollection: citrix-netscaler-vpx
 
 密碼組合是用來協議 SSL 及 TLS 通訊協定之安全設定的鑑別、加密、訊息鑑別碼 (MAC) 和金鑰交換演算法的組合。
 
-為了保證適當的鑑別，您必須確定 Citrix Netscaler VPX 使用最佳密碼組合。
+為了保證適當的鑑別，您必須確定 {{site.data.keyword.vpx_full}} 使用最佳密碼組合。
 
 若要進一步瞭解 SSL 密碼組合及其他最佳作法，請造訪下列鏈結：
 
@@ -69,7 +69,7 @@ subcollection: citrix-netscaler-vpx
 	bind ssl cipher <cipherGroupName> -cipherName <string>
 	```
 
-2.	確認已將密碼新增至 Citrix Netscaler VPX：
+2.	確認已將密碼新增至 {{site.data.keyword.vpx_full}}：
 
 	```
 	> show ssl cipher SSLLABS

@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# 使用 Citrix NetScaler VPX 的廣域負載平衡
+# 使用 {{site.data.keyword.vpx_full}} 的廣域負載平衡
 {: #global-load-balancing-with-citrix-netscaler-vpx}
 
 廣域伺服器負載平衡 (GSLB) 是一種將資料流量分散到多部伺服器/多個實例（通常位於不同的地理位置）的機制。此構想是要讓廣域平衡引擎/伺服器接收來自各用戶端的資料流量要求，並將它們重新導向至特定地理位置，後者是使用管理者所選取及配置的準則/演算法來決定。為達到此目的，可以在 {{site.data.keyword.BluSoftlayer_notm}} 網路內使用兩個已辨識的方法：
@@ -22,7 +22,7 @@ subcollection: citrix-netscaler-vpx
 * **CDN：**發出「內容遞送網路 (CDN)」以提供內容及複合式多媒體（例如影像及視訊），CDN 會將內容分散到地理位置不同的節點，同時維持最少延遲及最高速度。相對於整個網站/應用程式而需要分散內容的特定部分時，通常會實作該方法。{{site.data.keyword.BluSoftlayer_notm}} 提供此服務，請在[這裡](/docs/infrastructure/CDN?topic=CDN-getting-started)深入閱讀。
 * **NetScaler VPX：**就像一般的本端負載平衡一樣，VPX 會使用類似的物件階層以在數個地理位置之間負載平衡資料流量。使用 DNS 型廣域查閱時，NetScaler 會選擇對應至所選取位置/網站的個別記錄，這項選擇是以管理者預先配置的準則為基礎。接下來章節將詳述此選項/供應項目。
 
-還有其他技術可用於內容分散（例如 HTTP 重新導向），這些技術也可以使用 Citrix NetScaler VPX 來實作。
+還有其他技術可用於內容分散（例如 HTTP 重新導向），這些技術也可以使用 {{site.data.keyword.vpx_full}} 來實作。
 {: note}
 
 ## 關於 VPX 上的 GSLB

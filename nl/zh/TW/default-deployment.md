@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix NetScaler VPX 預設部署
+# {{site.data.keyword.vpx_full}} 預設部署
 {: #citrix-netscaler-vpx-default-deployment}
 
 當您在[客戶入口網站 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://control.softlayer.com/) 的**裝置 > 裝置清單**中檢視 NetScaler 時，可能會注意到它與其他伺服器不同。亦即，裝置具有「專用 IP 位址」，但沒有「公用 IP 位址」。

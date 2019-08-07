@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix Netscaler VPX をフォワード・プロキシーとしてセットアップ
+# {{site.data.keyword.vpx_full}} をフォワード・プロキシーとしてセットアップ
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
 
 フォワード・プロキシーは、内部ネットワーク上のクライアントとインターネットの間の単一の制御ポイントとして機能します。 プロキシーにより、ネットワーク管理者またはセキュリティー管理者は、インターネット・サイトへのアクセスを制限するポリシーを作成できます。
@@ -27,7 +27,7 @@ subcollection: citrix-netscaler-vpx
 ## ステップ 1: プライベート・ネットワークで使用する VIP の要求
 {: #step-1-request-vips-to-use-in-the-private-network}
 
-Citrix NetScaler VPX ロード・バランサーが {{site.data.keyword.BluSoftlayer_notm}} カスタマー・ポータルから発注されると、リバース・プロキシーが要求されていると想定されます。 要求者は、仮想 IP (VIP) として使用される「パブリック」IP の数を求められます。
+{{site.data.keyword.vpx_full}} ロード・バランサーが {{site.data.keyword.BluSoftlayer_notm}} カスタマー・ポータルから発注されると、リバース・プロキシーが要求されていると想定されます。 要求者は、仮想 IP (VIP) として使用される「パブリック」IP の数を求められます。
 
 フォワード・プロキシーの場合、プライベート・ネットワーク上に VIP をセットアップする必要があります。 プライベート・ネットワークの VIP を要求するには、サポート・チケットをオープンする必要があります。 必要な VIP の数によって、チケットで要求されるサブネットのサイズが決まります。 サブネット情報がチケットで返されます。
 
@@ -37,18 +37,18 @@ Citrix NetScaler VPX ロード・バランサーが {{site.data.keyword.BluSoftl
 
 * サブネット IP (SNIP) `10.114.52.101`、およびルーティングされたサブネット `10.114.27.0/29`
 
-* VIP `10.114.27.0-3` が、サポート・チームによって Citrix NetScaler VPX に追加されました。
+* VIP `10.114.27.0-3` が、サポート・チームによって {{site.data.keyword.vpx_full}} に追加されました。
 
-## ステップ 2: Citrix NetScaler VPX でのロード・バランシング機能およびキャッシュ・リダイレクト機能の有効化
+## ステップ 2: {{site.data.keyword.vpx_full}} でのロード・バランシング機能およびキャッシュ・リダイレクト機能の有効化
 {: #step-2-enable-load-balancing-and-cache-redirect-features-on-the-citrix-netscaler-vpx}
 
-デフォルトでは、Citrix NetScaler VPX ロード・バランサーのロード・バランシング機能とキャッシュ・リダイレクト機能は無効になっています。`enable ns feature cr lb` コマンドは、これらの機能を有効にします。
+デフォルトでは、{{site.data.keyword.vpx_full}} ロード・バランサーのロード・バランシング機能とキャッシュ・リダイレクト機能は無効になっています。`enable ns feature cr lb` コマンドは、これらの機能を有効にします。
 
 
 ## ステップ 3: フォワード・プロキシーの作成
 {: #step-3-create-the-forward-proxy}
 
-コマンド・ラインを使用して、Citrix NetScaler VPX に対して以下のコマンドを発行します。 このシナリオでは、2 台の {{site.data.keyword.BluSoftlayer_notm}} DNS サーバーのうち 1 台のみが追加されます。  
+コマンド・ラインを使用して、{{site.data.keyword.vpx_full}} に対して以下のコマンドを発行します。 このシナリオでは、2 台の {{site.data.keyword.BluSoftlayer_notm}} DNS サーバーのうち 1 台のみが追加されます。  
 
 ```
 add cr vserver vs_forward_cache HTTP 10.114.27.3 80 -cachetype forward -redirect origin
@@ -85,7 +85,7 @@ set cr vserver vs_forward_cache -dnsVservername virtual_dns
 
 あるいは、`/ etc/sysconfig/network-scripts/ifcfg-ethx` インターフェースを編集し、`DNS1 =` ステートメントを追加することもできます。 いったん設定されたら、サービス・ネットワーク再始動コマンドを発行して変更を取得できます。
 
-いずれの場合も、DNS IP アドレスを仮想 DNS アドレスとして構成する必要があり、要求が Citrix NetScaler VPX フォワード・プロキシーを指すようにクライアントのブラウザーを構成する必要があります。
+いずれの場合も、DNS IP アドレスを仮想 DNS アドレスとして構成する必要があり、要求が {{site.data.keyword.vpx_full}} フォワード・プロキシーを指すようにクライアントのブラウザーを構成する必要があります。
 
 Firefox 内で以下のステップを実行して、必要な変更を行います。
 

@@ -15,14 +15,14 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Hilfe und Support für Citrix NetScaler VPX anfordern
+# Hilfe und Support für {{site.data.keyword.vpx_full}} anfordern
 {: #getting-help-and-support-for-citrix-netscaler-vpx}
 
 Wenn Sie Probleme oder Fragen in Bezug auf den Einsatz von Citrix NetScaler haben, dann können Sie nach den benötigten Informationen suchen oder in einem der im Folgenden aufgelisteten Foren Fragen stellen. Außerdem können Sie ein Support-Ticket öffnen.
 
 Wenn Sie die Foren nutzen, um Fragen zu stellen, dann markieren Sie Ihre Frage so, dass sie den IBM© Cloud-Entwicklungsteams angezeigt wird.
 
-* Bei technischen Fragen zu Citrix NetScaler VPX können Sie Ihre Frage im [Stack Overflow](https://stackoverflow.com/search?q=citrix-vpx+ibm-cloud) posten und mit "citrix-vpx" und "ibm-cloud" markieren.
+* Bei technischen Fragen zu {{site.data.keyword.vpx_full}} können Sie Ihre Frage im [Stack Overflow](https://stackoverflow.com/search?q=citrix-vpx+ibm-cloud) posten und mit "citrix-vpx" und "ibm-cloud" markieren.
 * Fragen zum Service und zur Einführung können Sie im Forum [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/citrix-vpx.html?smartspace=ibm-cloud) stellen. Geben Sie hier die Tags "citrix-vpx" und "ibm-cloud" an.
 
 Weitere Einzelheiten zur Verwendung der Foren finden Sie unter dem Thema zum [Abrufen von Hilfe](https://{DomainName}/docs/get-support?topic=get-support-using-avatar).

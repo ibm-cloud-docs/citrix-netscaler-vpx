@@ -21,10 +21,10 @@ subcollection: citrix-netscaler-vpx
 
 您可能不需要完整實作廣域負載平衡解決方案。GSLB 需要多個可執行此功能的合適裝置實例，而且取決於您的需求，其他解決方案可能會更吸引您。如果您需要整個網站及應用程式，則 GSLB 是良好的選擇。如果您只需要內容的某些部分（例如影像、視訊或其他大型檔案），則[內容遞送網路](/docs/infrastructure/CDN?topic=CDN-about-content-delivery-networks-cdn-)可能更為適合（更容易部署）。
 
-## Citrix NetScaler VPX
+## {{site.data.keyword.vpx_full}}
 {: #citrix-netscaler-vpx}
 
-Citrix NetScaler VPX 是唯一能夠執行真正廣域負載平衡的客戶可配置裝置。NetScaler 是可執行 DNS 型廣域負載平衡查閱的多功能應用裝置。您可以指向 NetScaler 以作為 DNS 伺服器，而且裝置將會檢查它配置成負載平衡的伺服器、執行距離計算，以及傳回具有最接近用戶端要求之伺服器 IP 的記錄。
+{{site.data.keyword.vpx_full}} 是唯一能夠執行真正廣域負載平衡的客戶可配置裝置。NetScaler 是可執行 DNS 型廣域負載平衡查閱的多功能應用裝置。您可以指向 NetScaler 以作為 DNS 伺服器，而且裝置將會檢查它配置成負載平衡的伺服器、執行距離計算，以及傳回具有最接近用戶端要求之伺服器 IP 的記錄。
 
 對於適用於負載平衡，您會在每個資料中心都有 NetScaler 應用裝置配置。每個 NetScaler 應用裝置配置可以是單一 Netscaler 或一對 HA 配對的 Netscaler，視您的需求而定，它們會為背後的伺服器提供本端負載平衡服務。裝置已配置為彼此交談，以在指派給廣域負載平衡器旋轉的每一部伺服器上交換狀態資訊。任何進入這些已配置 NetScaler 的 DNS 要求都可以傳回在線上且具回應力之伺服器的適當記錄。任何沒有回應的伺服器都會從旋轉及另一個選取項目中移除。
 

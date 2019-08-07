@@ -20,12 +20,12 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix Netscaler VPX での SSL オフロードの構成とチューニング
+# {{site.data.keyword.vpx_full}} での SSL オフロードの構成とチューニング
 {: #configuring-and-tuning-ssl-offload-with-citrix-netscaler-vpx}
 
-このステップバイステップでは、Citrix Netscaler VPX での SSL オフロードの構成とチューニングに関するガイドを提供します。これは、HSM リンクを介して生成される証明書および暗号資料を使用して行います。
+このステップバイステップでは、{{site.data.keyword.vpx_full}} での SSL オフロードの構成とチューニングに関するガイドを提供します。これは、HSM リンクを介して生成される証明書および暗号資料を使用して行います。
 
-このステップバイステップは、[IBM Hardware Security Module (HSM) を使用した Citrix Netscaler VPX のデプロイと構成](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx)の手順を完了して VPX/HSM ペアを注文および作成したことを前提としています。
+このステップバイステップは、[IBM Hardware Security Module (HSM) を使用した {{site.data.keyword.vpx_full}} のデプロイと構成](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx)の手順を完了して VPX/HSM ペアを注文および作成したことを前提としています。
 {: note}
 
 ## デプロイメントについて
@@ -49,18 +49,18 @@ SSL オフロードに精通していない場合は、この [Citrix 記事 ![�
 ## このガイドで達成できること
 {: #what-you-ll-accomplish}
 
-このステップバイステップ・ガイドでは、Citrix Netscaler VPX 用に SSL を構成する方法について学ぶことができます。
+このステップバイステップ・ガイドでは、{{site.data.keyword.vpx_full}} 用に SSL を構成する方法について学ぶことができます。
 
 タスク  | 説明
 ------------- | -------------
 [証明書のインストール](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-install-your-ssl-certificate) | 以前の [ステップバイステップ](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx)で作成した SSL 証明書をインストールします。
-[DNS レコードの確認と構成](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-check-and-configure-the-dns-record) | Citrix Netscaler VPX で仮想サーバーとして構成するパブリック・アドレスを指す FQDN の DNS レコードが存在することを確認します。
+[DNS レコードの確認と構成](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-check-and-configure-the-dns-record) | {{site.data.keyword.vpx_full}} で仮想サーバーとして構成するパブリック・アドレスを指す FQDN の DNS レコードが存在することを確認します。
 [SSL 仮想サーバーの追加と構成](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-add-and-configure-the-ssl-virtual-server) | SSL 仮想サーバーを追加し、構成します。
 [新規の暗号スイートの作成と適用](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-and-apply-a-new-cipher-suite) | AEAD、ECDHE、および ECDSA を優先順位付けおよび優先する暗号スイートを作成します。
 
 ## 追加リソース
 {: #additional-resources}
-以下の追加リソースは、IBM Hardware Security Module を使用するときに、Citrix Netscaler VPX を最大限に活用することに役立ちます。
+以下の追加リソースは、IBM Hardware Security Module を使用するときに、{{site.data.keyword.vpx_full}} を最大限に活用することに役立ちます。
 
 * [NetScaler 12.1 製品資料 (NetScaler 12.1 Product Documentation) ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://docs.citrix.com/en-us/netscaler/12-1/){:new_window}
 * [Gemalto サポート・ポータル (Gemalto Support Portal) ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://supportportal.gemalto.com/csm?id=csm_index){:new_window}

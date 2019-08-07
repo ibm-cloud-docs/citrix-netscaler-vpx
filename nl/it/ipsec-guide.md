@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Configurazione della VPN site-to-site IPsec in Citrix NetScaler VPX con IBM Virtual Router Appliance
+# Configurazione della VPN site-to-site IPsec in {{site.data.keyword.vpx_full}} con IBM Virtual Router Appliance
 {:#configuring-ipsec-site-to-site-vpn-in-citrix-netscaler-vpx}
 
 Questa guida fornisce le istruzioni dettagliate per configurare una connessione site-to-site della VPN IPSec in Citrix VPX. Viene utilizzata una VRA (Virtual Router Appliance) di IBM come un peer VPN.
@@ -42,7 +42,7 @@ Hai bisogno di una licenza VPX Platinum per configurare la VPN IPSec.
 
 Questa guida presuppone che tu sia il proprietario di entrambi i dispositivi. Visita i seguenti link per le istruzioni sull'ordinazione.
 
--	[Introduzione all'applicazione software Citrix NetScaler VPX](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started)
+-	[Introduzione all'applicazione software {{site.data.keyword.vpx_full}}](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started)
 -	[Introduzione a IBM Virtual Router Appliance](/docs/infrastructure/virtual-router-appliance?topic=virtual-router-appliance-getting-started)
 
 ## Quali operazioni eseguirai

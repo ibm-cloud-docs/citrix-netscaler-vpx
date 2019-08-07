@@ -26,7 +26,7 @@ subcollection: citrix-netscaler-vpx
 
 In this topic you will install the SSL Certificate you created in the previous [Step by Step](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx). To do so, perform the following procedure:
 
-1.	Confirm that the certificate is present in the `/nsconfig/ssl` directory on your Citrix Netscaler VPX.
+1.	Confirm that the certificate is present in the `/nsconfig/ssl` directory on your {{site.data.keyword.vpx_full}}.
 
 	```
 	root@IBMADC690867-s6dr# cd /nsconfig/ssl
@@ -38,7 +38,7 @@ In this topic you will install the SSL Certificate you created in the previous [
 	ns-root.req             ns-sftrust-root.cert    ns-	sftrust.der
 	```
 
-2.	Even though the certificate key is located in the proper directory, it must be recognized as a valid Citrix Netscaler VPX object for it to connect and interact with other VPX components. To do so:
+2.	Even though the certificate key is located in the proper directory, it must be recognized as a valid {{site.data.keyword.vpx_full}} object for it to connect and interact with other VPX components. To do so:
 
 	```
 	> add ssl hsmKey NSkey_s6dr -hsmType SAFENET -	SerialNum 534071053 -password P@rtition6
@@ -110,7 +110,7 @@ In this topic you will install the SSL Certificate you created in the previous [
 	>
 	```
 
-6.	(OPTIONAL) To avoid security warnings when accessing content through a web browser, you may wish to install "Intermediate CA" certificates. These allow your Citrix Netscaler VPX to share information with connecting clients.
+6.	(OPTIONAL) To avoid security warnings when accessing content through a web browser, you may wish to install "Intermediate CA" certificates. These allow your {{site.data.keyword.vpx_full}} to share information with connecting clients.
 
 	To obtain these intermediate certificates for RapidSSL, visit any of the links below:
 

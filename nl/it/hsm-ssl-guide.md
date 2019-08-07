@@ -20,12 +20,12 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Configurazione e ottimizzazione di SSL Offload con Citrix Netscaler VPX
+# Configurazione e ottimizzazione di SSL Offload con {{site.data.keyword.vpx_full}}
 {: #configuring-and-tuning-ssl-offload-with-citrix-netscaler-vpx}
 
-Questa procedura passo dopo passo ti guida nella configurazione e ottimizzazione di SSL Offload in Citrix Netscaler VPX, tale procedura viene eseguita utilizzando il certificato e il materiale crittografico generato tramite il link HSM.
+Questa procedura passo dopo passo ti guida nella configurazione e ottimizzazione di SSL Offload in {{site.data.keyword.vpx_full}}, tale procedura viene eseguita utilizzando il certificato e il materiale crittografico generato tramite il link HSM.
 
-Questa procedura passo dopo passo presuppone che tu abbia completato i passi presenti in [Distribuzione e configurazione di IBM© Hardware Security Module (HSM) con Citrix Netscaler VPX](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) per ordinare e creare il tuo accoppiamento VPX/HSM.
+Questa procedura passo dopo passo presuppone che tu abbia completato i passi presenti in [Distribuzione e configurazione di IBM© Hardware Security Module (HSM) con {{site.data.keyword.vpx_full}}](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) per ordinare e creare il tuo accoppiamento VPX/HSM.
 {: note}
 
 ## Informazioni sulla distribuzione
@@ -49,18 +49,18 @@ Se non hai familiarità con SSL Offload, consulta questo [articolo Citrix ![Icon
 ## Quali operazioni eseguirai
 {: #what-you-ll-accomplish}
 
-In questa guida passo dopo passo, apprenderai come configurare SSL per un Citrix Netscaler VPX:
+In questa guida passo dopo passo, apprenderai come configurare SSL per un {{site.data.keyword.vpx_full}}:
 
 Attività  | Descrizione
 ------------- | -------------
 [Installazione del certificato](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-install-your-ssl-certificate) | Installa il certificato SSL che hai creato nella procedura [passo dopo passo](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) precedente.
-[Controllo e configurazione del record DNS](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-check-and-configure-the-dns-record) | Assicurati che esista un record DNS per l'FQDN che punti all'indirizzo pubblico che deve essere configurato in Citrix Netscaler VPX come un server virtuale.
+[Controllo e configurazione del record DNS](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-check-and-configure-the-dns-record) | Assicurati che esista un record DNS per l'FQDN che punti all'indirizzo pubblico che deve essere configurato in {{site.data.keyword.vpx_full}} come un server virtuale.
 [Aggiunta e configurazione del server virtuale SSL](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-add-and-configure-the-ssl-virtual-server) | Aggiungi e configura un server virtuale SSL.
 [Creazione e applicazione di una nuova suite di cifratura](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-and-apply-a-new-cipher-suite) | Crea una suite di cifratura che dia priorità e abbia come preferenza AEAD, ECDHE e ECDSA.
 
 ## Risorse aggiuntive
 {: #additional-resources}
-Le risorse aggiuntive riportate di seguito possono aiutarti a ottenere il massimo dal tuo Citrix Netscaler VPX quando utilizzi IBM Hardware Security Module.
+Le risorse aggiuntive riportate di seguito possono aiutarti a ottenere il massimo dal tuo {{site.data.keyword.vpx_full}} quando utilizzi IBM Hardware Security Module.
 
 * [NetScaler 12.1 Product Documentation ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://docs.citrix.com/en-us/netscaler/12-1/){:new_window}
 * [Gemalto Support Portal ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://supportportal.gemalto.com/csm?id=csm_index){:new_window}

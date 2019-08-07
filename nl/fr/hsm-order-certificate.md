@@ -45,7 +45,7 @@ Pour plus d'informations sur les certificats SSL, consultez les articles IBM Clo
 * [Planification pour SSL](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-planning-for-ssl)
 
 
-Pour commander un certificat SSL à utiliser avec votre Citrix NetScaler VPX, procédez comme suit :
+Pour commander un certificat SSL à utiliser avec votre {{site.data.keyword.vpx_full}}, procédez comme suit :
 
 1.	A partir de l'interface CLI du shell VPX, affichez le texte CSR en ouvrant le fichier CSR précédemment créé à l'étape [Création de clés et génération de la demande de signature de certificat (CSR)](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-):
 

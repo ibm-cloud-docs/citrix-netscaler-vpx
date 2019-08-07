@@ -22,14 +22,14 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Aide et assistance pour Citrix NetScaler VPX
+# Aide et assistance pour {{site.data.keyword.vpx_full}}
 {: #getting-help-and-support-for-citrix-netscaler-vpx}
 
-Si vous avez des questions ou rencontrez des problèmes lors de l'utilisation de Citrix NetScaler VPX, vous pouvez rechercher des informations ou poser vos questions sur l'un des forums indiqués ci-dessous. Vous pouvez aussi ouvrir un ticket de demande de service.
+Si vous avez des questions ou rencontrez des problèmes lors de l'utilisation de {{site.data.keyword.vpx_full}}, vous pouvez rechercher des informations ou poser vos questions sur l'un des forums indiqués ci-dessous. Vous pouvez aussi ouvrir un ticket de demande de service.
 
 Lorsque vous posez une question sur un forum, marquez-la à l'aide de balises pour que les équipes de développement IBM© Cloud la repère.
 
-* Si vous avez des questions techniques à propos de Citrix NetScaler VPX, postez-les (en anglais) sur [Stack Overflow](https://stackoverflow.com/search?q=citrix-vpx+ibm-cloud) avec les balises "citrix-vpx" et "ibm-cloud".
+* Si vous avez des questions techniques à propos de {{site.data.keyword.vpx_full}}, postez-les (en anglais) sur [Stack Overflow](https://stackoverflow.com/search?q=citrix-vpx+ibm-cloud) avec les balises "citrix-vpx" et "ibm-cloud".
 * Pour des questions relatives au service et aux instructions de mise en route, utilisez le forum [IBM developerWorks - dW Answers](https://developer.ibm.com/answers/topics/citrix-vpx.html?smartspace=ibm-cloud). Incluez les balises "citrix-vpx" et "ibm-cloud".
 
 Consultez [Obtenir de l'aide](https://{DomainName}/docs/get-support?topic=get-support-using-avatar) pour obtenir plus de détails sur l'utilisation des forums.

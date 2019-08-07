@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# 设置 Citrix NetScaler VPX 以实现高可用性 (HA)
+# 设置 {{site.data.keyword.vpx_full}} 以实现高可用性 (HA)
 {: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
 负载均衡器用于对多个应用程序服务器上的流量进行均衡，从而提高可扩展应用程序的性能和稳定性。然而，单个负载均衡器是单点故障。通过配置高可用性 (HA) NetScaler VPX 对可避免此问题。配置 HA 对需要两台 NetScaler VPX 服务器。如果主服务器发生故障，辅助服务器将介入以继续执行负载均衡。

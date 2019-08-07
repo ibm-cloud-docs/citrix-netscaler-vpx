@@ -8,7 +8,7 @@ lastupdated: "2018-11-12"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Neueste Aktualisierungen für Citrix NetScaler VPX
+# Neueste Aktualisierungen für {{site.data.keyword.vpx_full}}
 {: #recent-updates-for-citrix-netscaler-vpx}
 
 ## Version 12.1

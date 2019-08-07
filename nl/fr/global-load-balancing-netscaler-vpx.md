@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Equilibrage de charge global avec Citrix NetScaler VPX
+# Equilibrage de charge global avec {{site.data.keyword.vpx_full}}
 {: #global-load-balancing-with-citrix-netscaler-vpx}
 
 L'équilibrage global de la charge des serveurs (GSLB, Global Server Load Balancing) est un mécanisme qui distribue le trafic à plusieurs serveurs/instances résidant le plus souvent en différents endroits. L'idée est d'avoir un moteur/serveur d'équilibrage global qui reçoive les demandes des clients et les redirige vers tel ou tel endroit, celui-ci étant déterminé par les critères et algorithmes sélectionnés et configurés par l'administrateur. Deux méthodes reconnues peuvent être utilisées à cet effet au sein du réseau {{site.data.keyword.BluSoftlayer_notm}} :
@@ -22,7 +22,7 @@ L'équilibrage global de la charge des serveurs (GSLB, Global Server Load Balanc
 * **CDN : ** (Content Delivery Network) réseau de distribution de contenus et de médias riches tels que vidéos et images. Le contenu est réparti géographiquement sur des noeuds dispersés, garantissant ainsi des temps de latence aussi courts que possible et des débits de transmission au plus haut niveau. Il est généralement mis en oeuvre lorsque seules des portions particulières du contenu doivent être distribuées, par opposition à des sites web entiers ou des applications entières. Ce service est proposé par {{site.data.keyword.BluSoftlayer_notm}}. Plus de lecture à son propos [ici](/docs/infrastructure/CDN?topic=CDN-getting-started).
 * **NetScaler VPX :** comme dans le cas d'un équilibrage de charge local classique, NetScaler VPX utilise une hiérarchie d'objets similaire pour répartir le trafic et la charge afférente entre plusieurs endroits. Utilisant des recherches globales basées sur DNS, il choisit l'enregistrement qui correspond au lieu ou site sélectionné en fonction de critères préconfigurés par l'administrateur. Cette option/offre sera décrite plus en détail dans les sections à venir.
 
-D'autres techniques, telles que la redirection HTTP, sont également disponibles pour la distribution de contenus et peuvent être mises en oeuvre avec le Citrix NetScaler VPX.
+D'autres techniques, telles que la redirection HTTP, sont également disponibles pour la distribution de contenus et peuvent être mises en oeuvre avec le {{site.data.keyword.vpx_full}}.
 {: note}
 
 ## A propos de GSLB sur VPX

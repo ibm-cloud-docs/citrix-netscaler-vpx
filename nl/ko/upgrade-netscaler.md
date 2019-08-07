@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix NetScaler VPX 업그레이드
+# {{site.data.keyword.vpx_full}} 업그레이드
 {: #upgrading-your-citrix-netscaler-vpx}
 
 이 프로시저를 시도하려면 우선 VPN에 연결되어 있어야 합니다.

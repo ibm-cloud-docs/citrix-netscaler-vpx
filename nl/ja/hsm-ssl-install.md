@@ -26,7 +26,7 @@ subcollection: citrix-netscaler-vpx
 
 このトピックでは、以前の [ステップバイステップ](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx)で作成した SSL 証明書をインストールします。 それを行うには、以下の手順を実行します。
 
-1.	Citrix Netscaler VPX 上の `/nsconfig/ssl` ディレクトリーに証明書が存在することを確認します。
+1.	{{site.data.keyword.vpx_full}} 上の `/nsconfig/ssl` ディレクトリーに証明書が存在することを確認します。
 
 	```
 	root@IBMADC690867-s6dr# cd /nsconfig/ssl
@@ -38,7 +38,7 @@ subcollection: citrix-netscaler-vpx
 	ns-root.req             ns-sftrust-root.cert    ns-	sftrust.der
 	```
 
-2.	証明書鍵が適切なディレクトリーに配置されている場合でも、他の VPX コンポーネントと接続し、相互作用するには、有効な Citrix Netscaler VPX オブジェクトとして認識される必要があります。 構成するには、以下の手順に従ってください。
+2.	証明書鍵が適切なディレクトリーに配置されている場合でも、他の VPX コンポーネントと接続し、相互作用するには、有効な {{site.data.keyword.vpx_full}} オブジェクトとして認識される必要があります。 構成するには、以下の手順に従ってください。
 
 	```
 	> add ssl hsmKey NSkey_s6dr -hsmType SAFENET -	SerialNum 534071053 -password P@rtition6
@@ -110,7 +110,7 @@ subcollection: citrix-netscaler-vpx
 	>
 	```
 
-6.	(オプション) Web ブラウザーを介してコンテンツにアクセスするときにセキュリティー警告を回避するには、「中間 CA」証明書をインストールします。 それらによって、Citrix Netscaler VPX は、接続するクライアントと情報を共有することができます。
+6.	(オプション) Web ブラウザーを介してコンテンツにアクセスするときにセキュリティー警告を回避するには、「中間 CA」証明書をインストールします。 それらによって、{{site.data.keyword.vpx_full}} は、接続するクライアントと情報を共有することができます。
 
 	RapidSSL 用にこれらの中間証明書を取得するには、以下のいずれかのリンクにアクセスしてください。
 

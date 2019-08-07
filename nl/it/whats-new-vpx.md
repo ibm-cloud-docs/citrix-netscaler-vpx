@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Aggiornamenti recenti per Citrix NetScaler VPX
+# Aggiornamenti recenti per {{site.data.keyword.vpx_full}}
 {: #recent-updates-for-citrix-netscaler-vpx}
 
 ## Versione 12.1

@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Configurar Citrix Netscaler VPX como proxy de reenvío
+# Configurar {{site.data.keyword.vpx_full}} como proxy de reenvío
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
 
 Un proxy de reenvío actúa como un único punto de control entre los clientes en una red interna e Internet. Un proxy permite al administrador de red o de seguridad la posibilidad de crear políticas que restringen el acceso a sitios de Internet.
@@ -27,7 +27,7 @@ Normalmente, se combina un proxy con un cortafuegos para garantizar la seguridad
 ## Paso 1: VIP de solicitud para utilizar en la red privada
 {: #step-1-request-vips-to-use-in-the-private-network}
 
-Cuando se pide un equilibrador de carga de Citrix NetScaler VPX desde el Portal de clientes de {{site.data.keyword.BluSoftlayer_notm}}, se presupone que se está solicitando un proxy inverso. Se le solicitará al solicitante el número de direcciones IP "públicas" a utilizar como IP virtual (VIP).
+Cuando se pide un equilibrador de carga de {{site.data.keyword.vpx_full}} desde el Portal de clientes de {{site.data.keyword.BluSoftlayer_notm}}, se presupone que se está solicitando un proxy inverso. Se le solicitará al solicitante el número de direcciones IP "públicas" a utilizar como IP virtual (VIP).
 
 En el caso de un proxy de reenvío, las VIP deben configurarse en la red privada. Debe abrirse una incidencia de soporte para solicitar las VIP para la red privada. El número de VIP solicitado determinará el tamaño de la subred solicitada en la incidencia. La información de subred se devolverá en la incidencia.
 
@@ -37,18 +37,18 @@ En nuestro ejemplo hemos solicitado una subred `/29`, que ha dado lugar a lo sig
 
 * IP de subred (SNIP) `10.114.52.101` y subred direccionada `10.114.27.0/29`
 
-* El equipo de soporte ha añadido las VIP `10.114.27.0-3` a Citrix NetScaler VPX
+* El equipo de soporte ha añadido las VIP `10.114.27.0-3` a {{site.data.keyword.vpx_full}}
 
-## Paso 2: Habilitar las características de equilibrio de carga y de redirección de memoria caché en Citrix NetScaler VPX
+## Paso 2: Habilitar las características de equilibrio de carga y de redirección de memoria caché en {{site.data.keyword.vpx_full}}
 {: #step-2-enable-load-balancing-and-cache-redirect-features-on-the-citrix-netscaler-vpx}
 
-De forma predeterminada, las características de equilibrio de carga y redirección de la memoria caché en el equilibrador de carga de Citrix NetScaler VPX están inhabilitadas. El mandato `enable ns feature cr lb` las habilita.
+De forma predeterminada, las características de equilibrio de carga y redirección de la memoria caché en el equilibrador de carga de {{site.data.keyword.vpx_full}} están inhabilitadas. El mandato `enable ns feature cr lb` las habilita.
 
 
 ## Paso 3: Crear el proxy de reenvío
 {: #step-3-create-the-forward-proxy}
 
-Utilice la línea de mandatos para emitir los mandatos siguientes en el Citrix NetScaler VPX. En nuestro caso de ejemplo solo está habilitado uno de los dos servidores DNS de {{site.data.keyword.BluSoftlayer_notm}}.  
+Utilice la línea de mandatos para emitir los mandatos siguientes en el {{site.data.keyword.vpx_full}}. En nuestro caso de ejemplo solo está habilitado uno de los dos servidores DNS de {{site.data.keyword.BluSoftlayer_notm}}.  
 
 ```
 add cr vserver vs_forward_cache HTTP 10.114.27.3 80 -cachetype forward -redirect origin
@@ -85,7 +85,7 @@ Puede editar manualmente el archivo `/etc/resolv.conf` para que apunte a la dire
 
 O puede editar la interfaz `/etc/sysconfig/network-scripts/ifcfg-ethx` y añadir la sentencia `DNS1 =`. Una vez establecido, el mandato de reinicio de la red de servicio puede emitirse para recoger los cambios.
 
-En cualquier caso, la dirección IP de DNS deberá configurarse como dirección DNS virtual y el navegador del cliente deberá configurarse para apuntar las solicitudes al proxy de reenvío de Citrix NetScaler VPX.
+En cualquier caso, la dirección IP de DNS deberá configurarse como dirección DNS virtual y el navegador del cliente deberá configurarse para apuntar las solicitudes al proxy de reenvío de {{site.data.keyword.vpx_full}}.
 
 Utilice los siguientes pasos en Firefox para realizar los cambios necesarios:
 

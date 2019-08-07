@@ -26,7 +26,7 @@ subcollection: citrix-netscaler-vpx
 
 在本主题中，将安装您在先前的[逐步指南](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx)中创建的 SSL 证书。为此，请执行以下过程：
 
-1.	确认证书是否位于 Citrix NetScaler VPX 上的 `/nsconfig/ssl` 目录中。
+1.	确认证书是否位于 {{site.data.keyword.vpx_full}} 上的 `/nsconfig/ssl` 目录中。
 
 	```
 	root@IBMADC690867-s6dr# cd /nsconfig/ssl
@@ -38,7 +38,7 @@ subcollection: citrix-netscaler-vpx
 	ns-root.req             ns-sftrust-root.cert    ns-	sftrust.der
 	```
 
-2.	尽管证书密钥位于正确的目录中，该密钥还必须可识别为有效的 Citrix NetScaler VPX 对象，才能与其他 VPX 组件连接并进行交互。为此，请执行以下操作：
+2.	尽管证书密钥位于正确的目录中，该密钥还必须可识别为有效的 {{site.data.keyword.vpx_full}} 对象，才能与其他 VPX 组件连接并进行交互。为此，请执行以下操作：
 
 	```
 	> add ssl hsmKey NSkey_s6dr -hsmType SAFENET -	SerialNum 534071053 -password P@rtition6
@@ -110,7 +110,7 @@ subcollection: citrix-netscaler-vpx
 	>
 	```
 
-6.	（可选）为了避免通过 Web 浏览器访问内容时出现安全警告，您可能希望安装“中间 CA”证书。这些证书支持 Citrix NetScaler VPX 与连接的客户机共享信息。
+6.	（可选）为了避免通过 Web 浏览器访问内容时出现安全警告，您可能希望安装“中间 CA”证书。这些证书支持 {{site.data.keyword.vpx_full}} 与连接的客户机共享信息。
 
 	要获取 RapidSSL 的中间证书，请访问下列任一链接：
 

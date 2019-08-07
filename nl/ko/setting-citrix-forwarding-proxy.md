@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# 전달 프록시로 Citrix Netscaler VPX 설정
+# 전달 프록시로 {{site.data.keyword.vpx_full}} 설정
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
 
 전달 프록시는 내부 네트워크의 클라이언트와 인터넷 간의 단일 제어 지점 역할을 합니다. 프록시를 사용하면 네트워크 또는 보안 관리자가 인터넷 사이트에 대한 액세스를 제한하는 정책을 작성할 수 있습니다.
@@ -27,7 +27,7 @@ subcollection: citrix-netscaler-vpx
 ## 1단계: 사설 네트워크에서 사용할 VIP 요청
 {: #step-1-request-vips-to-use-in-the-private-network}
 
-{{site.data.keyword.BluSoftlayer_notm}} 고객 포털에서 Citrix NetScaler VPX 로드 밸런서를 주문하면 역방향 프록시를 요청하는 것으로 간주됩니다. 요청자에게 가상 IP(VIP)로 사용될 "공인" IP의 수를 묻습니다.
+{{site.data.keyword.BluSoftlayer_notm}} 고객 포털에서 {{site.data.keyword.vpx_full}} 로드 밸런서를 주문하면 역방향 프록시를 요청하는 것으로 간주됩니다. 요청자에게 가상 IP(VIP)로 사용될 "공인" IP의 수를 묻습니다.
 
 전달 프록시의 경우 사설 네트워크에서 VIP를 설정해야 합니다. 사설 네트워크용 VIP를 요청하려면 지원 티켓을 열어야 합니다. 필요한 VIP의 수에 따라 티켓에서 요청되는 서브넷의 크기가 결정됩니다. 서브넷 정보가 티켓에 리턴됩니다.
 
@@ -37,18 +37,18 @@ subcollection: citrix-netscaler-vpx
 
 * 서브넷 IP(SNIP) `10.114.52.101` 및 라우팅된 서브넷 `10.114.27.0/29`
 
-* 지원 팀에서 VIP `10.114.27.0-3`을 Citrix NetScaler VPX에 추가함
+* 지원 팀에서 VIP `10.114.27.0-3`을 {{site.data.keyword.vpx_full}}에 추가함
 
-## 2단계: Citrix NetScaler VPX에서 로드 밸런싱 및 캐시 경로 재지정 기능 사용
+## 2단계: {{site.data.keyword.vpx_full}}에서 로드 밸런싱 및 캐시 경로 재지정 기능 사용
 {: #step-2-enable-load-balancing-and-cache-redirect-features-on-the-citrix-netscaler-vpx}
 
-기본적으로 Citrix NetScaler VPX 로드 밸런서의 로드 밸런싱 및 캐시 경로 재지정 기능이 사용 안함으로 설정됩니다. `enable ns feature cr lb` 명령을 통해 이러한 기능을 사용으로 설정합니다.
+기본적으로 {{site.data.keyword.vpx_full}} 로드 밸런서의 로드 밸런싱 및 캐시 경로 재지정 기능이 사용 안함으로 설정됩니다. `enable ns feature cr lb` 명령을 통해 이러한 기능을 사용으로 설정합니다.
 
 
 ## 3단계: 전달 프록시 작성
 {: #step-3-create-the-forward-proxy}
 
-명령행을 사용하여 Citrix NetScaler VPX에서 다음 명령을 실행하십시오. 이 시나리오에서는 두 개의 {{site.data.keyword.BluSoftlayer_notm}} DNS 서버 중 하나만 추가됩니다.  
+명령행을 사용하여 {{site.data.keyword.vpx_full}}에서 다음 명령을 실행하십시오. 이 시나리오에서는 두 개의 {{site.data.keyword.BluSoftlayer_notm}} DNS 서버 중 하나만 추가됩니다.  
 
 ```
 add cr vserver vs_forward_cache HTTP 10.114.27.3 80 -cachetype forward -redirect origin
@@ -85,7 +85,7 @@ DNS의 가상 주소를 가리키도록 수동으로 `/etc/resolv.conf`를 편�
 
 또는 `/etc/sysconfig/network-scripts/ifcfg-ethx` 인터페이스를 편집하여 `DNS1=` 명령문을 추가할 수 있습니다. 설정된 후 서비스 네트워크 다시 시작 명령을 실행하여 변경사항을 적용할 수 있습니다.
 
-두 경우 모두 DNS IP 주소를 가상 DNS 주소로 구성해야 하며 요청이 Citrix NetScaler VPX 전달 프록시를 가리키도록 클라이언트의 브라우저를 구성해야 합니다.
+두 경우 모두 DNS IP 주소를 가상 DNS 주소로 구성해야 하며 요청이 {{site.data.keyword.vpx_full}} 전달 프록시를 가리키도록 클라이언트의 브라우저를 구성해야 합니다.
 
 Firefox 내에서 다음 단계를 사용하여 필요한 변경사항을 작성하십시오.
 

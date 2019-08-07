@@ -26,7 +26,7 @@ subcollection: citrix-netscaler-vpx
 
 在本主題中，您將安裝您在前一個[逐步作業](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx)中建立的 SSL 憑證。若要這樣做，請執行下列程序：
 
-1.	確認憑證位於 Citrix Netscaler VPX 的 `/nsconfig/ssl` 目錄中。
+1.	確認憑證位於 {{site.data.keyword.vpx_full}} 的 `/nsconfig/ssl` 目錄中。
 
 	```
 	root@IBMADC690867-s6dr# cd /nsconfig/ssl
@@ -38,7 +38,7 @@ subcollection: citrix-netscaler-vpx
 	ns-root.req             ns-sftrust-root.cert    ns-	sftrust.der
 	```
 
-2.	即使憑證金鑰位於適當的目錄中，也必須將它辨識為有效的 Citrix Netscaler VPX 物件，讓它連接其他 VPX 元件並與其互動。若要這麼做，請執行下列動作：
+2.	即使憑證金鑰位於適當的目錄中，也必須將它辨識為有效的 {{site.data.keyword.vpx_full}} 物件，讓它連接其他 VPX 元件並與其互動。若要這麼做，請執行下列動作：
 
 	```
 	> add ssl hsmKey NSkey_s6dr -hsmType SAFENET -	SerialNum 534071053 -password P@rtition6
@@ -110,7 +110,7 @@ subcollection: citrix-netscaler-vpx
 	>
 	```
 
-6.	（選用）若要避免在透過 Web 瀏覽器存取內容時發生安全警告，建議您安裝「中間 CA」憑證。這些選項可讓 Citrix Netscaler VPX 與連接的用戶端共用資訊。
+6.	（選用）若要避免在透過 Web 瀏覽器存取內容時發生安全警告，建議您安裝「中間 CA」憑證。這些選項可讓 {{site.data.keyword.vpx_full}} 與連接的用戶端共用資訊。
 
 	若要為 RapidSSL 取得這些中繼憑證，請造訪下列任一鏈結：
 

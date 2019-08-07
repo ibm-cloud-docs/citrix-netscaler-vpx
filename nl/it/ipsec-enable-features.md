@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Abilitazione delle funzioni richieste in Citrix Netscaler VPX
+# Abilitazione delle funzioni richieste in {{site.data.keyword.vpx_full}}
 {: #enable-required-features-in-vpx}
 
 Puoi abilitare le funzioni richieste in VPX per creare la VPN IPSec:

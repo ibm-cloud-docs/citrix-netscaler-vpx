@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix NetScaler VPX 辭彙
+# {{site.data.keyword.vpx_full}} 辭彙
 {: #citrix-netscaler-vpx-terminology}
 
 Citrix NetScaler 平台同時使用產品特有術語以及基本負載平衡器術語和概念。

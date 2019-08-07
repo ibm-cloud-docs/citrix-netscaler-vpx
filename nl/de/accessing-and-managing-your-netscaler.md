@@ -8,7 +8,7 @@ lastupdated: "2018-11-12"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Citrix NetScaler VPX verwalten
+# {{site.data.keyword.vpx_full}} verwalten
 {: #managing-your-citrix-netscaler-vpx}
 
 Citrix NetScaler-Geräte stellen leistungsfähige Tools mit einer Palette von Funktionen dar, die Sie bei der Erweiterung und Optimierung Ihrer Lösung für {{site.data.keyword.BluSoftlayer_notm}} auf unterschiedlichste Weise unterstützen. Die Informationen Ihres Geräts erhalten Sie im Kundenportal. Dort können Sie auch die erforderlichen Geräteverbindungen herstellen und seine Funktionen konfigurieren.  
@@ -22,7 +22,7 @@ Gehen Sie wie folgt vor, um die Einheitenliste zu suchen:
 1. Öffnen Sie im Browser das [Kundenportal ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://control.softlayer.com/){: new_window} und melden Sie sich bei Ihrem Konto an.
 2. Wählen Sie in der Navigation des Kundenportals die Optionen für **Geräte > Geräteliste** aus.
 
-Daraufhin werden Ihre Geräte nach Gerätename sortiert aufgelistet. Citrix NetScaler VPX-Geräte sind am Gerätetyp "NetScaler" zu erkennen. 
+Daraufhin werden Ihre Geräte nach Gerätename sortiert aufgelistet. {{site.data.keyword.vpx_full}}-Geräte sind am Gerätetyp "NetScaler" zu erkennen. 
 
 Klicken Sie auf der linken Seite der Zeile für Ihr NetScaler-System auf den Pfeil, um die Zeile zu erweitern und den Benutzernamen sowie ein maskiertes Kennwort für den NetScaler-Managementzugriff anzuzeigen. 
 

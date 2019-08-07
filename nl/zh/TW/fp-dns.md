@@ -46,7 +46,7 @@ subcollection: citrix-netscaler-vpx
 
 7. 按一下「關閉」，然後按一下「完成」。
 
-	假設您可以從 Citrix NetScaler VPX 應用裝置呼叫到兩個 IBM SoftLayer DNS 解析器，服務群組即會顯示為綠色。
+	假設您可以從 {{site.data.keyword.vpx_full}} 應用裝置呼叫到兩個 IBM SoftLayer DNS 解析器，服務群組即會顯示為綠色。
 
 8. 現在，請移至「資料流量管理」>「負載平衡」>「虛擬伺服器」，然後按一下「新增」以定義 DNS 虛擬伺服器。
 9. 在「基本設定」下，提供虛擬伺服器的名稱、選擇 DNS 通訊協定及埠 53，然後從專用子網路指派 IP 位址。

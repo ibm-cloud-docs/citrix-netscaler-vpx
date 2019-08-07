@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix Netscaler VPX 中的重新導向 URL
+# {{site.data.keyword.vpx_full}} 中的重新導向 URL
 {: #redirecting-urls-in-a-citrix-netscaler-vpx}
 
 在 NetScaler 中執行 `http://` 到 `https://` 重新導向的最常見方法是運用備份/重新導向特性，而此特性一開始是要重新導向至「伺服器關閉」或「維護」頁面。  

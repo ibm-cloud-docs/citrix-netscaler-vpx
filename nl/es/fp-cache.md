@@ -26,9 +26,9 @@ subcollection: citrix-netscaler-vpx
 # Habilitar la redirección de la memoria caché y las prestaciones de equilibrio de carga
 {: #enable-cache-redirection-and-load-balancing-capabilities}
 
-Para habilitar la redirección de la memoria caché y el equilibrio de carga del dispositivo Citrix NetScaler VPX, realice los pasos siguientes:
+Para habilitar la redirección de la memoria caché y el equilibrio de carga del dispositivo {{site.data.keyword.vpx_full}}, realice los pasos siguientes:
 
-1. Desde la página del sistema del dispositivo Citrix NetScaler VPX, vaya a **Valores > Configurar características avanzadas**, habilite **Redirección de la memoria caché** y pulse **Aceptar**.  
+1. Desde la página del sistema del dispositivo {{site.data.keyword.vpx_full}}, vaya a **Valores > Configurar características avanzadas**, habilite **Redirección de la memoria caché** y pulse **Aceptar**.  
 
 	<img src="images/fp4.png" alt="dibujo" style="width: 400px;"/>
 

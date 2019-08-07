@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# 在 Citrix Netscaler VPX 中重定向 URL
+# 在 {{site.data.keyword.vpx_full}} 中重定向 URL
 {: #redirecting-urls-in-a-citrix-netscaler-vpx}
 
 在 NetScaler 中执行 `http://` 到 `https://` 的重定向的最常见方法是利用备份/重定向功能，此功能最初旨在重定向到“服务器停止运行”或“维护”页面。  

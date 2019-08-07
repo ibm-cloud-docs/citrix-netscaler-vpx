@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix NetScaler VPX용 최신 업데이트
+# {{site.data.keyword.vpx_full}}용 최신 업데이트
 {: #recent-updates-for-citrix-netscaler-vpx}
 
 ## 버전 12.1

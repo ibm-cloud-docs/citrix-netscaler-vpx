@@ -19,9 +19,9 @@ lastupdated: "2018-11-12"
 # Funktionen für Cacheweiterleitung und Lastausgleich aktivieren
 {: #enable-cache-redirection-and-load-balancing-capabilities}
 
-Gehen Sie wie folgt vor, um die Cacheweiterleitung und den Lastausgleich für die Citrix NetScaler VPX-Appliance zu aktivieren:
+Gehen Sie wie folgt vor, um die Cacheweiterleitung und den Lastausgleich für die {{site.data.keyword.vpx_full}}-Appliance zu aktivieren:
 
-1. Wählen Sie auf der Systemseite der Citrix NetScaler VPX-Appliance **Einstellungen > Erweiterte Features konfigurieren** aus. Dann aktivieren Sie **Cacheweiterleitung** und klicken auf **OK**.  
+1. Wählen Sie auf der Systemseite der {{site.data.keyword.vpx_full}}-Appliance **Einstellungen > Erweiterte Features konfigurieren** aus. Dann aktivieren Sie **Cacheweiterleitung** und klicken auf **OK**.  
 
 	<img src="images/fp4.png" alt="Zeichnung" style="width: 400px;"/>
 

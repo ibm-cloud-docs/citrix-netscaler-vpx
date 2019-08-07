@@ -63,7 +63,7 @@ subcollection: citrix-netscaler-vpx
 
 	要了解有关虚拟令牌库 (VTL) 的更多信息，请转至 [Utilities Reference Guide ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/utilities_reference_guide.pdf){: new_window}。
 
-3.	使用 SCP 将 HSM 服务器证书文件传输到 Citrix Netscaler VPX 客户机，然后添加服务器：
+3.	使用 SCP 将 HSM 服务器证书文件传输到 {{site.data.keyword.vpx_full}} 客户机，然后添加服务器：
 
 	```
 	root@IBMADC690867-s6dr# scp hsm_admin@10.121.229.201:server.pem .

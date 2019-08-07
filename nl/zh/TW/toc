@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="citrix-netscaler-vpx" category="network" audience="network" href="/docs/infrastructure/citrix-netscaler-vpx?topic=infrastructure/citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance" path="infrastructure/citrix-netscaler-vpx"}
-Citrix NetScaler VPX
+{{site.data.keyword.vpx_full}}
 
     {: .navgroup id="learn"}
     getting-started.md	
@@ -22,7 +22,7 @@ Citrix NetScaler VPX
     url-redirection-netscaler-vpx.md
 
     {: .topicgroup}
-    逐步作業：使用 Citrix NetScaler VPX 應用裝置配置正向 Proxy 資料流量重新導向
+    逐步作業：使用 {{site.data.keyword.vpx_full}} 應用裝置配置正向 Proxy 資料流量重新導向
         fp-guide.md
         order-vpx.md
         request-subnet.md
@@ -34,7 +34,7 @@ Citrix NetScaler VPX
         fp-proxy-settings.md
 
     {: .topicgroup}
-    逐步作業：使用 Citrix NetScaler VPX 部署和配置 IBM Hardware Security Module (HSM)
+    逐步作業：使用 {{site.data.keyword.vpx_full}} 部署和配置 IBM Hardware Security Module (HSM)
         hsm-guide.md
         hsm-order-hsm.md
         hsm-order-vpx.md
@@ -48,7 +48,7 @@ Citrix NetScaler VPX
         hsm-retrieve-certificate.md
 
     {: .topicgroup}
-    逐步作業：在 Citrix NetScaler VPX 中使用 IBM Virtual Router Appliance 配置 IPSec 站台對站台 VPN
+    逐步作業：在 {{site.data.keyword.vpx_full}} 中使用 IBM Virtual Router Appliance 配置 IPSec 站台對站台 VPN
         ipsec-guide.md
         ipsec-enable-features.md
         ipsec-profile.md
@@ -58,7 +58,7 @@ Citrix NetScaler VPX
         ipsec-verification.md
         
     {: .topicgroup}
-    逐步作業：使用 Citrix Netscaler VPX 配置及調整 SSL 卸載
+    逐步作業：使用 {{site.data.keyword.vpx_full}} 配置及調整 SSL 卸載
         hsm-ssl-guide.md
         hsm-ssl-install.md
         hsm-ssl-dns.md

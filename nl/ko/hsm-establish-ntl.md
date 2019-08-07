@@ -63,7 +63,7 @@ NTL을 설정하려면 다음 프로시저를 수행하십시오.
 
 	VTL(Virtual Token Library)에 대해 자세히 알아보려면 [유틸리티 참조 안내서 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/utilities_reference_guide.pdf){: new_window}를 참조하십시오.
 
-3.	SCP를 사용하여 HSM 서버 인증서 파일을 Citrix Netscaler VPX 클라이언트에 전송한 후 서버를 추가하십시오.
+3.	SCP를 사용하여 HSM 서버 인증서 파일을 {{site.data.keyword.vpx_full}} 클라이언트에 전송한 후 서버를 추가하십시오.
 
 	```
 	root@IBMADC690867-s6dr# scp hsm_admin@10.121.229.201:server.pem .

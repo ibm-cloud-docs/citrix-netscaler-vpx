@@ -17,12 +17,12 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# A propos de Citrix NetScaler VPX
+# A propos de {{site.data.keyword.vpx_full}}
 {: #about-citrix-netscaler-vpx}
 
-Le Citrix NetScaler VPX est un dispositif (appliance) logiciel virtuel dédié qui assure un équilibrage de charge sur le réseau IBM© Cloud public et privé.
+Le {{site.data.keyword.vpx_full}} est un dispositif (appliance) logiciel virtuel dédié qui assure un équilibrage de charge sur le réseau IBM© Cloud public et privé.
 
-Le déploiement d'un Citrix NetScaler VPX dans votre solution {{site.data.keyword.BluSoftlayer_notm}} accélère la mise à disposition des applications Web, améliore les performances et offre la garantie que vos applications et services cloud seront toujours optimisés, disponibles et sûrs. Si vous avez des charges de travail importantes (jeux en ligne, Big Data, analytique, etc.) ou des clouds privés, le Citrix NetScaler VPX peut vous aider à fournir votre solution aux utilisateurs où et quand ils en ont le plus besoin.
+Le déploiement d'un {{site.data.keyword.vpx_full}} dans votre solution {{site.data.keyword.BluSoftlayer_notm}} accélère la mise à disposition des applications Web, améliore les performances et offre la garantie que vos applications et services cloud seront toujours optimisés, disponibles et sûrs. Si vous avez des charges de travail importantes (jeux en ligne, Big Data, analytique, etc.) ou des clouds privés, le {{site.data.keyword.vpx_full}} peut vous aider à fournir votre solution aux utilisateurs où et quand ils en ont le plus besoin.
 
 ## Caractéristiques et fonctionnalités
 {: #features}
@@ -55,7 +55,7 @@ Le déploiement d'un Citrix NetScaler VPX dans votre solution {{site.data.keywor
 * Déployé comme tout autre serveur {{site.data.keyword.BluSoftlayer_notm}}, avec la souplesse et la disponibilité en ligne de mire
 * Disponible en plusieurs largeurs de bande : 10 Mbit/s, 200 Mbit/s et 1000 Mbit/s
 
-Le Citrix NetScaler VPX peut être déployé à la demande, en seulement 15 minutes, dans n'importe quel centre de données {{site.data.keyword.BluSoftlayer_notm}} de la planète. Plusieurs modèles de licences couvrent une variété de besoins en matière de vitesse et de fonctionnalités et offrent la souplesse qu'exigent les solutions cloud d'aujourd'hui. Cette souplesse garantit une adaptation optimale à tous les cas d'utilisation, de la PME à la grande entreprise.
+Le {{site.data.keyword.vpx_full}} peut être déployé à la demande, en seulement 15 minutes, dans n'importe quel centre de données {{site.data.keyword.BluSoftlayer_notm}} de la planète. Plusieurs modèles de licences couvrent une variété de besoins en matière de vitesse et de fonctionnalités et offrent la souplesse qu'exigent les solutions cloud d'aujourd'hui. Cette souplesse garantit une adaptation optimale à tous les cas d'utilisation, de la PME à la grande entreprise.
 
 {{site.data.keyword.BluSoftlayer_notm}} offre le dispositif (appliance) virtuel NetScaler VPX avec un accès root complet et illimité.   
 
@@ -67,7 +67,7 @@ Pour sécuriser le trafic de leurs applications, les clients peuvent tirer parti
 ## Filtrage du trafic
 {: #traffic-filtering}
 
-Le Citrix NetScaler VPX filtre les demandes des utilisateurs finaux aux serveurs et les réponses des serveurs aux utilisateurs finaux. Une fonctionnalité d'apprentissage intégrée au pare-feu applicatif permet de profiler les sessions en temps réel et de déterminer s'il faut ou non autoriser le trafic.
+Le {{site.data.keyword.vpx_full}} filtre les demandes des utilisateurs finaux aux serveurs et les réponses des serveurs aux utilisateurs finaux. Une fonctionnalité d'apprentissage intégrée au pare-feu applicatif permet de profiler les sessions en temps réel et de déterminer s'il faut ou non autoriser le trafic.
 
 ## Rapports PCI-DSS
 {: #pci-dss-reporting}

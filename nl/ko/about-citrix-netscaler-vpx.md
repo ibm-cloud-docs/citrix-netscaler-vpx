@@ -17,12 +17,12 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix NetScaler VPX 정보
+# {{site.data.keyword.vpx_full}} 정보
 {: #about-citrix-netscaler-vpx}
 
-Citrix NetScaler VPX는 공용 및 사설 IBM© Cloud 네트워크 모두에서 로드 밸런싱을 제공하는 전용 가상 소프트웨어 어플라이언스입니다.
+{{site.data.keyword.vpx_full}}는 공용 및 사설 IBM© Cloud 네트워크 모두에서 로드 밸런싱을 제공하는 전용 가상 소프트웨어 어플라이언스입니다.
 
-{{site.data.keyword.BluSoftlayer_notm}} 솔루션에 Citrix NetScaler VPX를 배치하면 웹 애플리케이션 제공이 가속화되고 성능이 향상되며 클라우드 애플리케이션 및 서비스가 최적화되고 사용 가능하며 안전한 상태로 유지됩니다. 게임, 빅데이터 및 분석과 같은 까다로운 워크로드나 프라이빗 클라우드가 있는 경우 Citrix NetScaler VPX는 가장 필요한 때에 가장 필요한 위치에 가장 필요한 방법으로 솔루션을 제공하는 데 도움이 될 수 있습니다.
+{{site.data.keyword.BluSoftlayer_notm}} 솔루션에 {{site.data.keyword.vpx_full}}를 배치하면 웹 애플리케이션 제공이 가속화되고 성능이 향상되며 클라우드 애플리케이션 및 서비스가 최적화되고 사용 가능하며 안전한 상태로 유지됩니다. 게임, 빅데이터 및 분석과 같은 까다로운 워크로드나 프라이빗 클라우드가 있는 경우 {{site.data.keyword.vpx_full}}는 가장 필요한 때에 가장 필요한 위치에 가장 필요한 방법으로 솔루션을 제공하는 데 도움이 될 수 있습니다.
 
 ## 기능
 {: #features}
@@ -55,7 +55,7 @@ Citrix NetScaler VPX는 공용 및 사설 IBM© Cloud 네트워크 모두에서 
 * 유연성 및 가용성을 고려하여 다른 {{site.data.keyword.BluSoftlayer_notm}} 서버와 같이 배치됨
 * 대역폭 계층 10Mbps, 200Mbps 및 1000Mbps에서 제공됨
 
-요청 시 전세계의 모든 {{site.data.keyword.BluSoftlayer_notm}} 데이터 센터에서 15분 이내에 Citrix NetScaler VPX를 배치할 수 있습니다. 여러 라이센싱 모델이 필요한 속도 및 기능을 포함하며 오늘날의 클라우드 솔루션에서 제공되는 유연성을 제공합니다. 이러한 유연성으로 인해 중소 규모의 구현에서 대규모 엔터프라이즈에 이르기까지 모든 유스 케이스에 적합합니다.
+요청 시 전세계의 모든 {{site.data.keyword.BluSoftlayer_notm}} 데이터 센터에서 15분 이내에 {{site.data.keyword.vpx_full}}를 배치할 수 있습니다. 여러 라이센싱 모델이 필요한 속도 및 기능을 포함하며 오늘날의 클라우드 솔루션에서 제공되는 유연성을 제공합니다. 이러한 유연성으로 인해 중소 규모의 구현에서 대규모 엔터프라이즈에 이르기까지 모든 유스 케이스에 적합합니다.
 
 {{site.data.keyword.BluSoftlayer_notm}}는 제한되지 않은 전체 루트 액세스 권한이 있는 NetScaler VPX 가상 어플라이언스를 제공합니다.   
 
@@ -67,7 +67,7 @@ Citrix NetScaler VPX는 공용 및 사설 IBM© Cloud 네트워크 모두에서 
 ## 트래픽 필터링
 {: #traffic-filtering}
 
-Citrix Netscaler VPX는 일반 사용자로부터 서버로의 요청과 서버로부터 일반 사용자로의 응답을 필터링합니다. 애플리케이션 방화벽이 포함된 학습 기능을 사용하여 세션을 실시간으로 프로파일링하고 트래픽을 허용할지 여부를 결정할 수 있습니다.
+{{site.data.keyword.vpx_full}}는 일반 사용자로부터 서버로의 요청과 서버로부터 일반 사용자로의 응답을 필터링합니다. 애플리케이션 방화벽이 포함된 학습 기능을 사용하여 세션을 실시간으로 프로파일링하고 트래픽을 허용할지 여부를 결정할 수 있습니다.
 
 ## PCI-DSS 보고
 {: #pci-dss-reporting}

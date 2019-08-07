@@ -44,7 +44,7 @@ For more information about SSL certificates refer to the following IBM Cloud art
 * [Introduction to SSL technology](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-introduction-to-ssl-technology)
 * [Planning for SSL](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-planning-for-ssl)
 
-To order an SSL certificate for use with your Citrix Netscaler VPX, perform the following procedure:
+To order an SSL certificate for use with your {{site.data.keyword.vpx_full}}, perform the following procedure:
 
 1.	In VPX shell CLI, display the CSR text by opening the CSR file previously created in the step [Create keys and generate the Certificate Signing Request (CSR)](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-):
 

@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix NetScaler VPX 用語
+# {{site.data.keyword.vpx_full}} 用語
 {: #citrix-netscaler-vpx-terminology}
 
 Citrix NetScaler プラットフォームは、製品固有の用語と基本的なロード・バランサーの用語および概念を使用しています。

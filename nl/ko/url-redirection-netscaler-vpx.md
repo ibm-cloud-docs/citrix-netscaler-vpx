@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix Netscaler VPX에서 URL 경로 재지정
+# {{site.data.keyword.vpx_full}}에서 URL 경로 재지정
 {: #redirecting-urls-in-a-citrix-netscaler-vpx}
 
 NetScaler에서 `http://`로부터 `https://`로의 경로 재지정을 수행하는 가장 일반적인 방법은 백업/경로 재지정 기능을 활용하는 것입니다. 이 기능은 원래 "서버 중지" 또는 "유지보수" 페이지로 경로 재지정하기 위한 것이었습니다.  

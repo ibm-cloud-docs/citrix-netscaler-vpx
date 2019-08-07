@@ -25,7 +25,7 @@ subcollection: citrix-netscaler-vpx
 
 A cipher suite is a combination of authentication, encryption, Message Authentication Code (MAC) and key exchange algorithms used to negotiate the security settings for SSL and TLS protocols.
 
-To guarantee proper authentication you must ensure your Citrix Netscaler VPX uses the best combination of ciphers.
+To guarantee proper authentication you must ensure your {{site.data.keyword.vpx_full}} uses the best combination of ciphers.
 
 To learn more about SSL cipher suites and other best practices visit the following links:
 
@@ -69,7 +69,7 @@ To create a new Cipher Suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, pe
 	bind ssl cipher <cipherGroupName> -cipherName <string>
 	```
 
-2.	Confirm the cipher was added to your Citrix Netscaler VPX:
+2.	Confirm the cipher was added to your {{site.data.keyword.vpx_full}}:
 
 	```
 	> show ssl cipher SSLLABS

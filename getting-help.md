@@ -22,14 +22,14 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Getting Help and Support for Citrix NetScaler VPX
+# Getting Help and Support for Citrix Netscaler VPX
 {: #getting-help-and-support-for-citrix-netscaler-vpx}
 
-If you have problems or questions when using Citrix NetScaler VPX, you can get help by searching for information or by asking questions through one of the forums listed below. You can also open a support ticket.
+If you have problems or questions when using {{site.data.keyword.vpx_full}}, you can get help by searching for information or by asking questions through one of the forums listed below. You can also open a support ticket.
 
 When using the forums to ask a question, tag your question so that it is seen by the IBM© Cloud development teams.
 
-* If you have technical questions about the Citrix NetScaler VPX, post your question on [Stack Overflow](https://stackoverflow.com/search?q=citrix-vpx+ibm-cloud) and tag your question with "citrix-vpx" and "ibm-cloud".
+* If you have technical questions about the {{site.data.keyword.vpx_full}}, post your question on [Stack Overflow](https://stackoverflow.com/search?q=citrix-vpx+ibm-cloud) and tag your question with "citrix-vpx" and "ibm-cloud".
 * For questions about the service and getting started instructions, use the [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/citrix-vpx.html?smartspace=ibm-cloud) forum. Include the "citrix-vpx" and "ibm-cloud" tags.
 
 See [Getting help](https://{DomainName}/docs/get-support?topic=get-support-using-avatar) for more details about using the forums.

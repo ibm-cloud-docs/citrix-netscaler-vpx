@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix NetScaler VPX 缺省部署
+# {{site.data.keyword.vpx_full}} 缺省部署
 {: #citrix-netscaler-vpx-default-deployment}
 
 在[客户门户网站 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://control.softlayer.com/) 上的**设备 > 设备列表**中查看 NetScaler 时，您可能会注意到该设备看起来与其他服务器不同。也就是说，该设备具有专用 IP 地址，但没有公共 IP 地址。

@@ -26,7 +26,7 @@ subcollection: citrix-netscaler-vpx
 
 이 주제에서는 이전 [단계별](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) 지시사항에서 작성된 SSL 인증서를 설치합니다. 이를 수행하려면 다음 프로시저를 따르십시오.
 
-1.	인증서가 Citrix Netscaler VPX의 `/nsconfig/ssl` 디렉토리에 있는지 확인하십시오.
+1.	인증서가 {{site.data.keyword.vpx_full}}의 `/nsconfig/ssl` 디렉토리에 있는지 확인하십시오.
 
 	```
 	root@IBMADC690867-s6dr# cd /nsconfig/ssl
@@ -38,7 +38,7 @@ subcollection: citrix-netscaler-vpx
 	ns-root.req             ns-sftrust-root.cert    ns-	sftrust.der
 	```
 
-2.	인증서 키가 적절한 디렉토리에 위치한 경우에도 기타 VPX 컴포넌트와 상호 작용하고 이 VPX 컴포넌트에 연결되도록 유효한 Citrix Netscaler VPX 오브젝트로 인식되어야 합니다. 이를 위해 다음을 수행하십시오.
+2.	인증서 키가 적절한 디렉토리에 위치한 경우에도 기타 VPX 컴포넌트와 상호 작용하고 이 VPX 컴포넌트에 연결되도록 유효한 {{site.data.keyword.vpx_full}} 오브젝트로 인식되어야 합니다. 이를 위해 다음을 수행하십시오.
 
 	```
 	> add ssl hsmKey NSkey_s6dr -hsmType SAFENET -	SerialNum 534071053 -password P@rtition6
@@ -110,7 +110,7 @@ subcollection: citrix-netscaler-vpx
 	>
 	```
 
-6.	(선택사항) 웹 브라우저를 통해 컨텐츠에 액세스될 때 보안 경고가 발생하지 않도록 사용자는 "중간 CA" 인증서를 설치하려고 할 수 있습니다. 그러면 Citrix Netscaler VPX에서 클라이언트가 연결된 상태에서 정보를 공유할 수 있습니다.
+6.	(선택사항) 웹 브라우저를 통해 컨텐츠에 액세스될 때 보안 경고가 발생하지 않도록 사용자는 "중간 CA" 인증서를 설치하려고 할 수 있습니다. 그러면 {{site.data.keyword.vpx_full}}에서 클라이언트가 연결된 상태에서 정보를 공유할 수 있습니다.
 
 	RapidSSL을 위한 중간 인증서를 얻으려면 다음 링크에 방문하십시오.
 

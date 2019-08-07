@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Gestionar Citrix NetScaler VPX
+# Gestionar {{site.data.keyword.vpx_full}}
 {: #managing-your-citrix-netscaler-vpx}
 
 Los dispositivos Citrix NetScaler son herramientas potentes con una matriz de características que ayudan a mejorar y refinar la solución de {{site.data.keyword.cloud}} de muchas maneras. Puede encontrar la información del dispositivo en el portal de clientes de la infraestructura de {{site.data.keyword.cloud_notm}} y conectarse al dispositivo y configurar sus características.  
@@ -30,7 +30,7 @@ Para encontrar la lista de dispositivos:
 1. En el navegador, abra el [portal de clientes ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com/){: new_window} e inicie sesión en su cuenta.
 2. En la navegación del portal de clientes, seleccione **Dispositivos > Lista de dispositivos**.
 
-Verá los dispositivos, ordenados por nombre de dispositivo. Los dispositivos de Citrix NetScaler VPX tienen el tipo de dispositivo "NetScaler".
+Verá los dispositivos, ordenados por nombre de dispositivo. Los dispositivos de {{site.data.keyword.vpx_full}} tienen el tipo de dispositivo "NetScaler".
 
 En el lado izquierdo de la fila de NetScaler, pulse la flecha para ampliar la línea y mostrar el nombre de usuario y una contraseña enmascarados para acceder a la gestión de NetScaler.
 

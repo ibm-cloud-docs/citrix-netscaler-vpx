@@ -7,7 +7,7 @@ lastupdated: "2018-11-12"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Globaler Serverlastausgleich mit Citrix NetScaler VPX
+# Globaler Serverlastausgleich mit {{site.data.keyword.vpx_full}}
 {: #global-load-balancing-with-citrix-netscaler-vpx}
 
 Beim globalen Serverlastausgleich (GSLB = Global Server Load Balancing) handelt es sich um ein Verfahren, mit dem der Datenverkehr auf mehrere Server bzw. Instanzen verteilt werden kann, die sich normalerweise in unterschiedlichen geografischen Regionen befinden. Dieses Konzept basiert auf einer globalen Einheit (Engine/Server) für den Lastausgleich, die Datenverkehrsanforderungen von Clients empfängt und diese Anforderungen an eine bestimmte Region weiterleitet. Dabei wird die Zielregion anhand von Kriterien und Algorithmen bestimmt, die vom Administrator ausgewählt und konfiguriert werden. Hierzu können im Netz von {{site.data.keyword.BluSoftlayer_notm}} zwei anerkannte Methoden verwendet werden:
@@ -15,7 +15,7 @@ Beim globalen Serverlastausgleich (GSLB = Global Server Load Balancing) handelt 
 * **CDN:** Das CDN (Content Delivery Network; Netz zur Bereitstellung von Inhalten) dient zur Bereitstellung von Inhalten und Rich-Media-Komponenten wie beispielsweise Bildern und Videos. Das CDN verteilt diese Inhalte geografisch über die verteilt liegenden Knoten, und zwar auf eine Weise, die möglichst geringe Latenzzeiten und die größtmögliche Geschwindigkeit garantieren. Es wird normalerweise implementiert, wenn lediglich bestimmte Inhaltselemente und nicht vollständige Websites oder Anwendungen verteilt werden müssen. {{site.data.keyword.BluSoftlayer_notm}} bietet diesen Service. Weitere Informationen zu diesem Thema erhalten Sie [hier](/docs/infrastructure/CDN?topic=CDN-getting-started). 
 * **NetScaler VPX:** VPX verwendet eine ähnliche Objekthierarchie, wie sie auch beim regulären lokalen Lastausgleich eingesetzt wird, um den Datenverkehr auf verschiedene Regionen zu verteilen. Mithilfe DNS-basierter globaler Suchoperationen wählt NetScaler den Datensatz aus, der dem ausgewählten Standort bzw. der ausgewählten Site zugeordnet ist. Die Auswahl basiert auf den vom Administrator vorkonfigurierten Kriterien. Die eingehenden Abschnitte werden auf Basis dieser Option bzw. dieses Angebots erweitert.
 
-Beachten Sie hierbei, dass andere Verfahren für die Verteilung von Inhalten zur Verfügung stehen. Hierzu zählt beispielsweise die HTTP-Weiterleitung, die ebenfalls mit Citrix NetScaler VPX implementiert werden kann. 
+Beachten Sie hierbei, dass andere Verfahren für die Verteilung von Inhalten zur Verfügung stehen. Hierzu zählt beispielsweise die HTTP-Weiterleitung, die ebenfalls mit {{site.data.keyword.vpx_full}} implementiert werden kann. 
 
 ## Informationen zu GSLB unter VPX
 

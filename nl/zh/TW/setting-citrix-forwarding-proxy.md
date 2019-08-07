@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# 設定 Citrix Netscaler VPX 作為正向 Proxy
+# 設定 {{site.data.keyword.vpx_full}} 作為正向 Proxy
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
 
 正向 Proxy 是內部網路上的用戶端與網際網路之間的單一控制點。Proxy 可讓「網路」或「安全管理者」建立原則，以限制對網際網路網站的存取。
@@ -27,7 +27,7 @@ Proxy 一般會與防火牆合併使用，確保內部網路中的用戶端安�
 ## 步驟 1：要求在專用網路中使用的 VIP
 {: #step-1-request-vips-to-use-in-the-private-network}
 
-從 {{site.data.keyword.BluSoftlayer_notm}} 客戶入口網站中訂購 Citrix NetScaler VPX 負載平衡器時，假設正在要求反向 Proxy。系統會向要求者要求用作虛擬 IP (VIP) 的「公用」IP 數目。
+從 {{site.data.keyword.BluSoftlayer_notm}} 客戶入口網站中訂購 {{site.data.keyword.vpx_full}} 負載平衡器時，假設正在要求反向 Proxy。系統會向要求者要求用作虛擬 IP (VIP) 的「公用」IP 數目。
 
 如果是正向 Proxy，則需要在專用網路上設定 VIP。需要開立支援問題單，才能要求專用網路的 VIP。需要的 VIP 數目將決定問題單中所要求的子網路大小。將會在問題單中傳回子網路資訊。
 
@@ -37,18 +37,18 @@ Proxy 一般會與防火牆合併使用，確保內部網路中的用戶端安�
 
 * 子網路 IP (SNIP) `10.114.52.101` 及遞送的子網路 `10.114.27.0/29`
 
-* 支援團隊已將 VIP `10.114.27.0-3` 新增至 Citrix NetScaler VPX
+* 支援團隊已將 VIP `10.114.27.0-3` 新增至 {{site.data.keyword.vpx_full}}
 
-## 步驟 2：在 Citrix NetScaler VPX 上啟用負載平衡及快取重新導向特性
+## 步驟 2：在 {{site.data.keyword.vpx_full}} 上啟用負載平衡及快取重新導向特性
 {: #step-2-enable-load-balancing-and-cache-redirect-features-on-the-citrix-netscaler-vpx}
 
-依預設，會停用 Citrix NetScaler VPX 負載平衡器上的負載平衡及快取重新導向特性；`enable ns feature cr lb` 指令會啟用它們。
+依預設，會停用 {{site.data.keyword.vpx_full}} 負載平衡器上的負載平衡及快取重新導向特性；`enable ns feature cr lb` 指令會啟用它們。
 
 
 ## 步驟 3：建立正向 Proxy
 {: #step-3-create-the-forward-proxy}
 
-使用指令行，向 Citrix NetScaler VPX 發出下列指令。在我們的情境中，只會新增兩部 {{site.data.keyword.BluSoftlayer_notm}} DNS 伺服器的其中一部。  
+使用指令行，向 {{site.data.keyword.vpx_full}} 發出下列指令。在我們的情境中，只會新增兩部 {{site.data.keyword.BluSoftlayer_notm}} DNS 伺服器的其中一部。  
 
 ```
 add cr vserver vs_forward_cache HTTP 10.114.27.3 80 -cachetype forward -redirect origin
@@ -85,7 +85,7 @@ set cr vserver vs_forward_cache -dnsVservername virtual_dns
 
 或者，您可以編輯 `/etc/sysconfig/network-scripts/ifcfg-ethx` 介面，並新增 `DNS1=` 陳述式。設定之後，可以發出服務網路重新啟動指令來反映變更。
 
-在任一情況下，DNS IP 位址都需要配置為虛擬 DNS 位址，而且用戶端的瀏覽器需要配置成將要求指向 Citrix NetScaler VPX 正向 Proxy。
+在任一情況下，DNS IP 位址都需要配置為虛擬 DNS 位址，而且用戶端的瀏覽器需要配置成將要求指向 {{site.data.keyword.vpx_full}} 正向 Proxy。
 
 請在 Firefox 內使用下列步驟，以進行必要的變更：
 

@@ -25,7 +25,7 @@ subcollection: citrix-netscaler-vpx
 
 暗号スイートは、SSL プロトコルおよび TLS プロトコルのセキュリティー設定をネゴシエーションするために使用される認証、暗号化、メッセージ認証コード (MAC)、および鍵交換アルゴリズムの組み合わせです。
 
-適切な認証を保証するには、Citrix Netscaler VPX で暗号の最適な組み合わせを使用する必要があります。
+適切な認証を保証するには、{{site.data.keyword.vpx_full}} で暗号の最適な組み合わせを使用する必要があります。
 
 SSL 暗号スイートおよびその他のベスト・プラクティスの詳細については、以下のリンクにアクセスしてください。
 
@@ -69,7 +69,7 @@ AEAD、ECDHE、および ECDSA 暗号を優先順位付けする新しい暗号�
 	bind ssl cipher <cipherGroupName> -cipherName <string>
 	```
 
-2.	暗号が Citrix Netscaler VPX に追加されたことを確認します。
+2.	暗号が {{site.data.keyword.vpx_full}} に追加されたことを確認します。
 
 	```
 	> show ssl cipher SSLLABS

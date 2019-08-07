@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Gestion de votre Citrix NetScaler VPX
+# Gestion de votre {{site.data.keyword.vpx_full}}
 {: #managing-your-citrix-netscaler-vpx}
 
 Les appareils Citrix NetScaler sont de puissants outils armés d'une panoplie de fonctions pour vous aider à améliorer et affiner votre solution {{site.data.keyword.cloud}} de différentes manières. Vous trouverez toutes les informations sur l'appareil dans le portail client de l'infrastructure {{site.data.keyword.cloud_notm}}, celui-ci vous permettant également de vous y connecter et de configurer ses fonctions.  
@@ -30,7 +30,7 @@ Pour trouver la Liste d'unités :
 1. Dans votre navigateur, ouvrez le [portail client ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://control.softlayer.com/){: new_window} et connectez-vous à votre compte.
 2. Dans la navigation du portail client, sélectionnez **Unités > Liste d'unités**.
 
-Vous obtenez votre liste d'appareils triés par nom. Les appareils Citrix NetScaler VPX sont de type "NetScaler".
+Vous obtenez votre liste d'appareils triés par nom. Les appareils {{site.data.keyword.vpx_full}} sont de type "NetScaler".
 
 Dans la partie gauche de la ligne consacrée à votre NetScaler, cliquez sur la flèche pour étendre la ligne et révéler le Nom d'utilisateur et le mot de passe associé (masqué), qui permettent d'accéder à l'interface de gestion du NetScaler.
 

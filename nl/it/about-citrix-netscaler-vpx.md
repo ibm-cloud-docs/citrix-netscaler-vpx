@@ -17,12 +17,12 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Informazioni su Citrix NetScaler VPX
+# Informazioni su {{site.data.keyword.vpx_full}}
 {: #about-citrix-netscaler-vpx}
 
-Citrix NetScaler VPX è un'applicazione software virtuale dedicata che fornisce il bilanciamento del carico sia sulla rete IBM© Cloud pubblica che su quella privata.
+{{site.data.keyword.vpx_full}} è un'applicazione software virtuale dedicata che fornisce il bilanciamento del carico sia sulla rete IBM© Cloud pubblica che su quella privata.
 
-La distribuzione di un Citrix NetScaler VPX nella tua soluzione {{site.data.keyword.BluSoftlayer_notm}} accelera la distribuzione di applicazioni web, migliora le prestazioni e garantisce che le tue applicazioni e i tuoi servizi cloud rimangano ottimizzati, disponibili e protetti. Se hai dei carichi di lavoro impegnativi, come ad esempio giochi, big data e analisi, o dei cloud privati, Citrix NetScaler VPX può aiutarti a offrire la tua soluzione quando, dove e come serve di più ai tuoi utenti.
+La distribuzione di un {{site.data.keyword.vpx_full}} nella tua soluzione {{site.data.keyword.BluSoftlayer_notm}} accelera la distribuzione di applicazioni web, migliora le prestazioni e garantisce che le tue applicazioni e i tuoi servizi cloud rimangano ottimizzati, disponibili e protetti. Se hai dei carichi di lavoro impegnativi, come ad esempio giochi, big data e analisi, o dei cloud privati, {{site.data.keyword.vpx_full}} può aiutarti a offrire la tua soluzione quando, dove e come serve di più ai tuoi utenti.
 
 ## Funzioni
 {: #features}
@@ -55,7 +55,7 @@ La distribuzione di un Citrix NetScaler VPX nella tua soluzione {{site.data.keyw
 * Distribuito come qualsiasi altro server {{site.data.keyword.BluSoftlayer_notm}}, in un'ottica di flessibilità e disponibilità
 * Offerto in livelli di larghezza di banda: 10Mbps, 200Mbps e 1000Mbps
 
-Citrix NetScaler VPX può essere distribuito on-demand, in appena 15 minuti, in qualsiasi data center {{site.data.keyword.BluSoftlayer_notm}} in tutto il mondo. Diversi modelli di licenza includono la velocità e le funzioni di cui hai bisogno e offrono la flessibilità richiesta dalle attuali soluzioni cloud. Questa flessibilità garantisce una risposta idonea a ogni caso d'uso, spaziando dalle implementazioni di piccole-medie dimensioni fino ad arrivare alle aziende più grandi.
+{{site.data.keyword.vpx_full}} può essere distribuito on-demand, in appena 15 minuti, in qualsiasi data center {{site.data.keyword.BluSoftlayer_notm}} in tutto il mondo. Diversi modelli di licenza includono la velocità e le funzioni di cui hai bisogno e offrono la flessibilità richiesta dalle attuali soluzioni cloud. Questa flessibilità garantisce una risposta idonea a ogni caso d'uso, spaziando dalle implementazioni di piccole-medie dimensioni fino ad arrivare alle aziende più grandi.
 
 {{site.data.keyword.BluSoftlayer_notm}} offre l'applicazione virtuale NetScaler VPX con un accesso root completo e senza limitazioni.   
 
@@ -67,7 +67,7 @@ Per proteggere il traffico delle applicazioni, i clienti si possono avvalere del
 ## Filtraggio del traffico
 {: #traffic-filtering}
 
-Citrix NetScaler VPX filtra le richieste dagli utenti finali ai server e le risposte dai server agli utenti finali. Una funzione di apprendimento con firewall delle applicazioni (Application Firewall) consente di creare profili di sessioni in tempo reale e di determinare se consentire il traffico.
+{{site.data.keyword.vpx_full}} filtra le richieste dagli utenti finali ai server e le risposte dai server agli utenti finali. Una funzione di apprendimento con firewall delle applicazioni (Application Firewall) consente di creare profili di sessioni in tempo reale e di determinare se consentire il traffico.
 
 ## Creazione di report PCI-DSS
 {: #pci-dss-reporting}

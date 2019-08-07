@@ -17,12 +17,12 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix NetScaler VPX の FAQ
+# {{site.data.keyword.vpx_full}} の FAQ
 {: #faqs-for-citrix-netscaler-vpx}
 
-Citrix NetScaler VPX を使用する際のよくある質問を以下に示します。
+{{site.data.keyword.vpx_full}} を使用する際のよくある質問を以下に示します。
 
-## Citrix NetScaler VPX とは何ですか?
+## {{site.data.keyword.vpx_full}} とは何ですか?
 {: faq}
 
 Citrix NetScaler はアプリケーション・デリバリー・コントローラーです。パフォーマンスの促進、アプリケーションの可用性と安全性の確保、運用コストの大幅な削減を通じて、アプリケーションを 5 倍良好にします。 アプリケーションの要件を満たす最適な Citrix NetScaler エディションを選択し、パフォーマンスのニーズに応じて適切な専用システムにデプロイします。 Citrix NetScaler について詳しくは、Citrix Web サイトの[「NetScaler ページ」![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.citrix.com/products/netscaler-application-delivery-controller/overview.html){:new_window}を参照してください。

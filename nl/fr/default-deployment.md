@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Déploiement par défaut d'un Citrix NetScaler VPX
+# Déploiement par défaut d'un {{site.data.keyword.vpx_full}}
 {: #citrix-netscaler-vpx-default-deployment}
 
 En examinant votre NetScaler dans **Unités > Liste d'unités** sur le [portail client ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://control.softlayer.com/), vous remarquerez qu'il se présente différemment des autres serveurs. Il a notamment une adresse IP privée, mais pas d'adresse IP publique.

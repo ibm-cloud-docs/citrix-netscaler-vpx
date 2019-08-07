@@ -63,7 +63,7 @@ Per stabilire il tuo NTL, esegui la seguente procedura:
 
 	Per ulteriori informazioni su VTL (Virtual Token Library), vai alla [Utilities Reference Guide ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/utilities_reference_guide.pdf){: new_window}.
 
-3.	Trasferisci il file del certificato del server HSM al client Citrix Netscaler VPX utilizzando SCP, quindi aggiungi il server:
+3.	Trasferisci il file del certificato del server HSM al client {{site.data.keyword.vpx_full}} utilizzando SCP, quindi aggiungi il server:
 
 	```
 	root@IBMADC690867-s6dr# scp hsm_admin@10.121.229.201:server.pem .

@@ -26,9 +26,9 @@ subcollection: citrix-netscaler-vpx
 # Abilitazione delle funzioni di reindirizzamento della cache e di bilanciamento del carico
 {: #enable-cache-redirection-and-load-balancing-capabilities}
 
-Per abilitare il reindirizzamento della cache e il bilanciamento del carico per la funzione Citrix NetScaler VPX, esegui i seguenti passi:
+Per abilitare il reindirizzamento della cache e il bilanciamento del carico per la funzione {{site.data.keyword.vpx_full}}, esegui i seguenti passi:
 
-1. Dalla pagina di sistema dell'applicazione Citrix NetScaler VPX, vai a **Settings > Configure Advanced Features**, quindi abilita **Cache Redirection** e fai clic su **OK**.  
+1. Dalla pagina di sistema dell'applicazione {{site.data.keyword.vpx_full}}, vai a **Settings > Configure Advanced Features**, quindi abilita **Cache Redirection** e fai clic su **OK**.  
 
 	<img src="images/fp4.png" alt="immagine" style="width: 400px;"/>
 

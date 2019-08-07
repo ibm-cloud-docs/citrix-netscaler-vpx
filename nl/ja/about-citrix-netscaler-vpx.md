@@ -17,12 +17,12 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix NetScaler VPX の製品情報
+# {{site.data.keyword.vpx_full}} の製品情報
 {: #about-citrix-netscaler-vpx}
 
-Citrix NetScaler VPX は、パブリックとプライベートの両方の IBM© Cloud ネットワークにロード・バランシングを提供する専用の仮想ソフトウェア・アプライアンスです。
+{{site.data.keyword.vpx_full}} は、パブリックとプライベートの両方の IBM© Cloud ネットワークにロード・バランシングを提供する専用の仮想ソフトウェア・アプライアンスです。
 
-{{site.data.keyword.BluSoftlayer_notm}}  ソリューションに Citrix NetScaler VPX をデプロイすると、Web アプリケーションの配信が加速され、パフォーマンスが向上するとともに、クラウド・アプリケーションとサービスが最適化されて、使用可能でセキュアな状態に維持されます。 ゲーム、ビッグデータ、分析、プライベート・クラウドといった困難なワークロードがある場合でも、Citrix NetScaler VPX は、ユーザーが最も必要とするタイミング、場所、方法でソリューションを実現できるよう寄与します。
+{{site.data.keyword.BluSoftlayer_notm}}  ソリューションに {{site.data.keyword.vpx_full}} をデプロイすると、Web アプリケーションの配信が加速され、パフォーマンスが向上するとともに、クラウド・アプリケーションとサービスが最適化されて、使用可能でセキュアな状態に維持されます。 ゲーム、ビッグデータ、分析、プライベート・クラウドといった困難なワークロードがある場合でも、{{site.data.keyword.vpx_full}} は、ユーザーが最も必要とするタイミング、場所、方法でソリューションを実現できるよう寄与します。
 
 ## 特徴
 {: #features}
@@ -55,7 +55,7 @@ Citrix NetScaler VPX は、パブリックとプライベートの両方の IBM�
 * 柔軟性と可用性を考慮し、他の {{site.data.keyword.BluSoftlayer_notm}} サーバーと同様にデプロイ
 * 各帯域幅層で提供: 10 Mbps、200 Mbps、1000 Mbps
 
-Citrix NetScaler VPX は、世界中のどの {{site.data.keyword.BluSoftlayer_notm}} データ・センターにも、ほんの 15 分間でオンデマンドでデプロイできます。 いくつかのライセンス交付モデルは必要な速度と機能を搭載し、今日のクラウド・ソリューションに求められる柔軟性を提供します。 この柔軟性により、中小規模の実装環境から大企業に至るまで、あらゆるユース・ケースに確実に適合できます。
+{{site.data.keyword.vpx_full}} は、世界中のどの {{site.data.keyword.BluSoftlayer_notm}} データ・センターにも、ほんの 15 分間でオンデマンドでデプロイできます。 いくつかのライセンス交付モデルは必要な速度と機能を搭載し、今日のクラウド・ソリューションに求められる柔軟性を提供します。 この柔軟性により、中小規模の実装環境から大企業に至るまで、あらゆるユース・ケースに確実に適合できます。
 
 {{site.data.keyword.BluSoftlayer_notm}} は、無制限のフル・ルート・アクセス権限を持つ NetScaler VPX 仮想アプライアンスを提供します。   
 
@@ -67,7 +67,7 @@ Citrix NetScaler VPX は、世界中のどの {{site.data.keyword.BluSoftlayer_n
 ## トラフィックのフィルタリング
 {: #traffic-filtering}
 
-Citrix Netscaler VPX は、エンド・ユーザーからサーバーへの要求とサーバーからエンド・ユーザーへの応答をフィルタリングします。 アプリケーション・ファイアウォールを使用した学習機能により、セッションのプロファイルをリアルタイムに作成して、トラフィックを許可するかどうかを判断できます。
+{{site.data.keyword.vpx_full}} は、エンド・ユーザーからサーバーへの要求とサーバーからエンド・ユーザーへの応答をフィルタリングします。 アプリケーション・ファイアウォールを使用した学習機能により、セッションのプロファイルをリアルタイムに作成して、トラフィックを許可するかどうかを判断できます。
 
 ## PCI-DSS レポート作成
 {: #pci-dss-reporting}

@@ -26,7 +26,7 @@ subcollection: citrix-netscaler-vpx
 
 Dans cette rubrique, vous allez installer le certificat SSL créé à la rubrique [pas à pas](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) précédente. Pour ce faire :
 
-1.	Vérifiez que le certificat existe dans le répertoire `/nsconfig/ssl` sur Citrix NetScaler VPX.
+1.	Vérifiez que le certificat existe dans le répertoire `/nsconfig/ssl` sur {{site.data.keyword.vpx_full}}.
 
 	```
 	root@IBMADC690867-s6dr# cd /nsconfig/ssl
@@ -38,7 +38,7 @@ Dans cette rubrique, vous allez installer le certificat SSL créé à la rubriqu
 	ns-root.req             ns-sftrust-root.cert    ns-	sftrust.der
 	```
 
-2.	Même si la clé de certificat se trouve dans le répertoire approprié, elle doit être reconnue en tant qu'objet Citrix NetScaler VPX valide pour pouvoir se connecter et interagir avec d'autres composants VPX. Pour ce faire, procédez comme suit :
+2.	Même si la clé de certificat se trouve dans le répertoire approprié, elle doit être reconnue en tant qu'objet {{site.data.keyword.vpx_full}} valide pour pouvoir se connecter et interagir avec d'autres composants VPX. Pour ce faire, procédez comme suit :
 
 	```
 	> add ssl hsmKey NSkey_s6dr -hsmType SAFENET -	SerialNum 534071053 -password P@rtition6
@@ -110,7 +110,7 @@ Dans cette rubrique, vous allez installer le certificat SSL créé à la rubriqu
 	>
 	```
 
-6.	(Facultatif) Pour éviter les avertissements de sécurité lors de l'accès au contenu via un navigateur Web, vous pouvez installer des certificats de type "Autorité de certification intermédiaire". Ceux-ci permettent à Citrix NetScaler VPX de partager ses informations avec les clients qui se connectent.
+6.	(Facultatif) Pour éviter les avertissements de sécurité lors de l'accès au contenu via un navigateur Web, vous pouvez installer des certificats de type "Autorité de certification intermédiaire". Ceux-ci permettent à {{site.data.keyword.vpx_full}} de partager ses informations avec les clients qui se connectent.
 
 	Pour obtenir ces certificats intermédiaires pour RapidSSL, cliquez sur l'un des liens suivants :
 

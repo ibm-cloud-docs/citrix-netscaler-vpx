@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# 升级 Citrix NetScaler VPX
+# 升级 {{site.data.keyword.vpx_full}}
 {: #upgrading-your-citrix-netscaler-vpx}
 
 在尝试此过程之前，您必须先连接到 VPN。

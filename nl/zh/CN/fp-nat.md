@@ -28,7 +28,7 @@ subcollection: citrix-netscaler-vpx
 
 网络地址转换 (NAT) 是一种 IP 地址空间重新映射方法，通过修改在流量路由设备中传输的包的 IP 头中的网络地址信息，将一个 IP 地址空间重新映射到另一个 IP 地址空间。
 
-您可利用 Citrix NetScaler VPX 设备从客户端机器对出站流量执行 NAT。为此，请执行以下操作：
+您可利用 {{site.data.keyword.vpx_full}} 设备从客户端机器对出站流量执行 NAT。为此，请执行以下操作：
 
 1. 转至“系统”>“网络”>“路径”，然后浏览至 **RNAT** 选项卡。单击**配置 RNAT**。
 

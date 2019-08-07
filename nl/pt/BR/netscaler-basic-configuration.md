@@ -67,5 +67,5 @@ Agora, ligue os serviços criados para seu Virtual Server.
 
 Você criou um conjunto e uma política de balanceamento de carga para seu website.
 
-Para saber mais sobre a configuração do dispositivo Citrix NetScaler VPX, visite a [página da documentação do Citrix ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://docs.citrix.com/en-us/netscaler.html). Para obter assistência adicional, entre em contato com o suporte e vendas do {{site.data.keyword.BluSoftlayer_notm}}.
+Para saber mais sobre a configuração do dispositivo {{site.data.keyword.vpx_full}}, visite a [página da documentação do Citrix ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://docs.citrix.com/en-us/netscaler.html). Para obter assistência adicional, entre em contato com o suporte e vendas do {{site.data.keyword.BluSoftlayer_notm}}.
 {: note}

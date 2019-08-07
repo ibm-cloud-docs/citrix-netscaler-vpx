@@ -25,7 +25,7 @@ subcollection: citrix-netscaler-vpx
 
 密码套件是认证、加密、消息认证代码 (MAC) 和密钥交换算法的组合，用于协商 SSL 和 TLS 协议的安全设置。
 
-为了保证正确认证，您必须确保 Citrix Netscaler VPX 使用最佳密码组合。
+为了保证正确认证，您必须确保 {{site.data.keyword.vpx_full}} 使用最佳密码组合。
 
 要了解有关 SSL 密码套件和其他最佳实践的更多信息，请访问以下链接：
 
@@ -69,7 +69,7 @@ subcollection: citrix-netscaler-vpx
 	bind ssl cipher <cipherGroupName> -cipherName <string>
 	```
 
-2.	确认密码是否已添加到 Citrix Netscaler VPX：
+2.	确认密码是否已添加到 {{site.data.keyword.vpx_full}}：
 
 	```
 	> show ssl cipher SSLLABS

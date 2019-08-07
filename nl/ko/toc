@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="citrix-netscaler-vpx" category="network" audience="network" href="/docs/infrastructure/citrix-netscaler-vpx?topic=infrastructure/citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance" path="infrastructure/citrix-netscaler-vpx"}
-Citrix NetScaler VPX
+{{site.data.keyword.vpx_full}}
 
     {: .navgroup id="learn"}
     getting-started.md	
@@ -22,7 +22,7 @@ Citrix NetScaler VPX
     url-redirection-netscaler-vpx.md
 
     {: .topicgroup}
-    단계별 지시사항: Citrix Netscaler VPX 어플라이언스를 사용하여 정방향 프록시 트래픽 경로 재지정 구성
+    단계별 지시사항: {{site.data.keyword.vpx_full}} 어플라이언스를 사용하여 정방향 프록시 트래픽 경로 재지정 구성
         fp-guide.md
         order-vpx.md
         request-subnet.md
@@ -34,7 +34,7 @@ Citrix NetScaler VPX
         fp-proxy-settings.md
 
     {: .topicgroup}
-    단계별 지시사항: Citrix Netscaler VPX를 사용하여 IBM Hardware Security Module (HSM) 배치 및 구성
+    단계별 지시사항: {{site.data.keyword.vpx_full}}를 사용하여 IBM Hardware Security Module (HSM) 배치 및 구성
         hsm-guide.md
         hsm-order-hsm.md
         hsm-order-vpx.md
@@ -48,7 +48,7 @@ Citrix NetScaler VPX
         hsm-retrieve-certificate.md
 
     {: .topicgroup}
-    단계별 지시사항: IBM Virtual Router Appliance를 사용하여 Citrix NetScaler VPX의 IPSec 사이트간 VPN 구성
+    단계별 지시사항: IBM Virtual Router Appliance를 사용하여 {{site.data.keyword.vpx_full}}의 IPSec 사이트간 VPN 구성
         ipsec-guide.md
         ipsec-enable-features.md
         ipsec-profile.md
@@ -58,7 +58,7 @@ Citrix NetScaler VPX
         ipsec-verification.md
         
     {: .topicgroup}
-    단계별 지시사항: Citrix Netscaler VPX를 사용하여 SSL 오프로드 구성 및 조정
+    단계별 지시사항: {{site.data.keyword.vpx_full}}를 사용하여 SSL 오프로드 구성 및 조정
         hsm-ssl-guide.md
         hsm-ssl-install.md
         hsm-ssl-dns.md

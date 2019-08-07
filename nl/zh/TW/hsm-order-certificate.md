@@ -45,7 +45,7 @@ IBM Cloud 為客戶提供每年及每半年的 SSL 憑證，憑證提供各種�
 * [規劃 SSL](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-planning-for-ssl)
 
 
-若要訂購 SSL 憑證以搭配 Citrix Netscaler VPX 使用，請執行下列程序：
+若要訂購 SSL 憑證以搭配 {{site.data.keyword.vpx_full}} 使用，請執行下列程序：
 
 1.	在 VPX Shell CLI 中，開啟先前在步驟[建立金鑰並產生憑證簽署要求 (CSR)](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-)中建立的 CSR 檔案，以顯示 CSR 文字：
 

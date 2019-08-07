@@ -56,7 +56,7 @@ Gehen Sie wie folgt vor, um den NTL einzurichten:
 
 	Weitere Informationen zu Virtual Token Library (VTL) finden Sie im [Referenzhandbuch für Dienstprogramme ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/utilities_reference_guide.pdf){: new_window}.
 
-3.	Übertragen Sie die HSM-Serverzertifikatsdatei mit SCP an den Citrix NetScaler VPX-Client und fügen Sie dann den Server hinzu:
+3.	Übertragen Sie die HSM-Serverzertifikatsdatei mit SCP an den {{site.data.keyword.vpx_full}}-Client und fügen Sie dann den Server hinzu:
 
 	```
 	root@IBMADC690867-s6dr# scp hsm_admin@10.121.229.201:server.pem .
@@ -148,7 +148,7 @@ Gehen Sie wie folgt vor, um den NTL einzurichten:
 	client assignPartition -client <Clientname> -partition <Partitionsname>
 	```
 
-8.	Überprüfen Sie die Konnektivität in Ihrer Citrix NetScaler VPX-Instanz:
+8.	Überprüfen Sie die Konnektivität in Ihrer {{site.data.keyword.vpx_full}}-Instanz:
 
 	```
 	root@IBMADC690867-s6dr# vtl verify

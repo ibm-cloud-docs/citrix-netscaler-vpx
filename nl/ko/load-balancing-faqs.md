@@ -17,12 +17,12 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix NetScaler VPX에 대한 FAQ
+# {{site.data.keyword.vpx_full}}에 대한 FAQ
 {: #faqs-for-citrix-netscaler-vpx}
 
-다음은 Citrix NetScaler VPX에서 작업할 때 자주 질문되는 내용입니다.
+다음은 {{site.data.keyword.vpx_full}}에서 작업할 때 자주 질문되는 내용입니다.
 
-## Citrix NetScaler VPX는 무엇입니까?
+## {{site.data.keyword.vpx_full}}는 무엇입니까?
 {: faq}
 
 Citrix NetScaler는 성능을 가속화하고 애플리케이션 가용성 및 보호를 보장하며 운영 비용을 크게 줄여서 애플리케이션을 5배 향상시키는 ADC(Application Delivery Controller)입니다. 애플리케이션 요구사항을 충족하는 최적의 Citrix NetScaler 에디션을 선택하여 성능 요구사항에 맞게 적절한 전용 시스템에 배치하십시오. Citrix NetScaler에 대해 자세히 알아보려면 Citrix 웹 사이트에서 [NetScaler 페이지 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.citrix.com/products/netscaler-application-delivery-controller/overview.html){:new_window}를 참조하십시오.

@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="citrix-netscaler-vpx" category="network" audience="network" href="/docs/infrastructure/citrix-netscaler-vpx?topic=infrastructure/citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance" path="infrastructure/citrix-netscaler-vpx"}
-Citrix NetScaler VPX
+{{site.data.keyword.vpx_full}}
 
     {: .navgroup id="learn"}
     getting-started.md	
@@ -22,7 +22,7 @@ Citrix NetScaler VPX
     url-redirection-netscaler-vpx.md
 
     {: .topicgroup}
-    Etape par étape : Configuration de la redirection du trafic du proxy direct (forward-proxy) à l'aide du dispositif Citrix NetScaler VPX
+    Etape par étape : Configuration de la redirection du trafic du proxy direct (forward-proxy) à l'aide du dispositif {{site.data.keyword.vpx_full}}
         fp-guide.md
         order-vpx.md
         request-subnet.md
@@ -34,7 +34,7 @@ Citrix NetScaler VPX
         fp-proxy-settings.md
 
     {: .topicgroup}
-    Etape par étape : Déploiement et configuration du module HSM (IBM Hardware Security Module) avec Citrix Netscaler VPX
+    Etape par étape : Déploiement et configuration du module HSM (IBM Hardware Security Module) avec {{site.data.keyword.vpx_full}}
         hsm-guide.md
         hsm-order-hsm.md
         hsm-order-vpx.md
@@ -48,7 +48,7 @@ Citrix NetScaler VPX
         hsm-retrieve-certificate.md
 
     {: .topicgroup}
-    Etape par étape : Configuration d'un VPN IPsec de site à site dans Citrix NetScaler VPX avec le dispositif IBM Virtual Router Appliance
+    Etape par étape : Configuration d'un VPN IPsec de site à site dans {{site.data.keyword.vpx_full}} avec le dispositif IBM Virtual Router Appliance
         ipsec-guide.md
         ipsec-enable-features.md
         ipsec-profile.md
@@ -58,7 +58,7 @@ Citrix NetScaler VPX
         ipsec-verification.md
         
     {: .topicgroup}
-    Etape par étape : Configuration et optimisation du déchargement SSL avec Citrix Netscaler VPX
+    Etape par étape : Configuration et optimisation du déchargement SSL avec {{site.data.keyword.vpx_full}}
         hsm-ssl-guide.md
         hsm-ssl-install.md
         hsm-ssl-dns.md

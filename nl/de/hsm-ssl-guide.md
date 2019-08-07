@@ -13,12 +13,12 @@ lastupdated: "2018-11-12"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# SSL-Auslagerung mit Citrix NetScaler VPX konfigurieren und optimieren
+# SSL-Auslagerung mit {{site.data.keyword.vpx_full}} konfigurieren und optimieren
 {: #configuring-and-tuning-ssl-offload-with-citrix-netscaler-vpx}
 
-Diese schrittweise aufgebaute Anleitung führt Sie durch die Konfiguration und Optimierung der SSL-Auslagerung in Citrix NetScaler VPX. Dies geschieht mithilfe des Zertifikats und des Verschlüsselungsmaterials, das über den HSM-Link generiert wird.
+Diese schrittweise aufgebaute Anleitung führt Sie durch die Konfiguration und Optimierung der SSL-Auslagerung in {{site.data.keyword.vpx_full}}. Dies geschieht mithilfe des Zertifikats und des Verschlüsselungsmaterials, das über den HSM-Link generiert wird.
 
-**HINWEIS:** Voraussetzung für diese schrittweise Anleitung ist die Ausführung der Schritte in [IBM© Hardware Security Module (HSM) mit Citrix NetScaler VPX bereitstellen und konfigurieren](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx), um Ihr VPX/HSM-Paar bestellen und erstellen zu können.
+**HINWEIS:** Voraussetzung für diese schrittweise Anleitung ist die Ausführung der Schritte in [IBM© Hardware Security Module (HSM) mit {{site.data.keyword.vpx_full}} bereitstellen und konfigurieren](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx), um Ihr VPX/HSM-Paar bestellen und erstellen zu können.
 
 ## Informationen zur Bereitstellung
 Diese Bereitstellung wurde mit den folgenden Komponentenspezifikationen erstellt und getestet:
@@ -37,17 +37,17 @@ Wenn Sie mit der SSL-Auslagerung nicht vertraut sind, lesen Sie diesen [Citrix-A
 
 ## Durchgeführte Schritte
 
-In dieser schrittweise aufgebauten Anleitung erfahren Sie, wie SSL für eine Citrix NetScaler VPX-Appliance konfiguriert wird.
+In dieser schrittweise aufgebauten Anleitung erfahren Sie, wie SSL für eine {{site.data.keyword.vpx_full}}-Appliance konfiguriert wird.
 
 Task  | Beschreibung
 ------------- | -------------
 [Zertifikat installieren](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-install-your-ssl-certificate) | Installieren Sie das SSL-Zertifikat, das Sie in der vorherigen [schrittweisen Anleitung](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) erstellt  haben.
-[DNS-Datensatz überprüfen und konfigurieren](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-check-and-configure-the-dns-record) | Stellen Sie sicher, dass ein DNS-Datensatz für den FQDN vorhanden ist, der auf die öffentliche Adresse verweist, die in Citrix NetScaler VPX als virtueller Server konfiguriert werden soll.
+[DNS-Datensatz überprüfen und konfigurieren](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-check-and-configure-the-dns-record) | Stellen Sie sicher, dass ein DNS-Datensatz für den FQDN vorhanden ist, der auf die öffentliche Adresse verweist, die in {{site.data.keyword.vpx_full}} als virtueller Server konfiguriert werden soll.
 [Virtuellen SSL-Server hinzufügen und konfigurieren](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-add-and-configure-the-ssl-virtual-server) | Fügen Sie einen virtuellen SSL-Server hinzu und konfigurieren Sie ihn.
 [Neue Cipher-Suite erstellen und anwenden](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-and-apply-a-new-cipher-suite) | Erstellen Sie eine Cipher-Suite, die AEAD, ECDHE und ECDSA priorisiert und bevorzugt.
 
 ## Zusätzliche Ressourcen
-Die folgenden zusätzlichen Ressourcen können Ihnen dabei helfen, Citrix NetScaler VPX bei Verwendung des IBM Hardware Security Module bestmöglich zu nutzen.
+Die folgenden zusätzlichen Ressourcen können Ihnen dabei helfen, {{site.data.keyword.vpx_full}} bei Verwendung des IBM Hardware Security Module bestmöglich zu nutzen.
 
 * [Produktdokumentation zu NetScaler 12.1![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://docs.citrix.com/en-us/netscaler/12-1/){:new_window}
 * [Support-Portal zu Gemalto ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://supportportal.gemalto.com/csm?id=csm_index){:new_window}

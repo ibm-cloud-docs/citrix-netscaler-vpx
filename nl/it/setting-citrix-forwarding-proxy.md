@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Configurazione di Citrix Netscaler VPX come un proxy di inoltro
+# Configurazione di {{site.data.keyword.vpx_full}} come un proxy di inoltro
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
 
 Un proxy di inoltro funge da singolo punto di controllo tra i client su una rete interna e internet. Un proxy consente all'amministratore di rete o a quello della sicurezza di creare delle politiche che limitano l'accesso ai siti internet.
@@ -27,7 +27,7 @@ Di norma, un proxy è combinato con un firewall per garantire la sicurezza dei c
 ## Passo 1: Richiedere i VIP da utilizzare nella rete privata
 {: #step-1-request-vips-to-use-in-the-private-network}
 
-Quando un programma di bilanciamento del carico Citrix NetScaler VPX viene ordinato dal portale del cliente {{site.data.keyword.BluSoftlayer_notm}}, si presume che si stia richiedendo un proxy inverso. Al richiedente verrà chiesto il numero di IP "pubblici" da utilizzare come VIP (Virtual IP).
+Quando un programma di bilanciamento del carico {{site.data.keyword.vpx_full}} viene ordinato dal portale del cliente {{site.data.keyword.BluSoftlayer_notm}}, si presume che si stia richiedendo un proxy inverso. Al richiedente verrà chiesto il numero di IP "pubblici" da utilizzare come VIP (Virtual IP).
 
 Nel caso di un proxy di inoltro, i VIP devono essere configurati sulla rete privata. È necessario aprire un ticket di supporto per richiedere i VIP per la rete privata. Il numero di VIP necessario determinerà la dimensione della sottorete richiesta nel ticket. Le informazioni sulla sottorete verranno restituite nel ticket.
 
@@ -37,18 +37,18 @@ Nel nostro esempio, abbiamo richiesto una sottorete `/29` e il risultato è stat
 
 * SNIP (Subnet IP) `10.114.52.101` e sottorete instradata `10.114.27.0/29`
 
-* I VIP `10.114.27.0-3` sono stati aggiunti a Citrix NetScaler VPX dal team di supporto
+* I VIP `10.114.27.0-3` sono stati aggiunti a {{site.data.keyword.vpx_full}} dal team di supporto
 
-## Passo 2: Abilitare le funzioni di bilanciamento del carico e di reindirizzamento della cache su Citrix NetScaler VPX
+## Passo 2: Abilitare le funzioni di bilanciamento del carico e di reindirizzamento della cache su {{site.data.keyword.vpx_full}}
 {: #step-2-enable-load-balancing-and-cache-redirect-features-on-the-citrix-netscaler-vpx}
 
-Per impostazione predefinita, le funzioni di bilanciamento del carico e di reindirizzamento della cache sul programma di bilanciamento del carico Citrix NetScaler VPX sono disabilitate; il comando `enable ns feature cr lb` le abilita.
+Per impostazione predefinita, le funzioni di bilanciamento del carico e di reindirizzamento della cache sul programma di bilanciamento del carico {{site.data.keyword.vpx_full}} sono disabilitate; il comando `enable ns feature cr lb` le abilita.
 
 
 ## Passo 3: Creare il proxy di inoltro
 {: #step-3-create-the-forward-proxy}
 
-Utilizzare la riga di comando per immettere i seguenti comandi su Citrix NetScaler VPX. Nel nostro scenario, viene aggiunto solo uno dei due server DNS {{site.data.keyword.BluSoftlayer_notm}}.  
+Utilizzare la riga di comando per immettere i seguenti comandi su {{site.data.keyword.vpx_full}}. Nel nostro scenario, viene aggiunto solo uno dei due server DNS {{site.data.keyword.BluSoftlayer_notm}}.  
 
 ```
 add cr vserver vs_forward_cache HTTP 10.114.27.3 80 -cachetype forward -redirect origin
@@ -85,7 +85,7 @@ Puoi modificare manualmente `/etc/resolv.conf` per puntare all'indirizzo virtual
 
 In alternativa, puoi modificare l'interfaccia `/etc/sysconfig/network-scripts/ifcfg-ethx` e aggiungere l'istruzione `DNS1=`. Una volta eseguita l'impostazione, è possibile immettere il comando service network restart per rilevare le modifiche.
 
-In entrambi i casi, l'indirizzo IP del DNS dovrà essere configurato come indirizzo DNS virtuale e il browser del client dovrà essere configurato per puntare le richieste al proxy di inoltro di Citrix NetScaler VPX.
+In entrambi i casi, l'indirizzo IP del DNS dovrà essere configurato come indirizzo DNS virtuale e il browser del client dovrà essere configurato per puntare le richieste al proxy di inoltro di {{site.data.keyword.vpx_full}}.
 
 Per apportare le modifiche necessarie, esegui le seguenti operazioni in Firefox:
 

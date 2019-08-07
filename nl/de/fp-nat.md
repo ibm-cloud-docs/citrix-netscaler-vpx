@@ -21,7 +21,7 @@ lastupdated: "2018-11-12"
 
 Bei der Netzadressumsetzung (Network Address Translation; NAT) handelt es sich um eine Methode zur Neuzuordnung eines IP-Adressraums in einen anderen Adressraum. Hierbei werden Netzadressinformationen im IP-Header von Paketen während ihres Wegs in einer Datenverkehrs-Routing-Einheit geändert.
 
-Sie können Ihre Citrix NetScaler VPX-Appliance für die Netzadressumsetzung im abgehenden Datenverkehr von Ihren Clientmaschinen verwenden. Gehen Sie hierfür wie folgt vor:
+Sie können Ihre {{site.data.keyword.vpx_full}}-Appliance für die Netzadressumsetzung im abgehenden Datenverkehr von Ihren Clientmaschinen verwenden. Gehen Sie hierfür wie folgt vor:
 
 1. Klicken Sie auf 'System > Netz > Routen' und navigieren Sie zur Registerkarte **RNAT**. Klicken Sie auf **RNAT konfigurieren**.
 

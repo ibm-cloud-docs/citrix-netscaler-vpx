@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# IBM Virtual Router Appliance로 Citrix NetScaler VPX의 IPSec 사이트간 VPN 구성
+# IBM Virtual Router Appliance로 {{site.data.keyword.vpx_full}}의 IPSec 사이트간 VPN 구성
 {:#configuring-ipsec-site-to-site-vpn-in-citrix-netscaler-vpx}
 
 이 안내서에서는 Citrix VPX에서 IPSec VPN 사이트간 연결을 구성하기 위한 단계별 지시사항을 제공합니다. IBM Virtual Router Appliance(VRA)는 VPN 피어로 사용됩니다. 
@@ -42,7 +42,7 @@ IPSec VPN을 구성하려면 VPX 플랫폼 라이센스가 필요합니다.
 
 이 안내서에서는 두 디바이스 모두의 소유권을 가정합니다. 주문에 대한 지시사항을 보려면 다음 링크를 방문하십시오. 
 
--	[Citrix NetScaler VPX 소프트웨어 어플라이언스 시작하기](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started)
+-	[{{site.data.keyword.vpx_full}} 소프트웨어 어플라이언스 시작하기](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started)
 -	[IBM Virtual Router Appliance 시작하기](/docs/infrastructure/virtual-router-appliance?topic=virtual-router-appliance-getting-started)
 
 ## 수행할 사항

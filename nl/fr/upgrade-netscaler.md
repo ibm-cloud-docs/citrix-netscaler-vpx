@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Mise à niveau de votre Citrix NetScaler VPX
+# Mise à niveau de votre {{site.data.keyword.vpx_full}}
 {: #upgrading-your-citrix-netscaler-vpx}
 
 Vous devez être connecté au VPN avant d'effectuer la procédure ci-dessous.

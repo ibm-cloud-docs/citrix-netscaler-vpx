@@ -67,5 +67,5 @@ Associa quindi i servizi che hai creato al tuo Virtual Server.
 
 Hai creato un pool di bilanciamento del carico e la politica per il tuo sito web.
 
-Per ulteriori informazioni sulla configurazione del dispositivo Citrix NetScaler VPX, visita la [pagina di documentazione di Citrix![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://docs.citrix.com/en-us/netscaler.html). Per ulteriore assistenza, contatta l'assistenza e il settore vendite di {{site.data.keyword.BluSoftlayer_notm}}.
+Per ulteriori informazioni sulla configurazione del dispositivo {{site.data.keyword.vpx_full}}, visita la [pagina di documentazione di Citrix![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://docs.citrix.com/en-us/netscaler.html). Per ulteriore assistenza, contatta l'assistenza e il settore vendite di {{site.data.keyword.BluSoftlayer_notm}}.
 {: note}

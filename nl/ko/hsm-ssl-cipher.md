@@ -25,7 +25,7 @@ subcollection: citrix-netscaler-vpx
 
 암호 스위트는 SSL 및 TLS 프로토콜의 보안 설정을 조정하는 데 사용된 인증, 암호화, MAC(Message Authentication Code) 및 키 교환 알고리즘의 조합입니다.
 
-적절한 인증을 보장하려면 Citrix Netscaler VPX에서 최적의 암호 조합을 사용하는지 확인해야 합니다.
+적절한 인증을 보장하려면 {{site.data.keyword.vpx_full}}에서 최적의 암호 조합을 사용하는지 확인해야 합니다.
 
 SSL 암호 스위트 및 기타 우수 사례에 대해 알아보려면 다음 링크를 방문하십시오.
 
@@ -69,7 +69,7 @@ AEAD, ECDHE 및 ECDSA 암호의 우선순위를 지정하는 새 암호 스위�
 	bind ssl cipher <cipherGroupName> -cipherName <string>
 	```
 
-2.	암호가 Citrix Netscaler VPX에 추가되었는지 확인하십시오.
+2.	암호가 {{site.data.keyword.vpx_full}}에 추가되었는지 확인하십시오.
 
 	```
 	> show ssl cipher SSLLABS

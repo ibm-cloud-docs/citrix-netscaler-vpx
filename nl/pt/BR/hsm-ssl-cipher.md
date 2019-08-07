@@ -25,7 +25,7 @@ subcollection: citrix-netscaler-vpx
 
 Um conjunto de cifras é uma combinação de autenticação, criptografia, Código de Autenticação de Mensagem (MAC) e algoritmos de troca de chave usados para negociar as configurações de segurança para protocolos SSL e TLS.
 
-Para garantir a autenticação adequada, deve-se assegurar que o Citrix Netscaler VPX use a melhor combinação de cifras.
+Para garantir a autenticação adequada, deve-se assegurar que o {{site.data.keyword.vpx_full}} use a melhor combinação de cifras.
 
 Para saber mais sobre os conjuntos de cifras SSL e outras melhores práticas, visite os links a seguir:
 
@@ -69,7 +69,7 @@ Para criar um novo conjunto de cifras que priorize as cifras AEAD, ECDHE e ECDSA
 	bind ssl cipher <cipherGroupName> -cipherName <string>
 	```
 
-2.	Confirme se a cifra foi incluída em seu Citrix Netscaler VPX:
+2.	Confirme se a cifra foi incluída em seu {{site.data.keyword.vpx_full}}:
 
 	```
 	> show ssl cipher SSLLABS

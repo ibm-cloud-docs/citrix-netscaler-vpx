@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Configurando o Citrix NetScaler VPX para alta disponibilidade (HA)
+# Configurando o {{site.data.keyword.vpx_full}} para alta disponibilidade (HA)
 {: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
 Os balanceadores de carga são usados para balancear o tráfego em múltiplos servidores de aplicativos para melhorar o desempenho e a estabilidade em um aplicativo escalável. No entanto, um balanceador de carga único é um ponto único de falha. Evite isso configurando um par de Netscaler VPX de Alta disponibilidade (HA). A configuração de um par HA requer dois servidores Netscaler VPX. O servidor secundário continuará o balanceamento de carga se o principal falhar.

@@ -7,7 +7,7 @@ lastupdated: "2018-11-12"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Citrix NetScaler VPX - Standardbereitstellung
+# {{site.data.keyword.vpx_full}} - Standardbereitstellung
 {: #citrix-netscaler-vpx-default-deployment}
 
 Wenn Sie das NetScaler-System in der Anzeige für **Geräte > Geräteliste** im [Kundenportal ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://control.softlayer.com/) überprüfen, dann werden Sie feststellen, dass dieses System anders dargestellt wird, wie dies bei anderen Servern der Fall ist. Dieses Gerät verfügt zwar über eine private IP-Adresse, jedoch nicht über eine öffentliche IP-Adresse.

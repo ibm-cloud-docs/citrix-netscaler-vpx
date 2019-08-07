@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Configuration de Citrix Netscaler VPX pour la haute disponibilité
+# Configuration de {{site.data.keyword.vpx_full}} pour la haute disponibilité
 {: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
 Les équilibreurs de charge servent à répartir le trafic sur plusieurs serveurs d'application afin d'améliorer la performance et la stabilité d'une application échelonnable. Cependant, lorsqu'il est seul à assumer cette fonction, l'équilibreur de charge constitue un point unique de défaillance. Ce risque peut être évité par la configuration d'une paire de serveurs Netscaler VPX haute disponibilité. La configuration d'une paire haute disponibilité requiert deux serveurs Netscaler VPX. Le serveur secondaire intervient pour poursuivre l'équilibrage de charge en cas de panne du serveur primaire.

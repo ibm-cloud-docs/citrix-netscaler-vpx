@@ -20,12 +20,12 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix Netscaler VPX를 사용하여 SSL 오프로드 구성 및 조정
+# {{site.data.keyword.vpx_full}}를 사용하여 SSL 오프로드 구성 및 조정
 {: #configuring-and-tuning-ssl-offload-with-citrix-netscaler-vpx}
 
-이 단계별 지시사항은 Citrix Netscaler VPX에서 SSL 오프로드를 구성 및 조정하는 과정을 제공하며, 이는 HSM 링크를 통해 생성된 인증서 및 암호화 자료를 사용하여 수행됩니다.
+이 단계별 지시사항은 {{site.data.keyword.vpx_full}}에서 SSL 오프로드를 구성 및 조정하는 과정을 제공하며, 이는 HSM 링크를 통해 생성된 인증서 및 암호화 자료를 사용하여 수행됩니다.
 
-이 단계별 지시사항에서는 VPX/HSM 쌍을 주문하고 작성하기 위해 사용자가 [Citrix Netscaler VPX를 사용하여 IBM© Hardware Security Module(HSM) 배치 및 구성](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx)의 단계를 완료했다고 가정합니다.
+이 단계별 지시사항에서는 VPX/HSM 쌍을 주문하고 작성하기 위해 사용자가 [{{site.data.keyword.vpx_full}}를 사용하여 IBM© Hardware Security Module(HSM) 배치 및 구성](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx)의 단계를 완료했다고 가정합니다.
 {: note}
 
 ## 배치 정보
@@ -49,18 +49,18 @@ SSL 오프로드에 익숙하지 않은 경우 이 [Citrix 기사 ![외부 링�
 ## 수행할 사항
 {: #what-you-ll-accomplish}
 
-이 단계별 지시사항에서는 Citrix Netscaler VPX를 위해 SSL을 구성하는 방법에 대한 정보를 제공합니다.
+이 단계별 지시사항에서는 {{site.data.keyword.vpx_full}}를 위해 SSL을 구성하는 방법에 대한 정보를 제공합니다.
 
 태스크  |설명
 ------------- | -------------
 [인증서 설치](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-install-your-ssl-certificate) |이전 [단계별](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) 지시사항에서 작성된 SSL 인증서를 설치합니다.
-[DNS 레코드 확인 및 구성](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-check-and-configure-the-dns-record) | DNS 레코드가 가상 서버로 Citrix Netscaler VPX에서 구성되도록 공용 주소를 가리키는 FQDN에 대해 존재하는지 확인합니다.
+[DNS 레코드 확인 및 구성](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-check-and-configure-the-dns-record) | DNS 레코드가 가상 서버로 {{site.data.keyword.vpx_full}}에서 구성되도록 공용 주소를 가리키는 FQDN에 대해 존재하는지 확인합니다.
 [SSL 가상 서버 추가 및 구성](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-add-and-configure-the-ssl-virtual-server) | SSL 가상 서버를 추가하고 구성합니다.
 [새 암호 스트위 작성 및 적용](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-and-apply-a-new-cipher-suite) | AEAD, ECDHE 및 ECDSA를 선호하고 우선순위를 지정하는 암호화 스위트를 작성합니다.
 
 ## 추가 리소스
 {: #additional-resources}
-다음 추가 리소스는 IBM Hardware Security Module을 사용하여 Citrix Netscaler VPX를 최대한 활용하는 데 도움을 줍니다.
+다음 추가 리소스는 IBM Hardware Security Module을 사용하여 {{site.data.keyword.vpx_full}}를 최대한 활용하는 데 도움을 줍니다.
 
 * [NetScaler 12.1 제품 문서 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://docs.citrix.com/en-us/netscaler/12-1/){:new_window}
 * [Gemalto 지원 포털 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://supportportal.gemalto.com/csm?id=csm_index){:new_window}

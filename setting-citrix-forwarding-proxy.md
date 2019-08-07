@@ -27,7 +27,7 @@ Typically, a proxy is combined with a firewall to ensure the security of clients
 ## Step 1: Request VIPs to use in the Private Network
 {: #step-1-request-vips-to-use-in-the-private-network}
 
-When a Citrix NetScaler VPX load balancer is ordered from the {{site.data.keyword.BluSoftlayer_notm}} customer portal, it is assumed a reverse proxy is being requested. The requestor will be asked for the number of “public” IPs to be used as virtual IPs (VIPs).
+When a {{site.data.keyword.vpx_full}} load balancer is ordered from the {{site.data.keyword.BluSoftlayer_notm}} customer portal, it is assumed a reverse proxy is being requested. The requestor will be asked for the number of “public” IPs to be used as virtual IPs (VIPs).
 
 In the case of a forward proxy, the VIPs need to be setup on the private network. A support ticket needs to be opened in order to request VIPs for the private network. The number of VIPs required will determine the size of the subnet requested in the ticket. The subnet information will be returned in the ticket.
 
@@ -37,18 +37,18 @@ In our example we requested a `/29` subnet, which resulted in the following:
 
 * Subnet IP (SNIP) `10.114.52.101`, and routed subnet `10.114.27.0/29`
 
-* VIPs `10.114.27.0-3` were added to the Citrix NetScaler VPX by the support team
+* VIPs `10.114.27.0-3` were added to the {{site.data.keyword.vpx_full}} by the support team
 
-## Step 2: Enable Load Balancing and Cache Redirect Features on the Citrix NetScaler VPX
+## Step 2: Enable Load Balancing and Cache Redirect Features on the {{site.data.keyword.vpx_full}}
 {: #step-2-enable-load-balancing-and-cache-redirect-features-on-the-citrix-netscaler-vpx}
 
-By default, the load balancing and cache redirect features on the Citrix NetScaler VPX load balancer are disabled; the `enable ns feature cr lb` command enables them.
+By default, the load balancing and cache redirect features on the {{site.data.keyword.vpx_full}} load balancer are disabled; the `enable ns feature cr lb` command enables them.
 
 
 ## Step 3: Create the Forward Proxy
 {: #step-3-create-the-forward-proxy}
 
-Use the command line to issue the following commands on to the Citrix NetScaler VPX. In our scenario, only one of the two {{site.data.keyword.BluSoftlayer_notm}} DNS servers are added.  
+Use the command line to issue the following commands on to the {{site.data.keyword.vpx_full}}. In our scenario, only one of the two {{site.data.keyword.BluSoftlayer_notm}} DNS servers are added.  
 
 ```
 add cr vserver vs_forward_cache HTTP 10.114.27.3 80 -cachetype forward -redirect origin
@@ -85,7 +85,7 @@ You can manually edit the `/etc/resolv.conf` to point to the virtual address of 
 
 Or you can edit the `/etc/sysconfig/network-scripts/ifcfg-ethx` interface and add the `DNS1=` statement. Once set, the service network restart command can be issued to pick up the changes.
 
-In either case, the DNS IP address will need to be configured as the virtual DNS address, and the client's browser will need to be configured to point requests to the Citrix NetScaler VPX forwarding proxy.
+In either case, the DNS IP address will need to be configured as the virtual DNS address, and the client's browser will need to be configured to point requests to the {{site.data.keyword.vpx_full}} forwarding proxy.
 
 Use the following steps within Firefox to make the necessary changes:
 

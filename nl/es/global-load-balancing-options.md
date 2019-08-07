@@ -21,10 +21,10 @@ El equilibrio de carga de servidor global (GSLB) es un método para dividir el t
 
 Puede que no necesite una implementación completa de una solución de equilibrio de carga global. GSLB requiere varias instancias de un dispositivo adecuado que pueda realizar esta función y, dependiendo de sus necesidades, es posible que otras soluciones le sean más atractivas. Si necesita sitios web y aplicaciones completas, GSLB es una buena opción. Si solo necesita partes de su contenido, como imágenes, vídeos u otros archivos grandes, es posible que la [Red de entrega de contenido](/docs/infrastructure/CDN?topic=CDN-about-content-delivery-networks-cdn-) sea más adecuada (y más fácil de desplegar).
 
-## Citrix NetScaler VPX
+## {{site.data.keyword.vpx_full}}
 {: #citrix-netscaler-vpx}
 
-Citrix NetScaler VPX es el único dispositivo configurable por el cliente que realiza un equilibrio de carga global verdadero. NetScaler es un dispositivo multifunción que puede realizar búsquedas de equilibrio de carga global basadas en DNS. Puede apuntar a NetScaler como servidor DNS y el dispositivo buscará el equilibrio de carga en los servidores en que está configurado, realizará un cálculo de distancia y devolverá un registro con la IP del servidor más cercano a la solicitud del cliente.
+{{site.data.keyword.vpx_full}} es el único dispositivo configurable por el cliente que realiza un equilibrio de carga global verdadero. NetScaler es un dispositivo multifunción que puede realizar búsquedas de equilibrio de carga global basadas en DNS. Puede apuntar a NetScaler como servidor DNS y el dispositivo buscará el equilibrio de carga en los servidores en que está configurado, realizará un cálculo de distancia y devolverá un registro con la IP del servidor más cercano a la solicitud del cliente.
 
 Para el equilibrio de carga global, tendría una configuración de dispositivo de NetScaler en cada centro de datos. Cada configuración de dispositivo de NetScaler puede ser un Netscaler único o un par de Netscalers en un par de HA, dependiendo de sus requisitos, proporcionando servicios de equilibrio de carga local para los servidores tras ellos. Los dispositivos están configurados para comunicarse entre ellos para que puedan intercambiar información de estado en cada servidor asignado a la rotación de equilibrador de carga global. Cualquier solicitud de DNS que llega a estos NetScalers configurados puede devolver un registro apropiado para un servidor que esté en línea y respondiendo. Cualquier servidor que no responda se elimina de la rotación y se selecciona otro.
 

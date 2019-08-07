@@ -21,10 +21,10 @@ subcollection: citrix-netscaler-vpx
 
 您可能并不需要全面实现全局负载均衡解决方案。GSLB 需要的是可执行此功能的适用设备的多个实例，根据您的需求，其他解决方案可能更具吸引力。如果需要整个 Web 站点和应用程序，那么 GSLB 是不错的选择。如果您只需要内容的一部分（例如，图像、视频或其他大型文件），那么[内容交付网络](/docs/infrastructure/CDN?topic=CDN-about-content-delivery-networks-cdn-)可能更适用（并且更易于部署）。
 
-## Citrix NetScaler VPX
+## {{site.data.keyword.vpx_full}}
 {: #citrix-netscaler-vpx}
 
-Citrix NetScaler VPX 是唯一执行真正全局负载均衡的客户可配置设备。NetScaler 是一种多功能设备，可以执行基于 DNS 的全局负载均衡查找。您可以指向作为 DNS 服务器的 NetScaler，该设备将检查自己配置为对其执行负载均衡的服务器，执行距离计算，并返回一个记录，其中包含与客户机请求最靠近的服务器的 IP。
+{{site.data.keyword.vpx_full}} 是唯一执行真正全局负载均衡的客户可配置设备。NetScaler 是一种多功能设备，可以执行基于 DNS 的全局负载均衡查找。您可以指向作为 DNS 服务器的 NetScaler，该设备将检查自己配置为对其执行负载均衡的服务器，执行距离计算，并返回一个记录，其中包含与客户机请求最靠近的服务器的 IP。
 
 对于全局负载均衡，您将在每个数据中心进行 NetScaler 设备配置。每个 NetScaler 设备配置可能具有单个 Netscaler 或一对 Netscaler（HA 对），具体取决于您的需求，为其后面的服务器提供本地负载均衡服务。这些设备配置为相互交流，因此它们可交换分配给全局负载均衡器循环的每个服务器的状态信息。到达这些已配置 NetScaler 的任何 DNS 请求都可以返回联机并有响应的服务器的相应记录。任何无响应的服务器都会从循环中除去，然后选择另一个服务器。
 

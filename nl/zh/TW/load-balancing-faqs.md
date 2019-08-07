@@ -17,12 +17,12 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix NetScaler VPX 的常見問題
+# {{site.data.keyword.vpx_full}} 的常見問題
 {: #faqs-for-citrix-netscaler-vpx}
 
-下列是使用 Citrix NetScaler VPX 時的常見問題。
+下列是使用 {{site.data.keyword.vpx_full}} 時的常見問題。
 
-## 何謂 Citrix NetScaler VPX？
+## 何謂 {{site.data.keyword.vpx_full}}？
 {: faq}
 
 Citrix NetScaler 是一種應用程式遞送控制器，可藉由提升效能、確保應用程式可用性及保護，並大幅降低作業成本，讓應用程式效能提高 5 倍。選擇符合應用程式需求的最佳 Citrix NetScaler 發行版本，並針對效能需求，將它部署至適當的專用系統。若要進一步瞭解 Citrix NetScaler，請參閱 Citrix 網站上的 [NetScaler 頁面 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://www.citrix.com/products/netscaler-application-delivery-controller/overview.html){:new_window}。

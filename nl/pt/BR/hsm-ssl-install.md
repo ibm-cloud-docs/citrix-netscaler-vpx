@@ -27,7 +27,7 @@ subcollection: citrix-netscaler-vpx
 Neste tópico, você instalará o Certificado SSL que criado na [Etapa por etapa](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) anterior. Para
 fazer isso, execute o procedimento a seguir:
 
-1.	Confirme se o certificado está presente no diretório `/nsconfig/ssl` em seu Citrix Netscaler VPX.
+1.	Confirme se o certificado está presente no diretório `/nsconfig/ssl` em seu {{site.data.keyword.vpx_full}}.
 
 	```
 	root@IBMADC690867-s6dr# cd /nsconfig/ssl
@@ -39,7 +39,7 @@ fazer isso, execute o procedimento a seguir:
 	ns-root.req             ns-sftrust-root.cert    ns-	sftrust.der
 	```
 
-2.	Embora a chave do certificado esteja localizada no diretório adequado, ela deve ser reconhecida como um objeto válido do Citrix Netscaler VPX para que possa se conectar e interagir com outros componentes do VPX. Para isso:
+2.	Embora a chave do certificado esteja localizada no diretório adequado, ela deve ser reconhecida como um objeto válido do {{site.data.keyword.vpx_full}} para que possa se conectar e interagir com outros componentes do VPX. Para isso:
 
 	```
 	> add ssl hsmKey NSkey_s6dr -hsmType SAFENET -	SerialNum 534071053 -password P@rtition6
@@ -111,7 +111,7 @@ fazer isso, execute o procedimento a seguir:
 	>
 	```
 
-6.	(OPCIONAL) Para evitar avisos de segurança ao acessar o conteúdo por meio de um navegador da web, talvez você queira instalar certificados "CA Intermediário". Eles permitem que o Citrix Netscaler VPX compartilhe informações com os clientes em conexão.
+6.	(OPCIONAL) Para evitar avisos de segurança ao acessar o conteúdo por meio de um navegador da web, talvez você queira instalar certificados "CA Intermediário". Eles permitem que o {{site.data.keyword.vpx_full}} compartilhe informações com os clientes em conexão.
 
 	Para obter esses certificados intermediários para RapidSSL, visite qualquer um dos links abaixo:
 

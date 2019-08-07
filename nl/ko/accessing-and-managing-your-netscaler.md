@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix NetScaler VPX 관리
+# {{site.data.keyword.vpx_full}} 관리
 {: #managing-your-citrix-netscaler-vpx}
 
 Citrix NetScaler 디바이스는 여러 가지 방법으로 {{site.data.keyword.cloud}} 솔루션을 개선하고 정제하는 데 도움이 되는 일련의 기능을 갖춘 강력한 도구입니다. {{site.data.keyword.cloud_notm}} 인프라 고객 포털에서 디바이스 정보를 찾을 수 있으며, 디바이스에 연결하여 해당 기능을 구성할 수도 있습니다.  
@@ -30,7 +30,7 @@ Citrix NetScaler 디바이스는 {{site.data.keyword.cloud_notm}} 플랫폼에 �
 1. 브라우저에서 [고객 포털 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://control.softlayer.com/){: new_window}을 열고 계정에 로그인하십시오.
 2. 고객 포털 탐색에서 **디바이스 > 디바이스 목록**을 선택하십시오.
 
-디바이스가 디바이스 이름별로 정렬되어 표시됩니다. Citrix NetScaler VPX 디바이스의 디바이스 유형은 "NetScaler"입니다.
+디바이스가 디바이스 이름별로 정렬되어 표시됩니다. {{site.data.keyword.vpx_full}} 디바이스의 디바이스 유형은 "NetScaler"입니다.
 
 NetScaler에 대한 행의 왼쪽에 있는 화살표를 클릭하여 행을 펼치고 NetScaler 관리 액세스를 위한 사용자 이름 및 마스킹된 비밀번호를 표시하십시오.
 

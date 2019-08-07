@@ -25,7 +25,7 @@ subcollection: citrix-netscaler-vpx
 
 Una suite di cifratura è una combinazione di algoritmi di autenticazione, crittografia, MAC (Message Authentication Code) e scambio di chiavi utilizzati per negoziare le impostazioni di sicurezza per i protocolli SSL e TLS.
 
-Per garantire una corretta autenticazione, devi assicurarti che il tuo Citrix Netscaler VPX utilizzi la miglior combinazione di cifrature.
+Per garantire una corretta autenticazione, devi assicurarti che il tuo {{site.data.keyword.vpx_full}} utilizzi la miglior combinazione di cifrature.
 
 Per ulteriori informazioni sulle suite di cifratura SSL e su altre procedure consigliate, visita i seguenti link:
 
@@ -69,7 +69,7 @@ Per creare una nuova suite di cifratura che dia priorità alle cifrature AEAD, E
 	bind ssl cipher <cipherGroupName> -cipherName <string>
 	```
 
-2.	Conferma che la cifratura è stata aggiunta al tuo Citrix Netscaler VPX:
+2.	Conferma che la cifratura è stata aggiunta al tuo {{site.data.keyword.vpx_full}}:
 
 	```
 	> show ssl cipher SSLLABS

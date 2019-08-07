@@ -26,9 +26,9 @@ subcollection: citrix-netscaler-vpx
 # 啟用快取重新導向及負載平衡功能
 {: #enable-cache-redirection-and-load-balancing-capabilities}
 
-若要針對 Citrix NetScaler VPX 應用裝置啟用快取重新導向及負載平衡，請執行下列步驟：
+若要針對 {{site.data.keyword.vpx_full}} 應用裝置啟用快取重新導向及負載平衡，請執行下列步驟：
 
-1. 從 Citrix NetScaler VPX 應用裝置系統頁面，移至**設定 > 配置進階特性**，然後啟用**快取重新導向**，再按一下**確定**。  
+1. 從 {{site.data.keyword.vpx_full}} 應用裝置系統頁面，移至**設定 > 配置進階特性**，然後啟用**快取重新導向**，再按一下**確定**。  
 
 	<img src="images/fp4.png" alt="圖片" style="width: 400px;"/>
 

@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Equilibrio de carga global con Citrix NetScaler VPX
+# Equilibrio de carga global con {{site.data.keyword.vpx_full}}
 {: #global-load-balancing-with-citrix-netscaler-vpx}
 
 El equilibrio de carga de servidor global (GSLB) es un mecanismo para distribuir el tráfico entre diversos servidores/instancias que normalmente se encuentran en diferentes ubicaciones geográficas. La idea es tener un servidor/motor de equilibrio global que reciba solicitudes de tráfico y las redireccione a ciertas ubicaciones, utilizando los criterios/algoritmos seleccionados y configurados por el administrador. Para ello, se pueden utilizar dos métodos reconocidos dentro de la red de {{site.data.keyword.BluSoftlayer_notm}}:
@@ -22,7 +22,7 @@ El equilibrio de carga de servidor global (GSLB) es un mecanismo para distribuir
 * **CDN:** Red de entrega de contenido (CDN) emitida para entregar contenido y medios enriquecidos como imágenes y videos, la CDN distribuye contenido en nodos geográficamente dispersos, manteniendo la menor latencia y las velocidades más altas. Normalmente se implementa cuando se deben distribuir partes particulares de contenido en lugar de sitios web y aplicaciones enteras. {{site.data.keyword.BluSoftlayer_notm}} ofrece este servicio, lea más al respecto [aquí](/docs/infrastructure/CDN?topic=CDN-getting-started).
 * **NetScaler VPX:** Al igual que con el equilibrio de carga local normal, VPX utiliza una jerarquía de objetos similar para equilibrar la carga de tráfico entre varias geografías. Utilizando búsquedas globales basadas en DNS, NetScaler elige el registro respectivo que corresponde a la ubicación/sitio seleccionado, la selección se basa en los criterios preconfigurados por el administrador. Las siguientes secciones ampliarán la información sobre esta opción/oferta.
 
-Hay otras técnicas disponibles para la distribución de contenido, como por ejemplo la redirección HTTP, que también puede aplicarse con Citrix NetScaler VPX.
+Hay otras técnicas disponibles para la distribución de contenido, como por ejemplo la redirección HTTP, que también puede aplicarse con {{site.data.keyword.vpx_full}}.
 {: note}
 
 ## Acerca del GSLB en VPX

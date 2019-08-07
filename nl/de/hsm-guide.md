@@ -14,10 +14,10 @@ lastupdated: "2018-11-12"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# IBM Hardware Security Module (HSM) mit Citrix NetScaler VPX bereitstellen und konfigurieren
+# IBM Hardware Security Module (HSM) mit {{site.data.keyword.vpx_full}} bereitstellen und konfigurieren
 {: #deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx}
 
-Diese schrittweise aufgebaute Anleitung führt Sie durch die Integration des HSM in Citrix NetScaler VPX. Die beiden Services werden dann in der Lage sein, miteinander zu kommunizieren und das für die Erstellung eines Zertifikats erforderliche Verschlüsselungsmaterial zu generieren.
+Diese schrittweise aufgebaute Anleitung führt Sie durch die Integration des HSM in {{site.data.keyword.vpx_full}}. Die beiden Services werden dann in der Lage sein, miteinander zu kommunizieren und das für die Erstellung eines Zertifikats erforderliche Verschlüsselungsmaterial zu generieren.
 
 ## Informationen zur Bereitstellung
 Diese Bereitstellung wurde mit den folgenden Komponentenspezifikationen erstellt und getestet:
@@ -37,16 +37,16 @@ Wenn Sie mit der SSL-Auslagerung nicht vertraut sind, lesen Sie diesen [Citrix-A
 
 ## Durchgeführte Schritte
 
-In dieser schrittweise aufgebauten Anleitung erfahren Sie, wie ein HSM mit einer Citrix NetScaler VPX-Instanz bereitgestellt und konfiguriert wird.
+In dieser schrittweise aufgebauten Anleitung erfahren Sie, wie ein HSM mit einer {{site.data.keyword.vpx_full}}-Instanz bereitgestellt und konfiguriert wird.
 
 Task  | Beschreibung
 ------------- | -------------
 [IBM Hardware Security Module (HSM) bestellen](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-the-ibm-hardware-security-module-hsm-) | Zunächst müssen Sie ein HSM bestellen.
-[Citrix NetScaler VPX bestellen](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-a-citrix-netscaler-vpx) | Falls noch nicht geschehen, bestellen Sie einen Citrix NetScaler VPX.
+[{{site.data.keyword.vpx_full}} bestellen](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-a-citrix-netscaler-vpx) | Falls noch nicht geschehen, bestellen Sie einen {{site.data.keyword.vpx_full}}.
 [HSM initialisieren](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-initialize-ibm-hardware-security-module-hsm-) | Bei den meisten Konfigurationen muss die HSM-Einheit initialisiert werden. Ohne Initialisierung können nur bestimmte `show`-Befehle ausgeführt werden. 
 [Partition erstellen](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-a-partition) | Eine Partition ist ein logischer und unabhängiger Speicherbereich, der dem Client zugeordnet ist, der Verschlüsselungsobjekte in der HSM-Engine anfordert oder erstellt.
 [HSM-Client-Software installieren](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-install-the-ibm-hardware-security-module-hsm-client-software) | In diesem Unterabschnitt wird VPX mit der Software und den Dienstprogrammen installiert, die für die Interaktion mit dem HSM erforderlich sind. |
 [Network Trust Link (NTL) aufbauen](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-establish-a-network-trust-link-ntl-) | Ein Network Trust Link (NTL) ist ein sicherer Kanal für die Kommunikation zwischen dem Hardware Security Module (HSM) und dem Client. |
 [Schlüssel erstellen und Zertifikatssignieranforderung generieren](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-) | In diesem Unterabschnitt wird beschrieben, wie ein Schlüsselpaar erstellt wird, das für die Generierung einer Zertifikatssignieranforderung (Certificate Signing Request, CSR) verwendet wird, und wie damit ein Zertifikat bestellt bzw. angefordert wird. | 
-[Zertifikat bestellen](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-an-ssl-certificate) | Bestellen Sie ein SSL-Zertifikat für Ihren Citrix NetScaler VPX.
+[Zertifikat bestellen](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-an-ssl-certificate) | Bestellen Sie ein SSL-Zertifikat für Ihren {{site.data.keyword.vpx_full}}.
 [Zertifikat abrufen und übertragen](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-retrieve-and-transfer-the-certificate) | Rufen Sie das zuvor bestellte SSL-Zertifikat ab und bereiten Sie alles für seine Installation und Konfiguration in der nächsten Anleitung vor. 

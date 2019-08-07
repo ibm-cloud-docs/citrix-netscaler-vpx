@@ -20,12 +20,12 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Configurando e ajustando a transferência SSL com o Citrix Netscaler VPX
+# Configurando e ajustando a transferência SSL com o {{site.data.keyword.vpx_full}}
 {: #configuring-and-tuning-ssl-offload-with-citrix-netscaler-vpx}
 
-Este passo a passo fornece orientação sobre como configurar e ajustar a transferência SSL no Citrix Netscaler VPX. Isso é feito usando o certificado e o material criptográfico gerado por meio do link do HSM.
+Este passo a passo fornece orientação sobre como configurar e ajustar a transferência SSL no {{site.data.keyword.vpx_full}}. Isso é feito usando o certificado e o material criptográfico gerado por meio do link do HSM.
 
-Este Passo a Passo considera que você concluiu as etapas em [Implementando e configurando o IBM© Hardware Security Module (HSM) com o Citrix Netscaler VPX](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) para solicitar e criar seu emparelhamento VPX/HSM.
+Este Passo a Passo considera que você concluiu as etapas em [Implementando e configurando o IBM© Hardware Security Module (HSM) com o {{site.data.keyword.vpx_full}}](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) para solicitar e criar seu emparelhamento VPX/HSM.
 {: note}
 
 ## Sobre a implementação
@@ -49,18 +49,18 @@ Se você não estiver familiarizado com a transferência de SSL, revise este [ar
 ## O que você realizará
 {: #what-you-ll-accomplish}
 
-Neste guia passo a passo, você aprenderá como configurar o SSL para um Citrix Netscaler VPX:
+Neste guia passo a passo, você aprenderá como configurar o SSL para um {{site.data.keyword.vpx_full}}:
 
 Tarefa  | Descrição
 ------------- | -------------
 [Instalar o certificado](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-install-your-ssl-certificate) | Instale o certificado SSL que você criou no [Passo a passo](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) anterior.
-[Verificar e configurar o registro DNS](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-check-and-configure-the-dns-record) | Certifique-se de que exista um registro de DNS para o FQDN que aponte para o endereço público a ser configurado no Citrix Netscaler VPX como um Virtual Server.
+[Verificar e configurar o registro DNS](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-check-and-configure-the-dns-record) | Certifique-se de que exista um registro de DNS para o FQDN que aponte para o endereço público a ser configurado no {{site.data.keyword.vpx_full}} como um Virtual Server.
 [Incluir e configurar o SSL Virtual Server](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-add-and-configure-the-ssl-virtual-server) | Inclua e configure um SSL Virtual Server.
 [Criar e aplicar um novo conjunto de cifras](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-and-apply-a-new-cipher-suite) | Crie um conjunto de cifras que priorize e dê preferência ao AEAD, ao ECDHE e ao ECDSA.
 
 ## Recursos Adicionais
 {: #additional-resources}
-Os recursos adicionais a seguir podem ajudar você a obter o máximo do seu Citrix NetScaler VPX ao usar o IBM Hardware Security Module.
+Os recursos adicionais a seguir podem ajudar você a obter o máximo do seu {{site.data.keyword.vpx_full}} ao usar o IBM Hardware Security Module.
 
 * [Documentação do produto NetScaler 12.1 ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://docs.citrix.com/en-us/netscaler/12-1/){:new_window}
 * [Portal de suporte da Gemalto ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://supportportal.gemalto.com/csm?id=csm_index){:new_window}

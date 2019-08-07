@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix Netscaler VPX での URL のリダイレクト
+# {{site.data.keyword.vpx_full}} での URL のリダイレクト
 {: #redirecting-urls-in-a-citrix-netscaler-vpx}
 
 NetScaler で `http://` から `https://` へのリダイレクトを実行する最も一般的な方法は、元々「サーバー・ダウン」ページまたは「保守」ページにリダイレクトするためのものであったバックアップ/リダイレクト機能を利用することです。  

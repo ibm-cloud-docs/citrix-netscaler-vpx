@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix NetScaler VPX のデフォルト・デプロイメント
+# {{site.data.keyword.vpx_full}} のデフォルト・デプロイメント
 {: #citrix-netscaler-vpx-default-deployment}
 
 [カスタマー・ポータル![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://control.softlayer.com/)の**「デバイス (Devices)」>「デバイス・リスト (Device List)」**で NetScaler を表示すると、他のサーバーとは異なる外観になることがあります。 つまり、デバイスにはプライベート IP アドレスはありますが、パブリック IP アドレスはありません。

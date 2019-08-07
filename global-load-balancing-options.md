@@ -21,10 +21,10 @@ Global server load balancing (GSLB) is a method to split traffic across multiple
 
 You may not require a full implementation of a global load balancing solution. GSLB requires multiple instances of a suitable device that can perform this function, and depending on your needs, other solutions might be more attractive to you. If you need entire websites and applications, then GSLB is a good choice. If you only need portions of your content, such as images, videos, or other large files, then a [Content Delivery Network](/docs/infrastructure/CDN?topic=CDN-about-content-delivery-networks-cdn-) might be more suitable (and easier to deploy).
 
-## Citrix NetScaler VPX
+## {{site.data.keyword.vpx_full}}
 {: #citrix-netscaler-vpx}
 
-The Citrix NetScaler VPX is the only customer configurable device that does true global load balancing. NetScaler is a multi-function appliance that can perform DNS based global load balancing lookups. You can point to the NetScaler as a DNS server, and the device will look over the servers it is configured to load balance for, perform a distance calculation, and return a record with the IP of the server closest to the client request.
+The {{site.data.keyword.vpx_full}} is the only customer configurable device that does true global load balancing. NetScaler is a multi-function appliance that can perform DNS based global load balancing lookups. You can point to the NetScaler as a DNS server, and the device will look over the servers it is configured to load balance for, perform a distance calculation, and return a record with the IP of the server closest to the client request.
 
 For global load balancing, you would have a NetScaler appliance configuration in each data center. Each NetScaler appliance configuration may be a single Netscaler or a pair of Netscalers in an HA pair, depending on your requirements, providing local load balancing services for the servers behind them. The devices are configured to talk to one another so they exchange state information on each server assigned to global load balancer rotation. Any DNS request that comes to these configured NetScalers can return a proper record for a server that is online and responsive. Any server not responsive is removed from the rotation and another selected.
 

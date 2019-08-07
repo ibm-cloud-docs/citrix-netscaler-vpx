@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# 設定 Citrix Netscaler VPX 以取得高可用性 (HA)
+# 設定 {{site.data.keyword.vpx_full}} 以取得高可用性 (HA)
 {: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
 
 負載平衡器是用來平衡多部應用程式伺服器的資料流量，以改善可擴充應用程式中的效能及穩定性。然而，單一負載平衡器是單點故障。請配置「高可用性 (HA)」Netscaler VPX 配對來避免此問題。配置 HA 配對需要有兩部 Netscaler VPX 伺服器。繼續進行負載平衡的次要伺服器步驟，則主要伺服器應該會失敗。

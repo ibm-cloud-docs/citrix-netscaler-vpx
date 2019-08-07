@@ -25,7 +25,7 @@ subcollection: citrix-netscaler-vpx
 
 Une suite de chiffrement est une combinaison des algorithmes d'authentification, de chiffrement, de code d'authentification de message (MAC) et d'échange de clés utilisée afin de paramétrer la sécurité des protocoles SSL et TLS.
 
-Pour garantir une authentification appropriée, assurez-vous que votre Citrix NetScaler VPX utilise la meilleure combinaison de chiffrements.
+Pour garantir une authentification appropriée, assurez-vous que votre {{site.data.keyword.vpx_full}} utilise la meilleure combinaison de chiffrements.
 
 Pour en savoir plus sur les suites de chiffrement SSL et autres meilleures pratiques, consultez les liens suivants :
 
@@ -69,7 +69,7 @@ Pour créer une nouvelle suite de chiffrement qui donne la priorité aux chiffre
 	bind ssl cipher <cipherGroupName> -cipherName <string>
 	```
 
-2.	Assurez-vous que le chiffrement a été ajouté à Citrix NetScaler VPX :
+2.	Assurez-vous que le chiffrement a été ajouté à {{site.data.keyword.vpx_full}} :
 
 	```
 	> show ssl cipher SSLLABS

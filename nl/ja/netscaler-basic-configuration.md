@@ -67,5 +67,5 @@ NetScaler GUI の「構成 (Configuration)」画面で、左側の**「トラフ
 
 これで、Web サイトのロード・バランシング・プールとポリシーを作成しました。
 
-Citrix NetScaler VPX デバイスの構成について詳しくは、[Citrix 資料ページ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://docs.citrix.com/en-us/netscaler.html) を参照してください。さらに支援が必要な場合は、{{site.data.keyword.BluSoftlayer_notm}} のサポートおよび営業担当員にお問い合わせください。
+{{site.data.keyword.vpx_full}} デバイスの構成について詳しくは、[Citrix 資料ページ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://docs.citrix.com/en-us/netscaler.html) を参照してください。さらに支援が必要な場合は、{{site.data.keyword.BluSoftlayer_notm}} のサポートおよび営業担当員にお問い合わせください。
 {: note}

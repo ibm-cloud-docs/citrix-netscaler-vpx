@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="citrix-netscaler-vpx" category="network" audience="network" href="/docs/infrastructure/citrix-netscaler-vpx?topic=infrastructure/citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance" path="infrastructure/citrix-netscaler-vpx"}
-Citrix NetScaler VPX
+{{site.data.keyword.vpx_full}}
 
     {: .navgroup id="learn"}
     getting-started.md	
@@ -22,7 +22,7 @@ Citrix NetScaler VPX
     url-redirection-netscaler-vpx.md
 
     {: .topicgroup}
-    Passo a passo: configurando o redirecionamento de tráfego de proxy de encaminhamento usando o dispositivo Citrix NetScaler VPX
+    Passo a passo: configurando o redirecionamento de tráfego de proxy de encaminhamento usando o dispositivo {{site.data.keyword.vpx_full}}
         fp-guide.md
         order-vpx.md
         request-subnet.md
@@ -34,7 +34,7 @@ Citrix NetScaler VPX
         fp-proxy-settings.md
 
     {: .topicgroup}
-    Passo a passo: implementando e configurando o IBM Hardware Security Module (HSM) com o Citrix Netscaler VPX
+    Passo a passo: implementando e configurando o IBM Hardware Security Module (HSM) com o {{site.data.keyword.vpx_full}}
         hsm-guide.md
         hsm-order-hsm.md
         hsm-order-vpx.md
@@ -48,7 +48,7 @@ Citrix NetScaler VPX
         hsm-retrieve-certificate.md
 
     {: .topicgroup}
-    Passo a passo: configurando a VPN IPSec site-a-site no Citrix NetScaler VPX com o IBM Virtual Router Appliance
+    Passo a passo: configurando a VPN IPSec site-a-site no {{site.data.keyword.vpx_full}} com o IBM Virtual Router Appliance
         ipsec-guide.md
         ipsec-enable-features.md
         ipsec-profile.md
@@ -58,7 +58,7 @@ Citrix NetScaler VPX
         ipsec-verification.md
         
     {: .topicgroup}
-    Passo a passo: configurando e ajustando a transferência SSL com o Citrix Netscaler VPX
+    Passo a passo: configurando e ajustando a transferência SSL com o {{site.data.keyword.vpx_full}}
         hsm-ssl-guide.md
         hsm-ssl-install.md
         hsm-ssl-dns.md

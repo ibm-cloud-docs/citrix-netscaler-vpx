@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# 在 Citrix NetScaler VPX 中使用 IBM 虚拟路由器设备配置 IPSec 站点到站点 VPN
+# 在 {{site.data.keyword.vpx_full}} 中使用 IBM 虚拟路由器设备配置 IPSec 站点到站点 VPN
 {:#configuring-ipsec-site-to-site-vpn-in-citrix-netscaler-vpx}
 
 本指南提供了在 Citrix VPX 中配置 IPSec VPN 站点到站点连接的逐步指示信息。IBM 虚拟路由器设备 (VRA) 用作 VPN 同级。
@@ -42,7 +42,7 @@ subcollection: citrix-netscaler-vpx
 
 本指南假定拥有这两个设备。请访问以下链接以获取有关订购的指示信息。
 
--	[Citrix NetScaler VPX 软件设备入门](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started)
+-	[{{site.data.keyword.vpx_full}} 软件设备入门](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started)
 -	[IBM 虚拟路由器设备入门](/docs/infrastructure/virtual-router-appliance?topic=virtual-router-appliance-getting-started)
 
 ## 需要完成的任务

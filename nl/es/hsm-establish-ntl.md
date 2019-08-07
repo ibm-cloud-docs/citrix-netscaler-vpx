@@ -63,7 +63,7 @@ Para establecer el enlace de confianza de red, realice el procedimiento siguient
 
 	Para obtener más información sobre la biblioteca virtual de cintas (VTL), vaya a la [Guía de referencia de los programas de utilidad ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/utilities_reference_guide.pdf){: new_window}.
 
-3.	Transfiera el archivo de certificado del servidor HSM al cliente Citrix Netscaler VPX utilizando el SCP y, a continuación, añada el servidor:
+3.	Transfiera el archivo de certificado del servidor HSM al cliente {{site.data.keyword.vpx_full}} utilizando el SCP y, a continuación, añada el servidor:
 
 	```
 	root@IBMADC690867-s6dr# scp hsm_admin@10.121.229.201:server.pem .

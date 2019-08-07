@@ -17,12 +17,12 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# 关于 Citrix NetScaler VPX
+# 关于 {{site.data.keyword.vpx_full}}
 {: #about-citrix-netscaler-vpx}
 
-Citrix NetScaler VPX 是一种专用虚拟软件设备，用于在公用和专用 IBM© Cloud 网络上提供负载均衡。
+{{site.data.keyword.vpx_full}} 是一种专用虚拟软件设备，用于在公用和专用 IBM© Cloud 网络上提供负载均衡。
 
-在 {{site.data.keyword.BluSoftlayer_notm}} 解决方案中部署 Citrix NetScaler VPX 可加速 Web 应用程序交付，提升性能，并确保云应用程序和服务保持优化、可用和安全。如果您有挑战性的工作负载（例如，游戏、大数据和分析或私有云），那么 Citrix NetScaler VPX 可以帮助您以用户最需要的时间、地点和方式交付解决方案。
+在 {{site.data.keyword.BluSoftlayer_notm}} 解决方案中部署 {{site.data.keyword.vpx_full}} 可加速 Web 应用程序交付，提升性能，并确保云应用程序和服务保持优化、可用和安全。如果您有挑战性的工作负载（例如，游戏、大数据和分析或私有云），那么 {{site.data.keyword.vpx_full}} 可以帮助您以用户最需要的时间、地点和方式交付解决方案。
 
 ## 功能部件
 {: #features}
@@ -55,7 +55,7 @@ Citrix NetScaler VPX 是一种专用虚拟软件设备，用于在公用和专�
 * 像其他任何 {{site.data.keyword.BluSoftlayer_notm}} 服务器一样进行部署，注重灵活性和可用性
 * 在多个带宽层中提供：10 Mbps、200 Mbps 和 1000 Mbps
 
-Citrix NetScaler VPX 在仅仅 15 分钟内，就可按需部署到世界各地的任何 {{site.data.keyword.BluSoftlayer_notm}} 数据中心。有多个许可模型包含您需要的速度和功能，并提供当今云解决方案所需的灵活性。这种灵活性可确保适合用于从中小型企业一直到大型企业的所有用例。
+{{site.data.keyword.vpx_full}} 在仅仅 15 分钟内，就可按需部署到世界各地的任何 {{site.data.keyword.BluSoftlayer_notm}} 数据中心。有多个许可模型包含您需要的速度和功能，并提供当今云解决方案所需的灵活性。这种灵活性可确保适合用于从中小型企业一直到大型企业的所有用例。
 
 {{site.data.keyword.BluSoftlayer_notm}} 为 NetScaler VPX 虚拟设备提供了不受限完全 root 用户访问权。   
 
@@ -67,7 +67,7 @@ Citrix NetScaler VPX 在仅仅 15 分钟内，就可按需部署到世界各地�
 ## 流量过滤
 {: #traffic-filtering}
 
-Citrix NetScaler VPX 可过滤从最终用户到服务器的请求以及从服务器到最终用户的响应。应用程序防火墙的“学习”功能支持实时对会话进行概要分析，并确定是否允许流量。
+{{site.data.keyword.vpx_full}} 可过滤从最终用户到服务器的请求以及从服务器到最终用户的响应。应用程序防火墙的“学习”功能支持实时对会话进行概要分析，并确定是否允许流量。
 
 ## PCI-DSS 报告
 {: #pci-dss-reporting}

@@ -28,7 +28,7 @@ subcollection: citrix-netscaler-vpx
 
 La conversion d'adresses réseau (NAT) est une méthode de remappage d'un espace d'adresse IP à un autre en modifiant les informations d'adresse réseau dans l'en-tête IP des paquets lorsqu'ils sont en cours d'acheminement sur un périphérique de routage de trafic.
 
-Vous pouvez utiliser votre dispositif Citrix NetScaler VPX pour effectuer une conversion NAT sur le trafic sortant depuis vos machines client. Pour ce faire, procédez comme suit :
+Vous pouvez utiliser votre dispositif {{site.data.keyword.vpx_full}} pour effectuer une conversion NAT sur le trafic sortant depuis vos machines client. Pour ce faire, procédez comme suit :
 
 1. Accédez à System > Network > Routes, et sélectionnez l'onglet **RNAT**. Cliquez sur **Configure RNAT**.
 

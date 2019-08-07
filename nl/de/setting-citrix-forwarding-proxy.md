@@ -8,7 +8,7 @@ lastupdated: "2017-11-02"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Citrix NetScaler VPX als Weiterleitungsproxy konfigurieren
+# {{site.data.keyword.vpx_full}} als Weiterleitungsproxy konfigurieren
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
 
 Ein Weiterleitungsproxy fungiert als zentraler Steuerungspunkt zwischen Clients in einem internen Netz und dem Internet. Ein Proxy ermöglicht dem Netz- oder Sicherheitsadministrator die Erstellung von Richtlinien, die den Zugriff auf Internet-Sites einschränken.
@@ -19,7 +19,7 @@ Normalerweise wird ein Proxy mit einer Firewall kombiniert, um die Sicherheit de
 
 ## Schritt 1: Zu verwendende VIPs im privaten Netz anfordern 
 
-Wenn eine Citrix NetScaler VPX-Lastausgleichsfunktion im Kundenportal von {{site.data.keyword.BluSoftlayer_notm}} bestellt wird, dann wird angenommen, dass ein Reverse Proxy angefordert wird. Der Anforderer wird zur Angabe der Anzahl der öffentlichen IPs aufgefordert, die als virtuelle IPs (VIPs) benutzt werden sollen.
+Wenn eine {{site.data.keyword.vpx_full}}-Lastausgleichsfunktion im Kundenportal von {{site.data.keyword.BluSoftlayer_notm}} bestellt wird, dann wird angenommen, dass ein Reverse Proxy angefordert wird. Der Anforderer wird zur Angabe der Anzahl der öffentlichen IPs aufgefordert, die als virtuelle IPs (VIPs) benutzt werden sollen.
 
 Im Falle eines Forward Proxys müssen die VIPs in einem privaten Netz eingerichtet werden. Es muss ein Support-Ticket geöffnet werden, um VIPs für das private Netz anzufordern. Die erforderliche Anzahl der VIPs bestimmt die Größe des Teilnetzes, die im Ticket angefordert wird. Die Teilnetzinformationen werden im Ticket zurückgegeben.
 
@@ -29,16 +29,16 @@ Im vorliegenden Beispiel wurde ein Teilnetz vom Typ `/29` angefordert. Dadurch e
 
 * Teilnetz-IP (SNIP) `10.114.52.101` und weitergeleitetes Teilnetz `10.114.27.0/29`.
 
-* Die VIPs `10.114.27.0-3` wurden vom Support-Team zu Citrix NetScaler VPX hinzugefügt.
+* Die VIPs `10.114.27.0-3` wurden vom Support-Team zu {{site.data.keyword.vpx_full}} hinzugefügt.
 
-## Schritt 2: Lastausgleichs- und Cacheweiterleitungsfunktionen für Citrix NetScaler VPX aktivieren
+## Schritt 2: Lastausgleichs- und Cacheweiterleitungsfunktionen für {{site.data.keyword.vpx_full}} aktivieren
 
-Standardmäßig sind die Lastausgleichs- und Cacheweiterleitungsfunktionen für die Citrix NetScaler VPX-Einrichtung für den Lastausgleich inaktiviert. Diese Funktionen können mit dem Befehl `enable ns feature cr lb` aktiviert werden.
+Standardmäßig sind die Lastausgleichs- und Cacheweiterleitungsfunktionen für die {{site.data.keyword.vpx_full}}-Einrichtung für den Lastausgleich inaktiviert. Diese Funktionen können mit dem Befehl `enable ns feature cr lb` aktiviert werden.
 
 
 ## Schritt 3: Forward Proxy erstellen
 
-Geben Sie in der Befehlszeile die folgenden Befehle für Citrix NetScaler VPX ein. Im vorliegenden Szenario wird lediglich einer der beiden DNS-Server für {{site.data.keyword.BluSoftlayer_notm}} hinzugefügt.  
+Geben Sie in der Befehlszeile die folgenden Befehle für {{site.data.keyword.vpx_full}} ein. Im vorliegenden Szenario wird lediglich einer der beiden DNS-Server für {{site.data.keyword.BluSoftlayer_notm}} hinzugefügt.  
 
 ```
 add cr vserver vs_forward_cache HTTP 10.114.27.3 80 -cachetype forward -redirect origin
@@ -74,7 +74,7 @@ Sie können die Datei `/etc/resolv.conf` manuell bearbeiten und dabei den Verwei
 
 Alternativ hierzu können Sie die Schnittstelle `/etc/sysconfig/network-scripts/ifcfg-ethx` bearbeiten und die Anweisung `DNS1=` hinzufügen. Nachdem diese Einstellung angegeben wurde, kann der Servicebefehl für den Neustart des Netzes ausgegeben werden, um die Änderungen zu aktivieren.
 
-In beiden Fällen muss die DNS-IP-Adresse als virtuelle DNS-Adresse konfiguriert werden und der Browser des Clients muss so konfiguriert werden, dass Anforderungen an den Weiterleitungsproxy von Citrix NetScaler VPX übergeben werden.
+In beiden Fällen muss die DNS-IP-Adresse als virtuelle DNS-Adresse konfiguriert werden und der Browser des Clients muss so konfiguriert werden, dass Anforderungen an den Weiterleitungsproxy von {{site.data.keyword.vpx_full}} übergeben werden.
 
 Führen Sie die folgenden Schritte in Firefox aus, um die erforderlichen Änderungen durchzuführen:
 

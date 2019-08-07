@@ -21,10 +21,10 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix Netscaler VPX を使用した IBM Hardware Security Module (HSM) のデプロイと構成
+# {{site.data.keyword.vpx_full}} を使用した IBM Hardware Security Module (HSM) のデプロイと構成
 {: #deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx}
 
-このステップバイステップ・ガイドは、HSM を Citrix Netscaler VPX と統合するプロセスを説明します。 統合後、この 2 つのサービスは、証明書の作成に必要な暗号素材を通信および生成できるようになります。
+このステップバイステップ・ガイドは、HSM を {{site.data.keyword.vpx_full}} と統合するプロセスを説明します。 統合後、この 2 つのサービスは、証明書の作成に必要な暗号素材を通信および生成できるようになります。
 
 ## デプロイメントについて
 {: #about-the-deployment}
@@ -49,16 +49,16 @@ SSL オフロードに精通していない場合は、この [Citrix 記事](ht
 
 {: #what-you-ll-accomplish}
 
-このステップバイステップ・ガイドでは、Citrix Netscaler VPX を使用して HSM をデプロイして構成する方法を学ぶことができます。
+このステップバイステップ・ガイドでは、{{site.data.keyword.vpx_full}} を使用して HSM をデプロイして構成する方法を学ぶことができます。
 
 タスク  | 説明
 ------------- | -------------
 [Hardware Security Module (HSM) の注文](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-the-ibm-hardware-security-module-hsm-) | 最初に、HSM を注文する必要があります。
-[Citrix Netscaler VPX の注文](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-a-citrix-netscaler-vpx) | まだ注文していない場合は、Citrix Netscaler VPX を注文します。
+[{{site.data.keyword.vpx_full}} の注文](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-a-citrix-netscaler-vpx) | まだ注文していない場合は、{{site.data.keyword.vpx_full}} を注文します。
 [HSM の初期化](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-initialize-ibm-hardware-security-module-hsm-) | ほとんどの構成で HSM デバイスの初期化が必要となります。 これを行わないと、特定の `show` コマンド以外は実行できません。
 [パーティションの作成](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-a-partition) | パーティションとは、HSM エンジン内で暗号オブジェクトを要求または作成するクライアントに関連付けまたは接続された論理スペースまたは独立スペースです。
 [HSM クライアント・ソフトウェアのインストール](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-install-the-ibm-hardware-security-module-hsm-client-software) | このサブセクションでは、HSM との相互作用で必要となるソフトウェアおよびユーティリティーと共に VPX がインストールされます。 |
 [ネットワーク・トラスト・リンク (NTL) の確立](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-establish-a-network-trust-link-ntl-) | ネットワーク・トラスト・リンク (NTL) は Hardware Security Module (HSM) および通信するクライアントのセキュア・チャネルです。 |
 [鍵の作成および証明書署名要求 (CSR) の生成](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-) | このサブセクションでは、証明書署名要求 (CSR) の生成に使用される鍵ペアを作成し、それを使用して証明書を注文または要求します。 |
-[証明書の注文](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-an-ssl-certificate) | Citrix Netscaler VPX の SSL 証明書を注文します。
+[証明書の注文](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-an-ssl-certificate) | {{site.data.keyword.vpx_full}} の SSL 証明書を注文します。
 [証明書の取得と転送](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-retrieve-and-transfer-the-certificate) | 事前に注文しておいた SSL 証明書を取得し、次のステップバイステップでインストールと構成を行う準備をすべて整えます。 

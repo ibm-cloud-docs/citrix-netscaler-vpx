@@ -24,6 +24,6 @@ Gehen Sie wie folgt vor, um die Proxy-Einstellungen mit dem Internet-Browser Ihr
 1. Rufen Sie **Internetoptionen** in Ihren Browsereinstellungen auf und legen Sie die Verwendung eines Proxy-Servers für abgehende Anforderungen fest. 
 2. Verwenden Sie die IP-Adresse Ihres virtuellen Servers für die Cacheweiterleitung, der in vorangegangenen Schritten als Proxy-Server definiert wurde. 
 
-**HINWEIS:** Diese Proxy-Einstellungen sind möglicherweise nicht erforderlich, wenn sich die Citrix NetScaler VPX-Appliance im direkten Layer-3-Pfad zwischen Clientmaschinen und dem Internet befindet.
+**HINWEIS:** Diese Proxy-Einstellungen sind möglicherweise nicht erforderlich, wenn sich die {{site.data.keyword.vpx_full}}-Appliance im direkten Layer-3-Pfad zwischen Clientmaschinen und dem Internet befindet.
 
 <img src="images/fp17.png" alt="Zeichnung" style="width: 500px;"/>

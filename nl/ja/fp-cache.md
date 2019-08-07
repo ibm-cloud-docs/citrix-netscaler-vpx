@@ -26,9 +26,9 @@ subcollection: citrix-netscaler-vpx
 # キャッシュのリダイレクト機能とロード・バランシング機能の有効化
 {: #enable-cache-redirection-and-load-balancing-capabilities}
 
-Citrix NetScaler VPX アプライアンスでキャッシュのリダイレクト機能とロード・バランシング機能を有効にするには、以下の手順を実行します。
+{{site.data.keyword.vpx_full}} アプライアンスでキャッシュのリダイレクト機能とロード・バランシング機能を有効にするには、以下の手順を実行します。
 
-1. Citrix NetScaler VPX アプライアンス・システムのページで、**「設定」 > 「拡張機能の構成 (Configure Advanced Features)」**と移動し、**「キャッシュのリダイレクト」**を有効にして**「OK」**をクリックします。  
+1. {{site.data.keyword.vpx_full}} アプライアンス・システムのページで、**「設定」 > 「拡張機能の構成 (Configure Advanced Features)」**と移動し、**「キャッシュのリダイレクト」**を有効にして**「OK」**をクリックします。  
 
 	<img src="images/fp4.png" alt="図面" style="width: 400px;"/>
 
