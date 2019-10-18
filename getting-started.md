@@ -15,16 +15,16 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Getting started with Citrix Netscaler VPX
+# Getting started With Citrix Netscaler VPX
 {: #getting-started}
 
-Deploying a {{site.data.keyword.vpx_full}} in your {{site.data.keyword.BluSoftlayer_notm}} solution accelerates web application delivery, boosts performance, and ensures your cloud applications and services stay optimized, available, and secure. If you have challenging workloads, such as gaming, big data and analytics, or private clouds, the {{site.data.keyword.vpx_full}} can help you deliver your solution when, where, and how your users need it most.
+Deploying a {{site.data.keyword.vpx_full}} in your IBM Cloud solution accelerates web application delivery, boosts performance, and ensures your cloud applications and services stay optimized, available, and secure. If you have challenging workloads, such as gaming, big data and analytics, or private clouds, the {{site.data.keyword.vpx_full}} can help you deliver your solution when, where, and how your users need it most.
 
 ## Before you begin
 {: #before-you-begin}
 To get started with {{site.data.keyword.vpx_full}}, you will need to know the following information:
 
-* Your IBM© Cloud Customer Portal login information
+* Your IBM© Cloud catalog login information
 * The deployment location for your load balancer
 * Which Netscaler type best fits your needs (for more information refer to [Explore Load Balancers](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore)
 * The number of public IP addresses needed
@@ -33,21 +33,23 @@ To get started with {{site.data.keyword.vpx_full}}, you will need to know the fo
 ## Ordering a {{site.data.keyword.vpx_full}}
 {: #ordering-a-citrix-netscaler-vpx}
 
-To order a {{site.data.keyword.vpx_full}} software appliance, navigate to the order page in the Customer Portal:
+To order a {{site.data.keyword.vpx_full}} software appliance, navigate to the order page in the IBM Cloud catalog:
 
-1. From your browser, open  [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} and log into your account.
-2. In the Customer Portal navigation, select **Devices > Devices List** and click on the **Order Devices** link.
-3. In the **Order SoftLayer Products and Services** page, scroll down to the Network section and click the **Order** link under {{site.data.keyword.vpx_full}}.
-4. Select a Location from the dropdown menu where you would like to deploy your {{site.data.keyword.vpx_full}} software appliance.  
-5. Select the best NetScaler type for your software edition, software version and throughput needs.
-6. Select the number of public IP addresses you need.  
+1. From your browser, open the [IBM Cloud catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log into your account.
+2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
+3. Click the **Order Devices** button.
+4. In the Catalog page, scroll down to the Network section and click the **Load Balancer** tile.
+5. Select {{site.data.keyword.vpx_full}}, then click **Create**.
+6. Select a Location from the dropdown menu where you would like to deploy your {{site.data.keyword.vpx_full}} software appliance.  
+7. Select the best NetScaler type for your software edition, software version and throughput needs.
+8. Select the number of public IP addresses you need.  
 	These are static public IP addresses, deployed as virtual IP addresses (VIPs) on your NetScaler VPX.
-7. Click **Continue**.
-8. Enter the information required by ARIN (or the equivalent organization in your region of deployment) for the IP addresses you've requested.
-9. Enter your contact information.
-10. Select your VLAN.
+9. Click **Continue**.
+10. Enter the information required by ARIN (or the equivalent organization in your region of deployment) for the IP addresses you've requested.
+11. Enter your contact information.
+12. Select your VLAN.
 	To minimize latency and ensure optimized utilization of your network resources, assign the {{site.data.keyword.vpx_full}} to the same VLAN as the servers where the traffic will be distributed.
-11. Review the order, accept the terms, and click **Place Order**. The {{site.data.keyword.vpx_full}} software appliance deploys with your selected settings.
+13. Review the order, accept the terms, and click **Place Order**. The {{site.data.keyword.vpx_full}} software appliance deploys with your selected settings.
 
 ## What's Next
 {: #what-s-next}

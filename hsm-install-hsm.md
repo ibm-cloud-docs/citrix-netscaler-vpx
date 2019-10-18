@@ -40,7 +40,7 @@ Please be aware that all VPX commands and outputs in this document will list eit
 
 1.	(OPTIONAL) Obtain the `safenet_dirs.tar` file and transfer it to the VPX in the `/var` directory. The `safenet_dirs.tar` file can be obtained from [here ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://downloads.service.softlayer.com/citrix/netscaler/Safenet-HSM/){:new_window}.
 
-	You must be logged into your SoftLayer account to access the above link.
+	You must be logged into your IBM Cloud account to access the above link.
   {: note}
 
 	<img src="images/4-transfer-safenet_dirs.png" alt="drawing" style="width: 600px;"/>

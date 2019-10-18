@@ -26,7 +26,7 @@ subcollection: citrix-netscaler-vpx
 To configure a DNS virtual server:
 
 1. Go to Traffic Management > Load Balancing > Servers.
-2. Click Add to add the two IBM© Softlayer DNS resolvers - 10.0.80.11 and 10.0.80.12.
+2. Click Add to add the two IBM© Cloud DNS resolvers - 10.0.80.11 and 10.0.80.12.
 
 	<img src="images/fp5.png" alt="drawing" style="width: 200px;"/> <img src="images/fp5b.png" alt="drawing" style="width: 200px;"/>
 
@@ -46,7 +46,7 @@ To configure a DNS virtual server:
 
 7. Click Close then click Done.
 
-	Assuming the two IBM Softlayer DNS resolvers can be reached from your {{site.data.keyword.vpx_full}} appliance, the service group will show as green.
+	Assuming the two IBM Cloud DNS resolvers can be reached from your {{site.data.keyword.vpx_full}} appliance, the service group will show as green.
 
 8. Now, go to Traffic Management > Load Balancing > Virtual Servers and click Add to define your DNS Virtual server.
 9. Under Basic Settings give a name to your virtual server, choose the DNS protocol and port 53, then assign an IP address from your private subnet.

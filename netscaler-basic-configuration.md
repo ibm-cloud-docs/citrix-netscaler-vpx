@@ -17,7 +17,7 @@ subcollection: citrix-netscaler-vpx
 # Basic Load Balancing Configuration
 {: #basic-load-balancing-configuration}
 
-Consider a company that has a basic social community website where end-users can register for an account that requires no sensitive information, after which the user can log in and post pictures of their pets. There are three web/application servers, and one database server to back them up. The domain and DNS are hosted with {{site.data.keyword.BluSoftlayer_notm}}, and because they have a small environment, the NetScaler and web/app servers are all in the same VLAN. This simplifies things, as no further configuration is needed for the NetScaler to set up a basic load balancing policy. The following procedure is an oversimplified explanation of the traffic flow in this instance:
+Consider a company that has a basic social community website where end-users can register for an account that requires no sensitive information, after which the user can log in and post pictures of their pets. There are three web/application servers, and one database server to back them up. The domain and DNS are hosted with IBM Cloud, and because they have a small environment, the NetScaler and web/app servers are all in the same VLAN. This simplifies things, as no further configuration is needed for the NetScaler to set up a basic load balancing policy. The following procedure is an oversimplified explanation of the traffic flow in this instance:
 
 1. A user enters the URL into their browser.
 2. The URL's DNS record points to one of the Public VIPs on the NetScaler.
@@ -67,5 +67,5 @@ Now, bind the services you created to your Virtual Server.
 
 You have created a load balancing pool and policy for your website.
 
-To learn more about configuration of the {{site.data.keyword.vpx_full}} device, please visit the [Citrix documentation page ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/netscaler.html). For further assistance, contact the {{site.data.keyword.BluSoftlayer_notm}} support and sales.
+To learn more about configuration of the {{site.data.keyword.vpx_full}} device, please visit the [Citrix documentation page ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/netscaler.html). For further assistance, contact the IBM Cloud support and sales.
 {: note}

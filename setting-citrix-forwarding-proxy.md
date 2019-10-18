@@ -27,7 +27,7 @@ Typically, a proxy is combined with a firewall to ensure the security of clients
 ## Step 1: Request VIPs to use in the Private Network
 {: #step-1-request-vips-to-use-in-the-private-network}
 
-When a {{site.data.keyword.vpx_full}} load balancer is ordered from the {{site.data.keyword.BluSoftlayer_notm}} customer portal, it is assumed a reverse proxy is being requested. The requestor will be asked for the number of “public” IPs to be used as virtual IPs (VIPs).
+When a {{site.data.keyword.vpx_full}} load balancer is ordered from the IBM Cloud catalog, it is assumed a reverse proxy is being requested. The requestor will be asked for the number of “public” IPs to be used as virtual IPs (VIPs).
 
 In the case of a forward proxy, the VIPs need to be setup on the private network. A support ticket needs to be opened in order to request VIPs for the private network. The number of VIPs required will determine the size of the subnet requested in the ticket. The subnet information will be returned in the ticket.
 
@@ -48,7 +48,7 @@ By default, the load balancing and cache redirect features on the {{site.data.ke
 ## Step 3: Create the Forward Proxy
 {: #step-3-create-the-forward-proxy}
 
-Use the command line to issue the following commands on to the {{site.data.keyword.vpx_full}}. In our scenario, only one of the two {{site.data.keyword.BluSoftlayer_notm}} DNS servers are added.  
+Use the command line to issue the following commands on to the {{site.data.keyword.vpx_full}}. In our scenario, only one of the two IBM Cloud DNS servers are added.  
 
 ```
 add cr vserver vs_forward_cache HTTP 10.114.27.3 80 -cachetype forward -redirect origin
@@ -66,7 +66,7 @@ Line 1 creates the redirect cache. The protocol is HTTP and `10.114.27.3` is one
 
 Line 2 adds a load balancing VIP that will represent the “real” DNS.
 
-Line 3 adds the IP address of the “real” DNS as a service. This address can be the customer DNS or routed back to the {{site.data.keyword.BluSoftlayer_notm}} supplied DNS resolvers.
+Line 3 adds the IP address of the “real” DNS as a service. This address can be the customer DNS or routed back to the IBM Cloud supplied DNS resolvers.
 
 Line 4 binds the VIP to the “real” server. All DNS requests to `10.114.27.4` will be sent to `10.0.80.12`.
 

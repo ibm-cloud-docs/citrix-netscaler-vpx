@@ -37,7 +37,7 @@ Load balancing traffic has become a key aspect of many customer implementations 
 * Scalability. Additional servers can be added as demand increases, enabling the load balancer to distribute the workload over the additional servers.
 * Efficiency. Workloads are dynamically distributed when load balancing is configured. For example, resources like CPUs can be used in a more efficient ways.
 
-## How many load balancing options are available in {{site.data.keyword.BluSoftlayer_notm}}?
+## How many load balancing options are available in IBM Cloud?
 {: faq}
 
 For a detailed comparison of the IBM© Load Balancer offerings, refer to [Explore Load Balancers](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore).
@@ -45,12 +45,12 @@ For a detailed comparison of the IBM© Load Balancer offerings, refer to [Explor
 ## Does NetScaler support IPv6?
 {: faq}
 
-Yes. Both IPv6 and IPv4 are supported on the {{site.data.keyword.BluSoftlayer_notm}} public network.
+Yes. Both IPv6 and IPv4 are supported on the IBM Cloud public network.
 
 ## Will the NetScaler load balance traffic on the private network?
 {: faq}
 
-Yes, the NetScaler is the only {{site.data.keyword.BluSoftlayer_notm}} load balancing product that extends into the private network.
+Yes, the NetScaler is the only IBM Cloud load balancing product that extends into the private network.
 
 ## Can the NetScaler be configured to report the client's source IP address instead of the source IP of the NetScaler appliance?
 {: faq}
@@ -78,7 +78,7 @@ NetScaler VPX servers are not redundant, unless configured in HA mode with a par
 
 It is also important to provide redundancy for other hardware and software components. For example, power supplies and local disk drives may not have redundancy. A failure in these components may result in data loss.
 
-## Does the {{site.data.keyword.BluSoftlayer_notm}} NetScaler offering include SSL VPN functionality?
+## Does the IBM Cloud NetScaler offering include SSL VPN functionality?
 {: faq}
 
 Yes, this feature is known as NetScaler Gateway™ and is included in all editions.  For more information regarding this feature please visit the [Citrix website ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.citrix.com/products/netscaler-adc/){: new_window}

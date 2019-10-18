@@ -28,6 +28,6 @@ In this Step by Step example, the DNS service from IBM© Cloud Internet Services
 
 <img src="images/12-add-record.png" alt="drawing" style="width: 700px;"/>
 
-The static public IP to be used with the Citrix VPX can be retrieved from the Customer Portal by navigating to **Devices > Device List** and then selecting the name of your {{site.data.keyword.vpx_full}}.
+The static public IP to be used with the Citrix VPX can be retrieved from the IBM Cloud catalog from the [Device List](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-managing-your-citrix-netscaler-vpx#locating-netscaler-details-in-the-customer-portal) and then selecting the name of your {{site.data.keyword.vpx_full}}.
 
 <img src="images/13-check-ip.png" alt="drawing" style="width: 300px;"/>

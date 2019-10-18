@@ -22,7 +22,7 @@ subcollection: citrix-netscaler-vpx
 
 The {{site.data.keyword.vpx_full}} is a dedicated virtual software appliance that provides load balancing on both the public and private IBM© Cloud network.
 
-Deploying a {{site.data.keyword.vpx_full}} in your {{site.data.keyword.BluSoftlayer_notm}} solution accelerates web application delivery, boosts performance, and ensures your cloud applications and services stay optimized, available, and secure. If you have challenging workloads, such as gaming, big data and analytics, or private clouds, the {{site.data.keyword.vpx_full}} can help you deliver your solution when, where, and how your users need it most.
+Deploying a {{site.data.keyword.vpx_full}} in your IBM Cloud solution accelerates web application delivery, boosts performance, and ensures your cloud applications and services stay optimized, available, and secure. If you have challenging workloads, such as gaming, big data and analytics, or private clouds, the {{site.data.keyword.vpx_full}} can help you deliver your solution when, where, and how your users need it most.
 
 ## Features
 {: #features}
@@ -52,12 +52,12 @@ Deploying a {{site.data.keyword.vpx_full}} in your {{site.data.keyword.BluSoftla
 * Application firewall capabilities
 * Application security features
 * Virtual appliance running on dedicated hardware
-* Deployed like any other {{site.data.keyword.BluSoftlayer_notm}} server, with flexibility and availability in mind
+* Deployed like any other IBM Cloud server, with flexibility and availability in mind
 * Offered in bandwidth tiers: 10Mbps, 200Mbps, and 1000Mbps
 
-The {{site.data.keyword.vpx_full}} can be deployed on demand, in as little as 15 minutes, in any {{site.data.keyword.BluSoftlayer_notm}} data center around the world. Several licensing models include the speed and features that you need, and offer the flexibility demanded by today's cloud solutions. This flexibility ensures a good fit for every use case, from small-to-medium implementations, all the way to larger enterprises.
+The {{site.data.keyword.vpx_full}} can be deployed on demand, in as little as 15 minutes, in any IBM Cloud data center around the world. Several licensing models include the speed and features that you need, and offer the flexibility demanded by today's cloud solutions. This flexibility ensures a good fit for every use case, from small-to-medium implementations, all the way to larger enterprises.
 
-{{site.data.keyword.BluSoftlayer_notm}} offers the NetScaler VPX virtual appliance with full, unrestricted root access.   
+IBM Cloud offers the NetScaler VPX virtual appliance with full, unrestricted root access.   
 
 ## Application Security
 {: #application-security}
@@ -82,4 +82,4 @@ The NetScaler Platinum Edition extends the load balancer beyond the local bounda
 ## Extend your Datacenter
 {: #extend-your-datacenter}
 
-The NetScaler Platinum Edition allows you to use the NetScaler CloudBridge Connector feature which provides a simple way to extend your datacenter to {{site.data.keyword.BluSoftlayer_notm}} with wizard-driven menus.
+The NetScaler Platinum Edition allows you to use the NetScaler CloudBridge Connector feature which provides a simple way to extend your datacenter to IBM Cloud with wizard-driven menus.
