@@ -13,7 +13,7 @@ subcollection: citrix-netscaler-vpx
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:tip: .tip}
@@ -38,7 +38,8 @@ To establish your NTL, perform the following procedure:
 	Certificate created and written to: /var/safenet/safenet/lunaclient/cert/client/10.121.229.224.pem
 	```
 
-	**NOTE:** The identifier used for the client certificate is the private IP assigned to it. This will later be used and referenced by the HSM.
+	The identifier used for the client certificate is the private IP assigned to it. This will later be used and referenced by the HSM.
+  {: note}
 
 2. Transfer the certificate file to the HSM server using SCP:
 

@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:tip: .tip}
@@ -28,7 +28,7 @@ Execute the following procedures and commands to verify the operational status o
 
 1.	Confirm the VPN status in VPX by navigating to **System > CloudBridge Connector > IP Tunnels**.
 
-  <img src="images/ipsecVerifyVPN1.png" alt="drawing" style="width: 600px;"/>
+  ![Confirm VPN status](images/ipsecVerifyVPN1.png)
 
   The Status should reflect an **UP** state in the respective IP tunnel entry (**IPSec_tunnel1** in this example.)
 
@@ -44,19 +44,19 @@ Execute the following procedures and commands to verify the operational status o
     IPSec Profile Name.......:  IPSec_Profile1
     IPSec Tunnel Status......:              UP
     Number of PBRs ..........:               1
-      
+
     Done
-      
+
   ```
 
 2.	Confirm the VPN status in VRA by executing the following command in the CLI to confirm the VPN state:
-    
+
   ```
   $ show vpn ipsec sa
   Peer ID / IP                            Local ID / IP
   ------------                            -------------
   10.143.220.106                          10.115.168.144
-  
+
   Tunnel  Id          State  Bytes Out/In   Encrypt       Hash      DH A-Time  L-Time
   ------  ----------  -----  -------------  ------------  --------  -- ------  ------
   1       1           up     0.0/0.0        aes256        sha1      2  18466   86400
@@ -66,13 +66,13 @@ Execute the following procedures and commands to verify the operational status o
 
   ```
   >ping 10.115.72.237
-  
+
   Pinging 10.115.72.237 with 32 bytes of data:
   Reply from 10.115.72.237: bytes=32 time=37ms TTL=63
   Reply from 10.115.72.237: bytes=32 time=36ms TTL=63
   Reply from 10.115.72.237: bytes=32 time=35ms TTL=63
   Reply from 10.115.72.237: bytes=32 time=35ms TTL=63
-  
+
   Ping statistics for 10.115.72.237:
       Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
   Approximate round trip times in milli-seconds:

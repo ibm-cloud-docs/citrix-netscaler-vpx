@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:tip: .tip}
@@ -30,12 +30,12 @@ To add and configure your SSL Virtual Server, perform the following procedure:
 2. In the NetScaler GUI, navigate to **Traffic Management > Load Balancing > Services > Add**, and specify the name, the IP address, and set the protocol as **HTTP**. Hit **OK** to finish.
 3. Confirm the service is operational:
 
-	<img src="images/15-confirm-service.png" alt="drawing" style="width: 700px;"/>
+	![Confirm service](images/15-confirm-service.png)
 
 4. Repeat step two for any additional servers.
 5. Navigate to **Traffic Management > Load Balancing > Virtual Servers >** and click **Add**. Specify the name and select **SSL** as the Protocol, then enter the public IP Address. Hit **OK** to finish.
 6. Now select **No Load Balancing Virtual Server Service Binding** and click **Select**. Select the service(s) you created in the previous steps and click Select, then click **Bind/Continue**.
 
-	<img src="images/18-bind-service.png" alt="drawing" style="width: 700px;"/>
+	![Bind service](images/18-bind-service.png)
 
 7. Finally, click **No Server Certificate**, then click **Select Server Certificate** and select the certificate you installed earlier. Click **Select**, then **Bind/Continue**, then **DONE** to finish.

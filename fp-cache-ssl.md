@@ -16,7 +16,7 @@ subcollection: citrix-netscaler-vpx
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:tip: .tip}
@@ -32,7 +32,7 @@ To do so, follow these steps:
 
 1. Go to **Traffic Management > Cache Redirection > Virtual Servers** and click **Add**. Specify the name for your forward-proxy virtual server, select the SSL protocol and a cache type of **FORWARD**. Assign it an IP address from your private subnet, with its requisite port.
 
-	<img src="images/fp14.png" alt="drawing" style="width: 300px;"/>
+	![Virtual Server settings](images/fp14.png)
 
 	Click **OK**.
 
@@ -43,10 +43,10 @@ To do so, follow these steps:
 6. From the Select Server Certificate drop-down list, select your SSL server.
 7. Enter the certificate configuration information as required.
 
-	<img src="images/fp15.png" alt="drawing" style="width: 400px;"/>
+	![Certificate configuration](images/fp15.png)
 
 	Click **Install**.
 
 8. Select **Bind**.
 
-	<img src="images/fp16.png" alt="drawing" style="width: 300px;"/>
+	![Bind](images/fp16.png)

@@ -16,7 +16,7 @@ subcollection: citrix-netscaler-vpx
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:tip: .tip}
@@ -30,7 +30,7 @@ To enable cache redirection and load balancing for the {{site.data.keyword.vpx_f
 
 1. From the {{site.data.keyword.vpx_full}} appliance system page, go to **Settings > Configure Advanced Features**, then enable **Cache Redirection** and click **OK**.  
 
-	<img src="images/fp4.png" alt="drawing" style="width: 400px;"/>
+	![Cache redirection](images/fp4.png)
 
 	Enable any additional features as necessary.
 

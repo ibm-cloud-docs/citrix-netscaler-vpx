@@ -16,7 +16,7 @@ subcollection: citrix-netscaler-vpx
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:tip: .tip}
@@ -42,4 +42,4 @@ To order the Citrix Netscaler VPX appliance:
 
 You will be taken to the infrastructure summary page, where you can find your {{site.data.keyword.vpx_full}} appliance at **Devices > Device List**. Review and confirm the device details for login credentials and its public and private IP addresses.
 
-  <img src="images/fp3.png" alt="drawing" style="width: 600px;"/>
+  ![Review Citrix order](images/fp3.png)

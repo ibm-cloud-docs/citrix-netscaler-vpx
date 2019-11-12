@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:tip: .tip}
@@ -34,6 +34,6 @@ First, you'll need to order the HSM. To do so:
 4. Select the data center you prefer, choose the **Cloud HSM 6.0** option, and click **Add to Order**.
 5. Under **Advanced System Configuration**, enter your backend and frontend VLAN section information and choose **SSH Key** from the dropdown, then fill out the hostname and domain details.
 
-  <img src="images/1-Order-HSM.png" alt="drawing" style="width: 700px;"/>
+  ![Order HSM](images/1-Order-HSM.png)
 
 6.	When you are finished, accept the terms and click **Submit Order**.

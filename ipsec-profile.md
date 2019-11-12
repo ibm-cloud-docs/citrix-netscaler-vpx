@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:tip: .tip}
@@ -37,11 +37,11 @@ The IPSec profile includes security parameters for establishing connections. To 
 5.	Check **Pre-Shared Key Exists** and enter the PSK in the **Value** field.
 6.	Click **Create**.
 
-    <img src="images/ipsecCreateProfile.png" alt="drawing" style="width: 200px;"/>
+    ![Create IPSec Profile](images/ipsecCreateProfile.png)
 
 To create an IPSec profile in the CLI, use the following syntax:
-  
+
   ```
   > add ipsec profile IPSec_Profile1 -ikeVersion V1 -encAlgo AES256 -hashAlgo HMAC_SHA1 -lifetime 86400 -psk ipsecpskvpxvra
-  
+
   ```

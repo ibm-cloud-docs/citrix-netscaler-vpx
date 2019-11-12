@@ -13,7 +13,7 @@ subcollection: citrix-netscaler-vpx
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:tip: .tip}
@@ -31,6 +31,6 @@ Retrieve the SSL certificate you ordered earlier so that you're ready for its in
 
 2. Copy the certificate file to the `/nsconfig/ssl` directoy in the {{site.data.keyword.vpx_full}}.
 
-  <img src="images/11-transfer-certificate.png" alt="drawing" style="width: 600px;"/>
+  ![Transfer Certificate](images/11-transfer-certificate.png)
 
 The {{site.data.keyword.vpx_full}} is now ready to incorporate the certificate into a load balancing deployment using SSL.

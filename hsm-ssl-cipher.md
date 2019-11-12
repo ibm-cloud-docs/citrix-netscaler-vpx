@@ -13,7 +13,7 @@ subcollection: citrix-netscaler-vpx
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:tip: .tip}
@@ -153,6 +153,6 @@ To create a new Cipher Suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, pe
 
 	You can also view the certificate details by clicking the padlock icon next to the URL in your browser to display the certificate info.
 
-	<img src="images/21-check-certificate.png" alt="drawing" style="width: 350px;"/>
+	![Check certificate](images/21-check-certificate.png)
 
 	If redirection was configured in step five, the secure site will also load when using an HTTP request.

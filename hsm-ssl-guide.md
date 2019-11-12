@@ -13,7 +13,7 @@ subcollection: citrix-netscaler-vpx
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:tip: .tip}
@@ -42,7 +42,7 @@ This deployment was built and tested with the following component specifications
 
 The below diagram shows the network traffic flow for the SSL offload use case. This provides a visual and logical perspective of the trust link and the configuration between the Citrix VPX and the HSM appliance.
 
-<img src="images/network-flows-logical-topology.jpg" alt="drawing" style="width: 700px;"/>
+![Network flows logical topology](images/network-flows-logical-topology.jpg)
 
 If you are not familiar with SSL offload, review this [Citrix article ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/netscaler/12-1/ssl.html){:new_window}.
 

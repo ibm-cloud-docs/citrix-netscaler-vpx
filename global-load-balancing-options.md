@@ -9,7 +9,7 @@ subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:tip: .tip}
 {:note: .note}
 {:important: .important}
@@ -71,11 +71,13 @@ You now have to configure DNS.
 
 In our example, `gslb.tsstesting.com`, you would create NS and glue records in the tsstesting.com zone:
 
+  ```
     gslb.tsstesting.com. IN NS NS1.gslb.tsstesting.com
     gslb.tsstesting.com. IN NS NS2.gslb.tsstesting.com
     NS1.gslb.tsstesting.com. IN A 10.54.0.141 ; nameserver IP of first NetScaler
     NS2.gslb.tsstesting.com. IN A 172.16.1.101 ; nameserver IP of second NetScaler
     www.tsstesting.com. IN CNAME gslb.tsstesting.com ; alias to the GSLB object on the NetScaler appliance
+    ```
 
 Remember, you can only use CNAMEs with hostnames, not the root of the domain.
 

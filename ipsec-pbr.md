@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:tip: .tip}
@@ -39,11 +39,11 @@ A Policy Based Routing (PBR) policy is needed to specify the unique traffic para
   *	**Destination IP High**
 8.	Click **Create**.
 
-    <img src="images/ipseCreatePBR1.png" alt="drawing" style="width: 200px;"/>
+    ![Create PBR](images/ipseCreatePBR1.png)
 
 9.	From **System > Network > PBRs**, select the new PBR, click the **Select Action** list, then choose **Apply**.
 
-    <img src="images/ipsecCreatePBR2.png" alt="drawing" style="width: 600px;"/>
+    ![Create PBR](images/ipseCreatePBR2.png)
 
 To create the PBR profile in the CLI, use the following syntax:
 
@@ -51,7 +51,7 @@ To create the PBR profile in the CLI, use the following syntax:
   > add ns pbr PBRforipsectunnel1 ALLOW -srcIP = 192.168.0.0-192.168.0.255 -destIP = 10.115.72.192-10.115.72.255 -ipTunnel
   IPSec_tunnel1 -priority 10
   > apply pbrs
-  
+
   ```
   {: codeblock}
 
@@ -68,13 +68,13 @@ To create the PBR profile in the CLI, use the following syntax:
   7...00 00 00 00 00 00 00 e0 Microsoft ISATAP Adapter #2
   10...00 00 00 00 00 00 00 e0 Microsoft ISATAP Adapter #3
   ===========================================================================
-  
+
   IPv4 Route Table
   ===========================================================================
   Active Routes:
   Network Destination        Netmask          Gateway       Interface  Metric
           0.0.0.0          0.0.0.0    169.54.255.65    169.54.255.73     26
        10.115.0.0      255.255.0.0      192.168.0.1      192.168.0.2     26
-  
+
   ```
   {: codeblock}

@@ -11,7 +11,7 @@ subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:faq: data-hd-content-type='faq'}
 {:tip: .tip}
 {:note: .note}

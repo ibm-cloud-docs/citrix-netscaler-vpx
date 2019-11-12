@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:tip: .tip}
@@ -72,7 +72,7 @@ To order an SSL certificate for use with your {{site.data.keyword.vpx_full}}, pe
 
 3.	Follow [these instructions](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-getting-started-tutorial#ordering-ssl-certificates) to place the order, pasting your CSR file text in the appropriate field. In the following example, `RapidSSL 1 Year` was chosen.
 
-	<img src="images/5-Order-Certificate_1.png" alt="drawing" style="width: 550px;"/>
+	![Order Certificate](images/5-Order-Certificate_1.png)
 
 	As shown, the system processes and interprets the CSR text, then displays this in the following page.
 

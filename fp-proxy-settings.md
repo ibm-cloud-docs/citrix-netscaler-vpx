@@ -16,7 +16,7 @@ subcollection: citrix-netscaler-vpx
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:tip: .tip}
@@ -34,4 +34,4 @@ To update your proxy settings using your client machine's internet browser, perf
 These proxy settings may not be necessary if the {{site.data.keyword.vpx_full}} appliance is in the direct layer-3 path between client machines and the internet.
 {: note}
 
-<img src="images/fp17.png" alt="drawing" style="width: 500px;"/>
+![Proxy settings](images/fp17.png)

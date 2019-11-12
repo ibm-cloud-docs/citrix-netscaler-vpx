@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:tip: .tip}
@@ -31,7 +31,7 @@ Steps one and two in this procedure are optional and only needed if the safenet 
 
 Find the credentials to access the NetScaler CLI listed in the Control Portal under **Devices > Device List > Expand VPX name**.
 
-<img src="images/3-VPX-Credentials.png" alt="drawing" style="width: 400px;"/>
+![VPX Credentials](./images/3-VPX-Credentials.png)
 
 They will be needed for this section and the remainder of the guide.
 
@@ -43,7 +43,7 @@ Please be aware that all VPX commands and outputs in this document will list eit
 	You must be logged into your IBM Cloud account to access the above link.
   {: note}
 
-	<img src="images/4-transfer-safenet_dirs.png" alt="drawing" style="width: 600px;"/>
+	![Safenet_dirs.tar](images/4-transfer-safenet_dirs.png)
 
 	This image shows the WinSCP software transferring the `safenet_dir.tar` file into the Citrix VPX.
 
@@ -121,4 +121,4 @@ Please be aware that all VPX commands and outputs in this document will list eit
 	/var/safenet/safenet/lunaclient/lib/libCryptoki2_64.so
 	```
 
-IBM© Hardware Security Module has been installed successfully.
+The IBM© Hardware Security Module has been installed successfully.

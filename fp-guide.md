@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:new_window: target="_blank_"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:tip: .tip}
@@ -26,7 +26,7 @@ subcollection: citrix-netscaler-vpx
 
 This guide provides you with a step-by-step configuration for a forward proxy setup using the {{site.data.keyword.vpx_full}} appliance. This configuration was tested on a {{site.data.keyword.vpx_full}} appliance running a software version of 11.1 (platinum feature edition) and 10Mbps performance.
 
-<img src="images/fp1.png" alt="drawing" style="width: 600px;"/>
+![Forward Proxy Traffic Redirection](images/fp1.png)
 
 ## What you'll accomplish
 {: #what-you-ll-accomplish}
