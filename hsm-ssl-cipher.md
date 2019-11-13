@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-12"
 
 keywords: hsm, ssl, security, create, apply, cipher, suite
 
@@ -24,6 +24,7 @@ subcollection: citrix-netscaler-vpx
 {: #create-and-apply-a-new-cipher-suite}
 
 A cipher suite is a combination of authentication, encryption, Message Authentication Code (MAC) and key exchange algorithms used to negotiate the security settings for SSL and TLS protocols.
+[: shortdesc]
 
 To guarantee proper authentication you must ensure your {{site.data.keyword.vpx_full}} uses the best combination of ciphers.
 

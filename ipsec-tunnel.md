@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-04-10"
+lastupdated: "2019-11-13"
 
 keywords: ipsec, vpn, vpx, tunnel
 
@@ -24,7 +24,10 @@ subcollection: citrix-netscaler-vpx
 # Creating an IP Tunnel
 {: #creating-ip-tunnel}
 
-You need to create an IP tunnel object to specify not only the local and remote IP addresses, but also the protocol parameters for the VPN connection. To do so:
+You need to create an IP tunnel object to specify not only the local and remote IP addresses, but also the protocol parameters for the VPN connection to use with your {{site.data.keyword.vpx_full}}.
+{: shortdesc}
+
+To do so:
 
 1.	Navigate to **System > CloudBridge Connector > IP Tunnels**.
 2.	On the **IPv4 Tunnels tab**, click **Add**.

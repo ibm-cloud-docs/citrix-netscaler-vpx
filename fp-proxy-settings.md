@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-12"
 
 keywords: proxy, update
 
@@ -26,7 +26,10 @@ subcollection: citrix-netscaler-vpx
 # Update the Proxy Settings on the Client Machine’s Internet Browser (Optional)
 {: #update-the-proxy-settings-on-the-client-machine-s-internet-browser-optional-}
 
-To update your proxy settings using your client machine's internet browser, perform the following steps:
+As a final, optional step to configuring forward proxy traffic redirection with your {{site.data.keyword.vpx_full}}, you can update your proxy settings using your client machine's internet browser.
+{: shortdesc}
+
+To do so, perform the following steps:
 
 1. Go to **Internet Options** in your browser settings and configure it to use a proxy server for outgoing requests.
 2. Use the IP address of your cache redirection virtual server that was defined in previous steps as your proxy.

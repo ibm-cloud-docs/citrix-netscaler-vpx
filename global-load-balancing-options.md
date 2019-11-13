@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-12"
 
 keywords: gslb, vpx, cdn, object storage
 
@@ -18,6 +18,7 @@ subcollection: citrix-netscaler-vpx
 {: #global-load-balancing}
 
 Global server load balancing (GSLB) is a method to split traffic across multiple servers using DNS and geographical locations as the means to determine where server traffic should be sent. Generally, a global load balancer sends a client request to a server that is closer to the client, decreasing latency and improving performance.
+{: shortdesc}
 
 You may not require a full implementation of a global load balancing solution. GSLB requires multiple instances of a suitable device that can perform this function, and depending on your needs, other solutions might be more attractive to you. If you need entire websites and applications, then GSLB is a good choice. If you only need portions of your content, such as images, videos, or other large files, then a [Content Delivery Network](/docs/infrastructure/CDN?topic=CDN-about-content-delivery-networks-cdn-) might be more suitable (and easier to deploy).
 

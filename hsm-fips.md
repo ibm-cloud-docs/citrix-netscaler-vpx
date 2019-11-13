@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2019-03-27"
+lastupdated: "2019-11-13"
 
 keywords: security, hsm, fips
 
@@ -25,6 +25,7 @@ subcollection: citrix-netscaler-vpx
 {: #enable-fips-140-2-optional-}
 
 FIPS (Federal Information Processing Standards) is a set of standards for specifying security requirements when implementing cryptographic hardware and software. It was created in 1994, and an update to this standard was released in 2001, known as FIPS 140-2.
+{: shortdesc}
 
 The FIPS 140-2 security algorithms can be enabled if you need to ensure the Hardware Security Module (HSM) is compatible and compliant with agencies and governments operating under FIPS. This section provides instructions on doing so.
 

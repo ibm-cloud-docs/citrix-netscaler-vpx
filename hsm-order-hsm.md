@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-12"
 
 keywords: hsm, security, order
 
@@ -24,7 +24,10 @@ subcollection: citrix-netscaler-vpx
 # Order the IBM Hardware Security Module (HSM)
 {: #order-the-ibm-hardware-security-module-hsm-}
 
-First, you'll need to order the HSM. To do so:
+First, you'll need to order the Hardware Security Monitor (HSM) for use with your {{site.data.keyword.vpx_full}}.
+{: shortdesc}
+
+To do so:
 
 1. From your browser, open the [IBM Cloud catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log into your account.
 2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.

@@ -2,7 +2,7 @@
 copyright:
   years: 1994, 2017
 
-lastupdated: "2017-11-02"
+lastupdated: "2019-11-13"
 
 keywords: setup, proxy, forward, vip, subnet
 
@@ -18,7 +18,8 @@ subcollection: citrix-netscaler-vpx
 # Setting up Citrix Netscaler VPX as a Forwarding Proxy
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
 
-A forwarding proxy acts as a single point of control between clients on an internal network and the Internet. A proxy allows the Network or Security Administrator the ability to create policies restricting access to Internet sites.
+You can set up your {{site.data.keyword.vpx_full}} as a forwarding proxy. A forwarding proxy acts as a single point of control between clients on an internal network and the Internet. A proxy allows the Network or Security Administrator the ability to create policies restricting access to Internet sites.
+{: shortdesc}
 
 When a client on the internal network initiates a request, the IP address of the proxy will be used to initiate the request to the remote server on the Internet. The remote server in turn responds back to the proxy, which returns the response to the client.
 

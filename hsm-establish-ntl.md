@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-12"
 
 keywords: security, hsm, ntl, certificate
 
@@ -24,6 +24,7 @@ subcollection: citrix-netscaler-vpx
 {: #establish-a-network-trust-link-ntl-}
 
 A Network Trust Link (NTL) is a secure channel for the Hardware Security Module (HSM) and the client to communicate. NTLs use certificates in both directions to authenticate and encrypt data transmitted between HSM server partitions and clients.
+{: shortdesc}
 
 Be advised that the trust link requires TCP port 1792 to be accessible in both the NTLS and NTLA (bi-directional) protocols to guarantee all processes and utilities work correctly.
 

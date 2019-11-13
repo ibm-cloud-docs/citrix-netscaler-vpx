@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-12"
 
 keywords: proxy, traffic, appliance
 
@@ -25,6 +25,7 @@ subcollection: citrix-netscaler-vpx
 {: #configuring-forward-proxy-traffic-redirection-using-the-citrix-netscaler-vpx-appliance}
 
 This guide provides you with a step-by-step configuration for a forward proxy setup using the {{site.data.keyword.vpx_full}} appliance. This configuration was tested on a {{site.data.keyword.vpx_full}} appliance running a software version of 11.1 (platinum feature edition) and 10Mbps performance.
+{: shortdesc}
 
 ![Forward Proxy Traffic Redirection](images/fp1.png)
 

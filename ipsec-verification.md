@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-04-28"
+lastupdated: "2019-11-13"
 
 keywords: ipsec, vpn, vpx, tunnel
 
@@ -24,7 +24,8 @@ subcollection: citrix-netscaler-vpx
 # Verifying VPN Tunnel Connection
 {: #verifying-vpn-tunnel-connection}
 
-Execute the following procedures and commands to verify the operational status of the VPN connection:
+There are procedures and commands that will help you verify the operational status of the VPN connection with your {{site.data.keyword.vpx_full}}.
+{: shortdesc}
 
 1.	Confirm the VPN status in VPX by navigating to **System > CloudBridge Connector > IP Tunnels**.
 

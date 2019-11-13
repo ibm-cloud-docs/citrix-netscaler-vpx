@@ -2,7 +2,7 @@
 copyright:
   years: 1994, 2018
 
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-12"
 
 keywords: upgrade, vpx, callhome
 
@@ -17,6 +17,9 @@ subcollection: citrix-netscaler-vpx
 
 # Upgrading your Citrix Netscaler VPX
 {: #upgrading-your-citrix-netscaler-vpx}
+
+You can upgrade your {{site.data.keyword.vpx_full}} to the most recent version by following the instructions here.
+{: shortdesc}
 
 You must be connected to the VPN before attempting this procedure.
 {: note}

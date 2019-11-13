@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-12"
 
 keywords: hsm, security, install
 
@@ -24,7 +24,8 @@ subcollection: citrix-netscaler-vpx
 # Install the IBM Hardware Security Module (HSM) Client Software
 {: #install-the-ibm-hardware-security-module-hsm-client-software}
 
-In this step, Citrix VPX will be installed with the software and utilities required to interact with the HSM.
+In this step, {{site.data.keyword.vpx_full}} will be installed with the software and utilities required to interact with the Hardware Security Monitor (HSM).
+{: shortdesc}
 
 Steps one and two in this procedure are optional and only needed if the safenet directory and the files or sub-folders in it are missing in the `/var` path. These resources are necessary for VPX to be installed with the client software and allow it to run the utilities associated with the HSM software.
 {: note}

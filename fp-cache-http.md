@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-13"
 
 keywords: cache, configure, configuration, http, traffic
 
@@ -26,7 +26,10 @@ subcollection: citrix-netscaler-vpx
 # Configure Cache Redirection for HTTP(S) traffic
 {: #configure-cache-redirection-for-http-traffic}
 
-To configure cache redirection for HTTP or HTTPS traffic, follow these steps:
+You can configure cache redirection for HTTP or HTTPS traffic with your {{site.data.keyword.vpx_full}}.
+{: shortdesc}
+
+To do so, follow these steps:
 
 1. Go to **Traffic Management > Cache Redirection > Virtual Servers** and click **Add**.
 2. Specify the name of your forward-proxy virtual server. Select the **HTTP** protocol and the **Forward** cache type from their respective drop-down lists. Then assign an IP address to this virtual server from your private subnet.

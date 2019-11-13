@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-12"
 
 keywords: hsm, security, initialize
 
@@ -23,7 +23,8 @@ subcollection: citrix-netscaler-vpx
 # Initialize IBM Hardware Security Module (HSM)
 {: #initialize-ibm-hardware-security-module-hsm-}
 
-Most configurations require initialization of the HSM device. Without this, only certain `show` commands can be executed.
+Most configurations of the HSM for your {{site.data.keyword.vpx_full}} require initialization of the HSM device. Without this, only certain `show` commands can be executed.
+{: shortdesc}
 
 To initialize your device, follow the steps below:
 

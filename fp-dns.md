@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-12"
 
 keywords: dns, cache, virtual server
 
@@ -23,7 +23,8 @@ subcollection: citrix-netscaler-vpx
 # Configure the DNS Virtual Server
 {: #configure-the-dns-virtual-server}
 
-To configure a DNS virtual server:
+To further define forward proxy traffic redirection using the {{site.data.keyword.vpx_full}}, you will need to configure a DNS virtual server:
+{: shortdesc}
 
 1. Go to Traffic **Management > Load Balancing > Servers**.
 2. Click Add to add the two IBM© Cloud DNS resolvers - `10.0.80.11` and `10.0.80.12`.

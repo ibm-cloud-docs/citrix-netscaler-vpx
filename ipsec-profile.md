@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-04-28"
+lastupdated: "2019-11-13"
 
 keywords: ipsec, vpn, vpx, tunnel
 
@@ -24,7 +24,10 @@ subcollection: citrix-netscaler-vpx
 # Creating IPSec Profile VPX
 {: #creating-ipsec-profile}
 
-The IPSec profile includes security parameters for establishing connections. To create a profile, perform the following procedure:
+You an create an IPSec profile that includes security parameters for establishing connections with your {{site.data.keyword.vpx_full}}.
+{: shortdesc}
+
+To create a profile, perform the following procedure:
 
 1.	Navigate to **System > CloudBridge Connector > IPSec Profile** and click **Add**.
 2.	Enter the following parameters:

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 1994, 2017
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-12"
 
 keywords: basics, configure, configuration, gui, pool
 
@@ -17,7 +17,10 @@ subcollection: citrix-netscaler-vpx
 # Basic Load Balancing Configuration
 {: #basic-load-balancing-configuration}
 
-Consider a company that has a basic social community website where end-users can register for an account that requires no sensitive information, after which the user can log in and post pictures of their pets. There are three web/application servers, and one database server to back them up. The domain and DNS are hosted with IBM Cloud, and because they have a small environment, the NetScaler and web/app servers are all in the same VLAN. This simplifies things, as no further configuration is needed for the NetScaler to set up a basic load balancing policy. The following procedure is an oversimplified explanation of the traffic flow in this instance:
+Consider a company that has a basic social community website where end-users can register for an account that requires no sensitive information, after which the user can log in and post pictures of their pets. There are three web/application servers, and one database server to back them up. The domain and DNS are hosted with IBM Cloud, and because they have a small environment, the NetScaler and web/app servers are all in the same VLAN. This simplifies things, as no further configuration is needed for the NetScaler to set up a basic load balancing policy.
+{: shortdesc}
+
+The following procedure is an oversimplified explanation of the traffic flow in this instance:
 
 1. A user enters the URL into their browser.
 2. The URL's DNS record points to one of the Public VIPs on the NetScaler.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-04-28"
+lastupdated: "2019-11-13"
 
 keywords: ipsec, vpn, vpx, tunnel
 
@@ -24,7 +24,10 @@ subcollection: citrix-netscaler-vpx
 # Creating Policy Based Routing (PBR)
 {: #creating-policy-based-routing}
 
-A Policy Based Routing (PBR) policy is needed to specify the unique traffic parameters (such as local and remote subnets) the VPN connection will use. To create a PBR profile perform the following steps:
+A Policy Based Routing (PBR) policy is needed to specify the unique traffic parameters (such as local and remote subnets) the VPN connection will use with your {{site.data.keyword.vpx_full}}.
+{: shortdesc}
+
+To create a PBR profile perform the following steps:
 
 1.	Navigate to **System > Network > PBR** and select **Add**.
 2.	Enter **Name**.
@@ -38,12 +41,7 @@ A Policy Based Routing (PBR) policy is needed to specify the unique traffic para
   *	**Destination IP Low**
   *	**Destination IP High**
 8.	Click **Create**.
-
-    ![Create PBR](images/ipseCreatePBR1.png)
-
 9.	From **System > Network > PBRs**, select the new PBR, click the **Select Action** list, then choose **Apply**.
-
-    ![Create PBR](images/ipseCreatePBR2.png)
 
 To create the PBR profile in the CLI, use the following syntax:
 

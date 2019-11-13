@@ -3,7 +3,7 @@
 copyright:
   years: 1994, 2018
 
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-13"
 
 keywords: about, vpx, features, overview
 
@@ -21,6 +21,7 @@ subcollection: citrix-netscaler-vpx
 {: #about-citrix-netscaler-vpx}
 
 The {{site.data.keyword.vpx_full}} is a dedicated virtual software appliance that provides load balancing on both the public and private IBM© Cloud network.
+{: shortdesc}
 
 Deploying a {{site.data.keyword.vpx_full}} in your IBM Cloud solution accelerates web application delivery, boosts performance, and ensures your cloud applications and services stay optimized, available, and secure. If you have challenging workloads, such as gaming, big data and analytics, or private clouds, the {{site.data.keyword.vpx_full}} can help you deliver your solution when, where, and how your users need it most.
 

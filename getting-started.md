@@ -15,10 +15,11 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Getting started With Citrix Netscaler VPX
+# Getting started with Citrix Netscaler VPX
 {: #getting-started}
 
 Deploying a {{site.data.keyword.vpx_full}} in your IBM Cloud solution accelerates web application delivery, boosts performance, and ensures your cloud applications and services stay optimized, available, and secure. If you have challenging workloads, such as gaming, big data and analytics, or private clouds, the {{site.data.keyword.vpx_full}} can help you deliver your solution when, where, and how your users need it most.
+{: shortdesc}
 
 ## Before you begin
 {: #before-you-begin}

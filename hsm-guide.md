@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-12"
 
 keywords: hsm, security
 
@@ -25,6 +25,7 @@ subcollection: citrix-netscaler-vpx
 {: #deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx}
 
 This Step by Step guides you through integrating the HSM with {{site.data.keyword.vpx_full}}. The two services will then be able to communicate and generate the cryptographic material required to create a certificate.
+{: shortdesc}
 
 ## About the deployment
 {: #about-the-deployment}

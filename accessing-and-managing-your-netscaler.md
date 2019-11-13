@@ -2,7 +2,7 @@
 copyright:
   years: 1994, 2019
 
-lastupdated: "2019-06-11"
+lastupdated: "2019-11-13"
 
 keywords: manage, managing, locating, details, portal, device, list
 
@@ -18,7 +18,8 @@ subcollection: citrix-netscaler-vpx
 # Managing your Citrix Netscaler VPX
 {: #managing-your-citrix-netscaler-vpx}
 
-Citrix NetScaler devices are powerful tools with an array of features that help to enhance and refine your {{site.data.keyword.cloud}} solution in a multitude of ways. You can find the device's information in the {{site.data.keyword.cloud_notm}} Cloud catalog, as well as connect to the device and configure its features.  
+{{site.data.keyword.vpx_full}} devices are powerful tools with an array of features that help to enhance and refine your {{site.data.keyword.cloud}} solution in a multitude of ways. You can find the device's information in the {{site.data.keyword.cloud_notm}} Cloud catalog, as well as connect to the device and configure its features.  
+{: shortdesc}
 
 ## Locating NetScaler details in the IBM Cloud catalog
 {: #locating-netscaler-details-in-the-customer-portal}

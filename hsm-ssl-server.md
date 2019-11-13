@@ -24,7 +24,10 @@ subcollection: citrix-netscaler-vpx
 # Add and Configure the SSL Virtual Server
 {: #add-and-configure-the-ssl-virtual-server}
 
-To add and configure your SSL Virtual Server, perform the following procedure:
+You can add and configure your SSL Virtual Server for use with the Hardware Security Monitor (HSM) of your {{site.data.keyword.vpx_full}}.
+{: shortdesc}
+
+To do so, perform the following procedure:
 
 1. Navigate to **System > Settings > Configure Basic Features**. Select **SSL Offloading** then click **OK**.
 2. In the NetScaler GUI, navigate to **Traffic Management > Load Balancing > Services > Add**, and specify the name, the IP address, and set the protocol as **HTTP**. Hit **OK** to finish.

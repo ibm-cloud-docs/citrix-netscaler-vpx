@@ -26,7 +26,8 @@ subcollection: citrix-netscaler-vpx
 # Order the Citrix Netscaler VPX appliance
 {: #order-the-citrix-netscaler-vpx-appliance}
 
-To order the Citrix Netscaler VPX appliance:
+To order the {{site.data.keyword.vpx_full}} appliance, perform the following procedure:
+{: shortdesc}
 
 1. From your browser, open the [IBM Cloud catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log into your account.
 2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
