@@ -30,7 +30,7 @@ Typically, a proxy is combined with a firewall to ensure the security of clients
 
 When a {{site.data.keyword.vpx_full}} load balancer is ordered from the IBM Cloud catalog, it is assumed a reverse proxy is being requested. The requestor will be asked for the number of “public” IPs to be used as virtual IPs (VIPs).
 
-In the case of a forward proxy, the VIPs need to be setup on the private network. A support ticket needs to be opened in order to request VIPs for the private network. The number of VIPs required will determine the size of the subnet requested in the ticket. The subnet information will be returned in the ticket.
+In the case of a forward proxy, the VIPs need to be setup on the private network. A support case needs to be opened in order to request VIPs for the private network. The number of VIPs required will determine the size of the subnet requested in the support case. The subnet information will be returned in the support case.
 
 In our example we requested a `/29` subnet, which resulted in the following:
 

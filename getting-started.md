@@ -27,7 +27,7 @@ To get started with {{site.data.keyword.vpx_full}}, you will need to know the fo
 
 * Your IBM© Cloud catalog login information
 * The deployment location for your load balancer
-* Which Netscaler type best fits your needs (for more information refer to [Explore Load Balancers](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore)
+* Which Netscaler type best fits your needs (for more information refer to [Explore Load Balancers](/docs/infrastructure/citrix-netscaler-vpx?topic=loadbalancer-service-explore))
 * The number of public IP addresses needed
 * The VLAN where you want to assign the load balancer
 
