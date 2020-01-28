@@ -15,8 +15,8 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Recent Updates for Citrix Netscaler VPX
-{: #recent-updates-for-citrix-netscaler-vpx}
+# Release Notes for Citrix Netscaler VPX
+{: #release-notes-for-citrix-netscaler-vpx}
 
 You can see the latest updates and functionality enhancements for your {{site.data.keyword.vpx_full}} and IBM Cloud here.
 {: shortdesc}
