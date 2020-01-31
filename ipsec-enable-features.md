@@ -24,7 +24,7 @@ subcollection: citrix-netscaler-vpx
 # Enabling the Required Features in Citrix Netscaler VPX
 {: #enable-required-features-in-vpx}
 
-You can enable the required features in {{site.data.keyword.vpx_full}} to create the IPSec VPN.
+You can enable the required features in {{site.data.keyword.vpx_full}} to create the IPsec VPN.
 {: shortdesc}
 
 To do so, perform the following procedure:

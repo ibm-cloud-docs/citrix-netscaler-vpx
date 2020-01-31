@@ -31,19 +31,19 @@ There are procedures and commands that will help you verify the operational stat
 
   ![Confirm VPN status](images/ipsecVerifyVPN1.png)
 
-  The Status should reflect an **UP** state in the respective IP tunnel entry (**IPSec_tunnel1** in this example.)
+  The Status should reflect an **UP** state in the respective IP tunnel entry (**IPsec_tunnel1** in this example.)
 
   To confirm the status of the VPN connection using the CLI, run the following command:
 
   ```    
   > show iptunnel
   1) Domain.......:               0
-    Name.........:  IPSec_tunnel1 (TUN1)
+    Name.........:  IPsec_tunnel1 (TUN1)
     Remote.......:  10.115.168.144   Mask......: 255.255.255.255
     Local........:  10.143.220.106   Encap.....:  10.143.220.106
     Protocol.....:           IPSEC   Type......:               C
-    IPSec Profile Name.......:  IPSec_Profile1
-    IPSec Tunnel Status......:              UP
+    IPsec Profile Name.......:  IPsec_Profile1
+    IPsec Tunnel Status......:              UP
     Number of PBRs ..........:               1
 
     Done

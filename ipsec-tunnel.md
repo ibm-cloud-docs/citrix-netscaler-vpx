@@ -38,7 +38,7 @@ To do so:
 4.	Select **Subnet IP** (SNIP) in the Local IP drop down list.
 5.	Choose the appropriate SNIP to be used as the VPN endpoint from the **Local IP** drop down.
 6.	Select **IPSEC** as the protocol from the drop down list.
-7.	Choose the [previously created](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-enable-required-features-in-vpx) profile name from the **IPSec Profile Name** drop down.
+7.	Choose the [previously created](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-enable-required-features-in-vpx) profile name from the **IPsec Profile Name** drop down.
 8.	Click **Create**.
 
     ![Create IP Tunnel](images/ipsecCreateIPtunnel.png)
@@ -46,6 +46,6 @@ To do so:
 To create an IP tunnel in the CLI, use the following syntax:
 
   ```
-  > add ipTunnel IPSec_tunnel1 10.115.168.144 255.255.255.255 10.143.220.106 -protocol IPSEC -ipsecProfileName IPSec_Profile1
+  > add ipTunnel IPsec_tunnel1 10.115.168.144 255.255.255.255 10.143.220.106 -protocol IPSEC -ipsecProfileName IPsec_Profile1
 
   ```

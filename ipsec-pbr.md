@@ -47,7 +47,7 @@ To create the PBR profile in the CLI, use the following syntax:
 
   ```
   > add ns pbr PBRforipsectunnel1 ALLOW -srcIP = 192.168.0.0-192.168.0.255 -destIP = 10.115.72.192-10.115.72.255 -ipTunnel
-  IPSec_tunnel1 -priority 10
+  IPsec_tunnel1 -priority 10
   > apply pbrs
 
   ```
