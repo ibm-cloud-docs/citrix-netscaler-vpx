@@ -14,9 +14,13 @@ subcollection: citrix-netscaler-vpx
 {:tip: .tip}
 {:note: .note}
 {:important: .important}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 
 # Setting up Citrix Netscaler VPX for High Availability (HA)
 {: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
+{: help}
+{: support}
 
 Load balancers are used to balance traffic over multiple application servers to improve performance and stability in a scalable application. Yet, a single load balancer is a single point of failure. Avoid this by configuring a High Availability (HA) {{site.data.keyword.vpx_full}} pair. Configuring an HA pair requires two Netscaler VPX servers. The secondary server steps in to continue load balancing should the primary fail.
 {: shortdesc}

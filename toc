@@ -19,7 +19,6 @@ Citrix Netscaler VPX
     upgrade-netscaler.md
     netscaler-vpx-high-availability-setup.md
     setting-citrix-forwarding-proxy.md
-    url-redirection-netscaler-vpx.md
 
     {: .topicgroup}
     Step-by-step: Configuring forward-proxy traffic redirection using the Citrix Netscaler VPX appliance

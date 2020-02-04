@@ -14,9 +14,13 @@ subcollection: citrix-netscaler-vpx
 {:tip: .tip}
 {:note: .note}
 {:important: .important}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 
 # Upgrading your Citrix Netscaler VPX
 {: #upgrading-your-citrix-netscaler-vpx}
+{: help}
+{: support}
 
 You can upgrade your {{site.data.keyword.vpx_full}} to the most recent version by following the instructions here.
 {: shortdesc}
