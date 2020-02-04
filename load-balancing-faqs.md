@@ -24,14 +24,14 @@ The frequently asked questions in this topic will help you when working with the
 {: shortdesc}
 
 ## What is {{site.data.keyword.vpx_full}}?
-{: #changeacct}
+{: #define}
 {: faq}
 {: support}
 
 Citrix NetScaler is an application delivery controller that makes applications five times better by accelerating performance, ensuring application availability and protection and substantially lowering operational costs. Choose the best Citrix NetScaler edition that meets your application requirements, and deploy it on the appropriate dedicated system for your performance needs. To learn more about Citrix NetScaler, refer to the [NetScaler page ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.citrix.com/products/netscaler-application-delivery-controller/overview.html){:new_window} on the Citrix website.
 
 ## Why is load balancing needed?
-{: #changeacct}
+{: #why}
 {: faq}
 {: support}
 
@@ -43,28 +43,28 @@ Load balancing traffic has become a key aspect of many customer implementations 
 * Efficiency. Workloads are dynamically distributed when load balancing is configured. For example, resources like CPUs can be used in a more efficient ways.
 
 ## How many load balancing options are available in IBM Cloud?
-{: #changeacct}
+{: #options}
 {: faq}
 {: support}
 
 For a detailed comparison of the IBM© Load Balancer offerings, refer to [Explore Load Balancers](/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-explore).
 
 ## Does NetScaler support IPv6?
-{: #changeacct}
+{: #ipv6}
 {: faq}
 {: support}
 
 Yes. Both IPv6 and IPv4 are supported on the IBM Cloud public network.
 
 ## Will the NetScaler load balance traffic on the private network?
-{: #changeacct}
+{: #private}
 {: faq}
 {: support}
 
 Yes, the NetScaler is the only IBM Cloud load balancing product that extends into the private network.
 
 ## Can the NetScaler be configured to report the client's source IP address instead of the source IP of the NetScaler appliance?
-{: #changeacct}
+{: #source-ip}
 {: faq}
 {: support}
 
@@ -73,21 +73,21 @@ Yes, the **Use Source IP (USIP)** parameter can be set to **YES** within the Net
 Enabling the USIP address mode on the appliance adds flexibility to the appliance to use the client IP address, available in the IP header, when communicating to the server. By enabling this mode, the appliance opens server connections with the client IP address and also factors the client IP address in connection reuse. Therefore, this mode facilitates limited reuse per client based on client IP address.
 
 ## What are the various ports used to exchange the HA-related information between the nodes in an HA configuration?
-{: #changeacct}
+{: #ports}
 {: faq}
 {: support}
 
 Port 3010, for synchronization and command propagation. UDP Port 3003, to exchange heartbeat packets.
 
 ## What version of NetScaler VPX includes global server load balancing (GSLB)?
-{: #changeacct}
+{: #version}
 {: faq}
 {: support}
 
 Platinum.
 
 ## Can I have NetScaler in HA configuration?
-{: #changeacct}
+{: #ha}
 {: faq}
 {: support}
 
@@ -98,7 +98,7 @@ NetScaler VPX servers are not redundant, unless configured in HA mode with a par
 It is also important to provide redundancy for other hardware and software components. For example, power supplies and local disk drives may not have redundancy. A failure in these components may result in data loss.
 
 ## Does the IBM Cloud NetScaler offering include SSL VPN functionality?
-{: #changeacct}
+{: #vpn}
 {: faq}
 {: support}
 
