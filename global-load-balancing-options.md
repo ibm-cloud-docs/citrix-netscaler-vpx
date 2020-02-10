@@ -20,7 +20,7 @@ subcollection: citrix-netscaler-vpx
 Global server load balancing (GSLB) is a method to split traffic across multiple servers using DNS and geographical locations as the means to determine where server traffic should be sent. Generally, a global load balancer sends a client request to a server that is closer to the client, decreasing latency and improving performance.
 {: shortdesc}
 
-You may not require a full implementation of a global load balancing solution. GSLB requires multiple instances of a suitable device that can perform this function, and depending on your needs, other solutions might be more attractive to you. If you need entire websites and applications, then GSLB is a good choice. If you only need portions of your content, such as images, videos, or other large files, then a [Content Delivery Network](/docs/infrastructure/CDN?topic=CDN-about-content-delivery-networks-cdn-) might be more suitable (and easier to deploy).
+You may not require a full implementation of a global load balancing solution. GSLB requires multiple instances of a suitable device that can perform this function, and depending on your needs, other solutions might be more attractive to you. If you need entire websites and applications, then GSLB is a good choice. If you only need portions of your content, such as images, videos, or other large files, then a [Content Delivery Network](/docs/CDN?topic=CDN-about-content-delivery-networks-cdn-) might be more suitable (and easier to deploy).
 
 ## {{site.data.keyword.vpx_full}}
 {: #citrix-netscaler-vpx}
@@ -96,11 +96,11 @@ There are other products that can offer a similar functionality for spreading ou
 
 Content delivery networks (CDN) allow you to upload or provide an origin server to geographically dispersed cache servers, which then provide the content to the requesting client. CDNs work best with static, bulk content, such as images and videos that does not change over time.
 
-For more details on CDN, refer to [this documentation](/docs/infrastructure/CDN?topic=CDN-getting-started).
+For more details on CDN, refer to [this documentation](/docs/CDN?topic=CDN-getting-started).
 
 ### Object Storage
 {: #object-storage}
 
 IBM Cloud's Object Storage can be configured to use multiple geographic locations in various data centers to provide content. A geographically aware application can perform location lookups on the client request and return a URL to Object Storage that is close to the client. Object Storage also comes with a CDN front end, if needed, to provide additional caching services as noted above.
 
-For more information and an introduction to Object Storage, refer to [this documentation](/docs/services/cloud-object-storage?topic=cloud-object-storage-about).
+For more information and an introduction to Object Storage, refer to [this documentation](/docs/cloud-object-storage?topic=cloud-object-storage-about).

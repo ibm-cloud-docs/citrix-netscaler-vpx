@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="citrix-netscaler-vpx" category="network" audience="network" href="/docs/infrastructure/citrix-netscaler-vpx?topic=infrastructure/citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance" path="infrastructure/citrix-netscaler-vpx"}
+{: .toc subcollection="citrix-netscaler-vpx" category="network" audience="network" href="/docs/citrix-netscaler-vpx?topic=infrastructure/citrix-netscaler-vpx-getting-started-with-citrix-netscaler-vpx-software-appliance" path="citrix-netscaler-vpx"}
 Citrix Netscaler VPX
 
     {: .navgroup id="learn"}

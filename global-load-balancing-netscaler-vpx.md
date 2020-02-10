@@ -22,7 +22,7 @@ Global server load balancing (GSLB) is a mechanism to distribute traffic across 
 
 To achieve this, two recognized methods can be used inside the IBM Cloud network:
 
-* **CDN:** Content Delivery Network (CDN) issued to deliver content and rich media such as images and videos, CDN distributes content geographically over dispersed nodes while keeping the least latency and highest speeds. It is usually implemented when particular portions of content need to be distributed as opposed to entire websites/applications. IBM Cloud offers this service, read more about it [here](/docs/infrastructure/CDN?topic=CDN-getting-started).
+* **CDN:** Content Delivery Network (CDN) issued to deliver content and rich media such as images and videos, CDN distributes content geographically over dispersed nodes while keeping the least latency and highest speeds. It is usually implemented when particular portions of content need to be distributed as opposed to entire websites/applications. IBM Cloud offers this service, read more about it [here](/docs/CDN?topic=CDN-getting-started).
 * **NetScaler VPX:** Just like with regular local load balancing, VPX uses a similar object hierarchy to load balance traffic between several geographies. Using DNS based global lookups, NetScaler chooses the respective record that corresponds to the location/site selected, the selection is based on the criteria pre-configured by the administrator. The incoming sections will expand on this option/offering.
 
 Other techniques are available for content distribution, such as HTTP redirection, that can also be implemented with the {{site.data.keyword.vpx_full}}.

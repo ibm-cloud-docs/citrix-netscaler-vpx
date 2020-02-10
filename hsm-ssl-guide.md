@@ -26,7 +26,7 @@ subcollection: citrix-netscaler-vpx
 This Step by Step guides you through configuring and tuning SSL Offload in {{site.data.keyword.vpx_full}}, this is done by using the certificate and cryptographic material generated using the Hardware Security Monitor (HSM) link.
 {: shortdesc}
 
-This Step by Step assumes you have completed the steps in [Deploying and Configuring the IBM© Hardware Security Module (HSM) with {{site.data.keyword.vpx_full}}](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) to order and create your VPX/HSM pairing.
+This Step by Step assumes you have completed the steps in [Deploying and Configuring the IBM© Hardware Security Module (HSM) with {{site.data.keyword.vpx_full}}](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) to order and create your VPX/HSM pairing.
 {: note}
 
 ## About the deployment
@@ -54,10 +54,10 @@ In this Step-by-Step guide you will learn how to configure SSL for a {{site.data
 
 Task  | Description
 ------------- | -------------
-[Install the certificate](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-install-your-ssl-certificate) | Install the SSL Certificate you created in the previous [Step by Step](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx).
-[Check and configure the DNS record](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-check-and-configure-the-dns-record) | Ensure a DNS record exists for the FQDN that points to the public address to be configured in the {{site.data.keyword.vpx_full}} as a Virtual Server.
-[Add and configure the SSL Virtual Server](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-add-and-configure-the-ssl-virtual-server) | Add and configure an SSL Virtual Server.
-[Create and apply a new Cipher Suite](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-and-apply-a-new-cipher-suite) | Create a Cipher Suite that prioritizes and preferences AEAD, ECDHE, and ECDSA.
+[Install the certificate](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-install-your-ssl-certificate) | Install the SSL Certificate you created in the previous [Step by Step](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx).
+[Check and configure the DNS record](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-check-and-configure-the-dns-record) | Ensure a DNS record exists for the FQDN that points to the public address to be configured in the {{site.data.keyword.vpx_full}} as a Virtual Server.
+[Add and configure the SSL Virtual Server](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-add-and-configure-the-ssl-virtual-server) | Add and configure an SSL Virtual Server.
+[Create and apply a new Cipher Suite](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-and-apply-a-new-cipher-suite) | Create a Cipher Suite that prioritizes and preferences AEAD, ECDHE, and ECDSA.
 
 ## Additional resources
 {: #additional-resources}

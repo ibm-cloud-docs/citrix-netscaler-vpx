@@ -109,7 +109,7 @@ The FIPS 140-2 security algorithms can be enabled if you need to ensure the Hard
 
 	This output shows that policy 12 (`Allow non-FIPS algorithms`) is set to `On`, meaning that algorithms non-compliant with FIPS are currently allowed for operations in the HSM.
 
-3. Login as an HSM SO/Administrator using the password you specified during [initialization](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-initialize-ibm-hardware-security-module-hsm-).
+3. Login as an HSM SO/Administrator using the password you specified during [initialization](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-initialize-ibm-hardware-security-module-hsm-).
 
 	```
 	[jdoe1] lunash:>hsm login

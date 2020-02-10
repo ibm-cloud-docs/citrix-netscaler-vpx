@@ -27,7 +27,7 @@ To get started with {{site.data.keyword.vpx_full}}, you will need to know the fo
 
 * Your IBM© Cloud catalog login information
 * The deployment location for your load balancer
-* Which Netscaler type best fits your needs (for more information refer to [Explore Load Balancers](/docs/infrastructure/citrix-netscaler-vpx?topic=loadbalancer-service-explore))
+* Which Netscaler type best fits your needs (for more information refer to [Explore Load Balancers](/docs/citrix-netscaler-vpx?topic=loadbalancer-service-explore))
 * The number of public IP addresses needed
 * The VLAN where you want to assign the load balancer
 
@@ -55,4 +55,4 @@ To order a {{site.data.keyword.vpx_full}} software appliance, navigate to the or
 ## What's Next
 {: #what-s-next}
 
-You can learn more about {{site.data.keyword.vpx_full}} [features](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-about-citrix-netscaler-vpx), review specific Netscaler [terminology](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-citrix-netscaler-vpx-terminology), or start [configuring](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-basic-load-balancing-configuration) your Netscaler.
+You can learn more about {{site.data.keyword.vpx_full}} [features](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-about-citrix-netscaler-vpx), review specific Netscaler [terminology](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-citrix-netscaler-vpx-terminology), or start [configuring](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-basic-load-balancing-configuration) your Netscaler.

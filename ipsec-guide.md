@@ -43,8 +43,8 @@ You need a VPX Platinum license to configure IPsec VPN.
 
 This guide assumes ownership of both devices. Please visit the following links for instructions on ordering.
 
--	[Getting started with {{site.data.keyword.vpx_full}} Software Appliance](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started)
--	[Getting Started with IBM Virtual Router Appliance](/docs/infrastructure/virtual-router-appliance?topic=virtual-router-appliance-getting-started)
+-	[Getting started with {{site.data.keyword.vpx_full}} Software Appliance](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started)
+-	[Getting Started with IBM Virtual Router Appliance](/docs/virtual-router-appliance?topic=virtual-router-appliance-getting-started)
 
 ## What you'll accomplish
 
@@ -52,12 +52,12 @@ In this guide you will learn how to configure an IPsec VPN in the Citrix VPX dev
 
 Task  | Description
 ------------- | -------------
-[Enable Required Features in VPX](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-enable-required-features-in-vpx) | First, enable the required features to create the IPsec VPN.
-[Create IPsec Profile](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ipsec-profile) | The IPsec profile includes security parameters for establishing the connection.
-[Create IP Tunnel](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ip-tunnel) | In this section we create an IP tunnel object to specify both local and remote IP addresses, as well as protocol parameters.
-[Create Policy Based Routing (PBR)](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-policy-based-routing) | PBR is used to define the unique traffic parameters for both local and remote subnets.
-[Configure VRA](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configuring-vra) | Configure the Virtual Router Appliance, using equivalent VPN configuration syntax.
-[Verify VPN Status](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-verifying-vpn-tunnel-connection) | Verify the VPN operation state and conduct a simple connectivity test.
+[Enable Required Features in VPX](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-enable-required-features-in-vpx) | First, enable the required features to create the IPsec VPN.
+[Create IPsec Profile](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ipsec-profile) | The IPsec profile includes security parameters for establishing the connection.
+[Create IP Tunnel](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ip-tunnel) | In this section we create an IP tunnel object to specify both local and remote IP addresses, as well as protocol parameters.
+[Create Policy Based Routing (PBR)](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-policy-based-routing) | PBR is used to define the unique traffic parameters for both local and remote subnets.
+[Configure VRA](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configuring-vra) | Configure the Virtual Router Appliance, using equivalent VPN configuration syntax.
+[Verify VPN Status](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-verifying-vpn-tunnel-connection) | Verify the VPN operation state and conduct a simple connectivity test.
 
 ## Additional resources
 The following additional resources can help you learn more about Citrix VPX and Virtual Router Appliance.
@@ -65,4 +65,4 @@ The following additional resources can help you learn more about Citrix VPX and 
 * [CloudBridge Connector ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/citrix-adc/12-1/system/cloudbridge-connector-introduction.html){:new_window}
 * [Configuring a CloudBridge Connector tunnel between a Citrix ADC appliance and Cisco IOS device ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/citrix-adc/12-1/system/cloudbridge-connector-introduction/cloudbridge-connector-tunnel-cisco.html){:new_window}
 * [Citrix VPX/ADC 12.1 Documentation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/citrix-adc/12-1){:new_window}
-* [Supplemental VRA Documentation](/docs/infrastructure/virtual-router-appliance/vra-docs.html#supplemental-vra-documentation){:new_window}
+* [Supplemental VRA Documentation](/docs/virtual-router-appliance/vra-docs.html#supplemental-vra-documentation){:new_window}

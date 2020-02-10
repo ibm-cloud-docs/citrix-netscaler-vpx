@@ -41,13 +41,13 @@ If you are running multiple domains, an SSL certificate can be purchased for eac
 
 For more information about SSL certificates refer to the following IBM Cloud articles:
 
-* [About SSL certificates](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-about-ssl-certificates)
-* [Introduction to SSL technology](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-introduction-to-ssl-technology)
-* [Planning for SSL](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-planning-for-ssl)
+* [About SSL certificates](/docs/ssl-certificates?topic=ssl-certificates-about-ssl-certificates)
+* [Introduction to SSL technology](/docs/ssl-certificates?topic=ssl-certificates-introduction-to-ssl-technology)
+* [Planning for SSL](/docs/ssl-certificates?topic=ssl-certificates-planning-for-ssl)
 
 To order an SSL certificate for use with your {{site.data.keyword.vpx_full}}, perform the following procedure:
 
-1.	In VPX shell CLI, display the CSR text by opening the CSR file previously created in the step [Create keys and generate the Certificate Signing Request (CSR)](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-):
+1.	In VPX shell CLI, display the CSR text by opening the CSR file previously created in the step [Create keys and generate the Certificate Signing Request (CSR)](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-):
 
 	```
 	root@IBMADC690867-s6dr# cat certreqnss6dr.csr
@@ -71,7 +71,7 @@ To order an SSL certificate for use with your {{site.data.keyword.vpx_full}}, pe
 
 2.	Copy the content of the file starting with `---BEGIN NEW CERTIFICATE REQUEST---` all the way to `---END NEW CERTIFICATE REQUEST---`.
 
-3.	Follow [these instructions](/docs/infrastructure/ssl-certificates?topic=ssl-certificates-getting-started-tutorial#ordering-ssl-certificates) to place the order, pasting your CSR file text in the appropriate field. In the following example, `RapidSSL 1 Year` was chosen.
+3.	Follow [these instructions](/docs/ssl-certificates?topic=ssl-certificates-getting-started-tutorial#ordering-ssl-certificates) to place the order, pasting your CSR file text in the appropriate field. In the following example, `RapidSSL 1 Year` was chosen.
 
 	![Order Certificate](images/5-Order-Certificate_1.png)
 

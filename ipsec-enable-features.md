@@ -41,4 +41,4 @@ To enable these features in the CLI, execute the following commands:
 
 ```
 
-For additional instructions on connecting to the NetScaler using the GUI or SSH, visit the [following article](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-managing-your-citrix-netscaler-vpx#connecting-to-the-netscaler)
+For additional instructions on connecting to the NetScaler using the GUI or SSH, visit the [following article](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-managing-your-citrix-netscaler-vpx#connecting-to-the-netscaler)

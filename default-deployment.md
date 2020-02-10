@@ -20,7 +20,7 @@ subcollection: citrix-netscaler-vpx
 The default deployment of an {{site.data.keyword.vpx_full}} is designed to be as secure as possible, by automatically assigning a Private IP address as the NetScaler IP (NSIP) used for management purposes.
 {: shortdesc)
 
-When you view your NetScaler in the [Device List](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-managing-your-citrix-netscaler-vpx#locating-netscaler-details-in-the-customer-portal) in the IBM Cloud catalog, you may notice that it looks different than other servers. Namely, the device has a Private IP address but no Public IP address.
+When you view your NetScaler in the [Device List](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-managing-your-citrix-netscaler-vpx#locating-netscaler-details-in-the-customer-portal) in the IBM Cloud catalog, you may notice that it looks different than other servers. Namely, the device has a Private IP address but no Public IP address.
 
 If you click the arrow to the left of the NetScaler, the line expands to show the default username (root) and the masked root user password.
 

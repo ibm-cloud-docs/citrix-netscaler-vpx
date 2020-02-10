@@ -32,7 +32,7 @@ To create a PBR profile perform the following steps:
 1.	Navigate to **System > Network > PBR** and select **Add**.
 2.	Enter **Name**.
 3.	Leave **Action** as the default setting **ALLOW**.
-4.	For **Next Hop Type**, select **IP Tunnel**, then pick the [previously created](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ip-tunnel) tunnel from the **IP Tunnel Name** drop down list.
+4.	For **Next Hop Type**, select **IP Tunnel**, then pick the [previously created](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ip-tunnel) tunnel from the **IP Tunnel Name** drop down list.
 5.	Ensure you have checked **Enable PBR**.
 6.	In the **Configure IP** section, select **=** for the **Operation** field, for both source and destination.
 7.	Specify the first and last subnet IP in the following fields:
