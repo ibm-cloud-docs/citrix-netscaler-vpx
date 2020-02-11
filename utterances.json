@@ -1,5 +1,5 @@
 {
-  "what-is-citrix-netscaler-vpx-":[
+  "define":[
     "Whats Citrix Netscaler VPX",
     "define citrix netscaler",
     "what's a citrix loadbalancer",
@@ -7,7 +7,7 @@
     "Citrix VPX definition",
     "what is netscaler"
    ],
-  "why-is-load-balancing-needed-":[
+  "why":[
     "is load balancing needed",
     "is a load balancer required",
     "do I need load balancing",
@@ -16,7 +16,7 @@
     "what do load balancers do",
     "is load balancing necessary"
    ],
-  "how-many-load-balancing-options-are-available-in-ibm-cloud-":[
+  "options":[
     "what are the different load balancers",
     "how many load balancers do you have",
     "load balancer that's best for me",
@@ -24,7 +24,7 @@
     "compare the different load balancers",
     "available options for loadbalancers"
    ],
-  "does-netscaler-support-ipv6-":[  
+  "ipv6":[  
     "NetScaler support IPv6",
     "NetScaler support IPv4",
     "Is IPv4 supported",
@@ -33,14 +33,14 @@
     "is IPv6 and IPv4 supported",
     "support for citrix ipv6"
    ],
-  "will-the-netscaler-load-balance-traffic-on-the-private-network-":[  
+  "private":[  
     "NetScaler load balance traffic on the private network",
     "Netscaler work on a private network",
     "use citrix netscaler on a private network",
     "load balance on a private network",
     "private network load balancing"
    ],
-  "can-the-netscaler-be-configured-to-report-the-client-s-source-ip-address-instead-of-the-source-ip-of-the-netscaler-appliance-":[  
+  "source-ip":[  
     "report the client's source IP address instead of the source IP",
     "configure this to report the client's source IP address",
     "use Netscaler to report the  client's IP address",
@@ -49,14 +49,14 @@
     "change the Use Source IP (USIP) parameter",
     "update USIP parameter"
   ],
-  "what-are-the-various-ports-used-to-exchange-the-ha-related-information-between-the-nodes-in-an-ha-configuration-":[  
+  "ports":[  
     "ports used to exchange the HA related information between the nodes",
     "ports can be used to exchange HA info",
     "ports for High Availability exchange",
     "ports to use for HA information",
     "ports used to exchange the high availability info"
   ],
-  "what-version-of-netscaler-vpx-includes-global-server-load-balancing-gslb-":[ 
+  "version":[ 
     "version of NetScaler VPX includes global server load balancing",
     "version of NetScaler that includes GSLB",
     "is global server load balancing included",
@@ -64,7 +64,7 @@
     "GSLB also included",
     "get global server load balancing inclusion"
 ],
-  "can-i-have-netscaler-in-ha-configuration-":[ 
+  "ha":[ 
     "NetScaler in HA configuration",
     "NetScaler VPX appliances support High Availability",
     "deploy an HA environment when using NetScaler VPX",
@@ -72,7 +72,7 @@
     "Netscaler support High Availability",
     "citrix load balancing with HA"
 ],
-  "does-the-ibm-cloud-netscaler-offering-include-ssl-vpn-functionality-":[     
+  "vpn":[     
     "NetScaler offering include SSL VPN",
     "what is NetScaler Gateway",
     "is SSL VPN included with netscaler",
