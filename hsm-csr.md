@@ -23,7 +23,7 @@ subcollection: citrix-netscaler-vpx
 # Create keys and generate the Certificate Signing Request (CSR)
 {: #create-keys-and-generate-the-certificate-signing-request-csr-}
 
-You can create a key pair that will be used to generate a Certificate Signing Request (CSR) as well as order / request a certificate with it to further configure the HSM for the {{site.data.keyword.vpx_full}}.
+You can create a key pair to generate a Certificate Signing Request (CSR). In addition, you'll need the key pair to order or request a certificate to further configure the HSM for the {{site.data.keyword.vpx_full}}.
 
 1.	First, confirm the object list in VPX. Use the specified password for this partition during creation.
 
