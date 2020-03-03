@@ -33,7 +33,9 @@ You must be connected to the VPN before attempting this procedure.
 4. Choose **Local** from the **Choose File** drop-down list.
 4. Download the correct upgrade file from the following location:
 
-	[NetScaler Available Versions ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://downloads.service.softlayer.com/citrix/netscaler/){: new_window}
+	For commercial users: [NetScaler Available Versions ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://downloads.service.softlayer.com/citrix/netscaler/){: new_window}
+
+  For federal government users: [NetScaler Available Versions ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://downloads.service.usgov.softlayer.com/citrix/netscaler/){: new_window}
 
 	You must be either connected to the IBM© Cloud Infrastructure VPN or connecting from an IBM© Cloud Infrastructure server with private network (10.0.0.0/8) connectivity in order to access this link.
   {: note}
