@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Add and Configure the SSL Virtual Server
+# Add and configure the SSL virtual server
 {: #add-and-configure-the-ssl-virtual-server}
 
 You can add and configure your SSL Virtual Server for use with the Hardware Security Monitor (HSM) of your {{site.data.keyword.vpx_full}}.

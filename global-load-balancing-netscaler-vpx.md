@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Global Load Balancing with Citrix Netscaler VPX
+# Global load balancing with Citrix Netscaler VPX
 {: #global-load-balancing-with-citrix-netscaler-vpx}
 
 Global server load balancing (GSLB) is a mechanism to distribute traffic across multiple servers/instances, typically residing in different geographical locations. The idea is to have a global balancing engine/server that receives traffic requests from clients and redirects them to a certain geography, the latter determined using the criteria/algorithms selected and configured by the administrator.
@@ -59,7 +59,7 @@ The main components or entities in the GSLB process/deployment are:
   * Source IP address Hash: Makes a selection of the service based on the hashed value of the client IPv4 or IPv6 address.
   * Custom Load: Selects a service that is not handling any active transactions. If all of the services in the load balancing setup are handling active transactions, the appliance selects the service with the smallest load (CPU usage, memory, and response time).
 
-* **MEP (Metric Exchange Protocol):** A proprietary protocol used to exchange metrics (load and network) and persistence information between sites. MEP provides health checking between the different sites/NetScalers in the GSLB mesh/topology. Using the criteria set by the administrator, MEP provides a way for sites to communicate and handle the traffic based on the selection parameters previously configured. MEP uses TCP ports 3009 and 3011. When MEP is disabled, the selection of methods is limited to the options listed before marked with an asterisk (*). Any other method chosen would revert back to Round Robin.
+* **MEP (Metric Exchange Protocol):** A proprietary protocol used to exchange metrics (load and network) and persistence information between sites. MEP provides health checking between the different sites/NetScalers in the GSLB mesh/topology. Using the criteria set by the administrator, MEP provides a way for sites to communicate and handle the traffic based on the selection parameters previously configured. MEP uses TCP ports 3009 and 3011. When MEP is disabled, the selection of methods is limited to the options listed before marked with an asterisk (`*`). Any other method chosen would revert back to Round Robin.
 * **Monitoring:** The NetScaler engine periodically evaluates the state of the remote GSLB services by using either MEP or explicit monitors bound to the services in question. Monitors are used just like on a regular load balancing service. In the case of GSLB, adding monitors to local services is not required as this is typically controlled by MEP.
 * **Persistence:** An optional feature that establishes a site preference for a particular domain. In this particular use case, the traffic is not load balanced but handled by the same data center. This can be helpful in certain applications, like e-commerce, where transactional data is unique to each a site/server.
 * **GSLB site:** Sites can be defined as data centers or locations where a NetScaler system is configured/present. Each GSLB site is managed by a NetScaler system that is considered “local” to that site, while all other remote systems/sites are seen and treated as “remote” sites.

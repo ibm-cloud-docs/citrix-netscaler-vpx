@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Citrix Netscaler VPX Default Deployment
+# Citrix Netscaler VPX default deployment
 {: #citrix-netscaler-vpx-default-deployment}
 
 The default deployment of an {{site.data.keyword.vpx_full}} is designed to be as secure as possible, by automatically assigning a Private IP address as the NetScaler IP (NSIP) used for management purposes.

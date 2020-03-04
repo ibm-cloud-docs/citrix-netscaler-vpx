@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Verifying VPN Tunnel Connection
+# Verifying VPN tunnel connection
 {: #verifying-vpn-tunnel-connection}
 
 There are procedures and commands that will help you verify the operational status of the VPN connection with your {{site.data.keyword.vpx_full}}.

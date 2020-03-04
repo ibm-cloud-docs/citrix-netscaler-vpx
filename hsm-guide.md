@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Deploying and Configuring the IBM Hardware Security Module (HSM) with Citrix Netscaler VPX
+# Deploying and configuring the IBM Hardware Security Module (HSM) with Citrix Netscaler VPX
 {: #deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx}
 
 This Step by Step guides you through integrating the HSM with {{site.data.keyword.vpx_full}}. The two services will then be able to communicate and generate the cryptographic material required to create a certificate.

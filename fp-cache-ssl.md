@@ -23,7 +23,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Configure Cache Redirection for SSL traffic (Optional)
+# Configure cache redirection for SSL traffic (optional)
 {: #configure-cache-redirection-for-ssl-traffic-optional-}
 
 Instead of defining cache redirection for the virtual server with an HTTP or HTTPS protocol (as discussed in the previous step) with your {{site.data.keyword.vpx_full}}, you may want to define it to handle SSL traffic.

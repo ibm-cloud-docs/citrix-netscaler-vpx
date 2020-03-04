@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Configuring IPsec Site-to-site VPN in Citrix Netscaler VPX with IBM Virtual Router Appliance
+# Configuring IPsec site-to-site VPN in Citrix Netscaler VPX with IBM Virtual Router Appliance
 {:#configuring-ipsec-site-to-site-vpn-in-citrix-netscaler-vpx}
 
 This guide provides step-by-step instructions to configure an IPsec VPN site-to-site connection in the {{site.data.keyword.vpx_full}}. An IBM Virtual Router Appliance (VRA) is used as a VPN peer.

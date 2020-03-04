@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:important: .important}
 {:table: .aria-labeledby="caption"}
 
-# Install Your SSL Certificate
+# Install your SSL certificate
 {: #install-your-ssl-certificate}
 
 You can install the SSL Certificate you created in the previous [Step by Step](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) for your {{site.data.keyword.vpx_full}}.

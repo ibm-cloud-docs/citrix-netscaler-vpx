@@ -23,7 +23,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Configure Cache Redirection for HTTP(S) traffic
+# Configure cache redirection for HTTP(S) traffic
 {: #configure-cache-redirection-for-http-traffic}
 
 You can configure cache redirection for HTTP or HTTPS traffic with your {{site.data.keyword.vpx_full}}.

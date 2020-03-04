@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Other Resources for IBM Citrix Netscaler VPX
+# Other resources for IBM Citrix Netscaler VPX
 {: #other-resources-for-ibm-citrix-netscaler-vpx}
 
 These additional {{site.data.keyword.vpx_full}} resources are created by IBM© and some of our partners and customers.

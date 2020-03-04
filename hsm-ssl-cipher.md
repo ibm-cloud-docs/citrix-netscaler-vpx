@@ -20,7 +20,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Create and Apply a New Cipher Suite
+# Create and apply a new cipher suite
 {: #create-and-apply-a-new-cipher-suite}
 
 A cipher suite is a combination of authentication, encryption, Message Authentication Code (MAC) and key exchange algorithms used to negotiate the security settings for SSL and TLS protocols.

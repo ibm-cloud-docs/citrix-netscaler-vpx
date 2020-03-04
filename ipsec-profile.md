@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Creating IPsec Profile VPX
+# Creating IPsec profile VPX
 {: #creating-ipsec-profile}
 
 You an create an IPsec profile that includes security parameters for establishing connections with your {{site.data.keyword.vpx_full}}.

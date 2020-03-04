@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Setting up Citrix Netscaler VPX as a Forwarding Proxy
+# Setting up Citrix Netscaler VPX as a forwarding proxy
 {: #setting-up-citrix-netscaler-vpx-as-a-forwarding-proxy}
 
 You can set up your {{site.data.keyword.vpx_full}} as a forwarding proxy. A forwarding proxy acts as a single point of control between clients on an internal network and the Internet. A proxy allows the Network or Security Administrator the ability to create policies restricting access to Internet sites.
@@ -25,7 +25,7 @@ When a client on the internal network initiates a request, the IP address of the
 
 Typically, a proxy is combined with a firewall to ensure the security of clients in an internal network.
 
-## Step 1: Request VIPs to use in the Private Network
+## Step 1: Request VIPs to use in the private network
 {: #step-1-request-vips-to-use-in-the-private-network}
 
 When a {{site.data.keyword.vpx_full}} load balancer is ordered from the IBM Cloud catalog, it is assumed a reverse proxy is being requested. The requestor will be asked for the number of “public” IPs to be used as virtual IPs (VIPs).
@@ -40,13 +40,13 @@ In our example we requested a `/29` subnet, which resulted in the following:
 
 * VIPs `10.114.27.0-3` were added to the {{site.data.keyword.vpx_full}} by the support team
 
-## Step 2: Enable Load Balancing and Cache Redirect Features on the {{site.data.keyword.vpx_full}}
+## Step 2: Enable load balancing and cache redirect features on the {{site.data.keyword.vpx_full}}
 {: #step-2-enable-load-balancing-and-cache-redirect-features-on-the-citrix-netscaler-vpx}
 
 By default, the load balancing and cache redirect features on the {{site.data.keyword.vpx_full}} load balancer are disabled; the `enable ns feature cr lb` command enables them.
 
 
-## Step 3: Create the Forward Proxy
+## Step 3: Create the forward proxy
 {: #step-3-create-the-forward-proxy}
 
 Use the command line to issue the following commands on to the {{site.data.keyword.vpx_full}}. In our scenario, only one of the two IBM Cloud DNS servers are added.  
@@ -73,7 +73,7 @@ Line 4 binds the VIP to the “real” server. All DNS requests to `10.114.27.4`
 
 Line 5 tells the forwarding proxy virtual server to use the virtual DNS for name resolution.
 
-## Configuring the Client
+## Configuring the client
 {: #configuring-the-client}
 
 Before continuing to customize the client to use the forwarding proxy, make sure that you cannot reach a public site (for example, http://www.ibm.com) by using the Firefox browser on the client. Since there should be no public interface on the client, this request should fail.
@@ -106,7 +106,7 @@ The IP address `10.114.27.3` is the IP address of the forwarding cache created i
 
 At this point, the setup is complete and you can access the Internet from the resource isolated on the private network.
 
-## Validating the Setup
+## Validating the setup
 {: #validating-the-setup}
 
 Now that the client is configured to use the forwarding proxy, try an access a public site again. The request should now be successful.

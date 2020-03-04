@@ -20,7 +20,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Configuring and Tuning SSL Offload with Citrix Netscaler VPX
+# Configuring and tuning SSL Offload with Citrix Netscaler VPX
 {: #configuring-and-tuning-ssl-offload-with-citrix-netscaler-vpx}
 
 This Step by Step guides you through configuring and tuning SSL Offload in {{site.data.keyword.vpx_full}}, this is done by using the certificate and cryptographic material generated using the Hardware Security Monitor (HSM) link.

@@ -23,7 +23,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Enable Cache Redirection and Load Balancing capabilities
+# Enable cache redirection and load balancing capabilities
 {: #enable-cache-redirection-and-load-balancing-capabilities}
 
 You can enable cache redirection and load balancing for the {{site.data.keyword.vpx_full}} appliance.

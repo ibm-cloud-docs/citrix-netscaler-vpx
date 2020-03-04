@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Creating an IP Tunnel
+# Creating an IP tunnel
 {: #creating-ip-tunnel}
 
 You need to create an IP tunnel object to specify not only the local and remote IP addresses, but also the protocol parameters for the VPN connection to use with your {{site.data.keyword.vpx_full}}.

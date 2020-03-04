@@ -52,7 +52,7 @@ To order a {{site.data.keyword.vpx_full}} software appliance, navigate to the or
 	To minimize latency and ensure optimized utilization of your network resources, assign the {{site.data.keyword.vpx_full}} to the same VLAN as the servers where the traffic will be distributed.
 13. Review the order, accept the terms, and click **Place Order**. The {{site.data.keyword.vpx_full}} software appliance deploys with your selected settings.
 
-## What's Next
+## What's next
 {: #what-s-next}
 
 You can learn more about {{site.data.keyword.vpx_full}} [features](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-about-citrix-netscaler-vpx), review specific Netscaler [terminology](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-citrix-netscaler-vpx-terminology), or start [configuring](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-basic-load-balancing-configuration) your Netscaler.

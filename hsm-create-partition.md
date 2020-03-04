@@ -20,7 +20,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Create a Partition
+# Create a partition
 {: #create-a-partition}
 
 A partition is a logical and independent space that is associated or attached to the client requesting or creating cryptographic objects in the HSM engine. Each partition has its own data and policies isolated from other partitions. To learn more about partitions, refer to the [Administration Guide (page 211) ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/administration_guide.pdf){: new_window}.
@@ -28,7 +28,7 @@ A partition is a logical and independent space that is associated or attached to
 
 To create a partition, perform the following procedure:
 
-1.	Login as the HSM Security Oficer/Administrator using the password specified during [initialization](/docs/infrastructure/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-initialize-ibm-hardware-security-module-hsm-):
+1.	Login as the HSM Security Oficer/Administrator using the password specified during [initialization](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-initialize-ibm-hardware-security-module-hsm-):
 
 	```
 	[jpmongehsm2] lunash:>hsm login

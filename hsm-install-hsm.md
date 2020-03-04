@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Install the IBM Hardware Security Module (HSM) Client Software
+# Install the IBM Hardware Security Module (HSM) client software
 {: #install-the-ibm-hardware-security-module-hsm-client-software}
 
 In this step, {{site.data.keyword.vpx_full}} will be installed with the software and utilities required to interact with the Hardware Security Monitor (HSM).

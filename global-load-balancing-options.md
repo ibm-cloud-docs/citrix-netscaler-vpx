@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Global Load Balancing
+# Global load balancing
 {: #global-load-balancing}
 
 Global server load balancing (GSLB) is a method to split traffic across multiple servers using DNS and geographical locations as the means to determine where server traffic should be sent. Generally, a global load balancer sends a client request to a server that is closer to the client, decreasing latency and improving performance.
@@ -98,7 +98,7 @@ Content delivery networks (CDN) allow you to upload or provide an origin server 
 
 For more details on CDN, refer to [this documentation](/docs/CDN?topic=CDN-getting-started).
 
-### Object Storage
+### Object storage
 {: #object-storage}
 
 IBM Cloud's Object Storage can be configured to use multiple geographic locations in various data centers to provide content. A geographically aware application can perform location lookups on the client request and return a URL to Object Storage that is close to the client. Object Storage also comes with a CDN front end, if needed, to provide additional caching services as noted above.

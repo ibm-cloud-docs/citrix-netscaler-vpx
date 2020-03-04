@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:tip: .tip}
 {:important: .important}
 
-# Enable FIPS 140-2 (Optional)
+# Enable FIPS 140-2 (optional)
 {: #enable-fips-140-2-optional-}
 
 FIPS (Federal Information Processing Standards) is a set of standards for specifying security requirements when implementing cryptographic hardware and software. It was created in 1994, and an update to this standard was released in 2001, known as FIPS 140-2.

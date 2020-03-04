@@ -60,17 +60,17 @@ The {{site.data.keyword.vpx_full}} can be deployed on demand, in as little as 15
 
 IBM Cloud offers the NetScaler VPX virtual appliance with full, unrestricted root access.   
 
-## Application Security
+## Application security
 {: #application-security}
 
 To secure application traffic, customers can take advantage of security features such as Application Content Filtering, Priority Queuing, and a Web Application Firewall.
 
-## Traffic Filtering
+## Traffic filtering
 {: #traffic-filtering}
 
 The {{site.data.keyword.vpx_full}} filters requests from end-users to the servers and responses from the servers to end-users. A Learning feature with the Application Firewall allows the profiling of sessions in real time and the determination of whether to allow traffic.
 
-## PCI-DSS Reporting
+## PCI-DSS reporting
 {: #pci-dss-reporting}
 
 Payment Card Industry (PCI) Data Security Standard (DSS) consists of twelve criteria that must be met by businesses that process online credit card payments. The PCI-DSS reports consist of a list of those criteria that are relevant to your Application Firewall configuration. The report also lists whether your current configuration meets each criterion, and suggests how to configure the application firewall to meet those standards.
@@ -80,7 +80,7 @@ Payment Card Industry (PCI) Data Security Standard (DSS) consists of twelve crit
 
 The NetScaler Platinum Edition extends the load balancer beyond the local boundaries of the datacenter with Global Load Balancing functionality.
 
-## Extend your Datacenter
+## Extend your data center
 {: #extend-your-datacenter}
 
 The NetScaler Platinum Edition allows you to use the NetScaler CloudBridge Connector feature which provides a simple way to extend your datacenter to IBM Cloud with wizard-driven menus.

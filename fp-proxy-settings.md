@@ -23,7 +23,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Update the Proxy Settings on the Client Machine’s Internet Browser (Optional)
+# Update the proxy settings on the client machine’s internet browser (optional)
 {: #update-the-proxy-settings-on-the-client-machine-s-internet-browser-optional-}
 
 As a final, optional step to configuring forward proxy traffic redirection with your {{site.data.keyword.vpx_full}}, you can update your proxy settings using your client machine's internet browser.

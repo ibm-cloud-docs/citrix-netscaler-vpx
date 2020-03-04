@@ -21,7 +21,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Order an SSL Certificate
+# Order an SSL certificate
 {: #order-an-ssl-certificate}
 
 Secure Sockets Layer (SSL) is a technology that encrypts traffic between the client application and the server application, and is accomplished by using a public key/private key system that uses an SSL certificate.

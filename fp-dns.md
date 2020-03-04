@@ -20,7 +20,7 @@ subcollection: citrix-netscaler-vpx
 {:note: .note}
 {:important: .important}
 
-# Configure the DNS Virtual Server
+# Configure the DNS virtual server
 {: #configure-the-dns-virtual-server}
 
 To further define forward proxy traffic redirection using the {{site.data.keyword.vpx_full}}, you will need to configure a DNS virtual server:
