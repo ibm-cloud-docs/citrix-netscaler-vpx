@@ -7,7 +7,6 @@ Citrix Netscaler VPX
     {: .navgroup id="learn"}
     getting-started.md
     about-citrix-netscaler-vpx.md
-    whats-new-vpx.md
     terminology.md
     default-deployment.md
     netscaler-basic-configuration.md
@@ -74,6 +73,7 @@ Citrix Netscaler VPX
     {: .navgroup-end}
 
     {: .navgroup id="help"}
+    whats-new-vpx.md
     load-balancing-faqs.md
     getting-help.md
     {: .navgroup-end}
