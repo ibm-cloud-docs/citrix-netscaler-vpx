@@ -39,8 +39,6 @@ The following updates have been applied for SSL connections:
 * Support for ECDHE ciphers on the front end of SafeNet network external HSM
 * Removal of SSLv2: The NetScaler VPX appliance does not support SSLv2 from release 12.1.
 
-For more details about 12.1 SSL updates, see the [Citrix 12.1 Release Notes ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/netscaler/12-1/downloads/release-notes-12-1-48-13.html){: new_window}.
-
 ### Service group support for GSLB
 {: #service-groups-support-for-gslb}
 You can now configure IP address-based service groups, domain-name-based service groups, or domain-name-based autoscale service groups for GSLB. You can also manage a group of services as easily as a single service, and bind a service group to a virtual server, as well as add services to the group.
