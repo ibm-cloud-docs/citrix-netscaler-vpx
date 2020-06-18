@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="citrix-netscaler-vpx" category="network" audience="network" href="/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started" console-page="/catalog/infrastructure/load-balancer-group" product-page="https://www.ibm.com/cloud/blog/announcements/boost-your-application-delivery-with-citrix-netscaler?mhsrc=ibmsearch_a&mhq=citrix%20vpx" path="citrix-netscaler-vpx"}
+{: .toc subcollection="citrix-netscaler-vpx" category="network_classic" audience="network" href="/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started" console-page="/catalog/infrastructure/load-balancer-group" product-page="https://www.ibm.com/cloud/blog/announcements/boost-your-application-delivery-with-citrix-netscaler?mhsrc=ibmsearch_a&mhq=citrix%20vpx" path="citrix-netscaler-vpx"}
 Citrix Netscaler VPX
 
     {: .navgroup id="learn"}
