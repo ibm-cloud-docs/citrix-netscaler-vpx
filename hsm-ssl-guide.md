@@ -30,7 +30,7 @@ This Step by Step assumes you have completed the steps in [Deploying and Configu
 {: note}
 
 ## About the deployment
-{: #about-the-deployment}
+{: #about-deployment}
 This deployment was built and tested with the following component specifications:
 
 | NetScaler VPX Version & Build	| HSM Software Version | HSM Firmware version | HSM Client Version |
@@ -48,7 +48,7 @@ The below diagram shows the network traffic flow for the SSL offload use case. T
 If you are not familiar with SSL offload, review this [Citrix article ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/netscaler/12-1/ssl.html){:new_window}.
 
 ## What you'll accomplish
-{: #what-you-ll-accomplish}
+{: #what-accomplish}
 
 In this Step-by-Step guide you will learn how to configure SSL for a {{site.data.keyword.vpx_full}}:
 
