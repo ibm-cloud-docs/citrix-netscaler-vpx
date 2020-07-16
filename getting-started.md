@@ -31,6 +31,9 @@ To get started with {{site.data.keyword.vpx_full}}, you will need to know the fo
 * The number of public IP addresses needed
 * The VLAN where you want to assign the load balancer
 
+To get the maximum value from your Citrix Netscaler VPX, make sure you allocate and apply your Citrix ADC licenses using the new Citrix licensing framework. For more information, refer to [Citrix ADC licensing overview ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/citrix-adc/12-1/licensing/citrix-adc-licensing-overview.html){:new_window}.
+{: important}
+
 ## Ordering a {{site.data.keyword.vpx_full}}
 {: #ordering-a-citrix-netscaler-vpx}
 
