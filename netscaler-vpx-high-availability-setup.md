@@ -59,3 +59,4 @@ After ordering the two Netscaler VPX servers in the needed VLAN, and ordering th
 7. Force a failover to test. Refresh the screen and watch the IP addresses become active on the secondary. Failover again and watch them go passive. Ping the IPs to make sure they work.
 
 8. The primary server should now be labeled primary and the secondary should report has a synchronization state of success.
+9. Ensure your local administrators are aware that the password in the Cloud portal must be changed to be consistent any time the passwords are changed on the local VPXs.  **Failing to do so will cause HA Upgrades and License operations to fail resulting in production outages.**  Your passwords should be consistent in three places: VPX device 1, VPX device 2, and the IBM Cloud Portal.
