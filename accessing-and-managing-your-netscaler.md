@@ -62,3 +62,8 @@ Alternatively, you can copy and paste the NetScaler device's private IP into a w
 {: #netscaler-ssh-access}
 
 You can also connect to the NetScaler device directly using your favorite SSH client. Use the Private IP and login information for the NetScaler device from the Device List page and make sure you are connected to the {{site.data.keyword.cloud_notm}} VPN.
+
+## Caution Regarding HA Configurations and Portal Passwords
+{: #ha-config-notice}
+
+While the VPX is expected to be managed by the customer, if customer does not keep their Cloud Portal root username and password consistent with what they have changed it to on the physical device.  **If these are not kept consistent, upgrades and licensing operations can fail resulting in production outages.**  Ensure any administrator tasked with supervision of VPX's is aware of this to avoid unexpected downtime.
