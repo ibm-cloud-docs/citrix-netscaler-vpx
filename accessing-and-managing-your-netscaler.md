@@ -44,7 +44,7 @@ Other details listed in the Device List include:
 While the Private IP address of the NetScaler is listed in the portal, the Public IP address of the NetScaler is not. This is because management of the NetScaler is done using the Private IP address, and the Public IP addresses for NetScaler devices are used as the device's VIP(s) or Virtual IP(s), which are used for load balancing services.
 {: note}
 
-## The Device details screen
+## The device details screen
 {: #the-device-details-screen}
 
 Clicking on the NetScaler's name takes you to the **Device Details** page for the NetScaler, which shows the VLAN on which your NetScaler was deployed, as well as your Public IP addresses for the NetScaler. These IP addresses cannot be used for management, because they are the NetScaler's default Public VIP addresses. You will use these later to associate to a load balancing service.
@@ -62,3 +62,8 @@ Alternatively, you can copy and paste the NetScaler device's private IP into a w
 {: #netscaler-ssh-access}
 
 You can also connect to the NetScaler device directly using your favorite SSH client. Use the Private IP and login information for the NetScaler device from the Device List page and make sure you are connected to the {{site.data.keyword.cloud_notm}} VPN.
+
+## HA configurations and portal passwords
+{: #ha-config-notice}
+
+You are expected to manage your VPX, and also keep your Cloud Portal root username and password consistent with what you change it to on the physical device. **If these are not kept consistent, upgrades and licensing operations can fail, resulting in production outages.** Ensure any administrator that is supervising your VPX is aware of this issue, so as to avoid unexpected downtime.
