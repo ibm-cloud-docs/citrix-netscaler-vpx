@@ -4,7 +4,7 @@ copyright:
   years: 2019
 lastupdated: "2019-11-13"
 
-keywords: ipsec, vpn, vpx, tunnel
+keywords: ipsec, vpn, tunnel
 
 subcollection: citrix-netscaler-vpx
 

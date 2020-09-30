@@ -4,7 +4,7 @@ copyright:
 
 lastupdated: "2019-11-12"
 
-keywords: faq, faqs, questions, vpx, options, ipv6, traffic, network, ha, ssl, vpn
+keywords: faq, faqs, questions, options, ipv6, traffic, network, ha, ssl, vpn
 
 subcollection: citrix-netscaler-vpx
 

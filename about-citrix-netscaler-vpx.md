@@ -5,7 +5,7 @@ copyright:
 
 lastupdated: "2019-11-13"
 
-keywords: about, vpx, features, overview
+keywords: about, features, overview
 
 subcollection: citrix-netscaler-vpx
 

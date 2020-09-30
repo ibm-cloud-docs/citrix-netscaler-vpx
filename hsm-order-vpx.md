@@ -4,7 +4,7 @@ copyright:
   years: 2018
 lastupdated: "2019-11-12"
 
-keywords: hsm, security, vpx, citrix
+keywords: hsm, security, citrix
 
 subcollection: citrix-netscaler-vpx
 

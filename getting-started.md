@@ -4,7 +4,7 @@ copyright:
 
 lastupdated: "2018-11-12"
 
-keywords: order, vpx, overview
+keywords: order, citrix, vpx, overview
 
 subcollection: citrix-netscaler-vpx
 ---

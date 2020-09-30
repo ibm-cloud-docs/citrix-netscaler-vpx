@@ -3,7 +3,7 @@ copyright:
   years: 1994, 2017
 lastupdated: "2019-11-12"
 
-keywords: gslb, vpx, cdn, object storage
+keywords: gslb, cdn, object storage
 
 subcollection: citrix-netscaler-vpx
 ---

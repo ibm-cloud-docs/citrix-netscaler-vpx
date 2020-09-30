@@ -3,7 +3,7 @@ copyright:
   years: 1994, 2017
 lastupdated: "2019-11-12"
 
-keywords: load balancing, vpx, global, mep, gslb
+keywords: load balancing, global, mep, gslb
 
 subcollection: citrix-netscaler-vpx
 ---

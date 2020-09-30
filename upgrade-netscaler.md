@@ -4,7 +4,7 @@ copyright:
 
 lastupdated: "2019-11-12"
 
-keywords: upgrade, vpx, callhome
+keywords: upgrade, callhome
 
 subcollection: citrix-netscaler-vpx
 ---
