@@ -25,7 +25,7 @@ subcollection: citrix-netscaler-vpx
 Load balancers are used to balance traffic over multiple application servers to improve performance and stability in a scalable application. Yet, a single load balancer is a single point of failure. Avoid this by configuring a High Availability (HA) {{site.data.keyword.vpx_full}} pair. Configuring an HA pair requires two Netscaler VPX servers. The secondary server steps in to continue load balancing should the primary fail.
 {: shortdesc}
 
-The SNIP (SubNet IP) is the IP seen by the load balanced servers as the source IP of the requests (connections) made to the VIP (Virtual IP) of the Netscaler VPX. Normally, in an HA pair setup, the SNIP does not change, but it is possible for it to do so during a failover event. When the two Netscalers are in the same subnet, it is possible for the SNIP of the secondary Netscaler VPX to change to the SNIP originally used by the primary Netscaler VPX. This will not cause any confusion for the servers handling the request.
+The SNIP (SubNet IP) is the IP seen by the load-balanced servers as the source IP of the requests (connections) made to the VIP (Virtual IP) of the Netscaler VPX. Normally, in an HA pair setup, the SNIP does not change, but it is possible for it to do so during a failover event. When the two Netscalers are in the same subnet, it is possible for the SNIP of the secondary Netscaler VPX to change to the SNIP originally used by the primary Netscaler VPX. This will not cause any confusion for the servers handling the request.
 
 For an HA configuration, both NetScalers must be in the same VLAN and on the same subnet.
 
@@ -40,17 +40,19 @@ After ordering the two Netscaler VPX servers in the needed VLAN, and ordering th
 
 2. On the VPX you want to be secondary, click on **System > High Availability**, then right click the first line and click **Edit**. Select **Stay Secondary** on the High Availability Status config drop-down box and click **OK**.
 
-3. Select **Add**. Enter the system IP address of the other VPX (this is located in the High Availability tab on the primary), and enter the root login details at the bottom. Leave the **Turn on INC** box unchecked. Click **OK**.
+3. Select **Add**. Enter the system IP address of the other VPX (this is located in the High Availability tab on the primary), and enter the root login details. Leave the **Turn on INC** box unchecked. Click **OK**.
 
-	If you receive an error claiming that the IPs are not in the same subnet, it is possible both VPX servers are not in the same VLAN. Otherwise, you should now be able to open the primary server and select the **Refresh** button to see both servers operating in High Availability.
+   If you receive an error claiming that the IPs are not in the same subnet, it is possible both VPX servers are not in the same VLAN. Otherwise, you should now be able to open the primary server and select the **Refresh** button to see both servers operating in High Availability.
 
-	The new NetScaler management IP for the secondary will be one IP address lower than previously. If you cannot get any access to the secondary VPX, remove the high availability from the command line using:
+   The new NetScaler management IP for the secondary will be one IP address lower than previously. If you cannot get any access to the secondary VPX, remove the high availability from the command line using:
 
-	`sh ha node`
+   `sh ha node`
+   {:pre}
 
-	Then remove what would be the ha node:
+   Then remove what would be the ha node:
 
-	`rm ha node 1`
+   `rm ha node 1`
+   {:pre}
 
 4. On the primary VPX you should see that the remote VPX is now syncing. Go to the secondary server and check the **Network > IPs** configuration. You should see the primary server's VIP and other IPs listed as passive.
 
@@ -58,7 +60,7 @@ After ordering the two Netscaler VPX servers in the needed VLAN, and ordering th
 
 7. Force a failover to test. Refresh the screen and watch the IP addresses become active on the secondary. Failover again and watch them go passive. Ping the IPs to make sure they work.
 
-8. The primary server should now be labeled primary and the secondary should report has a synchronization state of success.
+8. The primary server should now be labeled primary and the secondary should report that it has a synchronization state of success.
 
-Ensure your local administrators know that the password in the Cloud portal must be changed to be consistent any time the passwords are changed on the local VPXs.  **Failing to do so will cause HA Upgrades and License operations to fail resulting in production outages.**  Your passwords should be consistent in three places: VPX device 1, VPX device 2, and the IBM Cloud Portal.
-{: important}
+Ensure your local administrators know that the password in the Cloud console must be changed to be consistent any time the passwords are changed on the local VPXs.  **Failing to do so will cause HA Upgrades and License operations to fail, resulting in production outages.**  Your passwords should be consistent in three places: VPX device 1, VPX device 2, and the IBM Cloud console.
+{: important} 
