@@ -1,21 +1,4 @@
 {
-  "define":[
-    "Whats Citrix Netscaler VPX",
-    "define citrix netscaler",
-    "what's a citrix loadbalancer",
-    "how does citrix netscaler work",
-    "Citrix VPX definition",
-    "what is netscaler"
-   ],
-  "why":[
-    "is load balancing needed",
-    "is a load balancer required",
-    "do I need load balancing",
-    "what does load balancing do",
-    "what is load balancing",
-    "what do load balancers do",
-    "is load balancing necessary"
-   ],
   "options":[
     "what are the different load balancers",
     "how many load balancers do you have",
@@ -49,21 +32,6 @@
     "change the Use Source IP (USIP) parameter",
     "update USIP parameter"
   ],
-  "ports":[  
-    "ports used to exchange the HA related information between the nodes",
-    "ports can be used to exchange HA info",
-    "ports for High Availability exchange",
-    "ports to use for HA information",
-    "ports used to exchange the high availability info"
-  ],
-  "version":[ 
-    "version of NetScaler VPX includes global server load balancing",
-    "version of NetScaler that includes GSLB",
-    "is global server load balancing included",
-    "do I get GSLB with this version",
-    "GSLB also included",
-    "get global server load balancing inclusion"
-],
   "ha":[ 
     "NetScaler in HA configuration",
     "NetScaler VPX appliances support High Availability",
