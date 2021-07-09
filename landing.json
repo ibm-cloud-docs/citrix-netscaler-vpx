@@ -1,0 +1,49 @@
+{
+    "title": "Citrix VPX docs",
+    "lastupdated": "2021-04-13",
+    "introduction": "This is a description of what the user will be able to access or find content-wise for your product.",
+      "terraform": "https://cloud.ibm.com/docs/terraform?topic=terraform-getting-started",
+    "section_recommended": [
+      {
+        "title": "Getting started with Citrix Netscaler VPX",
+        "description": "Deploying a Citrix Netscaler VPX in your IBM Cloud solution accelerates web application delivery, boosts performance, and ensures your cloud applications and services stay optimized, available, and secure. If you have challenging workloads, such as gaming, big data and analytics, or private clouds, the Citrix Netscaler VPX can help you deliver your solution when, where, and how your users need it most.",
+        "href": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started"
+      },
+      {
+        "title": "Managing your Citrix Netscaler VPX",
+        "description": "Citrix Netscaler VPX devices are powerful tools with an array of features that help to enhance and refine your IBM Cloud solution in a multitude of ways. You can find the device's information in the IBM Cloud catalog, as well as connect to the device and configure its features.",
+        "href": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-managing-your-citrix-netscaler-vpx"
+      },
+      {
+        "title": "Setting up Citrix Netscaler VPX for High Availability (HA)",
+        "description": "Load balancers are used to balance traffic over multiple application servers to improve performance and stability in a scalable application. Yet, a single load balancer is a single point of failure. Avoid this by configuring a High Availability (HA) Citrix Netscaler VPX pair. Configuring an HA pair requires two Netscaler VPX servers. The secondary server steps in to continue load balancing should the primary fail.",
+        "href": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-setting-up-citrix-netscaler-vpx-for-high-availability-ha-"
+      }
+    ],
+    "section_learn": {
+      "developer": "https://developer.ibm.com/depmodels/cloud/",
+      "architecture": "https://www.ibm.com/cloud/architecture",
+      "training": "https://www.ibm.com/training/cloud",
+      "community": "https://community.ibm.com/community/user/publiccloud/home"
+    },
+    "section_updates": {
+      "view_more": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-release-notes-for-citrix-netscaler-vpx",
+      "tiles": [
+        {
+          "date": "Version 12.1",
+          "title": "Virtual servers with multiple IP addresses",
+          "description": "You can now create a single load balancing virtual server with multiple non-consecutive/consecutive VIP IPv4 and IPv6 addresses. Each VIP address bound to a virtual server is treated as an individual virtual server."
+        },
+        {
+          "date": "Version 12.1",
+          "title": "SSL",
+          "description": "The following updates have been applied for SSL connections: Removal of weak ciphers from the DEFAULT_BACKEND cipher group, support for ECDHE ciphers on the front end of Thales nShield® external HSM, support for ECDHE ciphers on the front end of SafeNet network external HSM, and removal of SSLv2: The NetScaler VPX appliance does not support SSLv2 from release 12.1."
+        },
+        {
+          "date": "Version 12.1",
+          "title": "Service group support for GSLB",
+          "description": "You can now configure IP address-based service groups, domain-name-based service groups, or domain-name-based autoscale service groups for GSLB. You can also manage a group of services as easily as a single service, and bind a service group to a virtual server, as well as add services to the group."
+        }
+      ]
+    }
+  }
