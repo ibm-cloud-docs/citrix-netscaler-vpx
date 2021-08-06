@@ -71,7 +71,6 @@ Citrix Netscaler VPX
     vpx-responsibilities.md
     [Citrix Website](https://www.citrix.com/products/netscaler-adc/)
     other-resources.md
-    [Terraform](https://cloud.ibm.com/docs/terraform?topic=terraform-getting-started)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
