@@ -47,4 +47,4 @@ To order the {{site.data.keyword.vpx_full}} appliance, perform the following pro
 
 You are taken to the infrastructure summary page, where you can find your {{site.data.keyword.vpx_full}} appliance at **Devices > Device List**. Review and confirm the device details for login credentials and its public and private IP addresses.
 
-    ![Review Citrix order](images/fp3.png)
+   ![Review Citrix order](images/fp3.png) 
