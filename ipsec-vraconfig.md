@@ -29,8 +29,7 @@ Now that your {{site.data.keyword.vpx_full}} is configured, you need to configur
 
 To do this, use the following syntax:
 
-    ```
-  
+   ```
     $ set security vpn ipsec esp-group ESP lifetime '86400'
     $ set security vpn ipsec esp-group ESP mode 'tunnel'
     $ set security vpn ipsec esp-group ESP pfs 'disable'
@@ -48,6 +47,5 @@ To do this, use the following syntax:
     $ set security vpn ipsec site-to-site peer 10.143.220.106 local-address '10.115.168.144'
     $ set security vpn ipsec site-to-site peer 10.143.220.106 tunnel 1 local prefix '10.115.72.192/26'
     $ set security vpn ipsec site-to-site peer 10.143.220.106 tunnel 1 remote prefix '192.168.0.0/24'
-
-    ```
-    {: codeblock}
+   ```
+   {: codeblock}

@@ -64,4 +64,4 @@ To further define forward proxy traffic redirection using the {{site.data.keywor
 
 Your DNS virtual server state should now show as green.
 
-    ![DNS virtual server state](images/fp11.png)
+   ![DNS virtual server state](images/fp11.png)

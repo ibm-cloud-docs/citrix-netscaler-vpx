@@ -44,7 +44,7 @@ To create a profile, perform the following procedure:
 
 To create an IPsec profile in the CLI, use the following syntax:
 
-    ```
-    > add ipsec profile IPsec_Profile1 -ikeVersion V1 -encAlgo AES256 -hashAlgo HMAC_SHA1 -lifetime 86400 -psk ipsecpskvpxvra
+   ```
+   > add ipsec profile IPsec_Profile1 -ikeVersion V1 -encAlgo AES256 -hashAlgo HMAC_SHA1 -lifetime 86400 -psk ipsecpskvpxvra
 
-    ```
+   ```

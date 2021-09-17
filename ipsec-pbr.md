@@ -41,22 +41,21 @@ To create a PBR profile perform the following steps:
     *	**Destination IP Low**
     *	**Destination IP High**
 8.	Click **Create**.
-9.	From **System > Network > PBRs**, select the new PBR, click the **Select Action** list, then choose **Apply**.
+9. From **System > Network > PBRs**, select the new PBR, click the **Select Action** list, then choose **Apply**.
 
-To create the PBR profile in the CLI, use the following syntax:
+   To create the PBR profile in the CLI, use the following syntax:
 
-    ```
+   ```
     > add ns pbr PBRforipsectunnel1 ALLOW -srcIP = 192.168.0.0-192.168.0.255 -destIP = 10.115.72.192-10.115.72.255 -ipTunnel
     IPsec_tunnel1 -priority 10
     > apply pbrs
-
-    ```
-    {: codeblock}
+   ```
+   {: codeblock}
 
     Any virtual server instances or infrastructure intended to go through the VPN tunnel and sit behind the VPX, will need to be configured to either use VPX as the default gateway or to use a static route. This will send traffic to the VPX when the destination is the remote (peer) subnet. See the following static route (**10.115.0.0/16**) example.
     {: note}
 
-    ```
+   ```
     >route print
     ===========================================================================
     Interface List
@@ -73,6 +72,5 @@ To create the PBR profile in the CLI, use the following syntax:
     Network Destination        Netmask          Gateway       Interface  Metric
             0.0.0.0          0.0.0.0    169.54.255.65    169.54.255.73     26
          10.115.0.0      255.255.0.0      192.168.0.1      192.168.0.2     26
-
-    ```
-    {: codeblock}
+   ```
+   {: codeblock}
