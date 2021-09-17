@@ -28,7 +28,7 @@ The frequently asked questions in this topic will help you when working with the
 {: faq}
 {: support}
 
-Citrix NetScaler is an application delivery controller that makes applications five times better by accelerating performance, ensuring application availability and protection and substantially lowering operational costs. Choose the best Citrix NetScaler edition that meets your application requirements, and deploy it on the appropriate dedicated system for your performance needs. To learn more about Citrix NetScaler, refer to the [NetScaler page ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.citrix.com/products/netscaler-application-delivery-controller/overview.html){:new_window} on the Citrix website.
+Citrix NetScaler is an application delivery controller that makes applications five times better by accelerating performance, ensuring application availability and protection and substantially lowering operational costs. Choose the best Citrix NetScaler edition that meets your application requirements, and deploy it on the appropriate dedicated system for your performance needs. To learn more about Citrix NetScaler, refer to the [NetScaler page ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.citrix.com/products/netscaler-application-delivery-controller/overview.html){: new_window} on the Citrix website.
 
 ## Why is load balancing needed?
 {: #why}

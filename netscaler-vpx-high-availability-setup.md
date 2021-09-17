@@ -47,12 +47,12 @@ After ordering the two Netscaler VPX servers in the needed VLAN, and ordering th
    The new NetScaler management IP for the secondary will be one IP address lower than previously. If you cannot get any access to the secondary VPX, remove the high availability from the command line using:
 
    `sh ha node`
-   {:pre}
+   {: pre}
 
    Then remove what would be the ha node:
 
    `rm ha node 1`
-   {:pre}
+   {: pre}
 
 4. On the primary VPX you should see that the remote VPX is now syncing. Go to the secondary server and check the **Network > IPs** configuration. You should see the primary server's VIP and other IPs listed as passive.
 

@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2018
+  years: 2018, 2019
 lastupdated: "2019-11-12"
 
-keywords: hsm, ssl, dns, security, check, configure
+keywords:
 
 subcollection: citrix-netscaler-vpx
 
@@ -12,19 +12,25 @@ subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
+{:new_window: target="_blank"} 
 {:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank_"}
 {:pre: .pre}
-{:table: .aria-labeledby="caption"}
+{:screen: .screen}
+{:term: .term}
 {:tip: .tip}
 {:note: .note}
 {:important: .important}
+{:deprecated: .deprecated}
+{:table: .aria-labeledby="caption"}
+{:external: target="_blank" .external}
+{:generic: data-hd-programlang="generic”}
+{:download: .download}
+{:DomainName: data-hd-keyref="DomainName"}
 
 # Check and configure the DNS record
 {: #check-and-configure-the-dns-record}
 
-In this Step by Step example, the DNS service from IBM© Cloud Internet Services is used to manage the DNS zone and its records. In this case, you must ensure a record is created for the FQDN being used. The record should point to the public address to be configured in the {{site.data.keyword.vpx_full}} virtual server.
+In this step-by-step example, the DNS service from {{site.data.keyword.cis_full}} is used to manage the DNS zone and its records. In this case, you must ensure a record is created for the FQDN being used. The record should point to the public address to be configured in the {{site.data.keyword.vpx_full}} virtual server.
 {: shortdesc}
 
 ![Add record](images/12-add-record.png)

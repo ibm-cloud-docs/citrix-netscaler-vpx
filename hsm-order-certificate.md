@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2018
+  years: 2018, 2019
 lastupdated: "2019-11-12"
 
-keywords: hsm, security, certificate, order
+keywords:
 
 subcollection: citrix-netscaler-vpx
 
@@ -12,26 +12,32 @@ subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
+{:new_window: target="_blank"} 
 {:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank_"}
 {:pre: .pre}
-{:table: .aria-labeledby="caption"}
+{:screen: .screen}
+{:term: .term}
 {:tip: .tip}
 {:note: .note}
 {:important: .important}
+{:deprecated: .deprecated}
+{:table: .aria-labeledby="caption"}
+{:external: target="_blank" .external}
+{:generic: data-hd-programlang="generic”}
+{:download: .download}
+{:DomainName: data-hd-keyref="DomainName"}
 
 # Order an SSL certificate
 {: #order-an-ssl-certificate}
 
 Secure Sockets Layer (SSL) is a technology that encrypts traffic between the client application and the server application, and is accomplished by using a public key/private key system that uses an SSL certificate.
-{; shortdesc}
+{: shortdesc}
 
 SSL certificates contain the server’s public key, dates for which the certificate is valid, a host name for which the certificate is valid, and a signature from the certificate authority that issued it.
 
-IBM© Cloud offers certificates that can be acquired and purchased without having to go through a third-party vendor/site.
+{{site.data.keyword.cloud}} offers certificates that can be acquired and purchased without having to go through a third-party vendor/site.
 
-IBM Cloud offers yearly and bi-yearly SSL certificates for customers that offer various benefits, including:
+{{site.data.keyword.cloud_notm}} offers yearly and bi-yearly SSL certificates for customers that offer various benefits, including:
 
 * Full authentication for business identity and domain ownership verification
 * 40- to 256-bit encryption on all online transactions
@@ -39,7 +45,7 @@ IBM Cloud offers yearly and bi-yearly SSL certificates for customers that offer 
 
 If you are running multiple domains, an SSL certificate can be purchased for each domain.
 
-For more information about SSL certificates refer to the following IBM Cloud articles:
+For more information about SSL certificates refer to the following {{site.data.keyword.cloud_notm}} articles:
 
 * [About SSL certificates](/docs/ssl-certificates?topic=ssl-certificates-about-ssl-certificates)
 * [Introduction to SSL technology](/docs/ssl-certificates?topic=ssl-certificates-introduction-to-ssl-technology)
@@ -77,10 +83,10 @@ To order an SSL certificate for use with your {{site.data.keyword.vpx_full}}, pe
 
 	As shown, the system processes and interprets the CSR text, then displays this in the following page.
 
-	Make sure to select a valid email account and domain/sub-domain, as this is the designated method to validate the ownership of the domain.
+	Make sure to select a valid email account and domain/sub-domain, because this is the designated method to validate the ownership of the domain.
 
 	Confirm your order details and click **Place Order**.
 
 4. You will receive an order confirmation with the details of the certificate request to the account you indicated.
 
-	Click the enclosed link in the email to approve the domain validation request. At this point the SSL request should be ready to begin fulfillment.
+	Click the link in the email to approve the domain validation request. At this point the SSL request should be ready to begin fulfillment.

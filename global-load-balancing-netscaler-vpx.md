@@ -45,19 +45,19 @@ The main components or entities in the GSLB process/deployment are:
 
 * **Virtual servers:** A VIP is an IP address to which clients send requests, NetScaler terminates the client connection at the VIP and then it initiates a connection with a server configured in the (local) load balancing service.
 * **DNS (Domain Name System) and Name servers:** Name resolution on GSLB works very much like regular DNS. The difference is the logic/criteria used to determine the address(es) resolved, GSLB uses a pre-configured load balancing method to handle this resolution. NetScaler can be configured to interact with DNS in different ways:
-	* Authoritative DNS (ADNS). NetScalers using ADNS mode are authoritative for a particular domain and all records on it.
-	* DNS sub-delegation. Occurs when a DNS server (authoritative of the domain) delegates the responsibility of a sub-domain to a NetScaler system.
-	* DNS proxy. When configured in this mode, NetScalers forward DNS requests to another server (external) handling the name resolution.
+    * Authoritative DNS (ADNS). NetScalers using ADNS mode are authoritative for a particular domain and all records on it.
+    * DNS sub-delegation. Occurs when a DNS server (authoritative of the domain) delegates the responsibility of a sub-domain to a NetScaler system.
+    * DNS proxy. When configured in this mode, NetScalers forward DNS requests to another server (external) handling the name resolution.
 * **Method:** The method is an algorithm that the GSLB virtual server uses to select the best GSLB service from the topology. The algorithm assesses performance aspects that correspond to the actual selection criteria. The following methods are available:
-  * Round Robin: Alternates incoming requests to be handled between the GSLB sites/services regardless of their load.
-  * Round Trip Time (RTT): A measure of time or delay between the client’s local DNS server and the (GSLB) sites. NetScaler uses different mechanisms such as ICMP echo request/reply (PING), UDP, and TCP, to gather the RTT metrics.
-  * Static Proximity: Uses an IP-address database to establish the proximity between the client’s local DNS server and the sites, then it uses this as criteria to make a selection.
-  * Least Connections: Measures the least number of active connections on each site/service as selection criteria.
-  * Least Response Time: Selects the site with the fewest active connections and the lowest average response time.
-  * Least Bandwidth: Chooses the site that is currently managing the least amount of traffic (Mbps).
-  * Least Packets: Selects the service that has received the least number of packets in the last 14 seconds.
-  * Source IP address Hash: Makes a selection of the service based on the hashed value of the client IPv4 or IPv6 address.
-  * Custom Load: Selects a service that is not handling any active transactions. If all of the services in the load balancing setup are handling active transactions, the appliance selects the service with the smallest load (CPU usage, memory, and response time).
+    * Round Robin: Alternates incoming requests to be handled between the GSLB sites/services regardless of their load.
+    * Round Trip Time (RTT): A measure of time or delay between the client’s local DNS server and the (GSLB) sites. NetScaler uses different mechanisms such as ICMP echo request/reply (PING), UDP, and TCP, to gather the RTT metrics.
+    * Static Proximity: Uses an IP-address database to establish the proximity between the client’s local DNS server and the sites, then it uses this as criteria to make a selection.
+    * Least Connections: Measures the least number of active connections on each site/service as selection criteria.
+    * Least Response Time: Selects the site with the fewest active connections and the lowest average response time.
+    * Least Bandwidth: Chooses the site that is currently managing the least amount of traffic (Mbps).
+    * Least Packets: Selects the service that has received the least number of packets in the last 14 seconds.
+    * Source IP address Hash: Makes a selection of the service based on the hashed value of the client IPv4 or IPv6 address.
+    * Custom Load: Selects a service that is not handling any active transactions. If all of the services in the load balancing setup are handling active transactions, the appliance selects the service with the smallest load (CPU usage, memory, and response time).
 
 * **MEP (Metric Exchange Protocol):** A proprietary protocol used to exchange metrics (load and network) and persistence information between sites. MEP provides health checking between the different sites/NetScalers in the GSLB mesh/topology. Using the criteria set by the administrator, MEP provides a way for sites to communicate and handle the traffic based on the selection parameters previously configured. MEP uses TCP ports 3009 and 3011. When MEP is disabled, the selection of methods is limited to the options listed before marked with an asterisk (`*`). Any other method chosen would revert back to Round Robin.
 * **Monitoring:** The NetScaler engine periodically evaluates the state of the remote GSLB services by using either MEP or explicit monitors bound to the services in question. Monitors are used just like on a regular load balancing service. In the case of GSLB, adding monitors to local services is not required as this is typically controlled by MEP.

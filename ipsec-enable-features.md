@@ -4,7 +4,7 @@ copyright:
   years: 2019
 lastupdated: "2019-11-13"
 
-keywords: ipsec, vpn, tunnel
+keywords:
 
 subcollection: citrix-netscaler-vpx
 
@@ -41,4 +41,4 @@ To enable these features in the CLI, execute the following commands:
 
 ```
 
-For additional instructions on connecting to the NetScaler using the GUI or SSH, visit the [following article](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-managing-your-citrix-netscaler-vpx#connecting-to-the-netscaler)
+See [Managing your Citrix Netscaler VPX](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-managing-your-citrix-netscaler-vpx#connecting-to-the-netscaler) for additional instructions on connecting to the NetScaler using the GUI or SSH.

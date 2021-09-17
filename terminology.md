@@ -3,7 +3,7 @@ copyright:
   years: 1994, 2017
 lastupdated: "2019-11-13"
 
-keywords: terminology, nsip, snip, vip, service, object, monitor
+keywords: nsip, snip, vip
 
 subcollection: citrix-netscaler-vpx
 ---
@@ -33,17 +33,17 @@ A SNIP is the source IP address of a packet used by the NetScaler every time it 
 ### Virtual IP (VIP)
 {: #virtual-ip-vip-}
 
-A VIP is an IP address to which a client sends requests. The NetScaler terminated the client connection at the VIP and then initiates a connection with a server configured in the load balancing service.  This can be either a public IP address for public (internet) traffic, or a private IP address for private (intranet) traffic.
+A VIP is an IP address to which a client sends requests. The NetScaler terminates the client connection at the VIP and then initiates a connection with a server configured in the load balancing service.  This can be either a public IP address for public (internet) traffic, or a private IP address for private (intranet) traffic.
 
 ### Virtual server
 {: #virtual-server}
 
-A Virtual Server, in load balancing terms, refers to the combination of the IP address, port, and protocol to which an IP client connects and where traffic requests are sent for a particular application that is being load-balanced by the NetScaler.
+A virtual server, in load balancing terms, refers to the combination of the IP address, port, and protocol to which an IP client connects and where traffic requests are sent for a particular application that is being load-balanced by the NetScaler.
 
 ### Service
 {: #service}
 
-The combination of IP address, port, and protocol used to route requests to a specific server. A Service, once configured, must later be associated to a Virtual Server.
+The combination of IP address, port, and protocol used to route requests to a specific server. A service, once configured, must later be associated to a virtual server.
 
 ### Server object
 {: #server-object}
@@ -53,4 +53,4 @@ A virtual entity that enables you to assign a significant name to a physical ser
 ### Monitor
 {: #monitor}
 
-An element that allows you to track a service, assuring that it is operating correctly. The monitor uses probes and heartbeat signals to keep track of the Service status.
+An element that allows you to track a service, assuring that it is operating correctly. The monitor uses probes and heartbeat signals to keep track of the service status.

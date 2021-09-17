@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2018
+  years: 2018, 2019
 lastupdated: "2019-11-13"
 
-keywords: security, hsm, fips
+keywords:
 
 subcollection: citrix-netscaler-vpx
 

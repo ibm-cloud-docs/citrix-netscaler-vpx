@@ -1,0 +1,100 @@
+#  Name your file `toc.yaml`
+#  Make sure you include all nav file coding requirements, as defined in https://test.cloud.ibm.com/docs/writing?topic=writing-code-nav
+#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
+---
+toc:
+  properties:
+    subcollection: citrix-netscaler-vpx
+    version: 2
+    category: network_classic
+    audience: service
+    href: /docs/citrix-netscaler-vpx
+    console-page: /catalog/infrastructure/load-balancer-group
+    product-page: https://www.ibm.com/cloud/blog/announcements/boost-your-application-delivery-with-citrix-netscaler?mhsrc=ibmsearch_a&mhq=citrix%20vpx
+    path: citrix-netscaler-vpx
+    label: Citrix Netscaler VPX
+
+#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group. See https://test.cloud.ibm.com/docs/writing?topic=writing-navigation for more details on the toc design.
+  entries:
+    - navgroup:
+       id: learn
+       topics:
+       - getting-started.md
+       - about-citrix-netscaler-vpx.md
+       - terminology.md
+       - default-deployment.md
+       - netscaler-basic-configuration.md
+       - /loadbalancer-service/loadbalancer-service-explore
+       - link:
+          label: What is load balancing?
+          href: https://www.ibm.com/cloud/learn/load-balancing
+
+    - navgroup:
+       id: howto
+       topics:
+       - accessing-and-managing-your-netscaler.md
+       - upgrade-netscaler.md
+       - netscaler-vpx-high-availability-setup.md
+       - setting-citrix-forwarding-proxy.md
+       - topicgroup:
+          label: Configuring forward-proxy traffic redirection using the Citrix Netscaler VPX appliance
+          topics:
+          - fp-guide.md
+          - order-vpx.md
+          - request-subnet.md
+          - fp-cache.md
+          - fp-dns.md
+          - fp-cache-http.md
+          - fp-cache-ssl.md
+          - fp-nat.md
+          - fp-proxy-settings.md
+       - topicgroup:
+          label: Deploying and configuring the IBM Hardware Security Module (HSM) with Citrix Netscaler VPX
+          topics:
+          - hsm-guide.md
+          - hsm-order-hsm.md
+          - hsm-order-vpx.md
+          - hsm-initialize-hsm.md
+          - hsm-fips.md
+          - hsm-create-partition.md
+          - hsm-install-hsm.md
+          - hsm-establish-ntl.md
+          - hsm-csr.md
+          - hsm-order-certificate.md
+          - hsm-retrieve-certificate.md
+       - topicgroup:
+          label: Configuring IPsec Site-to-site VPN in Citrix Netscaler VPX with IBM Virtual Router Appliance
+          topics:
+          - ipsec-guide.md
+          - ipsec-enable-features.md
+          - ipsec-profile.md
+          - ipsec-tunnel.md
+          - ipsec-pbr.md
+          - ipsec-vraconfig.md
+          - ipsec-verification.md
+       - topicgroup:
+          label: Configuring and Tuning SSL Offload with Citrix Netscaler VPX
+          topics:
+          - hsm-ssl-guide.md
+          - hsm-ssl-install.md
+          - hsm-ssl-dns.md
+          - hsm-ssl-server.md
+          - hsm-ssl-cipher.md
+        
+    - navgroup: 
+       id: reference
+       topics:
+       - global-load-balancing-options.md
+       - global-load-balancing-netscaler-vpx.md
+       - vpx-responsibilities.md
+       - other-resources.md
+       - link:
+          label: Citrix Website
+          href: https://www.citrix.com/products/netscaler-adc/
+
+    - navgroup:
+       id: help
+       topics:
+       - whats-new-vpx.md
+       - load-balancing-faqs.md
+       - getting-help.md

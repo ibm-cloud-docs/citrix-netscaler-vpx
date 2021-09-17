@@ -1,15 +1,12 @@
 ---
 
-
-
 copyright:
   years: 2017
 lastupdated: "2019-11-12"
 
-keywords: cache, redirect, ssl, traffic
+keywords:
 
 subcollection: citrix-netscaler-vpx
-
 
 ---
 
@@ -26,7 +23,7 @@ subcollection: citrix-netscaler-vpx
 # Configure cache redirection for SSL traffic (optional)
 {: #configure-cache-redirection-for-ssl-traffic-optional-}
 
-Instead of defining cache redirection for the virtual server with an HTTP or HTTPS protocol (as discussed in the previous step) with your {{site.data.keyword.vpx_full}}, you may want to define it to handle SSL traffic.
+Instead of defining cache redirection for the virtual server with an HTTP or HTTPS protocol (as discussed in the [previous step](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configure-cache-redirection-for-http-traffic)) with your {{site.data.keyword.vpx_full}}, you may want to define it to handle SSL traffic.
 {: shortdesc}
 
 To do so, follow these steps:
@@ -41,7 +38,7 @@ To do so, follow these steps:
 3. Specify your Redirect, DNS Virtual Server and Destination Virtual Server configurations.
 4. Click **Certificate** under the **Advanced Settings** panel to view the SSL certificate related configuration.
 5. Click the empty field **No Server Certificate**.
-6. From the Select Server Certificate drop-down list, select your SSL server.
+6. From the Select Server Certificate list menu, select your SSL server.
 7. Enter the certificate configuration information as required.
 
 	![Certificate configuration](images/fp15.png)

@@ -5,7 +5,7 @@ copyright:
 
 lastupdated: "2019-11-13"
 
-keywords: about, features, overview
+keywords:
 
 subcollection: citrix-netscaler-vpx
 
@@ -31,23 +31,22 @@ Deploying a {{site.data.keyword.vpx_full}} in your IBM Cloud solution accelerate
 * The only product that can load balance traffic on both the public and private network
 * Management using GUI (Graphical User Interface) or CLI (Command Line Interface)
 * Many different types of traffic distribution, including:
-  * Least Connections
-  * Round Robin
-  * Least response time
-  * Least bandwidth
-  * Least packets
-  * URL hashing
-  * Domain name hashing
-  * Source IP address hashing
-  * Destination IP address hashing
-  * Source IP - Destination IP hashing
-  * Token
-  * LRTM
-
+    * Least Connections
+    * Round Robin
+    * Least response time
+    * Least bandwidth
+    * Least packets
+    * URL hashing
+    * Domain name hashing
+    * Source IP address hashing
+    * Destination IP address hashing
+    * Source IP - Destination IP hashing
+    * Token
+    * LRTM
 * SSL acceleration / SSL offload
 * GSLB (Global Server Load Balancing)
-  * Uses the DNS infrastructure to connect the client to the best data center
-  * Monitors the load and availability of the data centers to select the best connection choices
+    * Uses the DNS infrastructure to connect the client to the best data center
+    * Monitors the load and availability of the data centers to select the best connection choices
 * Content switching
 * Cache redirection
 * Application firewall capabilities
@@ -78,7 +77,7 @@ Payment Card Industry (PCI) Data Security Standard (DSS) consists of twelve crit
 ## Global Load Balancing (GSLB)
 {: #global-load-balancing-gslb-}
 
-The NetScaler Platinum Edition extends the load balancer beyond the local boundaries of the datacenter with Global Load Balancing functionality.
+The NetScaler Platinum Edition extends the load balancer beyond the local boundaries of the data center with Global Load Balancing functionality.
 
 ## Extend your data center
 {: #extend-your-datacenter}

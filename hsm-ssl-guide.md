@@ -51,7 +51,7 @@ The following diagram shows the network traffic flow for the SSL offload use cas
 
 ![Network flows logical topology](images/network-flows-logical-topology.jpg)
 
-If you are not familiar with SSL offload, review this [Citrix article](https://docs.citrix.com/en-us/netscaler/12-1/ssl.html){:external}.
+If you are not familiar with SSL offload, review this [Citrix article](https://docs.citrix.com/en-us/netscaler/12-1/ssl.html){: external}.
 
 ## What you'll accomplish
 {: #what-accomplish}

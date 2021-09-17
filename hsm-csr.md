@@ -1,24 +1,30 @@
 ---
 
 copyright:
-  years: 2018
+  years: 2018, 2019
 lastupdated: "2019-11-12"
 
-keywords: hsm, security, keys, csr
+keywords:
 
 subcollection: citrix-netscaler-vpx
 
 ---
 
 {:shortdesc: .shortdesc}
+{:new_window: target="_blank"} 
 {:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank_"}
 {:pre: .pre}
-{:table: .aria-labeledby="caption"}
+{:screen: .screen}
+{:term: .term}
 {:tip: .tip}
 {:note: .note}
 {:important: .important}
+{:deprecated: .deprecated}
+{:table: .aria-labeledby="caption"}
+{:external: target="_blank" .external}
+{:generic: data-hd-programlang="generic”}
+{:download: .download}
+{:DomainName: data-hd-keyref="DomainName"}
 
 # Create keys and generate the Certificate Signing Request (CSR)
 {: #create-keys-and-generate-the-certificate-signing-request-csr-}
@@ -34,7 +40,7 @@ You can create a key pair to generate a Certificate Signing Request (CSR). In ad
 
 	This output confirms no objects exist as the output is blank/empty.
 
-	Then verify the object count is 0 in the HSM by displaying the partition details:
+	Then verify the object count is `0` in the HSM by displaying the partition details:
 
 	```
 	[jpmongehsm2] lunash:>partition show -p partition6
@@ -52,13 +58,13 @@ You can create a key pair to generate a Certificate Signing Request (CSR). In ad
 	Command Result : 0 (Success)
 	```
 
-	The command listed above uses the below syntax:
+	The command listed in the previous example uses the following syntax:
 
 	```
 	partition show -p <partition_name>
 	```
 
-2.	Using the Certificate Management Utility (CMU) in VPX, create a key pair using the command shown below. Once again, use the designated partition password.
+2.	Using the Certificate Management Utility (CMU) in VPX, create a key pair using the command shown in the following example. Once again, use the designated partition password.
 
 	```
 	root@IBMADC690867-s6dr# cmu gen -modulusBits=2048 -publicExponent=65537 -sign=T -verify=T -label=NSkey_s6dr
@@ -68,7 +74,7 @@ You can create a key pair to generate a Certificate Signing Request (CSR). In ad
 	[1] PKCS [2] FIPS 186-3 Only Primes [3] FIPS 186-3 Auxiliary Primes : 1
 	```
 
-	In the above syntax, the `modulusBits` parameter indicates the length in bits of the RSA keys, while `publicExponent` defines the public exponent value to be used for the generation of the keys, this must be set to 3, 17 or 65537. The “label” keyword is used to specify a tag for it to be easily referenced and identified later. For more information about the other two / additional parameters check the [Utilities Reference Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/utilities_reference_guide.pdf){: new_window}.
+	In the previous syntax, the `modulusBits` parameter indicates the length in bits of the RSA keys, while `publicExponent` defines the public exponent value to be used for the generation of the keys, and this must be set to `3`, `17` or `65537`. The “label” keyword is used to specify a tag for it to be easily referenced and identified later. For more information about the other two / additional parameters check the [Utilities Reference Guide](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/utilities_reference_guide.pdf){: external}.
 
 3.	Confirm objects were created. In VPX:
 
@@ -99,7 +105,7 @@ You can create a key pair to generate a Certificate Signing Request (CSR). In ad
 
 4.	Using the keys created in the previous step, generate a CSR using the CMU utility.
 
-	Make sure to use the correct/appropriate values for Common Name (CN) and E-mail (E), the first one should match the FQDN that will be used in the DNS A record associated with the Virtual Server/IP (VPX). The E parameter will be used to send certificate procurement details after this is requested/ordered.
+	Make sure to use the correct/appropriate values for Common Name (CN) and E-mail (E); the first one should match the FQDN that will be used in the DNS A record associated with the Virtual Server/IP (VPX). The E parameter will be used to send certificate procurement details after this is requested/ordered.
 
 	```
 	root@IBMADC690867-s6dr# cmu requestcertificate
@@ -116,9 +122,9 @@ You can create a key pair to generate a Certificate Signing Request (CSR). In ad
 	Enter output filename : certreqnss6dr.csr
 	```
 
-	In the output listed above, the filename can be anything with a .csr extension, however, a meaningful description is recommended.
+	In the output listed, the filename can be anything with a .csr extension, however, a meaningful description is recommended.
 
-5.	Confirm creation of the file
+5.	Confirm creation of the file.
 
 	```
 	root@IBMADC690867-s6dr# ls

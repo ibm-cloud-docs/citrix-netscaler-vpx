@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2018
+  years: 2018, 2019
 lastupdated: "2019-11-12"
 
-keywords: hsm, ssl, install, ssl, certificate, security
+keywords:
 
 subcollection: citrix-netscaler-vpx
 
@@ -12,19 +12,25 @@ subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
+{:new_window: target="_blank"} 
 {:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank_"}
 {:pre: .pre}
+{:screen: .screen}
+{:term: .term}
 {:tip: .tip}
 {:note: .note}
 {:important: .important}
+{:deprecated: .deprecated}
 {:table: .aria-labeledby="caption"}
+{:external: target="_blank" .external}
+{:generic: data-hd-programlang="generic”}
+{:download: .download}
+{:DomainName: data-hd-keyref="DomainName"}
 
 # Install your SSL certificate
 {: #install-your-ssl-certificate}
 
-You can install the SSL Certificate you created in the previous [Step by Step](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) for your {{site.data.keyword.vpx_full}}.
+You can install the SSL Certificate you created in the previous step-by-step, [Deploying and Configuring the IBM© Hardware Security Module (HSM) with {{site.data.keyword.vpx_full}}](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) for your {{site.data.keyword.vpx_full}}.
 {: shortdesc}
 
 To do so, perform the following procedure:
@@ -57,7 +63,7 @@ To do so, perform the following procedure:
 	Where `keyName` is the name of the key created on the IBM© Hardware Security Module (HSM) with the CMU utility. The `serialNum` parameter is the serial number of the partition in question. The `password` parameter, as before, is the password of the partition on which the keys are present.
 
 	The `Internal error` message is expected due to the increased time it takes to complete this step. The key should be properly added. However, any other error messages you receive should be addressed.
-  {: note}
+    {: note}
 
 3.	Confirm the key was added:
 
@@ -74,14 +80,14 @@ To do so, perform the following procedure:
 	Done
 	```
 
-	For the above command the following syntax is used:
+	For the previous command the following syntax is used:
 
 	```
 	add ssl certkey <CertkeyName> -cert <cert path/name>
 	-hsmkey <KeyName>
 	```
 
-	Where `certkey` is the name of the certificate object to be added in the VPX device. The `cert` parameter contains the name and path to the file, if it is located in a directory other than the current one). Lastly, `hsmkey` contains the name of the key added in the previous step.
+	Where `certkey` is the name of the certificate object to be added in the VPX device. The `cert` parameter contains the name and path to the file, if it is located in a directory other than the current one. Lastly, `hsmkey` contains the name of the key added in the previous step.
 
 5.	Confirm the certificate was installed:
 
@@ -113,14 +119,14 @@ To do so, perform the following procedure:
 	>
 	```
 
-6.	(OPTIONAL) To avoid security warnings when accessing content through a web browser, you may wish to install "Intermediate CA" certificates. These allow your {{site.data.keyword.vpx_full}} to share information with connecting clients.
+6. (OPTIONAL) To avoid security warnings when accessing content through a web browser, you might want to install "Intermediate CA" certificates. These allow your {{site.data.keyword.vpx_full}} to share information with connecting clients.
 
-	To obtain these intermediate certificates for RapidSSL, visit any of the links below:
+   To obtain these intermediate certificates for RapidSSL, visit any of the following links:
 
-	* [Reissue GeoTrust Certificate For Partner Orders or QuickSSL ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://knowledge.digicert.com/solution/SO5989.html){:new_window}
-  * [RapidSSL Intermediate and Root CA Certificates ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://knowledge.digicert.com/generalinformation/INFO1548.html#links){:new_window}
+     * [Reissue GeoTrust Certificate For Partner Orders or QuickSSL](https://knowledge.digicert.com/solution/SO5989.html){: external}
+     * [RapidSSL Intermediate and Root CA Certificates](https://knowledge.digicert.com/generalinformation/INFO1548.html#links){: external}
 
-	To install and link the certificates, follow the instructions in this [Citrix article ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.citrix.com/article/CTX114146){:new_window}.
+   To install and link the certificates, follow the instructions in this [Citrix article](https://support.citrix.com/article/CTX114146){: external}.
 
 	```
 	> show ssl certlink
