@@ -45,6 +45,6 @@ To do so:
 
 To create an IP tunnel in the CLI, use the following syntax:
 
-   ```
+   ```sh
    > add ipTunnel IPsec_tunnel1 10.115.168.144 255.255.255.255 10.143.220.106 -protocol IPSEC -ipsecProfileName IPsec_Profile1
    ```

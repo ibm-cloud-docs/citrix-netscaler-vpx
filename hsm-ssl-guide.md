@@ -37,6 +37,7 @@ This step-by-step assumes you have completed the steps in [Deploying and Configu
 
 ## About the deployment
 {: #about-hsm-ssl}
+
 This deployment was built and tested with the following component specifications:
 
 | NetScaler VPX Version & Build	| HSM Software Version | HSM Firmware version | HSM Client Version |
@@ -67,8 +68,9 @@ Task  | Description
 
 ## Additional resources
 {: #additional-resources}
+
 The following additional resources can help you get the most out of your {{site.data.keyword.vpx_full}} when using the IBM Hardware Security Module.
 
-* [NetScaler 12.1 Product Documentation](https://docs.citrix.com/en-us/netscaler/12-1/){:external}
-* [Gemalto Support Portal](https://supportportal.gemalto.com/csm?id=csm_index){:external}
-* [IBM Cloud Support](/docs/get-support?topic=get-support-using-avatar){:new_window}
+* [NetScaler 12.1 Product Documentation](https://docs.citrix.com/en-us/netscaler/12-1/){: external}
+* [Gemalto Support Portal](https://supportportal.gemalto.com/csm?id=csm_index){: external}
+* [IBM Cloud Support](/docs/get-support?topic=get-support-using-avatar){: new_window}

@@ -46,11 +46,12 @@ The following global balancing procedure uses:
 ### VPX1
 {: #vpx1}
 
-`50.97.235.236` is named `VPX1Vserver`, and is the local load balancing VIP for that device. `50.23.66.52` will be called `VPX1site`, and is the local IP for that device's GSLB.
+IP `50.97.235.236` is named `VPX1Vserver`, and is the local load balancing VIP for that device. `50.23.66.52` will be called `VPX1site`, and is the local IP for that device's GSLB.
 
 ### VPX2
 {: #vpx2}
-`208.43.241.249` is used for `VPX2Vserver`, and the GSLB IP is `208.43.224.4`, called `VPX2site`.
+
+IP `208.43.241.249` is used for `VPX2Vserver`, and the GSLB IP is `208.43.224.4`, called `VPX2site`.
 
 1. Go to **Traffic Management > GSLB** and right click to enable the feature. Then, select **Sites** and **Add**.
 
@@ -81,21 +82,22 @@ If everything has been working up to this point, and both servers are configured
 You now have to configure DNS.
 
 In the example, `gslb.tsstesting.com`, you would create NS and glue records in the `tsstesting.com` zone:
-
-  ```
-    gslb.tsstesting.com. IN NS NS1.gslb.tsstesting.com
-    gslb.tsstesting.com. IN NS NS2.gslb.tsstesting.com
-    NS1.gslb.tsstesting.com. IN A 10.54.0.141 ; nameserver IP of first NetScaler
-    NS2.gslb.tsstesting.com. IN A 172.16.1.101 ; nameserver IP of second NetScaler
-    www.tsstesting.com. IN CNAME gslb.tsstesting.com ; alias to the GSLB object on the NetScaler appliance
-  ```
+   
+   ```sh
+   gslb.tsstesting.com. IN NS NS1.gslb.tsstesting.com
+   gslb.tsstesting.com. IN NS NS2.gslb.tsstesting.com
+   NS1.gslb.tsstesting.com. IN A 10.54.0.141 ; nameserver IP of first NetScaler
+   NS2.gslb.tsstesting.com. IN A 172.16.1.101 ; nameserver IP of second NetScaler
+   www.tsstesting.com. IN CNAME gslb.tsstesting.com ; alias to the GSLB object on the NetScaler appliance
+   ```
 
 Remember, you can only use CNAMEs with hostnames, not the root of the domain.
 
 This configuration sets the name servers for requests for `gslb.tsstesting.com` to the NetScaler IPs you configured DNS on. The CNAME record translates `tsstesting.com` to a request for `gslb.tsstesting.com`. Any requests for `www.tsstesting.com` will then go to the NetScaler to be resolved, and will return a record based on the load balancing method you configured.
 
 For more information on NetScaler global load balancing, refer to:
-* [Configuring the Netscaler for global load balancing ](http://support.citrix.com/article/CTX110348){: external}
+
+* [Configuring the Netscaler for global load balancing](http://support.citrix.com/article/CTX110348){: external}
 * [How DNS(Domain Name System) works with GSLB feature on NetScaler](https://support.citrix.com/article/CTX122619){: external}
 * [Information on the MEP protocol and site monitoring](http://support.citrix.com/article/CTX111081){: external}
 

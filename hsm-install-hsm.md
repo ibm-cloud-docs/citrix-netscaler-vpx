@@ -58,7 +58,7 @@ All VPX commands and outputs in this document will list either `netscalername#` 
 
 2. (OPTIONAL) Extract the `tar` file:
 
-	```
+	```sh
 	root@IBMADC690867-wnzs# tar -xvpf safenet_dirs.tar
 	x safenet/
 	x safenet/config/
@@ -74,7 +74,7 @@ All VPX commands and outputs in this document will list either `netscalername#` 
 
 3. Navigate to the `/var/safenet` directory and confirm the folders and files were transferred:
 
-	```
+	```sh
 	extracted
 	root@IBMADC690867-s6dr# cd safenet
 	root@IBMADC690867-s6dr# pwd
@@ -87,7 +87,7 @@ All VPX commands and outputs in this document will list either `netscalername#` 
 
 4. Execute the installation script using version 622:
 
-	```
+	```sh
 	root@IBMADC690867-s6dr# install_client.sh -v 622
 	*********************************************
 	Current Version: 622
@@ -104,7 +104,7 @@ All VPX commands and outputs in this document will list either `netscalername#` 
 
 5. Confirm the creation of the safenet directory:
 
-	```
+	```sh
 	root@IBMADC690867-s6dr# ls
 	SAClient_600.tgz        gateway                 installation.log
 	config                  install_client.sh       safenet
@@ -112,7 +112,7 @@ All VPX commands and outputs in this document will list either `netscalername#` 
 
 6. Navigate to the `/var/safenet/config/` directoy and execute the `safenet_config` script:
 
-	```
+	```sh
 	root@IBMADC690867-s6dr# cd /var/safenet/config/
 	root@IBMADC690867-s6dr# pwd               
 	/var/safenet/config
@@ -122,7 +122,7 @@ All VPX commands and outputs in this document will list either `netscalername#` 
 
 7. Verify that `/etc/Chrystoki.conf` and the symbolic link `/usr/lib/libCrystoki_64` were created:
 
-	```
+	```sh
 	root@IBMADC690867-s6dr# ls -l /etc/Chrystoki.conf
 	-rw-r--r--  1 root  wheel  1185 Jul 26 16:17 /etc/Chrystoki.conf
 	root@IBMADC690867-s6dr# ls -l /usr/lib/libCryptoki2_64.so
@@ -130,4 +130,4 @@ All VPX commands and outputs in this document will list either `netscalername#` 
 	/var/safenet/safenet/lunaclient/lib/libCryptoki2_64.so
 	```
 
-The IBM© Hardware Security Module has been installed successfully.
+The IBM Hardware Security Module has been installed successfully.

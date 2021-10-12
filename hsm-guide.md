@@ -28,6 +28,7 @@ This step-by-step guides you through integrating the HSM with {{site.data.keywor
 
 ## About the deployment
 {: #about-hsm}
+
 This deployment was built and tested with the following component specifications:
 
 | NetScaler VPX Version & Build	| HSM Software Version | HSM Firmware version | HSM Client Version |
@@ -39,6 +40,7 @@ If you have an older version of VPX or, if when ordering the device through the 
 
 ## Logical topology
 {: #topology-local}
+
 The following diagram shows the network traffic flow for the SSL offload use case. This provides a visual and logical perspective of the trust link and the configuration between VPX and the HSM appliance.
 
 ![Network Flows Topology](images/network-flows-logical-topology.jpg)

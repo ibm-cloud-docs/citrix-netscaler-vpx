@@ -56,11 +56,11 @@ After ordering the two Netscaler VPX servers in the needed VLAN, and ordering th
 
 4. On the primary VPX you should see that the remote VPX is now syncing. Go to the secondary server and check the **Network > IPs** configuration. You should see the primary server's VIP and other IPs listed as passive.
 
-6. Return to **System > High Availability** on the secondary server and click **Edit**. Select **ENABLED** in the drop-down box and hit **OK**.
+5. Return to **System > High Availability** on the secondary server and click **Edit**. Select **ENABLED** in the drop-down box and hit **OK**.
 
-7. Force a failover to test. Refresh the screen and watch the IP addresses become active on the secondary. Failover again and watch them go passive. Ping the IPs to make sure they work.
+6. Force a failover to test. Refresh the screen and watch the IP addresses become active on the secondary. Failover again and watch them go passive. Ping the IPs to make sure they work.
 
-8. The primary server should now be labeled primary and the secondary should report that it has a synchronization state of success.
+7. The primary server should now be labeled primary and the secondary should report that it has a synchronization state of success.
 
 Ensure your local administrators know that the password in the Cloud console must be changed to be consistent any time the passwords are changed on the local VPXs.  **Failing to do so will cause HA Upgrades and License operations to fail, resulting in production outages.**  Your passwords should be consistent in three places: VPX device 1, VPX device 2, and the IBM Cloud console.
 {: important} 

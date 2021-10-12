@@ -37,7 +37,7 @@ To do so, perform the following procedure:
 
 1.	Confirm that the certificate is present in the `/nsconfig/ssl` directory on your {{site.data.keyword.vpx_full}}.
 
-	```
+	```sh
 	root@IBMADC690867-s6dr# cd /nsconfig/ssl
 	root@IBMADC690867-s6dr# ls
 	certbundle              ns-root.srl             ns-	sftrust-root.key     ns-sftrust.key
@@ -49,14 +49,14 @@ To do so, perform the following procedure:
 
 2.	Even though the certificate key is located in the proper directory, it must be recognized as a valid {{site.data.keyword.vpx_full}} object for it to connect and interact with other VPX components. To do so:
 
-	```
+	```sh
 	> add ssl hsmKey NSkey_s6dr -hsmType SAFENET -	SerialNum 534071053 -password P@rtition6
 	ERROR:  Internal error while adding HSM key.
 	```
 
 	The previous command uses the following syntax:
 
-	```
+	```sh
 	add ssl hsmkey <KeyName> -hsmType SAFENET -serialNum 	<serial #> -password <password>
 	```
 
@@ -67,7 +67,7 @@ To do so, perform the following procedure:
 
 3.	Confirm the key was added:
 
-	```
+	```sh
 	> show ssl hsmkey
 	1) HSM Key Name: NSkey_s6dr
  	Done
@@ -75,14 +75,14 @@ To do so, perform the following procedure:
 
 4.	As with the HSM key, the SSL certificate must be added using the appropriate Citrix VPX command for it to be recognized:
 
-	```
+	```sh
 	> add ssl certkey hsmclient7ns -cert /nsconfig/ssl/	hsmclient7.cer -hsmkey NSkey_s6dr
 	Done
 	```
 
 	For the previous command the following syntax is used:
 
-	```
+	```sh
 	add ssl certkey <CertkeyName> -cert <cert path/name>
 	-hsmkey <KeyName>
 	```
@@ -91,7 +91,7 @@ To do so, perform the following procedure:
 
 5.	Confirm the certificate was installed:
 
-	```
+	```sh
 	> show ssl certKey
 	[OUTPUT OMITTED]
 		2) Name: hsmclient7ns
@@ -128,7 +128,7 @@ To do so, perform the following procedure:
 
    To install and link the certificates, follow the instructions in this [Citrix article](https://support.citrix.com/article/CTX114146){: external}.
 
-	```
+	```sh
 	> show ssl certlink
 	1) Cert Name: hsmclient7ns  CA Cert Name: ICARSSL
 	Done

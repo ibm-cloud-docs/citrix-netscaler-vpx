@@ -23,6 +23,7 @@ Deploying a {{site.data.keyword.vpx_full}} in your IBM Cloud solution accelerate
 
 ## Before you begin
 {: #before-you-begin}
+
 To get started with {{site.data.keyword.vpx_full}}, you will need to know the following information:
 
 * Your IBM© Cloud catalog login information
@@ -47,12 +48,12 @@ To order a {{site.data.keyword.vpx_full}} software appliance, navigate to the or
 6. Select a Location from the dropdown menu where you would like to deploy your {{site.data.keyword.vpx_full}} software appliance.  
 7. Select the best NetScaler type for your software edition, software version and throughput needs.
 8. Select the number of public IP addresses you need.  
-	These are static public IP addresses, deployed as virtual IP addresses (VIPs) on your NetScaler VPX.
+   These are static public IP addresses, deployed as virtual IP addresses (VIPs) on your NetScaler VPX.
 9. Click **Continue**.
 10. Enter the information required by ARIN (or the equivalent organization in your region of deployment) for the IP addresses you've requested.
 11. Enter your contact information.
 12. Select your VLAN.
-	To minimize latency and ensure optimized utilization of your network resources, assign the {{site.data.keyword.vpx_full}} to the same VLAN as the servers where the traffic will be distributed.
+   To minimize latency and ensure optimized utilization of your network resources, assign the {{site.data.keyword.vpx_full}} to the same VLAN as the servers where the traffic will be distributed.
 13. Review the order, accept the terms, and click **Place Order**. The {{site.data.keyword.vpx_full}} software appliance deploys with your selected settings.
 
 ## What's next

@@ -36,6 +36,7 @@ This guide provides step-by-step instructions to configure an IPsec VPN site-to-
 
 ## About the deployment
 {: #about-ipsec}
+
 This deployment was built and tested with the following component specifications:
 
 | NetScaler VPX Version & Build	| VRA Version & Description |
@@ -69,9 +70,10 @@ Task  | Description
 
 ## Additional resources
 {: #additional-resource}
+
 The following additional resources can help you learn more about Citrix VPX and Virtual Router Appliance.
 
-* [CloudBridge Connector](https://docs.citrix.com/en-us/citrix-adc/12-1/system/cloudbridge-connector-introduction.html){:external}
-* [Configuring a CloudBridge Connector tunnel between a Citrix ADC appliance and Cisco IOS device](https://docs.citrix.com/en-us/citrix-adc/12-1/system/cloudbridge-connector-introduction/cloudbridge-connector-tunnel-cisco.html){:external}
-* [Citrix VPX/ADC 12.1 Documentation](https://docs.citrix.com/en-us/citrix-adc/12-1){:external}
-* [Supplemental VRA Documentation](/docs/virtual-router-appliance/vra-docs.html#supplemental-vra-documentation){:new_window}
+* [CloudBridge Connector](https://docs.citrix.com/en-us/citrix-adc/12-1/system/cloudbridge-connector-introduction.html){: external}
+* [Configuring a CloudBridge Connector tunnel between a Citrix ADC appliance and Cisco IOS device](https://docs.citrix.com/en-us/citrix-adc/12-1/system/cloudbridge-connector-introduction/cloudbridge-connector-tunnel-cisco.html){: external}
+* [Citrix VPX/ADC 12.1 Documentation](https://docs.citrix.com/en-us/citrix-adc/12-1){: external}
+* [Supplemental VRA Documentation](/docs/virtual-router-appliance/vra-docs.html#supplemental-vra-documentation){: new_window}

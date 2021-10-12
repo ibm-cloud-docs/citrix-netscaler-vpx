@@ -31,7 +31,7 @@ The FIPS 140-2 security algorithms can be enabled if you need to ensure the Hard
 
 1. First, confirm that that FIPS mode is currently disabled, using the command `hsm show`.
 
-	```
+	```sh
 	[jdoe1] lunash:>hsm show
 
 	Appliance Details:
@@ -71,7 +71,7 @@ The FIPS 140-2 security algorithms can be enabled if you need to ensure the Hard
 
 2. Review your policies before enabling FIPS mode with the `hsm showpolicies` command.
 
-	```
+	```sh
 	[jdoe1] lunash:>hsm showpolicies
 
 	HSM Label:   jpmonge
@@ -111,7 +111,7 @@ The FIPS 140-2 security algorithms can be enabled if you need to ensure the Hard
 
 3. Login as an HSM SO/Administrator using the password you specified during [initialization](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-initialize-ibm-hardware-security-module-hsm-).
 
-	```
+	```sh
 	[jdoe1] lunash:>hsm login
 
 	Please enter the HSM Administrators' password:
@@ -132,7 +132,7 @@ The FIPS 140-2 security algorithms can be enabled if you need to ensure the Hard
 
 	Use the `hsm changepolicy` command to disable policy 12 and only allow the usage of FIPS algorithms:
 
-	```
+	```sh
 	[jdoe1] lunash:>hsm changepolicy -policy 12 -value 0
 
 	CAUTION: Are you sure you wish to change the destructive policy named:
@@ -155,7 +155,7 @@ The FIPS 140-2 security algorithms can be enabled if you need to ensure the Hard
 
 5. Confirm that FIPS mode is now enabled by once again using the command `hsm show`.
 
-	```
+	```sh
 	[jdoe1] lunash:>hsm show
 
 	Appliance Details:
@@ -200,7 +200,7 @@ The FIPS 140-2 security algorithms can be enabled if you need to ensure the Hard
 
 	The command `hsm showpolicies` should now show that the device is using the FIPS 140-2 mode on policy (code) 12, and reflect the enforcement of FIPS 140-2 algorithms:
 
-	```
+	```sh
 	[jdoe1] lunash:>hsm showpolicies
 
 	HSM Label:   jpmonge

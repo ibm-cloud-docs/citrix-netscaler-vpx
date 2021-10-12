@@ -45,7 +45,7 @@ To create a PBR profile perform the following steps:
 
    To create the PBR profile in the CLI, use the following syntax:
 
-   ```
+   ```sh
     > add ns pbr PBRforipsectunnel1 ALLOW -srcIP = 192.168.0.0-192.168.0.255 -destIP = 10.115.72.192-10.115.72.255 -ipTunnel
     IPsec_tunnel1 -priority 10
     > apply pbrs
@@ -55,7 +55,7 @@ To create a PBR profile perform the following steps:
     Any virtual server instances or infrastructure intended to go through the VPN tunnel and sit behind the VPX, will need to be configured to either use VPX as the default gateway or to use a static route. This will send traffic to the VPX when the destination is the remote (peer) subnet. See the following static route (**10.115.0.0/16**) example.
     {: note}
 
-   ```
+   ```sh
     >route print
     ===========================================================================
     Interface List

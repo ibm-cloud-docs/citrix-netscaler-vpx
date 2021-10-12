@@ -38,7 +38,7 @@ To establish your NTL, perform the following procedure:
 
 1. Navigate to the directory `/var/safenet/safenet/lunaclient/bin` and create the certificate using the VTL utility.
 
-    ```
+    ```sh
     root@IBMADC690867-s6dr# cd /var/safenet/safenet/lunaclient/bin
     root@IBMADC690867-s6dr# vtl createcert -n 10.121.229.224
     Private Key created and written to: /var/safenet/safenet/lunaclient/cert/client/10.121.229.224Key.pem
@@ -48,9 +48,9 @@ To establish your NTL, perform the following procedure:
     The identifier used for the client certificate is the private IP assigned to it. This will later be used and referenced by the HSM.
     {: note}
 
-2. Transfer the certificate file to the HSM server using SCP:
+1. Transfer the certificate file to the HSM server using SCP:
 
-    ```
+    ```sh
     root@IBMADC690867-s6dr# scp /var/safenet/safenet/lunaclient/cert/client/	10.121.229.224.pem hsm_admin@10.121.229.201:
 
     The authenticity of host '10.121.229.201 (10.121.229.201)' can't be established.
@@ -71,9 +71,9 @@ To establish your NTL, perform the following procedure:
 
     To learn more about Virtual Token Library (VTL), go to the [Utilities Reference Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/utilities_reference_guide.pdf){: new_window}.
 
-3. Transfer the HSM server certificate file to the {{site.data.keyword.vpx_full}} client using SCP, then add the server:
+1. Transfer the HSM server certificate file to the {{site.data.keyword.vpx_full}} client using SCP, then add the server:
 
-    ```
+    ```sh
     root@IBMADC690867-s6dr# scp hsm_admin@10.121.229.201:server.pem .
     hsm_admin@10.121.229.201's password:
 
@@ -89,20 +89,20 @@ To establish your NTL, perform the following procedure:
 
     The previous example uses the following syntax:
 
-    ```
+    ```sh
     vtl addServer -n <SA_hostname_or_IP> -c <server_certificate>
     ```
 
-3. Confirm the addition of the server:
+1. Confirm the addition of the server:
 
-    ```
+    ```sh
     root@IBMADC690867-s6dr# vtl listservers
     Server: 10.121.229.201  HTL required: no
     ```
 
-4. In the HSM, execute the following command to see any existing clients:
+1. In the HSM, execute the following command to see any existing clients:
 
-    ```
+    ```sh
     [jpmongehsm2] lunash:>client list
 
     registered client 1: NS-IBMADC690867-d85b
@@ -114,9 +114,9 @@ To establish your NTL, perform the following procedure:
     Command Result : 0 (Success)
     ```
 
-5. Register the VPX as new client:
+1. Register the VPX as new client:
 
-    ```
+    ```sh
     [jpmongehsm2] lunash:>client register -c NS-IBMADC690867-s6dr -ip 10.121.229.224
     
     'client register' successful.
@@ -126,15 +126,15 @@ To establish your NTL, perform the following procedure:
 
     The previous command uses the following syntax:
 
-    ```
+    ```sh
     client register -client <client_name> -ip <client_IP_address>
     ```
 
     The client name does not have to match the identifier assigned and used by {{site.data.keyword.cloud_notm}}, however, this is recommended to keep names consistent.
 
-6. Confirm the client was added:
+1. Confirm the client was added:
 
-    ```
+    ```sh
     [jpmongehsm2] lunash:>client list
     
     registered client 1: NS-IBMADC690867-d85b
@@ -147,9 +147,9 @@ To establish your NTL, perform the following procedure:
     Command Result : 0 (Success)
     ```
 
-7. Assign a partition to the client. Make sure you reference the partition created before. You will also have to ensure the name matches the identifier for the client displayed in the previous step.
+1. Assign a partition to the client. Make sure you reference the partition created before. You will also have to ensure the name matches the identifier for the client displayed in the previous step.
 
-    ```
+    ```sh
     [jpmongehsm2] lunash:>client assignPartition -c NS-IBMADC690867-s6dr -p partition6
     
     'client assignPartition' successful.
@@ -159,13 +159,13 @@ To establish your NTL, perform the following procedure:
 
     The previous output uses the following syntax:
 
-    ```
+    ```sh
     client assignPartition -client <clientname> -partition <partition name
     ```
 
-8. Verify connectivity in your Citrus Netscaler VPX:
+1. Verify connectivity in your Citrus Netscaler VPX:
 
-    ```
+    ```sh
     root@IBMADC690867-s6dr# vtl verify
     
     The following Luna SA Slots/Partitions were found:
@@ -179,7 +179,7 @@ To establish your NTL, perform the following procedure:
 
     In addition, it's also a good idea to confirm the paths of the certificates and the server in the Chrystoki file located in the `/etc` directory. To do so:
 
-    ```
+    ```sh
     root@IBMADC690867-s6dr# cd /etc/
         root@IBMADC690867-s6dr# cat /etc/Chrystoki.conf
 	Chrystoki2 = {
@@ -199,23 +199,23 @@ To establish your NTL, perform the following procedure:
 	[OUTPUT OMITTED]
     ```
 
-9. Save the configuration:
+1. Save the configuration:
 
-    ```
+    ```sh
     root@IBMADC690867-s6dr# cp /etc/Chrystoki.conf /var/safenet/config/
     ```
 
     The copy command used here makes the configuration persistent across reboots in VPX.
 
-10. Start the safenet gateway client process necessary for cryptographic operations:
+1. Start the safenet gateway client process necessary for cryptographic operations:
 
-    ```
+    ```sh
     root@IBMADC690867-s6dr# sh /var/safenet/gateway/start_safenet_gw
     ```
 
-11. Confirm the process is running:
+1. Confirm the process is running:
 
-    ```
+    ```sh
     root@IBMADC690867-s6dr# ps aux | grep safenet_gw
     root       
     6817  0.0  0.0 10068  1500  ??  Ss    
@@ -223,9 +223,9 @@ To establish your NTL, perform the following procedure:
     0:00.00 /var/safenet/gateway/safenet_gw
     ```
 
-12. Finally, make sure this process is automatically started during the reboot process:
+1. Finally, make sure this process is automatically started during the reboot process:
 
-    ```
+    ```sh
     root@IBMADC690867-s6dr# touch /var/safenet/safenet_is_enrolled
     ```
 

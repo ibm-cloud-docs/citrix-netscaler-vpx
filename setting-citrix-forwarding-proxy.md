@@ -50,7 +50,7 @@ By default, the load balancing and cache redirect features on the {{site.data.ke
 
 Use the command line to issue the following commands on to the {{site.data.keyword.vpx_full}}. In our scenario, only one of the two IBM Cloud DNS servers are added.  
 
-```
+```sh
 add cr vserver vs_forward_cache HTTP 10.114.27.3 80 -cachetype forward -redirect origin
 
 add lb vserver virtual_dns DNS 10.114.27.4 53

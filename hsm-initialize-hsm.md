@@ -43,7 +43,7 @@ To initialize your device, follow these steps:
 
 2. Execute the `hsm init` command:
 
-    ```
+    ```sh
     [jpmongehsm2] lunash:>hsm init -l jpmonge
     
     Please enter a password for the HSM Administrator:
@@ -63,9 +63,9 @@ To initialize your device, follow these steps:
     Type 'proceed' to initialize the HSM, or 'quit'
         to quit now.
         > proceed
-	'hsm init' successful.
-	
-	Command Result : 0 (Success)
+	  'hsm init' successful.
+	  
+	  Command Result : 0 (Success)
     ```
     {: codeblock}
 

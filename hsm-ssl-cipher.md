@@ -45,9 +45,9 @@ This topic focuses on specific and required configurations for SSL ciphers. The 
 
 To create a new Cipher Suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, perform the following procedure:
 
-1.	Enter the following commands simultaneously in your Citrix VPX CLI, and ensure they are all applied:
+1. Enter the following commands simultaneously in your Citrix VPX CLI, and ensure they are all applied:
 
-	```
+	```sh
 	add ssl cipher SSLLABS
 	bind ssl cipher SSLLABS -cipherName TLS1.2-ECDHE-ECDSA-AES128-GCM-SHA256
 	bind ssl cipher SSLLABS -cipherName TLS1.2-ECDHE-ECDSA-AES256-GCM-SHA384
@@ -71,14 +71,14 @@ To create a new Cipher Suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, pe
 
 	The syntax for the previous commands is the following:
 
-	```
+    ```sh
 	add ssl cipher <cipherGroupName>
 	bind ssl cipher <cipherGroupName> -cipherName <string>
 	```
 
-2.	Confirm the cipher was added to your {{site.data.keyword.vpx_full}}:
+1. Confirm the cipher was added to your {{site.data.keyword.vpx_full}}:
 
-	```
+   ```text
 	> show ssl cipher SSLLABS
 	1)      Cipher Name: TLS1.2-ECDHE-ECDSA-AES128-GCM-SHA256       Priority : 1
 	        Description: TLSv1.2 Kx=ECC-DHE  Au=ECDSA Enc=AES-GCM(128) Mac=AEAD   HexCode=0xc02b
@@ -117,29 +117,29 @@ To create a new Cipher Suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, pe
 	18)     Cipher Name: TLS1-AES-256-CBC-SHA       Priority : 18
 	        Description: SSLv3 Kx=RSA      Au=RSA  Enc=AES(256)  Mac=SHA1   HexCode=0x0035
  	Done
- 	```
+   ```
 
-3.	Unbind the default Cipher Suite from your virtual server and bind the custom group created in the previous step:
+1. Unbind the default Cipher Suite from your virtual server and bind the custom group created in the previous step:
 
-	```
-	unbind ssl vserver https_vip2 -cipherName DEFAULT
+   ```sh
+   unbind ssl vserver https_vip2 -cipherName DEFAULT
+   
+   bind ssl vserver https_vip2 -cipherName SSLLABS
+   
+   bind ssl vserver https_vip2 -eccCurveName ALL
+   ```
+   
+   The syntax for the previous commands is:
 
-	bind ssl vserver https_vip2 -cipherName SSLLABS
+   ```sh
+   unbind ssl cipher <cipherGroupName> -cipherName <string>
+   bind ssl vserver <vServerName> -cipherName <string>
+   bind ssl vserver <vServerName> -eccCurveName <eccCurveName>
+   ```
 
-	bind ssl vserver https_vip2 -eccCurveName ALL
-	```
+1. Confirm the changes in your virtual server:
 
-	The syntax for the previous commands is:
-
-	```
-	unbind ssl cipher <cipherGroupName> -cipherName <string>
-	bind ssl vserver <vServerName> -cipherName <string>
-	bind ssl vserver <vServerName> -eccCurveName <eccCurveName>
-	```
-
-4.	Confirm the changes in your virtual server:
-
-	```
+	```sh
 	> show ssl vserver https_vip2
 
 	[OUTPUT OMITTED]
@@ -152,14 +152,14 @@ To create a new Cipher Suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, pe
  	Done
 	```
 
-5.	(OPTIONAL) HTTP Redirection can be enabled to redirect users to a secure web site when they create an HTTP request (as opposed to HTTPS).
+1. (OPTIONAL) HTTP Redirection can be enabled to redirect users to a secure web site when they create an HTTP request (as opposed to HTTPS).
 
 	See [How to Configure HTTP to HTTPS Redirection on NetScaler](https://support.citrix.com/article/CTX201201){: external} for configuration instructions.
 
-6.	Test the HTTPS connection by opening a web browser and entering the FQDN. The site should load the content rendered by the HTTP service behind the Citrix VPX.
+1. Test the HTTPS connection by opening a web browser and entering the FQDN. The site should load the content rendered by the HTTP service behind the Citrix VPX.
 
-	You can also view the certificate details by clicking the padlock icon next to the URL in your browser to display the certificate info.
+    You can also view the certificate details by clicking the padlock icon next to the URL in your browser to display the certificate info.
 
-	![Check certificate](images/21-check-certificate.png)
+    ![Check certificate](images/21-check-certificate.png)
 
 	If redirection was configured in step five, the secure site will also load when using an HTTP request.

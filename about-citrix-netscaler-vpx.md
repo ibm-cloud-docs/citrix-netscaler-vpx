@@ -31,18 +31,18 @@ Deploying a {{site.data.keyword.vpx_full}} in your IBM Cloud solution accelerate
 * The only product that can load balance traffic on both the public and private network
 * Management using GUI (Graphical User Interface) or CLI (Command Line Interface)
 * Many different types of traffic distribution, including:
-    * Least Connections
-    * Round Robin
-    * Least response time
-    * Least bandwidth
-    * Least packets
-    * URL hashing
-    * Domain name hashing
-    * Source IP address hashing
-    * Destination IP address hashing
-    * Source IP - Destination IP hashing
-    * Token
-    * LRTM
+   * Least Connections
+   * Round Robin
+   * Least response time
+   * Least bandwidth
+   * Least packets
+   * URL hashing
+   * Domain name hashing
+   * Source IP address hashing
+   * Destination IP address hashing
+   * Source IP - Destination IP hashing
+   * Token
+   * LRTM
 * SSL acceleration / SSL offload
 * GSLB (Global Server Load Balancing)
     * Uses the DNS infrastructure to connect the client to the best data center

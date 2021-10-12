@@ -55,7 +55,7 @@ To order an SSL certificate for use with your {{site.data.keyword.vpx_full}}, pe
 
 1.	In VPX shell CLI, display the CSR text by opening the CSR file previously created in the step [Create keys and generate the Certificate Signing Request (CSR)](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-):
 
-	```
+	```sh
 	root@IBMADC690867-s6dr# cat certreqnss6dr.csr
 	-----BEGIN NEW CERTIFICATE REQUEST-----
 	MIIC5jCCAc4CAQAwgaAxCzAJBgNVBAYTMRcwFQYDVQQIEw5Ob3J0aCBDYXJv

@@ -11,7 +11,7 @@ subcollection: citrix-netscaler-vpx
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"} 
+{:new_window: target="_blank"}
 {:codeblock: .codeblock}
 {:pre: .pre}
 {:screen: .screen}
@@ -34,123 +34,123 @@ A partition is a logical and independent space that is associated or attached to
 
 To create a partition, perform the following procedure:
 
-1.	Login as the HSM Security Oficer/Administrator using the password specified during [initialization](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-initialize-ibm-hardware-security-module-hsm-):
+1. Login as the HSM Security Oficer/Administrator using the password specified during [initialization](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-initialize-ibm-hardware-security-module-hsm-):
 
-	```
-	[jpmongehsm2] lunash:>hsm login
+   ```sh
+   [jpmongehsm2] lunash:>hsm login
+   
+   Please enter the HSM Administrators' password:
+   > ********
+   
+   'hsm login' successful.
 
-	Please enter the HSM Administrators' password:
-	> ********
+   Command Result : 0 (Success)
+   ```
+   {: codeblock}
 
-	'hsm login' successful.
+2. Confirm the HSM Admin Login Status is “Logged In”:
 
-	Command Result : 0 (Success)
-	```
-	{: codeblock}
+   ```sh
+   [jpmongehsm2] lunash:>hsm show
+   
+   Appliance Details:
+   ==================
+   Software Version:                6.2.2-5
+   
+   HSM Details:
+   ============
+   HSM Label:                          jpmonge
+   Serial #:                           534071
+   Firmware:                           6.10.9
+   HSM Model:                          K6 Base
+   Authentication Method:              Password
+   HSM Admin login status:             Logged In
+   HSM Admin login attempts left:      3 before HSM zeroization!
+   RPV Initialized:                    No
+   Audit Role Initialized:             No
+   Remote Login Initialized:           No
+   Manually Zeroized:                  No
+   [OUTPUT OMITTED]
+   ```
+   {: codeblock}
+   
+   The output should show `Logged In` in the HSM Admin login status. Otherwise, most operations and commands listed in the following sections will fail because they require administrator access.
 
-2.	Confirm the HSM Admin Login Status is “Logged In”:
+3. List any existing partitions:
 
-	```
-	[jpmongehsm2] lunash:>hsm show
+   ```sh
+   [jpmongehsm2] lunash:>partition list
+   Storage (bytes)
+   ----------------------------
+   Partition            Name                   Objects   	Total    Used    Free
+   ===================================
+   534071016            partition1                   0  207559       0  207559 	534071020            partition2                   3  207559    3464  204095
+   534071027            partition3                   0  207559       0  207559
+   534071021            partition4                   2  207559    1652  205907
+   534071030            partition5                  10  207559    9400  198159
 
-	Appliance Details:
-	==================
-	Software Version:                6.2.2-5
+   Command Result : 0 (Success)
+   ```
+   {: codeblock}
 
-	HSM Details:
-	============
-	HSM Label:                          jpmonge
-	Serial #:                           534071
-	Firmware:                           6.10.9
-	HSM Model:                          K6 Base
-	Authentication Method:              Password
-	HSM Admin login status:             Logged In
-	HSM Admin login attempts left:      3 before HSM zeroization!
-	RPV Initialized:                    No
-	Audit Role Initialized:             No
-	Remote Login Initialized:           No
-	Manually Zeroized:                  No
-	[OUTPUT OMITTED]
-	```
-	{: codeblock}
+   This output shows five existing partitions.
 
-	The output should show `Logged In` in the HSM Admin login status. Otherwise, most operations and commands listed in the following sections will fail because they require administrator access.
+4. Create a new partition:
 
-3.	List any existing partitions:
-
-	```
-	[jpmongehsm2] lunash:>partition list
-	Storage (bytes)
-	----------------------------
-	Partition            Name                   Objects   	Total    Used    Free
-	===================================
-	534071016            partition1                   0  207559       0  207559 	534071020            partition2                   3  207559    3464  204095
-	534071027            partition3                   0  207559       0  207559
-	534071021            partition4                   2  207559    1652  205907
-	534071030            partition5                  10  207559    9400  198159
-
-	Command Result : 0 (Success)
-	```
-	{: codeblock}
-
-	This output shows five existing partitions.
-
-4.	Create a new partition:
-
-	 The password defined in this step is used later to associate and create objects in the Citrix VPX HSM client process. Keep track of this password for future reference. Also, be sure to use the cloning domain defined during the initialization process.
+   The password defined in this step is used later to associate and create objects in the Citrix VPX HSM client process. Keep track of this password for future reference. Also, be sure to use the cloning domain defined during the initialization process.
    {: note}
 
-	```
-	[jpmongehsm2] lunash:>partition create -partition partition6
+   ```sh
+   [jpmongehsm2] lunash:>partition create -partition partition6
+   
+   On completion, you will have this number of partitions: 6
+   
+   -label:  Not provided; using name for label.
+   
+   Please enter a password for the partition:
+   > **********
+   
+   Please re-enter password to confirm:
+   > **********
+   
+   Please enter a cloning domain to use when creating this partition:
+   > ********
+   
+   Please re-enter cloning domain to confirm:
+   > ********
+   
+   Type 'proceed' to create the initialized partition, or 'quit' to quit now.
+      > proceed
+   'partition create' successful.
+   
+   Command Result : 0 (Success)
+   ```
+   {: codeblock}
+   
+   Where the syntax is:
+   
+   ```sh
+   partition create -partition <name-for-new-Partition>
+   ```
+   {: pre}
 
-	On completion, you will have this number of partitions: 6
-
-	-label:  Not provided; using name for label.
-
-	Please enter a password for the partition:
-	> **********
-
-	Please re-enter password to confirm:
-	> **********
-
-	Please enter a cloning domain to use when creating this partition:
-	> ********
-
-	Please re-enter cloning domain to confirm:
-	> ********
-
-	Type 'proceed' to create the initialized partition, or 'quit' to quit now.
-		> proceed
-	'partition create' successful.
-
-	Command Result : 0 (Success)
-	```
-	{: codeblock}
-
-	Where the syntax is:
-
-	```
-	partition create -partition <name-for-new-Partition>
-	```
-	{: pre}
-
-5.	Confirm the new partition was created:
-
-	```
-	[jpmongehsm2] lunash:>partition list
-
-	Storage (bytes)	                                             	----------------------------
-	Partition            Name                   Objects   Total    Used    Free
-	===========================================
-	534071016            partition1                   0  207559       0  207559
-	534071020            partition2                   3  207559    3464  204095
-	534071027            partition3                   0  207559       0  207559
-	534071021            partition4                   2  207559    1652  205907
-	534071030            partition5                  10  207559    9400  198159
-	534071053            partition6                   0  207559       0  207559
-
-	Command Result : 0 (Success)
-	```
-	{: codeblock}
-
-	The output of the `Partition List` command now shows six partitions.
+5. Confirm the new partition was created:
+   
+   ```sh
+   [jpmongehsm2] lunash:>partition list
+   
+   Storage (bytes)	                                             	----------------------------
+   Partition            Name                   Objects   Total    Used    Free
+   ===========================================
+   534071016            partition1                   0  207559       0  207559
+   534071020            partition2                   3  207559    3464  204095
+   534071027            partition3                   0  207559       0  207559
+   534071021            partition4                   2  207559    1652  205907
+   534071030            partition5                  10  207559    9400  198159
+   534071053            partition6                   0  207559       0  207559
+   
+   Command Result : 0 (Success)
+   ```
+   {: codeblock}
+   
+   The output of the `Partition List` command now shows six partitions.

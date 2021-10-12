@@ -35,7 +35,7 @@ There are procedures and commands that will help you verify the operational stat
 
     To confirm the status of the VPN connection using the CLI, run the following command:
 
-    ```    
+    ```sh
     > show iptunnel
     1) Domain.......:               0
       Name.........:  IPsec_tunnel1 (TUN1)
@@ -52,7 +52,7 @@ There are procedures and commands that will help you verify the operational stat
 
 2.	Confirm the VPN status in VRA by executing the following command in the CLI to confirm the VPN state:
 
-    ```
+    ```sh
     $ show vpn ipsec sa
     Peer ID / IP                            Local ID / IP
     ------------                            -------------
@@ -65,7 +65,7 @@ There are procedures and commands that will help you verify the operational stat
 
 3.	Test your VPN connectivity by issuing a ping from the VSI behind the Citrix VPX to the VSI in the remote (Virtual Router Appliance) side:
 
-    ```
+    ```sh
     >ping 10.115.72.237
 
     Pinging 10.115.72.237 with 32 bytes of data:

@@ -35,7 +35,7 @@ To do so, perform the following procedure:
 
 To enable these features in the CLI, execute the following commands:
 
-```
+```sh
 > enable ns feature CloudBridge
 > enable ns mode L3
 

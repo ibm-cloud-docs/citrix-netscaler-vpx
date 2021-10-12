@@ -32,4 +32,4 @@ You can utilize your {{site.data.keyword.vpx_full}} appliance to perform NAT on 
 
 2. Specify the source subnet (and mask) to which you wish to apply RNAT and click **OK**.
 
-The Internet-bound traffic sourced from any IP in this subnet now uses NAT for traffic on the Citrix NetScaler’s public IP address.    
+The Internet-bound traffic sourced from any IP in this subnet now uses NAT for traffic on the Citrix NetScaler’s public IP address.
