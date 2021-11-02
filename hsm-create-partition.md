@@ -132,7 +132,7 @@ To create a partition, perform the following procedure:
    ```sh
    partition create -partition <name-for-new-Partition>
    ```
-   {: pre}
+   {: codeblock}
 
 5. Confirm the new partition was created:
    
