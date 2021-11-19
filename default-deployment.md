@@ -8,11 +8,7 @@ keywords:
 subcollection: citrix-netscaler-vpx
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Citrix Netscaler VPX default deployment
 {: #citrix-netscaler-vpx-default-deployment}

@@ -10,21 +10,7 @@ subcollection: citrix-netscaler-vpx
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:term: .term}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:deprecated: .deprecated}
-{:table: .aria-labeledby="caption"}
-{:external: target="_blank" .external}
-{:generic: data-hd-programlang="generic”}
-{:download: .download}
-{:DomainName: data-hd-keyref="DomainName"}
+{{site.data.keyword.attribute-definition-list}}
 
 # Configuring and tuning SSL Offload with Citrix Netscaler VPX
 {: #configuring-and-tuning-ssl-offload-with-citrix-netscaler-vpx}
@@ -43,6 +29,7 @@ This deployment was built and tested with the following component specifications
 | NetScaler VPX Version & Build	| HSM Software Version | HSM Firmware version | HSM Client Version |
 | ------------- | ------------- | ------------- | ------------- |
 | NS12.1: Build 48.13.nc | 6.2.2-5 | 6.10.9 | 6.2.2 |
+{: caption="Component specifications" caption-side="bottom"}
 
 
 ## Logical topology
@@ -50,7 +37,8 @@ This deployment was built and tested with the following component specifications
 
 The following diagram shows the network traffic flow for the SSL offload use case. This provides a visual and logical perspective of the trust link and the configuration between the Citrix VPX and the HSM appliance.
 
-![Network flows logical topology](images/network-flows-logical-topology.jpg)
+![Network flows logical topology](images/network-flows-logical-topology.jpg){: caption="Network flows logical topography" caption-side="bottom"}
+
 
 If you are not familiar with SSL offload, review this [Citrix article](https://docs.citrix.com/en-us/netscaler/12-1/ssl.html){: external}.
 
@@ -73,4 +61,4 @@ The following additional resources can help you get the most out of your {{site.
 
 * [NetScaler 12.1 Product Documentation](https://docs.citrix.com/en-us/netscaler/12-1/){: external}
 * [Gemalto Support Portal](https://supportportal.gemalto.com/csm?id=csm_index){: external}
-* [IBM Cloud Support](/docs/get-support?topic=get-support-using-avatar){: new_window}
+* [IBM Cloud Support](/docs/get-support?topic=get-support-using-avatar){: external}

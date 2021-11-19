@@ -11,15 +11,7 @@ subcollection: citrix-netscaler-vpx
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank_"}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Creating IPsec profile VPX
 {: #creating-ipsec-profile}
@@ -40,7 +32,8 @@ To create a profile, perform the following procedure:
 5.	Check **Pre-Shared Key Exists** and enter the PSK in the **Value** field.
 6.	Click **Create**.
 
-    ![Create IPsec Profile](images/ipsecCreateProfile.png)
+    ![Create IPsec Profile](images/ipsecCreateProfile.png){: caption="Create IPsec profile" caption-side="bottom"}
+
 
 To create an IPsec profile in the CLI, use the following syntax:
 

@@ -10,21 +10,7 @@ subcollection: citrix-netscaler-vpx
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"} 
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:term: .term}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:deprecated: .deprecated}
-{:table: .aria-labeledby="caption"}
-{:external: target="_blank" .external}
-{:generic: data-hd-programlang="generic”}
-{:download: .download}
-{:DomainName: data-hd-keyref="DomainName"}
+{{site.data.keyword.attribute-definition-list}}
 
 # Initialize IBM Hardware Security Module (HSM)
 {: #initialize-ibm-hardware-security-module-hsm-}
@@ -75,4 +61,4 @@ The `-l` parameter or label is a parameter used to assign an identifier to the H
 
 Lastly, the cloning domain is a shared identifier that allows objects to be formed among a group of HSMs. This is typically used for backup and/or HA.
 
-Refer to the [LunaSH Command Reference Guide](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/lunash_command_reference_guide.pdf){: new_window} for all available commands supported in the HSM CLI.
+Refer to the [LunaSH Command Reference Guide](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/lunash_command_reference_guide.pdf){: external} for all available commands supported in the HSM CLI.

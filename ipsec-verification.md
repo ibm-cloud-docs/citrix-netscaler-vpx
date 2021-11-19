@@ -11,15 +11,7 @@ subcollection: citrix-netscaler-vpx
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank_"}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Verifying VPN tunnel connection
 {: #verifying-vpn-tunnel-connection}
@@ -29,7 +21,8 @@ There are procedures and commands that will help you verify the operational stat
 
 1.	Confirm the VPN status in VPX by navigating to **System > CloudBridge Connector > IP Tunnels**.
 
-    ![Confirm VPN status](images/ipsecVerifyVPN1.png)
+    ![Confirm VPN status](images/ipsecVerifyVPN1.png){: caption="Confirm VPN status" caption-side="bottom"}
+
 
     The Status should reflect an **UP** state in the respective IP tunnel entry (**IPsec_tunnel1** in this example.)
 

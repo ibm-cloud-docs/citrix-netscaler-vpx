@@ -9,13 +9,7 @@ keywords: ha, high availability, setup, configure, configuration
 subcollection: citrix-netscaler-vpx
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:help: data-hd-content-type='help'}
-{:support: data-reuse='support'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Setting up Citrix Netscaler VPX for High Availability (HA)
 {: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}

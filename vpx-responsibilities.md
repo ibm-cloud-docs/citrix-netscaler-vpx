@@ -10,17 +10,7 @@ keywords:
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:deprecated: .deprecated}
-{:download: .download}
-{:preview: .preview}
+{{site.data.keyword.attribute-definition-list}}
 
 # Understanding your responsibilities when using Citrix Netscaler VPX
 {: #vpx-responsibilities}
@@ -42,7 +32,7 @@ Incident and operations management includes tasks such as monitoring, event mana
 |VPX design| None  | Designing and deploying your load balancing system, and engaging IBM for design consultation |
 |VPX hardware/infrastructure failure| Monitoring and correcting all hardware and infrastructure failures | Notifying {{site.data.keyword.IBM_notm}} of hardware and infrastructure failures  |
 {: row-headers}
-{: caption="Table 1. Responsibilities for incidents and operations" caption-side="top"}
+{: caption="Table 1. Responsibilities for incidents and operations" caption-side="bottom"}
 
 ## Change management
 {: #change-management}
@@ -55,7 +45,7 @@ Change management includes tasks such as deployment, configuration, upgrades, pa
 |Upgrades| None  | Planning and implementing all upgrades |
 |Configuration Modification| None | Providing subject matter expertise and modification of your environment |
 {: row-headers}
-{: caption="Table 2. Responsibilities for change management" caption-side="top"}
+{: caption="Table 2. Responsibilities for change management" caption-side="bottom"}
 
 ## Identity and access management
 {: #iam-responsibilities}
@@ -68,7 +58,7 @@ Identity and access management includes tasks such as authentication, authorizat
 |All subsequent password changes| None  | Ensuring root passwords remain consistent in the IBM Cloud console and on production systems |
 |Account administration| None  | Designing and implementing VPX user account design goals |
 {: row-headers}
-{: caption="Table 3. Responsibilities for identity and access management" caption-side="top"}
+{: caption="Table 3. Responsibilities for identity and access management" caption-side="bottom"}
 
 ## Security and regulation compliance
 {: #security-compliance}
@@ -79,7 +69,7 @@ Security and regulation compliance includes tasks such as security controls impl
 |----------|-----------------------|--------|
 |Critical Patch Notification| Notifying customers of the need for critical patches through Event Management  | Implementing and applying required patches |
 {: row-headers}
-{: caption="Table 4. Responsibilities for security and regulation compliance" caption-side="top"}
+{: caption="Table 4. Responsibilities for security and regulation compliance" caption-side="bottom"}
 
 ## Disaster recovery
 {: #disaster-recovery}
@@ -90,4 +80,4 @@ Disaster recovery includes tasks such as providing dependencies on disaster reco
 |----------|-----------------------|--------|
 |Backups| Applying customer held backups during disaster recovery  | Keeping up-to-date backups of your current environment |
 {: row-headers}
-{: caption="Table 5. Responsibilities for disaster recovery" caption-side="top"}
+{: caption="Table 5. Responsibilities for disaster recovery" caption-side="bottom"}

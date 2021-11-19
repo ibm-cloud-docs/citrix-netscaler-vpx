@@ -11,15 +11,7 @@ subcollection: citrix-netscaler-vpx
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank_"}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:note: .note}
-{:tip: .tip}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Enable FIPS 140-2 (optional)
 {: #enable-fips-140-2-optional-}

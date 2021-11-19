@@ -9,11 +9,7 @@ keywords: resources, blog, brief
 subcollection: citrix-netscaler-vpx
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Other resources for IBM Citrix Netscaler VPX
 {: #other-resources-for-ibm-citrix-netscaler-vpx}
@@ -22,5 +18,6 @@ These additional {{site.data.keyword.vpx_full}} resources are created by IBM© a
 {: shortdesc}
 
 ## Blogs
+{: #resources-blogs}
 
-* [IBM Cloud Hardware Security Module (HSM) and {{site.data.keyword.vpx_full}}/Application Delivery Controller (ADC), by Jose Monge ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/blogs/bluemix/2018/11/deploy-ssl-offload-in-citrix-netscaler-vpx-adc-using-ibm-cloud-hsm/){: new_window}
+* [IBM Cloud Hardware Security Module (HSM) and {{site.data.keyword.vpx_full}}/Application Delivery Controller (ADC), by Jose Monge](https://www.ibm.com/blogs/bluemix/2018/11/deploy-ssl-offload-in-citrix-netscaler-vpx-adc-using-ibm-cloud-hsm/){: external}

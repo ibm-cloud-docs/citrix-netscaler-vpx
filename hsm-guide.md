@@ -10,15 +10,7 @@ subcollection: citrix-netscaler-vpx
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank_"}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Deploying and configuring the IBM Hardware Security Module (HSM) with Citrix Netscaler VPX
 {: #deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx}
@@ -34,6 +26,7 @@ This deployment was built and tested with the following component specifications
 | NetScaler VPX Version & Build	| HSM Software Version | HSM Firmware version | HSM Client Version |
 | ------------- | ------------- | ------------- | ------------- |
 | NS12.1: Build 48.13.nc | 6.2.2-5 | 6.10.9 | 6.2.2 |
+{: caption="Component specifications" caption-side="bottom"}
 
 If you have an older version of VPX or, if when ordering the device through the {{site.data.keyword.cloud}} platform you only see versions 11.1 and earlier as selection options, the device can be upgraded so that the set-up described in this guide can be completed.
 {: note}
@@ -43,7 +36,7 @@ If you have an older version of VPX or, if when ordering the device through the 
 
 The following diagram shows the network traffic flow for the SSL offload use case. This provides a visual and logical perspective of the trust link and the configuration between VPX and the HSM appliance.
 
-![Network Flows Topology](images/network-flows-logical-topology.jpg)
+![Network Flows Topology](images/network-flows-logical-topology.jpg){: caption="Network flows topology" caption-side="bottom"}
 
 If you are not familiar with SSL offload, review this [Citrix article](https://docs.citrix.com/en-us/netscaler/12-1/ssl.html).
 

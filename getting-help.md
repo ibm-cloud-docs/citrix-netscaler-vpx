@@ -1,26 +1,16 @@
 ---
 
 copyright:
-  years: 2017,2018
+  years: 2017, 2018
 lastupdated: "2019-11-12"
 
 keywords: help, support, questions, troubleshooting
 
 subcollection: citrix-netscaler-vpx
 
-
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:download: .download}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Getting help and support for Citrix Netscaler VPX
 {: #getting-help-and-support-for-citrix-netscaler-vpx}

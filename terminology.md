@@ -8,11 +8,7 @@ keywords: nsip, snip, vip
 subcollection: citrix-netscaler-vpx
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Citrix Netscaler VPX terminology
 {: #citrix-netscaler-vpx-terminology}

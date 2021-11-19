@@ -11,15 +11,7 @@ subcollection: citrix-netscaler-vpx
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank_"}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Creating an IP tunnel
 {: #creating-ip-tunnel}
@@ -41,7 +33,8 @@ To do so:
 7.	Choose the [previously created](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-enable-required-features-in-vpx) profile name from the **IPsec Profile Name** list.
 8.	Click **Create**.
 
-    ![Create IP Tunnel](images/ipsecCreateIPtunnel.png)
+    ![Create IP Tunnel](images/ipsecCreateIPtunnel.png){: caption="Create IP tunnel" caption-side="bottom"}
+
 
 To create an IP tunnel in the CLI, use the following syntax:
 

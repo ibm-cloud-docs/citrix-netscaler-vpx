@@ -10,21 +10,7 @@ subcollection: citrix-netscaler-vpx
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"} 
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:term: .term}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:deprecated: .deprecated}
-{:table: .aria-labeledby="caption"}
-{:external: target="_blank" .external}
-{:generic: data-hd-programlang="generic”}
-{:download: .download}
-{:DomainName: data-hd-keyref="DomainName"}
+{{site.data.keyword.attribute-definition-list}}
 
 # Establish a Network Trust Link (NTL)
 {: #establish-a-network-trust-link-ntl-}
@@ -69,7 +55,7 @@ To establish your NTL, perform the following procedure:
 	00:00
 	```
 
-    To learn more about Virtual Token Library (VTL), go to the [Utilities Reference Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/utilities_reference_guide.pdf){: new_window}.
+    To learn more about Virtual Token Library (VTL), go to the [Utilities Reference Guide](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/utilities_reference_guide.pdf){: external.
 
 1. Transfer the HSM server certificate file to the {{site.data.keyword.vpx_full}} client using SCP, then add the server:
 

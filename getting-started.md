@@ -9,11 +9,7 @@ keywords: order, citrix, vpx, overview
 subcollection: citrix-netscaler-vpx
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Getting started with Citrix Netscaler VPX
 {: #getting-started}
@@ -32,7 +28,7 @@ To get started with {{site.data.keyword.vpx_full}}, you will need to know the fo
 * The number of public IP addresses needed
 * The VLAN where you want to assign the load balancer
 
-To get the maximum value from your Citrix Netscaler VPX, make sure you allocate and apply your Citrix ADC licenses using the new Citrix licensing framework. For more information, refer to [Citrix ADC licensing overview ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.citrix.com/en-us/citrix-adc/12-1/licensing/citrix-adc-licensing-overview.html){: new_window}.
+To get the maximum value from your Citrix Netscaler VPX, make sure you allocate and apply your Citrix ADC licenses using the new Citrix licensing framework. For more information, refer to [Citrix ADC licensing overview](https://docs.citrix.com/en-us/citrix-adc/12-1/licensing/citrix-adc-licensing-overview.html){: external}
 {: important}
 
 ## Ordering a {{site.data.keyword.vpx_full}}
@@ -40,7 +36,7 @@ To get the maximum value from your Citrix Netscaler VPX, make sure you allocate 
 
 To order a {{site.data.keyword.vpx_full}} software appliance, navigate to the order page in the IBM Cloud catalog:
 
-1. From your browser, open the [IBM Cloud catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){: new_window} and log into your account.
+1. From your browser, open the [IBM Cloud catalog](https://cloud.ibm.com){: external} and log into your account.
 2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
 3. Click the **Order Devices** button.
 4. In the Catalog page, scroll down to the Network section and click the **Load Balancer** tile.

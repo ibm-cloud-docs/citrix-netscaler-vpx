@@ -10,15 +10,7 @@ subcollection: citrix-netscaler-vpx
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank_"}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Configure cache redirection for HTTP(S) traffic
 {: #configure-cache-redirection-for-http-traffic}
@@ -31,7 +23,7 @@ To do so, follow these steps:
 1. Go to **Traffic Management > Cache Redirection > Virtual Servers** and click **Add**.
 2. Specify the name of your forward-proxy virtual server. Select the **HTTP** protocol and the **Forward** cache type from their respective list menus. Then assign an IP address to this virtual server from your private subnet.
 
-    ![Virtual Server setup](images/fp12.png)
+    ![Virtual server setup](images/fp12.png){: caption="Figure 1. Virtual server setup" caption-side="bottom"}
 
     Click **OK** to continue.
 
@@ -44,7 +36,7 @@ To do so, follow these steps:
 
 6. From the list **DNS Virtual Server Name**, select the previously-configured DNS virtual server, and set the **Redirect** option to **Origin**.
 
-    ![Redirect selection](images/fp13.png)
+    ![Redirect selection](images/fp13.png){: caption="Figure 2. Redirect selection" caption-side="bottom"}
 
     The **Destination Virtual Server** setting is used when outbound traffic is to be directed to the local cache server pool. Leave it empty when you want to direct all your outbound traffic to origin servers.
     {: note}

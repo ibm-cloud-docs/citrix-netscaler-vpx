@@ -11,21 +11,7 @@ subcollection: citrix-netscaler-vpx
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"} 
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:term: .term}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:deprecated: .deprecated}
-{:table: .aria-labeledby="caption"}
-{:external: target="_blank" .external}
-{:generic: data-hd-programlang="generic”}
-{:download: .download}
-{:DomainName: data-hd-keyref="DomainName"}
+{{site.data.keyword.attribute-definition-list}}
 
 # Install the IBM Hardware Security Module (HSM) client software
 {: #install-the-ibm-hardware-security-module-hsm-client-software}
@@ -38,7 +24,8 @@ Steps one and two in this procedure are optional and needed only if the safenet 
 
 Find the credentials to access the NetScaler CLI listed in the Control Portal under **Devices > Device List > Expand VPX name**.
 
-![VPX Credentials](./images/3-VPX-Credentials.png)
+![VPX Credentials](./images/3-VPX-Credentials.png){: caption="Figure 1. VPX credentials" caption-side="bottom"}
+
 
 You'll need them for this section and the remainder of the guide.
 
@@ -52,7 +39,8 @@ All VPX commands and outputs in this document will list either `netscalername#` 
    You must be logged into your IBM Cloud account to access the links.
    {: note}
 
-   ![Safenet_dirs.tar](images/4-transfer-safenet_dirs.png)
+   ![Safenet_dirs.tar](images/4-transfer-safenet_dirs.png){: caption="Figure 2. Safenet_dirs.tar" caption-side="bottom"}
+
 
    This image shows the WinSCP software transferring the `safenet_dir.tar` file into the Citrix VPX.
 

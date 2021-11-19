@@ -8,11 +8,7 @@ keywords: load balancing, global, mep, gslb
 subcollection: citrix-netscaler-vpx
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Global load balancing with Citrix Netscaler VPX
 {: #global-load-balancing-with-citrix-netscaler-vpx}
