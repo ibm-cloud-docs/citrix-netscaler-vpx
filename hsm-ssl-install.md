@@ -107,10 +107,9 @@ To do so, perform the following procedure:
 
 6. (OPTIONAL) To avoid security warnings when accessing content through a web browser, you might want to install "Intermediate CA" certificates. These allow your {{site.data.keyword.vpx_full}} to share information with connecting clients.
 
-   To obtain these intermediate certificates for RapidSSL, visit any of the following links:
+   To obtain these intermediate certificates for RapidSSL, visit the following link:
 
-     * [Reissue GeoTrust Certificate For Partner Orders or QuickSSL](https://knowledge.digicert.com/solution/SO5989.html){: external}
-     * [RapidSSL Intermediate and Root CA Certificates](https://knowledge.digicert.com/generalinformation/INFO1548.html#links){: external}
+   [RapidSSL Intermediate and Root CA Certificates](https://knowledge.digicert.com/generalinformation/INFO1548.html#links){: external}
 
    To install and link the certificates, follow the instructions in this [Citrix article](https://support.citrix.com/article/CTX114146){: external}.
 
