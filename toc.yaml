@@ -28,6 +28,7 @@ toc:
        - link:
           label: What is load balancing?
           href: https://www.ibm.com/cloud/learn/load-balancing
+       - whats-new-vpx.md
 
     - navgroup:
        id: howto
@@ -80,8 +81,8 @@ toc:
           - hsm-ssl-dns.md
           - hsm-ssl-server.md
           - hsm-ssl-cipher.md
-        
-    - navgroup: 
+
+    - navgroup:
        id: reference
        topics:
        - global-load-balancing-options.md
@@ -95,6 +96,5 @@ toc:
     - navgroup:
        id: help
        topics:
-       - whats-new-vpx.md
        - load-balancing-faqs.md
        - getting-help.md
