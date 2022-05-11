@@ -1,12 +1,12 @@
 ---
 copyright:
   years: 1994, 2017
-
-lastupdated: "2021-09-13"
+lastupdated: "2022-05-04"
 
 keywords: order, citrix, vpx, overview
 
 subcollection: citrix-netscaler-vpx
+
 ---
 
 {{site.data.keyword.attribute-definition-list}}
