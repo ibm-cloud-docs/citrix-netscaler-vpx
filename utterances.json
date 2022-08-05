@@ -7,31 +7,13 @@
     "compare the different load balancers",
     "available options for loadbalancers"
    ],
-  "ipv6":[  
-    "NetScaler support IPv6",
-    "NetScaler support IPv4",
-    "Is IPv4 supported",
-    "support IPv6",
-    "ipv6 vs ipv4",
-    "is IPv6 and IPv4 supported",
-    "support for citrix ipv6"
-   ],
   "private":[  
     "NetScaler load balance traffic on the private network",
     "Netscaler work on a private network",
     "use citrix netscaler on a private network",
     "load balance on a private network",
     "private network load balancing"
-   ],
-  "source-ip":[  
-    "report the client's source IP address instead of the source IP",
-    "configure this to report the client's source IP address",
-    "use Netscaler to report the  client's IP address",
-    "change the configuration to the client IP address",
-    "update the IP address to be the Client's source",
-    "change the Use Source IP (USIP) parameter",
-    "update USIP parameter"
-  ],
+   ], 
   "ha":[ 
     "NetScaler in HA configuration",
     "NetScaler VPX appliances support High Availability",
@@ -39,7 +21,7 @@
     "HA supported by Netscaler",
     "Netscaler support High Availability",
     "citrix load balancing with HA"
-],
+   ],
   "vpn":[     
     "NetScaler offering include SSL VPN",
     "what is NetScaler Gateway",
