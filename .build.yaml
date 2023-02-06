@@ -1,6 +1,4 @@
 includes:
-  - https://github.ibm.com/cloud-docs/acme-test
-  - https://github.ibm.com/cloud-docs/another-repo
   - https://github.ibm.com/cloud-docs/loadbalancer-service
 translation:
   exclude:
