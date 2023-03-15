@@ -22,8 +22,6 @@ To do so, follow these steps:
 
 1. Go to **Traffic Management > Cache redirection > Virtual servers** and click **Add**. Specify the name for your forward-proxy virtual server, select the SSL protocol and a cache type of **FORWARD**. Assign it an IP address from your private subnet, with its requisite port.
 
-   ![Virtual Server settings](images/fp14.png){: caption="Figure 1. Virtual server settings" caption-side="bottom"}
-
    Click **OK**.
 
 2. Review the summary page and click **OK** to continue.
@@ -33,10 +31,6 @@ To do so, follow these steps:
 6. From the Select Server Certificate list menu, select your SSL server.
 7. Enter the certificate configuration information as required.
 
-   ![Certificate configuration](images/fp15.png){: caption="Figure 2. Certificate configuration" caption-side="bottom"}
-
    Click **Install**.
 
 8. Select **Bind**.
-
-   ![Bind](images/fp16.png){: caption="Figure 3. Bind" caption-side="bottom"}

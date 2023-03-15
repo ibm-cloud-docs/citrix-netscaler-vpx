@@ -31,6 +31,3 @@ To order the {{site.data.keyword.vpx_full}} appliance, perform the following pro
 8. Review your purchase order, accept the service agreement, and click **Place Order**.
 
 You are taken to the infrastructure summary page, where you can find your {{site.data.keyword.vpx_full}} appliance at **Devices > Device List**. Review and confirm the device details for login credentials and its public and private IP addresses.
-
-   ![Review Citrix order](images/fp3.png){: caption="Review Citrix order" caption-side="bottom"}
-

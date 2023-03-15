@@ -25,8 +25,6 @@ To do so, perform the following steps:
 
 1. From the {{site.data.keyword.vpx_full}} appliance system page, go to **Settings > Configure Advanced Features**, then enable **Cache Redirection** and click **OK**.  
 
-   ![Cache redirection](images/fp4.png){: caption="Figure 1. Cache redirection" caption-side="bottom"}
-
    Enable any additional features as necessary.
 
 2. Next go to **System > Settings > Configure Basic Features**, and enable **Load Balancing** (if it is not already) and click **OK**.

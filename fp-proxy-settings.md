@@ -25,5 +25,3 @@ To do so, perform the following steps:
 
 These proxy settings might not be necessary if the {{site.data.keyword.vpx_full}} appliance is in the direct layer 3 path between client machines and the internet.
 {: note}
-
-![Proxy settings](images/fp17.png){: caption="Proxy settings" caption-side="bottom"}

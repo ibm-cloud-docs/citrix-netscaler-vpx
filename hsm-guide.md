@@ -36,8 +36,6 @@ If you have an older version of VPX or, if when ordering the device through the 
 
 The following diagram shows the network traffic flow for the SSL offload use case. This provides a visual and logical perspective of the trust link and the configuration between VPX and the HSM appliance.
 
-![Network Flows Topology](images/network-flows-logical-topology.jpg){: caption="Network flows topology" caption-side="bottom"}
-
 If you are not familiar with SSL offload, review this [Citrix article](https://docs.citrix.com/en-us/netscaler/12-1/ssl.html).
 
 ## What you'll accomplish

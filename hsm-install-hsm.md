@@ -24,9 +24,6 @@ Steps one and two in this procedure are optional and needed only if the safenet 
 
 Find the credentials to access the NetScaler CLI listed in the Control Portal under **Devices > Device List > Expand VPX name**.
 
-![VPX Credentials](./images/3-VPX-Credentials.png){: caption="Figure 1. VPX credentials" caption-side="bottom"}
-
-
 You'll need them for this section and the remainder of the guide.
 
 All VPX commands and outputs in this document will list either `netscalername#` (indicating a shell execution), or `>` (for the VPX CLI itself).
@@ -38,9 +35,6 @@ All VPX commands and outputs in this document will list either `netscalername#` 
 
    You must be logged into your IBM Cloud account to access the links.
    {: note}
-
-   ![Safenet_dirs.tar](images/4-transfer-safenet_dirs.png){: caption="Figure 2. Safenet_dirs.tar" caption-side="bottom"}
-
 
    This image shows the WinSCP software transferring the `safenet_dir.tar` file into the Citrix VPX.
 

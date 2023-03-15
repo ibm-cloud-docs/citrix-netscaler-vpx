@@ -21,9 +21,6 @@ There are procedures and commands that will help you verify the operational stat
 
 1.	Confirm the VPN status in VPX by navigating to **System > CloudBridge Connector > IP Tunnels**.
 
-    ![Confirm VPN status](images/ipsecVerifyVPN1.png){: caption="Confirm VPN status" caption-side="bottom"}
-
-
     The Status should reflect an **UP** state in the respective IP tunnel entry (**IPsec_tunnel1** in this example.)
 
     To confirm the status of the VPN connection using the CLI, run the following command:

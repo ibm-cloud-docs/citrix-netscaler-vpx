@@ -27,7 +27,4 @@ To do so:
 5. Click **Continue**.
 6. Select the data center you prefer, choose the **Cloud HSM 6.0** option, and click **Add to Order**.
 7. Under **Advanced System Configuration**, enter your backend and frontend VLAN section information and choose **SSH Key** from the dropdown, then fill out the hostname and domain details.
-
-    ![Order HSM](images/1-Order-HSM.png){: caption="Order HSM" caption-side="bottom"}
-
 8.	When you are finished, accept the terms and click **Submit Order**.

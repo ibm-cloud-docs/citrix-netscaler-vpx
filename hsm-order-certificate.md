@@ -65,8 +65,6 @@ To order an SSL certificate for use with your {{site.data.keyword.vpx_full}}, pe
 
 3.	Follow [these instructions](/docs/ssl-certificates?topic=ssl-certificates-getting-started-tutorial#ordering-ssl-certificates) to place the order, pasting your CSR file text in the appropriate field. In the following example, `RapidSSL 1 Year` was chosen.
 
-	![Order Certificate](images/5-Order-Certificate_1.png)
-
 	As shown, the system processes and interprets the CSR text, then displays this in the following page.
 
 	Make sure to select a valid email account and domain/sub-domain, because this is the designated method to validate the ownership of the domain.

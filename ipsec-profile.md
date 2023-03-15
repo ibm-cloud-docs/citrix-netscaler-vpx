@@ -32,9 +32,6 @@ To create a profile, perform the following procedure:
 5.	Check **Pre-Shared Key Exists** and enter the PSK in the **Value** field.
 6.	Click **Create**.
 
-    ![Create IPsec Profile](images/ipsecCreateProfile.png){: caption="Create IPsec profile" caption-side="bottom"}
-
-
 To create an IPsec profile in the CLI, use the following syntax:
 
    ```sh

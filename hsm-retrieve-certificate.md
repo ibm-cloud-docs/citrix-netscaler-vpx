@@ -24,7 +24,4 @@ Retrieve the SSL certificate you ordered earlier so that you're ready for its in
 
 2. Copy the certificate file to the `/nsconfig/ssl` directoy in the {{site.data.keyword.vpx_full}}.
 
-    ![Transfer Certificate](images/11-transfer-certificate.png){: caption="Transfer certificate" caption-side="bottom"}
-
-
 The {{site.data.keyword.vpx_full}} is now ready to incorporate the certificate into a load balancing deployment using SSL.
