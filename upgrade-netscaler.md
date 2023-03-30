@@ -33,7 +33,7 @@ You must be connected to the VPN before attempting this procedure.
    {: note}
 
 1. On the Upload Software screen, browse to the location of the upgrade file and click **Upgrade**. The firmware uploads.
-1. On the resulting System Upgrade window, you will be prompted to reboot. Click **Close**.
+1. On the resulting System Upgrade window, you are prompted to reboot. Click **Close**.
 1. Go back to **System**, and click **Reboot**.
 1. After the upgrade, close all browser instances and clear your computer's cache before accessing the appliance.
 
