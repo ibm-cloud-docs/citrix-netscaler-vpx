@@ -18,7 +18,7 @@ subcollection: citrix-netscaler-vpx
 To order the {{site.data.keyword.vpx_full}} appliance, perform the following procedure:
 {: shortdesc}
 
-1. From your browser, open the [IBM Cloud catalog](https://cloud.ibm.com){: external} and log into your account.
+1. From your browser, open the [IBM Cloud catalog](/login){: external} and log into your account.
 2. Select the Menu icon ![Menu icon](../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
 3. Click the **Order Devices** button.
 4. In the Catalog page, scroll down to the Network section and click the **Load Balancer** tile.
