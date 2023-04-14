@@ -26,6 +26,9 @@ toc:
        - netscaler-basic-configuration.md
        - include: ../loadbalancer-service/explore-load-balancers.md
        - link:
+          label: Citrix VPX Product Lifecycle
+          href: https://www.citrix.com/support/product-lifecycle/product-matrix.html
+       - link:
           label: What is load balancing?
           href: https://www.ibm.com/cloud/learn/load-balancing
        - whats-new-vpx.md
