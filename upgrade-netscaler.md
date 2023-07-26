@@ -19,6 +19,17 @@ subcollection: citrix-netscaler-vpx
 You can upgrade your {{site.data.keyword.vpx_full}} to the most recent version by following the instructions here.
 {: shortdesc}
 
+Before attempting to upgrade, ensure that the following prerequisites have been met.  
+
+Failure to meet these prerequisites may cause a licensing issue with your Netscaler VPX, which can impact your productivity.
+{: important}
+
+* Ensure that your VPX administration passwords are up to date in the portal.
+* Ensure that you are allowing any [Service Networks required for provisioning](/docs/cloud-infrastructure?topic=cloud-infrastructure-ibm-cloud-ip-ranges#service-network) through your gateway and server firewall.
+* Ensure that your license file is up-to-date through your VPX. If not, you can update it by [opening a support case](https://cloud.ibm.com/unifiedsupport/cases/form){: external}.
+
+To upgrade your VPX, perform the folllowing proedure:
+
 You must be connected to the VPN before attempting this procedure.
 {: note}
 
@@ -33,7 +44,7 @@ You must be connected to the VPN before attempting this procedure.
    {: note}
 
 1. On the Upload Software screen, browse to the location of the upgrade file and click **Upgrade**. The firmware uploads.
-1. On the resulting System Upgrade window, you are prompted to reboot. Click **Close**.
+1. On the resulting System Upgrade window, you will be prompted to reboot. Click **Close**.
 1. Go back to **System**, and click **Reboot**.
 1. After the upgrade, close all browser instances and clear your computer's cache before accessing the appliance.
 
