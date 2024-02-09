@@ -3,8 +3,8 @@
 
 
 copyright:
-  years: 2017
-lastupdated: "2019-11-12"
+  years: 2017, 2019
+lastupdated: "2019-11-13"
 
 keywords: cache, enable, redirect, capabilities
 
@@ -23,7 +23,7 @@ You can enable cache redirection and load balancing for the {{site.data.keyword.
 
 To do so, perform the following steps:
 
-1. From the {{site.data.keyword.vpx_full}} appliance system page, go to **Settings > Configure Advanced Features**, then enable **Cache Redirection** and click **OK**.  
+1. From the {{site.data.keyword.vpx_full}} appliance system page, go to **Settings > Configure Advanced Features**, then enable **Cache Redirection** and click **OK**.
 
    Enable any additional features as necessary.
 
