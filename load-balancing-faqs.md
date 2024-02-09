@@ -42,7 +42,7 @@ Load balancing traffic has become a key aspect of many customer implementations 
 {: faq}
 {: support}
 
-For a detailed comparison of the IBM© Load Balancer offerings, refer to [Explore Load Balancers](/docs/loadbalancer-service?topic=loadbalancer-service-explore).
+For a detailed comparison of the IBM© Load Balancer offerings, see [Exploring IBM Cloud load balancers](/docs/loadbalancer-service?topic=loadbalancer-service-explore).
 
 ## Does NetScaler support IPv6?
 {: #ipv6}

@@ -24,7 +24,7 @@ To get started with {{site.data.keyword.vpx_full}}, you will need to know the fo
 
 * Your IBM© Cloud catalog login information
 * The deployment location for your load balancer
-* Which Netscaler type best fits your needs (for more information refer to [Explore Load Balancers](/docs/citrix-netscaler-vpx?topic=loadbalancer-service-explore))
+* Which Netscaler type best fits your needs (for more information, see [Exploring IBM Cloud load balancers](/docs/loadbalancer-service?topic=loadbalancer-service-explore)).
 * The number of public IP addresses needed
 * The VLAN where you want to assign the load balancer
 
@@ -41,9 +41,9 @@ To order a {{site.data.keyword.vpx_full}} software appliance, navigate to the or
 3. Click the **Order Devices** button.
 4. In the Catalog page, scroll down to the Network section and click the **Load Balancer** tile.
 5. Select {{site.data.keyword.vpx_full}}, then click **Create**.
-6. Select a Location from the dropdown menu where you would like to deploy your {{site.data.keyword.vpx_full}} software appliance.  
+6. Select a Location from the dropdown menu where you would like to deploy your {{site.data.keyword.vpx_full}} software appliance.
 7. Select the best NetScaler type for your software edition, software version and throughput needs.
-8. Select the number of public IP addresses you need.  
+8. Select the number of public IP addresses you need.
    These are static public IP addresses, deployed as virtual IP addresses (VIPs) on your NetScaler VPX.
 9. Click **Continue**.
 10. Enter the information required by ARIN (or the equivalent organization in your region of deployment) for the IP addresses you've requested.
