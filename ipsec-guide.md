@@ -40,7 +40,7 @@ You need a VPX Platinum license to configure IPsec VPN.
 This guide assumes ownership of both devices. Visit the following links for instructions on ordering.
 
 -	[Getting started with {{site.data.keyword.vpx_full}} Software Appliance](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started)
--	[Getting Started with IBM Virtual Router Appliance](/docs/virtual-router-appliance?topic=virtual-router-appliance-getting-started)
+-	[Getting Started with IBM Virtual Router Appliance](/docs/virtual-router-appliance?topic=virtual-router-appliance-getting-started-vra)
 
 ## What you'll accomplish
 {: #accomplish}

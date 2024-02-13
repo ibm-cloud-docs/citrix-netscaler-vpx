@@ -2,7 +2,7 @@
     "title": "Citrix VPX docs",
     "lastupdated": "2021-04-13",
     "introduction": "This is a description of what the user will be able to access or find content-wise for your product.",
-      "terraform": "https://cloud.ibm.com/docs/terraform?topic=terraform-getting-started",
+      "terraform": "https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started",
     "section_recommended": [
       {
         "title": "Getting started with Citrix Netscaler VPX",
@@ -27,7 +27,7 @@
       "community": "https://community.ibm.com/community/user/cloud/home"
     },
     "section_updates": {
-      "view_more": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-release-notes-for-citrix-netscaler-vpx",
+      "view_more": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started",
       "tiles": [
         {
           "date": "Version 12.1",

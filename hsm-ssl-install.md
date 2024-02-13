@@ -104,17 +104,3 @@ To do so, perform the following procedure:
 	Done
 	>
 	```
-
-6. (OPTIONAL) To avoid security warnings when accessing content through a web browser, you might want to install "Intermediate CA" certificates. These allow your {{site.data.keyword.vpx_full}} to share information with connecting clients.
-
-   To obtain these intermediate certificates for RapidSSL, visit the following link:
-
-   [RapidSSL Intermediate and Root CA Certificates](https://knowledge.digicert.com/generalinformation/INFO1548.html#links){: external}
-
-   To install and link the certificates, follow the instructions in this [Citrix article](https://support.citrix.com/article/CTX114146){: external}.
-
-	```sh
-	> show ssl certlink
-	1) Cert Name: hsmclient7ns  CA Cert Name: ICARSSL
-	Done
-	```
