@@ -13,26 +13,26 @@ subcollection: citrix-netscaler-vpx
 # Global load balancing
 {: #global-load-balancing}
 
-Global server load balancing (GSLB) is a method to split traffic across multiple servers using DNS and geographical locations as the means to determine where server traffic should be sent. Generally, a global load balancer sends a client request to a server that is closer to the client, decreasing latency and improving performance.
+Global server load balancing (GSLB) is a method to split traffic across multiple servers by using DNS and geographical locations as the means to determine where server traffic should be sent. Generally, a global load balancer sends a client request to a server that is closer to the client, decreasing latency and improving performance.
 {: shortdesc}
 
-You might not require a full implementation of a global load balancing solution. GSLB requires multiple instances of a suitable device that can perform this function, and depending on your needs, other solutions might be more attractive to you. If you need entire websites and applications, then GSLB is a good choice. If you only need portions of your content, such as images, videos, or other large files, then a [Content Delivery Network](/docs/CDN?topic=CDN-about-content-delivery-networks-cdn-#about-content-delivery-networks-cdn-) might be more suitable (and easier to deploy).
+You might not require a full implementation of a global load balancing solution. GSLB requires multiple instances of a suitable device that can perform this function, and depending on your needs, other solutions might be more attractive to you. If you need entire websites and applications, then GSLB is a good choice. If you need only portions of your content, such as images, videos, or other large files, then a [Content Delivery Network](/docs/CDN?topic=CDN-about-content-delivery-networks-cdn-#about-content-delivery-networks-cdn-) might be more suitable (and easier to deploy).
 
 ## {{site.data.keyword.vpx_full}}
 {: #citrix-netscaler-vpx}
 
-The {{site.data.keyword.vpx_full}} is the only customer configurable device that does true global load balancing. NetScaler is a multi-function appliance that can perform DNS based global load balancing lookups. You can point to the NetScaler as a DNS server, and the device will look over the servers it is configured to load balance for, perform a distance calculation, and return a record with the IP of the server closest to the client request.
+The {{site.data.keyword.vpx_full}} is the only customer configurable device that does true global load balancing. NetScaler is a multi-function appliance that can perform DNS based global load balancing lookups. You can point to the NetScaler as a DNS server. The device looks over the servers it is configured to load balance for, perform a distance calculation, and return a record with the IP of the server closest to the client request.
 
-For global load balancing, you would have a NetScaler appliance configuration in each data center. Each NetScaler appliance configuration can be a single Netscaler or a pair of Netscalers in an HA pair, depending on your requirements, providing local load balancing services for the servers behind them. The devices are configured to talk to one another so they exchange state information on each server assigned to global load balancer rotation. Any DNS request that comes to these configured NetScalers can return a proper record for a server that is online and responsive. Any server not responsive is removed from the rotation and another is selected.
+For global load balancing, you need a NetScaler appliance configuration in each data center. Each NetScaler appliance configuration can be a single Netscaler or a pair of Netscalers in an HA pair. The configuration depends on your requirements, providing local load balancing services for the servers behind them. The devices are configured to talk to one another so they exchange state information on each server that is assigned to global load balancer rotation. Any DNS request that comes to these configured NetScalers can return a proper record for a server that is online and responsive. Any server not responsive is removed from the rotation and another is selected.
 
-You must already have load balancing set up, even if it is only one server being balanced. You will need additional IP addresses for some services, namely the GSLB site IP. This IP is used by the NetScaler to communicate with the other NetScalers in the global load balancing protocol.
+You need a configured load balancer, even if it is only balancing one server. You may need extra IP addresses for some services, namely the GSLB site IP. This IP is used by the NetScaler to communicate with the other NetScalers in the global load balancing protocol.
 
 The following global balancing procedure uses:
 
 ### VPX1
 {: #vpx1}
 
-IP `50.97.235.236` is named `VPX1Vserver`, and is the local load balancing VIP for that device. `50.23.66.52` will be called `VPX1site`, and is the local IP for that device's GSLB.
+IP `50.97.235.236` is named `VPX1Vserver`, and is the local load balancing VIP for that device. `50.23.66.52` becomes `VPX1site`, and is the local IP for that device's GSLB.
 
 ### VPX2
 {: #vpx2}
@@ -43,31 +43,31 @@ IP `208.43.241.249` is used for `VPX2Vserver`, and the GSLB IP is `208.43.224.4`
 
 2. On the first device, enter the Name as VPX1, the Type as local, and the IP as `50.23.66.52`, then select **Close**.
 
-   You should see the site listed with a status of green. Do not add a remote site yet.
+   The site shows a status of green. Do not add a remote site yet.
 
-3. Go to **Traffic Management > GSLB** and select the **GSLB Wizard**. Click **Next**. Enter the hostname that you will be load balancing (in this example, `gslb.tsstesting.com`) Leave the Record Type as A, and the Service Type ANY. The virtual server name will populate itself. Click **Next**.
+3. Go to **Traffic Management > GSLB** and select the **GSLB Wizard**. Click **Next**. Enter the hostname that for load balancing (in this example, `gslb.tsstesting.com`) Leave the Record Type as A, and the Service Type ANY. The virtual server name populates itself. Click **Next**.
 
-4. Choose your form of balancing and persistence method just like you would with regular load balancing. Click **Next**.
+4. Choose your form of balancing and persistence method. Click **Next**.
 
-5. The site is already populated, so you don't have to add anything. Instead, click on the green `+` next to the first site's name. Select the Vserver on that device from the list and click **Create**. You should see that the site is configured with the site IP and the Vserver IP of your load balanced setup, and that it is green. Click **Next**, **Finish**, and **Exit**.
+5. The site is already populated, so you don't have to add anything. Instead, click on the green `+` next to the first site's name. Select the Vserver on that device from the list and click **Create**. The site is configured with the site IP and the Vserver IP of your load balanced setup, and that it is green. Click **Next**, **Finish**, and **Exit**.
 
-6. Perform the same actions on the next NetScaler, using the values for that server.
+6. Perform the same actions on the next NetScaler by using the values for that server.
 
-7. On both servers, go to **Traffic Management > DNS > Records > A records**, and examine the list. You should see `root.servers.net` entries, as well as your hostname, with a type of `GSLB DOMAIN`.
+7. On both servers, go to **Traffic Management > DNS > Records > A records**, and examine the list. The `root.servers.net` entries, as well as your hostname, have a type of `GSLB DOMAIN`.
 
-8. Go to **Traffic Management > DNS > Name Servers** and click **Add**. Enter an IP address on the NetScaler (such as the public IP of the device). Click **Local** and leave the protocol as UDP. Click **Create** then **Close**. You should see the effective state as enabled and up.
+8. Go to **Traffic Management > DNS > Name Servers** and click **Add**. Enter an IP address on the NetScaler (such as the public IP of the device). Click **Local** and leave the protocol as UDP. Click **Create** then **Close**. The effective state shows as enabled and up.
 
 9. Go to **System > Network > IPs** and open the GSLB IP address. Make sure that **Management** is selected for both machines.
 
 10. Next, on both servers, go back to **Traffic Management > GSLB** and go through the wizard again. This time, click **Next**, and select **Modify Configuration for Existing Domains**. Select the hostname from the list and then click **Next** twice.
 
-11. In the site address field, put in the site IP address of the other NetScaler and give it the other NetScaler's site name and click **Add**. The site will be populated with an option to click the green `+` again. Click the remote site plus sign to add another site. Enter the Vserver service IP (the one for the load balanced servers, not the GSLB site IP) and the port, click **Create** and **Close**, **Next**, **Finish** then **Exit**.
+11. In the site address field, put in the site IP address of the other NetScaler and give it the other NetScaler's site name and click **Add**. The site populates with an option to click the green `+` again. Click the remote site plus sign to add another site. Enter the Vserver service IP (the one for the load balanced servers, not the GSLB site IP) and the port, click **Create** and **Close**, **Next**, **Finish** then **Exit**.
 
-If everything has been working up to this point, and both servers are configured, everything should have a status of green in the GSLB Virtual Servers, Services and Sites. You will notice that there are now two entries in GSLB services on both machines if they are properly synchronized. The servers are now communicating with each other.
+If everything works, and both servers are configured, the status is green in the GSLB Virtual Servers, Services, and Sites. Notice the two entries in GSLB services on both machines if they are properly synchronized. The servers are now communicating with each other.
 
 You now have to configure DNS.
 
-In the example, `gslb.tsstesting.com`, you would create NS and glue records in the `tsstesting.com` zone:
+In the example `gslb.tsstesting.com`, you create NS and glue records in the `tsstesting.com` zone:
    
    ```sh
    gslb.tsstesting.com. IN NS NS1.gslb.tsstesting.com
@@ -79,14 +79,14 @@ In the example, `gslb.tsstesting.com`, you would create NS and glue records in t
 
 Remember, you can only use CNAMEs with hostnames, not the root of the domain.
 
-This configuration sets the name servers for requests for `gslb.tsstesting.com` to the NetScaler IPs you configured DNS on. The CNAME record translates `tsstesting.com` to a request for `gslb.tsstesting.com`. Any requests for `www.tsstesting.com` will then go to the NetScaler to be resolved, and will return a record based on the load balancing method you configured.
+This configuration sets the name servers for requests for `gslb.tsstesting.com` to the NetScaler IPs you configured DNS on. The CNAME record translates `tsstesting.com` to a request for `gslb.tsstesting.com`. Any requests for `www.tsstesting.com` then go to the NetScaler to be resolved, and return a record based on the load balancing method you chose.
 
 For more information on NetScaler global load balancing, refer to:
 
 * [How DNS(Domain Name System) works with GSLB feature on NetScaler](https://support.citrix.com/article/CTX122619){: external}
 * [Information on the MEP protocol and site monitoring](http://support.citrix.com/article/CTX111081){: external}
 
-There are other products that can offer a similar functionality for spreading out traffic on a geographical basis:
+Other products can offer a similar functionality for spreading out traffic on a geographical basis:
 
 ### CDN
 {: #cdn}
@@ -98,6 +98,6 @@ See [Getting started with Content Delivery Network (CDN)](/docs/CDN?topic=CDN-ge
 ### Object storage
 {: #object-storage}
 
-IBM Cloud's Object Storage can be configured to use multiple geographic locations in various data centers to provide content. A geographically aware application can perform location lookups on the client request and return a URL to Object Storage that is close to the client. Object Storage also comes with a CDN front end, if needed, to provide additional caching services as noted above.
+IBM Cloud Object Storage can be configured to use multiple geographic locations in various data centers to provide content. A geographically aware application can perform location lookups on the client request and return a URL to Object Storage that is close to the client. Object Storage also comes with a CDN front end, if needed, to provide extra caching services as noted previously.
 
 See [About IBM Cloud Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage#about-cloud-object-storage) for more information and an introduction to Object Storage.

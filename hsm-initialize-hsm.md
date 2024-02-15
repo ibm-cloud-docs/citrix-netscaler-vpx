@@ -15,19 +15,19 @@ subcollection: citrix-netscaler-vpx
 # Initialize IBM Hardware Security Module (HSM)
 {: #initialize-ibm-hardware-security-module-hsm-}
 
-Most configurations of the HSM for your {{site.data.keyword.vpx_full}} require initialization of the HSM device. Without this, only certain `show` commands can be executed.
+Most configurations of the HSM for your {{site.data.keyword.vpx_full}} require initialization of the HSM device. Without this, only certain `show` commands can be run.
 {: shortdesc}
 
 To initialize your device, follow these steps:
 
-1. Connect using SSH into the IBM© Hardware Security Module device with the credentials listed in the Control Portal under **Devices > Device List > Expand HSM name**.
+1. Connect by using SSH into the IBM© Hardware Security Module device with the credentials that are listed in the Control Portal under **Devices > Device List > Expand HSM name**.
 
-   Alternatively, you can use public key authentication. For more information review the [Appliance Administration Guide (page 38)](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/appliance_administration_guide.pdf){: external}.
+   Alternatively, you can use public key authentication. For more information, review the [Appliance Administration Guide (page 38)](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/appliance_administration_guide.pdf){: external}.
 
-   SSH access is generally enabled and allowed by default. If you have issues connecting with SSH, check your infrastructure routing and security.
+   SSH access is enabled and allowed by default. If you have issues connecting with SSH, check your infrastructure routing and security.
    {: note}
 
-2. Execute the `hsm init` command:
+2. Run the `hsm init` command:
 
     ```sh
     [jpmongehsm2] lunash:>hsm init -l jpmonge
@@ -57,7 +57,7 @@ To initialize your device, follow these steps:
 
 	Where the syntax used is: `hsm init -l <hsmlabel>`
 
-The `-l` parameter or label is a parameter used to assign an identifier to the HSM, and can be any meaningful text or description related to the business, administrator, or the role it fulfills. The HSM administrator password will be the designated password for the HSM Security Officer (SO), and is essentially a profile required to create and configure crypto objects, as well as make changes to the HSM environment.
+The `-l` parameter or label is a parameter that is used to assign an identifier to the HSM, and can be any meaningful text or description that is related to the business, administrator, or the role it fulfills. The HSM administrator password is the designated password for the HSM Security Officer (SO). The SOd is essentially a profile that is required to create and configure crypto objects, as well as make changes to the HSM environment.
 
 Lastly, the cloning domain is a shared identifier that allows objects to be formed among a group of HSMs. This is typically used for backup and/or HA.
 

@@ -17,7 +17,7 @@ content-type: release-note
 # Release notes for Citrix Netscaler VPX
 {: #citrix-netscaler-vpx-release-notes}
 
-You can see the latest updates and functionality enhancements for your {{site.data.keyword.vpx_full}} and IBM Cloud here.
+You can see the latest updates and function enhancements for your {{site.data.keyword.vpx_full}} and IBM Cloud here.
 {: shortdesc}
 
 ## 13 November 2019
@@ -25,7 +25,7 @@ You can see the latest updates and functionality enhancements for your {{site.da
 {: release-note}
 
 Virtual servers with multiple IP addresses
-:    You can now create a single load balancing virtual server with multiple non-consecutive/consecutive VIP IPv4 and IPv6 addresses. Each VIP address bound to a virtual server is treated as an individual virtual server.
+:    You can now create a single load balancing virtual server with multiple non-consecutive or consecutive VIP IPv4 and IPv6 addresses. Each VIP address bound to a virtual server is treated as an individual virtual server.
 
 For more information about this feature, see the Citrix article [Multiple IP virtual servers](https://docs.citrix.com/en-us/netscaler/12-1/load-balancing/load-balancing-customizing/multi-ip-virtual-servers.html){: external}.
 
@@ -34,7 +34,7 @@ For more information about this feature, see the Citrix article [Multiple IP vir
 {: release-note}
 
 SSL
-:    The following updates have been applied for SSL connections:
+:    The following updates apply to SSL connections:
     * Removal of weak ciphers from the DEFAULT_BACKEND cipher group.
     * Support for ECDHE ciphers on the front end of Thales nShield® external HSM
     * Support for ECDHE ciphers on the front end of SafeNet network external HSM

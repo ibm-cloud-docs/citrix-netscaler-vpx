@@ -13,18 +13,18 @@ subcollection: citrix-netscaler-vpx
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Configuring forward-proxy traffic redirection using the Citrix Netscaler VPX
+# Configuring forward-proxy traffic redirection by using the Citrix Netscaler VPX
 {: #configuring-forward-proxy-traffic-redirection-using-the-citrix-netscaler-vpx-appliance}
 
-This guide provides you with a step-by-step configuration for a forward proxy setup using the {{site.data.keyword.vpx_full}} appliance. This configuration was tested on a {{site.data.keyword.vpx_full}} appliance running a software version of 11.1 (platinum feature edition) and 10Mbps performance.
+You can configure a forward proxy setup by using the {{site.data.keyword.vpx_full}} appliance. This configuration was tested on a {{site.data.keyword.vpx_full}} appliance with software version 11.1 (platinum feature edition) and 10 Mbps performance.
 {: shortdesc}
 
 ![Forward Proxy Traffic Redirection](images/fp1.png){: caption="Figure 1. Forward proxy traffic redirection" caption-side="bottom"}
 
-## What you'll accomplish
+## What to accomplish
 {: #what-you-will-accomplish}
 
-In this step-by-step guide you will learn how to configure the service:
+In this step-by-step guide, you can learn how to configure the service:
 
 Task  | Description
 ------------- | -------------
@@ -33,6 +33,6 @@ Task  | Description
 [Enable Cache Redirection and Load Balancing capabilities](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-enable-cache-redirection-and-load-balancing-capabilities) | Identify your application's resources, such as origin pools and health check mechanisms.
 [Configure the DNS Virtual Server](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configure-the-dns-virtual-server) | Add your DNS resolvers, define your DNS service group, then define your DNS virtual server.
 [Configure Cache Redirection for HTTP(S) traffic](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configure-cache-redirection-for-http-traffic) | Configure the cache redirection for your forward proxy virtual server with HTTP or HTTPS traffic.
-[Configure Cache Redirection for SSL traffic (Optional)](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configure-cache-redirection-for-ssl-traffic-optional-) | Configure the cache redirection for your forward proxy virtual server with SSL traffic instead of HTTP or HTTPS.
+[Configure Cache Redirection for SSL traffic](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configure-cache-redirection-for-ssl-traffic-optional-) | Configure the cache redirection for your forward proxy virtual server with SSL traffic instead of HTTP or HTTPS.
 [Configure Source NAT for Outbound Traffic](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configure-source-nat-for-outbound-traffic) | Utilize your {{site.data.keyword.vpx_full}} appliance to perform NAT on outbound traffic from your client machines.
-[Update the Proxy Settings on the Client Machine’s Internet Browser (Optional)](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-update-the-proxy-settings-on-the-client-machine-s-internet-browser-optional-) | Update your proxy settings using your client machine's internet browser, if you want.
+[Update the Proxy Settings on the Client Machine’s Internet Browser](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-update-the-proxy-settings-on-the-client-machine-s-internet-browser-optional-) | Update your proxy settings that use your client machine's internet browser, if you want.

@@ -16,16 +16,16 @@ subcollection: citrix-netscaler-vpx
 # Creating Policy Based Routing (PBR)
 {: #creating-policy-based-routing}
 
-A Policy Based Routing (PBR) policy is needed to specify the unique traffic parameters (such as local and remote subnets) the VPN connection will use with your {{site.data.keyword.vpx_full}}.
+A Policy-Based Routing (PBR) policy is needed to specify the unique traffic parameters (such as local and remote subnets) the VPN connection you use with your {{site.data.keyword.vpx_full}}.
 {: shortdesc}
 
-To create a PBR profile perform the following steps:
+To create a PBR profile, perform the following steps:
 
 1.	Navigate to **System > Network > PBR** and select **Add**.
-2.	Enter **Name**.
+2.	Enter your **Name**.
 3.	Leave **Action** as the default setting **ALLOW**.
-4.	For **Next Hop Type**, select **IP Tunnel**, then pick the [previously created](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ip-tunnel) tunnel from the **IP Tunnel Name** list.
-5.	Ensure you have checked **Enable PBR**.
+4.	For **Next Hop Type**, select **IP Tunnel**. Then pick the [previously created](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ip-tunnel) tunnel from the **IP Tunnel Name** list.
+5.	Ensure that you have checked **Enable PBR**.
 6.	In the **Configure IP** section, select **=** for the **Operation** field, for both source and destination.
 7.	Specify the first and last subnet IP in the following fields:
     *	**Source IP Low**
@@ -44,7 +44,7 @@ To create a PBR profile perform the following steps:
    ```
    {: codeblock}
 
-    Any virtual server instances or infrastructure intended to go through the VPN tunnel and sit behind the VPX, will need to be configured to either use VPX as the default gateway or to use a static route. This will send traffic to the VPX when the destination is the remote (peer) subnet. See the following static route (**10.115.0.0/16**) example.
+    Any virtual server instances or infrastructure you intend to go through the VPN tunnel behind the VPX must be configured to use VPX as the default gateway or to use a static route. This sends traffic to the VPX when the destination is the remote (peer) subnet. See the following static route (**10.115.0.0/16**) example.
     {: note}
 
    ```sh

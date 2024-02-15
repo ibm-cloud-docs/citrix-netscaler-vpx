@@ -19,27 +19,27 @@ The {{site.data.keyword.vpx_full}} platform uses both product-specific terminolo
 ## NetScaler IP (NSIP)
 {: #netscaler-ip-nsip-}
 
-The IP of the load balancer designated for management purposes.
+The IP of the load balancer is designated for management purposes.
 
 ## SubNet IP (SNIP)
 {: #subnet-ip-snip-}
 
-A SNIP is the source IP address of a packet used by the NetScaler every time it wants to communicate with a server (or object). Servers also use the SubNet IP to respond to the NetScaler.
+A SNIP is the source IP address of a packet that is used by the NetScaler every time it wants to communicate with a server (or object). Servers also use the SubNet IP to respond to the NetScaler.
 
 ## Virtual IP (VIP)
 {: #virtual-ip-vip-}
 
-A VIP is an IP address to which a client sends requests. The NetScaler terminates the client connection at the VIP and then initiates a connection with a server configured in the load balancing service.  This can be either a public IP address for public (internet) traffic, or a private IP address for private (intranet) traffic.
+A VIP is an IP address to which a client sends requests. The NetScaler terminates the client connection at the VIP and then initiates a connection with a server that is configured in the load balancing service. This can be either a public IP address for public (internet) traffic, or a private IP address for private (intranet) traffic.
 
 ## Virtual server
 {: #virtual-server}
 
-A virtual server, in load balancing terms, refers to the combination of the IP address, port, and protocol to which an IP client connects and where traffic requests are sent for a particular application that is being load-balanced by the NetScaler.
+A virtual server refers to the combination of the IP address, port, and protocol to which an IP client connects. It also refers to where traffic requests are sent for a particular application that is being load-balanced by the NetScaler.
 
 ## Service
 {: #service}
 
-The combination of IP address, port, and protocol used to route requests to a specific server. A service, once configured, must later be associated to a virtual server.
+The combination of IP address, port, and protocol that is used to route requests to a specific server. A service, once configured, must later be associated to a virtual server.
 
 ## Server object
 {: #server-object}
@@ -49,4 +49,4 @@ A virtual entity that enables you to assign a significant name to a physical ser
 ## Monitor
 {: #monitor}
 
-An element that allows you to track a service, assuring that it is operating correctly. The monitor uses probes and heartbeat signals to keep track of the service status.
+An element that allows you to track a service, assuring that it is operating correctly. It uses probes and heartbeat signals to monitor the service status.

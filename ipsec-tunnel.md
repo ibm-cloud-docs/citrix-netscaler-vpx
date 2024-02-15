@@ -29,7 +29,7 @@ To do so:
     *	**Remote Mask**
 4.	Select **Subnet IP** (SNIP) in the Local IP list.
 5.	Choose the appropriate SNIP to be used as the VPN endpoint from the **Local IP** list.
-6.	Select **IPSEC** as the protocol from the list.
+6.	Select **IPsec** as the protocol from the list.
 7.	Choose the [previously created](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-enable-required-features-in-vpx) profile name from the **IPsec Profile Name** list.
 8.	Click **Create**.
 

@@ -13,19 +13,19 @@ subcollection: citrix-netscaler-vpx
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Enabling the required features in Citrix Netscaler VPX
+# Enabling the features in Citrix Netscaler VPX
 {: #enable-required-features-in-vpx}
 
-You can enable the required features in {{site.data.keyword.vpx_full}} to create the IPsec VPN.
+You can enable the features in {{site.data.keyword.vpx_full}} to create the IPsec VPN.
 {: shortdesc}
 
 To do so, perform the following procedure:
 
-1.	Access the VPX GUI (Graphical User Interface).
-2.	Navigate to **System > Settings > Configure Modes** and enable **Layer 3 Mode (IP Forwarding)**.
+1.	Access the VPX GUI (graphical user interface).
+2.	Browse to **System > Settings > Configure Modes** and enable **Layer 3 Mode (IP Forwarding)**.
 3.	Go to **System > Settings > Configure Advanced Features** and enable **Cloud Bridge**.
 
-To enable these features in the CLI, execute the following commands:
+To enable these features in the CLI, run the following commands:
 
 ```sh
 > enable ns feature CloudBridge
@@ -33,4 +33,4 @@ To enable these features in the CLI, execute the following commands:
 
 ```
 
-See [Managing your Citrix Netscaler VPX](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-managing-your-citrix-netscaler-vpx#connecting-to-the-netscaler) for additional instructions on connecting to the NetScaler using the GUI or SSH.
+See [Managing your Citrix Netscaler VPX](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-managing-your-citrix-netscaler-vpx#connecting-to-the-netscaler) for extra instructions on connecting to the NetScaler with the GUI or SSH.

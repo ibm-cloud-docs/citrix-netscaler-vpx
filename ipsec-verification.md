@@ -16,14 +16,14 @@ subcollection: citrix-netscaler-vpx
 # Verifying VPN tunnel connection
 {: #verifying-vpn-tunnel-connection}
 
-There are procedures and commands that will help you verify the operational status of the VPN connection with your {{site.data.keyword.vpx_full}}.
+There are procedures and commands that help you verify the operational status of the VPN connection with your {{site.data.keyword.vpx_full}}.
 {: shortdesc}
 
 1.	Confirm the VPN status in VPX by navigating to **System > CloudBridge Connector > IP Tunnels**.
 
     The Status should reflect an **UP** state in the respective IP tunnel entry (**IPsec_tunnel1** in this example.)
 
-    To confirm the status of the VPN connection using the CLI, run the following command:
+    To confirm the status of the VPN connection by using the CLI, run the following command:
 
     ```sh
     > show iptunnel
@@ -40,7 +40,7 @@ There are procedures and commands that will help you verify the operational stat
 
     ```
 
-2.	Confirm the VPN status in VRA by executing the following command in the CLI to confirm the VPN state:
+2.	Confirm the VPN status in VRA by running the following command in the CLI to confirm the VPN state:
 
     ```sh
     $ show vpn ipsec sa

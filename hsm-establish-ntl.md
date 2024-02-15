@@ -15,14 +15,14 @@ subcollection: citrix-netscaler-vpx
 # Establish a Network Trust Link (NTL)
 {: #establish-a-network-trust-link-ntl-}
 
-A Network Trust Link (NTL) is a secure channel for the Hardware Security Module (HSM) and the client to communicate. NTLs use certificates in both directions to authenticate and encrypt data transmitted between HSM server partitions and clients.
+A Network Trust Link (NTL) is a secure channel for the Hardware Security Module (HSM) and the client to communicate. NTLs use certificates in both directions to authenticate and encrypt data that is transmitted between HSM server partitions and clients.
 {: shortdesc}
 
-Be advised that the trust link requires TCP port 1792 to be accessible in both the NTLS and NTLA (bi-directional) protocols to guarantee all processes and utilities work correctly.
+Be advised that the trust link requires TCP port 1792 to be accessible in both the NTLS and NTLA (bidirectional) protocols. This arrangement guarantees all processes and utilities work correctly.
 
 To establish your NTL, perform the following procedure:
 
-1. Navigate to the directory `/var/safenet/safenet/lunaclient/bin` and create the certificate using the VTL utility.
+1. Navigate to the directory `/var/safenet/safenet/lunaclient/bin` and create the certificate by using the VTL utility.
 
     ```sh
     root@IBMADC690867-s6dr# cd /var/safenet/safenet/lunaclient/bin
@@ -31,10 +31,10 @@ To establish your NTL, perform the following procedure:
     Certificate created and written to: /var/safenet/safenet/lunaclient/cert/client/10.121.229.224.pem
     ```
 
-    The identifier used for the client certificate is the private IP assigned to it. This will later be used and referenced by the HSM.
+    The identifier that is used for the client certificate is the private IP assigned to it. The identifier is used later and referenced by the HSM.
     {: note}
 
-1. Transfer the certificate file to the HSM server using SCP:
+1. Transfer the certificate file to the HSM server by using SmartCloud Provisioning:
 
     ```sh
     root@IBMADC690867-s6dr# scp /var/safenet/safenet/lunaclient/cert/client/	10.121.229.224.pem hsm_admin@10.121.229.201:
@@ -57,7 +57,7 @@ To establish your NTL, perform the following procedure:
 
     To learn more about Virtual Token Library (VTL), go to the [Utilities Reference Guide](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/utilities_reference_guide.pdf){: external.
 
-1. Transfer the HSM server certificate file to the {{site.data.keyword.vpx_full}} client using SCP, then add the server:
+1. Transfer the HSM server certificate file to the {{site.data.keyword.vpx_full}} client by using SmartCloud Provisioning, then add the server:
 
     ```sh
     root@IBMADC690867-s6dr# scp hsm_admin@10.121.229.201:server.pem .
@@ -86,7 +86,7 @@ To establish your NTL, perform the following procedure:
     Server: 10.121.229.201  HTL required: no
     ```
 
-1. In the HSM, execute the following command to see any existing clients:
+1. In the HSM, run the following command to see any existing clients:
 
     ```sh
     [jpmongehsm2] lunash:>client list
@@ -116,9 +116,9 @@ To establish your NTL, perform the following procedure:
     client register -client <client_name> -ip <client_IP_address>
     ```
 
-    The client name does not have to match the identifier assigned and used by {{site.data.keyword.cloud_notm}}, however, this is recommended to keep names consistent.
+    However, the client name does not have to match the identifier assigned and used by {{site.data.keyword.cloud_notm}}. This arrangement keeps names consistent.
 
-1. Confirm the client was added:
+1. Confirm that the client was added:
 
     ```sh
     [jpmongehsm2] lunash:>client list
@@ -133,7 +133,7 @@ To establish your NTL, perform the following procedure:
     Command Result : 0 (Success)
     ```
 
-1. Assign a partition to the client. Make sure you reference the partition created before. You will also have to ensure the name matches the identifier for the client displayed in the previous step.
+1. Assign a partition to the client. Make sure that you reference the partition that is created before. Ensure the name matches the identifier for the client that is displayed in the previous step.
 
     ```sh
     [jpmongehsm2] lunash:>client assignPartition -c NS-IBMADC690867-s6dr -p partition6
@@ -149,7 +149,7 @@ To establish your NTL, perform the following procedure:
     client assignPartition -client <clientname> -partition <partition name
     ```
 
-1. Verify connectivity in your Citrus Netscaler VPX:
+1. Verify connectivity in your Citrus NetScaler VPX:
 
     ```sh
     root@IBMADC690867-s6dr# vtl verify
@@ -161,9 +161,9 @@ To establish your NTL, perform the following procedure:
     0           534071053        partition6
     ```
 
-    The output displayed by `vtl verify` should list the  partition's "Slot #", serial number, and the name of the partition bound to this trust link. Any other output indicates a problem.
+    The output that is displayed by `vtl verify` lists the partition's "Slot #", serial number, and the name of the partition bound to this trust link. Any other output indicates a problem.
 
-    In addition, it's also a good idea to confirm the paths of the certificates and the server in the Chrystoki file located in the `/etc` directory. To do so:
+    In addition, it's also a good idea to confirm the paths of the certificates and the server in the Chrystoki file that is located in the `/etc` directory. To do so:
 
     ```sh
     root@IBMADC690867-s6dr# cd /etc/
@@ -191,15 +191,15 @@ To establish your NTL, perform the following procedure:
     root@IBMADC690867-s6dr# cp /etc/Chrystoki.conf /var/safenet/config/
     ```
 
-    The copy command used here makes the configuration persistent across reboots in VPX.
+    The copy command that is used here makes the configuration persistent across restarts in VPX.
 
-1. Start the safenet gateway client process necessary for cryptographic operations:
+1. Start the safe net gateway client process necessary for cryptographic operations:
 
     ```sh
     root@IBMADC690867-s6dr# sh /var/safenet/gateway/start_safenet_gw
     ```
 
-1. Confirm the process is running:
+1. Confirm that the process is running:
 
     ```sh
     root@IBMADC690867-s6dr# ps aux | grep safenet_gw
@@ -209,7 +209,7 @@ To establish your NTL, perform the following procedure:
     0:00.00 /var/safenet/gateway/safenet_gw
     ```
 
-1. Finally, make sure this process is automatically started during the reboot process:
+1. Finally, make sure that this process is automatically started during the restart process:
 
     ```sh
     root@IBMADC690867-s6dr# touch /var/safenet/safenet_is_enrolled

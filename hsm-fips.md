@@ -13,15 +13,15 @@ subcollection: citrix-netscaler-vpx
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Enable FIPS 140-2 (optional)
+# Enable FIPS 140-2
 {: #enable-fips-140-2-optional-}
 
-FIPS (Federal Information Processing Standards) is a set of standards for specifying security requirements when implementing cryptographic hardware and software. It was created in 1994, and an update to this standard was released in 2001, known as FIPS 140-2.
+FIPS (Federal Information Processing Standards) is a set of standards for specifying security requirements for cryptographic hardware and software. It was created in 1994, and an update to this standard was released in 2001, known as FIPS 140-2.
 {: shortdesc}
 
-The FIPS 140-2 security algorithms can be enabled if you need to ensure the Hardware Security Module (HSM) is compatible and compliant with agencies and governments operating under FIPS. This section provides instructions on doing so.
+The FIPS 140-2 security algorithms can be enabled if you need to ensure the Hardware Security Module (HSM) is compatible and compliant with agencies and governments who operate under FIPS. To do so:
 
-1. First, confirm that that FIPS mode is currently disabled, using the command `hsm show`.
+1. First, confirm that that FIPS mode is disabled, by using the command `hsm show`.
 
 	```sh
 	[jdoe1] lunash:>hsm show
@@ -61,7 +61,7 @@ The FIPS 140-2 security algorithms can be enabled if you need to ensure the Hard
 
 	The output states `The HSM is NOT in FIPS 140-2 approved operation mode`, confirming the device is not running FIPS.
 
-2. Review your policies before enabling FIPS mode with the `hsm showpolicies` command.
+2. Review your policies before you enable FIPS mode with the `hsm showpolicies` command.
 
 	```sh
 	[jdoe1] lunash:>hsm showpolicies
@@ -99,9 +99,9 @@ The FIPS 140-2 security algorithms can be enabled if you need to ensure the Hard
 	```
 	{: screen}
 
-	This output shows that policy 12 (`Allow non-FIPS algorithms`) is set to `On`, meaning that algorithms non-compliant with FIPS are currently allowed for operations in the HSM.
+	This output shows that policy 12 (`Allow non-FIPS algorithms`) is set to `On`, meaning that algorithms noncompliant with FIPS are allowed for operations in the HSM.
 
-3. Login as an HSM SO/Administrator using the password you specified during [initialization](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-initialize-ibm-hardware-security-module-hsm-).
+3. Login as an HSM SO/Administrator by using the password you specified during [initialization](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-initialize-ibm-hardware-security-module-hsm-).
 
 	```sh
 	[jdoe1] lunash:>hsm login
@@ -117,9 +117,9 @@ The FIPS 140-2 security algorithms can be enabled if you need to ensure the Hard
 
 4. Enable FIPS 140-2 Mode.
 
-	To enable FIPS mode, you must modify the policy reviewed in step two of this procedure, (`Allow non-FIPS algorithms`):
+	To enable FIPS mode, you must modify the policy that is reviewed in step two of this procedure, (`Allow non-FIPS algorithms`):
 
-	This procedure will erase any existing partitions in the HSM. If you already created partitions and objects, make sure to review the partition contents and configurations in order to recreate them when the new partitions are created.
+	This procedure erases any existing partitions in the HSM. If you already created partitions and objects, make sure to review the partition contents and configurations in order to recreate them when the new partitions are created.
 	{: note}
 
 	Use the `hsm changepolicy` command to disable policy 12 and only allow the usage of FIPS algorithms:
@@ -145,7 +145,7 @@ The FIPS 140-2 security algorithms can be enabled if you need to ensure the Hard
 	```
 	{: screen}
 
-5. Confirm that FIPS mode is now enabled by once again using the command `hsm show`.
+5. Confirm that FIPS mode is now enabled once again using the command `hsm show`.
 
 	```sh
 	[jdoe1] lunash:>hsm show
@@ -190,7 +190,7 @@ The FIPS 140-2 security algorithms can be enabled if you need to ensure the Hard
 	```
 	{: screen}
 
-	The command `hsm showpolicies` should now show that the device is using the FIPS 140-2 mode on policy (code) 12, and reflect the enforcement of FIPS 140-2 algorithms:
+	The command `hsm showpolicies` shows that the device is using the FIPS 140-2 mode on policy (code) 12, and reflect the enforcement of FIPS 140-2 algorithms:
 
 	```sh
 	[jdoe1] lunash:>hsm showpolicies

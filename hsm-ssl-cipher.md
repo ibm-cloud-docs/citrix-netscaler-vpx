@@ -15,23 +15,20 @@ subcollection: citrix-netscaler-vpx
 # Create and apply a new cipher suite
 {: #create-and-apply-a-new-cipher-suite}
 
-A cipher suite is a combination of authentication, encryption, Message Authentication Code (MAC) and key exchange algorithms used to negotiate the security settings for SSL and TLS protocols.
-[: shortdesc]
+A cipher suite is a combination of authentication, encryption, Message Authentication Code (MAC) and key exchange algorithms that are used to negotiate the security settings for SSL and TLS protocols.
+{: shortdesc}
 
-To guarantee proper authentication you must ensure your {{site.data.keyword.vpx_full}} uses the best combination of ciphers.
+To guarantee proper authentication, you must ensure your {{site.data.keyword.vpx_full}} uses the best combination of ciphers.
 
 To learn more about SSL cipher suites and other best practices visit the following links:
 
 * [Scoring an A+ at SSLlabs.com with Citrix NetScaler](https://www.citrix.com/blogs/2018/05/16/scoring-an-a-at-ssllabs-com-with-citrix-netscaler-q2-2018-update/){: external} – Q2 2018 update (refer to steps three and five in the command guide)
 * [SSL and TLS Deployment Best Practices](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices#23-use-secure-cipher-suites){: external}
-* [How Do I Setup ECC on NetScaler?](https://support.citrix.com/article/CTX205289){: external}
+* [How Do I set up ECC on NetScaler?](https://support.citrix.com/article/CTX205289){: external}
 
-This topic focuses on specific and required configurations for SSL ciphers. The information in the previous links may provide additional settings that can be applied to optimize SSL operation.
-{: note}
+To create a new cipher suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, perform the following procedure:
 
-To create a new Cipher Suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, perform the following procedure:
-
-1. Enter the following commands simultaneously in your Citrix VPX CLI, and ensure they are all applied:
+1. Enter the following commands simultaneously in your Citrix VPX CLI, and ensure that they are all applied:
 
 	```sh
 	add ssl cipher SSLLABS
@@ -62,7 +59,7 @@ To create a new Cipher Suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, pe
 	bind ssl cipher <cipherGroupName> -cipherName <string>
 	```
 
-1. Confirm the cipher was added to your {{site.data.keyword.vpx_full}}:
+1. Confirm that the cipher was added to your {{site.data.keyword.vpx_full}}:
 
    ```text
 	> show ssl cipher SSLLABS
@@ -105,7 +102,7 @@ To create a new Cipher Suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, pe
  	Done
    ```
 
-1. Unbind the default Cipher Suite from your virtual server and bind the custom group created in the previous step:
+1. Unbind the default cipher suite from your virtual server and bind the custom group that is created in the previous step:
 
    ```sh
    unbind ssl vserver https_vip2 -cipherName DEFAULT
@@ -138,12 +135,12 @@ To create a new Cipher Suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, pe
  	Done
 	```
 
-1. (OPTIONAL) HTTP Redirection can be enabled to redirect users to a secure web site when they create an HTTP request (as opposed to HTTPS).
+1. (OPTIONAL) HTTP Redirection can be enabled to redirect users to a secure website when they create an HTTP request (as opposed to HTTPS).
 
 	See [How to Configure HTTP to HTTPS Redirection on NetScaler](https://support.citrix.com/article/CTX201201){: external} for configuration instructions.
 
-1. Test the HTTPS connection by opening a web browser and entering the FQDN. The site should load the content rendered by the HTTP service behind the Citrix VPX.
+1. Test the HTTPS connection by opening a web browser and entering the FQDN. The site loads the content that is rendered by the HTTP service behind the Citrix VPX.
 
-    You can also view the certificate details by clicking the padlock icon next to the URL in your browser to display the certificate info.
+    You can also view the certificate details by clicking the padlock icon next to the URL in your browser to display the certificate information.
 
-	If redirection was configured in step five, the secure site will also load when using an HTTP request.
+	If redirection was configured in step five, the secure site loads when using an HTTP request.

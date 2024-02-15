@@ -12,15 +12,15 @@ subcollection: citrix-netscaler-vpx
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Configure cache redirection for SSL traffic (optional)
+# Configure cache redirection for SSL traffic
 {: #configure-cache-redirection-for-ssl-traffic-optional-}
 
-Instead of defining cache redirection for the virtual server with an HTTP or HTTPS protocol (as discussed in the [previous step](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configure-cache-redirection-for-http-traffic)) with your {{site.data.keyword.vpx_full}}, you may want to define it to handle SSL traffic.
+Instead of defining cache redirection for the virtual server with an HTTP or HTTPS protocol (discussed [previouslu](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configure-cache-redirection-for-http-traffic)), you can also define it to handle SSL traffic.
 {: shortdesc}
 
 To do so, follow these steps:
 
-1. Go to **Traffic Management > Cache redirection > Virtual servers** and click **Add**. Specify the name for your forward-proxy virtual server, select the SSL protocol and a cache type of **FORWARD**. Assign it an IP address from your private subnet, with its requisite port.
+1. Go to **Traffic Management > Cache redirection > Virtual servers** and click **Add**. Enter the name for your forward-proxy virtual server. Then select the SSL protocol and a cache type of **FORWARD**. Assign it an IP address from your private subnet, with its requisite port.
 
    Click **OK**.
 

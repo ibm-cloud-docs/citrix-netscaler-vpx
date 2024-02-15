@@ -28,7 +28,7 @@ To create a profile, perform the following procedure:
     *	**Hash Algorithm**
     *	**Lifetime**
 3.	Select the appropriate **IKE Protocol Version**.
-4.	Check **Perfect Forward Secrecy** if desired.
+4.	Check **Perfect Forward Secrecy** if wanted.
 5.	Check **Pre-Shared Key Exists** and enter the PSK in the **Value** field.
 6.	Click **Create**.
 

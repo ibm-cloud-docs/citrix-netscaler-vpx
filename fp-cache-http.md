@@ -26,10 +26,10 @@ To do so, perform the following procedure:
     Click **OK** to continue.
 
 3. Review the summary page and click **OK**.  
-4. Click **Traffic Settings** to view additional configuration settings.
+4. Click **Traffic Settings** to view extra configuration settings.
 5. From Traffic Settings select one of the following three redirect options, depending on your requirements:
    * **Cache** - Directs all outbound requests to your local cache server pool.
-   * **Policy** - Checks the cache redirection policy to determine if the request should be forwarded to the cache server pool or to the destination servers (origin).
+   * **Policy** - Checks the cache redirection policy to determine whether the request forwards to the cache server pool or to the destination servers (origin).
    * **Origin** – Directs all outbound requests to the respective destination servers (origin).
 
 6. From the list **DNS Virtual Server Name**, select the previously-configured DNS virtual server, and set the **Redirect** option to **Origin**.

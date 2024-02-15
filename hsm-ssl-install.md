@@ -16,7 +16,7 @@ subcollection: citrix-netscaler-vpx
 # Install your SSL certificate
 {: #install-your-ssl-certificate}
 
-You can install the SSL Certificate you created in the previous step-by-step, [Deploying and Configuring the IBM© Hardware Security Module (HSM) with {{site.data.keyword.vpx_full}}](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) for your {{site.data.keyword.vpx_full}}.
+You can install the SSL Certificate that you created in the previous step-by-step, [Deploying and Configuring the IBM© Hardware Security Module (HSM) with {{site.data.keyword.vpx_full}}](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx) for your {{site.data.keyword.vpx_full}}.
 {: shortdesc}
 
 To do so, perform the following procedure:
@@ -46,12 +46,12 @@ To do so, perform the following procedure:
 	add ssl hsmkey <KeyName> -hsmType SAFENET -serialNum 	<serial #> -password <password>
 	```
 
-	Where `keyName` is the name of the key created on the IBM© Hardware Security Module (HSM) with the CMU utility. The `serialNum` parameter is the serial number of the partition in question. The `password` parameter, as before, is the password of the partition on which the keys are present.
+	Where `keyName` is the name of the key that is created on the IBM© Hardware Security Module (HSM) with the CMU utility. The `serialNum` parameter is the serial number of the partition in question. The `password` parameter, as before, is the password of the partition on which the keys are present.
 
-	The `Internal error` message is expected due to the increased time it takes to complete this step. The key should be properly added. However, any other error messages you receive should be addressed.
+	The `Internal error` message is expected due to the increased time that it takes to complete this step. The key should be properly added. However, any other error messages you receive should be addressed.
     {: note}
 
-3.	Confirm the key was added:
+3.	Confirm that the key was added:
 
 	```sh
 	> show ssl hsmkey
@@ -59,7 +59,7 @@ To do so, perform the following procedure:
  	Done
 	```
 
-4.	As with the HSM key, the SSL certificate must be added using the appropriate Citrix VPX command for it to be recognized:
+4.	As with the HSM key, the SSL certificate must be added by using the appropriate Citrix VPX command for it to be recognized:
 
 	```sh
 	> add ssl certkey hsmclient7ns -cert /nsconfig/ssl/	hsmclient7.cer -hsmkey NSkey_s6dr
@@ -75,7 +75,7 @@ To do so, perform the following procedure:
 
 	Where `certkey` is the name of the certificate object to be added in the VPX device. The `cert` parameter contains the name and path to the file, if it is located in a directory other than the current one. Lastly, `hsmkey` contains the name of the key added in the previous step.
 
-5.	Confirm the certificate was installed:
+5.	Confirm that the certificate was installed:
 
 	```sh
 	> show ssl certKey

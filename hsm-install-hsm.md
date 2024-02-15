@@ -16,27 +16,25 @@ subcollection: citrix-netscaler-vpx
 # Install the IBM Hardware Security Module (HSM) client software
 {: #install-the-ibm-hardware-security-module-hsm-client-software}
 
-In this step, you'll install {{site.data.keyword.vpx_full}} with the software and utilities required to interact with the Hardware Security Monitor (HSM).
+In this step, you install {{site.data.keyword.vpx_full}} with the software and utilities that are required to interact with the Hardware Security Monitor (HSM).
 {: shortdesc}
 
-Steps one and two in this procedure are optional and needed only if the safenet directory and the files or sub-folders in it are missing in the `/var` path. These resources are necessary to install VPX with the client software and allow it to run the utilities associated with the HSM software.
+Steps one and two in this procedure are optional and needed only if the safe net directory and the files or subfolders in it are missing in the `/var` path. These resources are necessary to install VPX with the client software and allow it to run the utilities associated with the HSM software.
 {: note}
 
 Find the credentials to access the NetScaler CLI listed in the Control Portal under **Devices > Device List > Expand VPX name**.
 
-You'll need them for this section and the remainder of the guide.
-
-All VPX commands and outputs in this document will list either `netscalername#` (indicating a shell execution), or `>` (for the VPX CLI itself).
+All VPX commands and outputs in this document list either `netscalername#` (indicating a shell execution), or `>` (for the VPX CLI itself).
 {: note}
 
 1. (OPTIONAL) Obtain the `safenet_dirs.tar` file and transfer it to the VPX in the `/var` directory. Download the `safenet_dirs.tar` file in the following locations:
    - [Commercial users](http://downloads.service.softlayer.com/citrix/netscaler/Safenet-HSM/){: external} 
    - [Federal government users](http://downloads.service.usgov.softlayer.com/citrix/netscaler/Safenet-HSM/){: external}
 
-   You must be logged into your IBM Cloud account to access the links.
+   Ensure that you are logged in to your IBM Cloud account to access the links.
    {: note}
 
-   This image shows the WinSCP software transferring the `safenet_dir.tar` file into the Citrix VPX.
+   This image shows how the WinSCP software transfers the `safenet_dir.tar` file into the Citrix VPX.
 
 2. (OPTIONAL) Extract the `tar` file:
 
@@ -54,7 +52,7 @@ All VPX commands and outputs in this document will list either `netscalername#` 
 	x safenet/config/Chrystoki.conf
 	```
 
-3. Navigate to the `/var/safenet` directory and confirm the folders and files were transferred:
+3. Navigate to the `/var/safenet` directory and confirm that the folders and files were transferred:
 
 	```sh
 	extracted
@@ -67,7 +65,7 @@ All VPX commands and outputs in this document will list either `netscalername#` 
 	SAClient_622.tgz        gateway
 	```
 
-4. Execute the installation script using version 622:
+4. Run the installation script by using version 622:
 
 	```sh
 	root@IBMADC690867-s6dr# install_client.sh -v 622
@@ -92,7 +90,7 @@ All VPX commands and outputs in this document will list either `netscalername#` 
 	config                  install_client.sh       safenet
 	```
 
-6. Navigate to the `/var/safenet/config/` directoy and execute the `safenet_config` script:
+6. Navigate to the `/var/safenet/config/` directoy and run the `safenet_config` script:
 
 	```sh
 	root@IBMADC690867-s6dr# cd /var/safenet/config/
@@ -112,4 +110,4 @@ All VPX commands and outputs in this document will list either `netscalername#` 
 	/var/safenet/safenet/lunaclient/lib/libCryptoki2_64.so
 	```
 
-The IBM Hardware Security Module has been installed successfully.
+The IBM Hardware Security Module installs successfully.

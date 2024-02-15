@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 # FAQs for Citrix Netscaler VPX
 {: #faqs-for-citrix-netscaler-vpx}
 
-The frequently asked questions in this topic will help you when working with the {{site.data.keyword.vpx_full}}.
+These frequently asked questions help you when working with the {{site.data.keyword.vpx_full}}.
 {: shortdesc}
 
 ## What is {{site.data.keyword.vpx_full}}?
@@ -30,14 +30,14 @@ Citrix NetScaler is an application delivery controller that makes applications f
 {: faq}
 {: support}
 
-Load balancing traffic has become a key aspect of many customer implementations as it distributes application requests and loads over multiple servers. It also provides a number of benefits to the overall topology including:
+Load balancing traffic is a key aspect of many customer implementations as it distributes application requests and loads over multiple servers. It also provides several benefits to the overall topology:
 
 * Security. Logical isolation of the application servers is created or traffic requests denied based on IP protocols and port numbers.
 * High-availability. Content is replicated to a pool, or group of servers, guaranteeing its availability to hosts.
-* Scalability. Additional servers can be added as demand increases, enabling the load balancer to distribute the workload over the additional servers.
-* Efficiency. Workloads are dynamically distributed when load balancing is configured. For example, resources like CPUs can be used in a more efficient ways.
+* Scalability. Extra servers can be added as demand increases, enabling the load balancer to distribute the workload over the additional servers.
+* Efficiency. Workloads are dynamically distributed when load balancing is configured. For example, resources like CPUs can be used in a more efficient way.
 
-## How many load balancing options are available in IBM Cloud?
+## How many load balancer options are available in IBM Cloud?
 {: #options}
 {: faq}
 {: support}
@@ -63,7 +63,7 @@ Yes, the NetScaler is the only IBM Cloud load balancing product that extends int
 {: faq}
 {: support}
 
-Yes, the **Use Source IP (USIP)** parameter can be set to **YES** within the NetScaler Advanced Management Interface to allow reporting of the client's source IP instead of that of the NetScaler.
+Yes, the **Use Source IP (USIP)** parameter can be set to **YES** within the NetScaler Advanced Management Interface to allow reporting of the client's source IP instead of the NetScaler's.
 
 Enabling the USIP address mode on the appliance adds flexibility to the appliance to use the client IP address, available in the IP header, when communicating to the server. By enabling this mode, the appliance opens server connections with the client IP address and also factors the client IP address in connection reuse. Therefore, this mode facilitates limited reuse per client based on client IP address.
 
@@ -88,13 +88,13 @@ Platinum.
 
 Yes, NetScaler VPX appliances support High Availability (HA) configurations.
 
-NetScaler VPX servers are not redundant, unless configured in HA mode with a partner. As part of your back up and recovery strategy, it is highly recommended to deploy an HA environment when using NetScaler VPX.
+NetScaler VPX servers are not redundant, unless configured in HA mode with a partner. As part of your back up and recovery strategy, you should deploy an HA environment when using NetScaler VPX.
 
 It is also important to provide redundancy for other hardware and software components. For example, power supplies and local disk drives may not have redundancy. A failure in these components may result in data loss.
 
-## Does the IBM Cloud NetScaler offering include SSL VPN functionality?
+## Does the IBM Cloud NetScaler offering include SSL VPN functions?
 {: #vpn}
 {: faq}
 {: support}
 
-Yes, this feature is known as NetScaler Gateway™ and is included in all editions.  For more information regarding this feature please visit the [Citrix website")](https://www.citrix.com/products/netscaler-adc/){: external}
+Yes, this feature is known as NetScaler Gateway™ and is included in all editions.  For more information regarding this feature, please visit the [Citrix website")](https://www.citrix.com/products/netscaler-adc/){: external}

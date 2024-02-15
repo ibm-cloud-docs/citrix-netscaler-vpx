@@ -42,27 +42,27 @@ This guide assumes ownership of both devices. Visit the following links for inst
 -	[Getting started with {{site.data.keyword.vpx_full}} Software Appliance](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started)
 -	[Getting Started with IBM Virtual Router Appliance](/docs/virtual-router-appliance?topic=virtual-router-appliance-getting-started-vra)
 
-## What you'll accomplish
+## What you can accomplish
 {: #accomplish}
 
-In this guide you will learn how to configure an IPsec VPN in the Citrix VPX device.
+In this guide you learn how to configure an IPsec VPN in the Citrix VPX device.
 
 Task  | Description
 ------------- | -------------
-[Enable Required Features in VPX](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-enable-required-features-in-vpx) | First, enable the required features to create the IPsec VPN.
+[Enable Features in VPX](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-enable-required-features-in-vpx) | First, enable the required features to create the IPsec VPN.
 [Create IPsec Profile](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ipsec-profile) | The IPsec profile includes security parameters for establishing the connection.
-[Create IP Tunnel](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ip-tunnel) | In this section you'll create an IP tunnel object to specify both local and remote IP addresses, as well as protocol parameters.
+[Create IP Tunnel](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ip-tunnel) | In this section, you create an IP tunnel object to specify both local and remote IP addresses, as well as protocol parameters.
 [Create Policy Based Routing (PBR)](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-policy-based-routing) | PBR is used to define the unique traffic parameters for both local and remote subnets.
-[Configure VRA](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configuring-vra) | Configure the Virtual Router Appliance, using equivalent VPN configuration syntax.
+[Configure VRA](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configuring-vra) | Configure the Virtual Router Appliance, by using equivalent VPN configuration syntax.
 [Verify VPN Status](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-verifying-vpn-tunnel-connection) | Verify the VPN operation state and conduct a simple connectivity test.
 {: caption="What you'll accomplish" caption-side="bottom"}
 
-## Additional resources
+## Extra resources
 {: #additional-resource}
 
-The following additional resources can help you learn more about Citrix VPX and Virtual Router Appliance.
+The following extra resources can help you learn more about Citrix VPX and Virtual Router Appliance.
 
 * [CloudBridge Connector](https://docs.citrix.com/en-us/citrix-adc/12-1/system/cloudbridge-connector-introduction.html){: external}
-* [Configuring a CloudBridge Connector tunnel between a Citrix ADC appliance and Cisco IOS device](https://docs.citrix.com/en-us/citrix-adc/12-1/system/cloudbridge-connector-introduction/cloudbridge-connector-tunnel-cisco.html){: external}
+* [Configuring a CloudBridge Connector tunnel between a Citrix ADC appliance and a Cisco IOS device](https://docs.citrix.com/en-us/citrix-adc/12-1/system/cloudbridge-connector-introduction/cloudbridge-connector-tunnel-cisco.html){: external}
 * [Citrix VPX/ADC 12.1 Documentation](https://docs.citrix.com/en-us/citrix-adc/12-1){: external}
 * [Supplemental VRA Documentation](/docs/virtual-router-appliance/vra-docs.html#supplemental-vra-documentation){: external}

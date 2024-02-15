@@ -15,12 +15,12 @@ subcollection: citrix-netscaler-vpx
 # Create a partition
 {: #create-a-partition}
 
-A partition is a logical and independent space that is associated or attached to the client requesting or creating cryptographic objects in the HSM engine. Each partition has its own data and policies isolated from other partitions. To learn more about partitions, refer to the [Administration Guide (page 211)](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/administration_guide.pdf){: external}.
+A partition is a logical and independent space that is associated or attached to the client that is requesting or creating cryptographic objects in the HSM engine. Each partition has its own data and policies that are isolated from other partitions. To learn more about partitions, refer to the [Administration Guide (page 211)](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/administration_guide.pdf){: external}.
 {: shortdesc}
 
 To create a partition, perform the following procedure:
 
-1. Login as the HSM Security Oficer/Administrator using the password specified during [initialization](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-initialize-ibm-hardware-security-module-hsm-):
+1. Login as the HSM Security Administrator with the password specified during [initialization](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-initialize-ibm-hardware-security-module-hsm-):
 
    ```sh
    [jpmongehsm2] lunash:>hsm login
@@ -34,7 +34,7 @@ To create a partition, perform the following procedure:
    ```
    {: codeblock}
 
-2. Confirm the HSM Admin Login Status is “Logged In”:
+2. Confirm that the HSM Admin Login Status is “Logged In”:
 
    ```sh
    [jpmongehsm2] lunash:>hsm show
@@ -60,7 +60,7 @@ To create a partition, perform the following procedure:
    ```
    {: codeblock}
    
-   The output should show `Logged In` in the HSM Admin login status. Otherwise, most operations and commands listed in the following sections will fail because they require administrator access.
+   The output shows `Logged In` in the HSM Admin login status. Otherwise, most operations and commands that are listed in the following sections fail because they require administrator access.
 
 3. List any existing partitions:
 
@@ -81,9 +81,9 @@ To create a partition, perform the following procedure:
 
    This output shows five existing partitions.
 
-4. Create a new partition:
+4. Create a partition:
 
-   The password defined in this step is used later to associate and create objects in the Citrix VPX HSM client process. Keep track of this password for future reference. Also, be sure to use the cloning domain defined during the initialization process.
+   The password that is defined in this step is used later to associate and create objects in the Citrix VPX HSM client process. Note this password for future reference. Also, be sure to use the cloning domain defined during the initialization process.
    {: note}
 
    ```sh
@@ -120,7 +120,7 @@ To create a partition, perform the following procedure:
    ```
    {: codeblock}
 
-5. Confirm the new partition was created:
+5. Confirm that the partition was created:
    
    ```sh
    [jpmongehsm2] lunash:>partition list

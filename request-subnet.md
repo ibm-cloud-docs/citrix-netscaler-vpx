@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 # Request a private subnet
 {: #request-a-private-subnet}
 
-In most deployments, the {{site.data.keyword.vpx_full}} appliance is deployed in a reverse-proxy configuration. However, to configure the VPX with a forward-proxy configuration, Virtual IPs (VIPs) are needed, because the configuration will exist on a private network instead of a public one.
+In most deployments, the {{site.data.keyword.vpx_full}} appliance is deployed in a reverse-proxy configuration. However, to configure the VPX with a forward-proxy configuration, Virtual IPs (VIPs) are needed because the configuration exists on a private network instead of a public one.
 {: shortdesc}
 
-You must open a Support case with the {{site.data.keyword.cloud}} Support team and request that a private network for your {{site.data.keyword.vpx_full}} appliance be added to your account. You require at least two private addresses, so request a private subnet size of at least /29.  
+Open a Support case with the {{site.data.keyword.cloud}} Support team and request that a private network for your {{site.data.keyword.vpx_full}} appliance is added to your account. You require at least two private addresses, so request a private subnet size of at least /29.  

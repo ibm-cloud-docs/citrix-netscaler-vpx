@@ -27,7 +27,7 @@ Incident and operations management includes tasks such as monitoring, event mana
 
 |  | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |----------|-----------------------|--------|
-|Provision Citrix VPX| Ensuring customer order is provisioned properly and in good condition  | Ensuring that the configuration ordered was received|
+|Provision Citrix VPX| Ensuring that customer order is provisioned properly and in good condition  | Ensuring that the configuration was received|
 |VPX environment monitoring| None  | Monitoring your environment |
 |VPX design| None  | Designing and deploying your load balancing system, and engaging IBM for design consultation |
 |VPX hardware/infrastructure failure| Monitoring and correcting all hardware and infrastructure failures | Notifying {{site.data.keyword.IBM_notm}} of hardware and infrastructure failures  |
@@ -41,7 +41,7 @@ Change management includes tasks such as deployment, configuration, upgrades, pa
 
 |  | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |----------|-----------------------|--------|
-|VM migration|  Ensuring any migrations provide proper notification to customers  | Contacting {{site.data.keyword.IBM_notm}} if routine maintenance work should be scheduled on a different day |
+|VM migration|  Ensuring that any migrations provide proper notification to customers  | Contacting {{site.data.keyword.IBM_notm}} if routine maintenance work should be scheduled on a different day |
 |Upgrades| None  | Planning and implementing all upgrades |
 |Configuration Modification| None | Providing subject matter expertise and modification of your environment |
 {: row-headers}
@@ -54,8 +54,8 @@ Identity and access management includes tasks such as authentication, authorizat
 
 |  | {{site.data.keyword.IBM_notm}} Responsibilities | Your responsibilities |
 |----------|-----------------------|--------|
-|Initial root password| Ensuring customers have IBM Cloud console access to initial root and nsroot passwords at provisioning | Notifying {{site.data.keyword.IBM_notm}} of any issues experienced during provisioning |
-|All subsequent password changes| None  | Ensuring root passwords remain consistent in the IBM Cloud console and on production systems |
+|Initial root password| Ensuring that customers have IBM Cloud console access to initial root and nsroot passwords at provisioning | Notifying {{site.data.keyword.IBM_notm}} of any issues that are experienced during provisioning |
+|All subsequent password changes| None  | Ensuring that root passwords remain consistent in the IBM Cloud console and on production systems |
 |Account administration| None  | Designing and implementing VPX user account design goals |
 {: row-headers}
 {: caption="Table 3. Responsibilities for identity and access management" caption-side="bottom"}
@@ -67,17 +67,17 @@ Security and regulation compliance includes tasks such as security controls impl
 
 |  | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |----------|-----------------------|--------|
-|Critical Patch Notification| Notifying customers of the need for critical patches through Event Management  | Implementing and applying required patches |
+|Critical Patch notification| Notifying customers of the need for critical patches through Event Management  | Implementing and applying the required patches |
 {: row-headers}
 {: caption="Table 4. Responsibilities for security and regulation compliance" caption-side="bottom"}
 
 ## Disaster recovery
 {: #disaster-recovery}
 
-Disaster recovery includes tasks such as providing dependencies on disaster recovery sites, provisioning disaster recovery environments, data and configuration backup, replicating data and configuration to the disaster recovery environment, and failover on disaster events.
+Disaster recovery includes providing dependencies on disaster recovery sites, provisioning disaster recovery environments, data and configuration backup, replicating data and configuration to the disaster recovery environment, and failover on disaster events.
 
 |  | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 |----------|-----------------------|--------|
-|Backups| Applying customer held backups during disaster recovery  | Keeping up-to-date backups of your current environment |
+|Backups| Applying customer backups during disaster recovery  | Keeping up-to-date backups of your current environment |
 {: row-headers}
 {: caption="Table 5. Responsibilities for disaster recovery" caption-side="bottom"}
