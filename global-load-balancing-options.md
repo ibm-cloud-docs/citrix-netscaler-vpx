@@ -83,8 +83,8 @@ This configuration sets the name servers for requests for `gslb.tsstesting.com` 
 
 For more information on NetScaler global load balancing, refer to:
 
-* [How DNS(Domain Name System) works with GSLB feature on NetScaler](https://support.citrix.com/article/CTX122619){: external}
-* [Information on the MEP protocol and site monitoring](http://support.citrix.com/article/CTX111081){: external}
+* [How DNS(Domain Name System) works with GSLB feature on NetScaler](https://support.citrix.com/article/CTX122619/how-dnsdomain-name-system-works-with-gslb-feature-on-netscaler){: external}
+* [Information on the MEP protocol and site monitoring](https://support.citrix.com/article/CTX111081/understanding-metric-exchange-protocol-and-monitors-for-global-server-load-balancing){: external}
 
 Other products can offer a similar functionality for spreading out traffic on a geographical basis:
 

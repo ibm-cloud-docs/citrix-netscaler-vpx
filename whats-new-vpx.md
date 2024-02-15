@@ -27,7 +27,7 @@ You can see the latest updates and function enhancements for your {{site.data.ke
 Virtual servers with multiple IP addresses
 :    You can now create a single load balancing virtual server with multiple non-consecutive or consecutive VIP IPv4 and IPv6 addresses. Each VIP address bound to a virtual server is treated as an individual virtual server.
 
-For more information about this feature, see the Citrix article [Multiple IP virtual servers](https://docs.citrix.com/en-us/netscaler/12-1/load-balancing/load-balancing-customizing/multi-ip-virtual-servers.html){: external}.
+For more information about this feature, see the Citrix article [Multiple IP virtual servers](https://docs.netscaler.com/en-us/){: external}.
 
 ## 25 September 2018
 {: #citrix-netscaler-vpx-sep2518}
@@ -46,5 +46,3 @@ SSL
 
 Service group support for GSLB
 :    You can now configure IP address-based service groups, domain-name-based service groups, or domain-name-based autoscale service groups for GSLB. You can also manage a group of services as easily as a single service, and bind a service group to a virtual server, as well as add services to the group.
-
-:    For more information about GSLB service groups, see the Citrix article [Configuring a GSLB service group](https://docs.citrix.com/en-us/netscaler/12/global-server-load-balancing/configure/configuring-a-gslb-service-group.html){: external}.

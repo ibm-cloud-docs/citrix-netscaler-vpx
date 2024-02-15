@@ -6,7 +6,7 @@ toc:
     audience: service
     href: /docs/citrix-netscaler-vpx
     console-page: /catalog/infrastructure/load-balancer-group
-    product-page: https://www.ibm.com/cloud/blog/announcements/boost-your-application-delivery-with-citrix-netscaler?mhsrc=ibmsearch_a&mhq=citrix%20vpx
+    product-page: https://www.ibm.com/blog/announcement/boost-your-application-delivery-with-citrix-netscaler/?mhsrc=ibmsearch_a&mhq=citrix%20vpx
     path: citrix-netscaler-vpx
     label: Citrix Netscaler VPX
 
@@ -25,7 +25,7 @@ toc:
           href: https://www.citrix.com/support/product-lifecycle/product-matrix.html
        - link:
           label: What is load balancing?
-          href: https://www.ibm.com/cloud/learn/load-balancing
+          href: https://www.ibm.com/topics/load-balancing
        - whats-new-vpx.md
 
     - navgroup:
@@ -89,7 +89,7 @@ toc:
        - other-resources.md
        - link:
           label: Citrix Website
-          href: https://www.citrix.com/products/netscaler-adc/
+          href: https://www.netscaler.com
 
     - navgroup:
        id: help

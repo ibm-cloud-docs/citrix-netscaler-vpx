@@ -24,7 +24,7 @@ To learn more about SSL cipher suites and other best practices visit the followi
 
 * [Scoring an A+ at SSLlabs.com with Citrix NetScaler](https://www.citrix.com/blogs/2018/05/16/scoring-an-a-at-ssllabs-com-with-citrix-netscaler-q2-2018-update/){: external} – Q2 2018 update (refer to steps three and five in the command guide)
 * [SSL and TLS Deployment Best Practices](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices#23-use-secure-cipher-suites){: external}
-* [How Do I set up ECC on NetScaler?](https://support.citrix.com/article/CTX205289){: external}
+* [How Do I set up ECC on NetScaler?](https://support.citrix.com/article/CTX205289/how-do-i-setup-ecc-on-netscaler){: external}
 
 To create a new cipher suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, perform the following procedure:
 
@@ -137,7 +137,7 @@ To create a new cipher suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, pe
 
 1. (OPTIONAL) HTTP Redirection can be enabled to redirect users to a secure website when they create an HTTP request (as opposed to HTTPS).
 
-	See [How to Configure HTTP to HTTPS Redirection on NetScaler](https://support.citrix.com/article/CTX201201){: external} for configuration instructions.
+	See [How to Configure HTTP to HTTPS Redirection on NetScaler](https://support.citrix.com/article/CTX201201/how-to-configure-http-to-https-redirection-on-citrix-adc){: external} for configuration instructions.
 
 1. Test the HTTPS connection by opening a web browser and entering the FQDN. The site loads the content that is rendered by the HTTP service behind the Citrix VPX.
 

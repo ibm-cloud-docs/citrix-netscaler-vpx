@@ -77,5 +77,5 @@ Now, bind the services that you created to your virtual server.
 
 You have created a load balancing pool and policy for your website.
 
-To learn more about the configuration of the {{site.data.keyword.vpx_full}} device, see the [Citrix documentation page](https://docs.citrix.com/en-us/netscaler.html){: external}. For further assistance, contact the IBM Cloud Support and sales.
+To learn more about the configuration of the {{site.data.keyword.vpx_full}} device, see the [Citrix documentation page](https://docs.netscaler.com/en-us/){: external}. For further assistance, contact the IBM Cloud Support and sales.
 {: note}

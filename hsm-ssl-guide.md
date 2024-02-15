@@ -39,9 +39,6 @@ The following diagram shows the network traffic flow for the SSL offload use cas
 
 ![Network flows logical topology](images/network-flows-logical-topology.jpg){: caption="Network flows logical topography" caption-side="bottom"}
 
-
-If you are not familiar with SSL offload, review this [Citrix article](https://docs.citrix.com/en-us/netscaler/12-1/ssl.html){: external}.
-
 ## What you accomplish
 {: #what-accomplish}
 
@@ -59,6 +56,6 @@ Task  | Description
 
 The following extra resources can help you get the most out of your {{site.data.keyword.vpx_full}} when using the IBM Hardware Security Module.
 
-* [NetScaler 12.1 Product Documentation](https://docs.citrix.com/en-us/netscaler/12-1/){: external}
+* [NetScaler 12.1 Product Documentation](https://docs.netscaler.com/en-us/){: external}
 * [Gemalto Support Portal](https://supportportal.gemalto.com/csm?id=csm_index){: external}
 * [IBM Cloud Support](/docs/get-support?topic=get-support-using-avatar){: external}
