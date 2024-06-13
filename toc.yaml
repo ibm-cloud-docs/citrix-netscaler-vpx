@@ -9,7 +9,6 @@ toc:
     product-page: https://www.ibm.com/blog/announcement/boost-your-application-delivery-with-citrix-netscaler/?mhsrc=ibmsearch_a&mhq=citrix%20vpx
     path: citrix-netscaler-vpx
     label: Citrix Netscaler VPX
-
   entries:
     - navgroup:
        id: learn
@@ -27,7 +26,6 @@ toc:
           label: What is load balancing?
           href: https://www.ibm.com/topics/load-balancing
        - whats-new-vpx.md
-
     - navgroup:
        id: howto
        topics:
@@ -79,7 +77,6 @@ toc:
           - hsm-ssl-dns.md
           - hsm-ssl-server.md
           - hsm-ssl-cipher.md
-
     - navgroup:
        id: reference
        topics:
@@ -90,7 +87,6 @@ toc:
        - link:
           label: Citrix Website
           href: https://www.netscaler.com
-
     - navgroup:
        id: help
        topics:
