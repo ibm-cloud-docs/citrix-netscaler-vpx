@@ -88,13 +88,6 @@ For more information on NetScaler global load balancing, refer to:
 
 Other products can offer a similar functionality for spreading out traffic on a geographical basis:
 
-### CDN
-{: #cdn}
-
-Content delivery networks (CDN) allow you to upload or provide an origin server to geographically dispersed cache servers, which then provide the content to the requesting client. CDNs work best with static, bulk content, such as images and videos that does not change over time.
-
-See [Getting started with Content Delivery Network (CDN)](/docs/CDN?topic=CDN-getting-started) for more details on CDN.
-
 ### Object storage
 {: #object-storage}
 

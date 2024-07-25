@@ -65,4 +65,4 @@ The following extra resources can help you learn more about Citrix VPX and Virtu
 * [CloudBridge Connector](https://docs.netscaler.com/en-us/citrix-adc/12-1/system/cloudbridge-connector-introduction.html){: external}
 * [Configuring a CloudBridge Connector tunnel between a Citrix ADC appliance and a Cisco IOS device](https://docs.netscaler.com/en-us/citrix-adc/12-1/system/cloudbridge-connector-introduction/cloudbridge-connector-tunnel-cisco.html){: external}
 * [Citrix VPX/ADC 12.1 Documentation](https://docs.netscaler.com/en-us/citrix-adc/12-1){: external}
-* [Supplemental VRA Documentation](/docs/virtual-router-appliance/vra-docs.html#supplemental-vra-documentation){: external}
+* [Supplemental VRA Documentation](/docs/virtual-router-appliance?topic=virtual-router-appliance-supplemental-vra-documentation)
