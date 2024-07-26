@@ -80,7 +80,6 @@ toc:
     - navgroup:
        id: reference
        topics:
-       - global-load-balancing-options.md
        - global-load-balancing-netscaler-vpx.md
        - vpx-responsibilities.md
        - other-resources.md
