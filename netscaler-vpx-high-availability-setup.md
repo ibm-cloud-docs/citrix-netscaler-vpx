@@ -12,7 +12,7 @@ subcollection: citrix-netscaler-vpx
 {{site.data.keyword.attribute-definition-list}}
 
 # Setting up Citrix Netscaler VPX for High Availability (HA)
-{: #setting-up-citrix-netscaler-vpx-for-high-availability-ha-}
+{: #setting-up-citrix-netscaler-vpx-for-high-availability-ha}
 {: help}
 {: support}
 
@@ -55,4 +55,4 @@ After ordering the two Netscaler VPX servers in the needed VLAN, and ordering th
 7. The primary server is now labeled primary and the secondary reports that it has a synchronization state of success.
 
 Ensure that your local administrators know that the password in the Cloud console must be changed to be consistent anytime the passwords are changed on the local VPXs.  **Failing to do so causes HA Upgrades and license operations to fail, resulting in production outages.**  Your passwords must be consistent in three places: VPX device 1, VPX device 2, and the IBM Cloud console.
-{: important} 
+{: important}
