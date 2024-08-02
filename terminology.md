@@ -1,7 +1,8 @@
 ---
+
 copyright:
-  years: 1994, 2017
-lastupdated: "2019-11-13"
+  years: 2024
+lastupdated: "2024-08-02"
 
 keywords: nsip, snip, vip
 
