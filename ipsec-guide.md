@@ -62,7 +62,6 @@ Task  | Description
 
 The following extra resources can help you learn more about Citrix VPX and Virtual Router Appliance.
 
-* [CloudBridge Connector](https://docs.netscaler.com/en-us/citrix-adc/12-1/system/cloudbridge-connector-introduction.html){: external}
-* [Configuring a CloudBridge Connector tunnel between a Citrix ADC appliance and a Cisco IOS device](https://docs.netscaler.com/en-us/citrix-adc/12-1/system/cloudbridge-connector-introduction/cloudbridge-connector-tunnel-cisco.html){: external}
+* [CloudBridge Connector](https://docs.netscaler.com/en-us/citrix-adc/current-release/getting-started-with-citrix-adc.html){: external}
 * [Citrix VPX/ADC 12.1 Documentation](https://docs.netscaler.com/en-us/citrix-adc/12-1){: external}
 * [Supplemental VRA Documentation](/docs/virtual-router-appliance?topic=virtual-router-appliance-supplemental-vra-documentation)
