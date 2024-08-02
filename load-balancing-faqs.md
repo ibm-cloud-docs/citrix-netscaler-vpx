@@ -1,8 +1,8 @@
 ---
-copyright:
-  years: 1994, 2017
 
-lastupdated: "2019-11-12"
+copyright:
+  years: 2024
+lastupdated: "2024-08-02"
 
 keywords: faq, faqs, questions, options, ipv6, traffic, network, ha, ssl, vpn
 
