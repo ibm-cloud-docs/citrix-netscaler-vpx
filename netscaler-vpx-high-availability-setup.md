@@ -1,8 +1,7 @@
 ---
 copyright:
-  years: 1994, 2018
-
-lastupdated: "2019-11-12"
+  years: 2024
+lastupdated: "2024-08-02"
 
 keywords: ha, high availability, setup, configure, configuration
 

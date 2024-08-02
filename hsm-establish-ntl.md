@@ -1,8 +1,8 @@
 ---
 
-copyright:
-  years: 2018, 2019
-lastupdated: "2019-11-12"
+ccopyright:
+  years: 2024
+lastupdated: "2024-08-02"
 
 keywords:
 
