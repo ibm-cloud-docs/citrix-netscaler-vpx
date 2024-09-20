@@ -1,0 +1,58 @@
+{
+  "version": 2,
+  "title": "Citrix VPX docs",
+  "introduction": "The Citrix Netscaler VPX is a dedicated virtual software appliance that provides load balancing on both the public and private IBM© Cloud network.",
+  "product_page": "https://www.ibm.com/blog/announcement/boost-your-application-delivery-with-citrix-netscaler/?mhsrc=ibmsearch_a&mhq=citrix%20vpx",
+  "console_page": "/catalog/infrastructure/load-balancer-group",
+  "section_topics": {
+    "links": [
+      {
+        "title": "Getting started with Citrix Netscaler VPX",
+        "href": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started"
+      },
+      {
+        "title": "Managing your Citrix Netscaler VPX",
+        "href": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-managing-your-citrix-netscaler-vpx"
+      },
+      {
+        "title": "Setting up Citrix Netscaler VPX for High Availability (HA)",
+        "href": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-setting-up-citrix-netscaler-vpx-for-high-availability-ha"
+      }
+    ]
+  },
+  "section_highlights": [
+    {
+      "title": "Citrix product matrix",
+      "description": "The Product Matrix provides information for Citrix products whose lifecycle is governed by phases.",
+      "href": "https://www.citrix.com/support/product-lifecycle/product-matrix.html",
+      "type": "white-paper"
+    },
+    {
+      "title": "What is load balancing?",
+      "description": "A usuful summary on the specifics around load balancing.",
+      "href": "https://www.ibm.com/topics/load-balancing",
+      "type": "blog",
+      "recommended": true
+    }
+  ],
+  "section_updates": {
+      "view_more": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started",
+      "tiles": [
+        {
+          "date": "Version 12.1",
+          "title": "Virtual servers with multiple IP addresses",
+          "description": "You can now create a single load balancing virtual server with multiple non-consecutive/consecutive VIP IPv4 and IPv6 addresses. Each VIP address bound to a virtual server is treated as an individual virtual server."
+        },
+        {
+          "date": "Version 12.1",
+          "title": "SSL",
+          "description": "The following updates have been applied for SSL connections: Removal of weak ciphers from the DEFAULT_BACKEND cipher group, support for ECDHE ciphers on the front end of Thales nShield® external HSM, support for ECDHE ciphers on the front end of SafeNet network external HSM, and removal of SSLv2: The NetScaler VPX appliance does not support SSLv2 from release 12.1."
+        },
+        {
+          "date": "Version 12.1",
+          "title": "Service group support for GSLB",
+          "description": "You can now configure IP address-based service groups, domain-name-based service groups, or domain-name-based autoscale service groups for GSLB. You can also manage a group of services as easily as a single service, and bind a service group to a virtual server, as well as add services to the group."
+        }
+      ]
+    }
+  }
