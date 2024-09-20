@@ -1,6 +1,6 @@
 {
     "title": "Citrix VPX docs",
-    "lastupdated": "2024-08-02",
+    "lastupdated": "2024-09-20",
     "introduction": "This is a description of what the user will be able to access or find content-wise for your product.",
       "terraform": "https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started",
     "section_recommended": [
