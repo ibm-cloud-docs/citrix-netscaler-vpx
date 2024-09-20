@@ -35,6 +35,11 @@
       "recommended": true
     }
   ],
+  "section_devtools": {
+    "api": "/apidocs/acme-test-v1/acme-test-v1.2.0",
+    "cli": "/docs/acme-test",
+    "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group"
+  },
   "section_updates": {
       "view_more": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started",
       "tiles": [
