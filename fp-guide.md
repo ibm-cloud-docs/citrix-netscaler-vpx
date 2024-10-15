@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-11-12"
+  years: 2017, 2024
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -19,7 +19,7 @@ subcollection: citrix-netscaler-vpx
 You can configure a forward proxy setup by using the {{site.data.keyword.vpx_full}} appliance. This configuration was tested on a {{site.data.keyword.vpx_full}} appliance with software version 11.1 (platinum feature edition) and 10 Mbps performance.
 {: shortdesc}
 
-![Forward Proxy Traffic Redirection](images/fp1.png){: caption="Figure 1. Forward proxy traffic redirection" caption-side="bottom"}
+![Forward Proxy Traffic Redirection](images/fp1.png){: caption="Forward proxy traffic redirection" caption-side="bottom"}
 
 ## What to accomplish
 {: #what-you-will-accomplish}

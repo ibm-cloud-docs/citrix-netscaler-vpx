@@ -1,32 +1,41 @@
 {
-    "title": "Citrix VPX docs",
-    "lastupdated": "2024-08-02",
-    "introduction": "This is a description of what the user will be able to access or find content-wise for your product.",
-      "terraform": "https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started",
-    "section_recommended": [
+  "version": 2,
+  "title": "Citrix VPX docs",
+  "introduction": "The Citrix Netscaler VPX is a dedicated virtual software appliance that provides load balancing on both the public and private IBM© Cloud network.",
+  "product_page": "https://www.ibm.com/blog/announcement/boost-your-application-delivery-with-citrix-netscaler/?mhsrc=ibmsearch_a&mhq=citrix%20vpx",
+  "console_page": "/catalog/infrastructure/load-balancer-group",
+  "section_topics": {
+    "links": [
       {
         "title": "Getting started with Citrix Netscaler VPX",
-        "description": "Deploying a Citrix Netscaler VPX in your IBM Cloud solution accelerates web application delivery, boosts performance, and ensures your cloud applications and services stay optimized, available, and secure. If you have challenging workloads, such as gaming, big data and analytics, or private clouds, the Citrix Netscaler VPX can help you deliver your solution when, where, and how your users need it most.",
         "href": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started"
       },
       {
         "title": "Managing your Citrix Netscaler VPX",
-        "description": "Citrix Netscaler VPX devices are powerful tools with an array of features that help to enhance and refine your IBM Cloud solution in a multitude of ways. You can find the device's information in the IBM Cloud catalog, as well as connect to the device and configure its features.",
         "href": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-managing-your-citrix-netscaler-vpx"
       },
       {
         "title": "Setting up Citrix Netscaler VPX for High Availability (HA)",
-        "description": "Load balancers are used to balance traffic over multiple application servers to improve performance and stability in a scalable application. Yet, a single load balancer is a single point of failure. Avoid this by configuring a High Availability (HA) Citrix Netscaler VPX pair. Configuring an HA pair requires two Netscaler VPX servers. The secondary server steps in to continue load balancing should the primary fail.",
         "href": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-setting-up-citrix-netscaler-vpx-for-high-availability-ha"
       }
-    ],
-    "section_learn": {
-      "developer": "https://developer.ibm.com/depmodels/cloud/",
-      "architecture": "https://www.ibm.com/architectures/hybrid",
-      "training": "https://www.ibm.com/training/cloud",
-      "community": "https://community.ibm.com/community/user/cloud/home"
+    ]
+  },
+  "section_highlights": [
+    {
+      "title": "Citrix product matrix",
+      "description": "The Product Matrix provides information for Citrix products whose lifecycle is governed by phases.",
+      "href": "https://www.citrix.com/support/product-lifecycle/product-matrix.html",
+      "type": "white-paper"
     },
-    "section_updates": {
+    {
+      "title": "What is load balancing?",
+      "description": "A usuful summary on the specifics around load balancing.",
+      "href": "https://www.ibm.com/topics/load-balancing",
+      "type": "blog",
+      "recommended": true
+    }
+  ],
+  "section_updates": {
       "view_more": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started",
       "tiles": [
         {
