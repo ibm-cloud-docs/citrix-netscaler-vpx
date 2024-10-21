@@ -30,7 +30,7 @@ Make sure that you take the following prerequisite actions prior to configuratio
 
 After ordering the two Netscaler VPX servers in the needed VLAN, and ordering the VIP and SNIP subnets to meet the prerequisites for your HA pair configuration, you can proceed:
 
-1. Open two browser windows and log in to the advanced interface on both NetScalers. On the secondary NetScaler, go to **System > User Administration > Users** and set the root password to the same as the primary NetScaler. Then update the password on file in the IBM Cloud catalog on the device details page to match the password set for the secondary.
+1. Open two browser windows and log in to the advanced interface on both NetScalers. On the secondary NetScaler, go to **System > User Administration > Users** and set the root password to the same as the primary NetScaler. Then update the password on file in device passwords page in the IBM Cloud console to match the password set for the secondary.
 
 2. On the VPX you want to be secondary, click **System > High Availability**, then right click the first line and click **Edit**. Select **Stay Secondary** on the High Availability Status config drop-down box and click **OK**.
 
