@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-11-12"
+  years: 2017, 2024
+lastupdated: "2024-11-07"
 
 keywords:
 
@@ -58,4 +58,4 @@ The following extra resources can help you get the most out of your {{site.data.
 
 * [NetScaler 12.1 Product Documentation](https://docs.netscaler.com/en-us/){: external}
 * [Gemalto Support Portal](https://supportportal.gemalto.com/csm?id=csm_index){: external}
-* [IBM Cloud Support](/docs/get-support?topic=get-support-using-avatar){: external}
+* [IBM Cloud Support](/docs/account?topic=account-open-case&interface=ui){: external}
