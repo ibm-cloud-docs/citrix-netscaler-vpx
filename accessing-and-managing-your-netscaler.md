@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2024
-lastupdated: "2024-08-02"
+  years: 2017, 2024
+lastupdated: "2024-11-08"
 
 keywords:
 
@@ -24,7 +24,7 @@ Citrix NetScaler devices are listed in the device list, like any other server yo
 To find the device list:
 
 1. From your browser, open the [IBM Cloud catalog](/login){: external} and log into your account.
-2. Select the Menu icon ![Menu icon](../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
+2. Select the Menu icon ![Menu icon](../icons/icon_hamburger.svg) from the top left, then click **Infrastructure > Classic Infrastructure**.
 
 Your devices, which are sorted by device name, show in the device list. {{site.data.keyword.vpx_full}} devices have "NetScaler" as the device type.
 
