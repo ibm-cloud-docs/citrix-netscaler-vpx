@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2024
-lastupdated: "2024-10-09"
+  years: 2017, 2025
+lastupdated: "2025-03-14"
 
 keywords:
 
@@ -36,3 +36,4 @@ Task  | Description
 [Configure Cache Redirection for SSL traffic](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configure-cache-redirection-for-ssl-traffic-optional-) | Configure the cache redirection for your forward proxy virtual server with SSL traffic instead of HTTP or HTTPS.
 [Configure Source NAT for Outbound Traffic](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configure-source-nat-for-outbound-traffic) | Utilize your {{site.data.keyword.vpx_full}} appliance to perform NAT on outbound traffic from your client machines.
 [Update the Proxy Settings on the Client Machine’s Internet Browser](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-update-the-proxy-settings-on-the-client-machine-s-internet-browser-optional-) | Update your proxy settings that use your client machine's internet browser, if you want.
+{: caption="Configuring the service" caption-side="top"}
