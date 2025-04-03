@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-08-02"
+  years: 2017, 2025
+lastupdated: "2025-04-03"
 
 keywords: resources, blog, brief
 
@@ -20,4 +20,4 @@ IBM and some of our partners and customers created these additional {{site.data.
 ## Blogs
 {: #resources-blogs}
 
-* [IBM Cloud Hardware Security Module (HSM) and {{site.data.keyword.vpx_full}} Application Delivery Controller (ADC), by Jose Monge](https://www.ibm.com/blog/){: external}
+* [IBM Cloud Hardware Security Module (HSM) and {{site.data.keyword.vpx_full}} Application Delivery Controller (ADC), by Jose Monge](https://www.ibm.com/think){: external}
