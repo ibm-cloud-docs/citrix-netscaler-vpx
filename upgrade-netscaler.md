@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-08-02"
+  years: 2017, 2025
+lastupdated: "2025-04-03"
 
 keywords: upgrade, callhome
 
@@ -25,7 +25,7 @@ Failure to meet these prerequisites can cause a licensing issue with your Netsca
 {: important}
 
 * Ensure that your VPX administration passwords are up to date in the portal.
-* Ensure that you are allowing any [Service Networks that are required for provisioning](/docs/cloud-infrastructure?topic=cloud-infrastructure-ibm-cloud-ip-ranges#service-network) through your gateway and server firewall.
+* Ensure that you are allowing any [Service Networks that are required for provisioning](docs/infrastructure-hub?topic=infrastructure-hub-ibm-cloud-ip-ranges#service-network) through your gateway and server firewall.
 * Ensure that your license file is up to date through your VPX. If not, you can update it by [opening a support case](https://cloud.ibm.com/unifiedsupport/cases/form){: external}.
 
 To upgrade your VPX, perform the following procedure:

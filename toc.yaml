@@ -24,7 +24,7 @@ toc:
           href: https://www.citrix.com/support/product-lifecycle/product-matrix.html
        - link:
           label: What is load balancing?
-          href: https://www.ibm.com/topics/load-balancing
+          href: https://www.ibm.com/think/topics/load-balancing
        - whats-new-vpx.md
     - navgroup:
        id: howto
