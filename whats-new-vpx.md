@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 1994, 2018
-lastupdated: "2022-05-04"
+  years: 2017, 2025
+lastupdated: "2025-04-03"
 
 keywords: updates, additions, version
 
@@ -40,7 +40,7 @@ SSL
     * Support for ECDHE ciphers on the front end of SafeNet network external HSM
     * Removal of SSLv2: The NetScaler VPX appliance does not support SSLv2 from release 12.1.
 
-### 23 January 2018
+## 23 January 2018
 {: #citrix-netscaler-vpx-jan2318}
 {: release-note}
 
