@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2024
-lastupdated: "2024-08-02"
+  years: 2017, 2025
+lastupdated: "2025-04-07"
 
 keywords: load balancing, global, mep, gslb
 
@@ -16,9 +16,8 @@ subcollection: citrix-netscaler-vpx
 Global server load balancing (GSLB) is a mechanism to distribute traffic across multiple servers, typically residing in different geographical locations. A global balancing server receives traffic requests from clients and redirects them to a certain geography by using the criteria selected by the administrator.
 {: shortdesc}
 
-To achieve this, two recognized methods can be used inside the IBM Cloud network:
+To achieve this, you can use the following method:
 
-* **CDN:** Content Delivery Network (CDN) issued to deliver content and rich media such as images and videos, CDN distributes content geographically over dispersed nodes, keeping the least latency and highest speeds. It is implemented when particular portions of content need to be distributed as opposed to entire websites/applications. IBM Cloud offers this service, read more about it [here](/docs/CDN?topic=CDN-getting-started).
 * **NetScaler VPX:** As with regular local load balancing, VPX uses a similar object hierarchy to load balance traffic between several geographies. Using DNS based global lookups, NetScaler chooses the respective record that corresponds to the site selected, the selection is based on the criteria pre-configured by the administrator. The incoming sections expand on this offering.
 
 Other techniques are available for content distribution, such as HTTP redirection, that can also be implemented with the {{site.data.keyword.vpx_full}}.

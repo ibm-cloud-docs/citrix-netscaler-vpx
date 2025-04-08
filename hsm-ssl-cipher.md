@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-11-12"
+  years: 2017, 2025
+lastupdated: "2025-04-07"
 
 keywords:
 
@@ -22,7 +22,6 @@ To guarantee proper authentication, you must ensure your {{site.data.keyword.vpx
 
 To learn more about SSL cipher suites and other best practices visit the following links:
 
-* [Scoring an A+ at SSLlabs.com with Citrix NetScaler](https://www.citrix.com/blogs/2018/05/16/scoring-an-a-at-ssllabs-com-with-citrix-netscaler-q2-2018-update/){: external} – Q2 2018 update (refer to steps three and five in the command guide)
 * [SSL and TLS Deployment Best Practices](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices#23-use-secure-cipher-suites){: external}
 * [How Do I set up ECC on NetScaler?](https://support.citrix.com/s/article/CTX205289-how-do-i-setup-ecc-on-netscaler){: external}
 
