@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-11-12"
+  years: 2017, 2025
+lastupdated: "2025-04-21"
 
 keywords:
 
@@ -30,12 +30,6 @@ SSL certificates contain the server’s public key, dates for which the certific
 * Daily website malware scanning to ensure that both your site and your customers are protected
 
 If you are running multiple domains, an SSL certificate can be purchased for each domain.
-
-For more information about SSL certificates, refer to the following {{site.data.keyword.cloud_notm}} articles:
-
-* [About SSL certificates](/docs/ssl-certificates?topic=ssl-certificates-about-ssl-certificates)
-* [Introduction to SSL technology](/docs/ssl-certificates?topic=ssl-certificates-introduction-to-ssl-technology)
-* [Planning for SSL](/docs/ssl-certificates?topic=ssl-certificates-planning-for-ssl)
 
 To order an SSL certificate for use with your {{site.data.keyword.vpx_full}}, perform the following procedure:
 
