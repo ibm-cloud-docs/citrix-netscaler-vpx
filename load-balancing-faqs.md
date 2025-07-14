@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-08-02"
+  years: 2017, 2025
+lastupdated: "2025-07-14"
 
 keywords: faq, faqs, questions, options, ipv6, traffic, network, ha, ssl, vpn
 
@@ -12,7 +12,7 @@ subcollection: citrix-netscaler-vpx
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQs for Citrix Netscaler VPX
+# FAQ for Citrix Netscaler VPX
 {: #faqs-for-citrix-netscaler-vpx}
 
 These frequently asked questions help you when working with the {{site.data.keyword.vpx_full}}.
