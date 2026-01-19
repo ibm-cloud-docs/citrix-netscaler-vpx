@@ -36,20 +36,20 @@
     }
   ],
   "section_updates": {
-      "view_more": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started",
-      "tiles": [
-        {
-          "date": "Version 12.1",
-          "title": "Virtual servers with multiple IP addresses"
-        },
-        {
-          "date": "Version 12.1",
-          "title": "SSL"
-        },
-        {
-          "date": "Version 12.1",
-          "title": "Service group support for GSLB" 
-        }
-      ]
-    }
+    "view_more": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started",
+    "tiles": [
+      {
+        "date": "Version 12.1",
+        "title": "Virtual servers with multiple IP addresses"
+      },
+      {
+        "date": "Version 12.1",
+        "title": "SSL"
+      },
+      {
+        "date": "Version 12.1",
+        "title": "Service group support for GSLB"
+      }
+    ]
   }
+}
