@@ -1,7 +1,7 @@
 includes:
-  - https://github.ibm.com/cloud-docs/loadbalancer-service
+- https://github.ibm.com/cloud-docs/loadbalancer-service
 translation:
   exclude:
     byFilePath:
-      - file-dont-translate.md
-      - folder-dont-translate/
+    - file-dont-translate.md
+    - folder-dont-translate/
