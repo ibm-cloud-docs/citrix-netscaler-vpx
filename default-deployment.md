@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2019
-lastupdated: "2019-11-13"
+  years: 2017, 2026
+lastupdated: "2026-01-21"
 
 keywords:
 
@@ -13,8 +13,8 @@ subcollection: citrix-netscaler-vpx
 # Citrix Netscaler VPX default deployment
 {: #citrix-netscaler-vpx-default-deployment}
 
-{{site.data.keyword.vpx_full}} is securely deploys by automatically assigning a private IP address as the NetScaler IP (NSIP) used for management purposes.
-{: shortdesc)
+{{site.data.keyword.vpx_full}} is securely deployed by automatically assigning a private IP address as the NetScaler IP (NSIP) used for management purposes.
+{: shortdesc}
 
 When you view your NetScaler in the [Device List](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-managing-your-citrix-netscaler-vpx#locating-netscaler-details-in-the-customer-portal) in the IBM Cloud catalog, it looks different than other servers. Namely, the device has a private IP address but no public IP address.
 
@@ -25,6 +25,6 @@ IBM Cloud handles many of the decisions for you during provisioning. For example
 ## What do I need to configure?
 {: #what-do-i-need-to-configure-}
 
-By default, the NSIP is the private IP address that is assigned during provisioning, which is the IP address that you use to connect to the NetScaler for management purposes. The SNIPs (SubNet IP Addresses), by default, are assigned from the same primary IP SubNets that are on the VLANs that you chose during the ordering process.
+By default, the NSIP is the private IP address that is assigned during provisioning, which is the IP address that you use to connect to the NetScaler for management purposes. The SNIPs (SubNet IP addresses), by default, are assigned from the same primary IP SubNets that are on the VLANs that you chose during the ordering process.
 
 If you chose the same VLANs where your intended load-balanced servers reside, then no extra configuration of these SNIPs is necessary. By default, the DNS is set to IBM Cloud name servers. In a basic implementation, if IBM Cloud hosts the DNS records for your servers, then no further configuration is necessary.

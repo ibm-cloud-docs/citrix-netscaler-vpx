@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-11-12"
+  years: 2017, 2026
+lastupdated: "2026-01-21"
 
 keywords:
 
@@ -22,6 +22,6 @@ You can utilize your {{site.data.keyword.vpx_full}} appliance to perform NAT on 
 
 1. Go to **System > Network > Routes**, and navigate to the **RNAT** tab. Click **Configure RNAT**.
 
-2. Specify the source subnet (and mask) to which you wish to apply RNAT and click **OK**.
+2. Specify the source subnet (and mask) to which you want to apply RNAT and click **OK**.
 
-The Internet-bound traffic sourced from any IP in this subnet now uses NAT for traffic on the Citrix NetScaler’s public IP address.
+The Internet-bound traffic that is sourced from any IP in this subnet now uses NAT for traffic on the Citrix NetScaler’s public IP address.

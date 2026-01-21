@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-08-02"
+  years: 2017, 2026
+lastupdated: "2026-01-21"
 keywords: cache, enable, redirect, capabilities
 
 subcollection: citrix-netscaler-vpx
@@ -24,6 +24,6 @@ To do so, perform the following steps:
 
    Enable any additional features as necessary.
 
-2. Next go to **System > Settings > Configure Basic Features**, and enable **Load Balancing** (if it is not already) and click **OK**.
+2. Next, go to **System > Settings > Configure Basic Features**, and enable **Load Balancing** (if it is not already) and click **OK**.
 
    Enable any additional features as necessary.
