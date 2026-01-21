@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-08-02"
+  years: 2017, 2026
+lastupdated: "2026-01-21"
 
 keywords:
 
@@ -25,9 +25,9 @@ Typically, a proxy is combined with a firewall to ensure the security of clients
 ## Step 1: Request VIPs to use in the private network
 {: #step-1-request-vips-to-use-in-the-private-network}
 
-When a {{site.data.keyword.vpx_full}} load balancer is ordered from the IBM Cloud catalog, it is assumed a reverse proxy is being requested. The requester is asked for the number of “public” IPs to be used as virtual IPs (VIPs).
+When a {{site.data.keyword.vpx_full}} load balancer is ordered from the IBM Cloud catalog, it is assumed that a reverse proxy is being requested. The requester is asked for the number of “public” IP addresses to be used as virtual IPs (VIPs).
 
-If a forward proxy exists, the VIPs need to be setup on the private network. Request VIPs for the private network by using an IBM Support case. The number of VIPs you need determine the size of the subnet that is requested in the Support case. The subnet information is returned in the Support case.
+If a forward proxy exists, the VIPs need to be set up on the private network. Request VIPs for the private network by using an IBM Support case. The number of VIPs you need determines the size of the subnet that is requested in the Support case. The subnet information is returned in the Support case.
 
 In this example, you request a `/29` subnet, which results in the following:
 
@@ -44,7 +44,7 @@ By default, the load balancing and cache redirect features on the {{site.data.ke
 ## Step 3: Create the forward proxy
 {: #step-3-create-the-forward-proxy}
 
-Use the command line to issue the following commands on to the {{site.data.keyword.vpx_full}}. In this scenario, only one of the two IBM Cloud DNS servers are added.  
+Use the command line to issue the following commands on to the {{site.data.keyword.vpx_full}}. In this scenario, only one of the two IBM Cloud DNS servers are added.
 
 ```sh
 add cr vserver vs_forward_cache HTTP 10.114.27.3 80 -cachetype forward -redirect origin
@@ -72,13 +72,13 @@ Line 5 tells the forwarding proxy virtual server to use the virtual DNS for name
 ## Configuring the client
 {: #configuring-the-client}
 
-Make sure you customize the client to use the forwarding proxy, make sure that you cannot reach a public site (for example, `http://www.ibm.com`) by using the Firefox browser on the client. Because no public interface exists on the client, this request should fail.
+Make sure that you customize the client to use the forwarding proxy, make sure that you cannot reach a public site (for example, `http://www.ibm.com`) by using the Firefox browser on the client. Because no public interface exists on the client, this request should fail.
 
 The following example configures a Linux client.
 
 You need to make a few changes to the client, the first of which is to point the resolver on the client to the virtual DNS. This process is done in one of two ways.
 
-You can manually edit the `/etc/resolv.conf` to point to the virtual address of the DNS. Client management tools can revert these changes back to the original settings.  
+You can manually edit the `/etc/resolv.conf` to point to the virtual address of the DNS. Client management tools can revert these changes back to the original settings.
 
 Or you can edit the `/etc/sysconfig/network-scripts/ifcfg-ethx` interface and add the `DNS1=` statement. After this configuration is set, issue the service network restart command to pick up the changes.
 

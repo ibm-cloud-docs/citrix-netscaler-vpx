@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-08-02"
+  years: 2017, 2026
+lastupdated: "2026-01-21"
 
 keywords:
 
@@ -18,12 +18,12 @@ subcollection: citrix-netscaler-vpx
 The {{site.data.keyword.vpx_full}} is a dedicated virtual software appliance that provides load balancing on both the public and private IBM© Cloud network.
 {: shortdesc}
 
-Deploying a {{site.data.keyword.vpx_full}} in your IBM Cloud solution accelerates web application delivery, boosts performance, and ensures that your cloud applications and services stay optimized, available, and secure. If you have challenging workloads, such as gaming, big data and analytics, or private clouds, the {{site.data.keyword.vpx_full}} can help you deliver your solution when, where, and how your users need it most.
+Deploying a {{site.data.keyword.vpx_full}} in your IBM Cloud solution accelerates web application delivery, boosts performance, and helps ensure that your cloud applications and services stay optimized, available, and secure. If you have challenging workloads, such as gaming, big data and analytics, or private clouds, the {{site.data.keyword.vpx_full}} can help you deliver your solution when, where, and how your users need it most.
 
 ## Features
 {: #features}
 
-* The only product that can load balance traffic on both the public and private network
+* The only product that can balance the traffic load on both the public and private network
 * Management that uses GUI (Graphical User Interface) or CLI (Command Line Interface)
 * Many different types of traffic distribution, including:
    * Least Connections
@@ -48,11 +48,11 @@ Deploying a {{site.data.keyword.vpx_full}} in your IBM Cloud solution accelerate
 * Application security features
 * Virtual appliances on dedicated hardware
 * Deployed like any other IBM Cloud server, with flexibility and availability in mind
-* Offered in bandwidth tiers: 10Mbps, 200Mbps, and 1000Mbps
+* Offered in bandwidth tiers: 10 Mbps, 200 Mbps, and 1000 Mbps
 
 The {{site.data.keyword.vpx_full}} can be deployed on demand, in as little as 15 minutes, in any IBM Cloud data center around the world. Several licensing models include the speed and features that you need, and offer the flexibility that is demanded by today's cloud solutions. This flexibility ensures a good fit for every use case, from small-to-medium implementations, all the way to larger enterprises.
 
-IBM Cloud offers the NetScaler VPX virtual appliance with full, unrestricted root access.   
+IBM Cloud offers the NetScaler VPX virtual appliance with full, unrestricted root access.
 
 ## Application security
 {: #application-security}
@@ -67,7 +67,7 @@ The {{site.data.keyword.vpx_full}} filters requests from end-users to the server
 ## PCI-DSS reporting
 {: #pci-dss-reporting}
 
-Payment Card Industry (PCI) Data Security Standard (DSS) consists of twelve criteria for businesses that process online credit card payments. The PCI-DSS reports consist of a list of those criteria that are relevant to your Application Firewall configuration. The report also lists whether your current configuration meets each criterion, and suggests how to configure the application firewall to meet those standards.
+The Payment Card Industry (PCI) Data Security Standard (DSS) consists of twelve criteria for businesses that process online credit card payments. The PCI-DSS reports consist of a list of those criteria that are relevant to your Application Firewall configuration. The report also lists whether your current configuration meets each criterion, and suggests how to configure the application firewall to meet those standards.
 
 ## Global Load Balancing (GSLB)
 {: #global-load-balancing-gslb-}
@@ -77,4 +77,4 @@ The NetScaler Platinum Edition extends the load balancer beyond the local bounda
 ## Extend your data center
 {: #extend-your-datacenter}
 
-The NetScaler Platinum Edition allows you to use the NetScaler CloudBridge Connector feature, which provides a simple way to extend your datacenter to IBM Cloud with wizard-driven menus.
+The NetScaler Platinum Edition allows you to use the NetScaler CloudBridge Connector feature, which provides a simple way to extend your data center to IBM Cloud with wizard-driven menus.

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-11-13"
+  years: 2017, 2026
+lastupdated: "2026-01-21"
 
 keywords:
 
@@ -21,11 +21,11 @@ You can configure cache redirection for HTTP or HTTPS traffic with your {{site.d
 To do so, perform the following procedure:
 
 1. Go to **Traffic Management > Cache Redirection > Virtual Servers** and click **Add**.
-2. Specify the name of your forward-proxy virtual server. Select the **HTTP** protocol and the **Forward** cache type from their respective list menus. Then assign an IP address to this virtual server from your private subnet.
+2. Specify the name of your forward-proxy virtual server. Select the **HTTP** protocol and the **Forward** cache type from their respective list menus. Then, assign an IP address to this virtual server from your private subnet.
 
     Click **OK** to continue.
 
-3. Review the summary page and click **OK**.  
+3. Review the summary page and click **OK**.
 4. Click **Traffic Settings** to view extra configuration settings.
 5. From Traffic Settings select one of the following three redirect options, depending on your requirements:
    * **Cache** - Directs all outbound requests to your local cache server pool.
