@@ -38,9 +38,9 @@ Complete the following action items within the specified timelines to help ensur
 :    Milestone 1: [Upgrade to the minimum supported software version](#upgrade-to-minimum-supported-software-version).
 
 23 February 2026 — 10 April 2026
-:    Milestone 2: [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-ui){: ui}
+:    Milestone 2: [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-ui).{: ui}
 
-:    Milestone 2: [Transition NetScaler VPX licensing to LAS](#transition-netscaler-to-las-cli){: cli}
+:    Milestone 2: [Transition NetScaler VPX licensing to LAS](#transition-netscaler-to-las-cli).{: cli}
 
 ## Milestone 1: Upgrading to the minimum supported software version
 {: #upgrade-to-minimum-supported-software-version}
