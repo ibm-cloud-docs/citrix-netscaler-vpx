@@ -29,17 +29,16 @@ Customers are strongly encouraged to begin planning for the required maintenance
 {: important}
 
 ## Key milestones
-{: #milestones-ui}
-{: ui}
+{: #milestones}
 
 Complete the following action items within the specified timelines to help ensure uninterrupted license validation and continued support:
 
-* **Milestone 1: 26 January 2026 — 23 February 2026**
+* Milestone 1: 26 January 2026 — 23 February 2026
    * [Upgrade to the minimum supported software version](#upgrade-to-minimum-supported-software-version).
 
-* **Milestone 2: 23 February 2026 — 10 April 2026**   
-   * [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-ui).{: ui}
-   * [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-cli).{: cli}
+* Milestone 2: 23 February 2026 — 10 April 2026
+   * [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-ui).{: ui}   
+   * [Install and activate the new VPX license activation file (blog)](#transition-netscaler-to-las-cli).{: cli}
 
 ## Milestone 1: Upgrading to the minimum supported software version
 {: #upgrade-to-minimum-supported-software-version}
@@ -184,14 +183,18 @@ To install and activate the new VPX activation file from the NetScaler CLI, foll
 ## Renewing your annual license
 {: #monitor-renew-license}
 
-The license activation file is valid for one year. In the NetScaler licensing GUI, go to **System > Licenses** to view:
+The license activation file is valid for one year. Follow these steps to monitor and renew your license: 
 
-* The last activation or renewal date
-* Upcoming activation or renewal date
+1. In the NetScaler licensing GUI, go to **System > Licenses** to view:{: ui}
 
-To make sure NetScaler operations remain uninterrupted, follow these steps:
+   * The last activation or renewal date{: ui}
+   * Upcoming activation or renewal date{: ui}
 
-1. Click **Renew now** before the renewal date.
-1. Generate a new activation request file. For instructions, see steps 1-4 in [Installing and activating the new VPX license token](#transition-netscaler-to-las-ui).
-1. [Create an IBM Support case](/unifiedsupport/cases/form){: external} to request a license activation file (see step 5).
-1. Upload the new LAS activation file from IBM (see step 7).
+1. To make sure NetScaler operations remain uninterrupted, follow these steps before the renewal date:{: ui}
+
+   1. Click **Renew now** before the renewal date.{: ui}
+   1. Generate a new activation request file. For instructions, see steps 1-4 in [Installing and activating the new VPX license token](#transition-netscaler-to-las-ui).{: ui}
+   1. [Create an IBM Support case](/unifiedsupport/cases/form){: external} to request a license activation file (see step 5).{: ui}
+   1. Upload the new LAS activation file from IBM (see step 7).{: ui}
+
+1. CLI steps - work in progress
