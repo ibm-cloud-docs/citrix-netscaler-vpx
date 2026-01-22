@@ -33,11 +33,11 @@ Customers are strongly encouraged to begin planning for the required maintenance
 
 Complete the following action items within the specified timelines to help ensure uninterrupted license validation and continued support:
 
-Milestone 1: 26 January 2026 — 23 February 2026
-:    Upgrade to the minimum supported software version.
+26 January 2026 — 23 February 2026
+:    Milestone 1: Upgrade to the minimum supported software version.
 
-Milestone 2: 23 February 2026 — 10 April 2026
-:    Install and activate the new VPX license activation file (blob).
+23 February 2026 — 10 April 2026
+:    Milestone 2: Install and activate the new VPX license activation file (blob).
 
 ## Milestone 1: Upgrading to the minimum supported software version
 {: #upgrade-to-minimum-supported-software-version}
