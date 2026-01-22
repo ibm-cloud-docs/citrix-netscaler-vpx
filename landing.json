@@ -32,13 +32,6 @@
       "description": "The Product Matrix provides information for Citrix products whose lifecycle is governed by phases.",
       "href": "https://www.citrix.com/support/product-lifecycle/product-matrix.html",
       "type": "white-paper"
-    },
-    {
-      "title": "What is load balancing?",
-      "description": "A useful summary on the specifics around load balancing.",
-      "href": "https://www.ibm.com/think/topics/load-balancing",
-      "type": "blog",
-      "recommended": true
     }
   ],
   "section_updates": {
