@@ -1,0 +1,195 @@
+---
+copyright:
+  years: 2017, 2026
+lastupdated: "2026-01-22"
+
+keywords: order, citrix, vpx, overview
+
+subcollection: citrix-netscaler-vpx
+
+---
+
+{{site.data.keyword.attribute-definition-list}}
+
+# Action Required: Update your NetScaler license
+{: #transition-netscaler-to-las}
+
+Citrix is retiring file‑based licensing effective 10 April 2026, and replacing it with the cloud‑based License Activation Service (LAS). All NetScaler VPX instances running on IBM Cloud Classic infrastructure must transition to LAS to remain licensed, compliant, and supported.
+{: shortdesc}
+
+The following information provides guidance for provisioning new or reloaded NetScaler instances, renewing annual LAS licenses, and transitioning existing VPX appliances from file-based licensing to LAS. To enable LAS, IBM Support activates the required Citrix Cloud components on your behalf.
+
+As you plan your upgrade, consider the following service impacts:
+
+* The required actions will require appliance reboots, resulting in temporary service disruption.
+* The update can't be performed on a live system and must be completed during a scheduled maintenance window.
+* Completing the licensing transition requires coordination between your appliance administrator and IBM Support to exchange the information needed to generate the new licensing data.
+
+Customers are strongly encouraged to begin planning for the required maintenance window and associated downtime as early as possible.
+{: important}
+
+## Key milestones
+{: #milestones}
+
+Complete the following action items within the specified timelines to help ensure uninterrupted license validation and continued support:
+
+Milestone 1: 26 January 2026 — 23 February 2026
+:    Upgrade to the minimum supported software version.
+
+Milestone 2: 23 February 2026 — 10 April 2026
+:    Install and activate the new VPX license activation file (blob).
+
+## Milestone 1: Upgrading to the minimum supported software version
+{: #before-you-begin}
+
+Your VPX must run one of the following software versions or later. Appliances running earlier versions cannot install or validate the new license activation file.
+
+- NetScaler 14.1: Version 14.1 build 51.80 or later
+- NetScaler 13.1: Version 13.1 build 60.29 or later
+- NetScaler 13.1: Version 13.1 build 37.247 (FIPS) or later
+
+If your NetScaler appliance doesn't meet these requirements, upgrade before activating LAS. For more information, see [Upgrading your Citrix Netscaler VPX](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-upgrading-your-citrix-netscaler-vpx).
+{: attention}
+
+Your administrator must:
+
+* Confirm the current software version
+* Perform the necessary upgrade, including any required reboots
+* Validate system operation post-upgrade
+
+IBM Support is available to assist if you run into any issue with this process. If you need help, [create an IBM Support case](/unifiedsupport/cases/form){: external}, select `Citrix NetScaler VPX` as the topic, and provide the following information:
+
+   * Subject: LAS Transition - Upgrade Software Version
+   * VPX instance details, such as your NetScaler IP (NSIP), version, hostname, and serial if available.
+
+## Milestone 2: Installing and activating the new VPX license activation file in the GUI
+{: #transition-netscaler-to-las-ui}
+{: ui}
+
+To transition NetScaler licensing in the NetScaler ADC GUI:
+
+1. Log in to the NetScaler ADC GUI.
+1. Browse to **System > Licenses > ADC License**, then click **LAS Offline Activation**.
+
+   This action generates an activation request file, which contains unique identity information for the NetScaler instance.
+
+1. In the **Generate NetScaler offline activation request file** section, click **Generate**.
+1. After the file is generated, click **Download** to save it to your local system.
+
+   The activation request file expires after 7 days.
+   {: important}
+
+1. Request a license activation file for your NetScaler. To do so, [create an IBM Support case](/unifiedsupport/cases/form){: external} and provide the following information:
+
+   * Subject: LAS Transition
+   * VPX instance details, such as your NetScaler IP, version, hostname, and serial if available.
+   * Attach the LAS activation request file that you generated.
+
+   IBM Support registers the NetScaler with Citrix, obtains a license activation file, and attaches the activation file to your support case.
+
+   The activation file expires after 1 year.
+   {: note}
+
+1. Upload the LAS activation file:
+
+   1. Return to the NetScaler ADC GUI (**System > Licenses > ADC License**, then click **LAS Offline Activation**).
+   1. In the **Upload NetScaler activation file** section, click **Upload File**.
+   1. Select the activation file that you received from IBM Support.
+   1. Click **Yes** to confirm the activation.
+   1. If prompted, click **Reboot** for the license to take effect.
+
+      A reboot isn't required in the following scenarios:
+        * You are switching from file-based licensing to LAS and the entitlement remains unchanged.
+        * You are renewing an existing LAS license and the entitlement remains unchanged.
+
+1. To verify license activation, go to **System > Licenses**.
+
+## Milestone 2: Transitioning NetScaler VPX licensing to LAS from the CLI
+{: #transition-netscaler-to-las-cli}
+{: cli}
+
+To transition NetScaler VPX licensing to LAS from the NetScaler CLI, follow these steps:
+
+1. To generate the LAS activation request file (blob), enter the following command:
+
+   ```sh
+   show ns licenseactivationdata
+   ```
+   {: pre}
+
+1. The generated activation file appears in the following path:
+
+   ```sh
+   /nsconfig/license/<FileName>
+   ```
+   {: pre}
+
+1. Copy the activation file from NetScaler to your local system by using Secure Copy.
+
+   The activation request file expires after 7 days.
+   {: note}
+
+1. [Create an IBM Support case](/unifiedsupport/cases/form){: external} and provide the following information:
+
+   * Subject: LAS Transition
+   * VPX instance details, such as NetScaler IP, version, hostname, and serial if available.
+   * Attach the activation request file that you generated.
+
+   IBM Support registers the request in Citrix Cloud LAS, generates the LAS activation file, and provides it to you through your IBM Support case.
+
+   The activation file expires after 1 year. Complete the activation within this time frame. If the activation file expires, the VPX becomes unlicensed and can stop traffic processing.
+   {: note}
+
+1. To upload the activation file that you receive from IBM Support, enter the following commands:
+
+   ```sh
+      # Copy the activation file from your local system to the following NetScaler directory
+   scp NS_activation_blob.tgz nsroot@<NSIP>:/nsconfig/license
+   ```
+   {: pre}
+
+    ```sh
+      # Run the following command to activate the license on your NetScaler
+   apply ns laslicense -filename NS_activation_blob.tgz -filelocation /nsconfig/license -fixedBandwidth
+   ```
+   {: pre}
+
+1. Reboot the device if prompted.
+
+   A reboot isn't required in the following scenarios:
+     * You are switching from file-based licensing to LAS and the entitlement remains unchanged.
+     * You are renewing an existing LAS license and the entitlement remains unchanged.
+
+1. To verify LAS licensing, enter the following commands:
+
+   ```sh
+   show ns license
+   ```
+   {: pre}
+
+   ```sh
+   show ns laslicense
+   ```
+   {: pre}
+
+1. To monitor the license activation file and apply a new file before it expires, enter the following command:
+
+   ```sh
+   show ns laslicense
+   ```
+   {: pre}
+
+## Renewing your annual license
+{: #monitor-renew-license}
+
+The license activation file is valid for one year. In the NetScaler licensing GUI, go to **System > Licenses** to view:
+
+* The last activation or renewal date
+* Upcoming activation or renewal date
+
+To make sure NetScaler operations remain uninterrupted, follow these steps:
+
+1. Click **Renew now** before the renewal date.
+1. Generate a new activation request file. For instructions, see steps 1-4 in [Installing and activating the new VPX license token](#transition-netscaler-to-las-ui).
+1. [Create an IBM Support case](/unifiedsupport/cases/form){: external} to request a license activation file (see step 5).
+1. Upload the new LAS activation file from IBM (see step 7).
