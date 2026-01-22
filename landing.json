@@ -22,7 +22,7 @@
   },
   "section_highlights": [
     {
-      "title": "Action Required: Update your NetScaler license by 10 April 2026",
+      "title": "Action required: Update your NetScaler license by 10 April 2026",
       "description": "Citrix is retiring file‑based licensing and replacing it with the cloud‑based License Activation Service (LAS).",
       "href": "https://cloud.ibm.com/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-transition-netscaler-to-las&interface=ui",
       "type": "article"

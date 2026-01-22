@@ -11,7 +11,7 @@ subcollection: citrix-netscaler-vpx
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Action Required: Update your NetScaler license
+# Action required: Update your NetScaler license
 {: #transition-netscaler-to-las}
 
 Citrix is retiring file‑based licensing effective 10 April 2026, and replacing it with the cloud‑based License Activation Service (LAS). All NetScaler VPX instances running on IBM Cloud Classic infrastructure must transition to LAS to remain licensed, compliant, and supported.
