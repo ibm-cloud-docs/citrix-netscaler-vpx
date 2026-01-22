@@ -1,7 +1,7 @@
 {
   "version": 2,
   "title": "NetScaler VPX",
-  "introduction": "The Citrix Netscaler VPX is a dedicated virtual software appliance that provides load balancing on both the public and private IBM© Cloud network.",
+  "introduction": "The Citrix Netscaler VPX is a dedicated virtual software appliance that provides load balancing on both the public and private IBM Cloud© network.",
   "product_page": "https://www.ibm.com/blog/announcement/boost-your-application-delivery-with-citrix-netscaler/?mhsrc=ibmsearch_a&mhq=citrix%20vpx",
   "console_page": "/catalog/infrastructure/load-balancer-group",
   "section_topics": {
@@ -22,8 +22,8 @@
   },
   "section_highlights": [
     {
-      "title": "Action Required: Update your NetScaler license",
-      "description": "Citrix is retiring file‑based licensing effective 10 April 2026, and replacing it with the cloud‑based License Activation Service (LAS).",
+      "title": "Action Required: Update your NetScaler license by 10 April 2026",
+      "description": "Citrix is retiring file‑based licensing and replacing it with the cloud‑based License Activation Service (LAS).",
       "href": "https://cloud.ibm.com/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-transition-netscaler-to-las&interface=ui",
       "type": "article"
     },
