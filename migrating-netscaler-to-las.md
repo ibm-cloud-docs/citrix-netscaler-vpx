@@ -40,7 +40,7 @@ Milestone 2: 23 February 2026 — 10 April 2026
 :    Install and activate the new VPX license activation file (blob).
 
 ## Milestone 1: Upgrading to the minimum supported software version
-{: #before-you-begin}
+{: #upgrade-to-minimum-supported-software-version}
 
 Your VPX must run one of the following software versions or later. Appliances running earlier versions cannot install or validate the new license activation file.
 
