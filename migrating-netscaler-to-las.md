@@ -34,13 +34,12 @@ Customers are strongly encouraged to begin planning for the required maintenance
 
 Complete the following action items within the specified timelines to help ensure uninterrupted license validation and continued support:
 
-26 January 2026 — 23 February 2026
-:    Milestone 1: [Upgrade to the minimum supported software version](#upgrade-to-minimum-supported-software-version).
+* **Milestone 1: 26 January 2026 — 23 February 2026**
+   * [Upgrade to the minimum supported software version](#upgrade-to-minimum-supported-software-version).
 
-23 February 2026 — 10 April 2026
-:    Milestone 2: [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-ui).{: ui}
-
-:    Milestone 2: [Transition NetScaler VPX licensing to LAS](#transition-netscaler-to-las-cli).{: cli}
+* **Milestone 2: 23 February 2026 — 10 April 2026**   
+   * [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-ui).{: ui}
+   * [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-cli).{: cli}
 
 ## Milestone 1: Upgrading to the minimum supported software version
 {: #upgrade-to-minimum-supported-software-version}
@@ -107,11 +106,11 @@ To transition NetScaler licensing in the NetScaler ADC GUI:
 
 1. To verify license activation, go to **System > Licenses**.
 
-## Milestone 2: Transitioning NetScaler VPX licensing to LAS from the CLI
+## Milestone 2: Installing and activating the new VPX activation file from the CLI
 {: #transition-netscaler-to-las-cli}
 {: cli}
 
-To transition NetScaler VPX licensing to LAS from the NetScaler CLI, follow these steps:
+To install and activate the new VPX activation file from the NetScaler CLI, follow these steps:
 
 1. To generate the LAS activation request file (blob), enter the following command:
 
