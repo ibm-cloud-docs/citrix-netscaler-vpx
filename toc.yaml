@@ -31,7 +31,6 @@ toc:
       topics:
       - accessing-and-managing-your-netscaler.md
       - upgrade-netscaler.md
-      - migrating-netscaler-to-las.md
       - netscaler-vpx-high-availability-setup.md
       - setting-citrix-forwarding-proxy.md
       - topicgroup:
