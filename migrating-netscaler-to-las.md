@@ -34,10 +34,10 @@ Customers are strongly encouraged to begin planning for the required maintenance
 Complete the following action items within the specified timelines to help ensure uninterrupted license validation and continued support:
 
 26 January 2026 — 23 February 2026
-:    Milestone 1: Upgrade to the minimum supported software version.
+:    Milestone 1: Upgrade to the minimum supported software version. See [Upgrading to the minimum supported software version](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-migrate-netscaler-to-las&interface=ui#upgrade-to-minimum-supported-software-version).
 
 23 February 2026 — 10 April 2026
-:    Milestone 2: Install and activate the new VPX license activation file (blob).
+:    Milestone 2: Install and activate the new VPX license activation file (blob). See [Installing and activating the new VPX license activation file in the GUI](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-migrate-netscaler-to-las&interface=ui#transition-netscaler-to-las-ui) and [Transitioning NetScaler VPX licensing to LAS from the CLI](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-migrate-netscaler-to-las&interface=cli#transition-netscaler-to-las-cli).
 
 ## Milestone 1: Upgrading to the minimum supported software version
 {: #upgrade-to-minimum-supported-software-version}
