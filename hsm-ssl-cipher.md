@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2025
-lastupdated: "2025-04-07"
+  years: 2017, 2026
+lastupdated: "2026-01-22"
 
 keywords:
 
@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 # Create and apply a new cipher suite
 {: #create-and-apply-a-new-cipher-suite}
 
-A cipher suite is a combination of authentication, encryption, Message Authentication Code (MAC) and key exchange algorithms that are used to negotiate the security settings for SSL and TLS protocols.
+A cipher suite is a combination of authentication, encryption, Message Authentication Code (MAC), and key exchange algorithms that are used to negotiate the security settings for SSL and TLS protocols.
 {: shortdesc}
 
 To guarantee proper authentication, you must ensure your {{site.data.keyword.vpx_full}} uses the best combination of ciphers.
@@ -105,12 +105,12 @@ To create a new cipher suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, pe
 
    ```sh
    unbind ssl vserver https_vip2 -cipherName DEFAULT
-   
+
    bind ssl vserver https_vip2 -cipherName SSLLABS
-   
+
    bind ssl vserver https_vip2 -eccCurveName ALL
    ```
-   
+
    The syntax for the previous commands is:
 
    ```sh

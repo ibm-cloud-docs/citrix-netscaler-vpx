@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2025
-lastupdated: "2025-04-21"
+  years: 2017, 2026
+lastupdated: "2026-01-22"
 
 keywords:
 
@@ -59,12 +59,12 @@ To order an SSL certificate for use with your {{site.data.keyword.vpx_full}}, pe
 
 3.	Follow [these instructions](/docs/secrets-manager?topic=secrets-manager-public-certificates&interface=ui) to place the order, pasting your CSR file text in the appropriate field. In the following example, `RapidSSL 1 Year` was chosen.
 
-	As shown, the system processes and interprets the CSR text, then displays this in the following page.
+	As shown, the system processes and interprets the CSR text, then displays certificate request details in the following page.
 
-	Make sure to select a valid email account and domain or subdomain, because this is the designated method to validate the ownership of the domain.
+	Make sure to select a valid email account and domain or subdomain because this validation process is the designated method to validate the ownership of the domain.
 
 	Confirm your order details and click **Place Order**.
 
 4. You receive an order confirmation with the details of the certificate request to the account you indicated.
 
-	Click the link in the email to approve the domain validation request. At this point, the SSL request is ready to begin fulfillment.
+	Click the link in the email to approve the domain validation request and the SSL request is ready to begin fulfillment.

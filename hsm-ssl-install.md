@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2025
-lastupdated: "2025-04-03"
+  years: 2017, 2026
+lastupdated: "2026-01-22"
 
 keywords:
 
@@ -48,7 +48,7 @@ To do so, perform the following procedure:
 
 	Where `keyName` is the name of the key that is created on the IBM© Hardware Security Module (HSM) with the CMU utility. The `serialNum` parameter is the serial number of the partition in question. The `password` parameter, as before, is the password of the partition on which the keys are present.
 
-	The `Internal error` message is expected due to the increased time that it takes to complete this step. The key should be properly added. However, any other error messages you receive should be addressed.
+	The `Internal error` message is expected due to the increased time that it takes to complete this step. The key must be properly added. However, any other error messages that you receive must be addressed.
     {: note}
 
 3.	Confirm that the key was added:
@@ -66,14 +66,14 @@ To do so, perform the following procedure:
 	Done
 	```
 
-	For the previous command the following syntax is used:
+	For the previous command, the following syntax is used:
 
 	```sh
 	add ssl certkey <CertkeyName> -cert <cert path/name>
 	-hsmkey <KeyName>
 	```
 
-	Where `certkey` is the name of the certificate object to be added in the VPX device. The `cert` parameter contains the name and path to the file, if it is located in a directory other than the current one. Lastly, `hsmkey` contains the name of the key added in the previous step.
+	Where `certkey` is the name of the certificate object to be added in the VPX device. The `cert` parameter contains the name and path to the file, if it is located in a directory other than the current one. Lastly, `hsmkey` contains the name of the key that is added in the previous step.
 
 5.	Confirm that the certificate was installed:
 
@@ -104,4 +104,3 @@ To do so, perform the following procedure:
 	Done
 	>
 	```
-	

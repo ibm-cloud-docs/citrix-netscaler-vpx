@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-11-12"
+  years: 2017, 2026
+lastupdated: "2026-01-22"
 
 keywords:
 
@@ -31,26 +31,26 @@ To initialize your device, follow these steps:
 
     ```sh
     [jpmongehsm2] lunash:>hsm init -l jpmonge
-    
+
     Please enter a password for the HSM Administrator:
     > ********
-    
+
     Please re-enter password to confirm:
     > ********
-    
+
     Please enter a cloning domain to use for initializing this HSM:
     > ********
-    
+
     Please re-enter cloning domain to confirm:
     > ********
-    
+
     CAUTION:  Are you sure you wish to initialize this HSM?
-    
+
     Type 'proceed' to initialize the HSM, or 'quit'
         to quit now.
         > proceed
 	  'hsm init' successful.
-	  
+
 	  Command Result : 0 (Success)
     ```
     {: codeblock}
@@ -59,6 +59,6 @@ To initialize your device, follow these steps:
 
 The `-l` parameter or label is a parameter that is used to assign an identifier to the HSM, and can be any meaningful text or description that is related to the business, administrator, or the role it fulfills. The HSM administrator password is the designated password for the HSM Security Officer (SO). The SOd is essentially a profile that is required to create and configure crypto objects, as well as make changes to the HSM environment.
 
-Lastly, the cloning domain is a shared identifier that allows objects to be formed among a group of HSMs. This is typically used for backup and/or HA.
+Lastly, the cloning domain is a shared identifier that allows objects to be formed among a group of HSMs. This mechanism is typically used for backup, HA or both.
 
 Refer to the [LunaSH Command Reference Guide](https://public.dhe.ibm.com/cloud/bluemix/network/vpx/lunash_command_reference_guide.pdf){: external} for all available commands supported in the HSM CLI.

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-11-13"
+  years: 2017, 2026
+lastupdated: "2026-01-22"
 
 keywords:
 
@@ -117,12 +117,12 @@ The FIPS 140-2 security algorithms can be enabled if you need to ensure the Hard
 
 4. Enable FIPS 140-2 Mode.
 
-	To enable FIPS mode, you must modify the policy that is reviewed in step two of this procedure, (`Allow non-FIPS algorithms`):
+	To enable FIPS mode, you must modify the policy that is reviewed in step two of this procedure (`Allow non-FIPS algorithms`):
 
-	This procedure erases any existing partitions in the HSM. If you already created partitions and objects, make sure to review the partition contents and configurations in order to recreate them when the new partitions are created.
+	This procedure erases any existing partitions in the HSM. If you already created partitions and objects, make sure to review the partition contents and configurations in order to re-create them when the new partitions are created.
 	{: note}
 
-	Use the `hsm changepolicy` command to disable policy 12 and only allow the usage of FIPS algorithms:
+	Use the `hsm changepolicy` command to disable policy 12 and allow the usage of only FIPS algorithms:
 
 	```sh
 	[jdoe1] lunash:>hsm changepolicy -policy 12 -value 0
@@ -145,7 +145,7 @@ The FIPS 140-2 security algorithms can be enabled if you need to ensure the Hard
 	```
 	{: screen}
 
-5. Confirm that FIPS mode is now enabled once again using the command `hsm show`.
+5. Confirm that FIPS mode is now enabled by using the command `hsm show`.
 
 	```sh
 	[jdoe1] lunash:>hsm show
