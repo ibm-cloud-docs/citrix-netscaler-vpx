@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-11-12"
+  years: 2017, 2026
+lastupdated: "2026-01-22"
 
 keywords:
 
@@ -28,7 +28,7 @@ All VPX commands and outputs in this document list either `netscalername#` (indi
 {: note}
 
 1. (OPTIONAL) Obtain the `safenet_dirs.tar` file and transfer it to the VPX in the `/var` directory. Download the `safenet_dirs.tar` file in the following locations:
-   - [Commercial users](http://downloads.service.softlayer.com/citrix/netscaler/Safenet-HSM/){: external} 
+   - [Commercial users](http://downloads.service.softlayer.com/citrix/netscaler/Safenet-HSM/){: external}
    - [Federal government users](http://downloads.service.usgov.softlayer.com/citrix/netscaler/Safenet-HSM/){: external}
 
    Ensure that you are logged in to your IBM Cloud account to access the links.
@@ -90,11 +90,11 @@ All VPX commands and outputs in this document list either `netscalername#` (indi
 	config                  install_client.sh       safenet
 	```
 
-6. Navigate to the `/var/safenet/config/` directoy and run the `safenet_config` script:
+6. Navigate to the `/var/safenet/config/` directory and run the `safenet_config` script:
 
 	```sh
 	root@IBMADC690867-s6dr# cd /var/safenet/config/
-	root@IBMADC690867-s6dr# pwd               
+	root@IBMADC690867-s6dr# pwd
 	/var/safenet/config
 
 	root@IBMADC690867-s6dr# sh safenet_config

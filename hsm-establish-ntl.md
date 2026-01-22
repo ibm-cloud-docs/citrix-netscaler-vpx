@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-08-02"
+  years: 2017, 2026
+lastupdated: "2026-01-22"
 
 keywords:
 
@@ -22,7 +22,7 @@ Be advised that the trust link requires TCP port 1792 to be accessible in both t
 
 To establish your NTL, perform the following procedure:
 
-1. Navigate to the directory `/var/safenet/safenet/lunaclient/bin` and create the certificate by using the VTL utility.
+1. Go to the directory `/var/safenet/safenet/lunaclient/bin` and create the certificate by using the VTL utility.
 
     ```sh
     root@IBMADC690867-s6dr# cd /var/safenet/safenet/lunaclient/bin
@@ -49,9 +49,9 @@ To establish your NTL, perform the following procedure:
 
     hsm_admin@10.121.229.201's password:
 
-    10.121.229.224.pem                                                 
-	100%  818     	
-	1.6MB/s   
+    10.121.229.224.pem
+	100%  818
+	1.6MB/s
 	00:00
 	```
 
@@ -63,9 +63,9 @@ To establish your NTL, perform the following procedure:
     root@IBMADC690867-s6dr# scp hsm_admin@10.121.229.201:server.pem .
     hsm_admin@10.121.229.201's password:
 
-    server.pem                                                         
-    100% 1180     	
-    2.3MB/s   
+    server.pem
+    100% 1180
+    2.3MB/s
     00:00
 
     root@IBMADC690867-s6dr# vtl addServer -n 10.121.229.201 -c server.pem
@@ -96,7 +96,7 @@ To establish your NTL, perform the following procedure:
     registered client 3: NS-jpmongevsi05win2012vsi-4v3
     registered client 4: NS-IBMADC690867-k8ru
     registered client 5: NS-IBMADC690867-wnzs
-    
+
     Command Result : 0 (Success)
     ```
 
@@ -104,9 +104,9 @@ To establish your NTL, perform the following procedure:
 
     ```sh
     [jpmongehsm2] lunash:>client register -c NS-IBMADC690867-s6dr -ip 10.121.229.224
-    
+
     'client register' successful.
-    
+
     Command Result : 0 (Success)
     ```
 
@@ -116,30 +116,30 @@ To establish your NTL, perform the following procedure:
     client register -client <client_name> -ip <client_IP_address>
     ```
 
-    However, the client name does not have to match the identifier assigned and used by {{site.data.keyword.cloud_notm}}. This arrangement keeps names consistent.
+    However, the client name does not have to match the identifier that is assigned and used by {{site.data.keyword.cloud_notm}}. This arrangement keeps names consistent.
 
 1. Confirm that the client was added:
 
     ```sh
     [jpmongehsm2] lunash:>client list
-    
+
     registered client 1: NS-IBMADC690867-d85b
     registered client 2: NS-IBMADC690867-4v36
     registered client 3: NS-jpmongevsi05win2012vsi-4v36
     registered client 4: NS-IBMADC690867-k8ru
     registered client 5: NS-IBMADC690867-wnzs
     registered client 6: NS-IBMADC690867-s6dr
-    
+
     Command Result : 0 (Success)
     ```
 
-1. Assign a partition to the client. Make sure that you reference the partition that is created before. Ensure the name matches the identifier for the client that is displayed in the previous step.
+1. Assign a partition to the client. Make sure that you reference the partition that is created before. Ensure that the name matches the identifier for the client that is displayed in the previous step.
 
     ```sh
     [jpmongehsm2] lunash:>client assignPartition -c NS-IBMADC690867-s6dr -p partition6
-    
+
     'client assignPartition' successful.
-    
+
     Command Result : 0 (Success)
     ```
 
@@ -153,9 +153,9 @@ To establish your NTL, perform the following procedure:
 
     ```sh
     root@IBMADC690867-s6dr# vtl verify
-    
+
     The following Luna SA Slots/Partitions were found:
-    
+
     Slot    Serial #                Label
     ====    ================        =====
     0           534071053        partition6
@@ -203,9 +203,9 @@ To establish your NTL, perform the following procedure:
 
     ```sh
     root@IBMADC690867-s6dr# ps aux | grep safenet_gw
-    root       
-    6817  0.0  0.0 10068  1500  ??  Ss    
-    4:48PM   
+    root
+    6817  0.0  0.0 10068  1500  ??  Ss
+    4:48PM
     0:00.00 /var/safenet/gateway/safenet_gw
     ```
 
