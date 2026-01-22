@@ -35,7 +35,7 @@ Complete the following action items within the specified timelines to help ensur
 
 * **Milestone 1** (26 January 2026 — 23 February 2026)
 
-   [Upgrade to the minimum supported software version](#upgrade-to-minimum-supported-software-version)
+   [Upgrade to the minimum supported software version](#upgrade-to-minimum-supported-software-version){: ui}{: cli}
 
 * **Milestone 2** (23 February 2026 — 10 April 2026)
 
