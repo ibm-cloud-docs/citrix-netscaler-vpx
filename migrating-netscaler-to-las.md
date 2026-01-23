@@ -128,7 +128,12 @@ To install and activate the new VPX activation file from the NetScaler CLI, foll
    ```
    {: pre}
 
-1. Copy the activation file from NetScaler to your local system by using Secure Copy.
+1. Copy the activation file from NetScaler to your local system by using the Secure Copy command (SCP).
+
+   ```sh
+   scp nsroot@<NSIP>:/nsconfig/license/NS_activation_blob.tgz .
+   ```
+   {: pre}
 
    The activation request file expires after 7 days.
    {: note}
