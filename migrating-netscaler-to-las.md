@@ -90,6 +90,9 @@ To transition NetScaler licensing in the NetScaler ADC GUI:
    * VPX instance details, such as your NetScaler IP, version, hostname, and serial if available.
    * Attach the LAS activation request file that you generated.
 
+      Do not open a new support case. Use the case provided by IBM Support only. 
+      {: remember}
+
    IBM Support registers the NetScaler with Citrix, obtains a license activation file, and attaches the activation file to your support case.
 
    The activation file expires after 1 year.
@@ -107,7 +110,7 @@ To transition NetScaler licensing in the NetScaler ADC GUI:
         * You are switching from file-based licensing to LAS and the entitlement remains unchanged.
         * You are renewing an existing LAS license and the entitlement remains unchanged.
 
-1. To verify license activation, go to **System > Licenses**.
+1. This concludes the license transition to LAS. To verify license activation, go to **System > Licenses**.
 
 ## Milestone 2: Installing and activating the new VPX activation file from the CLI
 {: #transition-netscaler-to-las-cli}
