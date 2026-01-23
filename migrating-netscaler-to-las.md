@@ -71,7 +71,7 @@ Your administrator must:
 {: #transition-netscaler-to-las-ui}
 {: ui}
 
-To transition NetScaler licensing in the NetScaler ADC GUI:
+To transition NetScaler licensing to LAS:
 
 1. Log in to the NetScaler ADC GUI.
 1. Browse to **System > Licenses > ADC License**, then click **LAS Offline Activation**.
