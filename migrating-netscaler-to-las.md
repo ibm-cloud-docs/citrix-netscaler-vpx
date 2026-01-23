@@ -31,19 +31,19 @@ Customers are strongly encouraged to begin planning for the required maintenance
 ## Key milestones
 {: #milestones}
 
-Complete the following milestones before 10 April 2026 to help ensure uninterrupted license validation and continued support. You can start milestone 2 immediately after completing milestone 1.
+Complete the following milestones before 10 April 2026 to help ensure uninterrupted license validation and continued support. 
 
 * **Milestone 1**: Starts 26 January 2026
 
-   [Upgrade to the minimum supported software version](#upgrade-to-minimum-supported-software-version)
+   [Upgrade to the minimum supported software version](#upgrade-to-minimum-supported-software-version) (performed by Customer)
 
-* **Milestone 2**: Ends 10 April 2026
+* **Milestone 2**: Start any time after completing Milestone 1. Mandatory completion by 10 April 2026.
 
-   [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-ui){: ui}
+   [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-ui) (performed by Customer and IBM Support){: ui}
 
-   [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-cli){: cli}
+   [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-cli) (performed by Customer and IBM Support){: cli}
 
-Starting 2 February 2026, IBM will open a separate support case for each VPX instance that you own. To complete the LAS transition, you must use these support cases to submit your NetScaler activation request files and receive the corresponding license activation files from IBM Support.
+Starting 2 February 2026, IBM will create separate support cases for each VPX instance that you own. To complete the LAS transition, you must communicate with IBM Support through these cases to submit your NetScaler activation request files and receive the corresponding license activation files. IBM Support is also available to assist with the software upgrade process, if needed.
 {: important}
 
 To view support cases, log in to the IBM Support site at [https://ibm.com/mysupport](https://ibm.com/mysupport){: external} and click **Cases > View your cases**. 
