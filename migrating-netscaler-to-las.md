@@ -193,7 +193,6 @@ The license activation file is valid for one year. Follow these steps to monitor
    1. [Create an IBM Support case](/unifiedsupport/cases/form){: external} to request a license activation file (see step 5).{: ui}
    1. Upload the new LAS activation file from IBM (see step 7).{: ui}
 
-1. To monitor the license activation file and apply a new file before it expires, enter the following command:{: cli}
 
    ```sh
    show ns laslicense
