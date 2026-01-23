@@ -33,21 +33,18 @@ Customers are strongly encouraged to begin planning for the required maintenance
 
 Complete the following milestones before 10 April 2026 to help ensure uninterrupted license validation and continued support. 
 
-* **Milestone 1**: Starts 26 January 2026
+* **Milestone 1** (_performed by Customer_): Starts 26 January 2026 
 
-   [Upgrade to the minimum supported software version](#upgrade-to-minimum-supported-software-version) (performed by Customer)
+   [Upgrade to the minimum supported software version](#upgrade-to-minimum-supported-software-version) 
 
-* **Milestone 2**: Start any time after completing Milestone 1. Mandatory completion by 10 April 2026.
+* **Milestone 2** (_performed by Customer and IBM Support)_: Start any time after completing Milestone 1. Mandatory completion by 10 April 2026.
 
-   [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-ui) (performed by Customer and IBM Support){: ui}
+   [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-ui){: ui}
 
-   [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-cli) (performed by Customer and IBM Support){: cli}
+   [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-cli){: cli}
 
 Starting 2 February 2026, IBM will create separate support cases for each VPX instance that you own. To complete the LAS transition, you must communicate with IBM Support through these cases to submit your NetScaler activation request files and receive the corresponding license activation files. IBM Support is also available to assist with the software upgrade process, if needed.
 {: important}
-
-To view support cases, log in to the IBM Support site at [https://ibm.com/mysupport](https://ibm.com/mysupport){: external} and click **Cases > View your cases**. 
-{: tip}
 
 ## Milestone 1: Upgrading to the minimum supported software version
 {: #upgrade-to-minimum-supported-software-version}
@@ -84,14 +81,14 @@ To transition NetScaler licensing to LAS:
    The activation request file expires after 7 days.
    {: important}
 
-1. Request a license activation file for your NetScaler. To do so, open the IBM-provided support case titled "VPX License Transition" and provide the following information:
+1. To request a license activation file for your NetScaler, open the IBM-provided support case titled "VPX License Transition" and provide the following information:
 
    * Subject: LAS Transition
    * VPX instance details, such as your NetScaler IP, version, hostname, and serial if available.
    * Attach the LAS activation request file that you generated.
 
-      Do not open a new support case. Use the case provided by IBM Support only. 
-      {: remember}
+   Do not open a new support case. Use the case provided by IBM Support only. To view support cases, log in to the IBM Support site at [https://ibm.com/mysupport](https://ibm.com/mysupport){: external} and click **Cases > View your cases**. 
+   {: remember}
 
    IBM Support registers the NetScaler with Citrix, obtains a license activation file, and attaches the activation file to your support case.
 
