@@ -211,5 +211,5 @@ The license activation file is valid for one year. Follow these steps to monitor
    {: cli}
 
 1. Generate the LAS activation request file. For instructions, see steps 1-3 in [Installing and activating the new VPX activation file from the CLI](#transition-netscaler-to-las-cli).{: cli}
-1. Open the IBM-generated support case titled "VPX License Transition" and request a license activation file (see Step 4).{: cli}
+1. Open the IBM-generated support case titled "VPX License Transition" and request a license activation file (see step 4).{: cli}
 1. Upload the new LAS activation file from IBM Support (see step 5).{: cli}
