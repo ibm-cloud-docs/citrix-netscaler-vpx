@@ -2,7 +2,7 @@
   "version": 2,
   "title": "NetScaler VPX",
   "introduction": "The Citrix Netscaler VPX is a dedicated virtual software appliance that provides load balancing on both the public and private IBM Cloud© network.",
-  "product_page": "https://cloud.ibm.com/catalog/infrastructure/citrix_netscaler_vpx",
+  "product_page": "https://www.ibm.com/support/pages/node/963594?mhsrc=ibmsearch_a&mhq=netscaler",
   "console_page": "/catalog/infrastructure/load-balancer-group",
   "section_topics": {
     "links": [
