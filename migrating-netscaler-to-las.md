@@ -26,7 +26,7 @@ As you plan your upgrade, consider the following service impacts:
 * Completing the licensing transition requires coordination between your appliance administrator and IBM Support to exchange the information that is needed to generate the new licensing data.
 
 Customers are strongly encouraged to begin planning for the required maintenance window and associated downtime as early as possible.
-{: important}
+{: note}
 
 ## Key milestones
 {: #milestones}
