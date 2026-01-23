@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-22"
+lastupdated: "2026-01-23"
 
 keywords:
 
@@ -49,7 +49,7 @@ In this step-by-step guide you learn how to configure SSL for a {{site.data.keyw
 | [Install the certificate](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-install-your-ssl-certificate) | | Install the SSL Certificate that you created in the previous step-by-step, [Deploying, and configuring the IBM Hardware Security Module (HSM) with Citrix Netscaler VPX](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx). |
 | [Check and configure the DNS record](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-check-and-configure-the-dns-record) | Ensure that a DNS record exists for the FQDN that points to the public address to be configured in the {{site.data.keyword.vpx_full}} as a Virtual Server. |
 | [Add and configure the SSL Virtual Server](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-add-and-configure-the-ssl-virtual-server) | Add and configure an SSL Virtual Server. |
-| [Create and apply a new cipher suite](/docs/citrix-netscaler-vpx? topic=citrix-netscaler-vpx-create-and-apply-a-new-cipher-suite) | Create a cipher suite that prioritizes and preferences AEAD, ECDHE, and ECDSA. |
+| [Create and apply a new cipher suite](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-and-apply-a-new-cipher-suite) | Create a cipher suite that prioritizes and preferences AEAD, ECDHE, and ECDSA. |
 {: caption="Configuring SSL" caption-side="top"}
 
 ## Extra resources

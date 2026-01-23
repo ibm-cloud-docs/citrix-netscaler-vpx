@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-22"
+lastupdated: "2026-01-23"
 
 keywords:
 
@@ -41,7 +41,7 @@ In this step-by-step guide you learn how to deploy and configure an HSM with a {
 | Task | Description |
 | ---- | ----------- |
 | [Order a Hardware Security Module (HSM)](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-the-ibm-hardware-security-module-hsm-) | First, you order an HSM. |
-| [Order a {{site.data.keyword.vpx_full}}](/docs/citrix-netscaler-vpx? topic=citrix-netscaler-vpx-order-a-citrix-netscaler-vpx) | If you haven't already, order a {{site.data.keyword.vpx_full}}. |
+| [Order a {{site.data.keyword.vpx_full}}](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-a-citrix-netscaler-vpx) | If you haven't already, order a {{site.data.keyword.vpx_full}}. |
 | [Initialize the HSM](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-initialize-ibm-hardware-security-module-hsm-) | Most configurations require initialization of the HSM device. Without this, only certain `show` commands can be executed. |
 | [Create a partition](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-a-partition) | A partition is a logical and independent space that is associated or attached to the client requesting or creating cryptographic objects in the HSM engine. |
 | [Install the HSM client software](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-install-the-ibm-hardware-security-module-hsm-client-software) | In this sub-section, VPX is installed with the software and utilities that are required to interact with the HSM. |
