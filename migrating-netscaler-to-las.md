@@ -31,17 +31,23 @@ Customers are strongly encouraged to begin planning for the required maintenance
 ## Key milestones
 {: #milestones}
 
-Complete the following milestones before 10 April 2026 to help ensure uninterrupted license validation and continued support. You can start Milestone 2 immediately after completing Milestone 1.
+Complete the following milestones before 10 April 2026 to help ensure uninterrupted license validation and continued support. You can start milestone 2 immediately after completing milestone 1.
 
-* **Milestone 1** starts 26 January 2026
+* **Milestone 1**: Starts 26 January 2026
 
    [Upgrade to the minimum supported software version](#upgrade-to-minimum-supported-software-version)
 
-* **Milestone 2** ends 10 April 2026
+* **Milestone 2**: Ends 10 April 2026
 
    [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-ui){: ui}
 
    [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-cli){: cli}
+
+Starting 2 February 2026, IBM will open a separate support case for each VPX instance you own. To complete the LAS transition, you must use these support cases to submit your NetScaler activation request files and receive the corresponding license activation files from IBM Support.
+{: important}
+
+To view support cases, log in to the IBM Support site at [https://ibm.com/mysupport](https://ibm.com/mysupport){: external} site and click **Cases > View your cases**. 
+{: tip}
 
 ## Milestone 1: Upgrading to the minimum supported software version
 {: #upgrade-to-minimum-supported-software-version}
@@ -60,12 +66,6 @@ Your administrator must:
 * Confirm the current software version
 * Perform the upgrade, including any required reboots
 * Validate system operation post-upgrade
-
-Starting 2 February 2026, IBM will open a support case for each VPX instance that you own. Use these cases to submit NetScaler activation request files and receive license activation files from IBM Support as instructed.
-{: attention}
-
-To view your support cases, log in to the IBM Support site at [https://ibm.com/mysupport](https://ibm.com/mysupport){: external} site and click **Cases > View your cases**. 
-{: tip}
 
 ## Milestone 2: Installing and activating the new VPX license activation file in the GUI
 {: #transition-netscaler-to-las-ui}
