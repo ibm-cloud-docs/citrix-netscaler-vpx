@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-11-13"
+  years: 2017, 2026
+lastupdated: "2026-01-23"
 
 keywords:
 
@@ -45,16 +45,16 @@ This guide assumes ownership of both devices. Visit the following links for inst
 ## What you can accomplish
 {: #accomplish}
 
-In this guide you learn how to configure an IPsec VPN in the Citrix VPX device.
+In this guide, you learn how to configure an IPsec VPN in the Citrix VPX device.
 
-Task  | Description
-------------- | -------------
-[Enable Features in VPX](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-enable-required-features-in-vpx) | First, enable the required features to create the IPsec VPN.
-[Create IPsec Profile](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ipsec-profile) | The IPsec profile includes security parameters for establishing the connection.
-[Create IP Tunnel](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ip-tunnel) | In this section, you create an IP tunnel object to specify both local and remote IP addresses, as well as protocol parameters.
-[Create Policy Based Routing (PBR)](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-policy-based-routing) | PBR is used to define the unique traffic parameters for both local and remote subnets.
-[Configure VRA](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configuring-vra) | Configure the Virtual Router Appliance, by using equivalent VPN configuration syntax.
-[Verify VPN Status](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-verifying-vpn-tunnel-connection) | Verify the VPN operation state and conduct a simple connectivity test.
+| Task | Description |
+| ------------- | ------------- |
+| [Enable Features in VPX](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-enable-required-features-in-vpx) | First, enable the required features to create the IPsec VPN. |
+| [Create IPsec Profile](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ipsec-profile) | The IPsec profile includes security parameters for establishing the connection. |
+| [Create IP Tunnel](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ip-tunnel) | In this section, you create an IP tunnel object to specify both local and remote IP addresses, as well as protocol parameters. |
+| [Create Policy Based Routing (PBR)](/docs/citrix-netscaler-vpx? topic=citrix-netscaler-vpx-creating-policy-based-routing) | PBR is used to define the unique traffic parameters for both local and remote subnets. |
+| [Configure VRA](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configuring-vra) | Configure the Virtual Router Appliance by using equivalent VPN configuration syntax. |
+| [Verify VPN Status](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-verifying-vpn-tunnel-connection) | Verify the VPN operation state and conduct a simple connectivity test. |
 {: caption="What you'll accomplish" caption-side="bottom"}
 
 ## Extra resources

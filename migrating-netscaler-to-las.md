@@ -23,7 +23,7 @@ As you plan your upgrade, consider the following service impacts:
 
 * The required actions will require appliance reboots, resulting in temporary service disruption.
 * The update can't be performed on a live system and must be completed during a scheduled maintenance window.
-* Completing the licensing transition requires coordination between your appliance administrator and IBM Support to exchange the information needed to generate the new licensing data.
+* Completing the licensing transition requires coordination between your appliance administrator and IBM Support to exchange the information that is needed to generate the new licensing data.
 
 Customers are strongly encouraged to begin planning for the required maintenance window and associated downtime as early as possible.
 {: important}
@@ -61,7 +61,7 @@ Your administrator must:
 * Perform the necessary upgrade, including any required reboots
 * Validate system operation post-upgrade
 
-IBM Support is available to assist if you run into any issue with this process. If you need help, [create an IBM Support case](/unifiedsupport/cases/form){: external}, select `Citrix NetScaler VPX` as the topic, and provide the following information:
+IBM Support is available to assist if you run into any issues with this process. If you need help, [create an IBM Support case](/unifiedsupport/cases/form){: external}, select `Citrix NetScaler VPX` as the topic, and provide the following information:
 
    * Subject: LAS Transition - Upgrade Software Version
    * VPX instance details, such as your NetScaler IP (NSIP), version, hostname, and serial if available.
@@ -186,7 +186,7 @@ To install and activate the new VPX activation file from the NetScaler CLI, foll
 ## Renewing your annual license
 {: #monitor-renew-license}
 
-The license activation file is valid for one year. Follow these steps to monitor and renew your license: 
+The license activation file is valid for one year. Follow these steps to monitor and renew your license:
 
 1. In the NetScaler licensing GUI, go to **System > Licenses** to view:{: ui}
 

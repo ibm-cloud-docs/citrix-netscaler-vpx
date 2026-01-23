@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-08-02"
+  years: 2017, 2026
+lastupdated: "2026-01-23"
 
 keywords: nsip, snip, vip
 
@@ -30,7 +30,7 @@ A SNIP is the source IP address of a packet that is used by the NetScaler every 
 ## Virtual IP (VIP)
 {: #virtual-ip-vip-}
 
-A VIP is an IP address to which a client sends requests. The NetScaler terminates the client connection at the VIP and then initiates a connection with a server that is configured in the load balancing service. This can be either a public IP address for public (internet) traffic, or a private IP address for private (intranet) traffic.
+A VIP is an IP address to which a client sends requests. The NetScaler terminates the client connection at the VIP and then initiates a connection with a server that is configured in the load balancing service. This IP address can be either a public IP address for public (internet) traffic, or a private IP address for private (intranet) traffic.
 
 ## Virtual server
 {: #virtual-server}
