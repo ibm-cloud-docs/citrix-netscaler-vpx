@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2025
-lastupdated: "2025-07-14"
+  years: 2017, 2026
+lastupdated: "2026-01-23"
 
 keywords: faq, faqs, questions, options, ipv6, traffic, network, ha, ssl, vpn
 
@@ -72,7 +72,7 @@ Enabling the USIP address mode on the appliance adds flexibility to the applianc
 {: faq}
 {: support}
 
-Port 3010, for synchronization and command propagation. UDP Port 3003, to exchange heartbeat packets.
+Port 3010 for synchronization and command propagation. UDP Port 3003 to exchange heartbeat packets.
 
 ## What version of NetScaler VPX includes global server load balancing (GSLB)?
 {: #version}
@@ -88,13 +88,13 @@ Platinum.
 
 Yes, NetScaler VPX appliances support High Availability (HA) configurations.
 
-NetScaler VPX servers are not redundant, unless configured in HA mode with a partner. As part of your back up and recovery strategy, you should deploy an HA environment when using NetScaler VPX.
+NetScaler VPX servers are not redundant unless configured in HA mode with a partner. As part of your back up and recovery strategy, you should deploy an HA environment when you use NetScaler VPX.
 
-It is also important to provide redundancy for other hardware and software components. For example, power supplies and local disk drives may not have redundancy. A failure in these components may result in data loss.
+It is also important to provide redundancy for other hardware and software components. For example, power supplies and local disk drives might not have redundancy. A failure in these components can result in data loss.
 
 ## Does the IBM Cloud NetScaler offering include SSL VPN functions?
 {: #vpn}
 {: faq}
 {: support}
 
-Yes, this feature is known as NetScaler Gateway™ and is included in all editions.  For more information regarding this feature, please visit the [Citrix website")](https://www.netscaler.com){: external}
+Yes, this feature is known as NetScaler Gateway™ and is included in all editions. For more information about this feature, see [Citrix website")](https://www.netscaler.com){: external}

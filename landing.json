@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "title": "Citrix VPX",
-  "introduction": "The Citrix Netscaler VPX is a dedicated virtual software appliance that provides load balancing on both the public and private IBM© Cloud network.",
-  "product_page": "https://www.ibm.com/blog/announcement/boost-your-application-delivery-with-citrix-netscaler/?mhsrc=ibmsearch_a&mhq=citrix%20vpx",
+  "title": "NetScaler VPX",
+  "introduction": "The Citrix Netscaler VPX is a dedicated virtual software appliance that provides load balancing on both the public and private IBM Cloud© network.",
+  "product_page": "https://www.ibm.com/support/pages/node/963594?mhsrc=ibmsearch_a&mhq=netscaler",
   "console_page": "/catalog/infrastructure/load-balancer-group",
   "section_topics": {
     "links": [
@@ -22,21 +22,20 @@
   },
   "section_highlights": [
     {
+      "title": "Action required: Update your NetScaler license by 10 April 2026",
+      "description": "Citrix is retiring file‑based licensing and replacing it with the cloud‑based License Activation Service (LAS).",
+      "href": "https://cloud.ibm.com/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-transition-netscaler-to-las&interface=ui",
+      "type": "article"
+    },
+    {
       "title": "Citrix product matrix",
       "description": "The Product Matrix provides information for Citrix products whose lifecycle is governed by phases.",
       "href": "https://www.citrix.com/support/product-lifecycle/product-matrix.html",
       "type": "white-paper"
-    },
-    {
-      "title": "What is load balancing?",
-      "description": "A usuful summary on the specifics around load balancing.",
-      "href": "https://www.ibm.com/think/topics/load-balancing",
-      "type": "blog",
-      "recommended": true
     }
   ],
   "section_updates": {
-    "view_more": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started",
+    "view_more": "/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-citrix-netscaler-vpx-release-notes",
     "tiles": [
       {
         "date": "Version 12.1",

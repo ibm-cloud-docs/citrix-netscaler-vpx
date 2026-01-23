@@ -13,6 +13,7 @@ toc:
   - navgroup:
       id: learn
       topics:
+      - migrating-netscaler-to-las.md
       - getting-started.md
       - about-citrix-netscaler-vpx.md
       - terminology.md
