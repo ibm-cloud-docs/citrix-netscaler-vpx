@@ -46,7 +46,7 @@ Complete the following milestones before 10 April 2026 to help ensure uninterrup
 Starting 2 February 2026, IBM will open a separate support case for each VPX instance that you own. To complete the LAS transition, you must use these support cases to submit your NetScaler activation request files and receive the corresponding license activation files from IBM Support.
 {: important}
 
-To view support cases, log in to the IBM Support site at [https://ibm.com/mysupport](https://ibm.com/mysupport){: external} site and click **Cases > View your cases**. 
+To view support cases, log in to the IBM Support site at [https://ibm.com/mysupport](https://ibm.com/mysupport){: external} and click **Cases > View your cases**. 
 {: tip}
 
 ## Milestone 1: Upgrading to the minimum supported software version
