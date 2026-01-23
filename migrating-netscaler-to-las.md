@@ -205,6 +205,6 @@ The license activation file is valid for one year. Follow these steps to monitor
    The command output displays the LAS license details including activation and renewal dates.
    {: cli}
 
-1. Generate the LAS activation request file (blob). For instructions, see steps 1-5 in [Installing and activating the new VPX activation file from the CLI](#transition-netscaler-to-las-cli).{: cli}
+1. Generate the LAS activation request file (blob). For instructions, see steps 1-3 in [Installing and activating the new VPX activation file from the CLI](#transition-netscaler-to-las-cli).{: cli}
 1. [Create an IBM Support case](/unifiedsupport/cases/form){: external} to request a license activation file (see step 4).{: cli}
 1. Upload the new LAS activation file from IBM (see step 5).{: cli}
