@@ -84,7 +84,7 @@ To transition NetScaler licensing in the NetScaler ADC GUI:
    The activation request file expires after 7 days.
    {: important}
 
-1. Request a license activation file for your NetScaler. To do so, open the IBM-generated support case titled "VPX License Migration" and provide the following information:
+1. Request a license activation file for your NetScaler. To do so, open the IBM-generated support case titled "VPX License Transition" and provide the following information:
 
    * Subject: LAS Transition
    * VPX instance details, such as your NetScaler IP, version, hostname, and serial if available.
