@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-23"
+lastupdated: "2026-01-29"
 
 keywords: order, citrix, vpx, overview
 
@@ -31,11 +31,11 @@ Customers are strongly encouraged to begin planning for the required maintenance
 ## Key milestones
 {: #milestones}
 
-Complete the following milestones before 10 April 2026 to help ensure uninterrupted license validation and continued support. 
+Complete the following milestones before 10 April 2026 to help ensure uninterrupted license validation and continued support.
 
-* **Milestone 1** (_performed by Customer_): Starts 26 January 2026 
+* **Milestone 1** (_performed by Customer_): Starts 26 January 2026
 
-   [Upgrade to the minimum supported software version](#upgrade-to-minimum-supported-software-version) 
+   [Upgrade to the minimum supported software version](#upgrade-to-minimum-supported-software-version)
 
 * **Milestone 2** (_performed by Customer and IBM Support)_: Start any time after completing Milestone 1. Mandatory completion by 10 April 2026.
 
@@ -87,7 +87,7 @@ To transition NetScaler licensing to LAS:
    * VPX instance details, such as your NetScaler IP, version, hostname, and serial if available.
    * Attach the LAS activation request file that you generated.
 
-   Do not open a new support case. Use the case provided by IBM Support only. To view support cases, log in to the IBM Support site at [https://ibm.com/mysupport](https://ibm.com/mysupport){: external} and click **Cases > View your cases**. 
+   Do not open a new support case. Use the case provided by IBM Support only. To view support cases, log in to the IBM Support site at [https://cloud.ibm.com/unifiedsupport/cases](https://cloud.ibm.com/unifiedsupport/cases){: external} and click **Cases > View your cases**.
    {: remember}
 
    IBM Support registers the NetScaler with Citrix, obtains a license activation file, and attaches the activation file to your support case.
