@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-29"
+lastupdated: "2026-01-30"
 
 keywords: order, citrix, vpx, overview
 
@@ -181,35 +181,3 @@ To install and activate the new VPX activation file from the NetScaler CLI, foll
    show ns laslicense
    ```
    {: pre}
-
-## Renewing your annual license
-{: #monitor-renew-license}
-
-The license activation file is valid for one year. Follow these steps to monitor and renew your license:
-
-1. In the NetScaler licensing GUI, go to **System > Licenses** to view:{: ui}
-
-   * The last activation or renewal date{: ui}
-   * Upcoming activation or renewal date{: ui}
-
-1. To make sure NetScaler operations remain uninterrupted, follow these steps before the renewal date:{: ui}
-
-   1. Click **Renew now** before the renewal date.{: ui}
-   1. Generate a new activation request file. For instructions, see steps 1-4 in [Installing and activating the new VPX license token](#transition-netscaler-to-las-ui).{: ui}
-   1. Open the IBM-provided support case titled "VPX License Transition" and request a license activation file (see step 5).{: ui}
-   1. Upload the new LAS activation file from IBM Support (see step 6).{: ui}
-
-1. To monitor the license activation file and apply a new file before it expires, enter the following command: {: cli}
-
-   ```sh
-   show ns laslicense
-   ```
-   {: pre}
-   {: cli}
-
-   The command output displays the LAS license details including activation and renewal dates.
-   {: cli}
-
-1. Generate the LAS activation request file. For instructions, see steps 1-3 in [Installing and activating the new VPX activation file from the CLI](#transition-netscaler-to-las-cli).{: cli}
-1. Open the IBM-provided support case titled "VPX License Transition" and request a license activation file (see step 4).{: cli}
-1. Upload the new LAS activation file from IBM Support (see step 5).{: cli}
