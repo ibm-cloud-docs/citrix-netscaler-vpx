@@ -14,7 +14,7 @@ subcollection: citrix-netscaler-vpx
 # Action required: Update your NetScaler license
 {: #transition-netscaler-to-las}
 
-Citrix is retiring file‑based licensing effective 10 April 2026, and replacing it with the cloud‑based License Activation Service (LAS). All NetScaler VPX instances running on IBM Cloud Classic infrastructure must transition to LAS to remain licensed, compliant, and supported.
+Citrix is retiring file‑based licensing effective 15 April 2026, and replacing it with the cloud‑based License Activation Service (LAS). All NetScaler VPX instances running on IBM Cloud Classic infrastructure must transition to LAS to remain licensed, compliant, and supported.
 {: shortdesc}
 
 The following information provides guidance for provisioning new or reloaded NetScaler instances, renewing annual LAS licenses, and transitioning existing VPX appliances from file-based licensing to LAS. To enable LAS, IBM Support activates the required Citrix Cloud components on your behalf.
@@ -33,7 +33,7 @@ Customers are strongly encouraged to begin planning for the required maintenance
 
 Complete the following milestones before 10 April 2026 to help ensure uninterrupted license validation and continued support.
 
-* **Milestone 1** (_performed by Customer_): Starts 26 January 2026
+* **Milestone 1** (_performed by Customer_): Starts 2 February 2026
 
    [Upgrade to the minimum supported software version](#upgrade-to-minimum-supported-software-version)
 
@@ -43,7 +43,7 @@ Complete the following milestones before 10 April 2026 to help ensure uninterrup
 
    [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-cli){: cli}
 
-Starting 2 February 2026, IBM will create separate support cases for each VPX instance that you own. To complete the LAS transition, you must communicate with IBM Support through these cases to submit your NetScaler activation request files and receive the corresponding license activation files. IBM Support is also available to assist with the software upgrade process, if needed.
+Starting 3 February 2026, IBM will create separate support cases for each VPX instance that you own. To complete the LAS transition, you must communicate with IBM Support through these cases to submit your NetScaler activation request files and receive the corresponding license activation files. IBM Support is also available to assist with the software upgrade process, if needed.
 {: important}
 
 ## Milestone 1: Upgrading to the minimum supported software version
