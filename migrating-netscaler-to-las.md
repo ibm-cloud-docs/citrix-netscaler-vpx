@@ -37,7 +37,7 @@ Complete the following milestones before 10 April 2026 to help ensure uninterrup
 
    [Upgrade to the minimum supported software version](#upgrade-to-minimum-supported-software-version)
 
-* **Milestone 2** (_performed by Customer and IBM Support)_: Start any time after completing Milestone 1. Mandatory completion by 10 April 2026.
+* **Milestone 2** (_performed by Customer and IBM Support)_: Start any time after completing Milestone 1 and receiving a "VPX License Transition" support case for each VPX instance. Mandatory completion by 10 April 2026.
 
    [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-ui){: ui}
 
