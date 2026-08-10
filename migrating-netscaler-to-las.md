@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017, 2026
-lastupdated: "2026-02-03"
+lastupdated: "2026-08-10"
 
 keywords: order, citrix, vpx, overview
 
@@ -21,11 +21,11 @@ The following information provides guidance for provisioning new or reloaded Net
 
 As you plan your upgrade, consider the following service impacts:
 
-* The required actions will require appliance reboots, resulting in temporary service disruption.
+* The required actions require appliance reboots, resulting in temporary service disruption.
 * The update can't be performed on a live system and must be completed during a scheduled maintenance window.
 * Completing the licensing transition requires coordination between your appliance administrator and IBM Support to exchange the information that is needed to generate the new licensing data.
 
-Customers are strongly encouraged to begin planning for the required maintenance window and associated downtime as early as possible.
+Customers are encouraged to begin planning for the required maintenance window and associated downtime as early as possible.
 {: note}
 
 ## Key milestones
@@ -37,7 +37,7 @@ Complete the following milestones before 10 April 2026 to help ensure uninterrup
 
    [Upgrade to the minimum supported software version](#upgrade-to-minimum-supported-software-version)
 
-* **Milestone 2** (_performed by Customer and IBM Support)_: Start any time after completing Milestone 1 and receiving a "VPX License Transition" support case for each VPX instance. Mandatory completion by 10 April 2026.
+* **Milestone 2** (_performed by Customer and IBM Support)_: Start anytime after completing Milestone 1 and receiving a "VPX License Transition" support case for each VPX instance. Mandatory completion by 10 April 2026.
 
    [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-ui){: ui}
 
@@ -107,7 +107,7 @@ To transition NetScaler licensing to LAS:
         * You are switching from file-based licensing to LAS and the entitlement remains unchanged.
         * You are renewing an existing LAS license and the entitlement remains unchanged.
 
-1. This concludes the license transition to LAS. To verify license activation, go to **System > Licenses**.
+1. This step concludes the license transition to LAS. To verify license activation, go to **System > Licenses**.
 
 ## Milestone 2: Installing and activating the new VPX activation file from the CLI
 {: #transition-netscaler-to-las-cli}

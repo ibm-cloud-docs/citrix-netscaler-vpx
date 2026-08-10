@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-11-12"
+  years: 2017, 2026
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -20,7 +20,6 @@ If you haven't already, order your {{site.data.keyword.vpx_full}}. For instructi
 {: shortdesc}
 
 If 12.1 does not show, proceed with latest version available and upgrade your VPX by following the instructions in
-[Upgrade your {{site.data.keyword.vpx_full}}](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-upgrading-your-citrix-netscaler-vpx#upgrading-your-citrix-netscaler-vpx). You can also use the steps in this {{site.data.keyword.cloud}} article to upgrade an existing device. 
+[Upgrade your {{site.data.keyword.vpx_full}}](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-upgrading-your-citrix-netscaler-vpx#upgrading-your-citrix-netscaler-vpx). You can also use the steps in this {{site.data.keyword.cloud}} article to upgrade an existing device.
 
 If the 12.1 version is not available in the Cloud repo, contact IBM Cloud Support for extra help.
-

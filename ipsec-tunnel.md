@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-11-13"
+  years: 2017, 2026
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -21,7 +21,7 @@ You need to create an IP tunnel object to specify not only the local and remote 
 
 To do so:
 
-1.	Navigate to **System > CloudBridge Connector > IP Tunnels**.
+1.	Go to **System > CloudBridge Connector > IP Tunnels**.
 2.	On the **IPv4 Tunnels tab**, click **Add**.
 3.	Enter the following parameters:
     *	**Name**

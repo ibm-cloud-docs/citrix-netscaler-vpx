@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-23"
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 # Deploying and configuring the IBM Hardware Security Module (HSM) with Citrix Netscaler VPX
 {: #deploying-and-configuring-the-ibm-hardware-security-module-hsm-with-citrix-netscaler-vpx}
 
-This step-by-step guides you through integrating the HSM with {{site.data.keyword.vpx_full}}. The two services can then communicate and generate the cryptographic material that is required to create a certificate.
+This step-by-step procedure guides you through integrating the HSM with {{site.data.keyword.vpx_full}}. The two services can then communicate and generate the cryptographic material that is required to create a certificate.
 {: shortdesc}
 
 ## About the deployment
@@ -31,7 +31,7 @@ This deployment was built and tested with the following component specifications
 ## Logical topology
 {: #topology-local}
 
-The following diagram shows the network traffic flow for the SSL offload use case. This provides a visual and logical perspective of the trust link and the configuration between VPX and the HSM appliance.
+The following diagram shows the network traffic flow for the SSL offload use case. This diagram provides a visual and logical perspective of the trust link and the configuration between VPX and the HSM appliance.
 
 ## What you accomplish
 {: #what-you-accomplish}
@@ -42,11 +42,11 @@ In this step-by-step guide you learn how to deploy and configure an HSM with a {
 | ---- | ----------- |
 | [Order a Hardware Security Module (HSM)](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-the-ibm-hardware-security-module-hsm-) | First, you order an HSM. |
 | [Order a {{site.data.keyword.vpx_full}}](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-a-citrix-netscaler-vpx) | If you haven't already, order a {{site.data.keyword.vpx_full}}. |
-| [Initialize the HSM](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-initialize-ibm-hardware-security-module-hsm-) | Most configurations require initialization of the HSM device. Without this, only certain `show` commands can be executed. |
+| [Initialize the HSM](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-initialize-ibm-hardware-security-module-hsm-) | Most configurations require initialization of the HSM device. Without this step, you can run only certain `show` commands. |
 | [Create a partition](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-a-partition) | A partition is a logical and independent space that is associated or attached to the client requesting or creating cryptographic objects in the HSM engine. |
-| [Install the HSM client software](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-install-the-ibm-hardware-security-module-hsm-client-software) | In this sub-section, VPX is installed with the software and utilities that are required to interact with the HSM. |
+| [Install the HSM client software](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-install-the-ibm-hardware-security-module-hsm-client-software) | In this subsection, VPX is installed with the software and utilities that are required to interact with the HSM. |
 | [Establish the Network Trust Link (NTL)](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-establish-a-network-trust-link-ntl-) | A Network Trust Link (NTL) is a secure channel for the Hardware Security Module (HSM) and the client to communicate. |
-| [Create the keys and generate the Certificate Signing Request (CSR)](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-) | In this sub-section, you create a key pair used to generate a Certificate Signing Request (CSR) and request a certificate with it. |
+| [Create the keys and generate the Certificate Signing Request (CSR)](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-) | In this subsection, you create a key pair that is used to generate a Certificate Signing Request (CSR) and request a certificate with it. |
 | [Order the certificate](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-order-an-ssl-certificate) | Order an SSL certificate for your {{site.data.keyword.vpx_full}}. |
 | [Retrieve and transfer the certificate](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-retrieve-and-transfer-the-certificate) | Retrieve the SSL certificate ordered earlier and leave everything ready for its installation and configuration in the next step-by-step guide. |
 {: caption="Configuring an HSM" caption-side="top"}

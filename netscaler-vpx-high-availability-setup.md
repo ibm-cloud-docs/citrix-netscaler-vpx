@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-21"
+lastupdated: "2026-08-10"
 
 keywords: ha, high availability, setup, configure, configuration
 
@@ -26,7 +26,7 @@ For an HA configuration, both NetScalers must be in the same VLAN and on the sam
 Make sure that you take the following prerequisite actions prior to configuration:
 
 1. If you configure the pair active-active, any VIP subnets added to the instances must be of type "Routed to VLAN".
-2. If you configure the pair active-passive, any VIP subnets added to the instances must either be "Routed to VLAN" or "Secondary routed to IP". They should also be routed to the public IP address of the primary node.
+2. If you configure the pair active-passive, any VIP subnets added to the instances must either be "Routed to VLAN" or "Secondary routed to IP". They must also be routed to the public IP address of the primary node.
 
 After ordering the two Netscaler VPX servers in the needed VLAN, and ordering the VIP and SNIP subnets to meet the prerequisites for your HA pair configuration, you can proceed:
 
@@ -36,7 +36,7 @@ After ordering the two Netscaler VPX servers in the needed VLAN, and ordering th
 
 3. Select **Add**. Enter the system IP address of the other VPX (it is located in the High Availability tab on the primary), and enter the root login details. Leave the **Turn on INC** box cleared. Click **OK**.
 
-   If you receive an error that the IP addresses are not in the same subnet, it is possible that both VPX servers are not in the same VLAN. Otherwise, you should now be able to open the primary server and select **Refresh** to see both servers in High Availability.
+   If you receive an error that the IP addresses are not in the same subnet, it is possible that both VPX servers are not in the same VLAN. Otherwise, you must now be able to open the primary server and select **Refresh** to see both servers in High Availability.
 
    The new NetScaler management IP for the secondary is one IP address lower than previously. If you cannot get any access to the secondary VPX, remove the high availability from the command line by using:
 

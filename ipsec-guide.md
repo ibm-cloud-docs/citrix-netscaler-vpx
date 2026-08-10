@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-23"
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -20,7 +20,6 @@ This guide provides step-by-step instructions to configure an IPsec VPN site-to-
 
 ![IPsec VPN Connection](images/ipsec1.png){: caption="IPsec VPN connection" caption-side="bottom"}
 
-
 ## About the deployment
 {: #about-ipsec}
 
@@ -37,7 +36,7 @@ You need a VPX Platinum license to configure IPsec VPN.
 ## Before you begin
 {: #before-you-begin-ipsec}
 
-This guide assumes ownership of both devices. Visit the following links for instructions on ordering.
+This guide assumes ownership of both devices. See the following links for instructions on ordering.
 
 -	[Getting started with {{site.data.keyword.vpx_full}} Software Appliance](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-getting-started)
 -	[Getting Started with IBM Virtual Router Appliance](/docs/virtual-router-appliance?topic=virtual-router-appliance-getting-started-vra)

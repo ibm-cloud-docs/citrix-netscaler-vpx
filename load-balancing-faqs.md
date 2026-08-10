@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-23"
+lastupdated: "2026-08-10"
 
 keywords: faq, faqs, questions, options, ipv6, traffic, network, ha, ssl, vpn
 
@@ -88,7 +88,7 @@ Platinum.
 
 Yes, NetScaler VPX appliances support High Availability (HA) configurations.
 
-NetScaler VPX servers are not redundant unless configured in HA mode with a partner. As part of your back up and recovery strategy, you should deploy an HA environment when you use NetScaler VPX.
+NetScaler VPX servers are not redundant unless configured in HA mode with a partner. As part of your back up and recovery strategy, you must deploy an HA environment when you use NetScaler VPX.
 
 It is also important to provide redundancy for other hardware and software components. For example, power supplies and local disk drives might not have redundancy. A failure in these components can result in data loss.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-21"
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -50,7 +50,7 @@ Deploying a {{site.data.keyword.vpx_full}} in your IBM Cloud solution accelerate
 * Deployed like any other IBM Cloud server, with flexibility and availability in mind
 * Offered in bandwidth tiers: 10 Mbps, 200 Mbps, and 1000 Mbps
 
-The {{site.data.keyword.vpx_full}} can be deployed on demand, in as little as 15 minutes, in any IBM Cloud data center around the world. Several licensing models include the speed and features that you need, and offer the flexibility that is demanded by today's cloud solutions. This flexibility ensures a good fit for every use case, from small-to-medium implementations, all the way to larger enterprises.
+The {{site.data.keyword.vpx_full}} can be deployed on demand, in as little as 15 minutes, in any IBM Cloud data center around the world. Several licensing models include the speed and features that you need, and offer the flexibility that is demanded by today's cloud solutions. This flexibility helps ensure a good fit for every use case, from small-to-medium implementations, all the way to larger enterprises.
 
 IBM Cloud offers the NetScaler VPX virtual appliance with full, unrestricted root access.
 
@@ -62,7 +62,7 @@ To secure application traffic, customers can take advantage of security features
 ## Traffic filtering
 {: #traffic-filtering}
 
-The {{site.data.keyword.vpx_full}} filters requests from end-users to the servers and responses from the servers to end-users. A Learning feature with the Application Firewall allows the profiling of sessions in real time and the determination of whether to allow traffic.
+The {{site.data.keyword.vpx_full}} filters requests from users to the servers and responses from the servers to users. A Learning feature with the Application Firewall allows the profiling of sessions in real time and the determination of whether to allow traffic.
 
 ## PCI-DSS reporting
 {: #pci-dss-reporting}

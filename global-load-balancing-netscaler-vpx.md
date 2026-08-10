@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-21"
+lastupdated: "2026-08-10"
 
 keywords: load balancing, global, mep, gslb
 
@@ -55,10 +55,10 @@ The main components or entities in the GSLB deployment are:
     * Custom Load: Selects a service that is not handling any active transactions. If all services in the load balancing setup are handling active transactions, the appliance selects the service with the smallest load (CPU usage, memory, and response time).
 
 * **MEP (Metric Exchange Protocol):** A proprietary protocol that is used to exchange metrics (load and network) and persistence information between sites. MEP provides health checking between the different sites and NetScalers in the GSLB topology. Using the criteria set by the administrator, MEP provides a way for sites to communicate and handle the traffic based on the selection parameters previously configured. MEP uses TCP ports 3009 and 3011. When MEP is disabled, the selection of methods is limited to the options listed before marked with an asterisk (`*`). Any other method that is chosen reverts to Round Robin.
-* **Monitoring:** The NetScaler engine periodically evaluates the state of the remote GSLB services by using either MEP or explicit monitors that are bound to the services in question. Monitors are used just like on a regular load balancing service. In the case of GSLB, you do not need to add monitors to local services, as this state is controlled by MEP.
+* **Monitoring:** The NetScaler engine periodically evaluates the state of the remote GSLB services by using either MEP or explicit monitors that are bound to the services in question. Monitors are used just like on a regular load balancing service. However, for GSLB, you do not need to add monitors to local services, as this state is controlled by MEP.
 * **Persistence:** A feature that establishes a site preference for a particular domain. In this particular use case, the traffic is not load balanced but handled by the same data center. This process can be helpful in certain applications, like e-commerce, where transactional data is unique to each a server.
 * **GSLB site:** Sites can be defined as data centers or locations where a NetScaler system is configured/present. A NetScaler system manages each GSLB site that is considered “local” to that site, while all other remote sites are seen and treated as “remote” sites.
 * **GSLB service:** It is an object that represents (and is bound to) a (regular) virtual server or VIP. It can be either local (same site) or remote.
 * **GSLB virtual server:** A GSLB virtual server is assigned to one or more GSLB services that are a part of different (GSLB) sites. Traffic that is received on it gets load balanced between the sites that are bound to it. The site selection is done based on the method and use case.
 * **GSLB domain:** It represents the domain or zone for which the GSLB virtual server is responsible.
-* **ADNS service:** A service that is represented by a combination of IP address and port, it is where DNS requests to a domain for which NetScaler is authoritative are sent. NetScaler takes those services to the GSLB virtual server bound to that domain in order to get a response.
+* **ADNS service:** A service that is represented by a combination of IP address and port, it is where DNS requests to a domain for which NetScaler is authoritative are sent. NetScaler takes those services to the GSLB virtual server bound to that domain to get a response.

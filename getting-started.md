@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-21"
+lastupdated: "2026-08-10"
 
 keywords: order, citrix, vpx, overview
 
@@ -34,7 +34,7 @@ To get the maximum value from your Citrix Netscaler VPX, make sure that you allo
 ## Ordering a {{site.data.keyword.vpx_full}}
 {: #ordering-a-citrix-netscaler-vpx}
 
-To order a {{site.data.keyword.vpx_full}} software appliance, navigate to the order page in the IBM Cloud catalog:
+To order a {{site.data.keyword.vpx_full}} software appliance, go to the order page in the IBM Cloud catalog:
 
 1. From your browser, open the [IBM Cloud catalog](/login){: external} and log in to your account.
 2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Infrastructure > Classic Infrastructure**.

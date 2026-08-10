@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-12"
+  years: 2017, 2026
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 # Order the Citrix Netscaler VPX appliance
 {: #order-the-citrix-netscaler-vpx-appliance}
 
-To order the {{site.data.keyword.vpx_full}} appliance, perform the following procedure:
+To order the {{site.data.keyword.vpx_full}} appliance, follow these steps:
 {: shortdesc}
 
 1. From your browser, open the [IBM Cloud catalog](/login){: external} and log in to your account.

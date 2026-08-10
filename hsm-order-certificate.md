@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-22"
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -19,7 +19,7 @@ subcollection: citrix-netscaler-vpx
 Secure Sockets Layer (SSL) is a technology that encrypts traffic between the client application and the server application. SSL is accomplished by using a public and private key system that uses an SSL certificate.
 {: shortdesc}
 
-SSL certificates contain the server’s public key, dates for which the certificate is valid, a hostname for which the certificate is valid, and a signature from the certificate authority that issued it.
+SSL certificates contain the server’s public key and the dates for which the certificate is valid. Additionally, they also contain a valid hostname and the issuing certificate authority’s signature.
 
 {{site.data.keyword.cloud}} offers certificates that can be acquired and purchased without having to go through a third-party site.
 
@@ -31,7 +31,7 @@ SSL certificates contain the server’s public key, dates for which the certific
 
 If you are running multiple domains, an SSL certificate can be purchased for each domain.
 
-To order an SSL certificate for use with your {{site.data.keyword.vpx_full}}, perform the following procedure:
+To order an SSL certificate for use with your {{site.data.keyword.vpx_full}}, follow these steps:
 
 1.	In VPX shell CLI, display the CSR text by opening the CSR file that is previously created in the step [Create keys and generate the Certificate Signing Request (CSR)](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-create-keys-and-generate-the-certificate-signing-request-csr-):
 
@@ -55,7 +55,7 @@ To order an SSL certificate for use with your {{site.data.keyword.vpx_full}}, pe
 	-----END NEW CERTIFICATE REQUEST-----
 	```
 
-2.	Copy the content of the file starting with `---BEGIN NEW CERTIFICATE REQUEST---` all the way to `---END NEW CERTIFICATE REQUEST---`.
+2.	Copy the content of the file that starts with `---BEGIN NEW CERTIFICATE REQUEST---` all the way to `---END NEW CERTIFICATE REQUEST---`.
 
 3.	Follow [these instructions](/docs/secrets-manager?topic=secrets-manager-public-certificates&interface=ui) to place the order, pasting your CSR file text in the appropriate field. In the following example, `RapidSSL 1 Year` was chosen.
 
@@ -65,6 +65,6 @@ To order an SSL certificate for use with your {{site.data.keyword.vpx_full}}, pe
 
 	Confirm your order details and click **Place Order**.
 
-4. You receive an order confirmation with the details of the certificate request to the account you indicated.
+4. You will receive an order confirmation with the details of the certificate request to the account that you indicate.
 
 	Click the link in the email to approve the domain validation request and the SSL request is ready to begin fulfillment.

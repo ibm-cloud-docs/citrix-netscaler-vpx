@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-21"
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -42,14 +42,14 @@ While the private IP address of the NetScaler is listed, the public IP address o
 ## The device details screen
 {: #the-device-details-screen}
 
-Click the NetScaler's name to navigate to the **Device Details** page for the NetScaler. This page shows the VLAN on which your NetScaler was deployed along with your public IP addresses for the NetScaler. These IP addresses can't be used for management because they are the NetScaler's default public VIP addresses. However, you can use these IP addresses later to associate to a load balancing service.
+Click the NetScaler's name to navigate to the **Device Details** page for the NetScaler. This page shows the VLAN on which your NetScaler was deployed along with your public IP addresses for the NetScaler. These IP addresses can't be used for management because they are the NetScaler's default public VIP addresses. However, you can use these public IP addresses later to associate to a load balancing service.
 
 ## Connecting to the NetScaler
 {: #connecting-to-the-netscaler}
 
-{{site.data.keyword.cloud_notm}} grants full root access to your NetScaler device. To log in to the NetScaler's Management UI, connect to the {{site.data.keyword.cloud_notm}} private network. This connection can be done with the IBM Cloud Management VPN. You can also perform management functions from a remote session on a server within the {{site.data.keyword.cloud_notm}} environment.
+{{site.data.keyword.cloud_notm}} grants full root access to your NetScaler device. To log in to the NetScaler's Management UI, connect to the {{site.data.keyword.cloud_notm}} private network. This connection can be done with the IBM Cloud Management VPN. You can also manage the server from a remote session within the {{site.data.keyword.cloud_notm}} environment.
 
-To connect from the catalog to the NetScaler's Management UI, click the **Actions** menu list and choose **Manage Device** to launch a new tab or pop-up window in your browser. This routes you to the NetScaler's NSIP (the private IP address that you saw previously). The page that displays asks for the root username and password for the device. After you enter the information, it takes you to the NetScaler Management GUI.
+To connect from the catalog to the NetScaler's Management UI, click the **Actions** menu list and choose **Manage Device** to open a new tab or pop-up window in your browser. This routes you to the NetScaler's NSIP (the private IP address that you saw previously). The page that displays asks for the root username and password for the device. After you enter the information, it takes you to the NetScaler Management GUI.
 
 Alternatively, you can copy and paste the NetScaler device's private IP into a web browser.
 

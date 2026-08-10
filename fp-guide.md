@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-21"
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -34,6 +34,6 @@ In this step-by-step guide, you can learn how to configure the service
 | [Configure the DNS Virtual Server](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configure-the-dns-virtual-server) | Add your DNS resolvers, define your DNS service group, then define your DNS virtual server. |
 | [Configure Cache Redirection for HTTP(S) traffic](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configure-cache-redirection-for-http-traffic) | Configure the cache redirection for your forward proxy virtual server with HTTP or HTTPS traffic. |
 | [Configure Cache Redirection for SSL traffic](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configure-cache-redirection-for-ssl-traffic-optional-) | Configure the cache redirection for your forward proxy virtual server with SSL traffic instead of HTTP or HTTPS. |
-| [Configure Source NAT for Outbound Traffic](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configure-source-nat-for-outbound-traffic) | Utilize your {{site.data.keyword.vpx_full}} appliance to perform NAT on outbound traffic from your client machines. |
+| [Configure Source NAT for Outbound Traffic](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configure-source-nat-for-outbound-traffic) | Use your {{site.data.keyword.vpx_full}} appliance to route outbound traffic from your client machines through NAT. |
 | [Update the Proxy Settings on the Client Machine’s Internet Browser](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-update-the-proxy-settings-on-the-client-machine-s-internet-browser-optional-) | Update your proxy settings that use your client machine's internet browser, if you want. |
 {: caption="Configuring the service" caption-side="top"}

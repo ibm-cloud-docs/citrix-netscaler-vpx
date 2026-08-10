@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-11-13"
+  years: 2017, 2026
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -19,7 +19,7 @@ subcollection: citrix-netscaler-vpx
 You can enable the features in {{site.data.keyword.vpx_full}} to create the IPsec VPN.
 {: shortdesc}
 
-To do so, perform the following procedure:
+To do so, follow these steps:
 
 1.	Access the VPX GUI (graphical user interface).
 2.	Browse to **System > Settings > Configure Modes** and enable **Layer 3 Mode (IP Forwarding)**.

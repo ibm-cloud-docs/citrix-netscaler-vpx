@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-11-12"
+  years: 2017, 2026
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -18,7 +18,7 @@ subcollection: citrix-netscaler-vpx
 As a final, optional step to configuring forward proxy traffic redirection with your {{site.data.keyword.vpx_full}}, you can update your proxy settings that use your internet browser.
 {: shortdesc}
 
-To do so, perform the following steps:
+To do so, follow these steps:
 
 1. Go to **Internet Options** in your browser settings and configure it to use a proxy server for outgoing requests.
 2. Use the IP address of your cache redirection virtual server that was defined in previous steps as your proxy.

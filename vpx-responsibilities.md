@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-23"
+lastupdated: "2026-08-10"
 
 subcollection: citrix-netscaler-vpx
 
@@ -41,7 +41,7 @@ Change management includes tasks such as deployment, configuration, upgrades, pa
 
 | | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
 | ---------- | ----------------------- | -------- |
-| VM migration | Ensuring that any migrations provide proper notification to customers | Contacting {{site.data.keyword.IBM_notm}} if routine maintenance work should be scheduled on a different day |
+| VM migration | Ensuring that any migrations provide proper notification to customers | Contacting {{site.data.keyword.IBM_notm}} if routine maintenance work is to be scheduled on a different day |
 | Upgrades | None | Planning and implementing all upgrades |
 | Configuration Modification | None | Providing subject matter expertise and modification of your environment |
 {: row-headers}
