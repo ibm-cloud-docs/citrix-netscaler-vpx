@@ -15,7 +15,7 @@ subcollection: citrix-netscaler-vpx
 # Basic load balancing configuration
 {: #basic-load-balancing-configuration}
 
-Consider a company that has a basic social community website where users can register for an account that requires no sensitive information. The user can then log in and post pictures of their pets. The company has three web/application servers, and one database server to back them up. The domain and DNS are hosted with IBM Cloud, and because they have a small environment, the NetScaler and web/app servers are all in the same VLAN. This arrangement simplifies things because no further configuration is needed for the NetScaler to set up a basic load balancing policy
+Consider a company that has a basic social community website where users can register for an account that requires no sensitive information. The user can then log in and post pictures of their pets. The company has three web/application servers, and one database server to back them up. The domain and DNS are hosted with IBM Cloud, and because they have a small environment, the NetScaler and web/app servers are all in the same VLAN. This arrangement simplifies things because no further configuration is needed for the NetScaler to set up a basic load balancing policy.
 {: shortdesc}
 
 The following procedure is an oversimplified explanation of the traffic flow in this instance:

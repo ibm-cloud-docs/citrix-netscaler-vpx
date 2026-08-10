@@ -16,7 +16,7 @@ subcollection: citrix-netscaler-vpx
 # Configuring the Virtual Router Appliance
 {: #configuring-vra}
 
-Now, that your {{site.data.keyword.vpx_full}} is configured, you need to configure the IBM Virtual Router Appliance (VRA)
+Now, that your {{site.data.keyword.vpx_full}} is configured, you need to configure the IBM Virtual Router Appliance (VRA).
 {: shortdesc}
 
 To do so, use the following syntax:

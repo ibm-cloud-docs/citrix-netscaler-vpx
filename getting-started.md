@@ -34,7 +34,7 @@ To get the maximum value from your Citrix Netscaler VPX, make sure that you allo
 ## Ordering a {{site.data.keyword.vpx_full}}
 {: #ordering-a-citrix-netscaler-vpx}
 
-To order a {{site.data.keyword.vpx_full}} software appliance, navigate to the order page in the IBM Cloud catalog:
+To order a {{site.data.keyword.vpx_full}} software appliance, go to the order page in the IBM Cloud catalog:
 
 1. From your browser, open the [IBM Cloud catalog](/login){: external} and log in to your account.
 2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Infrastructure > Classic Infrastructure**.
@@ -49,7 +49,7 @@ To order a {{site.data.keyword.vpx_full}} software appliance, navigate to the or
 10. Enter the ARIN information (or the equivalent organization in your region of deployment) for the IP addresses that you requested.
 11. Enter your contact information.
 12. Select your VLAN.
-   To ensure optimized utilization of your network resources, assign the {{site.data.keyword.vpx_full}} to the same VLAN as the servers where the traffic will be distributed
+   To ensure optimized utilization of your network resources, assign the {{site.data.keyword.vpx_full}} to the same VLAN as the servers where the traffic will be distributed.
 13. Review the order, accept the terms, and click **Place Order**. The {{site.data.keyword.vpx_full}} software appliance deploys with your selected settings.
 
 ## What's next

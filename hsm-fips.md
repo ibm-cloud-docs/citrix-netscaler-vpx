@@ -115,7 +115,7 @@ The FIPS 140-2 security algorithms can be enabled if you need to ensure the Hard
 	```
 	{: screen}
 
-4. Enable FIPS 140-2 Mode
+4. Enable FIPS 140-2 Mode.
 
 	To enable FIPS mode, you must modify the policy that is reviewed in step two of this procedure (`Allow non-FIPS algorithms`):
 
