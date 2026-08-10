@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-21"
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -31,7 +31,7 @@ To further define forward proxy traffic redirection by using the {{site.data.key
 8. Now, go to **Traffic Management > Load Balancing > Virtual Servers** and click **Add** to define your DNS Virtual server.
 9. In the Basic Settings section, give a name to your virtual server. Then, choose the DNS protocol and port `53`, and assign an IP address from your private subnet.
 10. On the following page, click the empty field that is labeled **No Load Balancing virtual Server ServiceGroup Binding**.
-11. Select your previously-defined DNS service group from the list menu and click **Bind**.
+11. Select your previously defined DNS service group from the list menu and click **Bind**.
 12. Click **Continue** followed by **Done**.
 
 Your DNS virtual server state now shows as green.

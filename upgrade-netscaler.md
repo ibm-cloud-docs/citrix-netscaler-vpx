@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2025
-lastupdated: "2025-04-09"
+  years: 2017, 2026
+lastupdated: "2026-08-10"
 
 keywords: upgrade, callhome
 
@@ -28,7 +28,7 @@ Failure to meet these prerequisites can cause a licensing issue with your Netsca
 * Ensure that you are allowing any [Service Networks that are required for provisioning](/docs/infrastructure-hub?topic=infrastructure-hub-ibm-cloud-ip-ranges#service-network) through your gateway and server firewall.
 * Ensure that your license file is up to date through your VPX. If not, you can update it by [opening a support case](/unifiedsupport/cases/form){: external}.
 
-To upgrade your VPX, perform the following procedure:
+To upgrade your VPX, follow these steps:
 
 Be connected to the VPN before you attempt this procedure.
 {: note}
@@ -40,7 +40,7 @@ Be connected to the VPN before you attempt this procedure.
    * For commercial users: [NetScaler Available Versions](http://downloads.service.softlayer.com/citrix/netscaler/){: external}
    * For federal government users: [NetScaler Available Versions](http://downloads.service.usgov.softlayer.com/citrix/netscaler/){: external}
 
-   Connect to the {{site.data.keyword.cloud}} Infrastructure VPN or from an {{site.data.keyword.cloud_notm}} Infrastructure server with private network (10.0.0.0/8) connectivity in order to access this link.
+   Connect to the {{site.data.keyword.cloud}} Infrastructure VPN or from an {{site.data.keyword.cloud_notm}} Infrastructure server with private network (10.0.0.0/8) connectivity to access this link.
    {: note}
 
 1. On the Upload Software screen, browse to the location of the upgrade file and click **Upgrade**. The firmware uploads.

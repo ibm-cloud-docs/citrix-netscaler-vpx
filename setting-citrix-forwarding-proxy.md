@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-21"
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -29,7 +29,7 @@ When a {{site.data.keyword.vpx_full}} load balancer is ordered from the IBM Clou
 
 If a forward proxy exists, the VIPs need to be set up on the private network. Request VIPs for the private network by using an IBM Support case. The number of VIPs you need determines the size of the subnet that is requested in the Support case. The subnet information is returned in the Support case.
 
-In this example, you request a `/29` subnet, which results in the following:
+In this example, you request a `/29` subnet, which results in the following configurations:
 
 * Created subnet `10.114.27.0/29` for use as private VIPs
 * Subnet IP (SNIP) `10.114.52.101`, and routed subnet `10.114.27.0/29`

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-22"
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -20,7 +20,7 @@ A Network Trust Link (NTL) is a secure channel for the Hardware Security Module 
 
 Be advised that the trust link requires TCP port 1792 to be accessible in both the NTLS and NTLA (bidirectional) protocols. This arrangement guarantees all processes and utilities work correctly.
 
-To establish your NTL, perform the following procedure:
+To establish your NTL, follow these steps:
 
 1. Go to the directory `/var/safenet/safenet/lunaclient/bin` and create the certificate by using the VTL utility.
 

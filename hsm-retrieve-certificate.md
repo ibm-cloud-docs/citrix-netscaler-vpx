@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-22"
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -24,4 +24,4 @@ Retrieve the SSL certificate that you ordered earlier so that you're ready for i
 
 2. Copy the certificate file to the `/nsconfig/ssl` directory in the {{site.data.keyword.vpx_full}}.
 
-The {{site.data.keyword.vpx_full}} is now ready to incorporate the certificate into a load balancing deployment by using SSL.
+The {{site.data.keyword.vpx_full}} is now ready to incorporate the certificate into a load balancing deployment by using SSL

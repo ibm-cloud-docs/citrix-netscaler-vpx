@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-23"
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -19,12 +19,12 @@ subcollection: citrix-netscaler-vpx
 A Policy-Based Routing (PBR) policy is needed to specify the unique traffic parameters (such as local and remote subnets) the VPN connection you use with your {{site.data.keyword.vpx_full}}.
 {: shortdesc}
 
-To create a PBR profile, perform the following steps:
+To create a PBR profile, follow these steps:
 
-1.	Navigate to **System > Network > PBR** and select **Add**.
+1.	Go to **System > Network > PBR** and select **Add**.
 2.	Enter your **Name**.
 3.	Leave **Action** as the default setting **ALLOW**.
-4.	For **Next Hop Type**, select **IP Tunnel**. Then pick the [previously created](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ip-tunnel) tunnel from the **IP Tunnel Name** list.
+4.	For **Next Hop Type**, select **IP Tunnel**. Then, pick the [previously created](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ip-tunnel) tunnel from the **IP Tunnel Name** list.
 5.	Make sure to check **Enable PBR**.
 6.	In the **Configure IP** section, select **=** for the **Operation** field, for both source and destination.
 7.	Specify the first and last subnet IP in the following fields:
@@ -44,7 +44,7 @@ To create a PBR profile, perform the following steps:
    ```
    {: codeblock}
 
-    Any virtual server instances or infrastructure you intend to go through the VPN tunnel behind the VPX must be configured to use VPX as the default gateway or to use a static route. This configuration sends traffic to the VPX when the destination is the remote (peer) subnet. See the following static route (**10.115.0.0/16**) example.
+    Any virtual server instances or infrastructure you intend to go through the VPN tunnel behind the VPX must be configured to use VPX as the default gateway or use a static route. This configuration sends traffic to the VPX when the destination is the remote (peer) subnet. See the following static route (**10.115.0.0/16**) example.
     {: note}
 
    ```sh

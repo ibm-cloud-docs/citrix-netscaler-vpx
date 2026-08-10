@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-21"
+lastupdated: "2026-08-10"
 
 keywords: order, citrix, vpx, overview
 
@@ -49,7 +49,7 @@ To order a {{site.data.keyword.vpx_full}} software appliance, navigate to the or
 10. Enter the ARIN information (or the equivalent organization in your region of deployment) for the IP addresses that you requested.
 11. Enter your contact information.
 12. Select your VLAN.
-   To ensure optimized utilization of your network resources, assign the {{site.data.keyword.vpx_full}} to the same VLAN as the servers where the traffic will be distributed.
+   To ensure optimized utilization of your network resources, assign the {{site.data.keyword.vpx_full}} to the same VLAN as the servers where the traffic will be distributed
 13. Review the order, accept the terms, and click **Place Order**. The {{site.data.keyword.vpx_full}} software appliance deploys with your selected settings.
 
 ## What's next

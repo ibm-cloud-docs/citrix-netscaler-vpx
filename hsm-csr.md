@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-22"
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -91,7 +91,7 @@ You can create a key pair to generate a Certificate Signing Request (CSR). In ad
 
 4. With the keys created in the previous step, generate a CSR with the CMU utility.
 
-   Make sure to use the appropriate values for Common Name (CN) and Email (E). The first matches the FQDN used in the DNS A record that is associated with the Virtual IP (VPX). The E parameter will be used to send certificate procurement details after the request.
+   Make sure to use the appropriate values for Common Name (CN) and Email (E). The first matches the FQDN used in the DNS A record that is associated with the Virtual IP (VPX). The E parameter will be used to send certificate procurement details after the request
 
    ```sh
    root@IBMADC690867-s6dr# cmu requestcertificate

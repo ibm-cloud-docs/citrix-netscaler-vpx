@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-21"
+lastupdated: "2026-08-10"
 keywords: cache, enable, redirect, capabilities
 
 subcollection: citrix-netscaler-vpx
@@ -18,7 +18,7 @@ subcollection: citrix-netscaler-vpx
 You can enable cache redirection and load balancing for the {{site.data.keyword.vpx_full}} appliance.
 {: shortdesc}
 
-To do so, perform the following steps:
+To do so, follow these steps:
 
 1. From the {{site.data.keyword.vpx_full}} appliance system page, go to **Settings > Configure Advanced Features**, then enable **Cache Redirection** and click **OK**.
 

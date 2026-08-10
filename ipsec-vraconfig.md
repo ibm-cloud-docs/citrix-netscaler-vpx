@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-11-13"
+  years: 2017, 2026
+lastupdated: "2026-08-10"
 
 keywords: ipsec, vpn, tunnel
 
@@ -16,7 +16,7 @@ subcollection: citrix-netscaler-vpx
 # Configuring the Virtual Router Appliance
 {: #configuring-vra}
 
-Now, that your {{site.data.keyword.vpx_full}} is configured, you need to configure the IBM Virtual Router Appliance (VRA).
+Now, that your {{site.data.keyword.vpx_full}} is configured, you need to configure the IBM Virtual Router Appliance (VRA)
 {: shortdesc}
 
 To do so, use the following syntax:

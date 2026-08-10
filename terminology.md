@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-23"
+lastupdated: "2026-08-10"
 
 keywords: nsip, snip, vip
 
@@ -40,7 +40,7 @@ A virtual server refers to the combination of the IP address, port, and protocol
 ## Service
 {: #service}
 
-The combination of IP address, port, and protocol that is used to route requests to a specific server. A service, once configured, must later be associated to a virtual server.
+The combination of IP address, port, and protocol that is used to route requests to a specific server. After a service is configured, it must be associated with a virtual server.
 
 ## Server object
 {: #server-object}

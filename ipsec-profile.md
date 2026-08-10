@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-11-13"
+  years: 2017, 2026
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -19,9 +19,9 @@ subcollection: citrix-netscaler-vpx
 You can create an IPsec profile that includes security parameters for establishing connections with your {{site.data.keyword.vpx_full}}.
 {: shortdesc}
 
-To create a profile, perform the following procedure:
+To create a profile, follow these steps:
 
-1.	Navigate to **System > CloudBridge Connector > IPsec Profile** and click **Add**.
+1.	Go to **System > CloudBridge Connector > IPsec Profile** and click **Add**.
 2.	Enter the following parameters:
     *	**Name**
     *	**Encryption Algorithm**
@@ -36,5 +36,4 @@ To create an IPsec profile in the CLI, use the following syntax:
 
    ```sh
    > add ipsec profile IPsec_Profile1 -ikeVersion V1 -encAlgo AES256 -hashAlgo HMAC_SHA1 -lifetime 86400 -psk ipsecpskvpxvra
-
    ```

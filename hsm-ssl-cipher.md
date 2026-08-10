@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-23"
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -20,12 +20,12 @@ A cipher suite is a combination of authentication, encryption, Message Authentic
 
 To guarantee proper authentication, you must ensure your {{site.data.keyword.vpx_full}} uses the best combination of ciphers.
 
-To learn more about SSL cipher suites and other best practices visit the following links:
+To learn more about SSL cipher suites and other best practices see the following links:
 
 * [SSL and TLS Deployment Best Practices](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices#23-use-secure-cipher-suites){: external}
 * [How Do I set up ECC on NetScaler?](https://support.citrix.com/external/article){: external}
 
-To create a new cipher suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, perform the following procedure:
+To create a new cipher suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, follow these steps:
 
 1. Enter the following commands simultaneously in your Citrix VPX CLI, and ensure that they are all applied:
 
@@ -51,7 +51,7 @@ To create a new cipher suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, pe
 	bind ssl cipher SSLLABS -cipherName TLS1-AES-256-CBC-SHA
 	```
 
-	The syntax for the previous commands is the following:
+	The syntax for the previous commands is as follows:
 
     ```sh
 	add ssl cipher <cipherGroupName>

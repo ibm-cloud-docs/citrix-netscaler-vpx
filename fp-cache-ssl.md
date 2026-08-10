@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-01-21"
+lastupdated: "2026-08-10"
 
 keywords:
 
@@ -20,7 +20,7 @@ Instead of defining cache redirection for the virtual server with an HTTP or HTT
 
 To do so, follow these steps:
 
-1. Go to **Traffic Management > Cache redirection > Virtual servers** and click **Add**. Enter the name for your forward-proxy virtual server. Then, select the SSL protocol and a cache type of **FORWARD**. Assign it an IP address from your private subnet, with its requisite port.
+1. Go to **Traffic Management > Cache redirection > Virtual servers** and click **Add**. Enter the name for your forward-proxy virtual server. Then, select the SSL protocol and a cache type of **FORWARD**. Assign it an IP address from your private subnet, with its required port.
 
    Click **OK**.
 
