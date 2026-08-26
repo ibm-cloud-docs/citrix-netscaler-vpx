@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-08-10"
+lastupdated: "2026-08-26"
 
 keywords:
 
@@ -51,7 +51,7 @@ In this guide, you learn how to configure an IPsec VPN in the Citrix VPX device.
 | [Enable Features in VPX](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-enable-required-features-in-vpx) | First, enable the required features to create the IPsec VPN. |
 | [Create IPsec Profile](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ipsec-profile) | The IPsec profile includes security parameters for establishing the connection. |
 | [Create IP Tunnel](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-ip-tunnel) | In this section, you create an IP tunnel object to specify both local and remote IP addresses, as well as protocol parameters. |
-| [Create Policy Based Routing (PBR)](/docs/citrix-netscaler-vpx? topic=citrix-netscaler-vpx-creating-policy-based-routing) | PBR is used to define the unique traffic parameters for both local and remote subnets. |
+| [Create Policy Based Routing (PBR)](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-creating-policy-based-routing) | PBR is used to define the unique traffic parameters for both local and remote subnets. |
 | [Configure VRA](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-configuring-vra) | Configure the Virtual Router Appliance by using equivalent VPN configuration syntax. |
 | [Verify VPN Status](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-verifying-vpn-tunnel-connection) | Verify the VPN operation state and conduct a simple connectivity test. |
 {: caption="What you'll accomplish" caption-side="bottom"}
@@ -62,5 +62,5 @@ In this guide, you learn how to configure an IPsec VPN in the Citrix VPX device.
 The following extra resources can help you learn more about Citrix VPX and Virtual Router Appliance.
 
 * [CloudBridge Connector](https://docs.netscaler.com/en-us/citrix-adc/current-release/getting-started-with-citrix-adc.html){: external}
-* [Citrix VPX/ADC 12.1 Documentation](https://docs.netscaler.com/en-us/citrix-adc/12-1){: external}
+* [Citrix VPX/ADC 12.1 Documentation](https://docs.netscaler.com/en-us/citrix-adc/current-release/getting-started-with-citrix-adc.html){: external}
 * [Supplemental VRA Documentation](/docs/virtual-router-appliance?topic=virtual-router-appliance-supplemental-vra-documentation)

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-08-10"
+lastupdated: "2026-08-26"
 
 keywords:
 
@@ -23,7 +23,7 @@ To guarantee proper authentication, you must ensure your {{site.data.keyword.vpx
 To learn more about SSL cipher suites and other best practices see the following links:
 
 * [SSL and TLS Deployment Best Practices](https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices#23-use-secure-cipher-suites){: external}
-* [How Do I set up ECC on NetScaler?](https://support.citrix.com/external/article){: external}
+* [How Do I set up ECC on NetScaler?](https://support.citrix.com/support-home/kbsearch/article?articleNumber=CTX205289&articleTitle=CTX205289-how-do-i-setup-ecc-on-netscaler){: external}
 
 To create a new cipher suite that prioritizes AEAD, ECDHE, and ECDSA ciphers, follow these steps:
 

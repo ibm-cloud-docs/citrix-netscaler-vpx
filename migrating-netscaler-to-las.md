@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2017, 2026
-lastupdated: "2026-08-10"
+lastupdated: "2026-08-26"
 
 keywords: order, citrix, vpx, overview
 
@@ -39,9 +39,9 @@ Complete the following milestones before 10 April 2026 to help ensure uninterrup
 
 * **Milestone 2** (_performed by Customer and IBM Support)_: Start anytime after completing Milestone 1 and receiving a "VPX License Transition" support case for each VPX instance. Mandatory completion by 10 April 2026.
 
-   [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-ui){: ui}
+   [Install and activate the new VPX license activation file (blob)](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-transition-netscaler-to-las&interface=ui#transition-netscaler-to-las-ui){: ui}
 
-   [Install and activate the new VPX license activation file (blob)](#transition-netscaler-to-las-cli){: cli}
+   [Install and activate the new VPX license activation file (blob)](/docs/citrix-netscaler-vpx?topic=citrix-netscaler-vpx-transition-netscaler-to-las&interface=ui#transition-netscaler-to-las-ui){: cli}
 
 Starting 5 February 2026, IBM will create separate support cases for each VPX instance that you own. To complete the LAS transition, you must communicate with IBM Support through these cases to submit your NetScaler activation request files and receive the corresponding license activation files. IBM Support is also available to assist with the software upgrade process, if needed.
 {: important}
