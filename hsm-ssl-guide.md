@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-08-10"
+lastupdated: "2026-08-26"
 
 keywords:
 
@@ -58,5 +58,5 @@ In this step-by-step guide you learn how to configure SSL for a {{site.data.keyw
 The following extra resources can help you get the most out of your {{site.data.keyword.vpx_full}} when using the IBM Hardware Security Module.
 
 * [NetScaler 12.1 Product Documentation](https://docs.netscaler.com/en-us/){: external}
-* [Gemalto Support Portal](https://supportportal.gemalto.com/csm?id=csm_index){: external}
-* [IBM Cloud Support](/docs/account?topic=account-open-case&interface=ui){: external}
+* [Gemalto Support Portal](https://supportportal.thalesgroup.com/csm){: external}
+* [IBM Cloud Support](/docs/support?topic=support-open-case&interface=ui){: external}
