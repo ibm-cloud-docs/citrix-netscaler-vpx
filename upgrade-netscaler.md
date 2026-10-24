@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-10-24"
 
 keywords: upgrade, callhome, ha, high availability, ha pair, cli
 
@@ -60,7 +60,7 @@ This method is not recommended in {{site.data.keyword.cloud_notm}} environments.
 
 The UI upgrade spawns an SSH session that runs the same script as the CLI procedure, but it depends on continuous browser communication with the NetScaler. If you are connecting through a jumphost via SSL VPN or another private-network path, the session can time out and the upgrade appears hung. This is an issue observed particularly during 13.1 upgrades from earlier versions.
 
-## Downloading the firmware to the NetScaler VPX
+## Downloading the firmware to the NetScaler VPX by using the CLI
 {: #download-firmware}
 
 Firmware is hosted in {{site.data.keyword.cloud_notm}} repositories that are only reachable from endpoints with private-network connectivity (`10.0.0.0/8`) using {{site.data.keyword.cloud_notm}} Classic Infrastructure DNS:
@@ -339,15 +339,3 @@ After both nodes are running the same firmware version, re-enable HA and verify 
 1. Run `sh ha node` to confirm both nodes show a healthy HA state with synchronization success.
 
 1. Optionally, run `force ha failover` to return `10.72.164.207` to its original primary role.
-
-## Disabling CallHome after upgrading from version 11 to 12
-{: #disable-callhome}
-
-If you are upgrading from NetScaler version 11 to 12, the CallHome feature is enabled by default, even if you specifically disable it before and during installation. To disable this feature, you can either use the command line or the Citrix management UI:
-
-* Command line: `disable feature CallHome`
-* Citrix management UI:
-
-   1. Navigate to **Configuration** > **System** > **Settings**.
-   1. In the details page, click **Configure Advanced features** link and clear the **CallHome** option.
-   1. Click **OK**.
