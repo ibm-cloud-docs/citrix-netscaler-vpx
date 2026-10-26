@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-10-24"
+lastupdated: "2026-10-26"
 
 keywords: upgrade, callhome, ha, high availability, ha pair, cli
 
@@ -219,17 +219,14 @@ The following procedure is generic and applies to both standalone and HA upgrade
 
 Upgrading a High Availability (HA) pair requires additional steps compared to a standalone upgrade, to ensure that no configuration is lost and that HA functionality is preserved throughout the process. Complete the prerequisites at the beginning of this topic for both nodes, and download the firmware as described in [Downloading the firmware to the NetScaler VPX](#download-firmware).
 
-The IP addresses `10.72.164.206` (secondary) and `10.72.164.207` (primary) are used as examples. Substitute your own IP addresses.
-{: note}
-
 ### HA pre-upgrade procedure
 {: #ha-pre-upgrade}
 
 Before upgrading either node, save the configuration, force a sync, and then disable propagation, sync, and failover on both nodes. This prevents configuration drift or an unintended failover while the two nodes are running different firmware versions.
 
-The secondary (`10.72.164.206`) will be upgraded first, but the pre-upgrade commands must be run on the primary (`10.72.164.207`).
+The secondary 'Netscaler B' will be upgraded first, but the pre-upgrade commands must be run on the primary 'Netscaler A'.
 
-1. On the **primary** (`10.72.164.207`), save the configuration and force an HA sync:
+1. On the **primary** 'Netscaler A', save the configuration and force an HA sync:
 
    ```sh
    save ns config
@@ -242,7 +239,7 @@ The secondary (`10.72.164.206`) will be upgraded first, but the pre-upgrade comm
    `sync ha files all` is an alternative that explicitly synchronizes all SSL certificates, CRL lists, and VPN bookmarks. Because the primary is authoritative, this overwrites any differences on the secondary. Use it if you want to be certain the secondary is fully up to date.
    {: tip}
 
-1. On the **primary** (`10.72.164.207`), lock the node as primary and disable propagation and sync:
+1. On the **primary** 'Netscaler A', lock the node as primary and disable propagation and sync:
 
    ```sh
    set ha node -hastatus StayPrimary
@@ -251,7 +248,7 @@ The secondary (`10.72.164.206`) will be upgraded first, but the pre-upgrade comm
    ```
    {: pre}
 
-1. On the **secondary** (`10.72.164.206`), also disable propagation and sync:
+1. On the **secondary** 'Netscaler B', also disable propagation and sync:
 
    ```sh
    set ha node -haprop Disabled
@@ -264,28 +261,28 @@ The secondary (`10.72.164.206`) will be upgraded first, but the pre-upgrade comm
 ### Upgrading the secondary node
 {: #ha-upgrade-secondary-node}
 
-Upgrade the secondary node (`10.72.164.206`) first by following the steps in [Installing the firmware by using the CLI](#upgrade-secondary-node).
+Upgrade the secondary node 'Netscaler B' first by following the steps in [Installing the firmware by using the CLI](#upgrade-secondary-node).
 
 ### Making the upgraded secondary the new primary with HA force failover
 {: #ha-force-failover}
 
 Now that the secondary is upgraded, re-enable HA status on both nodes and fail over to make the upgraded node the new primary.
 
-1. On the **current primary** (`10.72.164.207`), re-enable HA status:
+1. On the **current primary** 'Netscaler A', re-enable HA status:
 
    ```sh
    set ha node -hastatus enabled
    ```
    {: pre}
 
-1. On the **current secondary** (`10.72.164.206`), re-enable HA status:
+1. On the **current secondary** 'Netscaler B', re-enable HA status:
 
    ```sh
    set ha node -hastatus enabled
    ```
    {: pre}
 
-1. On the **current primary** (`10.72.164.207`), initiate the failover:
+1. On the **current primary** 'Netscaler A', initiate the failover:
 
    ```sh
    force ha failover
@@ -297,7 +294,7 @@ Now that the secondary is upgraded, re-enable HA status on both nodes and fail o
    The failover can be initiated from either node once `hastatus` is re-enabled on both.
    {: note}
 
-1. After the failover, `10.72.164.206` is now the primary. Lock it as primary to prevent an unintended failover during the upgrade of the remaining node:
+1. After the failover, 'Netscaler B' is now the primary. Lock it as primary to prevent an unintended failover during the upgrade of the remaining node:
 
    ```sh
    set ha node -hastatus StayPrimary
@@ -311,14 +308,14 @@ Now that the secondary is upgraded, re-enable HA status on both nodes and fail o
 ### Upgrading the new secondary node
 {: #upgrade-new-secondary}
 
-Follow the same steps in [Installing the firmware by using the CLI](#upgrade-secondary-node) for the new secondary (`10.72.164.207`), substituting its IP address and using the same firmware file.
+Follow the same steps in [Installing the firmware by using the CLI](#upgrade-secondary-node) for the new secondary 'Netscaler A', substituting its IP address and using the same firmware file.
 
 ### HA post-upgrade procedure
 {: #ha-post-upgrade}
 
 After both nodes are running the same firmware version, re-enable HA and verify a clean failover.
 
-1. On the **current primary** (`10.72.164.206`), re-enable all HA settings:
+1. On the **current primary** 'Netscaler B', re-enable all HA settings:
 
    ```sh
    set ha node -hastatus enabled
@@ -327,7 +324,7 @@ After both nodes are running the same firmware version, re-enable HA and verify 
    ```
    {: pre}
 
-1. On the **current secondary** (`10.72.164.207`), re-enable all HA settings:
+1. On the **current secondary** 'Netscaler A', re-enable all HA settings:
 
    ```sh
    set ha node -hastatus enabled
@@ -338,4 +335,4 @@ After both nodes are running the same firmware version, re-enable HA and verify 
 
 1. Run `sh ha node` to confirm both nodes show a healthy HA state with synchronization success.
 
-1. Optionally, run `force ha failover` to return `10.72.164.207` to its original primary role.
+1. Optionally, run `force ha failover` to return 'Netscaler A' to its original primary role.
